@@ -1,0 +1,173 @@
+---
+// COMPONENTS
+
+import { Markdown } from 'astro/components';
+import BaseHead from '../../components/BaseHead.astro';
+import BlogHeader from '../../components/BlogHeader.astro';
+import BlogFooter from '../../components/BlogFooter.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import site from '../../data/site.json';
+import wiki from '../../data/wiki.json'
+
+// EXPORT
+
+export interface Props {
+  post: any;
+}
+
+// PROPS
+
+const { post } = Astro.props;
+
+// METADATA VARIABLES
+
+let metaTitle = ' | Luke Alex Davis';
+let title = 'Wiki';
+let slug = '/wiki/';
+let description = "A personal wiki full of the things I love, with lots of ideas, rough drafts, and related miscellany.";
+let domain = "https://lukealexdavis.co.uk"
+
+---
+<html lang="en">
+  <head>
+    <BaseHead title={title + metaTitle} description={description} canonicalURL={domain + slug} />
+    <link rel="stylesheet" href="/style/blog.css" />
+
+    <style>
+      
+      body {
+        width: 100%;
+        display: flex;
+      }
+
+      header {
+        width: 100%;
+        height: 100%;
+        background-color: var(--theme-bg-offset);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .content {
+        margin-bottom: 8rem;
+      }
+
+      .content :global(main > * + *) {
+        margin-top: 1rem;
+      }
+
+      .intro {
+        padding-bottom: 1.4rem;
+      }
+
+      .intro > * {
+        margin: 0;
+      }
+
+      .content :global(main > * + *) {
+        margin-top: 1rem;
+      }
+
+      .post-listing {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        }
+
+      .post-preview {
+        padding-bottom: 1rem;
+      }
+
+      .post-listing a {
+        max-width: 60%;
+      }
+
+      .publish-date {
+        letter-spacing: 2px;
+      }
+
+      header {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        align-items: flex-start;
+        justify-content: center;
+
+        padding-bottom: 2rem;
+      }
+
+      .desc {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--color-grey-800);
+      }
+
+      .title, .publish-date {
+        margin: 0;
+      }
+
+      .publish-date {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+
+      .title {
+        font-size: 2.25rem;
+        font-weight: 700;
+        color: var(--theme-text);
+      }
+
+      .wiki-h2 {
+        margin-bottom: 2rem;
+      }
+
+      .wiki-h2:after {
+         background: none repeat scroll 0 0 #295f2b;
+         bottom: -0.5rem;
+         content: "";
+         display: block;
+         height: 0.6rem;
+         position: relative;
+         width: 2.5rem;
+      }
+
+      .wiki-listing {
+        padding-bottom: 0.5rem;
+      }
+
+    </style>
+    
+  </head>
+
+  <body>
+    <BlogHeader />
+      <div class="layout">
+        <article class="content">
+            <section class="intro">
+          <h1>{title}</h1>
+        </section>
+        <section>
+          <p>This is my personal wiki, digital garden, whatever you want to call it. It's a little different to my <a href="/posts/">posts</a> and my <a href="/release-notes/">release notes</a>. It's a collection of the things I love, with lots of ideas, rough drafts, and things like that.</p>
+          <p>Inspired by <a href="https://tomcritchlow.com/wiki/">Tom Critchlow's Wiki</a> (which is better than mine).</p>
+        </section>
+      <section>
+      
+    <section>
+       <ul class="post-list">
+            
+              {wiki.branches.map((item) => (
+              <li class="post-preview post-listing post-list">
+            <a href={item.url}>{item.name}</a>
+          </li>
+             ))}
+        </ul>
+    </section>
+    </section>
+      </article>
+      
+    </div>
+    <BlogFooter></BlogFooter>
+  </body>
+</html>

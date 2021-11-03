@@ -1,0 +1,209 @@
+---
+// COMPONENTS
+
+import { Markdown } from 'astro/components';
+import BaseHead from '../../components/BaseHead.astro';
+import BlogHeader from '../../components/BlogHeader.astro';
+import BlogFooter from '../../components/BlogFooter.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import site from '../../data/site.json';
+import wiki from '../../data/wiki.json'
+
+// EXPORT
+
+export interface Props {
+  post: any;
+  metaTitle: string;
+  title: string;
+  slug: string;
+  description: string;
+  domain: string;
+}
+
+// PROPS
+
+const { post } = Astro.props;
+
+// HOW FETCHING!
+
+const remoteData = await fetch('https://cultrface.co.uk/wp-json/wp/v2/posts?tags=532').then(response => response.json());
+
+// METADATA VARIABLES
+
+let title = 'Blogging';
+let slug = '/wiki/blogging/';
+let description = 'A wiki page all about blogging.';
+let domain = "https://lukealexdavis.co.uk"
+
+---
+<html lang="en">
+  <head>
+    <BaseHead title={'wiki/' + title.toLowerCase()} description={description} canonicalURL={domain + slug} />
+    <link rel="stylesheet" href="/style/blog.css" />
+
+<style>
+      
+      body {
+        width: 100%;
+        display: flex;
+      }
+
+      header {
+        width: 100%;
+        height: 100%;
+        background-color: var(--theme-bg-offset);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .content {
+        margin-bottom: 8rem;
+      }
+
+      .content :global(main > * + *) {
+        margin-top: 1rem;
+      }
+
+      .intro {
+        padding-bottom: 1.4rem;
+      }
+
+      .intro > * {
+        margin: 0;
+      }
+
+      .content :global(main > * + *) {
+        margin-top: 1rem;
+      }
+
+      .post-listing {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        }
+
+      .post-preview {
+        padding-bottom: 1rem;
+      }
+
+      .post-listing a {
+        max-width: 60%;
+      }
+
+      .publish-date {
+        letter-spacing: 2px;
+      }
+
+      header {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        align-items: flex-start;
+        justify-content: center;
+
+        padding-bottom: 2rem;
+      }
+
+      .desc {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--color-grey-800);
+      }
+
+      .title, .publish-date {
+        margin: 0;
+      }
+
+      .publish-date {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+
+      .title {
+        font-size: 2.25rem;
+        font-weight: 700;
+        color: var(--theme-text);
+      }
+
+      .wiki-h2 {
+        margin-bottom: 2rem;
+      }
+
+      .wiki-h2:after {
+         background: none repeat scroll 0 0 #295f2b;
+         bottom: -0.5rem;
+         content: "";
+         display: block;
+         height: 0.6rem;
+         position: relative;
+         width: 2.5rem;
+      }
+
+      .wiki-listing {
+        padding-bottom: 0.5rem;
+      }
+
+    </style>
+
+</head>
+
+  <body>
+    <BlogHeader />
+      <div class="layout">
+        <article class="content">
+          <Breadcrumbs title={title}/>
+            <section class="intro">
+
+              <h1>{title}</h1>
+              <p class="desc">{description}</p>
+       </section>
+            <section>
+             
+              <h2 class="wiki-h2">Inner voice</h2>
+                <Markdown>
+                  * [/1-vs-10-000.md](/post/1-vs-10-000/)
+                  * [/this-is-my-content-creation-flow.md](/post/this-is-my-content-creation-flow/)
+                  * [/4-article-ideas-the-read.md](/post/4-article-ideas-the-read/)
+                  * [/blogging-as-self-expression.md](/post/blogging-as-self-expression/)
+                  * [/blogs-and-hats.md](/post/blogs-and-hats/)
+                  * [/ceci-nest-pas-un-blog.md](/post/ceci-nest-pas-un-blog/)
+                  * [/feeling-guilty-for-pursuing-your-passions.md](/post/feeling-guilty-for-pursuing-your-passions/)
+                  * [/first-year-professional-seo.md](/post/first-year-professional-seo/)
+                  * [/halt-and-make-fire.md](/post/halt-and-make-fire/)
+                  * [/how-much-do-my-blogs-cost.md](/post/how-much-do-my-blogs-cost/)
+                  * [/meta-meta-blogging.md](/post/meta-meta-blogging/)
+                  * [/my-review-of-2017.md](/post/my-review-of-2017/)
+                  * [/second-year-professional-seo.md](/post/second-year-professional-seo/)
+                  * [/speeches-thanks.md](/post/speeches-thanks/)
+                </Markdown>
+            </section>
+      
+            <section>
+              <h2 class="wiki-h2">Out loud</h2>
+              <ul class="post-list">
+                <li>Nothing yet...</li>
+              </ul>
+              <h2 class="wiki-h2">Second opinions</h2>
+                <Markdown>
+                  * [Blogging Is Most Certainly Not Dead](https://mailchi.mp/kottke/blogging-is-not-dead-edition-2575912502)
+                  * [Nadia Eghbal](https://nadiaeghbal.com/)
+                  * [Nadia Eghbal, Re: Writing Hypertext](https://www.kickscondor.com/nadia-eghbal/)
+                  * [Ed Silverman of Pharmalot on building longevity — and audience loyalty — in blogging](https://www.niemanlab.org/2015/10/ed-silverman-of-pharmalot-on-building-longevity-and-audience-loyalty-in-blogging/)
+                  * [Building a digital garden](https://tomcritchlow.com/2019/02/17/building-digital-garden/)
+                  * [Of Digital Streams, Campfires and Gardens](https://tomcritchlow.com/2018/10/10/of-gardens-and-wikis/)
+                  * [Last blog standing, “last guy dancing”: How Jason Kottke is thinking about kottke.org at 20](https://www.niemanlab.org/2018/02/last-blog-standing-last-guy-dancing-how-jason-kottke-is-thinking-about-kottke-org-at-20/)
+                  * [Jason Kottke, OG blogger](https://creatorinterviews.com/2019/03/05/jason-kottke-og-blogger/)
+                  * [Jason Kottke, the Modern State of Blogging, and My Own Blogging Mission](https://opuszine.us/post/jason-kottke-modern-state-blogging-my-own-blogging-mission)
+                  * [New blogging](https://tomcritchlow.com/wiki/blogging/new-blogging/)
+                  * [Tom Critchlow's wiki on blogging](https://tomcritchlow.com/wiki/blogging/)
+                  * [Digital gardens let you cultivate your own little bit of the internet](https://www.technologyreview.com/2020/09/03/1007716/digital-gardens-let-you-cultivate-your-own-little-bit-of-the-internet/)
+                </Markdown>
+            </section>
+        </article>
+      
+    </div>
+    <BlogFooter></BlogFooter>
+  </body>
+</html>

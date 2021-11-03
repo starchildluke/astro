@@ -1,0 +1,214 @@
+---
+// COMPONENTS
+
+import { Markdown } from 'astro/components';
+import BaseHead from '../../../components/BaseHead.astro';
+import BlogHeader from '../../../components/BlogHeader.astro';
+import BlogFooter from '../../../components/BlogFooter.astro';
+import Breadcrumbs from '../../../components/Breadcrumbs.astro';
+import site from '../../../data/site.json';
+import wiki from '../../../data/wiki.json'
+
+// EXPORT
+
+export interface Props {
+  post: any;
+  metaTitle: string;
+  title: string;
+  slug: string;
+  description: string;
+  domain: string;
+}
+
+// PROPS
+
+const { post } = Astro.props;
+
+// HOW FETCHING!
+
+const remoteData = await fetch('https://logicface.co.uk/wp-json/wp/v2/posts?categories=5').then(response => response.json());
+
+const remoteData2 = await fetch('https://cultrface.co.uk/wp-json/wp/v2/posts?categories=24').then(response => response.json());
+
+// METADATA VARIABLES
+
+let title = 'Internet';
+let slug = '/wiki/tech/internet/';
+let description = 'A wiki page all about the internet and the Web.';
+let domain = "https://lukealexdavis.co.uk"
+
+---
+<html lang="en">
+  <head>
+    <BaseHead title={'wiki/' + title.toLowerCase()} description={description} canonicalURL={domain + slug} />
+    <link rel="stylesheet" href="/style/blog.css" />
+
+<style>
+      
+      body {
+        width: 100%;
+        display: flex;
+      }
+
+      header {
+        width: 100%;
+        height: 100%;
+        background-color: var();
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .content {
+        margin-bottom: 8rem;
+      }
+
+      .content :global() {
+        margin-top: 1rem;
+      }
+
+      .intro {
+        padding-bottom: 1.4rem;
+      }
+
+      .intro > * {
+        margin: 0;
+      }
+
+      .content :global() {
+        margin-top: 1rem;
+      }
+
+      .post-listing {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        }
+
+      .post-preview {
+        padding-bottom: 1rem;
+      }
+
+      .post-listing a {
+        max-width: 60%;
+      }
+
+      .publish-date {
+        letter-spacing: 2px;
+      }
+
+      header {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        align-items: flex-start;
+        justify-content: center;
+
+        padding-bottom: 2rem;
+      }
+
+      .desc {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var();
+      }
+
+      .title, .publish-date {
+        margin: 0;
+      }
+
+      .publish-date {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+
+      .title {
+        font-size: 2.25rem;
+        font-weight: 700;
+        color: var();
+      }
+
+      .wiki-h2 {
+        margin-bottom: 2rem;
+      }
+
+      .wiki-h2:after {
+         background: none repeat scroll 0 0 #295f2b;
+         bottom: -0.5rem;
+         content: "";
+         display: block;
+         height: 0.6rem;
+         position: relative;
+         width: 2.5rem;
+      }
+
+      .wiki-listing {
+        padding-bottom: 0.5rem;
+      }
+
+    </style>
+
+</head>
+
+  <body>
+    <BlogHeader />
+      <div class="layout">
+        <article class="content">
+          <Breadcrumbs title={title}/>
+            <section class="intro">
+
+              <h1>{title}</h1>
+              <p class="desc">{description}</p>
+       </section>
+            <section>
+             
+              <h2 class="wiki-h2">Inner voice</h2>
+                <Markdown>
+                  * [/we-need-to-use-the-lang-attribute-more.md](/post/we-need-to-use-the-lang-attribute-more/)
+                  * [/trolls-pills.md](/post/trolls-pills/)
+                  * [/the-exclusive-website.md](/post/the-exclusive-website/)
+                  * [/talk-work-think-different-thanks-web.md](/post/talk-work-think-different-thanks-web/)
+                  * [/prince-purple-a-visited-css.md](/post/prince-purple-a-visited-css/)
+                  * [/halt-and-make-fire.md](/post/halt-and-make-fire/)
+                  * [/future-job-web-historian.md](/post/future-job-web-historian/)
+                  * [/this-is-my-content-creation-flow.md](/post/this-is-my-content-creation-flow/)
+                </Markdown>
+            </section>
+      
+            <section>
+              <h2 class="wiki-h2">Out loud</h2>
+              <ul class="post-list">
+                {remoteData.map((item) => (
+                <li class="post-preview wiki-listing post-list">
+            <a href={item.link}>{item.title.rendered}</a>
+          </li>
+             ))}
+          {remoteData2.map((item) => (
+                <li class="post-preview wiki-listing post-list">
+            <a href={item.link}>{item.title.rendered}</a>
+          </li>
+             ))}
+             </ul>
+              <h2 class="wiki-h2">Second opinions</h2>
+                <Markdown>
+                  * [Why skip-links are important for accessibility](https://www.voorhoede.nl/en/blog/why-skip-links-are-important-for-accessibility/)
+                  * [Design system: Auditing color system](https://buditanrim.co/2021/auditing-color-system/)
+                  * [Using CSS to Enforce Accessibility](https://adrianroselli.com/2021/06/using-css-to-enforce-accessibility.html)
+                  * [Use the aria-current attribute to highlight the current page in a navigation, both visually and semantically](https://www.htmhell.dev/tips/the-current-page/)
+                  * [The perfect link](https://www.a11y-collective.com/blog/the-perfect-link/)
+                  * [Hiding Content Responsibly](https://kittygiraudel.com/2021/02/17/hiding-content-responsibly/)
+                  * [5 ways to make your tweets accessible](https://www.abilitynet.org.uk/news-blogs/5-ways-make-your-tweets-accessible)
+                  * [Your Image Is Probably Not Decorative](https://www.smashingmagazine.com/2021/06/img-alt-attribute-alternate-description-decorative/)
+                  * [Everyday Accessibility](https://www.a11yproject.com/post/2021-06-14-everyday_accessibility/)
+                  * [They Offered a Million Dollars to Surf The Web. Somebody Won.](https://thehistoryoftheweb.com/they-offered-a-million-dollars-to-surf-the-web-somebody-won/)
+                  * [Truth vs. Truthiness | The Philosophy of Search Results](https://jessbpeck.com/post/truthvstruthiness/)
+                  * [CSS units are confusing AF 😖](https://yurilee.hashnode.dev/css-units-are-confusing-af)
+                </Markdown>
+            </section>
+        </article>
+      
+    </div>
+    <BlogFooter></BlogFooter>
+  </body>
+</html>

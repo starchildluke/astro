@@ -7,6 +7,11 @@
     "build": "astro build"
   },
   "devDependencies": {
-    "astro": "^0.16.1"
+    "prettier": "2.3.2"
+  },
+  "dependencies": {
+    "astro": "^0.20.4",
+    "react-dom": "^17.0.2",
+    "uniq": "^1.0.1"
   }
 }

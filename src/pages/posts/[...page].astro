@@ -1,0 +1,245 @@
+---
+
+// Component Imports
+import BaseHead from '../../components/BaseHead.astro';
+import BlogHeader from '../../components/BlogHeader.astro';
+import BlogFooter from '../../components/BlogFooter.astro';
+import site from '../../data/site.json'
+
+// Component Script:
+// You can write any JavaScript/TypeScript that you'd like here.
+// It will run during the build, but never in the browser.
+// All variables are available to use in the HTML template below.
+let metaTitle = ' | Luke Alex Davis';
+let domain = 'https://lukealexdavis.co.uk';
+let title = 'Posts';
+let description = "";
+
+/**
+ * Updated for the recent getStaticPaths() Astro API!
+ *
+ * This assumes there are MD files containing a title, date, and url
+ * in the post's frontmatter.
+ *
+ * If this is saved to src/pages/posts, the result here will be a main /posts/index.html file with the first page,
+ * as well as /posts/1/index.html, etc. if there are enough posts to be split into multiple pages
+ */
+  
+interface Post {
+    title: string
+    date: string
+    url: string
+}
+
+export async function getStaticPaths({ paginate }) {
+  // Load your data with fetch(), Astro.fetchContent(), etc.
+  let allPosts = Astro.fetchContent('../post/*.md')
+  allPosts = allPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
+  // Return a paginated collection of paths for all posts
+  return paginate(allPosts, { pageSize: 25 })
+}
+
+/**
+ * This takes a list of post objects and groups them by year, into an array similar to
+ * [
+ *   {
+ *     year: 2021,
+ *     items: []
+ *   },
+ *   {
+ *     year: 2020,
+ *     items: []
+ *   }
+ * ]
+ */
+function postsByYear(posts: Post[]) {
+  // Data structure used to group items by year
+  interface PostsByYearData {
+    year: number
+    items: Post[]
+  }
+
+  /**
+   * This builds a map similar to {
+   *   2021: {
+   *     year: 2021,
+   *     items: []
+   *   },
+   *   2020: {
+   *     year: 2020,
+   *     items: []
+   *   }
+   * }
+   */
+  const postsByYearMap = posts.reduce(function(acc, post) {
+    // get the post's year
+    const year = new Date(post.date).getFullYear()
+
+    /**
+     * Try to find the list of posts found so far for the same year.
+     * If it doesn't exist yet, start with an empty array
+     */
+    const existing = acc.get(year)?.items || []
+    
+    /**
+     * Update the map with a new object for the year,
+     * adding the current post to the list of previously found posts (from existing above)
+     */
+    acc.set(year, {
+      year,
+      items: existing.concat(post)
+    })
+    
+    // make sure you return the value in a reduce()!
+    return acc;
+  }, new Map<number, PostsByYearData>())
+
+  /**
+   * Get an array of posts by year, and sort with the most recent posts first
+   * The [...] syntax is used here to create a basic JS array from an iterable Map
+   */
+  return [...postsByYearMap.values()]
+    .sort((a, b) => b.year - a.year);
+}
+
+
+// If set up correctly, The page prop now has everything that
+// you need to render a single page (see next section).
+const { page } = Astro.props
+
+// Take the current page of posts from getStaticPaths' paginate helper
+// and pass them to postsByYear to get a sorted list of year/posts data
+const postGroups = postsByYear(page.data)
+
+let prevNext;
+if (page.currentPage == 1 && page.lastPage == page.currentPage) {
+  prevNext = [];
+} else if (page.currentPage == 1 && page.lastPage > page.currentPage) {
+  prevNext = <div class="page-links"> <a class="next" href={page.url.next || '#'}>Next &raquo;</a></div>;
+} else if (page.currentPage > 1 && page.lastPage > page.currentPage) {
+    prevNext = <div class="page-links"> <a class="prev" href={page.url.prev || '#'}>  
+&laquo; Prev</a> <a class="next" href={page.url.next || '#'}>Next &raquo;</a></div>;
+} else if (page.lastPage) {
+    prevNext = <div class="page-links"> <a class="prev" href={page.url.prev || '#'}>  
+&laquo; Prev</a></div>;
+  };
+---
+<html lang="en">
+  <head>
+    <BaseHead title={title + metaTitle} description={description} canonicalURL={page.url.current} />
+    <link rel="stylesheet" href="/style/blog.css" />
+
+    <style>
+      body {
+        width: 100%;
+        display: flex;
+      }
+
+      header {
+        width: 100%;
+        height: 100%;
+        background-color: var(--theme-bg-offset);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .content {
+        margin-bottom: 8rem;
+      }
+
+      .content :global(main > * + *) {
+        margin-top: 1rem;
+      }
+
+      .intro {
+        padding-bottom: 1.4rem;
+      }
+
+      .intro > * {
+        margin: 0;
+      }
+
+      .content :global(main > * + *) {
+  margin-top: 1rem;
+}
+
+.post-listing {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  }
+
+.post-preview {
+  padding-bottom: 1rem;
+}
+
+.post-listing a {
+  max-width: 60%;
+}
+
+.publish-date {
+  letter-spacing: 2px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: flex-start;
+  justify-content: center;
+
+  padding-bottom: 2rem;
+}
+
+.title,
+.author,
+.publish-date {
+  margin: 0;
+}
+
+.publish-date,
+.author {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--theme-text);
+}
+
+    </style>
+  </head>
+
+  <body>
+    <BlogHeader />
+    <div class="layout">
+      <article class="content">
+        <section class="intro">
+          <h1>{title + ' (Page ' + page.currentPage + '/' + page.lastPage + ')'}</h1>
+        </section>
+        <section>
+          <p>You can follow these blog posts via <a href="/feed/blog.xml">RSS</a> too.</p>
+        </section>
+    {postGroups.map(({ year, items }) => (
+  <section>
+    <h3>{year}</h3>
+    <ul class="post-list">
+    {items.map((post) => (
+      <li class="post-preview post-listing post-list">
+        <a href={post.url + "/"}>{post.title}</a>
+        <span class="publish-date">{post.date}</span>
+      </li>
+    ))}
+    </ul>
+    </section>
+      ))}    
+        {prevNext}
+      </article>
+    </div>
+    <BlogFooter></BlogFooter>
+  </body>
+</html>

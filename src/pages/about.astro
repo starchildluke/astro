@@ -1,0 +1,127 @@
+---
+// Component Imports
+import BaseHead from '../components/BaseHead.astro';
+import BlogHeader from '../components/BlogHeader.astro';
+import BlogFooter from '../components/BlogFooter.astro';
+import BlogPostPreview from '../components/BlogPostPreview.astro';
+
+// Component Script:
+// You can write any JavaScript/TypeScript that you'd like here.
+// It will run during the build, but never in the browser.
+// All variables are available to use in the HTML template below.
+let metaTitle = ' | Luke Alex Davis';
+let title = 'About';
+let description = 'My about page.';
+let slug = '/about';
+let canonicalURL = Astro.request.url;
+
+// Full Astro Component Syntax:
+// https://github.com/snowpackjs/astro/blob/main/docs/core-concepts/astro-components.md
+---
+<html lang="en">
+  <head>
+    <BaseHead title={title + metaTitle} description={description} canonicalURL={canonicalURL} />
+    <link rel="stylesheet" href="/style/blog.css" />
+
+    <style>
+      body {
+        width: 100%;
+        display: flex;
+      }
+
+      header {
+        width: 100%;
+        height: 100%;
+        background-color: var(--theme-bg-offset);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .content {
+        margin-bottom: 8rem;
+      }
+
+      .content :global(main > * + *) {
+        margin-top: 1rem;
+      }
+
+      .intro {
+        padding-bottom: 1.4rem;
+      }
+
+      .intro > * {
+        margin: 0;
+      }
+
+      .latest {
+        font-size: 2.5rem;
+        font-weight: 700;
+      }
+    </style>
+  </head>
+
+  <body>
+  <BlogHeader />
+  <div class="layout">
+    <article class="content">
+      <section class="intro">
+        <h1>{title}</h1>
+      </section>
+    <section>
+      <p>Hi again.</p>
+      <h2>About me</h2>
+      <ul>
+        <li>I love the Web a great deal. I fell down the WWW rabbit hole back in 2000 and got into coding a year later. Via graphic design, mathematics, a music tech degree, and 7 years in customer service, I found myself in digital marketing. I'm now an SEO.</li>
+        <li>I've been learning Portuguese since 2017.</li>
+        <li>I have a son who is my pride and joy.</li>
+        <li>I've had grey hair since I was 20.</li>
+        <li>I've lived in 3 different cities in the UK and 1 in the US (Atlanta for 6 months).</li>
+        <li>I also love Python, HTML, and CSS. And the Web. Have I already said that?</li>
+        <li>I create for people, not algorithms.</li>
+        <li>I currently work as a technical SEO and I love SEO.</li>
+        <li>In my spare time, I enjoy watching <a href="/wiki/sport/">sports</a>, playing Pokémon and reliving my childhood with <a href="/wiki/gaming/">old computer games</a> and cartoons on YouTube. I love modernist architecture, Mies van der Rohe, and <a href="/wiki/sport/roger-federer/">Roger Federer</a>.</li>
+        <li>I have a degree in Music Technology and <a href="https://strrchildluke.bandcamp.com/">I've been making music since 2010</a>.</li>
+    </ul>
+      <h2>About the site</h2>
+      <p>I’ve had so many versions of this site, I’ve lost count. It originally started life as starcrazy.org back in 2009(?) but eventually, I moved over to lukealexdavis.co.uk in 2010. Since then, it’s taken the form of a blog and a hand-coded personal site with numerous cosmetic changes.</p>
+      <p>Now, the site is built using <a href="https://astro.build/blog/introducing-astro/">Astro</a>, "a new kind of static site builder that delivers lightning-fast performance with a modern developer experience".</p>
+      <p>My relationship with the Web has influenced how I’ve made and remade this site, from FrontPage Express to Microsoft FrontPage to Dreamweaver to Sublime Text. Other influences include:</p>
+      <ul>
+        <li><a href="https://www.zalando.co.uk/">Zalando</a></li>
+        <li><a href="https://marijn.uk/">Marijn.uk</a></li>
+        <li><a href="https://www.tatianamac.com/">Tatiana Mac</a></li>
+        <li><a href="https://www.nngroup.com/articles/characteristics-minimalism/">Minimalist web design</a></li>
+        <li><a href="https://brutalistwebsites.com/">Brutalist web design</a></li>
+        <li><a href="https://tomcritchlow.com/">Tom Critchlow</a></li>
+      </ul>
+      <h2>Gender and pronouns</h2>
+        <p>He/him/his.</p>
+      <h2>Copyright</h2>
+        <p>All content on this site and my external projects are available under the <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/">CC BY 2.0 licence</a>. All I ask is you credit my work if you use it anywhere and <strong>link back to the site</strong>.</p>
+      <h2>My faves</h2>
+        <p>Inspired by <a href="https://marijn.uk/about/">Marijn van Hoorn</a>:</p>
+      <ul>
+        <li>Favourite album: Seal II by Seal</li>
+        <li>Favourite song: Billie Jean by Michael Jackson</li>
+        <li>Favourite film: Batman Returns</li>
+        <li>Favourite video game: Pokémon Silver</li>
+        <li>Favourite colour: Red (closely followed by green)</li>
+        <li>Favourite planet: Once I finish Star Trek: Deep Space Nine, I’ll get back to you</li>
+        <li>Deepest fears: Confrontation, mould, DeepDream, moths, and anything that makes me anxious</li>
+      </ul>
+      <h2>Funding</h2>
+        <p>I have a <a href="https://www.patreon.com/lukealexdavis/">Patreon</a> and <a href="https://ko-fi/lklxdvs">Ko-fi</a> where all contributions go towards web hosting costs, domains, and such.</p>
+      <h2>Contact me</h2>
+        <p>If you want to get in touch, please send an email to luke@lukealexdavis.co.uk.</p>
+        <small><p>Page created: 25 Nov 2016 (approx.)</p></small>
+        <small><p>Page last updated: 3 Sept 2021</p></small>
+      
+    </section>
+       
+
+  </article>
+</div>
+<BlogFooter></BlogFooter>
+</body>
+</html>

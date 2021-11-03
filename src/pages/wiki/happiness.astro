@@ -1,0 +1,187 @@
+---
+// COMPONENTS
+
+import { Markdown } from 'astro/components';
+import BaseHead from '../../components/BaseHead.astro';
+import BlogHeader from '../../components/BlogHeader.astro';
+import BlogFooter from '../../components/BlogFooter.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import site from '../../data/site.json';
+import wiki from '../../data/wiki.json'
+
+// EXPORT
+
+export interface Props {
+  post: any;
+}
+
+// PROPS
+
+const { post } = Astro.props;
+
+// HOW FETCHING!
+
+const remoteData = await fetch('https://playrface.co.uk/wp-json/wp/v2/posts?tags=62').then(response => response.json());
+
+// METADATA VARIABLES
+
+let metaTitle = ' | Luke Alex Davis';
+let title = 'Happiness';
+let slug = '/wiki/happiness/';
+let description = "A wiki page all about happiness.";
+let domain = "https://lukealexdavis.co.uk"
+
+---
+<html lang="en">
+  <head>
+    <BaseHead title={'wiki/' + title.toLowerCase() + metaTitle} description={description} canonicalURL={domain + slug} />
+    <link rel="stylesheet" href="/style/blog.css" />
+
+<style>
+  
+  body {
+    width: 100%;
+    display: flex;
+  }
+
+  header {
+    width: 100%;
+    height: 100%;
+    background-color: var(--theme-bg-offset);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content {
+    margin-bottom: 8rem;
+  }
+
+  .content :global(main > * + *) {
+    margin-top: 1rem;
+  }
+
+  .intro {
+    padding-bottom: 1.4rem;
+  }
+
+  .intro > * {
+    margin: 0;
+  }
+
+  .content :global(main > * + *) {
+    margin-top: 1rem;
+  }
+
+  .post-listing {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    }
+
+  .post-preview {
+    padding-bottom: 1rem;
+  }
+
+  .post-listing a {
+    max-width: 60%;
+  }
+
+  .publish-date {
+    letter-spacing: 2px;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+    justify-content: center;
+
+    padding-bottom: 2rem;
+  }
+
+  .desc {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-grey-800);
+  }
+
+  .title, .publish-date {
+    margin: 0;
+  }
+
+  .publish-date {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: var(--theme-text);
+  }
+
+  .wiki-h2 {
+    margin-bottom: 2rem;
+  }
+
+  .wiki-h2:after {
+     background: none repeat scroll 0 0 #295f2b;
+     bottom: -0.5rem;
+     content: "";
+     display: block;
+     height: 0.6rem;
+     position: relative;
+     width: 2.5rem;
+  }
+
+  .wiki-listing {
+    padding-bottom: 0.5rem;
+  }
+
+</style>
+
+  </head>
+
+  <body>
+    <BlogHeader />
+    <div class="layout">
+      <article class="content">
+        <Breadcrumbs title={title}/>
+        <section class="intro">
+          <h1>{title}</h1>
+        </section>
+        <section>
+          <Markdown>
+          ## Inner voice
+          
+          * [/happy-accident-1.md](/post/wikinotes/happy-accident-1/)
+          * [/proust-questionnaire.md](/post/proust-questionnaire/)
+          * [/proust-questionnaire-2020.md](/post/proust-questionnaire-2020/)
+
+          </Markdown>
+
+        </section>
+      <section>
+      
+    <section>
+      <h2 class="wiki-h2">Out loud</h2>
+        <ul class="post-list">
+            <li class="post-preview post-listing post-list">
+              Coming soon...
+            </li>
+        </ul>
+        <h2 class="wiki-h2">Second opinions</h2>
+        <ul>
+          <li><a href="https://www.youtube.com/watch?v=OjhBeB9ESqw">"What do I really want? What is really going to make me happy... now?"</a></li>
+        </ul>
+    </section>
+    </section>
+      </article>
+      
+    </div>
+    <BlogFooter></BlogFooter>
+  </body>
+</html>

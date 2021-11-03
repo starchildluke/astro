@@ -1,36 +1,52 @@
 ---
+
+import site from '../data/site.json'
+
 export interface Props {
   title: string;
   description: string;
-  permalink: string;
+  slug: string;
+  url: string;
+  canonicalURL: string;
 }
-const { title, description, permalink } = Astro.props;
----
 
+const {
+  title = site.title,
+  description = site.description,
+  canonicalURL = Astro.request.url
+}: Props = Astro.props;
+
+const blogRssFeed = `${site.url}feed/blog.xml`;
+
+let ogimage = 'https://lukealexdavis.co.uk/assets/ld-logo-og-image.jpg';
+---
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 
-<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/svg" href="/favicon.svg" />
 
 <!-- Primary Meta Tags -->
 <title>{title}</title>
 <meta name="title" content={title} />
 <meta name="description" content={description} />
+<link rel="canonical" href={canonicalURL} />
+<link rel="alternate" type="application/rss+xml" title={site.title} href={blogRssFeed} />
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
-<meta property="og:url" content={permalink} />
+<meta property="og:url" content={canonicalURL} />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
-<meta property="og:image" content="https://astro.build/social.jpg?v=1" />
+<meta property="og:image" content={ogimage} />
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:url" content={permalink} />
+<meta property="twitter:url" content={canonicalURL} />
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
-<meta property="twitter:image" content="https://astro.build/social.jpg?v=1" />
+<meta property="twitter:image" content={ogimage} />
 
-<!-- Fonts -->
-<link rel="preconnect" href="https://fonts.gstatic.com" />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans:wght@400;700&display=swap">
+<script defer data-domain="lukealexdavis.co.uk" src="https://plausible.io/js/plausible.js"></script>
+
+<link rel="preload" href="/fonts/Archivo-Black.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/fonts/Karla-Light.woff2" as="font" type="font/woff" crossorigin>

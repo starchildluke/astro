@@ -1,0 +1,93 @@
+---
+// COMPONENTS
+
+import { Markdown } from 'astro/components';
+import BaseHead from '../components/BaseHead.astro';
+import BlogHeader from '../components/BlogHeader.astro';
+import BlogFooter from '../components/BlogFooter.astro';
+import BlogPostPreview from '../components/BlogPostPreview.astro';
+
+// EXPORT
+
+export interface Props {
+  post: any;
+  metaTitle: string;
+  title: string;
+  slug: string;
+  description: string;
+  domain: string;
+}
+
+// PROPS
+
+const { post } = Astro.props;
+
+// METADATA VARIABLES
+
+let metaTitle = ' | Luke Alex Davis';
+let title = 'Important albums';
+let description = 'A list of my important albums in my life.';
+let canonicalURL = Astro.request.url;
+---
+
+<html lang="en">
+  <head>
+    <BaseHead title={title + metaTitle} description={description} canonicalURL={canonicalURL} />
+    <link rel="stylesheet" href="/style/blog.css" />
+
+    <style>
+      body {
+        width: 100%;
+        display: flex;
+      }
+
+      header {
+        width: 100%;
+        height: 100%;
+        background-color: var(--theme-bg-offset);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .content {
+        margin-bottom: 8rem;
+      }
+
+      .content :global(main > * + *) {
+        margin-top: 1rem;
+      }
+
+      .intro {
+        padding-bottom: 1.4rem;
+      }
+
+      .intro > * {
+        margin: 0;
+      }
+
+      .latest {
+        font-size: 2.5rem;
+        font-weight: 700;
+      }
+    </style>
+  </head>
+<body>
+  <BlogHeader />
+    <div class="layout">
+      <article class="content">
+        <section class="intro">
+          <h1>{title}</h1>
+        </section>
+        <section>
+          <Markdown>
+            | Artist      | Album       | Release Year |
+            |-------------|-------------|--------------|
+            | Coming soon | Coming soon | Coming soon  |
+          </Markdown>            
+        </section>
+              </article>
+            </div>
+      <BlogFooter></BlogFooter>
+  </body>
+</html>

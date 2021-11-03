@@ -1,0 +1,210 @@
+---
+// COMPONENTS
+
+import { Markdown } from 'astro/components';
+import BaseHead from '../../components/BaseHead.astro';
+import BlogHeader from '../../components/BlogHeader.astro';
+import BlogFooter from '../../components/BlogFooter.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import site from '../../data/site.json';
+import wiki from '../../data/wiki.json'
+
+// EXPORT
+
+export interface Props {
+  post: any;
+  metaTitle: string;
+  title: string;
+  slug: string;
+  description: string;
+  domain: string;
+}
+
+// PROPS
+
+const { post } = Astro.props;
+
+// HOW FETCHING!
+
+const remoteData = await fetch('https://sampleface.co.uk/wp-json/wp/v2/posts').then(response => response.json());
+
+const remoteData2 = await fetch('https://cultrface.co.uk/wp-json/wp/v2/posts?categories=12').then(response => response.json());
+
+// METADATA VARIABLES
+
+let title = 'Music';
+let slug = '/wiki/music/';
+let description = 'A wiki page all about music.';
+let domain = "https://lukealexdavis.co.uk"
+
+---
+<html lang="en">
+  <head>
+    <BaseHead title={'wiki/' + title.toLowerCase()} description={description} canonicalURL={domain + slug} />
+    <link rel="stylesheet" href="/style/blog.css" />
+
+<style>
+      
+      body {
+        width: 100%;
+        display: flex;
+      }
+
+      header {
+        width: 100%;
+        height: 100%;
+        background-color: var();
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .content {
+        margin-bottom: 8rem;
+      }
+
+      .content :global() {
+        margin-top: 1rem;
+      }
+
+      .intro {
+        padding-bottom: 1.4rem;
+      }
+
+      .intro > * {
+        margin: 0;
+      }
+
+      .content :global() {
+        margin-top: 1rem;
+      }
+
+      .post-listing {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        }
+
+      .post-preview {
+        padding-bottom: 1rem;
+      }
+
+      .post-listing a {
+        max-width: 60%;
+      }
+
+      .publish-date {
+        letter-spacing: 2px;
+      }
+
+      header {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        align-items: flex-start;
+        justify-content: center;
+
+        padding-bottom: 2rem;
+      }
+
+      .desc {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var();
+      }
+
+      .title, .publish-date {
+        margin: 0;
+      }
+
+      .publish-date {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+
+      .title {
+        font-size: 2.25rem;
+        font-weight: 700;
+        color: var();
+      }
+
+      .wiki-h2 {
+        margin-bottom: 2rem;
+      }
+
+      .wiki-h2:after {
+         background: none repeat scroll 0 0 #295f2b;
+         bottom: -0.5rem;
+         content: "";
+         display: block;
+         height: 0.6rem;
+         position: relative;
+         width: 2.5rem;
+      }
+
+      .wiki-listing {
+        padding-bottom: 0.5rem;
+      }
+
+    </style>
+
+</head>
+
+  <body>
+    <BlogHeader />
+      <div class="layout">
+        <article class="content">
+          <Breadcrumbs title={title}/>
+            <section class="intro">
+
+              <h1>{title}</h1>
+              <p class="desc">{description}</p>
+       </section>
+            <section>
+             
+              <h2 class="wiki-h2">Inner voice</h2>
+                <Markdown>
+                  * [/you-rocked-my-world-you-know-you-did.md](/post/you-rocked-my-world-you-know-you-did/)
+                  * [/where-theres-gold.md](/post/where-theres-gold/)
+                  * [/rip-mj-8-years-on.md](/post/rip-mj-8-years-on/)
+                  * [/my-record-store-day.md](/post/my-record-store-day/)
+                  * [/my-album-of-the-year-list-2014.md](/post/my-album-of-the-year-list-2014/)
+                  * [/my-50-favourite-albums-of-2012.md](/post/my-50-favourite-albums-of-2012/)
+                  * [/musical-inspirations.md](/post/musical-inspirations/)
+                  * [/last-name-jazz-first-name-hugh.md](/post/last-name-jazz-first-name-hugh/)
+                  * [/last-donut-of-the-night-when-federer-dilla-united-for-1-weekend.md](/post/last-donut-of-the-night-when-federer-dilla-united-for-1-weekend/)
+                  * [/khruangbin-and-federer.md](/post/khruangbin-and-federer/)
+                  * [/jamiroquai-rock-dust-light-star-review.md](/post/jamiroquai-rock-dust-light-star-review/)
+                  * [/j-dilla-influence-modern-drummer.md](/post/j-dilla-influence-modern-drummer/)
+                  * [/if-nobody-listened.md](/post/if-nobody-listened/)
+                  * [/fave-albums-2020.md](/post/fave-albums-2020/)
+                </Markdown>
+            </section>
+      
+            <section>
+              <h2 class="wiki-h2">Out loud</h2>
+              <ul class="post-list">
+                {remoteData.map((item) => (
+                <li class="post-preview wiki-listing post-list">
+            <a href={item.link}>{item.title.rendered}</a>
+          </li>
+             ))}
+             {remoteData2.map((item) => (
+                <li class="post-preview wiki-listing post-list">
+            <a href={item.link}>{item.title.rendered}</a>
+          </li>
+             ))}
+             </ul>
+              <h2 class="wiki-h2">Second opinions</h2>
+                <Markdown>
+                  * [How the SP-404 Came to Dominate the Global Beat Scene](https://reverb.com/news/a-history-of-the-sp-404)
+                  * [Searching for Tomorrow: The Story of Madlib and DOOM's Madvillainy](https://pitchfork.com/features/article/9478-searching-for-tomorrow-the-story-of-madlib-and-dooms-madvillainy/)
+                </Markdown>
+            </section>
+        </article>
+      
+    </div>
+    <BlogFooter></BlogFooter>
+  </body>
+</html>

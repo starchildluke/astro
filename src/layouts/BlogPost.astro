@@ -3,21 +3,26 @@ import { Markdown } from 'astro/components';
 import BaseHead from '../components/BaseHead.astro';
 import BlogHeader from '../components/BlogHeader.astro';
 import BlogPost from '../components/BlogPost.astro';
+import BlogFooter from '../components/BlogFooter.astro';
+
+let metaTitle = ' | Luke Alex Davis';
 
 const {content} = Astro.props;
-const {title, description, publishDate, author, heroImage, permalink} = content;
+const {title, description, date, author, slug, canonicalURL} = content;
+
 ---
-<html>
+<html lang="en">
   <head>
-    <BaseHead title={title} description={description} permalink={permalink} />
-    <link rel="stylesheet" href="/blog.css" />
+    <BaseHead title={title + metaTitle} description={description} canonicalURL={canonicalURL} />
+    <link rel="stylesheet" href="/style/blog.css" />
   </head>
 
   <body>
     <BlogHeader />
-    <BlogPost title={title} author={author} heroImage={heroImage} publishDate={publishDate}>
+    <BlogPost title={title} date={date}>
       <slot />
     </BlogPost>
+    <BlogFooter />
   </body>
 </html>
 

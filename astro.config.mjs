@@ -1,5 +1,6 @@
 export default {
   buildOptions: {
-    sitemap: true,
-  },
-}
+    site: "https://lukealexdavis.co.uk",
+    sitemap: true
+  }
+};

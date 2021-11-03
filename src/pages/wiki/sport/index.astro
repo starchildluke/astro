@@ -1,0 +1,187 @@
+---
+
+// Component Imports
+import { Markdown } from 'astro/components';
+import BaseHead from '../../../components/BaseHead.astro';
+import BlogHeader from '../../../components/BlogHeader.astro';
+import BlogFooter from '../../../components/BlogFooter.astro';
+import Breadcrumbs from '../../../components/Breadcrumbs.astro';
+import site from '../../../data/site.json'
+
+export interface Props {
+  post: any;
+}
+
+const { post } = Astro.props;
+
+const remoteData = await fetch('https://playrface.co.uk/wp-json/wp/v2/posts').then(response => response.json());
+
+// Component Script:
+// You can write any JavaScript/TypeScript that you'd like here.
+// It will run during the build, but never in the browser.
+// All variables are available to use in the HTML template below.
+let metaTitle = ' | Luke Alex Davis';
+let title = 'Sport';
+let slug = '/wiki/sport/';
+let description = "A wiki page all about sport.";
+let domain = "https://lukealexdavis.co.uk"
+
+---
+<html lang="en">
+  <head>
+    <BaseHead title={title + metaTitle} description={description} canonicalURL={domain + slug} />
+    <link rel="stylesheet" href="/style/blog.css" />
+
+    <style>
+      
+      body {
+        width: 100%;
+        display: flex;
+      }
+
+      header {
+        width: 100%;
+        height: 100%;
+        background-color: var(--theme-bg-offset);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .content {
+        margin-bottom: 8rem;
+      }
+
+      .content :global(main > * + *) {
+        margin-top: 1rem;
+      }
+
+      .intro {
+        padding-bottom: 1.4rem;
+      }
+
+      .intro > * {
+        margin: 0;
+      }
+
+      .content :global(main > * + *) {
+        margin-top: 1rem;
+      }
+
+      .post-listing {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        }
+
+      .post-preview {
+        padding-bottom: 1rem;
+      }
+
+      .post-listing a {
+        max-width: 60%;
+      }
+
+      .publish-date {
+        letter-spacing: 2px;
+      }
+
+      header {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        align-items: flex-start;
+        justify-content: center;
+
+        padding-bottom: 2rem;
+      }
+
+      .desc {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--color-grey-800);
+      }
+
+      .title, .publish-date {
+        margin: 0;
+      }
+
+      .publish-date {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+
+      .title {
+        font-size: 2.25rem;
+        font-weight: 700;
+        color: var(--theme-text);
+      }
+
+      .wiki-h2 {
+        margin-bottom: 2rem;
+      }
+
+      .wiki-h2:after {
+         background: none repeat scroll 0 0 #295f2b;
+         bottom: -0.5rem;
+         content: "";
+         display: block;
+         height: 0.6rem;
+         position: relative;
+         width: 2.5rem;
+      }
+
+      .wiki-listing {
+        padding-bottom: 0.5rem;
+      }
+
+    </style>
+    
+  </head>
+
+  <body>
+    <BlogHeader />
+      <div class="layout">
+        <article class="content">
+            <section class="intro">
+          <h1>{title}</h1>
+          <p class="desc">{description}</p>
+        </section>
+        <section>
+          <h2 class="wiki-h2">Inner voice</h2>
+          <Markdown>
+          * [**/roger-federer**](/wiki/sport/roger-federer/)
+            * [/last-donut-of-the-night-when-federer-dilla-united-for-1-weekend.md](/post/last-donut-of-the-night-when-federer-dilla-united-for-1-weekend/)
+            * [/khruangbin-and-federer.md](/post/khruangbin-and-federer/)
+            * [/roger-federer-numbers-game.md](/post/roger-federer-numbers-game/)
+            * [/the-last-5-games-of-the-2017-australian-open.md](/post/the-last-5-games-of-the-2017-australian-open/)
+          * [/teams-i-look-out-for-post-man-utd.md](/post/teams-i-look-out-for-post-man-utd/)
+          * [/release-notes/release-notes-1.md](/post/release-notes/release-notes-1/)
+
+          </Markdown>
+        </section>
+      <section>
+      
+    <section>
+      <h2 class="wiki-h2">Out loud</h2>
+       <ul class="post-list">
+            
+              {remoteData.map((item) => (
+              <li class="post-preview post-listing post-list">
+            <a href={item.link}>{item.title.rendered}</a>
+          </li>
+             ))}
+        </ul>
+        <h2 class="wiki-h2">Second opinions</h2>
+        <Markdown>
+          * [Football Flashbacks: Ronaldo Luís Nazário de Lima](https://moesquare.medium.com/football-flashbacks-ronaldo-lu%C3%ADs-naz%C3%A1rio-de-lima-bebee6134d1c)
+        </Markdown>
+    </section>
+    </section>
+      </article>
+      
+    </div>
+    <BlogFooter></BlogFooter>
+  </body>
+</html>

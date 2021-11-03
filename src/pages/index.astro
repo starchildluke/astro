@@ -2,35 +2,32 @@
 // Component Imports
 import BaseHead from '../components/BaseHead.astro';
 import BlogHeader from '../components/BlogHeader.astro';
+import BlogFooter from '../components/BlogFooter.astro';
 import BlogPostPreview from '../components/BlogPostPreview.astro';
 
 // Component Script:
 // You can write any JavaScript/TypeScript that you'd like here.
 // It will run during the build, but never in the browser.
 // All variables are available to use in the HTML template below.
-let title = 'Example Blog';
-let description = 'The perfect starter for your perfect blog.';
-let permalink = 'https://example.com/';
-
-// Data Fetching: List all Markdown posts in the repo.
-let allPosts = Astro.fetchContent('./posts/*.md');
-allPosts = allPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
+let metaTitle = 'Home | Luke Alex Davis';
+let title = 'Luke Alex Davis';
+let description = 'The website of Luke Alex Davis';
+let slug = '/';
+let greetings = ['Bom dia!', 'Boa noite!', 'Buenos dias!', 'Buenos tardes!', 'Buenos noches!', 'Hola!', 'Ola!', 'Good morning!', 'Good afternoon!', 'Good evening!', 'Bonjour!', 'Bonsoir!'];
+let sayHello = greetings[Math.floor(Math.random()*greetings.length)];
 
 // Full Astro Component Syntax:
 // https://github.com/snowpackjs/astro/blob/main/docs/core-concepts/astro-components.md
 ---
-<html>
+<html lang="en">
   <head>
-    <BaseHead title={title} description={description} permalink={permalink} />
-    <link rel="stylesheet" href="/blog.css" />
+    <BaseHead title={metaTitle} description={description} canonicalURL={Astro.request.url} />
+    <link rel="stylesheet" href="/style/blog.css" />
 
     <style>
       body {
         width: 100%;
-        display: grid;
-        grid-template-rows: 3.5rem 1fr;
-        --gutter: 0.5rem;
-        --doc-padding: 2rem;
+        display: flex;
       }
 
       header {
@@ -43,7 +40,6 @@ allPosts = allPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
       }
 
       .content {
-        margin-top: 4rem;
         margin-bottom: 8rem;
       }
 
@@ -52,18 +48,11 @@ allPosts = allPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
       }
 
       .intro {
-        padding-bottom: 4rem;
-        margin-bottom: 2rem;
-        border-bottom: 4px solid var(--theme-divider);
+        padding-bottom: 1.4rem;
       }
 
       .intro > * {
         margin: 0;
-      }
-
-      .latest {
-        font-size: 2.5rem;
-        font-weight: 700;
       }
     </style>
   </head>
@@ -73,13 +62,17 @@ allPosts = allPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
     <div class="layout">
       <article class="content">
         <section class="intro">
-          <h1 class="latest">{title}</h1>
-          <p>{description}</p>
+          <h1>{title}</h1>
         </section>
         <section>
-          {allPosts.map(p => <BlogPostPreview post={p} />)}
-        </section>
+      <h2 id="hello">{sayHello}</h2>
+      <p>I'm a technical SEO, music producer, and content creator based in Nottingham, UK. I specialise in technical creativity, and problem solving with a pragmatic and minimalist style.</p>
+      <h2>Want to find out more?</h2>
+      <p><a href="mailto:luke@lukealexdavis.co.uk">Send an email</a> or <a href="https://twitter.com/LukeDavisSEO">a tweet</a>. Simple.</p>
+    </section>
+        
       </article>
     </div>
+    <BlogFooter></BlogFooter>
   </body>
 </html>

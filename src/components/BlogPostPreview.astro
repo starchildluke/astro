@@ -4,16 +4,13 @@ export interface Props {
 }
 
 const { post } = Astro.props;
+
 ---
 <article class="post-preview">
-  <header>
-    <h3 class="publish-date">{post.publishDate}</h3>
-    <a href={post.url}><h1 class="title">{post.title}</h1></a>
-  </header>
-  <main>
-    <p>{post.description}</p>
-    <a href={post.url}>Read more</a>
-  </main>
+  <li class="post-listing">
+    <a href={post.url}>{post.title}</a>
+    <span class="publish-date">{post.date}</span>
+    </li>
 </article>
 
 <style>
@@ -21,10 +18,23 @@ const { post } = Astro.props;
   margin-top: 1rem;
 }
 
+.post-listing {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  }
+
 .post-preview {
-  padding-bottom: 2rem;
-  margin-bottom: 2rem;
-  border-bottom: 4px solid var(--theme-divider);
+  padding-bottom: 1rem;
+}
+
+.post-listing a {
+  max-width: 60%;
+}
+
+.publish-date {
+  letter-spacing: 2px;
 }
 
 header {
@@ -45,8 +55,8 @@ header {
 
 .publish-date,
 .author {
-  font-size: 1.25rem;
-  color: var(--theme-text-lighter);
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .title {

@@ -1,0 +1,213 @@
+---
+// COMPONENTS
+
+import { Markdown } from 'astro/components';
+import BaseHead from '../../components/BaseHead.astro';
+import BlogHeader from '../../components/BlogHeader.astro';
+import BlogFooter from '../../components/BlogFooter.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import site from '../../data/site.json';
+import wiki from '../../data/wiki.json'
+
+// EXPORT
+
+export interface Props {
+  post: any;
+  metaTitle: string;
+  title: string;
+  slug: string;
+  description: string;
+  domain: string;
+}
+
+// PROPS
+
+const { post } = Astro.props;
+
+// HOW FETCHING!
+
+const remoteData = await fetch('https://cultrface.co.uk/wp-json/wp/v2/posts?categories=167').then(response => response.json());
+
+const remoteData2 = await fetch('https://distantarcade.co.uk/wp-json/wp/v2/posts?tags=257').then(response => response.json());
+
+const remoteData3 = await fetch('https://sampleface.co.uk/wp-json/wp/v2/posts?tags=3000').then(response => response.json());
+
+const remoteData4 = await fetch('https://logicface.co.uk/wp-json/wp/v2/posts?tags=277').then(response => response.json());
+
+// METADATA VARIABLES
+
+let title = 'Books';
+let slug = '/wiki/books/';
+let description = 'A wiki page all about books.';
+let domain = "https://lukealexdavis.co.uk"
+
+---
+<html lang="en">
+  <head>
+    <BaseHead title={'wiki/' + title.toLowerCase()} description={description} canonicalURL={domain + slug} />
+    <link rel="stylesheet" href="/style/blog.css" />
+
+<style>
+      
+      body {
+        width: 100%;
+        display: flex;
+      }
+
+      header {
+        width: 100%;
+        height: 100%;
+        background-color: var();
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .content {
+        margin-bottom: 8rem;
+      }
+
+      .content :global() {
+        margin-top: 1rem;
+      }
+
+      .intro {
+        padding-bottom: 1.4rem;
+      }
+
+      .intro > * {
+        margin: 0;
+      }
+
+      .content :global() {
+        margin-top: 1rem;
+      }
+
+      .post-listing {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        }
+
+      .post-preview {
+        padding-bottom: 1rem;
+      }
+
+      .post-listing a {
+        max-width: 60%;
+      }
+
+      .publish-date {
+        letter-spacing: 2px;
+      }
+
+      header {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        align-items: flex-start;
+        justify-content: center;
+
+        padding-bottom: 2rem;
+      }
+
+      .desc {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var();
+      }
+
+      .title, .publish-date {
+        margin: 0;
+      }
+
+      .publish-date {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+
+      .title {
+        font-size: 2.25rem;
+        font-weight: 700;
+        color: var();
+      }
+
+      .wiki-h2 {
+        margin-bottom: 2rem;
+      }
+
+      .wiki-h2:after {
+         background: none repeat scroll 0 0 #295f2b;
+         bottom: -0.5rem;
+         content: "";
+         display: block;
+         height: 0.6rem;
+         position: relative;
+         width: 2.5rem;
+      }
+
+      .wiki-listing {
+        padding-bottom: 0.5rem;
+      }
+
+    </style>
+
+</head>
+
+  <body>
+    <BlogHeader />
+      <div class="layout">
+        <article class="content">
+          <Breadcrumbs title={title}/>
+            <section class="intro">
+
+              <h1>{title}</h1>
+              <p class="desc">{description}</p>
+       </section>
+            <section>
+             
+              <h2 class="wiki-h2">Inner voice</h2>
+                <Markdown>
+                  * [/12-facts-i-didnt-know-about-pokemon.md](/post/12-facts-i-didnt-know-about-pokemon/)
+                  * [/boom-tetris-for-jeff.md](/post/boom-tetris-for-jeff/)
+                  * [/my-new-obsession-is-sega.md](/post/my-new-obsession-is-sega/)
+                  * [/my-five-favourite-video-games-of-all-time.md](/post/my-five-favourite-video-games-of-all-time/)
+                </Markdown>
+            </section>
+      
+            <section>
+              <h2 class="wiki-h2">Out loud</h2>
+              <ul class="post-list">
+                {remoteData.map((item) => (
+                <li class="post-preview wiki-listing post-list">
+            <a href={item.link}>{item.title.rendered}</a>
+          </li>
+             ))}
+          {remoteData2.map((item) => (
+                <li class="post-preview wiki-listing post-list">
+            <a href={item.link}>{item.title.rendered}</a>
+          </li>
+             ))}
+             {remoteData3.map((item) => (
+                <li class="post-preview wiki-listing post-list">
+            <a href={item.link}>{item.title.rendered}</a>
+          </li>
+             ))}
+             {remoteData4.map((item) => (
+                <li class="post-preview wiki-listing post-list">
+            <a href={item.link}>{item.title.rendered}</a>
+          </li>
+             ))}
+             </ul>
+              <h2 class="wiki-h2">Second opinions</h2>
+                <Markdown>
+                  * Coming soon...
+                </Markdown>
+            </section>
+        </article>
+      
+    </div>
+    <BlogFooter></BlogFooter>
+  </body>
+</html>
