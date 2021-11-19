@@ -8,7 +8,7 @@ RewriteCond %{SERVER_PORT} 80
 RewriteRule ^(.*)$ https://lukealexdavis.co.uk/$1 [R,L]
 
 RewriteEngine on
-RewriteRule ^/?posts/(.*)$ /post/$1 [R=301,L]
+RewriteRule ^/?posts/(.*)/$ /post/(.*)/$1 [R=301,L]
 
 # Set content-type for fonts
 AddType font/woff .woff
