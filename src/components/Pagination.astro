@@ -7,6 +7,6 @@ export interface Props {
 const { prevUrl, nextUrl } = Astro.props;
 ---
   <div class="nav">
-    <a class="prev" href={prevUrl || '#'} aria-label="Previous Page">Prev</a>
-    <a class="next" href={nextUrl || '#'} aria-label="Next Page">Next</a>
+    <a class="page-links" href={prevUrl || '#'} aria-label="Previous Page">Prev</a>
+    <a class="page-links" href={nextUrl || '#'} aria-label="Next Page">Next</a>
   </div>
