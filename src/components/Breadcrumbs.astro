@@ -7,10 +7,10 @@ export interface Props {
 }
 
 const {
-  canonicalURL = "",
-  title = ""
+  title,
+  canonicalURL = Astro.request.url
 }: Props = Astro.props;
 
 ---
 
-<p><a href="/wiki/">wiki</a> &raquo; <a href="{canonicalURL}">{title}</a></p>
+<p><a href="/wiki/">wiki</a> &raquo; <a href={canonicalURL}>{title}</a></p>
