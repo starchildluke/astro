@@ -8,7 +8,7 @@ tags: 'SEO'
 
 I'm a little premature with this post but I feel like I tweet more about SEO than I write. At least in a personal capacity.
 
-[I wrote about my journey in digital marketing](/posts/eight/) when I got my job. Here is what I've learnt in my first year as a professional.
+[I wrote about my journey in digital marketing](/post/eight/) when I got my job. Here is what I've learnt in my first year as a professional.
 
 ## People
 ### Women in SEO are the best

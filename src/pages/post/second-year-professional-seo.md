@@ -6,7 +6,7 @@ layout: ../../layouts/BlogPost.astro
 tags: 'SEO'
 ---
 
-Today marks the second anniversary of me becoming a digital marketer ([read about my first year here](/posts/first-year-professional-seo/)).
+Today marks the second anniversary of me becoming a digital marketer ([read about my first year here](/post/first-year-professional-seo/)).
 
 Here is what I've learnt in my second year as a professional.
 

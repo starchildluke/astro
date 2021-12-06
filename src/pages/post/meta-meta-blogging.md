@@ -22,7 +22,7 @@ This, in turn, changed how readers perceived the remaining indie bloggers and th
 
 But back to the present day and the quote. That's exactly why I blog. I like to write about what I read, read about other people doing the same, and share my thoughts amongst it all. SEO has played a varying part in all that but I think therefore I write. And, yes, the spirit remains because apparently the flame hasn't died for about 10 years.
 
-I must admit, I do plug my Patreon in relation to this because all of this does cost me money ([and I discussed this last year](/posts/how-much-do-my-blogs-cost/)) but I don't try to acquire Andrew Sullivan or Laurie Penny levels of income (or try to attain their intellectual level of garbage that garner the money). My means are small in comparison and I feel if people enjoy it, they can pay it forward if that's a possibility for them. But I don't blog _for_ money. There's no money in content, at least not inherently, and certainly not in the kind of stuff I write.
+I must admit, I do plug my Patreon in relation to this because all of this does cost me money ([and I discussed this last year](/post/how-much-do-my-blogs-cost/)) but I don't try to acquire Andrew Sullivan or Laurie Penny levels of income (or try to attain their intellectual level of garbage that garner the money). My means are small in comparison and I feel if people enjoy it, they can pay it forward if that's a possibility for them. But I don't blog _for_ money. There's no money in content, at least not inherently, and certainly not in the kind of stuff I write.
 
 Time for another quote from the same piece:
 
