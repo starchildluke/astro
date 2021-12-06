@@ -1,16 +1,8 @@
 ---
-import site from '../data/site.json'
-
-export interface Props {
-  canonicalURL: string;
-  title: string;
-}
-
 const {
-  title,
-  canonicalURL = Astro.request.url
+  title
 }: Props = Astro.props;
 
 ---
 
-<p><a href="/wiki/">wiki</a> &raquo; <a href={canonicalURL}>{title}</a></p>
+<p><a href="/wiki/">wiki</a> &raquo; <a href={Astro.request.canonicalURL}>{title}</a></p>

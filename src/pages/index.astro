@@ -15,13 +15,14 @@ let description = 'The website of Luke Alex Davis';
 let slug = '/';
 let greetings = ['Bom dia!', 'Boa noite!', 'Buenos dias!', 'Buenos tardes!', 'Buenos noches!', 'Hola!', 'Ola!', 'Good morning!', 'Good afternoon!', 'Good evening!', 'Bonjour!', 'Bonsoir!'];
 let sayHello = greetings[Math.floor(Math.random()*greetings.length)];
+let canonicalURL = Astro.request.canonicalURL
 
 // Full Astro Component Syntax:
 // https://github.com/snowpackjs/astro/blob/main/docs/core-concepts/astro-components.md
 ---
 <html lang="en">
   <head>
-    <BaseHead title={metaTitle} description={description} canonicalURL={Astro.request.url} />
+    <BaseHead title={metaTitle} description={description} canonicalURL={canonicalURL} />
     <link rel="stylesheet" href="/style/blog.css" />
 
     <style>
