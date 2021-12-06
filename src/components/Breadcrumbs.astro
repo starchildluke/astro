@@ -1,8 +1,8 @@
 ---
 const {
-  title
+  title, canonicalURL
 }: Props = Astro.props;
 
 ---
 
-<p><a href="/wiki/">wiki</a> &raquo; <a href={Astro.request.canonicalURL.href}>{title}</a></p>
+<p><a href="/wiki/">wiki</a> &raquo; <a href={canonicalURL}>{title}</a></p>
