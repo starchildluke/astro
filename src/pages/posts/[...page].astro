@@ -1,43 +1,26 @@
 ---
-
-// Component Imports
 import BaseHead from '../../components/BaseHead.astro';
 import BlogHeader from '../../components/BlogHeader.astro';
 import Pagination from '../../components/Pagination.astro';
 import BlogFooter from '../../components/BlogFooter.astro';
 import site from '../../data/site.json'
 
-// Component Script:
-// You can write any JavaScript/TypeScript that you'd like here.
-// It will run during the build, but never in the browser.
-// All variables are available to use in the HTML template below.
-let metaTitle = ' | Luke Alex Davis';
-let domain = 'https://lukealexdavis.co.uk';
-let title = 'Posts';
-let description = "";
+export async function getStaticPaths({rss, paginate}) {
+  // Load your data with fetch(), Astro.fetchContent(), etc.
+  let allPosts = Astro.fetchContent('../post/*.md')
+  allPosts = allPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
+  // Return a paginated collection of paths for all posts
+  return paginate(allPosts, { pageSize: 25 });
+}
 
-/**
- * Updated for the recent getStaticPaths() Astro API!
- *
- * This assumes there are MD files containing a title, date, and url
- * in the post's frontmatter.
- *
- * If this is saved to src/pages/posts, the result here will be a main /posts/index.html file with the first page,
- * as well as /posts/1/index.html, etc. if there are enough posts to be split into multiple pages
- */
+// If set up correctly, The page prop now has everything that
+// you need to render a single page (see next section).
+const { page } = Astro.props
   
 interface Post {
     title: string
     date: string
     url: string
-}
-
-export async function getStaticPaths({ paginate }) {
-  // Load your data with fetch(), Astro.fetchContent(), etc.
-  let allPosts = Astro.fetchContent('../post/*.md')
-  allPosts = allPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
-  // Return a paginated collection of paths for all posts
-  return paginate(allPosts, { pageSize: 25 })
 }
 
 /**
@@ -103,14 +86,18 @@ function postsByYear(posts: Post[]) {
     .sort((a, b) => b.year - a.year);
 }
 
-
-// If set up correctly, The page prop now has everything that
-// you need to render a single page (see next section).
-const { page } = Astro.props
-
 // Take the current page of posts from getStaticPaths' paginate helper
 // and pass them to postsByYear to get a sorted list of year/posts data
 const postGroups = postsByYear(page.data)
+
+// Component Script:
+// You can write any JavaScript/TypeScript that you'd like here.
+// It will run during the build, but never in the browser.
+// All variables are available to use in the HTML template below.
+let metaTitle = ' | Luke Alex Davis';
+let domain = 'https://lukealexdavis.co.uk';
+let title = 'Posts';
+let description = "";
 
 if (page.currentPage == 1 && page.lastPage == page.currentPage) {
   prevNext = [];
@@ -124,7 +111,7 @@ if (page.currentPage == 1 && page.lastPage == page.currentPage) {
 ---
 <html lang="en">
   <head>
-    <BaseHead title={title + metaTitle} description={description} canonicalURL={page.url.current} />
+    <BaseHead title={title + ' (Page ' + page.currentPage + '/' + page.lastPage + ')' + metaTitle} description={description} canonicalURL={page.url.current} />
     <link rel="stylesheet" href="/style/blog.css" />
 
     <style>
@@ -212,9 +199,6 @@ if (page.currentPage == 1 && page.lastPage == page.currentPage) {
       <article class="content">
         <section class="intro">
           <h1>{title + ' (Page ' + page.currentPage + '/' + page.lastPage + ')'}</h1>
-        </section>
-        <section>
-          <p>You can follow these blog posts via <a href="/feed/blog.xml">RSS</a> too.</p>
         </section>
     {postGroups.map(({ year, items }) => (
   <section>
