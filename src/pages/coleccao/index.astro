@@ -158,7 +158,7 @@ let imgURL = "https://img.cultrface.co.uk/coleccao-media/"
           <section class="coleccao-layout">
                   {img.images.map((item) => (
                       <figure class="coleccao-box">
-                        <a href="{item.url}"><img src="{imgURL + item.img}" alt="{item.alt}" loading="lazy"></a>
+                        <a href={item.url}><img src={imgURL + item.img} alt={item.alt} loading="lazy"></a>
                         <figcaption>{item.alt}</figcaption>
                       </figure>
                  ))}
