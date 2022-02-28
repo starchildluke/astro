@@ -1,7 +1,7 @@
 ---
 title: 'Introducing RALTS (Really Awesome Lexicon and Tag Suggester)'
 published: true
-date: '22 Feb 2022'
+date: '28 Feb 2022'
 layout: ../../layouts/BlogPost.astro
 tags: python
 ---
