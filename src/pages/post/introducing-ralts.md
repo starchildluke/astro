@@ -632,6 +632,36 @@ def data_viz():
 
 The penultimate function converts those dictionaries into dataframes. The data is aggregated by relevance score (if multiple instances of an entity are found, I get the mean relevance score), and the max value of existing tags (1 or 0). For multiple URLs, I've used describe() to give me a full range of statistical data. Most of it is superfluous but it was the best thing I could find to get the data I needed.
 
+Below is a table of the top 5 entities found in this blog post, ordered by relevance score:
+
+| Keyword     					| Relevance Score | Existing tag |
+| -----------------------------	| --------------- | ------------ |
+| Website      					| 0.6620       	  | 0			 |
+| Search engine optimization    | 0.6460          | 0			 |
+| Web scraping					| 0.6450		  | 0			 |
+| World Wide Website			| 0.6440		  | 0			 |
+| HTML							| 0.6320		  | 0			 |
+
+A table of the top 5 topics found in this blog post, ordered by relevance score:
+
+| Topic     					| Relevance Score | Existing tag |
+| -----------------------------	| --------------- | ------------ |
+| API      						| 1.0000       	  | 0			 |
+| Blog    						| 1.0000          | 0			 |
+| Computer science				| 1.0000		  | 1			 |
+| Computing						| 1.0000		  | 0			 |
+| Google Search					| 1.0000		  | 0			 |
+
+And a table of the top 5 categories found in this blog post, ordered by relevance score:
+
+| Category     																	| Relevance Score |
+| -----------------------------------------------------------------------------	| --------------- |
+| economy, business and finance>computing and information technology      		| 0.8100		  | 
+| economy, business and finance>computing and information technology>software  	| 0.7330		  |
+| arts, culture and entertainment>internet										| 0.6020		  |
+| arts, culture and entertainment>language										| 0.5620		  |
+| science and technology>engineering											| 0.5360		  |
+
 ### 10. Execution of the all the functions to make it work
 
 ```

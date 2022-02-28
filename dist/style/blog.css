@@ -363,6 +363,12 @@ img {
 table {
   border-spacing: 0;
   border-collapse: collapse;
+  margin-bottom: 1.38rem;
+  background: #dadada;
+}
+
+thead {
+  background: #b0b0b0;
 }
 
 tr {
@@ -377,10 +383,11 @@ tr:first-child {
 
 th {
   text-align: left;
+  font-weight: 900;
 }
 
 th, td {
-  padding: 0.25rem 1rem;
+  padding: 0.5rem 2rem;
 }
 
 figcaption {

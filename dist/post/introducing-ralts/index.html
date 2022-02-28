@@ -553,7 +553,106 @@ def data_viz():
 		grouped_df_cat = df_cat.groupby('Category').describe().round(3)
 		grouped_df_cat = grouped_df_cat.reset_index()
 		st.header('Categories')
-		st.dataframe(grouped_df_cat)</code></pre><p>The penultimate function converts those dictionaries into dataframes. The data is aggregated by relevance score (if multiple instances of an entity are found, I get the mean relevance score), and the max value of existing tags (1 or 0). For multiple URLs, I’ve used describe() to give me a full range of statistical data. Most of it is superfluous but it was the best thing I could find to get the data I needed.</p><h3 id="10-execution-of-the-all-the-functions-to-make-it-work">10. Execution of the all the functions to make it work</h3><pre class="language-null"><code data-astro-raw="" class="language-null"># Execute functions
+		st.dataframe(grouped_df_cat)</code></pre><p>The penultimate function converts those dictionaries into dataframes. The data is aggregated by relevance score (if multiple instances of an entity are found, I get the mean relevance score), and the max value of existing tags (1 or 0). For multiple URLs, I’ve used describe() to give me a full range of statistical data. Most of it is superfluous but it was the best thing I could find to get the data I needed.</p><p>Below is a table of the top 5 entities found in this blog post, ordered by relevance score:</p><table>
+<thead>
+<tr>
+<th>Keyword</th>
+<th>Relevance Score</th>
+<th>Existing tag</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Website</td>
+<td>0.6620</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Search engine optimization</td>
+<td>0.6460</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Web scraping</td>
+<td>0.6450</td>
+<td>0</td>
+</tr>
+<tr>
+<td>World Wide Website</td>
+<td>0.6440</td>
+<td>0</td>
+</tr>
+<tr>
+<td>HTML</td>
+<td>0.6320</td>
+<td>0</td>
+</tr>
+</tbody>
+</table><p>A table of the top 5 topics found in this blog post, ordered by relevance score:</p><table>
+<thead>
+<tr>
+<th>Topic</th>
+<th>Relevance Score</th>
+<th>Existing tag</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>API</td>
+<td>1.0000</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Blog</td>
+<td>1.0000</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Computer science</td>
+<td>1.0000</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Computing</td>
+<td>1.0000</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Google Search</td>
+<td>1.0000</td>
+<td>0</td>
+</tr>
+</tbody>
+</table><p>And a table of the top 5 categories found in this blog post, ordered by relevance score:</p><table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Relevance Score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>economy, business and finance&gt;computing and information technology</td>
+<td>0.8100</td>
+</tr>
+<tr>
+<td>economy, business and finance&gt;computing and information technology&gt;software</td>
+<td>0.7330</td>
+</tr>
+<tr>
+<td>arts, culture and entertainment&gt;internet</td>
+<td>0.6020</td>
+</tr>
+<tr>
+<td>arts, culture and entertainment&gt;language</td>
+<td>0.5620</td>
+</tr>
+<tr>
+<td>science and technology&gt;engineering</td>
+<td>0.5360</td>
+</tr>
+</tbody>
+</table><h3 id="10-execution-of-the-all-the-functions-to-make-it-work">10. Execution of the all the functions to make it work</h3><pre class="language-null"><code data-astro-raw="" class="language-null"># Execute functions
 if tag_ideas:
 	all_blogs()
 elif submit and input_type and input_type == 'Text':
