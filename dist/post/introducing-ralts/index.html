@@ -101,7 +101,7 @@
 <li>
 <p>Labels - Forms of annotation that classify what a text is about. They’re basically like tags.</p>
 </li>
-</ul><h2 id="tech_requirements">Tech requirements</h2><p>These are the following packages used in the script:</p><pre class="language-null"><code data-astro-raw="" class="language-null">streamlit&gt;=1.0.0
+</ul><h2 id="tech_requirements">Tech requirements</h2><p>These are the following Python packages used in the script:</p><pre class="language-null"><code data-astro-raw="" class="language-null">streamlit&gt;=1.0.0
 pandas&gt;=1.2.3
 transformers&gt;=4.12.3
 requests&gt;=2.25.1
@@ -109,7 +109,7 @@ bs4&gt;=0.0.1
 plotly&gt;=5.4.0
 numpy&gt;=1.18.0
 textrazor==1.4.0
-tensorflow&gt;=2.7.0</code></pre><p>Streamlit for the UI, pandas for data manipulation, Transformers/Pipeline for the language model, requests and BeautifulSoup for web scraping, plotly and numpy for data viz, TextRazor for the entities and such, and TensorFlow for the language model.</p><p>Regarding TensorFlow, the language model I’m using is called <a href="https://huggingface.co/valhalla/distilbart-mnli-12-1">DistilBart-MNLI</a> and instructions can be found on the Hugging Face link about how to download, fine-tune, deploy, and use in Transformers via Python.</p><h2 id="the_code">The code</h2><p>The code is split into different parts:</p><h3 id="1-textrazor-api-key-and-client-details">1. TextRazor API key and client details</h3><pre class="language-null"><code data-astro-raw="" class="language-null"># TextRazor details
+tensorflow&gt;=2.7.0</code></pre><p><a href="https://streamlit.io/">Streamlit</a> for the UI, <a href="https://pandas.pydata.org/">pandas</a> for data manipulation, <a href="https://huggingface.co/docs/transformers/main_classes/pipelines">Transformers</a> for the language model, requests and <a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/">BeautifulSoup</a> for web scraping, <a href="https://plotly.com/">plotly</a> and <a href="https://numpy.org/">NumPy</a> for data viz, <a href="https://www.textrazor.com/">TextRazor</a> for the entities and such, and <a href="https://www.tensorflow.org/">TensorFlow</a> for the language model.</p><p>Regarding TensorFlow, the language model I’m using is called <a href="https://huggingface.co/valhalla/distilbart-mnli-12-1">DistilBart-MNLI</a> and instructions can be found on the Hugging Face link about how to download, fine-tune, deploy, and use in Transformers via Python.</p><h2 id="the_code">The code</h2><p>The code is split into different parts:</p><h3 id="1-textrazor-api-key-and-client-details">1. TextRazor API key and client details</h3><pre class="language-null"><code data-astro-raw="" class="language-null"># TextRazor details
 textrazor.api_key = API_KEY
 
 client = textrazor.TextRazor(extractors=["entities", "topics"])
@@ -148,13 +148,18 @@ def plot_result(top_topics, scores):
 def req(url):
 	resp = requests.get(url)
 	soup = BeautifulSoup(resp.content, 'html.parser')
-	remove_comments = soup.find("div", id="comments")
-	remove_comments.extract()
-	remove_secondary = soup.find("div", id="secondary")
-	remove_secondary.extract()
-	ext_t = [t.text for t in soup.find_all(['h1', 'p'])]
-	paragraphs = ' '.join(ext_t)
-	return paragraphs
+	if soup.find("div", id="comments") or soup.find("div", id="secondary"):
+		remove_comments = soup.find("div", id="comments")
+		remove_comments.extract()
+		remove_secondary = soup.find("div", id="secondary")
+		remove_secondary.extract()
+		ext_t = [t.text for t in soup.find_all(['h1', 'p'])]
+		paragraphs = ' '.join(ext_t)
+		return paragraphs
+	else:
+		ext_t = [t.text for t in soup.find_all(['h1', 'p'])]
+		paragraphs = ' '.join(ext_t)
+		return paragraphs
 
 # Main function
 def main():
@@ -177,7 +182,7 @@ def main():
 			top_topics, scores = classify(
 				txt, classify_topic_score)
 
-	plot_result(top_topics[::-1][-10:], scores[::-1][-10:])</code></pre><p>There’s a lot here so I’ll break it down further.</p><p>The first function loads the distilbart model for this task and uses zero-shot classification to determine classification. I have also set a cache so it doesn’t reload every time, which saves loading time and CPU/GPU resources.</p><p>The second function is for the actual classification. It loads the model, and generates output results containing the labels and the relevance scores for each. Which labels we use are determined later.</p><p>The third function plots a horizontal bar chart of the top 10 labels alongside their scores. This allows us to visualise the best classification labels of the analysed text.</p><p>The fourth function is the URL scraper. It takes a URL, extracts the HTML, ignores any comments sections or text found in sidebars (thanks to Jess for the help with that) and finally filters the remaining text down to just the H1 title and text found in p tags, ready for analysis.</p><p>The fifth and final function brings everything together. It creates dataframes out of the found entities and topics and orders them by relevance score for ease.</p><h3 id="3-dictionaries">3. Dictionaries</h3><pre class="language-null"><code data-astro-raw="" class="language-null">kw_dict = {
+	plot_result(top_topics[::-1][-10:], scores[::-1][-10:])</code></pre><p>There’s a lot here so I’ll break it down further.</p><p>The first function loads the distilbart model for this task and uses zero-shot classification to determine classification. I have also set a cache so it doesn’t reload every time, which saves loading time and CPU/GPU resources.</p><p>The second function is for the actual classification. It loads the model, and generates output results containing the labels and the relevance scores for each. Which labels we use are determined later.</p><p>The third function plots a horizontal bar chart of the top 10 labels alongside their scores. This allows us to visualise the best classification labels of the analysed text.</p><p>The fourth function is the URL scraper. It takes a URL, extracts the HTML, ignores any comments sections or text found in sidebars (<a href="https://twitter.com/jessthebp/status/1496153327779950604">thanks to Jess for the help with that</a>) and finally filters the remaining text down to just the H1 title and text found in p tags, ready for analysis.</p><p>The fifth and final function brings everything together. It creates dataframes out of the found entities and topics and orders them by relevance score for ease.</p><h3 id="3-dictionaries">3. Dictionaries</h3><pre class="language-null"><code data-astro-raw="" class="language-null">kw_dict = {
 	'Keyword': []
 }
 
@@ -548,7 +553,7 @@ def data_viz():
 		grouped_df_cat = df_cat.groupby('Category').describe().round(3)
 		grouped_df_cat = grouped_df_cat.reset_index()
 		st.header('Categories')
-		st.dataframe(grouped_df_cat)</code></pre><p>The penultimate function converts those dictionaries into dataframes. The data is aggregated by relevance score (if multiple instances of an entity are found, I get the mean relevance score), and the max value of existing tags (1 or 0). For multiple URLs, I’ve used describe() to give me a full range of statistical data. Most of it is superfluous but it was the best thing I could find to get the data I needed. Bad coding, I know!</p><h3 id="10-execution-of-the-all-the-functions-to-make-it-work">10. Execution of the all the functions to make it work</h3><pre class="language-null"><code data-astro-raw="" class="language-null"># Execute functions
+		st.dataframe(grouped_df_cat)</code></pre><p>The penultimate function converts those dictionaries into dataframes. The data is aggregated by relevance score (if multiple instances of an entity are found, I get the mean relevance score), and the max value of existing tags (1 or 0). For multiple URLs, I’ve used describe() to give me a full range of statistical data. Most of it is superfluous but it was the best thing I could find to get the data I needed.</p><h3 id="10-execution-of-the-all-the-functions-to-make-it-work">10. Execution of the all the functions to make it work</h3><pre class="language-null"><code data-astro-raw="" class="language-null"># Execute functions
 if tag_ideas:
 	all_blogs()
 elif submit and input_type and input_type == 'Text':
@@ -567,7 +572,7 @@ elif submit and input_type == 'Multiple URLs':
 <li>To find internal linking opportunities, particularly those interested in using LOD (linked open data)</li>
 <li>Content ideas</li>
 <li>To check if your text is aligned how you want it</li>
-</ul><h2 id="evaluation">Evaluation</h2><p>This script is not perfect. It’s rough around the edges and works for my specific use case so for anyone else, they would need to tweak it or potentially rewrite it for their own needs.</p><p>One significant change that could be made is with the use of the BART model. This isn’t fine-tuned in anyway so its classification could be improved if you trained the model on specific datasets.</p><p>There are also no means of downloading the outputted data. This is a personal preference as I tend to read off the screen and move on but for other use cases, you may want the CSVs. That can be added in.</p><h2 id="summary">Summary</h2><p>I hope this has been insightful for anyone reading. While I’ve been learning and it makes sense to me, I appreciate it can feel daunting to take this in without the same knowledge. I rarely have to explain my personal projects and don’t like to say “hey, I made this thing” because who cares (that’s what I say in my head anyway). At the very least, I can say I did a thing and explained why and it will benefit me.</p>
+</ul><h2 id="evaluation">Evaluation</h2><p>This Python script is not perfect. It’s rough around the edges and works for my specific use case so for anyone else, they would need to tweak it or potentially rewrite it for their own needs.</p><p>One significant change that could be made is with the use of the BART model. This isn’t fine-tuned in anyway so its classification could be improved if you trained the model on specific datasets.</p><p>There are also no means of downloading the outputted data. This is a personal preference as I tend to read off the screen and move on but for other use cases, you may want the CSVs. That can be added in.</p><h2 id="summary">Summary</h2><p>I hope this has been insightful for anyone reading. While I’ve been learning Python and it makes sense to me, I appreciate it can feel daunting to take this in without the same knowledge. I rarely have to explain my personal projects and don’t like to say “hey, I made this thing” because who cares (that’s what I say in my head anyway). At the very least, I can say I did a thing and explained why and it will benefit me.</p>
     </main>
   </div></article>
 </div>

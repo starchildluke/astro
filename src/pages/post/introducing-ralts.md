@@ -72,7 +72,7 @@ So, about that original explanation. Let's look at some definitions:
 
 <h2 id="tech_requirements">Tech requirements</h2>
 
-These are the following packages used in the script:
+These are the following Python packages used in the script:
 
 ```
 streamlit>=1.0.0
@@ -86,7 +86,7 @@ textrazor==1.4.0
 tensorflow>=2.7.0
 ```
 
-Streamlit for the UI, pandas for data manipulation, Transformers/Pipeline for the language model, requests and BeautifulSoup for web scraping, plotly and numpy for data viz, TextRazor for the entities and such, and TensorFlow for the language model.
+[Streamlit](https://streamlit.io/) for the UI, [pandas](https://pandas.pydata.org/) for data manipulation, [Transformers](https://huggingface.co/docs/transformers/main_classes/pipelines) for the language model, requests and [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) for web scraping, [plotly](https://plotly.com/) and [NumPy](https://numpy.org/) for data viz, [TextRazor](https://www.textrazor.com/) for the entities and such, and [TensorFlow](https://www.tensorflow.org/) for the language model.
 
 Regarding TensorFlow, the language model I'm using is called [DistilBart-MNLI](https://huggingface.co/valhalla/distilbart-mnli-12-1) and instructions can be found on the Hugging Face link about how to download, fine-tune, deploy, and use in Transformers via Python.
 
@@ -144,13 +144,18 @@ def plot_result(top_topics, scores):
 def req(url):
 	resp = requests.get(url)
 	soup = BeautifulSoup(resp.content, 'html.parser')
-	remove_comments = soup.find("div", id="comments")
-	remove_comments.extract()
-	remove_secondary = soup.find("div", id="secondary")
-	remove_secondary.extract()
-	ext_t = [t.text for t in soup.find_all(['h1', 'p'])]
-	paragraphs = ' '.join(ext_t)
-	return paragraphs
+	if soup.find("div", id="comments") or soup.find("div", id="secondary"):
+		remove_comments = soup.find("div", id="comments")
+		remove_comments.extract()
+		remove_secondary = soup.find("div", id="secondary")
+		remove_secondary.extract()
+		ext_t = [t.text for t in soup.find_all(['h1', 'p'])]
+		paragraphs = ' '.join(ext_t)
+		return paragraphs
+	else:
+		ext_t = [t.text for t in soup.find_all(['h1', 'p'])]
+		paragraphs = ' '.join(ext_t)
+		return paragraphs
 
 # Main function
 def main():
@@ -184,7 +189,7 @@ The second function is for the actual classification. It loads the model, and ge
 
 The third function plots a horizontal bar chart of the top 10 labels alongside their scores. This allows us to visualise the best classification labels of the analysed text.
 
-The fourth function is the URL scraper. It takes a URL, extracts the HTML, ignores any comments sections or text found in sidebars (thanks to Jess for the help with that) and finally filters the remaining text down to just the H1 title and text found in p tags, ready for analysis.
+The fourth function is the URL scraper. It takes a URL, extracts the HTML, ignores any comments sections or text found in sidebars ([thanks to Jess for the help with that](https://twitter.com/jessthebp/status/1496153327779950604)) and finally filters the remaining text down to just the H1 title and text found in p tags, ready for analysis.
 
 The fifth and final function brings everything together. It creates dataframes out of the found entities and topics and orders them by relevance score for ease.
 
@@ -621,7 +626,7 @@ def data_viz():
 		st.dataframe(grouped_df_cat)
 ```
 
-The penultimate function converts those dictionaries into dataframes. The data is aggregated by relevance score (if multiple instances of an entity are found, I get the mean relevance score), and the max value of existing tags (1 or 0). For multiple URLs, I've used describe() to give me a full range of statistical data. Most of it is superfluous but it was the best thing I could find to get the data I needed. Bad coding, I know!
+The penultimate function converts those dictionaries into dataframes. The data is aggregated by relevance score (if multiple instances of an entity are found, I get the mean relevance score), and the max value of existing tags (1 or 0). For multiple URLs, I've used describe() to give me a full range of statistical data. Most of it is superfluous but it was the best thing I could find to get the data I needed.
 
 ### 10. Execution of the all the functions to make it work
 
@@ -658,7 +663,7 @@ But this kind of script is for any of the following types of people:
 
 <h2 id="evaluation">Evaluation</h2>
 
-This script is not perfect. It's rough around the edges and works for my specific use case so for anyone else, they would need to tweak it or potentially rewrite it for their own needs.
+This Python script is not perfect. It's rough around the edges and works for my specific use case so for anyone else, they would need to tweak it or potentially rewrite it for their own needs.
 
 One significant change that could be made is with the use of the BART model. This isn't fine-tuned in anyway so its classification could be improved if you trained the model on specific datasets.
 
@@ -666,4 +671,4 @@ There are also no means of downloading the outputted data. This is a personal pr
 
 <h2 id="summary">Summary</h2>
 
-I hope this has been insightful for anyone reading. While I've been learning and it makes sense to me, I appreciate it can feel daunting to take this in without the same knowledge. I rarely have to explain my personal projects and don't like to say "hey, I made this thing" because who cares (that's what I say in my head anyway). At the very least, I can say I did a thing and explained why and it will benefit me.
+I hope this has been insightful for anyone reading. While I've been learning Python and it makes sense to me, I appreciate it can feel daunting to take this in without the same knowledge. I rarely have to explain my personal projects and don't like to say "hey, I made this thing" because who cares (that's what I say in my head anyway). At the very least, I can say I did a thing and explained why and it will benefit me.
