@@ -189,6 +189,10 @@ The second function is for the actual classification. It loads the model, and ge
 
 The third function plots a horizontal bar chart of the top 10 labels alongside their scores. This allows us to visualise the best classification labels of the analysed text.
 
+Here's how the model classified this blog post:
+
+![A graph showing 10 labels the language model thinks my blog post is about. For example, the number 1 label is Blog with a 90% score](/images/classification-labels.jpg)
+
 The fourth function is the URL scraper. It takes a URL, extracts the HTML, ignores any comments sections or text found in sidebars ([thanks to Jess for the help with that](https://twitter.com/jessthebp/status/1496153327779950604)) and finally filters the remaining text down to just the H1 title and text found in p tags, ready for analysis.
 
 The fifth and final function brings everything together. It creates dataframes out of the found entities and topics and orders them by relevance score for ease.
