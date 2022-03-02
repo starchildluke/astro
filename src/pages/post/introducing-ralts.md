@@ -88,7 +88,7 @@ tensorflow>=2.7.0
 
 [Streamlit](https://streamlit.io/) for the UI, [pandas](https://pandas.pydata.org/) for data manipulation, [Transformers](https://huggingface.co/docs/transformers/main_classes/pipelines) for the language model, requests and [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) for web scraping, [plotly](https://plotly.com/) and [NumPy](https://numpy.org/) for data viz, [TextRazor](https://www.textrazor.com/) for the entities and such, and [TensorFlow](https://www.tensorflow.org/) for the language model.
 
-Regarding TensorFlow, the language model I'm using is called [DistilBart-MNLI](https://huggingface.co/valhalla/distilbart-mnli-12-1) and instructions can be found on the Hugging Face link about how to download, fine-tune, deploy, and use in Transformers via Python.
+Regarding TensorFlow, the language model I'm using is called [DistilBart-MNLI](https://huggingface.co/valhalla/distilbart-mnli-12-9) and instructions can be found on the Hugging Face link about how to download, fine-tune, deploy, and use in Transformers via Python.
 
 <h2 id="the_code">The code</h2>
 

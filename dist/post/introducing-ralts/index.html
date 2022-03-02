@@ -30,7 +30,7 @@
 <link rel="preload" href="/fonts/Archivo-Black.woff" as="font" type="font/woff" crossorigin="">
 <link rel="preload" href="/fonts/Karla-Light.woff2" as="font" type="font/woff" crossorigin="">
     <link rel="stylesheet" href="/style/blog.css">
-  <link rel="stylesheet" href="../../assets/the-last-5-games-of-the-2017-australian-open.539043ec.css">
+  <link rel="stylesheet" href="../../assets/feeling-guilty-for-pursuing-your-passions.a06da900.css">
 
 </head>
 
@@ -109,7 +109,7 @@ bs4&gt;=0.0.1
 plotly&gt;=5.4.0
 numpy&gt;=1.18.0
 textrazor==1.4.0
-tensorflow&gt;=2.7.0</code></pre><p><a href="https://streamlit.io/">Streamlit</a> for the UI, <a href="https://pandas.pydata.org/">pandas</a> for data manipulation, <a href="https://huggingface.co/docs/transformers/main_classes/pipelines">Transformers</a> for the language model, requests and <a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/">BeautifulSoup</a> for web scraping, <a href="https://plotly.com/">plotly</a> and <a href="https://numpy.org/">NumPy</a> for data viz, <a href="https://www.textrazor.com/">TextRazor</a> for the entities and such, and <a href="https://www.tensorflow.org/">TensorFlow</a> for the language model.</p><p>Regarding TensorFlow, the language model I’m using is called <a href="https://huggingface.co/valhalla/distilbart-mnli-12-1">DistilBart-MNLI</a> and instructions can be found on the Hugging Face link about how to download, fine-tune, deploy, and use in Transformers via Python.</p><h2 id="the_code">The code</h2><p>The code is split into different parts:</p><h3 id="1-textrazor-api-key-and-client-details">1. TextRazor API key and client details</h3><pre class="language-null"><code data-astro-raw="" class="language-null"># TextRazor details
+tensorflow&gt;=2.7.0</code></pre><p><a href="https://streamlit.io/">Streamlit</a> for the UI, <a href="https://pandas.pydata.org/">pandas</a> for data manipulation, <a href="https://huggingface.co/docs/transformers/main_classes/pipelines">Transformers</a> for the language model, requests and <a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/">BeautifulSoup</a> for web scraping, <a href="https://plotly.com/">plotly</a> and <a href="https://numpy.org/">NumPy</a> for data viz, <a href="https://www.textrazor.com/">TextRazor</a> for the entities and such, and <a href="https://www.tensorflow.org/">TensorFlow</a> for the language model.</p><p>Regarding TensorFlow, the language model I’m using is called <a href="https://huggingface.co/valhalla/distilbart-mnli-12-9">DistilBart-MNLI</a> and instructions can be found on the Hugging Face link about how to download, fine-tune, deploy, and use in Transformers via Python.</p><h2 id="the_code">The code</h2><p>The code is split into different parts:</p><h3 id="1-textrazor-api-key-and-client-details">1. TextRazor API key and client details</h3><pre class="language-null"><code data-astro-raw="" class="language-null"># TextRazor details
 textrazor.api_key = API_KEY
 
 client = textrazor.TextRazor(extractors=["entities", "topics"])
