@@ -46,7 +46,7 @@ I released my first proper Python project out in the open (not including the def
 
 ### 7. I love Google Search Console
 
-After three years of using Semrush and Ahrefs, my true love likes with Search Console. It's all about that granular data!
+After three years of using Semrush and Ahrefs, my true love lies with Search Console. It's all about that granular data!
 
 ### 8. I found a new API - thanks TextRazor!
 
