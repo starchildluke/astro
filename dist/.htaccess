@@ -11,6 +11,8 @@ RewriteRule ^(.*)$ https://lukealexdavis.co.uk/$1 [R,L]
 # RewriteCond %{/posts/} off  # don't rewrite if there's nothing after the slash
 # RewriteRule ^(.*)$ /post/$1 [R=301,NC,L] # rewrite to post
 
+RewriteRule ^posts/(..*)$ /post/$1 [R,L]
+
 # Set content-type for fonts
 AddType font/woff .woff
 
