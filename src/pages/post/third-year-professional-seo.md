@@ -18,7 +18,7 @@ This still hasn't changed from last year or the year before.
 
 I'm especially grateful to all the women of colour in the industry continuously breaking boundaries and getting into spaces that are still reserved for white male colleagues or creating their own.
 
-And a special shout out to the likes of Miracle Inameti-Archibong, Rejoice Ojiaku & Wilhemina Gilbertson-Davis of [B-DigitalUK](https://twitter.com/bdigital_uk), Sophie Logan, Carla Thomas, Amanda Jordan, Krystal Taing, Chima Mmeje, Crystal Carter, Tasha Amponsah-Antwi, and so many more Black women I could name.
+And a special shout out to the likes of Miracle Inameti-Archibong, Rejoice Ojiaku & Wilhemina Gilbertson-Davis of [B-DigitalUK](https://twitter.com/bdigital_uk), Sophie Logan, Carla Thomas, Amanda Jordan, Krystal Taing, Chima Mmeje, [Crystal Carter](https://www.crystalcarterseo.com/), Tasha Amponsah-Antwi, and so many more Black women I could name.
 
 ### 2. SEOs really love experts, huh?
 
