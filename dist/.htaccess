@@ -7,7 +7,7 @@ RewriteEngine On
 RewriteCond %{SERVER_PORT} 80
 RewriteRule ^(.*)$ https://lukealexdavis.co.uk/$1 [R,L]
 
-RewriteCond %{^posts/(.*)
+RewriteCond %{^posts/(.*)}
 RewriteCond %{/posts/} off
 RewriteRule ^(.*)$ /post/$1 [R=301,NC,L]
 
