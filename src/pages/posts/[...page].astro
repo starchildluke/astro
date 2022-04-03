@@ -8,7 +8,7 @@ import site from '../../data/site.json'
 export async function getStaticPaths({rss, paginate}) {
   // Load your data with fetch(), Astro.fetchContent(), etc.
   let allPosts = await Astro.glob('../post/*.md')
-  allPosts = allPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
+  allPosts = allPosts.sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date));
   // Return a paginated collection of paths for all posts
   return paginate(allPosts, { pageSize: 25 });
 }
@@ -98,6 +98,7 @@ let metaTitle = ' | Luke Alex Davis';
 let domain = 'https://lukealexdavis.co.uk';
 let title = 'Posts';
 let description = "";
+let prevNext;
 
 if (page.currentPage == 1 && page.lastPage == page.currentPage) {
   prevNext = [];
@@ -209,8 +210,8 @@ if (page.currentPage == 1 && page.lastPage == page.currentPage) {
     <ul class="post-list">
     {items.map((post) => (
       <li class="post-preview post-listing post-list">
-        <a href={post.url + "/"}>{post.title}</a>
-        <span class="publish-date">{post.date}</span>
+        <a href={post.url + "/"}>{post.frontmatter.title}</a>
+        <span class="publish-date">{post.frontmatter.date}</span>
       </li>
     ))}
     </ul>

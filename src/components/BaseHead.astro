@@ -13,7 +13,7 @@ export interface Props {
 const {
   title = site.title,
   description = site.description,
-  canonicalURL = Astro.request.canonicalURL
+  canonicalURL = Astro.canonicalURL
 }: Props = Astro.props;
 
 const blogRssFeed = `${site.url}feed/blog.xml`;
