@@ -5,9 +5,9 @@ import Pagination from '../../components/Pagination.astro';
 import BlogFooter from '../../components/BlogFooter.astro';
 import site from '../../data/site.json'
 
-export async function getStaticPaths({rss, paginate}) {
+export async function getStaticPaths({paginate}) {
   // Load your data with fetch(), Astro.fetchContent(), etc.
-  let allPosts = Astro.fetchContent('../post/*.md')
+  let allPosts = await Astro.glob('../post/*.md')
   allPosts = allPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
   // Return a paginated collection of paths for all posts
   return paginate(allPosts, { pageSize: 25 });
