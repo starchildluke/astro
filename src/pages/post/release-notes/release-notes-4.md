@@ -1,7 +1,7 @@
 ---
 title: 'Release Notes #4'
 published: true
-date: '20 March 2022'
+date: '20 Mar 2022'
 layout: ../../../layouts/BlogPost.astro
 ---
 

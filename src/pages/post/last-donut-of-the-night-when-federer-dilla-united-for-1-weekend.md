@@ -2,11 +2,6 @@
 title: "Last Donut Of The Night: When Federer and Dilla United For One Weekend"
 date: "17 Dec 2016"
 layout: ../../layouts/BlogPost.astro
-tags:
-- Roger Federer
-- J Dilla
-- music
-- tennis
 ---
 
 I’m proud of this essay; it’s the only one of its kind. Tennis and hip hop rarely come together (bar Drake and Redfoo’s attempts.) But this is completely different. To tell this story, I need to break it down into three parts. Think of it as a concerto, an ode to the greatest to ever do it.

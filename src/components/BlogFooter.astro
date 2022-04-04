@@ -3,7 +3,8 @@ let year = new Date().getFullYear()
 ---
 
 <footer>
-            <p>Copyright {year} © Luke Alex Davis. Built with HTML, CSS, and <a href="https://astro.build/">Astro</a> which has made this super fun.</p> <p><a href="https://twitter.com/t3dotgg/status/1481344430921502720">Special tweet added for good luck.</a></p>
+            <p>Copyright {year} © Luke Alex Davis. Built with HTML, CSS, and <a href="https://astro.build/">Astro</a> which has made this super fun.</p>
+            <p><a href="https://twitter.com/t3dotgg/status/1481344430921502720">Special tweet added for good luck.</a></p>
       </footer>
 
 <style>
@@ -12,5 +13,8 @@ footer {
   justify-content: center;
   padding: 4rem;
   border-top: 1px dotted var(--color-black);
+}
+footer p {
+  margin: 2px;
 }
 </style>
