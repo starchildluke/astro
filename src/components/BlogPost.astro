@@ -1,8 +1,4 @@
 ---
-export interface Props {
-  title: string;
-  date: string;
-}
 
 const { title, date } = Astro.props;
 
@@ -10,7 +6,6 @@ const { title, date } = Astro.props;
 
 <div class="layout">
   <article class="content">
-  <div>
       <p class="publish-date">{date}</p>
       <h1 class="title">{title}</h1>
     <main>

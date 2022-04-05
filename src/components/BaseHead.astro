@@ -2,19 +2,12 @@
 
 import site from '../data/site.json'
 
-export interface Props {
-  title: string;
-  description: string;
-  slug: string;
-  url: string;
-  canonicalURL: string;
-}
-
 const {
-  title = site.title,
-  description = site.description,
+  posttitle,
+  title,
+  description,
   canonicalURL = Astro.canonicalURL
-}: Props = Astro.props;
+} = Astro.props;
 
 const blogRssFeed = `${site.url}feed/blog.xml`;
 

@@ -5,15 +5,13 @@ import BlogHeader from '../components/BlogHeader.astro';
 import BlogPost from '../components/BlogPost.astro';
 import BlogFooter from '../components/BlogFooter.astro';
 
-let metaTitle = ' | Luke Alex Davis';
-
 const {content} = Astro.props;
 const {title, description, date, canonicalURL} = content;
 
 ---
 <html lang="en">
   <head>
-    <BaseHead {title + metaTitle} {description} {canonicalURL} />
+    <BaseHead {title} {description} {canonicalURL} />
     <link rel="stylesheet" href="/style/blog.css" />
   </head>
 

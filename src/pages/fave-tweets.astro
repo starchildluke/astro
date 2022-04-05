@@ -9,7 +9,6 @@ import BlogPostPreview from '../components/BlogPostPreview.astro';
 // You can write any JavaScript/TypeScript that you'd like here.
 // It will run during the build, but never in the browser.
 // All variables are available to use in the HTML template below.
-let metaTitle = ' | Luke Alex Davis';
 let title = 'Favourite tweets';
 let description = 'A list of my favourite tweets.';
 let slug = '/fave-tweets/';
@@ -20,7 +19,7 @@ let canonicalURL = Astro.canonicalURL.href;
 ---
 <html lang="en">
   <head>
-    <BaseHead title={title + metaTitle} description={description} canonicalURL={canonicalURL} />
+    <BaseHead title={title} description={description} canonicalURL={canonicalURL} />
     <link rel="stylesheet" href="/style/blog.css" />
 
     <style>

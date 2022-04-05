@@ -1,7 +1,6 @@
 ---
 import BaseHead from '../../components/BaseHead.astro';
 import BlogHeader from '../../components/BlogHeader.astro';
-import Pagination from '../../components/Pagination.astro';
 import BlogFooter from '../../components/BlogFooter.astro';
 import site from '../../data/site.json'
 
@@ -94,14 +93,13 @@ const postGroups = postsByYear(page.data)
 // You can write any JavaScript/TypeScript that you'd like here.
 // It will run during the build, but never in the browser.
 // All variables are available to use in the HTML template below.
-let metaTitle = ' | Luke Alex Davis';
 let domain = 'https://lukealexdavis.co.uk';
 let title = 'Posts';
 let description = "";
 ---
 <html lang="en">
   <head>
-    <BaseHead title={title + ' (Page ' + page.currentPage + '/' + page.lastPage + ')' + metaTitle} description={description} canonicalURL={page.url.current} />
+    <BaseHead title={title + ' (Page ' + page.currentPage + '/' + page.lastPage + ')'} description={description} canonicalURL={page.url.current} />
     <link rel="stylesheet" href="/style/blog.css" />
 
     <style>
