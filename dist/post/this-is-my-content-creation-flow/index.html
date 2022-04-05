@@ -85,21 +85,21 @@
 <li>I use a special Python script to decide what to write about</li>
 <li>I use Wordpress as the CMS for my main blogs and Grav for this site</li>
 <li>I use Buffer to schedule updates (or if I don’t write about it, I just put the link on there)</li>
-</ol><h2 id="the-python-script">The Python script</h2><p>If you’re not familiar with Python, you can skip this part as it’s purely for my benefit. Otherwise, keep reading!</p><p><a href="https://help.raindrop.io/collections">Raindrop has its own API</a> which gives access to my account and all the bookmarks in my <a href="https://help.raindrop.io/collections">Collections</a>. Here’s the code:</p><pre class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code is:raw><span class="line"><span style="color: #c9d1d9">import requests</span></span>
+</ol><h2 id="the-python-script">The Python script</h2><p>If you’re not familiar with Python, you can skip this part as it’s purely for my benefit. Otherwise, keep reading!</p><p><a href="https://help.raindrop.io/collections">Raindrop has its own API</a> which gives access to my account and all the bookmarks in my <a href="https://help.raindrop.io/collections">Collections</a>. Here’s the code:</p><pre class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">import requests</span></span>
 <span class="line"><span style="color: #c9d1d9">import random</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">headers = {'Authorization': 'Bearer AUTHORIZATION_CODE'}</span></span>
+<span class="line"><span style="color: #c9d1d9">headers = {&#39;Authorization&#39;: &#39;Bearer AUTHORIZATION_CODE&#39;}</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
 <span class="line"><span style="color: #c9d1d9">r = requests.get(</span></span>
-<span class="line"><span style="color: #c9d1d9">'https://api.raindrop.io/rest/v1/collections/childrens', headers=headers)</span></span>
+<span class="line"><span style="color: #c9d1d9">&#39;https://api.raindrop.io/rest/v1/collections/childrens&#39;, headers=headers)</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
 <span class="line"><span style="color: #c9d1d9">response = r.json()</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
 <span class="line"><span style="color: #c9d1d9">raindrop_list = []</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">for num in range(0,len(response["items"])):</span></span>
-<span class="line"><span style="color: #c9d1d9">	count = response["items"][num]["count"]</span></span>
-<span class="line"><span style="color: #c9d1d9">	title = response["items"][num]["title"]</span></span>
+<span class="line"><span style="color: #c9d1d9">for num in range(0,len(response[&quot;items&quot;])):</span></span>
+<span class="line"><span style="color: #c9d1d9">	count = response[&quot;items&quot;][num][&quot;count&quot;]</span></span>
+<span class="line"><span style="color: #c9d1d9">	title = response[&quot;items&quot;][num][&quot;title&quot;]</span></span>
 <span class="line"><span style="color: #c9d1d9">	title_count = (title, random.randint(0,count))</span></span>
 <span class="line"><span style="color: #c9d1d9">	raindrop_list.append(title_count)</span></span>
 <span class="line"><span style="color: #c9d1d9">	raindrop = [tuples for tuples in raindrop_list if tuples[1] != 0]</span></span>

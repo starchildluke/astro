@@ -7,13 +7,13 @@
     "build": "astro build"
   },
   "devDependencies": {
+    "astro": "^1.0.0-beta.2",
     "prettier": "2.6.2"
   },
   "dependencies": {
     "@astrojs/markdown-remark": "^0.8.1",
     "@astrojs/renderer-svelte": "^0.5.2",
     "@astrojs/sitemap": "^0.1.0",
-    "astro": "^0.26.1",
     "major": "^0.0.0",
     "mime": "^3.0.0",
     "minimist": "^1.2.6",
