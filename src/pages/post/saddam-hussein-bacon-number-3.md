@@ -7,7 +7,7 @@ tags:
 - Kevin Bacon
 ---
 
-From a [Brewers' fan forum](http://forum.brewerfan.net/viewtopic.php?p=231018&sid=bb271dfcdba6414f01af9a8bcd46ec94#p231018) in 2007:
+From a [Brewers' fan forum](https://brewerfanatic.com/forums/topic/7164-six-degrees-of-kevin-bacon/?do=findComment&comment=23095) in 2007:
 
 > Saddam Hussein was in Dix, Les (2003) with Nelson Mandela
 > Nelson Mandela was in Malcolm X (1992) with Matt Dillon (I)

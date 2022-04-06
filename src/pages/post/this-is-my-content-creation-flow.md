@@ -15,7 +15,7 @@ For the flow to work, I need tools to help me and streamline the process. I'm pr
 The things I use are:
 
 * [Feedly](https://feedly.com/)
-* [Pocket](https://getpocket.com/)
+* [Pocket](https://getpocket.com/en/)
 * [Raindrop](https://raindrop.io/)
 * [Pinboard](https://pinboard.in/)
 * [Python](https://www.python.org/)
@@ -41,7 +41,7 @@ I run 5 main blogs (and this personal blog) mostly on my own and that means I ca
 ## The Python script
 If you're not familiar with Python, you can skip this part as it's purely for my benefit. Otherwise, keep reading!
 
-[Raindrop has its own API](https://help.raindrop.io/collections) which gives access to my account and all the bookmarks in my [Collections](https://help.raindrop.io/collections). Here's the code:
+[Raindrop has its own API](https://help.raindrop.io/collections/) which gives access to my account and all the bookmarks in my [Collections](https://help.raindrop.io/collections). Here's the code:
 
 ~~~
 import requests
