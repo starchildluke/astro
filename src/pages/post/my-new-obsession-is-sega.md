@@ -1,6 +1,6 @@
 ---
 title: 'My New Obsession Is... Sega'
-date: '07 Jun 2017'
+date: '7 Jun 2017'
 layout: ../../layouts/BlogPost.astro
 tags: 'sega'
 ---

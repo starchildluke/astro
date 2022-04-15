@@ -1,7 +1,7 @@
 ---
 title: 'Why do rich people make poor decisions?'
 published: true
-date: '05 Mar 2020'
+date: '5 Mar 2020'
 layout: ../../layouts/BlogPost.astro
 tags: 'money'
 ---

@@ -1,7 +1,7 @@
 ---
 title: 'My Album of the Year List: 2014'
 published: true
-date: '09 Feb 2015'
+date: '9 Feb 2015'
 layout: ../../layouts/BlogPost.astro
 tags:
 - music

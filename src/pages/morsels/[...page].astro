@@ -1,0 +1,165 @@
+---
+
+// Component Imports
+import BaseHead from '../../components/BaseHead.astro';
+import BlogHeader from '../../components/BlogHeader.astro';
+import BlogFooter from '../../components/BlogFooter.astro';
+import site from '../../data/site.json'
+
+export interface Props {
+  post: any;
+}
+
+const { posts, post } = Astro.props;
+
+// Component Script:
+// You can write any JavaScript/TypeScript that you'd like here.
+// It will run during the build, but never in the browser.
+// All variables are available to use in the HTML template below.
+let title = 'Morsels';
+let slug = '/morsels';
+let description = "A list of code snippets and scripts I've written. Not too big, not too small. They're like tasty morsels.";
+let domain = "https://lukealexdavis.co.uk"
+
+export async function getStaticPaths({paginate, rss}) {
+  const allPosts = await Astro.glob('../post/morsels/*.md');
+  const sortedPosts = allPosts.sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date));
+  
+  // Return a paginated collection of paths for all posts
+  return paginate(sortedPosts, {pageSize: 25});
+}
+
+const { page } = Astro.props;
+---
+<html lang="en">
+  <head>
+    <BaseHead title={title} description={description} canonicalURL={page.url.current} />
+    <link rel="stylesheet" href="/style/blog.css" />
+
+    <style>
+      body {
+        width: 100%;
+        display: flex;
+      }
+
+      header {
+        width: 100%;
+        height: 100%;
+        background-color: var(--theme-bg-offset);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .content {
+        margin-bottom: 8rem;
+      }
+
+      .content :global(main > * + *) {
+        margin-top: 1rem;
+      }
+
+      .intro {
+        padding-bottom: 1.4rem;
+      }
+
+      .intro > * {
+        margin: 0;
+      }
+
+      .content :global(main > * + *) {
+  margin-top: 1rem;
+}
+
+.post-listing {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  }
+
+.post-preview {
+  padding-bottom: 1rem;
+}
+
+.post-listing a {
+  max-width: 60%;
+}
+
+.publish-date {
+  letter-spacing: 2px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: flex-start;
+  justify-content: center;
+
+  padding-bottom: 2rem;
+}
+
+.title,
+.author,
+.publish-date {
+  margin: 0;
+}
+
+.publish-date,
+.author {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--theme-text);
+}
+
+    </style>
+  </head>
+
+  <body>
+    <BlogHeader />
+    <div class="layout">
+      <article class="content">
+        <section class="intro">
+          <h1>{title}</h1>
+        </section>
+        <section>
+          <p>This is a list of code snippets and scripts I've written. Not too big, not too small. They're like tasty morsels.</p>
+        </section>
+    <section>
+       <ul class="post-list">
+      {page.data.map(post => (
+            <li class="post-preview post-listing post-list">
+              <a href={post.url + "/"}>{post.frontmatter.title}</a>
+              <span class="publish-date">{post.frontmatter.date}</span>
+            </li>
+          ))}
+        </ul>
+    </section>
+        <div class="page-links">{page.url.prev && (
+          <a
+            class='prev'
+            href={page.url.prev || '#'}
+          >
+            &laquo; Prev
+          </a>
+        )}
+        {page.url.prev && page.url.next && ""}
+        {page.url.next && (
+          <a
+            class='Next'
+            href={page.url.next || '#'}
+          >
+            Next &raquo;
+          </a>
+        )}</div>
+      </article>      
+    </div>
+    <BlogFooter></BlogFooter>
+  </body>
+</html>

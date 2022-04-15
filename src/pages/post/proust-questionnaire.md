@@ -1,7 +1,7 @@
 ---
 title: 'Proust Questionnaire'
 published: true
-date: '02 Sept 2012'
+date: '2 Sept 2012'
 layout: ../../layouts/BlogPost.astro
 tags: 'me'
 ---
