@@ -8,7 +8,7 @@ tags:
 - halt and catch fire
 ---
 
-[We talk, work, and think different thanks to the web](https://capiche.com/e/web-browser-history), says Matthew Guay in an article about how web browsers reinvented everything. It's funny because I was watching Halt and Catch Fire last night and Joe McMillan's speech about the power of browsers really touched me.
+[We talk, work, and think different thanks to the web](https://capiche.com/e/web-browser-history), says Matthew Guay in an article about how web browsers reinvented everything. It's funny because I was watching [Halt and Catch Fire](https://logicface.co.uk/tag/halt-and-catch-fire/) last night and Joe McMillan's speech about the power of browsers really touched me.
 
 <iframe width="100%" height="540" src="https://www.youtube.com/embed/mi_fKu9WTAE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
