@@ -26,7 +26,7 @@ const { post } = Astro.props;
 
 // HOW FETCHING!
 
-const remoteData = await fetch('https://cultrface.co.uk/wp-json/wp/v2/posts?categories=290').then(response => response.json());
+const remoteData = await fetch('https://cultrface.co.uk/wp-json/wp/v2/posts?categories=290&per_page=100').then(response => response.json());
 
 // METADATA VARIABLES
 

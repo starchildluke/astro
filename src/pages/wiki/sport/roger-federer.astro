@@ -14,7 +14,7 @@ export interface Props {
 
 const { post } = Astro.props;
 
-const remoteData = await fetch('https://playrface.co.uk/wp-json/wp/v2/posts?tags=62').then(response => response.json());
+const remoteData = await fetch('https://playrface.co.uk/wp-json/wp/v2/posts?tags=62&per_page=100').then(response => response.json());
 
 // Component Script:
 // You can write any JavaScript/TypeScript that you'd like here.
