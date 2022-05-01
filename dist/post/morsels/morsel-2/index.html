@@ -7,23 +7,23 @@
 <link rel="icon" type="image/svg" href="/favicon.svg">
 
 <!-- Primary Meta Tags -->
-<title>Morsel #1 - The Tag Suggester</title>
-<meta name="title" content="Morsel #1 - The Tag Suggester">
+<title>Morsel #2 - The YouTube Thumbnail Extractor</title>
+<meta name="title" content="Morsel #2 - The YouTube Thumbnail Extractor">
 <meta name="description">
-<link rel="canonical" href="https://lukealexdavis.co.uk/post/morsels/morsel-1/">
+<link rel="canonical" href="https://lukealexdavis.co.uk/post/morsels/morsel-2/">
 <link rel="alternate" type="application/rss+xml" title="Luke Alex Davis" href="https://lukealexdavis.co.uk/feed/blog.xml">
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://lukealexdavis.co.uk/post/morsels/morsel-1/">
-<meta property="og:title" content="Morsel #1 - The Tag Suggester">
+<meta property="og:url" content="https://lukealexdavis.co.uk/post/morsels/morsel-2/">
+<meta property="og:title" content="Morsel #2 - The YouTube Thumbnail Extractor">
 <meta property="og:description">
 <meta property="og:image" content="https://lukealexdavis.co.uk/assets/ld-logo-og-image.jpg">
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://lukealexdavis.co.uk/post/morsels/morsel-1/">
-<meta property="twitter:title" content="Morsel #1 - The Tag Suggester">
+<meta property="twitter:url" content="https://lukealexdavis.co.uk/post/morsels/morsel-2/">
+<meta property="twitter:title" content="Morsel #2 - The YouTube Thumbnail Extractor">
 <meta property="twitter:description">
 <meta property="twitter:image" content="https://lukealexdavis.co.uk/assets/ld-logo-og-image.jpg">
 
@@ -66,14 +66,14 @@
 
     <div class="layout astro-Q4UD2W43">
   <article class="content astro-Q4UD2W43">
-      <p class="publish-date astro-Q4UD2W43">15 Apr 2022</p>
-      <h1 class="title astro-Q4UD2W43">Morsel #1 - The Tag Suggester</h1>
+      <p class="publish-date astro-Q4UD2W43">01 May 2022</p>
+      <h1 class="title astro-Q4UD2W43">Morsel #2 - The YouTube Thumbnail Extractor</h1>
     <main class="astro-Q4UD2W43">
-      <p>My first morsel is a Python script that extracts all the tags from my blogs and creates randomised Google search URLs for content ideation.</p><h2 id="requirements">Requirements</h2><ul>
+      <p>My second morsel is a Python script that extracts thumbnails from YouTube videos.</p><p><a href="https://share.streamlit.io/starchildluke/yt_thumbnail/main/yt_st.py">GitHub link</a></p><h2 id="requirements">Requirements</h2><ul>
 <li><a href="https://www.python.org/downloads/">Python 3</a></li>
 <li><a href="https://docs.python-requests.org/">requests</a></li>
 <li><a href="https://streamlit.io/">streamlit</a></li>
-</ul><p>Example from <a href="https://cultrface.co.uk">Cultrface</a>:</p><p><a href="https://google.com/search?q=martin+luther+king+soup">https://google.com/search?q=martin+luther+king+soup</a></p><p>As they are randomised, some of the results are more nonsense than anything but you never know. That’s the beauty of it—you could end up down a rabbit hole you never knew existed.</p><p><a href="https://github.com/starchildluke/tag_suggester/">Check it out on GitHub</a> and feel free to fork the repository and make your own version (subject to the AGPL-3.0 License)</p><p><strong>UPDATE</strong>: So this script doesn’t update the JSON files containing all the blog tags as I had hoped. Still looking into how to do that but if anyone reading this knows how to update a JSON file via a Streamlit app hosted on GitHub, I’d love to know.</p>
+</ul><p>Add the URL to extract the thumbnail from and it will display it at the bottom. Currently only works if you put in the full YouTube video URL without any parameters (so not youtu.be or ?t=8 for example). Again, open to suggestions on how to make it work with any valid YouTube URL (as I’m not so great with <a href="https://docs.python.org/3/library/re.html">re</a> yet)</p><p><img src="/images/yt_st.gif" alt="The UI of my script showing a text input where you can enter the YouTube video URL, a button that says 'Extract thumbnail', and an extracted thumbnail underneath"></p>
     </main>
   </article>
 </div>
