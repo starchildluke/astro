@@ -1,0 +1,108 @@
+---
+// COMPONENTS
+
+import { Markdown } from 'astro/components';
+import BaseHead from '../components/BaseHead.astro';
+import BlogHeader from '../components/BlogHeader.astro';
+import BlogFooter from '../components/BlogFooter.astro';
+import BlogPostPreview from '../components/BlogPostPreview.astro';
+
+// EXPORT
+
+export interface Props {
+  post: any;
+  metaTitle: string;
+  title: string;
+  slug: string;
+  description: string;
+  domain: string;
+}
+
+// PROPS
+
+const { post } = Astro.props;
+
+// METADATA VARIABLES
+
+let metaTitle = ' | Luke Alex Davis';
+let title = 'Support';
+let description = 'This is my support page where you can find ways to support my work and various projects.';
+let canonicalURL = Astro.canonicalURL.href;
+---
+
+<html lang="en">
+  <head>
+    <BaseHead title={title} description={description} canonicalURL={canonicalURL} />
+    <link rel="stylesheet" href="/style/blog.css" />
+
+    <style>
+      body {
+        width: 100%;
+        display: flex;
+      }
+
+      header {
+        width: 100%;
+        height: 100%;
+        background-color: var(--theme-bg-offset);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .content {
+        margin-bottom: 8rem;
+      }
+
+      .content :global(main > * + *) {
+        margin-top: 1rem;
+      }
+
+      .intro {
+        padding-bottom: 1.4rem;
+      }
+
+      .intro > * {
+        margin: 0;
+      }
+
+      .latest {
+        font-size: 2.5rem;
+        font-weight: 700;
+      }
+    </style>
+  </head>
+<body>
+  <BlogHeader />
+    <div class="layout">
+      <article class="content">
+        <section class="intro">
+          <h1>How To {title} Me</h1>
+        </section>
+        <section>
+          <p>There are various ways you can support me and my work.</p>
+          <h2>With money</h2>
+          <ul>
+            <li><a href="https://patreon.com/lukealexdavis">You can subscribe to my Patreon.</a> Everyone who pledges gets a free membership card and there are a ton of tier rewards you can get. <strong>Pledges start at $1 per month.</strong></li>
+            <li><a href="https://ko-fi.com/lklxdvs">You can make a one-off contribution on Ko-fi.</a> <strong>My default "coffee" price is £3</strong>.</li>
+            <li><a href="https://www.paypal.com/paypalme/lukealexdavis">You can make a one-off contribution on PayPal.</a> <strong>No minimum</strong>.</li>
+            <li><a href="https://strrchildluke.bandcamp.com">Buy my music.</a> You can buy a song, an EP, an album, or my whole discography. Start anywhere, end with joy.</li>
+          </ul>
+          <h2>With love</h2>
+          <ul>
+            <li><a href="https://twitter.com/LukeDavisSEO">Tweet me.</a> I'll talk to anyone but don't be a bigot and don't get overfamiliar.</li>
+            <li>Engage with my content. Whether it involves tweets, blog posts, or projects, share them, leave comments, retweet, give feedback, link back on your website (I love a <a href="https://digigrow.co/2021/09/how-to-get-natural-backlinks/">natural backlink</a>).</li>
+            <li><a href="mailto:luke@lukealexdavis.co.uk">Email me</a> stuff you think I’ll like. It beats getting junk!</li>
+            <li>Write about me on your own sites and link back. I've written thousands of blog posts and I might have something interesting for you.</li>
+        </section>
+        <section>
+          <h2>Road To 3K</h2>
+          <label for="savings">Savings progress:</label>
+          <progress id="savings" value="77.54" max="3000"> 2.58% </progress>
+          <p>£77.54/<strong>£3,000</strong> (2.58%)</p>
+        </section>
+              </article>
+            </div>
+      <BlogFooter></BlogFooter>
+  </body>
+</html>
