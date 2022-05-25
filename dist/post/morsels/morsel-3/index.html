@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="astro-WIAQ76FI">
+<html lang="en">
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -7,24 +7,24 @@
 <link rel="icon" type="image/svg" href="/favicon.svg">
 
 <!-- Primary Meta Tags -->
-<title>Luke Alex Davis: technical SEO, music producer &amp; creator</title>
-<meta name="title" content="Luke Alex Davis: technical SEO, music producer &#38; creator">
-<meta name="description" content="The digital home of Luke Alex Davis: a technical SEO, music producer, and content creator based in Nottingham, UK.">
-<link rel="canonical" href="https://lukealexdavis.co.uk/">
+<title>Morsel #3 - a custom font preload fix in WordPress</title>
+<meta name="title" content="Morsel #3 - a custom font preload fix in WordPress">
+<meta name="description">
+<link rel="canonical" href="https://lukealexdavis.co.uk/post/morsels/morsel-3/">
 <link rel="alternate" type="application/rss+xml" title="Luke Alex Davis" href="https://lukealexdavis.co.uk/feed/blog.xml">
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://lukealexdavis.co.uk/">
-<meta property="og:title" content="Luke Alex Davis: technical SEO, music producer &#38; creator">
-<meta property="og:description" content="The digital home of Luke Alex Davis: a technical SEO, music producer, and content creator based in Nottingham, UK.">
+<meta property="og:url" content="https://lukealexdavis.co.uk/post/morsels/morsel-3/">
+<meta property="og:title" content="Morsel #3 - a custom font preload fix in WordPress">
+<meta property="og:description">
 <meta property="og:image" content="https://lukealexdavis.co.uk/assets/ld-logo-og-image.jpg">
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://lukealexdavis.co.uk/">
-<meta property="twitter:title" content="Luke Alex Davis: technical SEO, music producer &#38; creator">
-<meta property="twitter:description" content="The digital home of Luke Alex Davis: a technical SEO, music producer, and content creator based in Nottingham, UK.">
+<meta property="twitter:url" content="https://lukealexdavis.co.uk/post/morsels/morsel-3/">
+<meta property="twitter:title" content="Morsel #3 - a custom font preload fix in WordPress">
+<meta property="twitter:description">
 <meta property="twitter:image" content="https://lukealexdavis.co.uk/assets/ld-logo-og-image.jpg">
 
 <script defer data-domain="lukealexdavis.co.uk" src="https://plausible.io/js/plausible.js"></script>
@@ -32,9 +32,7 @@
 <link rel="preload" href="/fonts/Archivo-Black.woff" as="font" type="font/woff" crossorigin>
 <link rel="preload" href="/fonts/Karla-Light.woff2" as="font" type="font/woff" crossorigin>
     <link rel="stylesheet" href="/style/blog.css">
-
-    
-  <link rel="stylesheet" href="/assets/asset.83582823.css"></link>
+  <link rel="stylesheet" href="/assets/asset.143a6c24.css"></link>
 </head>
 
   <body>
@@ -67,20 +65,28 @@
 
 
 
-    <div class="layout astro-WIAQ76FI">
-      <article class="content astro-WIAQ76FI">
-        <section class="intro astro-WIAQ76FI">
-          <h1 class="astro-WIAQ76FI">Luke Alex Davis</h1>
-        </section>
-        <section class="astro-WIAQ76FI">
-      <h2 id="hello" class="astro-WIAQ76FI">Good afternoon!</h2>
-      <p class="astro-WIAQ76FI">I'm a technical SEO, music producer, and content creator based in Nottingham, UK. I specialise in technical creativity, and problem solving with a pragmatic and minimalist style. I love most things technical-related, SEO-related, and Web-related.</p>
-      <h2 class="astro-WIAQ76FI">Want to find out more?</h2>
-      <p class="astro-WIAQ76FI"><a href="mailto:luke@lukealexdavis.co.uk" class="astro-WIAQ76FI">Send an email</a> or <a href="https://twitter.com/LukeDavisSEO" class="astro-WIAQ76FI">a tweet</a>. Simple.</p>
-    </section>
-        
-      </article>
-    </div>
+    <div class="layout astro-Q4UD2W43">
+  <article class="content astro-Q4UD2W43">
+      <p class="publish-date astro-Q4UD2W43">25 May 2022</p>
+      <h1 class="title astro-Q4UD2W43">Morsel #3 - a custom font preload fix in WordPress</h1>
+    <main class="astro-Q4UD2W43">
+      <p>My third morsel is actually a WordPress fix.</p><p>I decided to write this as I couldn’t find the answer I was looking for myself and thought it might help anyone who had the same problem in the future.</p><p><strong>Problem</strong>: I realised the custom self-hosted fonts I was using on my WordPress sites weren’t actually loading. I realised this after seeing the following message:</p><p><code>The resource X was preloaded using link preload but not used within a few seconds from the window’s load event. Please make sure it has an appropriate ‘as’ value and it is preloaded intentionally.</code></p><p>That basically means the font loaded but it wasn’t used <em>at all</em>. I tried all the different things that Stack Overflow said but it still wouldn’t work. Long story short: the @font-face declarations I was making in the main theme CSS file weren’t acknowledged so I put them in the WordPress Customizer panel. To do that:</p><ul>
+<li>Go to your Admin panel and then go to Appearance > Customize > Additional CSS</li>
+<li>Enter the appropriate @font-face code</li>
+</ul><p>I used the following @font-face format:</p><pre class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #C9D1D9">	</span><span style="color: #FF7B72">@font-face</span><span style="color: #C9D1D9"> {</span></span>
+<span class="line"><span style="color: #C9D1D9">		</span><span style="color: #79C0FF">font-family</span><span style="color: #C9D1D9">: </span><span style="color: #A5D6FF">&#39;FontName&#39;</span><span style="color: #C9D1D9">;</span></span>
+<span class="line"><span style="color: #C9D1D9">		</span><span style="color: #79C0FF">src</span><span style="color: #C9D1D9">: </span><span style="color: #79C0FF">url</span><span style="color: #C9D1D9">(</span><span style="color: #FFA657">PATH</span><span style="color: #C9D1D9">) </span><span style="color: #79C0FF">format</span><span style="color: #C9D1D9">(</span><span style="color: #A5D6FF">&#39;woff2&#39;</span><span style="color: #C9D1D9">);</span></span>
+<span class="line"><span style="color: #C9D1D9">		</span><span style="color: #79C0FF">src</span><span style="color: #C9D1D9">: </span><span style="color: #79C0FF">url</span><span style="color: #C9D1D9">(</span><span style="color: #FFA657">PATH</span><span style="color: #C9D1D9">) </span><span style="color: #79C0FF">format</span><span style="color: #C9D1D9">(</span><span style="color: #A5D6FF">&#39;woff&#39;</span><span style="color: #C9D1D9">);</span></span>
+<span class="line"><span style="color: #C9D1D9">		</span><span style="color: #79C0FF">font-weight</span><span style="color: #C9D1D9">: whatever that is;</span></span>
+<span class="line"><span style="color: #C9D1D9">		</span><span style="color: #79C0FF">font-style</span><span style="color: #C9D1D9">: </span><span style="color: #79C0FF">normal</span><span style="color: #C9D1D9">;</span></span>
+<span class="line"><span style="color: #C9D1D9">		</span><span style="color: #79C0FF">font-display</span><span style="color: #C9D1D9">: </span><span style="color: #79C0FF">swap</span><span style="color: #C9D1D9">;</span></span>
+<span class="line"><span style="color: #C9D1D9">	}</span></span></code></pre><p>In terms of the preload code, I recommend the following:</p><p><code>&#x3C;link rel="preload" href="PATH" type="font/woff2" as="font" crossorigin=""></code></p><p>I’ve gone with woff2 only as it’s widely supported and smaller in file size, which compounds the benefits of preloading for page speed. Just be careful of <a href="https://fonts.google.com/knowledge/glossary/fout">FOUT</a> and set your <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control">Cache-Control headers</a>!</p><p>And make sure to put that ahead of the <code>wp_head()</code> in your header.php file so it can preload before the CSS (I believe that’s how it works lol).</p>
+    </main>
+  </article>
+</div>
+
+
+
     <footer class="astro-2C5ONZSZ">
             <p class="astro-2C5ONZSZ">Copyright 2022 © Luke Alex Davis. Built with HTML, CSS, and <a href="https://astro.build/" class="astro-2C5ONZSZ">Astro</a> which has made this super fun.</p>
             <p class="astro-2C5ONZSZ"><a href="https://twitter.com/t3dotgg/status/1481344430921502720" class="astro-2C5ONZSZ">Special tweet added for good luck.</a></p>
@@ -88,41 +94,4 @@
 
 
 
-    <script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"Person",
-  "mainEntityOfPage": "https://lukealexdavis.co.uk",   
-  "description":"I'm a technical SEO, music producer, and content creator based in Nottingham, UK. I specialise in technical creativity, and problem solving with a pragmatic and minimalist style.",
-  "image":["https://lukealexdavis.co.uk/images/k5t2wVcf-Luke-Davis-640x600.png","https://lukealexdavis.co.uk/images/lukedavis_jpg.jpg"],
-  "url":"https://lukealexdavis.co.uk",
-  "sameAs":["https://uk.linkedin.com/in/lukealexdavis", "https://twitter.com/LukeDavisSEO", "https://www.instagram.com/lukealexdavis/", "https://www.impression.co.uk/about/our-team/luke-davis/", "https://www.searchenginejournal.com/author/luke-davis/", "https://www.semrush.com/user/147747585/", "https://www.adzooma.com/blog/author/lukedavis/", "https://www.patreon.com/lukealexdavis", "https://www.wikidata.org/wiki/Q110132394", "https://lukealexdavis.contently.com/", "https://ko-fi.com/lklxdvs"],
-  "subjectOf":["https://ccnworldtech.com/seo-interview-luke-davis/", "https://bytraject.com/blog/experimenting-with-seo-luke-davis/", "https://page2podcast.fm/episodes/45-luke-davis", "https://www.impression.co.uk/resources/podcasts/technical-seo-automation-rankup-with-luke-davis/", "https://marketersofcolour.com/experimenting-with-seo-on-the-b-sides-with-luke-davis/"],
-  "alternateName":["Luke Davis", "Luke Alex Davis"],
-  "name":"Luke Alex Davis",
-  "familyName":"Davis",
-  "givenName":"Luke",
-  "jobTitle":"Technical SEO",
-  "gender":"Male",
-  "birthPlace":{
-    "@type":"City",
-    "address":
-      {"@type":
-      "PostalAddress","addressLocality":"Bradford","addressCountry":"United Kingdom"}},
- 
- 
- "nationality":{"@type":"Country","name":"United Kingdom"},
- 
- 
- "worksFor":{"@type":"Organization", "name":"Impression","url":"http://impression.co.uk/"},     
-     "knowsAbout": {
-       "type": "Thing",
-       "name": "SEO",
-       "sameas": "https://www.wikidata.org/wiki/Q180711",
-       "description": "The practice of increasing online visibility in search engine results pages.",
-       "alternatename": "Search Engine Optimization"
-     }
-   }
- </script>
-  </body>
-</html>
+  </body></html>
