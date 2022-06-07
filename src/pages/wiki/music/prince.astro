@@ -9,31 +9,41 @@ import Breadcrumbs from '../../../components/Breadcrumbs.astro';
 import site from '../../../data/site.json';
 import wiki from '../../../data/wiki.json'
 
+// EXPORT
+
 export interface Props {
   post: any;
+  metaTitle: string;
+  title: string;
+  slug: string;
+  description: string;
+  domain: string;
 }
+
+// PROPS
 
 const { post } = Astro.props;
 
-const remoteData = await fetch('https://playrface.co.uk/wp-json/wp/v2/posts').then(response => response.json());
+// HOW FETCHING!
 
-// Component Script:
-// You can write any JavaScript/TypeScript that you'd like here.
-// It will run during the build, but never in the browser.
-// All variables are available to use in the HTML template below.
-let metaTitle = ' | Luke Alex Davis';
-let title = 'Sport';
-let slug = '/wiki/sport/';
-let description = "A wiki page all about sport.";
+const remoteData = await fetch('https://sampleface.co.uk/wp-json/wp/v2/posts?tags=408&per_page=100').then(response => response.json());
+
+const remoteData2 = await fetch('https://cultrface.co.uk/wp-json/wp/v2/posts?tags=701&per_page=100').then(response => response.json());
+
+// METADATA VARIABLES
+
+let title = 'Prince';
+let slug = '/wiki/music/prince/';
+let description = 'A wiki page all about Prince.';
 let domain = "https://lukealexdavis.co.uk"
 
 ---
 <html lang="en">
   <head>
-    <BaseHead title={title + metaTitle} description={description} canonicalURL={domain + slug} />
+    <BaseHead title={'wiki/' + title.toLowerCase()} description={description} canonicalURL={domain + slug} />
     <link rel="stylesheet" href="/style/blog.css" />
 
-    <style>
+<style>
       
       body {
         width: 100%;
@@ -43,7 +53,7 @@ let domain = "https://lukealexdavis.co.uk"
       header {
         width: 100%;
         height: 100%;
-        background-color: var(--theme-bg-offset);
+        background-color: var();
         display: flex;
         align-items: center;
         justify-content: center;
@@ -53,7 +63,7 @@ let domain = "https://lukealexdavis.co.uk"
         margin-bottom: 8rem;
       }
 
-      .content :global(main > * + *) {
+      .content :global() {
         margin-top: 1rem;
       }
 
@@ -65,7 +75,7 @@ let domain = "https://lukealexdavis.co.uk"
         margin: 0;
       }
 
-      .content :global(main > * + *) {
+      .content :global() {
         margin-top: 1rem;
       }
 
@@ -101,7 +111,7 @@ let domain = "https://lukealexdavis.co.uk"
       .desc {
         font-size: 1.5rem;
         font-weight: 700;
-        color: var(--color-grey-800);
+        color: var();
       }
 
       .title, .publish-date {
@@ -116,7 +126,7 @@ let domain = "https://lukealexdavis.co.uk"
       .title {
         font-size: 2.25rem;
         font-weight: 700;
-        color: var(--theme-text);
+        color: var();
       }
 
       .wiki-h2 {
@@ -138,49 +148,49 @@ let domain = "https://lukealexdavis.co.uk"
       }
 
     </style>
-    
-  </head>
+
+</head>
 
   <body>
     <BlogHeader />
       <div class="layout">
         <article class="content">
+          <Breadcrumbs title={title}/>
             <section class="intro">
-          <h1>{title}</h1>
-          <p class="desc">{description}</p>
-        </section>
-        <section>
-          <h2 class="wiki-h2">Inner voice</h2>
-          <Markdown>
-          * [**/roger-federer**](/wiki/sport/roger-federer/)
-            * [/last-donut-of-the-night-when-federer-dilla-united-for-1-weekend.md](/post/last-donut-of-the-night-when-federer-dilla-united-for-1-weekend/)
-            * [/khruangbin-and-federer.md](/post/khruangbin-and-federer/)
-            * [/roger-federer-numbers-game.md](/post/roger-federer-numbers-game/)
-            * [/the-last-5-games-of-the-2017-australian-open.md](/post/the-last-5-games-of-the-2017-australian-open/)
-          * [/teams-i-look-out-for-post-man-utd.md](/post/teams-i-look-out-for-post-man-utd/)
-          * [/release-notes/release-notes-1.md](/post/release-notes/release-notes-1/)
 
-          </Markdown>
-        </section>
-      <section>
+              <h1>{title}</h1>
+              <p class="desc">{description}</p>
+       </section>
+            <section>
+             
+              <h2 class="wiki-h2">Inner voice</h2>
+                <Markdown>
+                  * [/prince-purple-a-visited-css.md](/post/prince-purple-a-visited-css/)
+                  * [/musical-inspirations.md](/post/musical-inspirations/)
+                  * [/videos-ive-been-watching-to-keep-me-going.md](/post/videos-ive-been-watching-to-keep-me-going/)
+                </Markdown>
+            </section>
       
-    <section>
-      <h2 class="wiki-h2">Out loud</h2>
-       <ul class="post-list">
-            
-              {remoteData.map((item) => (
-              <li class="post-preview post-listing post-list">
+            <section>
+              <h2 class="wiki-h2">Out loud</h2>
+              <ul class="post-list">
+                {remoteData.map((item) => (
+                <li class="post-preview wiki-listing post-list">
             <a href={item.link}><Fragment set:html={item.title.rendered}></a>
           </li>
              ))}
-        </ul>
-        <h2 class="wiki-h2">Second opinions</h2>
-        <Markdown>
-          * [Football Flashbacks: Ronaldo Luís Nazário de Lima](https://moesquare.medium.com/football-flashbacks-ronaldo-lu%C3%ADs-naz%C3%A1rio-de-lima-bebee6134d1c)
-        </Markdown>
-    </section>
-    </section>
-      </article>
+             {remoteData2.map((item) => (
+                <li class="post-preview wiki-listing post-list">
+            <a href={item.link}><Fragment set:html={item.title.rendered}></a>
+          </li>
+             ))}
+             </ul>
+              <h2 class="wiki-h2">Second opinions</h2>
+                <Markdown>
+                  Coming soon...
+                </Markdown>
+            </section>
+        </article>
       
     </div>
     <BlogFooter></BlogFooter>

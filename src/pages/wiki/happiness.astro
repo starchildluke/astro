@@ -25,7 +25,6 @@ const remoteData = await fetch('https://playrface.co.uk/wp-json/wp/v2/posts?tags
 
 // METADATA VARIABLES
 
-let metaTitle = ' | Luke Alex Davis';
 let title = 'Happiness';
 let slug = '/wiki/happiness/';
 let description = "A wiki page all about happiness.";
@@ -34,7 +33,7 @@ let domain = "https://lukealexdavis.co.uk"
 ---
 <html lang="en">
   <head>
-    <BaseHead title={'wiki/' + title.toLowerCase() + metaTitle} description={description} canonicalURL={domain + slug} />
+    <BaseHead title={'wiki/' + title.toLowerCase()} description={description} canonicalURL={domain + slug} />
     <link rel="stylesheet" href="/style/blog.css" />
 
 <style>
