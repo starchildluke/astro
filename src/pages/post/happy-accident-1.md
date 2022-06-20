@@ -2,7 +2,7 @@
 title: 'Happy accident #1'
 published: true
 date: '18 Jul 2021'
-layout: ../../../layouts/BlogPost.astro
+layout: ../../layouts/BlogPost.astro
 tags: happiness
 ---
 

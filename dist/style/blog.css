@@ -162,10 +162,7 @@ h1 {
   font-family: "Archivo Black";
 }
 
-h2,
-h3,
-h4,
-h5 {
+h2, h3, h4, h5 {
   font-weight: 700;
 }
 
@@ -216,8 +213,7 @@ blockquote p {
   padding-bottom: 0;
 }
 
-small,
-.text_small {
+small, .text_small {
   font-size: 0.833rem;
 }
 
