@@ -14,6 +14,7 @@
     "@astrojs/markdown-remark": "^0.11.3",
     "@astrojs/renderer-svelte": "^0.5.2",
     "@astrojs/sitemap": "^0.1.2",
+    "got": "^12.1.0",
     "jsdom": "^20.0.0",
     "major": "^0.0.0",
     "mime": "^3.0.0",
