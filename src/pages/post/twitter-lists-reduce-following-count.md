@@ -6,7 +6,7 @@ layout: ../../layouts/BlogPost.astro
 tags: 'twitter'
 ---
 
-Whether you use Twitter for work, personal branding, or escapism, who you follow plays an integral part. But the more followers you get, the more you're likely to follow. The "following:follower" ratio (which I will call F:f from now on) means more than it should to outsiders looking in. If F:f is 1:≥1 (more than or equal to 1), you're not deemed as popular compared to an F:f ratio of 1:<1 (less than 1).
+Whether you use Twitter for work, personal branding, or escapism, who you follow plays an integral part. But the more followers you get, the more you're likely to follow. The "following:follower" ratio (which I will call F:f from now on) means more than it should to outsiders looking in. If F:f is 1: more than or equal to 1 (more than or equal to 1), you're not deemed as popular compared to an F:f ratio of 1:less than 1 (less than 1).
 
 ## Examples
 

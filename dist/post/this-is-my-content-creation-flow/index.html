@@ -32,7 +32,9 @@
 <link rel="preload" href="/fonts/Archivo-Black.woff" as="font" type="font/woff" crossorigin>
 <link rel="preload" href="/fonts/Karla-Light.woff2" as="font" type="font/woff" crossorigin>
     <link rel="stylesheet" href="/style/blog.css">
-  <link rel="stylesheet" href="/assets/asset.e582435e.css"></link>
+  <link rel="stylesheet" href="/assets/92d388e6.3674fc90.css" />
+<link rel="stylesheet" href="/assets/8987fd1e.94ad7e4b.css" />
+<link rel="stylesheet" href="/assets/2741ab98.6aa7e777.css" />
 </head>
 
   <body>
@@ -62,7 +64,6 @@
         </ul>
       </nav>
 </header>
-
 
 
     <div class="layout astro-Q4UD2W43">
@@ -107,18 +108,16 @@
 <span class="line"><span style="color: #c9d1d9">	raindrop = [tuples for tuples in raindrop_list if tuples[1] != 0]</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
 <span class="line"><span style="color: #c9d1d9">rand = random.randint(0,len(raindrop_list)-1)</span></span>
-<span class="line"><span style="color: #c9d1d9">print(raindrop[rand])</span></span></code></pre><p>I’ll explain each line.</p><p><code>requests</code> gives me access to the API and <code>random</code> is for the random pick, which I’ll explain in a second.</p><p>I set the headers which contains my authorisation token and that is added to the Collections URL. I then convert the data into readable JSON so I can access the relevant keys and values.</p><p><code>raindrop_list</code> is an empty list which will be filled with tuples. Those tuples contain the name of the Collection and the number of bookmarks in them (eg. <code>('Food &#x26; Drink', 7)</code>)</p><p>I create a for loop that goes through each Collection via a range. I store the count of each Collection in a variable called <code>count</code> and the title in <code>title</code>.</p><p><code>title_count</code> creates the tuple mentioned above but the number is a random integer between 0 and <code>count</code>.</p><p>Each <code>title_count</code> gets added to <code>raindrop_list</code> and then I assign a new list comprehension to a variable called <code>raindrop</code> which gets rid of all the empty Collections.</p><p>Finally, I create a random integer between 0 and <code>len(raindrop_list)-1</code> and use that as the random index of <code>raindrop</code> which gets printed out.</p><p>Make sense? Probably not as that’s the first time I’ve ever had to explain one of my scripts. In a nutshell, the script randomly selects a Collection and a bookmark from that Collection for me to write about. It keeps me fresh and I don’t get bogged down in something I just saw. I also get rid of older content and it never gets stale.</p><p>As for the reason why I decided to pay for Raindrop - with the free version, you get root Collections only. With the paid version, you can nest Collections inside root Collections so I can segment by blog category.</p><h2 id="conclusion">Conclusion</h2><p>This is a flow that works for me and I’m almost certain it won’t work for anyone else. That’s because I often write about random things I think are cool and I don’t have clients or money invested in my content (excluding web hosting). So it could be cool to me but nobody read it. Fine for me, not for clients!</p><p>But the fundamental process is transferrable. You organise your data into certain places and dip in when you need to. And when you’re done, you can delete them. I used to have a major problem of adding things to Pocket and they just… stayed there. Now, I actively go through them, and move them to better places if I keep them or delete them when I’m done.</p>
+<span class="line"><span style="color: #c9d1d9">print(raindrop[rand])</span></span></code></pre><p>I’ll explain each line.</p><p><code>requests</code> gives me access to the API and <code>random</code> is for the random pick, which I’ll explain in a second.</p><p>I set the headers which contains my authorisation token and that is added to the Collections URL. I then convert the data into readable JSON so I can access the relevant keys and values.</p><p><code>raindrop_list</code> is an empty list which will be filled with tuples. Those tuples contain the name of the Collection and the number of bookmarks in them (eg. <code>('Food &amp; Drink', 7)</code>)</p><p>I create a for loop that goes through each Collection via a range. I store the count of each Collection in a variable called <code>count</code> and the title in <code>title</code>.</p><p><code>title_count</code> creates the tuple mentioned above but the number is a random integer between 0 and <code>count</code>.</p><p>Each <code>title_count</code> gets added to <code>raindrop_list</code> and then I assign a new list comprehension to a variable called <code>raindrop</code> which gets rid of all the empty Collections.</p><p>Finally, I create a random integer between 0 and <code>len(raindrop_list)-1</code> and use that as the random index of <code>raindrop</code> which gets printed out.</p><p>Make sense? Probably not as that’s the first time I’ve ever had to explain one of my scripts. In a nutshell, the script randomly selects a Collection and a bookmark from that Collection for me to write about. It keeps me fresh and I don’t get bogged down in something I just saw. I also get rid of older content and it never gets stale.</p><p>As for the reason why I decided to pay for Raindrop - with the free version, you get root Collections only. With the paid version, you can nest Collections inside root Collections so I can segment by blog category.</p><h2 id="conclusion">Conclusion</h2><p>This is a flow that works for me and I’m almost certain it won’t work for anyone else. That’s because I often write about random things I think are cool and I don’t have clients or money invested in my content (excluding web hosting). So it could be cool to me but nobody read it. Fine for me, not for clients!</p><p>But the fundamental process is transferrable. You organise your data into certain places and dip in when you need to. And when you’re done, you can delete them. I used to have a major problem of adding things to Pocket and they just… stayed there. Now, I actively go through them, and move them to better places if I keep them or delete them when I’m done.</p>
     </main>
   </article>
 </div>
-
 
 
     <footer class="astro-6D6RCEKQ">
             <p class="astro-6D6RCEKQ">Copyright 2022 © Luke Davis. Built with HTML, CSS, and <a href="https://astro.build/" class="astro-6D6RCEKQ">Astro</a> which has made this super fun.</p>
             <p class="astro-6D6RCEKQ"><a href="https://twitter.com/t3dotgg/status/1481344430921502720" class="astro-6D6RCEKQ">Special tweet added for good luck.</a></p>
       </footer>
-
 
 
   </body></html>
