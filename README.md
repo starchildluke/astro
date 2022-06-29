@@ -1,4 +1,4 @@
-# Astro Starter Kit: Blog
+# Luke Davis: technical SEO, music producer & creator
 
 ```
 npm init astro --template blog
