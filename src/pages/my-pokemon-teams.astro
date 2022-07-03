@@ -1,0 +1,151 @@
+---
+// COMPONENTS
+
+import { Markdown } from 'astro/components';
+import BaseHead from '../components/BaseHead.astro';
+import BlogHeader from '../components/BlogHeader.astro';
+import BlogFooter from '../components/BlogFooter.astro';
+import BlogPostPreview from '../components/BlogPostPreview.astro';
+
+// EXPORT
+
+export interface Props {
+  post: any;
+  metaTitle: string;
+  title: string;
+  slug: string;
+  description: string;
+  domain: string;
+}
+
+// PROPS
+
+const { post } = Astro.props;
+
+// HOW FETCHING!
+
+const remoteData = await fetch('https://cultrface.co.uk/wp-json/wp/v2/posts?categories=290&per_page=100').then(response => response.json());
+
+// METADATA VARIABLES
+
+let metaTitle = ' | Luke Davis';
+let title = 'My Pokémon teams';
+let description = 'A collection of some of my Pokémon teams over the years.';
+let canonicalURL = Astro.canonicalURL.href;
+---
+
+<html lang="en">
+  <head>
+    <BaseHead title={title} description={description} canonicalURL={canonicalURL} />
+    <link rel="stylesheet" href="/style/blog.css" />
+    <link rel="preload" as="image" href="/images/pokemon/blastoise_rb_009.png" type="image/png">
+    <link rel="preload" as="image" href="/images/pokemon/graveler_rb_075.png" type="image/png">
+    <link rel="preload" as="image" href="/images/pokemon/victreebel_rb_071.png" type="image/png">
+    <link rel="preload" as="image" href="/images/pokemon/electrode_rb_101.png" type="image/png">
+    <link rel="preload" as="image" href="/images/pokemon/pidgeot_rb_018.png" type="image/png">
+    <link rel="preload" as="image" href="/images/pokemon/articuno_rb_144.png" type="image/png">
+    <link rel="preload" as="image" href="/images/pokemon/feraligatr_gs_160.png" type="image/png">
+    <link rel="preload" as="image" href="/images/pokemon/graveler_gs_075.png" type="image/png">
+    <link rel="preload" as="image" href="/images/pokemon/ampharos_gs_181.png" type="image/png">
+    <link rel="preload" as="image" href="/images/pokemon/lugia_gs_249.png" type="image/png">
+    <link rel="preload" as="image" href="/images/pokemon/pidgeot_gs_018.png" type="image/png">
+    <link rel="preload" as="image" href="/images/pokemon/haunter_gs_093.png" type="image/png">
+    <link rel="preload" as="image" href="/images/pokemon/swampert_rs_260.png" type="image/png">
+    <link rel="preload" as="image" href="/images/pokemon/swellow_rs_277.png" type="image/png">
+    <link rel="preload" as="image" href="/images/pokemon/hariyama_rs_297.png" type="image/png">
+    <link rel="preload" as="image" href="/images/pokemon/aggron_rs_306.png" type="image/png">
+    <link rel="preload" as="image" href="/images/pokemon/glalie_rs_362.png" type="image/png">
+    <link rel="preload" as="image" href="/images/pokemon/kyogre_rs_382.png" type="image/png">
+
+    <style>
+      body {
+        width: 100%;
+        display: flex;
+      }
+
+      header {
+        width: 100%;
+        height: 100%;
+        background-color: var(--theme-bg-offset);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .content {
+        margin-bottom: 8rem;
+      }
+
+      .content :global(main > * + *) {
+        margin-top: 1rem;
+      }
+
+      .intro {
+        padding-bottom: 1.4rem;
+      }
+
+      .intro > * {
+        margin: 0;
+      }
+
+      .latest {
+        font-size: 2.5rem;
+        font-weight: 700;
+      }
+
+      .sprites {
+        display: flex;
+        margin-bottom: 1.38rem;
+      }
+
+      .sprites img {
+        width: inherit;
+        padding-right: 1rem;
+      }
+
+    </style>
+  </head>
+<body>
+  <BlogHeader />
+    <div class="layout">
+      <article class="content">
+        <section class="intro">
+          <h1>My Pokémon teams</h1>
+        </section>
+        <section>
+            <h2>Pokémon Blue</h2>
+            <div class="sprites">
+              <img src="/images/pokemon/blastoise_rb_009.png" alt="Blastoise sprite" width="56"/>
+              <img src="/images/pokemon/graveler_rb_075.png" alt="Graveler sprite" width="56"/>
+              <img src="/images/pokemon/victreebel_rb_071.png" alt="Victreebel sprite" width="56"/>
+              <img src="/images/pokemon/electrode_rb_101.png" alt="Electrode sprite" width="56"/>
+              <img src="/images/pokemon/pidgeot_rb_018.png" alt="Pidgeot sprite" width="56"/>
+              <img src="/images/pokemon/articuno_rb_144.png" alt="Articuno sprite" width="56"/>
+            </div>
+            <p>Despite having a legendary in the team, Blastoise the alpha and omega. I instantly fell in love from the box art and I always pick Squirtle. I didn't have any friends to trade with so Graveler remained unevolved. Pidgeot was my go-to flying type until I got Articuno but that served more as a stone cold assassin.</p>
+            <h2>Pokémon Silver</h2>
+            <div class="sprites">
+              <img src="/images/pokemon/feraligatr_gs_160.png" alt="Feraligatr sprite" width="56"/>
+              <img src="/images/pokemon/graveler_gs_075.png" alt="Graveler sprite" width="56"/>
+              <img src="/images/pokemon/ampharos_gs_181.png" alt="Ampharos sprite" width="56"/>
+              <img src="/images/pokemon/lugia_gs_249.png" alt="Lugia sprite" width="56"/>
+              <img src="/images/pokemon/pidgeot_gs_018.png" alt="Pidgeot sprite" width="56"/>
+              <img src="/images/pokemon/haunter_gs_093.png" alt="Haunter sprite" width="56"/>
+            </div>
+            <p>It was another case of double birds. Lugia captured my heart at 11 years old and I've loved her ever since. Haunter was the second "no friends so no evolution" 'mon.</p>
+            <h2>Pokémon Sapphire</h2>
+            <div class="sprites">
+              <img src="/images/pokemon/swampert_rs_260.png" alt="Swampert sprite" width="64"/>
+              <img src="/images/pokemon/swellow_rs_277.png" alt="Swellow sprite" width="64"/>
+              <img src="/images/pokemon/hariyama_rs_297.png" alt="Hariyama sprite" width="64"/>
+              <img src="/images/pokemon/aggron_rs_306.png" alt="Aggron sprite" width="64"/>
+              <img src="/images/pokemon/glalie_rs_362.png" alt="Glalie sprite" width="64"/>
+              <img src="/images/pokemon/kyogre_rs_382.png" alt="Kyogre sprite" width="64"/>
+            </div>
+            <p>This was the first game where I couldn't rely on Gen 1 Pokémon but the ones I made do with had awesome character designs. A floating Jason X ball? An iron dragon monster boss? KYOGRE?!</p>
+        </section>
+              </article>
+            </div>
+      <BlogFooter></BlogFooter>
+  </body>
+</html>
