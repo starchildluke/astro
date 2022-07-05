@@ -197,7 +197,7 @@ let description = "";
     <ul class="post-list">
     {items.map((post) => (
       <li class="post-preview post-listing post-list">
-        <a href={post.url + "/"}>{post.frontmatter.title}</a>
+        <a href={post.url}>{post.frontmatter.title}</a>
         <span class="publish-date">{post.frontmatter.date}</span>
       </li>
     ))}
