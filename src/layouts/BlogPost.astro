@@ -4,6 +4,7 @@ import BaseHead from '../components/BaseHead.astro';
 import BlogHeader from '../components/BlogHeader.astro';
 import BlogPost from '../components/BlogPost.astro';
 import BlogFooter from '../components/BlogFooter.astro';
+import StructuredData from '../components/StructuredData.astro';
 
 const {content} = Astro.props;
 const {title, description, date, canonicalURL} = content;
@@ -13,6 +14,7 @@ const {title, description, date, canonicalURL} = content;
   <head>
     <BaseHead {title} {description} {canonicalURL} />
     <link rel="stylesheet" href="/style/blog.css" />
+    <StructuredData {title} {date} />
   </head>
 
   <body>
