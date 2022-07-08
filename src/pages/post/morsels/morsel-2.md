@@ -7,7 +7,10 @@ layout: ../../../layouts/BlogPost.astro
 
 My second morsel is a Python script that extracts thumbnails from YouTube videos.
 
-[GitHub link](https://share.streamlit.io/starchildluke/yt_thumbnail/main/yt_st.py)
+## Links
+
+* [GitHub link](https://github.com/starchildluke/yt_thumbnail)
+* [Streamlit app](https://share.streamlit.io/starchildluke/yt_thumbnail/main/yt_st.py)
 
 ## Requirements
 

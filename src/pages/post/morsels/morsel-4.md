@@ -13,7 +13,9 @@ My fourth morsel is a way to backup your site to the Internet Archive.
 * [waybackpy](https://pypi.org/project/waybackpy/)
 * [advertools](https://advertools.readthedocs.io/)
 
-[GitHub link](https://github.com/starchildluke/wayback)
+## Links
+
+* [GitHub link](https://github.com/starchildluke/wayback)
 
 Credit to [Koray Tuğberk GÜBÜR](https://www.holisticseo.digital/python-seo/internet-archive/) for the code and the idea.
 
