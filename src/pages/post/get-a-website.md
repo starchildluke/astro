@@ -17,7 +17,7 @@ Places like Twitter, Instagram, et al should be extending tools and platforms. I
 * [Squarespace](https://www.squarespace.com/)
 * [WordPress.com](https://wordpress.com/)/[WordPress.org](https://wordpress.org/)
 * [Wix](https://www.wix.com/)
-* [Shopify](https://www.spotify.com/)
+* [Shopify](https://www.shopify.com/)
 * [Webflow](https://webflow.com/)
 * [Web.com](https://web.com)
 * [Gator from Hostgator](https://www.hostgator.com/)

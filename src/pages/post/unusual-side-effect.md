@@ -7,7 +7,7 @@ tags:
 - phones
 ---
 
-I'm a big fan of Marijn van Hoorn's blogosphere and they wrote a piece on [how they got vaccinated](https://marijn.uk/thegarden/12021/03/vaccinated/). My favourite line was the last one:
+I'm a big fan of Marijn van Hoorn's blogosphere and they wrote a piece on how they got vaccinated (can't find the blog post now). My favourite line was the last one:
 
 > It’s been a day, and other than a dull annoyance in my upper arm and a sudden urge to buy a Windows Phone, i haven’t noticed any symptoms. I’ve heard the Pfizer one is worse on the second go, though, so wish me luck!
 

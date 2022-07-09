@@ -79,10 +79,10 @@
 <li><a href="https://raindrop.io/">Raindrop</a></li>
 <li><a href="https://pinboard.in/">Pinboard</a></li>
 <li><a href="https://www.python.org/">Python</a></li>
-<li><a href="https://wordpress.org/">Wordpress</a>/<a href="https://getgrav.org/">Grav</a></li>
+<li><a href="https://wordpress.org/">Wordpress</a>/<del><a href="https://getgrav.org/">Grav</a></del></li>
 <li><a href="https://buffer.com/">Buffer</a></li>
 <li><a href="https://twitter.com/">Twitter</a></li>
-</ul><p>In terms of cost: Pocket, Python (I use <a href="https://colab.research.google.com/">Google Colab</a> as a virtual notebook environment), Wordpress and Grav, and Twitter are free. Raindrop is free but I pay £3/month for extra features (not essential but I wanted to try them and I’ll explain more about it later). Buffer is $10 for their Awesome Plan, which lets me send updates through 10 different social accounts. Pinboard costs $18 a year for a basic account.</p><p>In total, it costs me about £140 a year but you could easily do it for free if you followed my process and maybe replace Pinboard with Raindrop for general bookmarks or just keep them in your browser.</p><h2 id="the-process">The process</h2><p>I run 5 main blogs (and this personal blog) mostly on my own and that means I can’t update everything as regularly as I’d like. To avoid losing steam and ideas, I follow this process:</p><ol>
+</ul><p>In terms of cost: Pocket, Python (I use <del><a href="https://colab.research.google.com/">Google Colab</a></del> <a href="https://jupyter.org/">Jupyter Notebook</a> as a virtual notebook environment), Wordpress <del>and Grav</del>, and Twitter are free. Raindrop is free but I pay £3/month for extra features (not essential but I wanted to try them and I’ll explain more about it later). Buffer is $10 for their Awesome Plan, which lets me send updates through 10 different social accounts. Pinboard costs $18 a year for a basic account.</p><p>In total, it costs me about £140 a year but you could easily do it for free if you followed my process and maybe replace Pinboard with Raindrop for general bookmarks or just keep them in your browser.</p><h2 id="the-process">The process</h2><p>I run 5 main blogs (and this personal blog) mostly on my own and that means I can’t update everything as regularly as I’d like. To avoid losing steam and ideas, I follow this process:</p><ol>
 <li>I find interesting content on the Web, either on Twitter or Feedly</li>
 <li>If it piques my interest, it goes into my Pocket list for further evaluation (unless I read it there and then)</li>
 <li>If I want to write about it, I add it to one of my Raindrop folders (called Collections)</li>
@@ -90,7 +90,7 @@
 <li>I use a special Python script to decide what to write about</li>
 <li>I use Wordpress as the CMS for my main blogs and Grav for this site</li>
 <li>I use Buffer to schedule updates (or if I don’t write about it, I just put the link on there)</li>
-</ol><h2 id="the-python-script">The Python script</h2><p>If you’re not familiar with Python, you can skip this part as it’s purely for my benefit. Otherwise, keep reading!</p><p><a href="https://help.raindrop.io/collections/">Raindrop has its own API</a> which gives access to my account and all the bookmarks in my <a href="https://help.raindrop.io/collections">Collections</a>. Here’s the code:</p><pre class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">import requests</span></span>
+</ol><h2 id="the-python-script">The Python script</h2><p>If you’re not familiar with Python, you can skip this part as it’s purely for my benefit. Otherwise, keep reading!</p><p><a href="https://help.raindrop.io/collections/">Raindrop has its own API</a> which gives access to my account and all the bookmarks in my Collections. Here’s the code:</p><pre class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">import requests</span></span>
 <span class="line"><span style="color: #c9d1d9">import random</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
 <span class="line"><span style="color: #c9d1d9">headers = {&#39;Authorization&#39;: &#39;Bearer AUTHORIZATION_CODE&#39;}</span></span>

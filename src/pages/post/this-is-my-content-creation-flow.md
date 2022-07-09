@@ -19,11 +19,11 @@ The things I use are:
 * [Raindrop](https://raindrop.io/)
 * [Pinboard](https://pinboard.in/)
 * [Python](https://www.python.org/)
-* [Wordpress](https://wordpress.org/)/[Grav](https://getgrav.org/)
+* [Wordpress](https://wordpress.org/)/~~[Grav](https://getgrav.org/)~~
 * [Buffer](https://buffer.com/)
 * [Twitter](https://twitter.com/)
 
-In terms of cost: Pocket, Python (I use [Google Colab](https://colab.research.google.com/) as a virtual notebook environment), Wordpress and Grav, and Twitter are free. Raindrop is free but I pay £3/month for extra features (not essential but I wanted to try them and I'll explain more about it later). Buffer is $10 for their Awesome Plan, which lets me send updates through 10 different social accounts. Pinboard costs $18 a year for a basic account.
+In terms of cost: Pocket, Python (I use ~~[Google Colab](https://colab.research.google.com/)~~ [Jupyter Notebook](https://jupyter.org/) as a virtual notebook environment), Wordpress ~~and Grav~~, and Twitter are free. Raindrop is free but I pay £3/month for extra features (not essential but I wanted to try them and I'll explain more about it later). Buffer is $10 for their Awesome Plan, which lets me send updates through 10 different social accounts. Pinboard costs $18 a year for a basic account.
 
 In total, it costs me about £140 a year but you could easily do it for free if you followed my process and maybe replace Pinboard with Raindrop for general bookmarks or just keep them in your browser.
 
@@ -41,7 +41,7 @@ I run 5 main blogs (and this personal blog) mostly on my own and that means I ca
 ## The Python script
 If you're not familiar with Python, you can skip this part as it's purely for my benefit. Otherwise, keep reading!
 
-[Raindrop has its own API](https://help.raindrop.io/collections/) which gives access to my account and all the bookmarks in my [Collections](https://help.raindrop.io/collections). Here's the code:
+[Raindrop has its own API](https://help.raindrop.io/collections/) which gives access to my account and all the bookmarks in my Collections. Here's the code:
 
 ~~~
 import requests
