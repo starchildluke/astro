@@ -10,7 +10,7 @@ export interface Props {
   post: any;
 }
 
-const { posts, post } = Astro.props;
+const { posts, post, canonicalURL = Astro.canonicalURL } = Astro.props;
 
 // Component Script:
 // You can write any JavaScript/TypeScript that you'd like here.
@@ -33,7 +33,7 @@ const { page } = Astro.props;
 ---
 <html lang="en">
   <head>
-    <BaseHead title={title} description={description} canonicalURL={page.url.current} />
+    <BaseHead title={title} description={description} canonicalURL={canonicalURL} />
 
     <style>
 

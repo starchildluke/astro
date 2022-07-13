@@ -14,7 +14,7 @@ export async function getStaticPaths({rss, paginate}) {
 
 // If set up correctly, The page prop now has everything that
 // you need to render a single page (see next section).
-const { page } = Astro.props
+const { page, canonicalURL = Astro.canonicalURL } = Astro.props
   
 interface Post {
     title: string
@@ -99,7 +99,7 @@ let description = "";
 ---
 <html lang="en">
   <head>
-    <BaseHead title={title + ' (Page ' + page.currentPage + '/' + page.lastPage + ')'} description={description} canonicalURL={page.url.current} />
+    <BaseHead title={title + ' (Page ' + page.currentPage + '/' + page.lastPage + ')'} description={description} canonicalURL={canonicalURL} />
 
     <style>
 
