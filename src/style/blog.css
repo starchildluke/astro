@@ -18,25 +18,10 @@
   --color-gray-700: #374151;
   --color-gray-800: #161718;
   --color-gray-900: #111827;
-
-  --color-blue: #1c7aff;
-  --color-blue-rgb: 28, 122, 255;
   --color-green: #295f2b;
-  --color-green-rgb: 76, 175, 80;
-  --color-orange: #ff5d01;
-  --color-orange-rgb: 255, 93, 1;
   --color-purple: #9663c4;
-  --color-purple-rgb: 150, 99, 196;
   --color-red: #ff1639;
-  --color-red-rgb: 255, 22, 57;
-  --color-yellow: #ffbe2d;
-  --color-yellow-rgb: 255, 190, 45;
-  --color-rainbow: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
-            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
-            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
-
   --theme-accent: var(--color-green);
-  --theme-accent-rgb: var(--color-orange-rgb);
   --theme-accent-opacity: 0.1;
   --theme-divider: var(--color-gray-100);
   --theme-text-dark: var(--color-white);
@@ -44,7 +29,6 @@
   --theme-bg-dark: var(--color-gray-800);
   --theme-bg-light: var(--color-white);
   --theme-bg-offset: var(--color-gray-100);
-  --theme-bg-accent: rgba(var(--theme-accent-rgb), var(--theme-accent-opacity));
   --theme-code-inline-bg: var(--color-gray-100);
   --theme-code-text: var(--color-gray-100);
   --theme-code-bg: var(--color-gray-700);
@@ -378,20 +362,4 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.content {
-  margin-bottom: 8rem;
-}
-
-.content :global(main > * + *) {
-  margin-top: 1rem;
-}
-
-.intro {
-  padding-bottom: 1.4rem;
-}
-
-.intro > * {
-  margin: 0;
 }
