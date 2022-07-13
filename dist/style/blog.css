@@ -135,6 +135,7 @@ h2 {
 }
 
 h2#hello {
+  font-family: 'Karla';
   font-weight: 700;
   color: var(--color-purple);
 }
