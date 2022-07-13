@@ -17,43 +17,6 @@ let canonicalURL = Astro.canonicalURL.href;
 <html lang="en">
   <head>
     <BaseHead title={title} description={description} canonicalURL={canonicalURL} />
-
-    <style>
-      body {
-        width: 100%;
-        display: flex;
-      }
-
-      header {
-        width: 100%;
-        height: 100%;
-        background-color: var(--theme-bg-offset);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-
-      .content {
-        margin-bottom: 8rem;
-      }
-
-      .content :global(main > * + *) {
-        margin-top: 1rem;
-      }
-
-      .intro {
-        padding-bottom: 1.4rem;
-      }
-
-      .intro > * {
-        margin: 0;
-      }
-
-      .latest {
-        font-size: 2.5rem;
-        font-weight: 700;
-      }
-    </style>
   </head>
 <body>
   <BlogHeader />
