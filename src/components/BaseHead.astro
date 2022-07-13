@@ -1,6 +1,7 @@
 ---
 
 import site from '../data/site.json';
+import '../style/blog.css';
 
 const {
   posttitle,
@@ -25,22 +26,18 @@ let ogimage = 'https://lukealexdavis.co.uk/assets/ld-logo-og-image.jpg';
 <meta name="generator" content="Astro 1.0.0-beta.53">
 <link rel="canonical" href={canonicalURL} />
 <link rel="alternate" type="application/rss+xml" title={site.title} href={blogRssFeed} />
-
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
 <meta property="og:url" content={canonicalURL} />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
 <meta property="og:image" content={ogimage} />
-
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content={canonicalURL} />
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={ogimage} />
-
 <script defer data-domain="lukealexdavis.co.uk" src="https://plausible.io/js/plausible.js"></script>
-
 <link rel="preload" href="/fonts/Archivo-Black.woff" as="font" type="font/woff" crossorigin>
 <link rel="preload" href="/fonts/Karla-Light.woff2" as="font" type="font/woff" crossorigin>
