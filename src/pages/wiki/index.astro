@@ -31,43 +31,7 @@ let domain = "https://lukealexdavis.co.uk"
 <html lang="en">
   <head>
     <BaseHead title={title + metaTitle} description={description} canonicalURL={domain + slug} />
-    <link rel="stylesheet" href="/style/blog.css" />
-
     <style>
-      
-      body {
-        width: 100%;
-        display: flex;
-      }
-
-      header {
-        width: 100%;
-        height: 100%;
-        background-color: var(--theme-bg-offset);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-
-      .content {
-        margin-bottom: 8rem;
-      }
-
-      .content :global(main > * + *) {
-        margin-top: 1rem;
-      }
-
-      .intro {
-        padding-bottom: 1.4rem;
-      }
-
-      .intro > * {
-        margin: 0;
-      }
-
-      .content :global(main > * + *) {
-        margin-top: 1rem;
-      }
 
       .post-listing {
         display: flex;

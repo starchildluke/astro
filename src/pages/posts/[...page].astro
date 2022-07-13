@@ -100,26 +100,8 @@ let description = "";
 <html lang="en">
   <head>
     <BaseHead title={title + ' (Page ' + page.currentPage + '/' + page.lastPage + ')'} description={description} canonicalURL={page.url.current} />
-    <link rel="stylesheet" href="/style/blog.css" />
 
     <style>
-      body {
-        width: 100%;
-        display: flex;
-      }
-
-      header {
-        width: 100%;
-        height: 100%;
-        background-color: var(--theme-bg-offset);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        text-align: left;
-
-  padding-bottom: 2rem;
-      }
 
       .content {
         margin-bottom: 8rem;
@@ -160,14 +142,11 @@ let description = "";
   letter-spacing: 2px;
 }
 
-.title,
-.author,
-.publish-date {
+.title, .publish-date {
   margin: 0;
 }
 
-.publish-date,
-.author {
+.publish-date {
   text-transform: uppercase;
   letter-spacing: 2px;
 }

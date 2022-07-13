@@ -34,113 +34,77 @@ let domain = "https://lukealexdavis.co.uk"
 <html lang="en">
   <head>
     <BaseHead title={'wiki/' + title.toLowerCase()} description={description} canonicalURL={domain + slug} />
-    <link rel="stylesheet" href="/style/blog.css" />
+    <style>
 
-<style>
-  
-  body {
-    width: 100%;
-    display: flex;
-  }
+      .post-listing {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        }
 
-  header {
-    width: 100%;
-    height: 100%;
-    background-color: var(--theme-bg-offset);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+      .post-preview {
+        padding-bottom: 1rem;
+      }
 
-  .content {
-    margin-bottom: 8rem;
-  }
+      .post-listing a {
+        max-width: 60%;
+      }
 
-  .content :global(main > * + *) {
-    margin-top: 1rem;
-  }
+      .publish-date {
+        letter-spacing: 2px;
+      }
 
-  .intro {
-    padding-bottom: 1.4rem;
-  }
+      header {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        align-items: flex-start;
+        justify-content: center;
 
-  .intro > * {
-    margin: 0;
-  }
+        padding-bottom: 2rem;
+      }
 
-  .content :global(main > * + *) {
-    margin-top: 1rem;
-  }
+      .desc {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--color-grey-800);
+      }
 
-  .post-listing {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-    }
+      .title, .publish-date {
+        margin: 0;
+      }
 
-  .post-preview {
-    padding-bottom: 1rem;
-  }
+      .publish-date {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
 
-  .post-listing a {
-    max-width: 60%;
-  }
+      .title {
+        font-size: 2.25rem;
+        font-weight: 700;
+        color: var(--theme-text);
+      }
 
-  .publish-date {
-    letter-spacing: 2px;
-  }
+      .wiki-h2 {
+        margin-bottom: 2rem;
+      }
 
-  header {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    align-items: flex-start;
-    justify-content: center;
+      .wiki-h2:after {
+         background: none repeat scroll 0 0 #295f2b;
+         bottom: -0.5rem;
+         content: "";
+         display: block;
+         height: 0.6rem;
+         position: relative;
+         width: 2.5rem;
+      }
 
-    padding-bottom: 2rem;
-  }
+      .wiki-listing {
+        padding-bottom: 0.5rem;
+      }
 
-  .desc {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--color-grey-800);
-  }
-
-  .title, .publish-date {
-    margin: 0;
-  }
-
-  .publish-date {
-    text-transform: uppercase;
-    letter-spacing: 2px;
-  }
-
-  .title {
-    font-size: 2.25rem;
-    font-weight: 700;
-    color: var(--theme-text);
-  }
-
-  .wiki-h2 {
-    margin-bottom: 2rem;
-  }
-
-  .wiki-h2:after {
-     background: none repeat scroll 0 0 #295f2b;
-     bottom: -0.5rem;
-     content: "";
-     display: block;
-     height: 0.6rem;
-     position: relative;
-     width: 2.5rem;
-  }
-
-  .wiki-listing {
-    padding-bottom: 0.5rem;
-  }
-
-</style>
+    </style>
 
   </head>
 
