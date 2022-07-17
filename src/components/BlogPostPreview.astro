@@ -14,9 +14,6 @@ const { post } = Astro.props;
 </article>
 
 <style>
-.content :global(main > * + *) {
-  margin-top: 1rem;
-}
 
 .post-listing {
   display: flex;
@@ -33,28 +30,11 @@ const { post } = Astro.props;
   max-width: 60%;
 }
 
-.publish-date {
-  letter-spacing: 2px;
-}
-
-header {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  align-items: flex-start;
-  justify-content: center;
-
-  padding-bottom: 2rem;
-}
-
-.title,
-.author,
-.publish-date {
+.title, .publish-date {
   margin: 0;
 }
 
-.publish-date,
-.author {
+.publish-date {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
