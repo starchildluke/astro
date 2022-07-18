@@ -7,24 +7,24 @@
     "build": "astro build"
   },
   "devDependencies": {
-    "astro": "^1.0.0-beta.53",
+    "@snowpack/plugin-svelte": "^3.1.0",
+    "astro": "^1.0.0-beta.72",
     "prettier": "^2.6.2"
   },
   "dependencies": {
     "@astrojs/markdown-remark": "^0.11.3",
-    "@astrojs/renderer-svelte": "^0.5.2",
+    "@astrojs/renderer-svelte": "^0.5.0",
     "@astrojs/sitemap": "^0.1.2",
     "got": "^12.1.0",
     "jsdom": "^20.0.0",
     "major": "^0.0.0",
     "mime": "^3.0.0",
     "minimist": "^1.2.6",
-    "npm-check-updates": "^14.1.1",
     "react-dom": "^18.2.0",
+    "rollup-plugin-svelte": "^7.1.0",
     "sitemapper": "^3.2.2",
     "ssr-utils": "^0.1.1-0",
-    "svelte": "^3.48.0",
-    "uniq": "^1.0.1",
+    "svelte": "^3.49.0",
     "version": "^0.0.4",
     "vite": "^2.9.12"
   }
