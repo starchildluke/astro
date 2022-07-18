@@ -7,15 +7,9 @@ const { title, date } = Astro.props;
 <div class="layout">
   <article class="content">
       <p class="publish-date">{date}</p>
-      <h1 class="title">{title}</h1>
+      <h1>{title}</h1>
     <main>
       <slot />
     </main>
   </article>
 </div>
-
-<style>
-  .content {margin-bottom: 8rem;}
-  header {margin-bottom: 3rem;}
-  p.publish-date {color: var(--theme-text-lighter);border-bottom: 10px solid var(--color-green);width: 20%;padding-bottom: 0.5rem;margin-bottom: 1.5rem;}
-</style>

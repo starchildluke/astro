@@ -12,36 +12,3 @@ const { post } = Astro.props;
     <span class="publish-date">{post.frontmatter.date}</span>
     </li>
 </article>
-
-<style>
-
-.post-listing {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between;
-  }
-
-.post-preview {
-  padding-bottom: 1rem;
-}
-
-.post-listing a {
-  max-width: 60%;
-}
-
-.title, .publish-date {
-  margin: 0;
-}
-
-.publish-date {
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-.title {
-  font-size: 2.25rem;
-  font-weight: 700;
-  color: var(--theme-text);
-}
-</style>
