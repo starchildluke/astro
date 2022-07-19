@@ -22,12 +22,9 @@ let canonicalURL = Astro.canonicalURL.href;
 
   <body>
     <BlogHeader />
-    <div class="layout">
+    <main class="layout">
       <article class="content">
-        <section class="intro">
           <h1>{title}</h1>
-        </section>
-        <section>
                   <h2>A list of miscellaneous pages.</h2>
                   <ul>
                     <li><a href="/fave-tweets/">My favourite tweets</a></li>
@@ -38,12 +35,8 @@ let canonicalURL = Astro.canonicalURL.href;
                     <li><a href="/ducks/">My favourite ducks</a></li>
                     <li><a href="/my-pokemon-teams/">My Pokémon teams</a></li>
                   </ul>
-      
-    </section>
-       
-
       </article>
-          </div>
+          </main>
            <BlogFooter></BlogFooter>
   </body>
 </html>

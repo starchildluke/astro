@@ -41,12 +41,9 @@ let canonicalURL = Astro.canonicalURL.href;
   </head>
 <body>
   <BlogHeader />
-   <div class="layout">
+   <main class="layout">
       <article class="content">
-        <section class="intro">
           <h1>{title}</h1>
-        </section>
-        <section>
           <ul>
       {sitemapURLs.sites.map(( url ) => (
                   <li class="post-preview wiki-listing post-list">
@@ -54,9 +51,8 @@ let canonicalURL = Astro.canonicalURL.href;
                   </li>
                 ))}
     </ul>
-    </section>
       </article>
-          </div>
+          </main>
            <BlogFooter></BlogFooter>
   </body>
 </html>

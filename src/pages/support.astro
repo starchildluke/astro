@@ -1,47 +1,36 @@
 ---
 // COMPONENTS
-
 import { Markdown } from 'astro/components';
 import BaseHead from '../components/BaseHead.astro';
 import BlogHeader from '../components/BlogHeader.astro';
 import BlogFooter from '../components/BlogFooter.astro';
 import BlogPostPreview from '../components/BlogPostPreview.astro';
-
 // EXPORT
-
 export interface Props {
-  post: any;
-  metaTitle: string;
-  title: string;
-  slug: string;
-  description: string;
-  domain: string;
+post: any;
+metaTitle: string;
+title: string;
+slug: string;
+description: string;
+domain: string;
 }
-
 // PROPS
-
 const { post } = Astro.props;
-
 // METADATA VARIABLES
-
 let metaTitle = ' | Luke Davis';
 let title = 'Support';
 let description = 'This is my support page where you can find ways to support my work and various projects.';
 let canonicalURL = Astro.canonicalURL.href;
 ---
-
 <html lang="en">
   <head>
     <BaseHead title={title} description={description} canonicalURL={canonicalURL} />
   </head>
-<body>
-  <BlogHeader />
-    <div class="layout">
+  <body>
+    <BlogHeader />
+    <main class="layout">
       <article class="content">
-        <section class="intro">
           <h1>How To {title} Me</h1>
-        </section>
-        <section>
           <p>There are various ways you can support me and my work.</p>
           <h2>With money</h2>
           <ul>
@@ -56,31 +45,26 @@ let canonicalURL = Astro.canonicalURL.href;
             <li>Engage with my content. Whether it involves tweets, blog posts, or projects, share them, leave comments, retweet, give feedback, link back on your website (I love a <a href="https://digigrow.co/2021/09/how-to-get-natural-backlinks/">natural backlink</a>).</li>
             <li><a href="mailto:luke@lukealexdavis.co.uk">Email me</a> stuff you think I’ll like. It beats getting junk!</li>
             <li>Write about me on your own sites and link back. I've written thousands of blog posts and I might have something interesting for you.</li>
-        </section>
-        <section>
-          <h2>My Patrons</h2>
-          <p>Shout out to my patrons:</p>
-          <ul>
-            <li><a href="https://twitter.com/TheDazzlingOne">Ashley</a></li>
-            <li><a href="https://linktr.ee/KeidraC">Keidra</a></li>
-            <li><a href="https://twitter.com/GaffneyVLC">Andrew</a></li>
-            <li><a href="https://jessbpeck.com/">Jess</a></li>
-            <li><a href="https://sybrand.ink/">Sy</a></li>
-            <li><a href="https://thepenguinpatrol.co.uk/">Sophie</a></li>
-            <li>Lacie</li>
-            <li><a href="https://ko-fi.com/josefien">Josefien</a></li>
-            <li><a href="https://medium.com/@kiddotrue">Ariel</a></li>
-            <li><a href="https://blackanimepodcasts.com/">Ash</a></li>
-          </ul>
-        </section>
-        <section>
-          <h2>Road To 2K</h2>
-          <label for="savings">Savings progress:</label>
+            <h2>My Patrons</h2>
+            <p>Shout out to my patrons:</p>
+            <ul>
+              <li><a href="https://twitter.com/TheDazzlingOne">Ashley</a></li>
+              <li><a href="https://linktr.ee/KeidraC">Keidra</a></li>
+              <li><a href="https://twitter.com/GaffneyVLC">Andrew</a></li>
+              <li><a href="https://jessbpeck.com/">Jess</a></li>
+              <li><a href="https://sybrand.ink/">Sy</a></li>
+              <li><a href="https://thepenguinpatrol.co.uk/">Sophie</a></li>
+              <li>Lacie</li>
+              <li><a href="https://ko-fi.com/josefien">Josefien</a></li>
+              <li><a href="https://medium.com/@kiddotrue">Ariel</a></li>
+              <li><a href="https://blackanimepodcasts.com/">Ash</a></li>
+            </ul>
+            <h2>Road To 2K</h2>
+            <label for="savings">Savings progress:</label>
           <progress id="savings" value="95.99" max="2000"> 4.80% </progress>
           <p>£95.99/<strong>£2,000</strong> (4.80%)</p>
-        </section>
-              </article>
-            </div>
-      <BlogFooter></BlogFooter>
+      </article>
+    </main>
+    <BlogFooter></BlogFooter>
   </body>
 </html>

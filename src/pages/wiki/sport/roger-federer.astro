@@ -44,13 +44,10 @@ let domain = "https://lukealexdavis.co.uk"
 
   <body>
     <BlogHeader />
-    <div class="layout">
+    <main class="layout">
       <article class="content">
         <Breadcrumbs title={title}/>
-        <section class="intro">
           <h1>{title}</h1>
-        </section>
-        <section>
           <Markdown>
           ## Inner voice
           
@@ -60,9 +57,6 @@ let domain = "https://lukealexdavis.co.uk"
           * [/roger-federer-numbers-game.md](/post/roger-federer-numbers-game/)
           * [/the-last-5-games-of-the-2017-australian-open.md](/post/the-last-5-games-of-the-2017-australian-open/)
           </Markdown>
-        </section>
-      
-    <section>
       <h2 class="wiki-h2">Out loud</h2>
        <ul class="post-list">
       {remoteData.map(( post ) => (
@@ -202,10 +196,9 @@ let domain = "https://lukealexdavis.co.uk"
           * [Roger Federer will hate taste of bagel, but it is too soon to write him off | Tumaini Carayol](https://www.theguardian.com/sport/blog/2021/jul/07/roger-federer-will-hate-the-taste-of-bagel-but-it-is-too-soon-to-write-him-off)
           
         </Markdown>
-    </section>
       </article>
       
-    </div>
+    </main>
     <BlogFooter></BlogFooter>
   </body>
 </html>

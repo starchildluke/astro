@@ -22,12 +22,9 @@ let canonicalURL = Astro.canonicalURL.href;
 
   <body>
     <BlogHeader />
-    <div class="layout">
+    <main class="layout">
       <article class="content">
-        <section class="intro">
           <h1>{title}</h1>
-        </section>
-        <section>
                   <h2>My favourite ducks.</h2>
                   <ol>
                     <li>Donald Duck</li>
@@ -41,13 +38,10 @@ let canonicalURL = Astro.canonicalURL.href;
                     <li>Wade Duck from Garfield & Friends</li>
                     <li>The Mighty Ducks</li>
                     <li>Scrooge McDuck</li>
+                    <li>Maui Mallard/Cold Shadow</li>
                   </ol>
-      
-    </section>
-       
-
       </article>
-          </div>
+          </main>
            <BlogFooter></BlogFooter>
   </body>
 </html>

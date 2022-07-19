@@ -58,12 +58,9 @@ let canonicalURL = Astro.canonicalURL.href;
   </head>
 <body>
   <BlogHeader />
-    <div class="layout">
+    <main class="layout">
       <article class="content">
-        <section class="intro">
           <h1>My Pokémon teams</h1>
-        </section>
-        <section>
             <h2>Pokémon Blue</h2>
             <div class="sprites">
               <img src="/images/pokemon/blastoise_rb_009.png" alt="Blastoise sprite" width="56"/>
@@ -94,9 +91,8 @@ let canonicalURL = Astro.canonicalURL.href;
               <img src="/images/pokemon/kyogre_rs_382.png" alt="Kyogre sprite" width="64"/>
             </div>
             <p>This was the first game where I couldn't rely on Gen 1 Pokémon but the ones I made do with had awesome character designs. A floating Jason X ball? An iron dragon monster boss? KYOGRE?!</p>
-        </section>
               </article>
-            </div>
+            </main>
       <BlogFooter></BlogFooter>
   </body>
 </html>

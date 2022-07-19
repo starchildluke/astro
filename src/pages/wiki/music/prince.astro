@@ -45,25 +45,17 @@ let domain = "https://lukealexdavis.co.uk"
 
   <body>
     <BlogHeader />
-      <div class="layout">
+      <main class="layout">
         <article class="content">
           <Breadcrumbs title={title}/>
-            <section class="intro">
-
               <h1>{title}</h1>
               <p class="desc">{description}</p>
-       </section>
-            <section>
-             
               <h2 class="wiki-h2">Inner voice</h2>
                 <Markdown>
                   * [/prince-purple-a-visited-css.md](/post/prince-purple-a-visited-css/)
                   * [/musical-inspirations.md](/post/musical-inspirations/)
                   * [/videos-ive-been-watching-to-keep-me-going.md](/post/videos-ive-been-watching-to-keep-me-going/)
                 </Markdown>
-            </section>
-      
-            <section>
               <h2 class="wiki-h2">Out loud</h2>
               <ul class="post-list">
                 {remoteData.map((item) => (
@@ -81,10 +73,8 @@ let domain = "https://lukealexdavis.co.uk"
                 <Markdown>
                   Coming soon...
                 </Markdown>
-            </section>
         </article>
-      
-    </div>
+    </main>
     <BlogFooter></BlogFooter>
   </body>
 </html>

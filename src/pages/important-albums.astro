@@ -36,20 +36,16 @@ let canonicalURL = Astro.canonicalURL.href;
   </head>
 <body>
   <BlogHeader />
-    <div class="layout">
+    <main class="layout">
       <article class="content">
-        <section class="intro">
           <h1>{title}</h1>
-        </section>
-        <section>
           <Markdown>
             | Artist      | Album       | Release Year |
             |-------------|-------------|--------------|
             | Coming soon | Coming soon | Coming soon  |
-          </Markdown>            
-        </section>
+          </Markdown>   
               </article>
-            </div>
+            </main>
       <BlogFooter></BlogFooter>
   </body>
 </html>

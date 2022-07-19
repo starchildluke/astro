@@ -45,16 +45,11 @@ let domain = "https://lukealexdavis.co.uk"
 
   <body>
     <BlogHeader />
-      <div class="layout">
+      <main class="layout">
         <article class="content">
           <Breadcrumbs title={title}/>
-            <section class="intro">
-
               <h1>{title}</h1>
               <p class="desc">{description}</p>
-       </section>
-            <section>
-             
               <h2 class="wiki-h2">Inner voice</h2>
                 <Markdown>
                   * [/you-rocked-my-world-you-know-you-did.md](/post/you-rocked-my-world-you-know-you-did/)
@@ -72,9 +67,6 @@ let domain = "https://lukealexdavis.co.uk"
                   * [/if-nobody-listened.md](/post/if-nobody-listened/)
                   * [/fave-albums-2020.md](/post/fave-albums-2020/)
                 </Markdown>
-            </section>
-      
-            <section>
               <h2 class="wiki-h2">Out loud</h2>
               <ul class="post-list">
                 {remoteData.map((item) => (
@@ -93,10 +85,9 @@ let domain = "https://lukealexdavis.co.uk"
                   * [How the SP-404 Came to Dominate the Global Beat Scene](https://reverb.com/news/a-history-of-the-sp-404)
                   * [Searching for Tomorrow: The Story of Madlib and DOOM's Madvillainy](https://pitchfork.com/features/article/9478-searching-for-tomorrow-the-story-of-madlib-and-dooms-madvillainy/)
                 </Markdown>
-            </section>
         </article>
       
-    </div>
+    </main>
     <BlogFooter></BlogFooter>
   </body>
 </html>
