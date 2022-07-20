@@ -1,6 +1,5 @@
 ---
 // COMPONENTS
-
 import { Markdown } from 'astro/components';
 import BaseHead from '../../../components/BaseHead.astro';
 import BlogHeader from '../../../components/BlogHeader.astro';
@@ -8,72 +7,61 @@ import BlogFooter from '../../../components/BlogFooter.astro';
 import Breadcrumbs from '../../../components/Breadcrumbs.astro';
 import site from '../../../data/site.json';
 import wiki from '../../../data/wiki.json'
-
 // EXPORT
-
 export interface Props {
-  post: any;
-  metaTitle: string;
-  title: string;
-  slug: string;
-  description: string;
-  domain: string;
+post: any;
+metaTitle: string;
+title: string;
+slug: string;
+description: string;
+domain: string;
 }
-
 // PROPS
-
 const { post } = Astro.props;
-
 // HOW FETCHING!
-
 const remoteData = await fetch('https://sampleface.co.uk/wp-json/wp/v2/posts?tags=408&per_page=100').then(response => response.json());
-
 const remoteData2 = await fetch('https://cultrface.co.uk/wp-json/wp/v2/posts?tags=701&per_page=100').then(response => response.json());
-
 // METADATA VARIABLES
-
 let title = 'Prince';
 let slug = '/wiki/music/prince/';
 let description = 'A wiki page all about Prince.';
 let domain = "https://lukealexdavis.co.uk"
-
 ---
 <html lang="en">
   <head>
     <BaseHead title={'wiki/' + title.toLowerCase()} description={description} canonicalURL={domain + slug} />
-</head>
-
+  </head>
   <body>
     <BlogHeader />
-      <main class="layout">
-        <article class="content">
-          <Breadcrumbs title={title}/>
-              <h1>{title}</h1>
-              <p class="desc">{description}</p>
-              <h2 class="wiki-h2">Inner voice</h2>
-                <Markdown>
-                  * [/prince-purple-a-visited-css.md](/post/prince-purple-a-visited-css/)
-                  * [/musical-inspirations.md](/post/musical-inspirations/)
-                  * [/videos-ive-been-watching-to-keep-me-going.md](/post/videos-ive-been-watching-to-keep-me-going/)
-                </Markdown>
-              <h2 class="wiki-h2">Out loud</h2>
-              <ul class="post-list">
-                {remoteData.map((item) => (
-                <li class="post-preview wiki-listing post-list">
+    <main class="layout">
+      <article class="content">
+        <Breadcrumbs title={title}/>
+        <h1>{title}</h1>
+        <p class="desc">{description}</p>
+        <h2 class="wiki-h2">Inner voice</h2>
+        <Markdown>
+        * [/prince-purple-a-visited-css.md](/post/prince-purple-a-visited-css/)
+        * [/musical-inspirations.md](/post/musical-inspirations/)
+        * [/videos-ive-been-watching-to-keep-me-going.md](/post/videos-ive-been-watching-to-keep-me-going/)
+        </Markdown>
+        <h2 class="wiki-h2">Out loud</h2>
+        <ul class="post-list">
+          {remoteData.map((item) => (
+          <li class="post-preview wiki-listing post-list">
             <a href={item.link}><Fragment set:html={item.title.rendered}></a>
           </li>
-             ))}
-             {remoteData2.map((item) => (
-                <li class="post-preview wiki-listing post-list">
+          ))}
+          {remoteData2.map((item) => (
+          <li class="post-preview wiki-listing post-list">
             <a href={item.link}><Fragment set:html={item.title.rendered}></a>
           </li>
-             ))}
-             </ul>
-              <h2 class="wiki-h2">Second opinions</h2>
-                <Markdown>
-                  Coming soon...
-                </Markdown>
-        </article>
+          ))}
+        </ul>
+        <h2 class="wiki-h2">Second opinions</h2>
+        <Markdown>
+        Coming soon...
+        </Markdown>
+      </article>
     </main>
     <BlogFooter></BlogFooter>
   </body>
