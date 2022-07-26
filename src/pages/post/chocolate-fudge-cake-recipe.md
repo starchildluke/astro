@@ -1,9 +1,10 @@
 ---
 title: 'Chocolate fudge cake recipe'
 published: true
-date: '5 July 2010'
+date: '5 Jul 2010'
 layout: ../../layouts/BlogPost.astro
-tags: recipes
+tags:
+- recipes
 ---
 
 * 2 1/2 c Sugar

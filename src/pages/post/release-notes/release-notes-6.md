@@ -2,7 +2,7 @@
 title: 'Release Notes #6'
 published: true
 date: '27 Apr 2022'
-layout: ../../../layouts/BlogPost.astro
+layout: ../../../layouts/ReleaseNotes.astro
 ---
 
 We're all on a ball of rock, grass, water, with fire in the middle like some kind of elemental chimera (or a cheat [Pokémon](/wiki/pokemon/)). It's **much** smaller than a subatomic particle in proportion to the rest of the universe.

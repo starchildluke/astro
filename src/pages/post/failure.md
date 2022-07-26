@@ -4,7 +4,8 @@ published: true
 date: "21 Dec 2020"
 layout: ../../layouts/BlogPost.astro
 description: "Before we ask people what they think success looks like, maybe we should ask what failure looks like."
-tags: 'failure'
+tags:
+- failure
 ---
 
 Think of any multi-billion dollar company and you'll remember their successes. After all, that's how they made all that money, right? But for every successful business, there have been a lot of failures which would have bankrupted or otherwise ruined other businesses–or people for that matter (and they probably have but why spoil a successful capitalist story).

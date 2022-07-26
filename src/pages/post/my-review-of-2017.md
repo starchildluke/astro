@@ -3,7 +3,8 @@ title: 'My Review of 2017'
 published: true
 date: '30 Dec 2017'
 layout: ../../layouts/BlogPost.astro
-tags: 'me'
+tags:
+- me
 ---
 
 This was going to be a lot more dreary and I wasn't going to publish anything. My life - at least in my mind - has been defined by thinking about the past, living in the past, and trying to recreate the past. I do the latter as a coping mechanism and an attempt at recapturing lost youth. But I digress. I thought about how I often take a pessimistic approach to think about myself and it infuriates me. So I won't do that here. 2017 has been a shit storm; there's no denying that. But for every roadblock, there has been a pathway through and that's a vast improvement on 2016, the **Year Formerly Known as the Worst Year of My Life.**

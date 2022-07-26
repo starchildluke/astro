@@ -3,7 +3,8 @@ title: 'Blogs and hats'
 published: true
 date: '24 Feb 2020'
 layout: ../../layouts/BlogPost.astro
-tags: 'blogging'
+tags:
+- blogging
 ---
 
 I've noticed something about how I approach [blogging](/wiki/blogging/). "Wearing many hats" is an idiom that means having different jobs or roles and running multiple blogs lends itself to that ideal. My head is never cold.

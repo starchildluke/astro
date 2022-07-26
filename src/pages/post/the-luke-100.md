@@ -3,7 +3,8 @@ title: 'The Luke 100'
 published: true
 date: '12 Dec 2017'
 layout: ../../layouts/BlogPost.astro
-tags: 'me'
+tags:
+- 'me'
 ---
 
 2017 has been up and down but one thing has stuck out: I need to be moving forward. I've seen a lot of people progressing and I've been still. It's not been a totally stationary year - I moved into my own place, went on my first solo holiday in 5 years, and got a qualification in digital marketing. But that's about it. I'm still single (less said about that the better) and despite the qualification, my long term career plans remain as "plans" despite efforts to change it.

@@ -5,6 +5,7 @@ layout: ../../layouts/BlogPost.astro
 tags:
 - beyond tired
 - racism
+- life
 ---
 
 How many times are non-Black people gonna derail the Black Lives Matter hashtag and in how many different ways?

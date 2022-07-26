@@ -1,8 +1,8 @@
 ---
 title: 'Morsel #7 - Random Pokémon Team Generator'
 published: true
-date: '23 July 2022'
-layout: ../../../layouts/BlogPost.astro
+date: '23 Jul 2022'
+layout: ../../../layouts/Morsels.astro
 ---
 
 ![A Pokémon team featuring Dodrio, Persian, Charizard, Clefable, Gengar, and Victreebel](/images/pokemon-random-team.jpg)

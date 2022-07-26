@@ -3,7 +3,8 @@ title: 'Proust Questionnaire'
 published: true
 date: '2 Sept 2012'
 layout: ../../layouts/BlogPost.astro
-tags: 'me'
+tags:
+- 'me'
 ---
 
 * What is your idea of perfect happiness?

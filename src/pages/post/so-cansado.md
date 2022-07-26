@@ -2,7 +2,8 @@
 title: 'Só cansado'
 date: '17 Feb 2020'
 layout: ../../layouts/BlogPost.astro
-tags: 'twitter'
+tags:
+- 'Twitter'
 ---
 
 **Tired**: wanting an edit button on Twitter      

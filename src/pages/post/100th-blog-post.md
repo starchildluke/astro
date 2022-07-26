@@ -4,7 +4,8 @@ published: true
 date: "9 May 2021"
 layout: ../../layouts/BlogPost.astro
 slug: "/posts/100th-blog-post"
-tags: 'cereal'
+tags:
+- cereal
 ---
 
 This is technically the 100th blog post on this iteration of my blog.

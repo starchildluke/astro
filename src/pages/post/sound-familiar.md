@@ -3,7 +3,8 @@ title: "Sound familiar?"
 published: true
 date: "19 Jan 2021"
 layout: ../../layouts/BlogPost.astro
-tags: 'life'
+tags:
+- 'life'
 ---
 
 <p><b>Person 1</b>: This piece of technology could do this really helpful thing</p>

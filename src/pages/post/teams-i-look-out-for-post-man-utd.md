@@ -1,8 +1,9 @@
 ---
 title: 'Teams I Look Out For, Post-Man Utd (Updated for 2021)'
-date: '10 July 2021'
+date: '10 Jul 2021'
 layout: ../../layouts/BlogPost.astro
-tags: 'football'
+tags:
+- 'football'
 ---
 
 2012/13 was my last season as an "official" Manchester United fan. It had nothing to do with Sir Alex Ferguson retiring, I'd just grown bored of football in general. I'm now back to caring but my attention lies elsewhere and in multiple places. These are the teams that keep me interested.

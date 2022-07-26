@@ -2,7 +2,8 @@
 title: "To Be Childlike And Not Childish"
 date: "4 Jun 2017"
 layout: ../../layouts/BlogPost.astro
-tags: 'life'
+tags:
+- 'life'
 ---
 
 In Issue 104 of Monocle, [Josh Fehnert](https://monocle.com/contributors/josh-fehnert/) wrote a short piece on adults in airports needing to "act their age." He observed a man and woman engaging in "infantile" activities (the woman was playing a loud game on her phone and the man was colouring in a dinosaur in his colouring book - in a suit, no less!). This prompted the following statement from Fehnert:

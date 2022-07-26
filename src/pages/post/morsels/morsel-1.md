@@ -2,7 +2,7 @@
 title: 'Morsel #1 - The Tag Suggester'
 published: true
 date: '15 Apr 2022'
-layout: ../../../layouts/BlogPost.astro
+layout: ../../../layouts/Morsels.astro
 ---
 
 My first morsel is a Python script that extracts all the tags from my blogs and creates randomised Google search URLs for content ideation.

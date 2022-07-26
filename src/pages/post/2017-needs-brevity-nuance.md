@@ -3,7 +3,8 @@ title: "2017 Needs Brevity And Nuance"
 published: true
 date: "1 Jan 2017"
 layout: ../../layouts/BlogPost.astro
-tags: 'life'
+tags:
+- life
 ---
 
 Firstly, happy new year to you all!

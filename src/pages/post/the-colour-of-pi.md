@@ -3,7 +3,8 @@ title: 'The Colour Of Pi'
 published: true
 date: '3 Nov 2014'
 layout: ../../layouts/BlogPost.astro
-tags: 'maths'
+tags:
+- 'mathematics'
 ---
 
 ## Thanks to a professor from San Diego University, we now have the colour of pi and other mathematical constants.

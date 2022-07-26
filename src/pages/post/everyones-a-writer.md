@@ -3,7 +3,8 @@ title: 'Everyone''s a writer'
 published: true
 date: '10 Aug 2020'
 layout: ../../layouts/BlogPost.astro
-tags: 'writing'
+tags:
+- writing
 ---
 
 As long as you have intent, it doesn't matter whether your scribbles are intelligible or not—you are a writer.

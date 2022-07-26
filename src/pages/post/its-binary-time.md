@@ -2,7 +2,8 @@
 title: "It's binary time!"
 layout: ../../layouts/BlogPost.astro
 date: "3 Dec 2020"
-tags: 'maths'
+tags:
+- mathematics
 ---
 
 <p><time>00:00</time></p>

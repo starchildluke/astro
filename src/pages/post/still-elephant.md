@@ -3,7 +3,8 @@ title: 'Still Elephant'
 published: true
 date: '13 Aug 2020'
 layout: ../../layouts/BlogPost.astro
-tags: 'film'
+tags:
+- 'film'
 ---
 
 I've been [going through Kottke.org's archives again](https://kottke.org/04/07/elephant) and found this anecdote:

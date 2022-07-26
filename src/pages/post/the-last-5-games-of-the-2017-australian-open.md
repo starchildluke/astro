@@ -3,7 +3,6 @@ title: 'The Last 5 Games of the 2017 Australian Open'
 published: true
 date: '12 Mar 2018'
 layout: ../../layouts/BlogPost.astro
-string: gmpLSW47MPQ
 tags:
 - Roger Federer
 - tennis

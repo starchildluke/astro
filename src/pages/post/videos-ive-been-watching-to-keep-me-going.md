@@ -3,7 +3,8 @@ title: "Videos I've been watching to keep me going"
 published: true
 date: "5 May 2021"
 layout: ../../layouts/BlogPost.astro
-tags: 'video'
+tags:
+- 'video'
 ---
 
 It's tough out there (or should that be in here?) and because I don't watch TV, I take comfort in YouTube when I need some visual stimulation. Here are some videos I've been watching to keep my mind off things. Might make this into a series.

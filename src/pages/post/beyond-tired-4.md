@@ -1,10 +1,11 @@
 ---
 title: "Beyond tired: Part 4"
-date: "12 July 2021"
+date: "12 Jul 2021"
 layout: ../../layouts/BlogPost.astro
 tags:
 - beyond tired
 - racism
+- life
 ---
 
 Don't tell me you're disgusted at racism against Black footballers.  

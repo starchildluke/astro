@@ -1,11 +1,11 @@
 ---
 title: 'Boats, storms, and rockets'
 published: true
-date: '21 July 2021'
+date: '21 Jul 2021'
 layout: ../../layouts/BlogPost.astro
 tags:
-  COVID-19
-  life
+- COVID-19
+- life
 ---
 
 There were a lot of people making similar declarations last year:

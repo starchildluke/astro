@@ -3,7 +3,8 @@ title: "Night off"
 published: true
 date: "8 Mar 2021"
 layout: ../../layouts/BlogPost.astro
-tags: 'women'
+tags:
+- women
 ---
 
 Tonight, I deactivated from Twitter. It's only for the night although if tomorrow is as bad as today, I'll extend it.

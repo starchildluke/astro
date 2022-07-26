@@ -4,6 +4,7 @@ date: "15 Oct 2021"
 layout: ../../layouts/BlogPost.astro
 tags:
 - beyond tired
+- life
 ---
 
 Hey, it's me&mdash;tired again.

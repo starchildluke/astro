@@ -4,7 +4,8 @@ published: true
 date: "1 Feb 2017"
 description: "Earlier this week, I read about a concept called Idea Debt. It’s when you hold onto ideas without actually putting them into place."
 layout: ../../layouts/BlogPost.astro
-tags: 'me'
+tags:
+- me
 ---
 
 Earlier this week, I read about a concept called [Idea Debt](https://jessicaabel.com/idea-debt/). It’s when you hold onto ideas without actually putting them into place and as they build up, you’re left with an increasing number of unfulfilled concepts. I suffer from this badly. In my late teens, I came up with an idea for a fantasy novel. Ten years later, I still have a “binder of lore”, along with another of my ideas – **_Hyperman_**, a superhero kept alive by radium gas (yes, that highly volatile, highly toxic gas). While the later was conjured from a bored Sunday afternoon and will never become anything more than a poor drawing, I’d love to make a go of the novel. But it’s not going to happen. I have more high quality ideas from the past few weeks to ignore.

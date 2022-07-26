@@ -4,6 +4,7 @@ date: "13 Apr 2022"
 layout: ../../layouts/BlogPost.astro
 tags:
 - beyond tired
+- life
 ---
 
 Hey, it's me&mdash;tired yet again.

@@ -3,7 +3,8 @@ title: 'Get a website'
 published: true
 date: '4 Sept 2021'
 layout: ../../layouts/BlogPost.astro
-tags: the web
+tags:
+- the web
 ---
 
 When we use social media platforms, we relinquish control on our creations. They have the power to block, ban, and remove whatever you do and not give you an explanation. You may never get it back and there's almost nothing you can do about it. You effectively rent space and hope they don't pull the rug from under you.

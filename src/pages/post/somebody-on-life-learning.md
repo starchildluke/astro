@@ -1,9 +1,10 @@
 ---
 title: 'Somebody* on life learning'
 published: true
-date: '14 July 2020'
+date: '14 Jul 2020'
 layout: ../../layouts/BlogPost.astro
-tags: 'me'
+tags:
+- 'me'
 ---
 
 <p>Allegedly, Maya Angelou said this but this is disputed. And given her history with misattributed quotes, I'm inclined to think she <em>didn't</em> say this. But that doesn't stop it from being interesting:</p>

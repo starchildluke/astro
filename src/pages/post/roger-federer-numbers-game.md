@@ -1,7 +1,7 @@
 ---
 title: 'The Numbers Game: Roger Federer'
 published: true
-date: '7 July 2022'
+date: '7 Jul 2022'
 layout: ../../layouts/BlogPost.astro
 tags:
 - Roger Federer

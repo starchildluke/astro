@@ -3,6 +3,8 @@ title: 'What are your most used apps?'
 published: true
 date: '18 Dec 2021'
 layout: ../../layouts/BlogPost.astro
+tags:
+- tech
 ---
 
 As of December 2021:

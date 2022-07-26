@@ -2,7 +2,8 @@
 title: 'Halt and Make Fire'
 date: '10 Aug 2020'
 layout: ../../layouts/BlogPost.astro
-tags: 'the web'
+tags:
+- the web
 ---
 
 Over the past week, I've been studying early internet culture (inspired by Halt and Catch Fire) and it's really made me think about how SEO is structured now compared to back then.

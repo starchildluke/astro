@@ -3,7 +3,8 @@ title: 'Don''t delete your old work (but restore it if you do)'
 published: true
 date: '8 June 2022'
 layout: ../../layouts/BlogPost.astro
-tags: blogging
+tags:
+- blogging
 ---
 
 Being an SEO is a blessing and a curse sometimes. It means I can help businesses improve the _quality_ and _volume_ of their organic visibility but I start to see the Web in a way that doesn't fit my origins. I can't always look in wonder because my professional side starts auditing sites. Then I've done some 'SEO things' on my own sites such as deleting pages that 'had little-to-no value'.

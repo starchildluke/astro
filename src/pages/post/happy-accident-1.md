@@ -3,7 +3,8 @@ title: 'Happy accident #1'
 published: true
 date: '18 Jul 2021'
 layout: ../../layouts/BlogPost.astro
-tags: happiness
+tags:
+- happiness
 ---
 
 My son wanted to listen to something on Spotify and said *something* to my Google Home Mini. And its response:

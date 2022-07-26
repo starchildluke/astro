@@ -5,6 +5,7 @@ layout: ../../layouts/BlogPost.astro
 tags:
 - beyond tired
 - COVID-19
+- life
 ---
 
 Happy new year. Sort of.

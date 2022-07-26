@@ -1,0 +1,26 @@
+---
+import { Markdown } from 'astro/components';
+import BaseHead from '../components/BaseHead.astro';
+import BlogHeader from '../components/BlogHeader.astro';
+import BlogPost from '../components/BlogPost.astro';
+import BlogFooter from '../components/BlogFooter.astro';
+import StructuredData from '../components/StructuredData.astro';
+
+const {content} = Astro.props;
+const {title, description, date, canonicalURL} = content;
+
+---
+<html lang="en">
+  <head>
+    <BaseHead {title} {description} {canonicalURL} />
+    <StructuredData {title} {date} />
+  </head>
+
+  <body>
+    <BlogHeader />
+    <BlogPost {title} {date}>
+      <slot />
+    </BlogPost>
+    <BlogFooter />
+  </body>
+</html>

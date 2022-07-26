@@ -3,7 +3,8 @@ title: '12 Facts I Didn''t Know About Pokémon'
 published: true
 date: '28 Sept 2017'
 layout: ../../layouts/BlogPost.astro
-tags: 'pokémon'
+tags:
+- pokémon
 ---
 
 * Satoshi Tajiri pitched Pokémon to Nintendo but it was initially rejected

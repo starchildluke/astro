@@ -3,7 +3,8 @@ title: 'New normal'
 published: true
 date: '6 Sept 2021'
 layout: ../../layouts/BlogPost.astro
-tags: me
+tags:
+- me
 ---
 
 [@clvtno on Twitter wrote a good impromptu thread about the 'new normal' and the fallacy of the term](https://twitter.com/clvtno/status/1434670846241644545):

@@ -3,7 +3,8 @@ title: "The meaning of life"
 published: true
 date: "27 Jan 2021"
 layout: ../../layouts/BlogPost.astro
-tags: 'life'
+tags:
+- 'life'
 ---
 
 Today, I had a taxipiphany (an epiphany in a taxi) on my way home from my son's school. I was reading an article called [Better living through self-deception](https://kottke.org/07/05/better-living-through-self-deception) and this paragraph struck me:

@@ -2,7 +2,7 @@
 title: 'Morsel #4 - bulk upload to Internet Archive with waybackpy and advertools'
 published: true
 date: '26 May 2022'
-layout: ../../../layouts/BlogPost.astro
+layout: ../../../layouts/Morsels.astro
 ---
 
 My fourth morsel is a way to backup your site to the Internet Archive.

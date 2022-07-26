@@ -3,7 +3,8 @@ title: "Trolls and pills"
 published: true
 layout: ../../layouts/BlogPost.astro
 date: "8 Sept 2020"
-tags: 'the web'
+tags:
+- 'the web'
 ---
 
 Taken from a 2006 NYT article called [How to Be a Curmudgeon on the Internet](https://www.nytimes.com/2006/01/18/technology/circuits/how-to-be-a-curmudgeon-on-the-internet.html)

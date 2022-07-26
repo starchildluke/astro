@@ -3,7 +3,8 @@ title: 'Visualising @nyt_said_first'
 published: true
 date: '27 Aug 2020'
 layout: ../../layouts/BlogPost.astro
-tags: 'words'
+tags:
+- 'words'
 ---
 
 ![@nyt_first_said visualisation](/images/Screenshot%202020-08-27%20at%2014.58.33.png)

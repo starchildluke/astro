@@ -3,7 +3,8 @@ title: 'Wander in Porto'
 published: true
 date: '24 Aug 2020'
 layout: ../../layouts/BlogPost.astro
-tags: 'portugal'
+tags:
+- 'portugal'
 ---
 
 I've never been to Porto but after extolling the virtues of [Lisbon](/post/my-week-in-lisbon/), people have recommended it to me. Maybe one day.

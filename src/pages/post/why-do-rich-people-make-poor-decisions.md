@@ -3,7 +3,8 @@ title: 'Why do rich people make poor decisions?'
 published: true
 date: '5 Mar 2020'
 layout: ../../layouts/BlogPost.astro
-tags: 'money'
+tags:
+- 'money'
 ---
 
 [kottke.org](https://kottke.org/20/03/why-do-poor-people-make-bad-decisions) published an article called "Why Do Poor People Make Bad Decisions?", referencing an article by Rutger Bregman about "why poor people make low-quality decisions".

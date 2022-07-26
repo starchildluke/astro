@@ -1,9 +1,10 @@
 ---
 title: 'Banana rum cake recipe'
 published: true
-date: '5 July 2010'
+date: '5 Jul 2010'
 layout: ../../layouts/BlogPost.astro
-tags: recipes
+tags:
+- recipes
 ---
 
 Here is my recipe – Banana Rum Cake. It is roughly measured as I don’t have exact equipment here, but the recipe is very forgiving.

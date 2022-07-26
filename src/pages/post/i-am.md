@@ -3,7 +3,8 @@ title: 'I am...'
 published: true
 date: '28 Jul 2017'
 layout: ../../layouts/BlogPost.astro
-tags: 'me'
+tags:
+- me
 ---
 
 I am inwardly excitable

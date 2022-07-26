@@ -1,9 +1,10 @@
 ---
 title: 'SEOicism'
 published: true
-date: '18 July 2022'
+date: '18 Jul 2022'
 layout: ../../layouts/BlogPost.astro
-tags: SEO
+tags:
+- SEO
 ---
 
 To whomstever needs to hear this:
