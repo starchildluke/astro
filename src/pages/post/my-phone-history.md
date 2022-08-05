@@ -4,8 +4,9 @@ published: true
 date: "21 Jun 2018"
 layout: ../../layouts/BlogPost.astro
 tags:
-- tech
-- me
+- '[tech](/wiki/tech/)'
+- '[me](/about/)'
+- phones
 ---
 
 I've had 11 phones to date. The **HTC Wildfire** was the worst (or, rather, the handsets Vodafone gave me) while the **Pixel 3A XL** is my favourite so far.

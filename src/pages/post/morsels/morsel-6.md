@@ -5,7 +5,7 @@ date: '10 Jul 2022'
 layout: ../../../layouts/Morsels.astro
 ---
 
-My sixth morsel is a quick script that scrapes The Guardian API for articles featuring "Federer" in the headline. This can, of course, be amended to search for any query in the API but I wanted some article to fill out my [Federer wiki page](/wiki/sport/roger-federer).
+My sixth morsel is a quick script that scrapes The Guardian API for articles featuring "Federer" in the headline. This can, of course, be amended to search for any query in the API but I wanted some article to fill out my [Federer wiki page](/wiki/sport/roger-federer/).
 
 ## Requirements
 

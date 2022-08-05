@@ -4,7 +4,7 @@ date: "15 Apr 2021"
 layout: ../../layouts/BlogPost.astro
 slug: "/posts/where-theres-gold"
 tags:
-- music
+- '[music](/wiki/music/)'
 - video
 ---
 

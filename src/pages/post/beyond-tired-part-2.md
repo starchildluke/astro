@@ -4,7 +4,6 @@ published: true
 date: '1 Sept 2020'
 layout: ../../layouts/BlogPost.astro
 tags:
-- beyond tired
 - racism
 - life
 ---

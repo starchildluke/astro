@@ -4,7 +4,7 @@ published: true
 date: '18 Dec 2021'
 layout: ../../layouts/BlogPost.astro
 tags:
-- tech
+- '[tech](/wiki/tech/)'
 ---
 
 As of December 2021:

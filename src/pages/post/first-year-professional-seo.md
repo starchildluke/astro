@@ -4,7 +4,7 @@ date: '11 Feb 2020'
 description: 'I''ve been a SEO for a year now. But what have I learnt? I wrote a list of 19 things I''ve picked up over that period.'
 layout: ../../layouts/BlogPost.astro
 tags:
-- SEO
+- '[SEO](/wiki/seo/)'
 ---
 
 I'm a little premature with this post but I feel like I tweet more about SEO than I write. At least in a personal capacity.

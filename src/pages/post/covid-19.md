@@ -4,7 +4,7 @@ published: true
 date: '14 Mar 2020'
 layout: ../../layouts/BlogPost.astro
 tags:
-- COVID-19
+- '[COVID-19](/wiki/covid-19/)'
 ---
 
 I'm taking time away from my two main Twitter accounts (I have a lot). All the news and rumours and hysteria and jokes about COVID-19 are getting too much and it's downright depressing. I'm annoyed by the response to the virus from the government and other authorities that directly affect me. Peoples' lives aren't the primary concern and it's disgusting and very telling. But that's all I'll say on that.

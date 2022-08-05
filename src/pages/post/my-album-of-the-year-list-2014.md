@@ -4,7 +4,7 @@ published: true
 date: '9 Feb 2015'
 layout: ../../layouts/BlogPost.astro
 tags:
-- music
+- '[music](/wiki/music/)'
 - aoty
 ---
 

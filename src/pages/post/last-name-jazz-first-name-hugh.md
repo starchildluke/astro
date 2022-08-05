@@ -4,7 +4,7 @@ date: '18 May 2017'
 layout: ../../layouts/BlogPost.astro
 tags:
 - jazz
-- music
+- '[music](/wiki/music/)'
 ---
 
 I love making jazz playlists for people. This is arguably my best. Over 4 hours of beautiful jazz from some greats and some lesser known talents you need to hear.

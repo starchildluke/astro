@@ -4,10 +4,10 @@ published: true
 date: '29 Aug 2020'
 layout: ../../layouts/BlogPost.astro
 tags:
-- film
-- black panther
+- '[film](/wiki/film/)'
+- '[black](/wiki/black/)'
 - mental health
-- me
+- '[me](/about/)'
 ---
 
 I went to therapy last year.

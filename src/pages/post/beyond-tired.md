@@ -4,7 +4,6 @@ published: true
 date: '30 Aug 2020'
 layout: ../../layouts/BlogPost.astro
 tags:
-- beyond tired
 - life
 ---
 

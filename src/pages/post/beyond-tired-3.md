@@ -3,8 +3,7 @@ title: "Beyond tired: Part 3"
 date: "6 Jan 2021"
 layout: ../../layouts/BlogPost.astro
 tags:
-- beyond tired
-- COVID-19
+- '[COVID-19](/wiki/covid-19/)'
 - life
 ---
 

@@ -4,7 +4,7 @@ published: true
 date: '6 Dec 2017'
 layout: ../../layouts/BlogPost.astro
 tags:
-- blogging
+- '[blogging](/wiki/blogging/)'
 - life
 ---
 

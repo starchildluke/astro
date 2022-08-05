@@ -5,7 +5,7 @@ date: "11 Dec 2020"
 layout: ../../layouts/BlogPost.astro
 description: "J Dilla was mean on the MPC but his live drumming had influences on a number of his peers who have since helped carry his legacy on."
 tags:
-- music
+- '[music](/wiki/music/)'
 - writing
 - J Dilla
 ---

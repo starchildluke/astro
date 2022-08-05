@@ -3,7 +3,6 @@ title: 'Black and Tired'
 date: '21 Jun 2020'
 layout: ../../layouts/BlogPost.astro
 tags:
-- beyond tired
 - racism
 - life
 ---

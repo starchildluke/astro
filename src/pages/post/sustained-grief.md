@@ -4,7 +4,8 @@ published: true
 date: "28 Feb 2021"
 layout: ../../layouts/BlogPost.astro
 tags:
-- 'me'
+- '[me](/about/)'
+- life
 ---
 
 <a href="https://twitter.com/_Zeets/status/1366155880966799360">@\_Zeets on Twitter</a> posted this bell hooks quote earlier:

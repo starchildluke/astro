@@ -5,7 +5,7 @@ published: true
 date: '9 Mar 2022'
 layout: ../../layouts/BlogPost.astro
 tags:
-- Python
+- '[Python](/wiki/tech/python/)'
 ---
 
 Python. It's a word that either strikes fear into the hearts of SEOs or ignites a fire in their bellies. I can tell you: I've felt both. Sometimes, at the same time. For all its wonderful use cases, quirks, and benefits, it is misunderstood. I'm not here to say it's the greatest programming language (that's HTML) but I wanted to talk about Python from my experience.

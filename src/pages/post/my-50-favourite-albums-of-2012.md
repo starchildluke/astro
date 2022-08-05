@@ -5,7 +5,7 @@ date: '2 Jan 2013'
 layout: ../../layouts/BlogPost.astro
 tags:
 - aoty
-- music
+- '[music](/wiki/music/)'
 ---
 
 In hindsight, I won’t look back on 2012 as being a good year due to some personal issues but in terms of music, it’s been a pretty good year. I got into ambient music a lot more and immersed myself in modern jazz. That made compiling this list a lot trickier than I had anticipated. At first, I was going to do an ordered list but after looking at the god awful monstrosities from the likes of Rolling Stone and Complex, I decided to just give a choice of my favourite 49. No order, just my favourites. At the end of the day, you like what you like and this will be a showcase of my personal preferences. I’ll leave that as a “disclaimer” just in case you question any of the entries.

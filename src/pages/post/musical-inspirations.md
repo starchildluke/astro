@@ -3,7 +3,7 @@ title: 'Musical Inspirations'
 date: '1 Mar 2017'
 layout: ../../layouts/BlogPost.astro
 tags:
-- music
+- '[music](/wiki/music/)'
 - inspiration
 ---
 

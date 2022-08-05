@@ -4,7 +4,7 @@ published: true
 date: '8 Nov 2021'
 layout: ../../layouts/BlogPost.astro
 tags:
-- blogging
+- '[blogging](/wiki/blogging/)'
 ---
 
 I'm very protective over the art of [blogging](/wiki/blogging/) because, without it, I would absolutely not be where I am today. No way.

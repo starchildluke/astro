@@ -4,7 +4,7 @@ published: true
 date: '31 May 2011'
 layout: ../../layouts/BlogPost.astro
 tags:
-- music
+- '[music](/wiki/music/)'
 - writing
 ---
 

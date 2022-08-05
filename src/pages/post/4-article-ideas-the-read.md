@@ -4,7 +4,7 @@ published: true
 date: "14 Apr 2018"
 layout: ../../layouts/BlogPost.astro
 tags:
-- black
+- '[black](/wiki/black/)'
 ---
 
 I was about 5 years late to the game but I finally got into [The Read](http://thisistheread.com) a few months ago and catapulted itself to the top of my All-Time Fave Podcasts list. The dynamic duo of Kid Fury and Crissle give me unadulterated life and joy. But other than their wit and advice, their presentation is an underrated element of the show. Episodes are broken up into sections much like any other podcast.

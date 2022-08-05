@@ -4,7 +4,7 @@ published: true
 date: '24 Sept 2017'
 layout: ../../layouts/BlogPost.astro
 tags: 
-- art
+- '[art](/wiki/art/)'
 - inspiration
 ---
 

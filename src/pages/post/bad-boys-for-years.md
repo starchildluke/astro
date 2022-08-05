@@ -3,7 +3,7 @@ title: 'Bad Boys For Years'
 date: '22 Jan 2020'
 layout: ../../layouts/BlogPost.astro
 tags:
-- film
+- '[film](/wiki/film/)'
 ---
 
 This post was a little different when I wrote it on my phone. Then I couldn't save it, thought I'd copied everything and when I reloaded the page, somehow only got one paragraph.

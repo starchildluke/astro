@@ -4,8 +4,8 @@ published: true
 date: '3 Dec 2017'
 layout: ../../layouts/BlogPost.astro
 tags:
-- me
-- lisbon
+- '[me](/about/)'
+- '[lisbon](/wiki/lisbon/)'
 ---
 
 ![MAAT (Museum of Art, Architecture and Technology)](/images/MAAT-Lisbon-Amanda-Levet-Architects-0016_1.png)

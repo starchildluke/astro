@@ -4,7 +4,7 @@ published: true
 date: '11 Nov 2010'
 layout: ../../layouts/BlogPost.astro
 tags:
-- music
+- '[music](/wiki/music/)'
 - Jamiroquai
 - writing
 ---

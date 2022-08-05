@@ -4,7 +4,7 @@ published: true
 date: '29 Jan 2022'
 layout: ../../layouts/BlogPost.astro
 tags:
-- me
+- '[me](/about/)'
 ---
 
 29th January is special for two reasons.

@@ -7,7 +7,7 @@ import BlogFooter from '../components/BlogFooter.astro';
 import StructuredData from '../components/StructuredData.astro';
 
 const {content} = Astro.props;
-const {title, description, date, canonicalURL, tags} = content;
+const {title, description, date, canonicalURL, tags, tag_urls} = content;
 
 ---
 <html lang="en">
@@ -21,7 +21,9 @@ const {title, description, date, canonicalURL, tags} = content;
     <BlogPost {title} {date}>
       <slot />
       <div class="tagged-as">Tagged as:</div>
+      <Markdown>
         {tags.map(tag => <span class="tags">{tag} </span>)}
+      </Markdown>
     </BlogPost>
     <BlogFooter />
   </body>

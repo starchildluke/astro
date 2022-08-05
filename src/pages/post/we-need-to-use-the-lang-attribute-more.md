@@ -4,7 +4,7 @@ published: true
 date: '14 Jun 2018'
 layout: ../../layouts/BlogPost.astro
 tags:
-- the web
+- '[the web](/wiki/tech/internet/)'
 - css
 ---
 

@@ -4,7 +4,7 @@ published: true
 date: '28 Jul 2017'
 layout: ../../layouts/BlogPost.astro
 tags:
-- me
+- '[me](/about/)'
 ---
 
 I am inwardly excitable

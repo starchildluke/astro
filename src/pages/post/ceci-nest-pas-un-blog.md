@@ -4,7 +4,7 @@ published: true
 date: '7 Jun 2011'
 layout: ../../layouts/BlogPost.astro
 tags:
-- blogging
+- '[blogging](/wiki/blogging/)'
 ---
 
 The title says “This is not a blog” and plays on Rene Magritte's [The Treachery of Images](https://en.wikipedia.org/wiki/The_Treachery_of_Images). It is also true.

@@ -4,9 +4,9 @@ published: true
 date: '12 Jun 2018'
 layout: ../../layouts/BlogPost.astro
 tags:
-- Roger Federer
+- '[Roger Federer](/wiki/sport/roger-federer/)'
 - Khruangbin
-- music
+- '[music](/wiki/music/)'
 - tennis
 ---
 

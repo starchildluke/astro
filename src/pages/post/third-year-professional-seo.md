@@ -4,7 +4,7 @@ date: "4 Mar 2022"
 description: "I've been a SEO for 3 years now. But what more have I learnt? I wrote a list of 12 things I've picked up over that period."
 layout: ../../layouts/BlogPost.astro
 tags:
-- SEO
+- '[SEO](/wiki/seo/)'
 ---
 
 Today marks the third anniversary of me becoming a digital marketer ([read about my first year here](/post/first-year-professional-seo/) and [my second year here](/post/second-year-professional-seo/)).
@@ -37,7 +37,7 @@ John, if you're reading this, I love you and I want to thank you for your patien
 
 ### 5. Technical SEO is still my strong suit but NLP, AI, and machine learning are my next steps
 
-Since my last update, I was promoted to technical SEO specialist which was a career goal. I also mentioned how my expertise was still varied between content and technical. But my new favourite interest is [AI](https://logicface.co.uk/category/tech/ai/), particularly [machine learning](https://logicface.co.uk/tag/machine-learning/) and [natural language processing (NLP)](https://logicface.co.uk/tag/nlp/ai/). I'm not as interested about the kind of AI you see in the general media (which people often confuse with [AGI or artifical general intelligence](https://en.wikipedia.org/wiki/Artificial_general_intelligence) and those involved do little to distinguish the perception) but specifically how we can use NLP to help SEO and the Web.
+Since my last update, I was promoted to technical SEO specialist which was a career goal. I also mentioned how my expertise was still varied between content and technical. But my new favourite interest is [AI](https://logicface.co.uk/category/tech/ai/), particularly [machine learning](https://logicface.co.uk/tag/machine-learning/) and [natural language processing (NLP)](https://logicface.co.uk/tag/nlp/). I'm not as interested about the kind of AI you see in the general media (which people often confuse with [AGI or artifical general intelligence](https://en.wikipedia.org/wiki/Artificial_general_intelligence) and those involved do little to distinguish the perception) but specifically how we can use NLP to help SEO and the Web.
 
 I've also really got into ontologies and how they work so if search ontologist becomes a job, I'd love that one day. Manifesting!
 

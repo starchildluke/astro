@@ -4,7 +4,7 @@ published: true
 date: '5 Aug 2017'
 layout: ../../layouts/BlogPost.astro
 tags:
-- gaming
+- '[gaming](/wiki/gaming/)'
 - lists
 ---
 

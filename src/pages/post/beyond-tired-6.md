@@ -3,7 +3,6 @@ title: "Beyond tired: Part 6"
 date: "13 Apr 2022"
 layout: ../../layouts/BlogPost.astro
 tags:
-- beyond tired
 - life
 ---
 

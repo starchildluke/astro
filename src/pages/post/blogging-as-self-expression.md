@@ -5,7 +5,7 @@ date: "17 May 2021"
 layout: ../../layouts/BlogPost.astro
 slug: "/posts/blogging-as-self-expression"
 tags:
-- blogging
+- '[blogging](/wiki/blogging/)'
 ---
 
 [Tyler Cowen wrote](https://marginalrevolution.com/marginalrevolution/2007/02/blogging_as_sel.html):

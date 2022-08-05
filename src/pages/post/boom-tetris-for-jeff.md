@@ -4,7 +4,7 @@ published: true
 date: '23 Aug 2020'
 layout: ../../layouts/BlogPost.astro
 tags:
-- gaming
+- '[gaming](/wiki/gaming/)'
 ---
 
 This video gives me unbridled joy and Jeff Moore is arguably my favourite gamer ever. He's such a cool guy and an awesome Tetris player.
