@@ -4,7 +4,7 @@ published: true
 date: '7 Jul 2022'
 layout: ../../layouts/BlogPost.astro
 tags:
-- '[Roger Federer](/wiki/roger-federer/)'
+- '[Roger Federer](/wiki/sport/roger-federer/)'
 - tennis
 - '[sport](/wiki/sport/)'
 - lists

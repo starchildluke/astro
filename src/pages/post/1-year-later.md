@@ -5,7 +5,7 @@ date: "27 May 2021"
 layout: ../../layouts/BlogPost.astro
 slug: "/posts/1-year-later"
 tags:
-- '[black](/wiki/blogging)'
+- '[black](/wiki/blogging/)'
 ---
 
 I'll be brief.

@@ -100,64 +100,6 @@ let description = "";
 <html lang="en">
   <head>
     <BaseHead title={title + ' (Page ' + page.currentPage + '/' + page.lastPage + ')'} description={description} canonicalURL={canonicalURL} />
-
-    <style>
-
-      .content {
-        margin-bottom: 8rem;
-      }
-
-      .content :global(main > * + *) {
-        margin-top: 1rem;
-      }
-
-      .intro {
-        padding-bottom: 1.4rem;
-      }
-
-      .intro > * {
-        margin: 0;
-      }
-
-      .content :global(main > * + *) {
-  margin-top: 1rem;
-}
-
-.post-listing {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between;
-  }
-
-.post-preview {
-  padding-bottom: 1rem;
-}
-
-.post-listing a {
-  max-width: 60%;
-}
-
-.publish-date {
-  letter-spacing: 2px;
-}
-
-.title, .publish-date {
-  margin: 0;
-}
-
-.publish-date {
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-.title {
-  font-size: 2.25rem;
-  font-weight: 700;
-  color: var(--theme-text);
-}
-
-    </style>
   </head>
 
   <body>
@@ -184,21 +126,11 @@ let description = "";
     </section>
       ))}    
         <div class="page-links">{page.url.prev && (
-          <a
-            class='prev'
-            href={page.url.prev || '#'}
-          >
-            &laquo; Prev
-          </a>
+          <a class='prev' href={page.url.prev || '#'}>&laquo; Prev</a>
         )}
         {page.url.prev && page.url.next && ""}
         {page.url.next && (
-          <a
-            class='Next'
-            href={page.url.next || '#'}
-          >
-            Next &raquo;
-          </a>
+          <a class='Next' href={page.url.next || '#'}>Next &raquo;</a>
         )}</div>
       </article>
     </div>
