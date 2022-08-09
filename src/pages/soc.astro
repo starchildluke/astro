@@ -1,0 +1,46 @@
+---
+// COMPONENTS
+
+import BaseHead from '../components/BaseHead.astro';
+import BlogHeader from '../components/BlogHeader.astro';
+import BlogFooter from '../components/BlogFooter.astro';
+import BlogPostPreview from '../components/BlogPostPreview.astro';
+import soc from '../data/soc.json';
+
+// METADATA VARIABLES
+
+let title = 'Stream of consciousness';
+let description = "Whatever comes into my head, that's what I'm putting down";
+let canonicalURL = Astro.canonicalURL.href
+
+---
+<html lang="en">
+  <head>
+    <BaseHead title={title} description={description} canonicalURL={canonicalURL} />
+  </head>
+
+  <body>
+    <BlogHeader />
+      <div class="layout">
+        <article class="content">
+            <section class="intro">
+
+              <h1>{title}</h1>
+              <p class="desc">{description}</p>
+
+            </section>
+            <section>
+                {soc.map((item) => (
+                    <p style="font-family:monospace;font-size:0.9rem;padding-bottom:0.25rem;">{item.date}</p>
+                    <strong><p style="font-family:Georgia,serif;font-size:1.5rem;font-style:italic;color:#4c4c4c;line-height:1.3;">{item.soc}</p></strong>
+                ))}
+            </section>
+        </article>
+      
+      </div>
+    
+    <BlogFooter></BlogFooter>
+  
+  </body>
+
+</html>
