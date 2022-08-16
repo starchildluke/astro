@@ -115,9 +115,9 @@ let description = "";
     {postGroups.map(({ year, items }) => (
   <section>
     <h3>{year}</h3>
-    <ul class="post-list">
+    <ul>
     {items.map((post) => (
-      <li class="post-preview post-listing post-list">
+      <li class="post-listing">
         <a href={post.url}>{post.frontmatter.title}</a>
         <span class="publish-date">{post.frontmatter.date}</span>
       </li>

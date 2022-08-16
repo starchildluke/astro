@@ -15,6 +15,11 @@ AddType font/woff2 .woff2
 Header add Access-Control-Allow-Origin "https://lukealexdavis.co.uk/"
 </IfModule>
 
+<IfModule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE font/woff2
+</IfModule> 
+
 # BEGIN Expire headers  
 <IfModule mod_expires.c>  
   # Turn on the module.
