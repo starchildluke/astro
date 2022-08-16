@@ -9,6 +9,7 @@ RewriteRule ^(.*)$ https://lukealexdavis.co.uk/$1 [R,L]
 
 # Set content-type for fonts
 AddType font/woff .woff
+AddType font/woff2 .woff2
 
 <IfModule mod_headers.c>
 Header add Access-Control-Allow-Origin "https://lukealexdavis.co.uk/"
@@ -20,17 +21,18 @@ Header add Access-Control-Allow-Origin "https://lukealexdavis.co.uk/"
   ExpiresActive on
   # Set the default expiry times.
   ExpiresDefault "access plus 3 months"
-  ExpiresByType image/jpg "access plus 3 months"
-  ExpiresByType image/svg+xml "access 3 months"
-  ExpiresByType image/gif "access plus 3 months"
-  ExpiresByType image/jpeg "access plus 3 months"
-  ExpiresByType image/png "access plus 3 months"
-  ExpiresByType text/css "access plus 3 months"
+  ExpiresByType image/jpg "access plus 1 year"
+  ExpiresByType image/svg+xml "access 1 year"
+  ExpiresByType image/gif "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType text/css "access plus 1 week"
   ExpiresByType application/javascript "access plus 1 month"
   ExpiresByType image/ico "access plus 1 year"
   ExpiresByType image/x-icon "access plus 1 year"
   ExpiresByType text/html "access plus 600 seconds"
-  ExpiresByType font/woff "access plus 3 month"
+  ExpiresByType font/woff "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
 
 </IfModule>  
 # END Expire headers  
