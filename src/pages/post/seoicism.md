@@ -4,7 +4,7 @@ published: true
 date: '18 Jul 2022'
 layout: ../../layouts/BlogPost.astro
 tags:
-- '[SEO](/wiki/seo/)'
+- '[SEO](/wiki/tech/seo/)'
 ---
 
 To whomstever needs to hear this:

@@ -4,7 +4,7 @@ published: true
 date: '24 Aug 2022'
 layout: ../../layouts/BlogPost.astro
 tags:
-- '[SEO](/wiki/seo/)'
+- '[SEO](/wiki/tech/seo/)'
 ---
 
 _(The following is a poem about how search engines can't interpret poems. I've written it in jest and as an experiment--with a little help from OpenAI--to see how Google figures out its context, [based on this article about a tweet from John Mueller](https://www.seroundtable.com/google-search-cannot-interpret-poems-33968.html).)_

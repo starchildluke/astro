@@ -1,5 +1,5 @@
 ---
-title: COVID-19
+title: Eff COVID-19
 published: true
 date: '14 Mar 2020'
 layout: ../../layouts/BlogPost.astro
