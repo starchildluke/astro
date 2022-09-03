@@ -1,15 +1,20 @@
 ---
+
 // COMPONENTS
+
 import BaseHead from '../components/BaseHead.astro';
 import BlogHeader from '../components/BlogHeader.astro';
 import BlogFooter from '../components/BlogFooter.astro';
 import BlogPostPreview from '../components/BlogPostPreview.astro';
+
 // METADATA VARIABLES
+
 let metaTitle = ' | Luke Davis';
 let title = 'Projects';
 let description = 'A list of projects I have or am currently working on.';
 let slug = '/projects/';
-let canonicalURL = Astro.canonicalURL.href;
+let canonicalURL = Astro.url;
+
 ---
 <html lang="en">
   <head>

@@ -1,7 +1,7 @@
 ---
 // COMPONENTS
 
-import { Markdown } from 'astro/components';
+import Markdown from '@astrojs/markdown-component';
 import BaseHead from '../components/BaseHead.astro';
 import BlogHeader from '../components/BlogHeader.astro';
 import BlogFooter from '../components/BlogFooter.astro';
@@ -31,7 +31,7 @@ const remoteData = await fetch('https://cultrface.co.uk/wp-json/wp/v2/posts?cate
 let metaTitle = ' | Luke Davis';
 let title = 'My Pokémon teams';
 let description = 'A collection of some of my Pokémon teams over the years.';
-let canonicalURL = Astro.canonicalURL.href;
+let canonicalURL = Astro.url;
 ---
 
 <html lang="en">

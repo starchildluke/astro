@@ -1,11 +1,15 @@
 ---
+
 // COMPONENTS
-import { Markdown } from 'astro/components';
+
+import Markdown from '@astrojs/markdown-component';
 import BaseHead from '../components/BaseHead.astro';
 import BlogHeader from '../components/BlogHeader.astro';
 import BlogFooter from '../components/BlogFooter.astro';
 import BlogPostPreview from '../components/BlogPostPreview.astro';
+
 // EXPORT
+
 export interface Props {
 post: any;
 metaTitle: string;
@@ -14,13 +18,18 @@ slug: string;
 description: string;
 domain: string;
 }
+
 // PROPS
+
 const { post } = Astro.props;
+
 // METADATA VARIABLES
+
 let metaTitle = ' | Luke Davis';
 let title = 'Support';
 let description = 'This is my support page where you can find ways to support my work and various projects.';
-let canonicalURL = Astro.canonicalURL.href;
+let canonicalURL = Astro.url;
+
 ---
 <html lang="en">
   <head>

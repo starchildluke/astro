@@ -1,7 +1,7 @@
 ---
 // COMPONENTS
 
-import { Markdown } from 'astro/components';
+import Markdown from '@astrojs/markdown-component';
 import BaseHead from '../../components/BaseHead.astro';
 import BlogHeader from '../../components/BlogHeader.astro';
 import BlogFooter from '../../components/BlogFooter.astro';
@@ -68,12 +68,12 @@ let domain = "https://lukealexdavis.co.uk"
               <ul class="post-list">
                 {remoteData.map((item) => (
                 <li class="post-preview wiki-listing post-list">
-            <a href={item.link}>{item.title.rendered}</a>
+            <a href={item.link}><Fragment set:html={item.title.rendered}></a>
           </li>
              ))}
              {remoteData2.map((item) => (
                 <li class="post-preview wiki-listing post-list">
-            <a href={item.link}>{item.title.rendered}</a>
+            <a href={item.link}><Fragment set:html={item.title.rendered}></a>
           </li>
              ))}
              </ul>

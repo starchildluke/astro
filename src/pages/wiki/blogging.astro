@@ -1,7 +1,7 @@
 ---
 // COMPONENTS
 
-import { Markdown } from 'astro/components';
+import Markdown from '@astrojs/markdown-component';
 import BaseHead from '../../components/BaseHead.astro';
 import BlogHeader from '../../components/BlogHeader.astro';
 import BlogFooter from '../../components/BlogFooter.astro';
@@ -26,7 +26,7 @@ const { post } = Astro.props;
 
 // HOW FETCHING!
 
-const remoteData = await fetch('https://cultrface.co.uk/wp-json/wp/v2/posts?tags=532').then(response => response.json());
+const remoteData = await fetch('https://cultrface.co.uk/wp-json/wp/v2/posts?tags=836').then(response => response.json());
 
 // METADATA VARIABLES
 
@@ -75,8 +75,12 @@ let domain = "https://lukealexdavis.co.uk"
             <section>
               <h2 class="wiki-h2">Out loud</h2>
               <ul class="post-list">
-                <li>Nothing yet...</li>
-              </ul>
+                {remoteData.map((item) => (
+                <li class="post-preview wiki-listing post-list">
+            <a href={item.link}><Fragment set:html={item.title.rendered}></a>
+          </li>
+             ))}
+             </ul>
               <h2 class="wiki-h2">Second opinions</h2>
                 <Markdown>
                   * [Blogging Is Most Certainly Not Dead](https://mailchi.mp/kottke/blogging-is-not-dead-edition-2575912502)

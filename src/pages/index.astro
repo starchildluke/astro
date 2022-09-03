@@ -14,7 +14,7 @@ let description = 'The digital home of Luke Davis: a technical SEO, music produc
 let slug = '/';
 let greetings = ['Bom dia!', 'Boa noite!', 'Buenos dias!', 'Buenos tardes!', 'Buenos noches!', 'Hola!', 'Ola!', 'Good morning!', 'Good afternoon!', 'Good evening!', 'Bonjour!', 'Bonsoir!'];
 let sayHello = greetings[Math.floor(Math.random()*greetings.length)];
-let canonicalURL = Astro.canonicalURL.href
+let canonicalURL = Astro.url;
 
 ---
 <html lang="en">

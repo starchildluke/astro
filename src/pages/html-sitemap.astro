@@ -1,7 +1,7 @@
 ---
 // COMPONENTS
 
-import { Markdown } from 'astro/components';
+import Markdown from '@astrojs/markdown-component';
 import BaseHead from '../components/BaseHead.astro';
 import BlogHeader from '../components/BlogHeader.astro';
 import BlogFooter from '../components/BlogFooter.astro';
@@ -32,7 +32,7 @@ const { post } = Astro.props;
 let metaTitle = ' | Luke Davis';
 let title = 'HTML Sitemap';
 let description = 'This is a HTML sitemap for this site.';
-let canonicalURL = Astro.canonicalURL.href;
+let canonicalURL = Astro.url;
 ---
 
 <html lang="en">
