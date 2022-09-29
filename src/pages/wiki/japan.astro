@@ -1,0 +1,109 @@
+---
+// COMPONENTS
+
+import Markdown from '@astrojs/markdown-component';
+import BaseHead from '../../components/BaseHead.astro';
+import BlogHeader from '../../components/BlogHeader.astro';
+import BlogFooter from '../../components/BlogFooter.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import site from '../../data/site.json';
+import wiki from '../../data/wiki.json';
+
+// EXPORT
+
+export interface Props {
+  post: any;
+  metaTitle: string;
+  title: string;
+  slug: string;
+  description: string;
+  domain: string;
+}
+
+// PROPS
+
+const { post } = Astro.props;
+
+// HOW FETCHING!
+
+const sfJapan = await fetch('https://sampleface.co.uk/wp-json/wp/v2/posts?tags=285&per_page=100').then(response => response.json());
+const cfJapan = await fetch('https://cultrface.co.uk/wp-json/wp/v2/posts?tags=52&per_page=100').then(response => response.json());
+const lfJapan = await fetch('https://logicface.co.uk/wp-json/wp/v2/posts?tags=13&per_page=100').then(response => response.json());
+const pfJapan = await fetch('https://playrface.co.uk/wp-json/wp/v2/posts?tags=393&per_page=100').then(response => response.json());
+const daJapan = await fetch('https://distantarcade.co.uk/wp-json/wp/v2/posts?tags=157&per_page=100').then(response => response.json());
+
+// METADATA VARIABLES
+
+let title = 'Japan';
+let slug = '/wiki/japan/';
+let description = 'A wiki page all about Japan.';
+let domain = "https://lukealexdavis.co.uk"
+
+---
+<html lang="en">
+  <head>
+    <BaseHead title={'wiki/' + title.toLowerCase()} description={description} canonicalURL={domain + slug} />  
+  </head>
+
+  <body>
+    <BlogHeader />
+      <div class="layout">
+        <article class="content">
+          <Breadcrumbs title={title}/>
+            <section class="intro">
+
+              <h1>{title}</h1>
+              <p class="desc">{description}</p>
+
+            </section>
+            <section>
+             
+              <h2 class="wiki-h2">Inner voice</h2>
+                <p>Coming soon...</p>
+            </section>
+      
+            <section>
+              <h2 class="wiki-h2">Out loud</h2>
+              <ul class="post-list">
+                {sfJapan.map(( post ) => (
+                  <li class="">
+                    <a href={post.link}><Fragment set:html={post.title.rendered}></a>
+                  </li>
+                ))}
+                {cfJapan.map(( post ) => (
+                  <li class="">
+                    <a href={post.link}><Fragment set:html={post.title.rendered}></a>
+                  </li>
+                ))}
+                {lfJapan.map(( post ) => (
+                  <li class="">
+                    <a href={post.link}><Fragment set:html={post.title.rendered}></a>
+                  </li>
+                ))}
+                {pfJapan.map(( post ) => (
+                  <li class="">
+                    <a href={post.link}><Fragment set:html={post.title.rendered}></a>
+                  </li>
+                ))}
+                {daJapan.map(( post ) => (
+                  <li class="">
+                    <a href={post.link}><Fragment set:html={post.title.rendered}></a>
+                  </li>
+                ))}
+              </ul>
+              <h2 class="wiki-h2">Second opinions</h2>
+                <ul>
+                  <li>
+                    Coming soon...
+                  </li>
+                </ul>
+            </section>
+        </article>
+      
+      </div>
+    
+    <BlogFooter></BlogFooter>
+  
+  </body>
+
+</html>
