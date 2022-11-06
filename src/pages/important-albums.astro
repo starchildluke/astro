@@ -6,6 +6,7 @@ import BaseHead from '../components/BaseHead.astro';
 import BlogHeader from '../components/BlogHeader.astro';
 import BlogFooter from '../components/BlogFooter.astro';
 import BlogPostPreview from '../components/BlogPostPreview.astro';
+import albums from '../data/albums.json'
 
 // EXPORT
 
@@ -38,12 +39,23 @@ let canonicalURL = Astro.url;
   <BlogHeader />
     <main class="layout">
       <article class="content">
-          <h1>{title}</h1>
-          <Markdown>
-            | Artist      | Album       | Release Year |
-            |-------------|-------------|--------------|
-            | Coming soon | Coming soon | Coming soon  |
-          </Markdown>   
+          <h1>{title}</h1>            
+            <table>
+              <thead>
+                <tr>
+                  <th>Artist</th>
+                  <th>Album</th>
+                  <th>Release Date</th>
+                </tr>
+              </thead>
+              {albums.albums.map((item) => ( 
+              <tr>
+                  <td>{item.artist}</td>
+                  <td>{item.album}</td>
+                  <td>{item.release_date}</td>
+                </tr>
+              ))}
+            </table>            
               </article>
             </main>
       <BlogFooter></BlogFooter>
