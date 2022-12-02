@@ -1,0 +1,143 @@
+---
+
+// Component Imports
+import BaseHead from '../../components/BaseHead.astro';
+import BlogHeader from '../../components/BlogHeader.astro';
+import BlogFooter from '../../components/BlogFooter.astro';
+import site from '../../data/site.json'
+
+export interface Props {
+  list: any;
+}
+
+const { list, canonicalURL = Astro.url } = Astro.props;
+
+let title = 'Lists';
+let description = "My lists";
+
+export async function getStaticPaths({paginate, rss}) {
+  const allLists = await Astro.glob('../list/*.md');
+  const sortedLists = allLists.sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date));
+  
+  // Return a paginated collection of paths for all posts
+  return paginate(sortedLists, {pageSize: 25});
+}
+
+const { page } = Astro.props;
+---
+<html lang="en">
+  <head>
+    <BaseHead title={title} description={description} canonicalURL={canonicalURL} />
+
+    <style>
+
+      .content {
+        font-family: Arial, sans-serif;
+        margin-bottom: 8rem;  
+      }
+
+      .content :global(main > * + *) {
+        margin-top: 1rem;
+      }
+
+      h1 {
+        font-family: 'Georgia', serif;
+        font-style: italic;
+      }
+
+      .intro {
+        padding-bottom: 1.4rem;
+      }
+
+      .intro > * {
+        margin: 0;
+      }
+
+      .content :global(main > * + *) {
+  margin-top: 1rem;
+}
+
+.post-preview {
+  padding-bottom: 1rem;
+}
+
+.post-listing a {
+  max-width: 60%;
+}
+
+.publish-date {
+  letter-spacing: 2px;
+}
+
+.title,
+.publish-date {
+  margin: 0;
+}
+
+.publish-date {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--theme-text);
+}
+
+.date-smaller {
+  font-size: 0.8125rem;
+  font-style: italic;
+}
+
+.post-list li {
+  list-style: "\002B" inside;
+}
+
+.post-list li::marker {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+    </style>
+  </head>
+
+  <body>
+    <BlogHeader />
+    <div class="layout">
+      <article class="content">
+        <section class="intro">
+          <h1>{title}</h1>
+        </section>
+    <section>
+       <ul class="post-list">
+      {page.data.map(list => (
+            <li>
+              <a href={list.url}>{list.frontmatter.title}</a>
+              <p class="date-smaller">{list.frontmatter.date}</p>
+            </li>
+          ))}
+        </ul>
+    </section>
+        <div class="page-links">{page.url.prev && (
+          <a
+            class='prev'
+            href={page.url.prev || '#'}
+          >
+            &laquo; Prev
+          </a>
+        )}
+        {page.url.prev && page.url.next && ""}
+        {page.url.next && (
+          <a
+            class='Next'
+            href={page.url.next || '#'}
+          >
+            Next &raquo;
+          </a>
+        )}</div>
+      </article>      
+    </div>
+    <BlogFooter></BlogFooter>
+  </body>
+</html>
