@@ -1,7 +1,6 @@
 ---
 // COMPONENTS
 
-import Markdown from '@astrojs/markdown-component';
 import BaseHead from '../../components/BaseHead.astro';
 import BlogHeader from '../../components/BlogHeader.astro';
 import BlogFooter from '../../components/BlogFooter.astro';
@@ -39,7 +38,6 @@ let domain = "https://lukealexdavis.co.uk"
   <head>
     <BaseHead title={'wiki/' + title.toLowerCase()} description={description} canonicalURL={domain + slug} />
   </head>
-
   <body>
     <BlogHeader />
     <div class="layout">
@@ -49,53 +47,51 @@ let domain = "https://lukealexdavis.co.uk"
           <h1>{title}</h1>
         </section>
         <section>
-          <Markdown>
-          ## Inner voice
+          <h2 class="wiki-h2">Inner voice</h2>
           
-          * [/1-year-later.md](/post/1-year-later/)
-          * [/4-article-ideas-the-read.md](/post/4-article-ideas-the-read/)
-          * [/beyond-tired-part-2.md](/post/beyond-tired-part-2/)
-          * [/beyond-tired-3.md](/post/beyond-tired-3/)
-          * [/beyond-tired-4.md](/post/beyond-tired-4/)
-          * [/black-and-tired.md](/post/black-and-tired/)
-          * [/black-panther-and-therapy.md](/post/black-panther-and-therapy/)
-          * [/black-survival-is-black-excellence.md](/post/black-survival-is-black-excellence/)
-          * [/blackness.md](/post/blackness/)
-          * [/im-racially-tired.md](/post/im-racially-tired/)
-          * [/kamala-harris-is-still-a-cop.md](/post/kamala-harris-is-still-a-cop/)
-          * [/night-off.md](/post/night-off/)
-          * [/rip-mj-8-years-on.md](/post/rip-mj-8-years-on/)
-
-          </Markdown>
-
+          <ul>
+            <li><a href="/post/1-year-later/">/1-year-later.md</a></li>
+            <li><a href="/post/4-article-ideas-the-read/">/4-article-ideas-the-read.md</a></li>
+            <li><a href="/post/beyond-tired-part-2/">/beyond-tired-part-2.md</a></li>
+            <li><a href="/post/beyond-tired-3/">/beyond-tired-3.md</a></li>
+            <li><a href="/post/beyond-tired-4/">/beyond-tired-4.md</a></li>
+            <li><a href="/post/black-and-tired/">/black-and-tired.md</a></li>
+            <li><a href="/post/black-panther-and-therapy/">/black-panther-and-therapy.md</a></li>
+            <li><a href="/post/black-survival-is-black-excellence/">/black-survival-is-black-excellence.md</a></li>
+            <li><a href="/post/blackness/">/blackness.md</a></li>
+            <li><a href="/post/im-racially-tired/">/im-racially-tired.md</a></li>
+            <li><a href="/post/kamala-harris-is-still-a-cop/">/kamala-harris-is-still-a-cop.md</a></li>
+            <li><a href="/post/night-off/">/night-off.md</a></li>
+            <li><a href="/post/rip-mj-8-years-on/">/rip-mj-8-years-on.md</a></li>
+          </ul>
         </section>
-      <section>
-      
-    <section>
-      <h2 class="wiki-h2">Out loud</h2>
-        <ul class="post-list">
-            {remoteData.map((item) => (
-                <li class="post-preview wiki-listing post-list">
-            <a href={item.link}><Fragment set:html={item.title.rendered}></a>
-          </li>
-             ))}
-             {remoteData2.map((item) => (
-                <li class="post-preview wiki-listing post-list">
-            <a href={item.link}><Fragment set:html={item.title.rendered}></a>
-          </li>
-             ))}
-             {remoteData3.map((item) => (
-                <li class="post-preview wiki-listing post-list">
-            <a href={item.link}><Fragment set:html={item.title.rendered}></a>
-          </li>
-             ))}
-        </ul>
-        <h2 class="wiki-h2">Second opinions</h2>
-        <ul>
-          <li><a href="https://daily.jstor.org/the-history-of-black-owned-record-labels/">The History of Black-Owned Record Labels</a></li>
-        </ul>
-    </section>
-    </section>
+        <section>
+          
+          <section>
+            <h2 class="wiki-h2">Out loud</h2>
+            <ul class="post-list">
+              {remoteData.map((item) => (
+              <li class="post-preview wiki-listing post-list">
+                <a href={item.link}><Fragment set:html={item.title.rendered}></a>
+              </li>
+              ))}
+              {remoteData2.map((item) => (
+              <li class="post-preview wiki-listing post-list">
+                <a href={item.link}><Fragment set:html={item.title.rendered}></a>
+              </li>
+              ))}
+              {remoteData3.map((item) => (
+              <li class="post-preview wiki-listing post-list">
+                <a href={item.link}><Fragment set:html={item.title.rendered}></a>
+              </li>
+              ))}
+            </ul>
+            <h2 class="wiki-h2">Second opinions</h2>
+            <ul>
+              <li><a href="https://daily.jstor.org/the-history-of-black-owned-record-labels/">The History of Black-Owned Record Labels</a></li>
+            </ul>
+          </section>
+        </section>
       </article>
       
     </div>

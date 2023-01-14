@@ -1,7 +1,6 @@
 ---
 // COMPONENTS
 
-import { Markdown } from 'astro/components';
 import BaseHead from '../../../components/BaseHead.astro';
 import BlogHeader from '../../../components/BlogHeader.astro';
 import BlogFooter from '../../../components/BlogFooter.astro';
@@ -51,22 +50,22 @@ let domain = "https://lukealexdavis.co.uk"
               <h1>{title}</h1>
               <p class="desc">{description}</p>
               <h2 class="wiki-h2">Inner voice</h2>
-                <Markdown>
-                  * [/you-rocked-my-world-you-know-you-did.md](/post/you-rocked-my-world-you-know-you-did/)
-                  * [/where-theres-gold.md](/post/where-theres-gold/)
-                  * [/rip-mj-8-years-on.md](/post/rip-mj-8-years-on/)
-                  * [/my-record-store-day.md](/post/my-record-store-day/)
-                  * [/my-album-of-the-year-list-2014.md](/post/my-album-of-the-year-list-2014/)
-                  * [/my-50-favourite-albums-of-2012.md](/post/my-50-favourite-albums-of-2012/)
-                  * [/musical-inspirations.md](/post/musical-inspirations/)
-                  * [/last-name-jazz-first-name-hugh.md](/post/last-name-jazz-first-name-hugh/)
-                  * [/last-donut-of-the-night-when-federer-dilla-united-for-1-weekend.md](/post/last-donut-of-the-night-when-federer-dilla-united-for-1-weekend/)
-                  * [/khruangbin-and-federer.md](/post/khruangbin-and-federer/)
-                  * [/jamiroquai-rock-dust-light-star-review.md](/post/jamiroquai-rock-dust-light-star-review/)
-                  * [/j-dilla-influence-modern-drummer.md](/post/j-dilla-influence-modern-drummer/)
-                  * [/if-nobody-listened.md](/post/if-nobody-listened/)
-                  * [/fave-albums-2020.md](/post/fave-albums-2020/)
-                </Markdown>
+                <ul>
+                  <li><a href="/post/you-rocked-my-world-you-know-you-did/">/you-rocked-my-world-you-know-you-did.md</a>
+                  <li><a href="/post/where-theres-gold/">/where-theres-gold.md</a>
+                  <li><a href="/post/rip-mj-8-years-on/">/rip-mj-8-years-on.md</a>
+                  <li><a href="/post/my-record-store-day/">/my-record-store-day.md</a>
+                  <li><a href="/post/my-album-of-the-year-list-2014/">/my-album-of-the-year-list-2014.md</a>
+                  <li><a href="/post/my-50-favourite-albums-of-2012/">/my-50-favourite-albums-of-2012.md</a>
+                  <li><a href="/post/musical-inspirations/">/musical-inspirations.md</a>
+                  <li><a href="/post/last-name-jazz-first-name-hugh/">/last-name-jazz-first-name-hugh.md</a>
+                  <li><a href="/post/last-donut-of-the-night-when-federer-dilla-united-for-1-weekend/">/last-donut-of-the-night-when-federer-dilla-united-for-1-weekend.md</a>
+                  <li><a href="/post/khruangbin-and-federer/">/khruangbin-and-federer.md</a>
+                  <li><a href="/post/jamiroquai-rock-dust-light-star-review/">/jamiroquai-rock-dust-light-star-review.md</a>
+                  <li><a href="/post/j-dilla-influence-modern-drummer/">/j-dilla-influence-modern-drummer.md</a>
+                  <li><a href="/post/if-nobody-listened/">/if-nobody-listened.md</a>
+                  <li><a href="/post/fave-albums-2020/">/fave-albums-2020.md</a>
+                </ul>
               <h2 class="wiki-h2">Out loud</h2>
               <ul class="post-list">
                 {remoteData.map((item) => (
@@ -81,10 +80,10 @@ let domain = "https://lukealexdavis.co.uk"
              ))}
              </ul>
               <h2 class="wiki-h2">Second opinions</h2>
-                <Markdown>
-                  * [How the SP-404 Came to Dominate the Global Beat Scene](https://reverb.com/news/a-history-of-the-sp-404)
-                  * [Searching for Tomorrow: The Story of Madlib and DOOM's Madvillainy](https://pitchfork.com/features/article/9478-searching-for-tomorrow-the-story-of-madlib-and-dooms-madvillainy/)
-                </Markdown>
+                  <ul>
+                    <li><a href="https://reverb.com/news/a-history-of-the-sp-404">How the SP-404 Came to Dominate the Global Beat Scene</a></li>
+                    <li><a href="https://pitchfork.com/features/article/9478-searching-for-tomorrow-the-story-of-madlib-and-dooms-madvillainy/">Searching for Tomorrow: The Story of Madlib and DOOM&#39;s Madvillainy</a></li>
+                  </ul>
         </article>
       
     </main>

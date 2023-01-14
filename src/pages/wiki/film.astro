@@ -1,7 +1,6 @@
 ---
 // COMPONENTS
 
-import Markdown from '@astrojs/markdown-component';
 import BaseHead from '../../components/BaseHead.astro';
 import BlogHeader from '../../components/BlogHeader.astro';
 import BlogFooter from '../../components/BlogFooter.astro';
@@ -39,44 +38,46 @@ let domain = "https://lukealexdavis.co.uk"
 <html lang="en">
   <head>
     <BaseHead title={'wiki/' + title.toLowerCase()} description={description} canonicalURL={domain + slug} />
-</head>
-
+  </head>
   <body>
     <BlogHeader />
-      <div class="layout">
-        <article class="content">
-          <Breadcrumbs title={title}/>
-            <section class="intro">
-
-              <h1>{title}</h1>
-              <p class="desc">{description}</p>
-       </section>
-            <section>
-             
-              <h2 class="wiki-h2">Inner voice</h2>
-                <Markdown>
-                  * [/1001-movies-you-must-see-before-you-die-2008-edition.md](/post/1001-movies-you-must-see-before-you-die-2008-edition/)
-                  * [/bad-boys-for-years.md](/post/bad-boys-for-years/)
-                  * [/black-panther-and-therapy.md](/post/black-panther-and-therapy/)
-                  * [/still-elephant.md](/post/still-elephant/)
-                </Markdown>
-            </section>
-      
-            <section>
-              <h2 class="wiki-h2">Out loud</h2>
-              <ul class="post-list">
-                {remoteData.map((item) => (
-              <li class="post-preview wiki-listing post-list">
-            <a href={item.link}><Fragment set:html={item.title.rendered}></a>
-          </li>
-             ))}
-              </ul>
-              <h2 class="wiki-h2">Second opinions</h2>
-                <Markdown>
-                  * Coming soon
-                </Markdown>
-            </section>
-        </article>
+    <div class="layout">
+      <article class="content">
+        <Breadcrumbs title={title}/>
+        <section class="intro">
+          <h1>{title}</h1>
+          <p class="desc">{description}</p>
+        </section>
+        <section>
+          
+          <h2 class="wiki-h2">Inner voice</h2>
+          
+          <ul>
+            <li><a href="/post/1001-movies-you-must-see-before-you-die-2008-edition/">/1001-movies-you-must-see-before-you-die-2008-edition.md</a></li>
+            <li><a href="/post/bad-boys-for-years/">/bad-boys-for-years.md</a></li>
+            <li><a href="/post/black-panther-and-therapy/">/black-panther-and-therapy.md</a></li>
+            <li><a href="/post/still-elephant/">/still-elephant.md</a></li>
+          </ul>
+          
+        </section>
+        
+        <section>
+          <h2 class="wiki-h2">Out loud</h2>
+          <ul class="post-list">
+            {remoteData.map((item) => (
+            <li class="post-preview wiki-listing post-list">
+              <a href={item.link}><Fragment set:html={item.title.rendered}></a>
+            </li>
+            ))}
+          </ul>
+          <h2 class="wiki-h2">Second opinions</h2>
+          
+          <ul>
+            <li>Coming soon</li>
+          </ul>
+          
+        </section>
+      </article>
       
     </div>
     <BlogFooter></BlogFooter>

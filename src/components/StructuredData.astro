@@ -1,6 +1,6 @@
 ---
 
-const { title, date, canonicalURL = Astro.canonicalURL } = Astro.props;
+const { title, date, canonicalURL = Astro.url } = Astro.props;
 
 let sd = JSON.stringify({
   "@context": "https://schema.org",
@@ -31,10 +31,10 @@ let sd = JSON.stringify({
         "name": "Luke Davis"
       },
       "name": {title},
-      "@id": Astro.canonicalURL + "#richSnippet",
+      "@id": Astro.url + "#richSnippet",
       "inLanguage": "en-GB",
       "mainEntityOfPage": {
-        "@id": Astro.canonicalURL + "#webpage"
+        "@id": Astro.url + "#webpage"
       }
     },
     {

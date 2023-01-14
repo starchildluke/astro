@@ -6,7 +6,7 @@ const {
   posttitle,
   title,
   description,
-  canonicalURL = Astro.canonicalURL
+  canonicalURL = Astro.url
 } = Astro.props;
 
 const blogRssFeed = `${site.url}feed/blog.xml`;

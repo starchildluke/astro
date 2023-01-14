@@ -1,7 +1,6 @@
 ---
 // COMPONENTS
 
-import Markdown from '@astrojs/markdown-component';
 import BaseHead from '../../components/BaseHead.astro';
 import BlogHeader from '../../components/BlogHeader.astro';
 import BlogFooter from '../../components/BlogFooter.astro';
@@ -35,9 +34,7 @@ let domain = "https://lukealexdavis.co.uk"
   <head>
     <BaseHead title={'wiki/' + title.toLowerCase()} description={description} canonicalURL={domain + slug} />
     </style>
-
   </head>
-
   <body>
     <BlogHeader />
     <div class="layout">
@@ -47,31 +44,30 @@ let domain = "https://lukealexdavis.co.uk"
           <h1>{title}</h1>
         </section>
         <section>
-          <Markdown>
-          ## Inner voice
+          <h2 class="wiki-h2">Inner voice</h2>
           
-          * [/happy-accident-1.md](/post/happy-accident-1/)
-          * [/proust-questionnaire.md](/post/proust-questionnaire/)
-          * [/proust-questionnaire-2020.md](/post/proust-questionnaire-2020/)
-
-          </Markdown>
-
+          <ul>
+            <li><a href="/post/happy-accident-1/">/happy-accident-1.md</a></li>
+            <li><a href="/post/proust-questionnaire/">/proust-questionnaire.md</a></li>
+            <li><a href="/post/proust-questionnaire-2020/">/proust-questionnaire-2020.md</a></li>
+          </ul>
+          
         </section>
-      <section>
-      
-    <section>
-      <h2 class="wiki-h2">Out loud</h2>
-        <ul class="post-list">
-            <li class="post-preview post-listing post-list">
-              Coming soon...
-            </li>
-        </ul>
-        <h2 class="wiki-h2">Second opinions</h2>
-        <ul>
-          <li><a href="https://www.youtube.com/watch?v=OjhBeB9ESqw">"What do I really want? What is really going to make me happy... now?"</a></li>
-        </ul>
-    </section>
-    </section>
+        <section>
+          
+          <section>
+            <h2 class="wiki-h2">Out loud</h2>
+            <ul class="post-list">
+              <li class="post-preview post-listing post-list">
+                Coming soon...
+              </li>
+            </ul>
+            <h2 class="wiki-h2">Second opinions</h2>
+            <ul>
+              <li><a href="https://www.youtube.com/watch?v=OjhBeB9ESqw">"What do I really want? What is really going to make me happy... now?"</a></li>
+            </ul>
+          </section>
+        </section>
       </article>
       
     </div>

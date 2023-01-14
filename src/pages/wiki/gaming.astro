@@ -1,7 +1,6 @@
 ---
 // COMPONENTS
 
-import Markdown from '@astrojs/markdown-component';
 import BaseHead from '../../components/BaseHead.astro';
 import BlogHeader from '../../components/BlogHeader.astro';
 import BlogFooter from '../../components/BlogFooter.astro';
@@ -39,44 +38,45 @@ let domain = "https://lukealexdavis.co.uk"
 <html lang="en">
   <head>
     <BaseHead title={'wiki/' + title.toLowerCase()} description={description} canonicalURL={domain + slug} />
-</head>
-
+  </head>
   <body>
     <BlogHeader />
-      <div class="layout">
-        <article class="content">
-          <Breadcrumbs title={title}/>
-            <section class="intro">
-
-              <h1>{title}</h1>
-              <p class="desc">{description}</p>
-       </section>
-            <section>
-             
-              <h2 class="wiki-h2">Inner voice</h2>
-                <Markdown>
-                  * [/12-facts-i-didnt-know-about-pokemon.md](/post/12-facts-i-didnt-know-about-pokemon/)
-                  * [/boom-tetris-for-jeff.md](/post/boom-tetris-for-jeff/)
-                  * [/my-new-obsession-is-sega.md](/post/my-new-obsession-is-sega/)
-                  * [/my-five-favourite-video-games-of-all-time.md](/post/my-five-favourite-video-games-of-all-time/)
-                </Markdown>
-            </section>
-      
-            <section>
-              <h2 class="wiki-h2">Out loud</h2>
-              <ul class="post-list">
-                {remoteData.map((item) => (
-                <li class="post-preview wiki-listing post-list">
-            <a href={item.link}><Fragment set:html={item.title.rendered}></a>
-          </li>
-             ))}
-             </ul>
-              <h2 class="wiki-h2">Second opinions</h2>
-                <Markdown>
-                  * [Interview: Sugimori & Masuda on Building Gen 1](http://lavacutcontent.com/sugimori-masuda-developer-interview/)
-                </Markdown>
-            </section>
-        </article>
+    <div class="layout">
+      <article class="content">
+        <Breadcrumbs title={title}/>
+        <section class="intro">
+          <h1>{title}</h1>
+          <p class="desc">{description}</p>
+        </section>
+        <section>
+          
+          <h2 class="wiki-h2">Inner voice</h2>
+          
+          <ul>
+            <li><a href="/post/12-facts-i-didnt-know-about-pokemon/">/12-facts-i-didnt-know-about-pokemon.md</a></li>
+            <li><a href="/post/boom-tetris-for-jeff/">/boom-tetris-for-jeff.md</a></li>
+            <li><a href="/post/my-new-obsession-is-sega/">/my-new-obsession-is-sega.md</a></li>
+            <li><a href="/post/my-five-favourite-video-games-of-all-time/">/my-five-favourite-video-games-of-all-time.md</a></li>
+          </ul>
+          
+        </section>
+        
+        <section>
+          <h2 class="wiki-h2">Out loud</h2>
+          <ul class="post-list">
+            {remoteData.map((item) => (
+            <li class="post-preview wiki-listing post-list">
+              <a href={item.link}><Fragment set:html={item.title.rendered}></a>
+            </li>
+            ))}
+          </ul>
+          <h2 class="wiki-h2">Second opinions</h2>
+          
+          <ul>
+            <li><a href="http://lavacutcontent.com/sugimori-masuda-developer-interview/">Interview: Sugimori &amp; Masuda on Building Gen 1</a></li>
+          </ul>
+        </section>
+      </article>
       
     </div>
     <BlogFooter></BlogFooter>

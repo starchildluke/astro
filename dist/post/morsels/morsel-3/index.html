@@ -7,7 +7,7 @@
 <title>Morsel #3 - a custom font preload fix in WordPress</title>
 <meta name="title" content="Morsel #3 - a custom font preload fix in WordPress">
 <meta name="description">
-<meta name="generator" content="astro-^1.0.0-beta.72">
+<meta name="generator" content="astro-^1.9.2">
 <link rel="canonical" href="https://lukealexdavis.co.uk/post/morsels/morsel-3/">
 <link rel="alternate" type="application/rss+xml" title="Luke Alex Davis" href="https://lukealexdavis.co.uk/feed/blog.xml">
 <link rel="preload" href="/fonts/Karla-Light-subset.woff2" as="font" type="font/woff" crossorigin>
@@ -56,17 +56,28 @@
       <p class="publish-date">25 May 2022</p>
       <h1>Morsel #3 - a custom font preload fix in WordPress</h1>
     <main>
-      <p>My third morsel is actually a WordPress fix.</p><p>I decided to write this as I couldn’t find the answer I was looking for myself and thought it might help anyone who had the same problem in the future.</p><p><strong>Problem</strong>: I realised the custom self-hosted fonts I was using on my WordPress sites weren’t actually loading. I realised this after seeing the following message:</p><p><code>The resource X was preloaded using link preload but not used within a few seconds from the window’s load event. Please make sure it has an appropriate ‘as’ value and it is preloaded intentionally.</code></p><p>That basically means the font loaded but it wasn’t used <em>at all</em>. I tried all the different things that Stack Overflow said but it still wouldn’t work. Long story short: the @font-face declarations I was making in the main theme CSS file weren’t acknowledged so I put them in the WordPress Customizer panel. To do that:</p><ul>
+      <p>My third morsel is actually a WordPress fix.</p>
+<p>I decided to write this as I couldn’t find the answer I was looking for myself and thought it might help anyone who had the same problem in the future.</p>
+<p><strong>Problem</strong>: I realised the custom self-hosted fonts I was using on my WordPress sites weren’t actually loading. I realised this after seeing the following message:</p>
+<p><code>The resource X was preloaded using link preload but not used within a few seconds from the window’s load event. Please make sure it has an appropriate ‘as’ value and it is preloaded intentionally.</code></p>
+<p>That basically means the font loaded but it wasn’t used <em>at all</em>. I tried all the different things that Stack Overflow said but it still wouldn’t work. Long story short: the @font-face declarations I was making in the main theme CSS file weren’t acknowledged so I put them in the WordPress Customizer panel. To do that:</p>
+<ul>
 <li>Go to your Admin panel and then go to Appearance > Customize > Additional CSS</li>
 <li>Enter the appropriate @font-face code</li>
-</ul><p>I used the following @font-face format:</p><pre class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #C9D1D9">	</span><span style="color: #FF7B72">@font-face</span><span style="color: #C9D1D9"> {</span></span>
-<span class="line"><span style="color: #C9D1D9">		</span><span style="color: #79C0FF">font-family</span><span style="color: #C9D1D9">: </span><span style="color: #A5D6FF">&#39;FontName&#39;</span><span style="color: #C9D1D9">;</span></span>
-<span class="line"><span style="color: #C9D1D9">		</span><span style="color: #79C0FF">src</span><span style="color: #C9D1D9">: </span><span style="color: #79C0FF">url</span><span style="color: #C9D1D9">(</span><span style="color: #FFA657">PATH</span><span style="color: #C9D1D9">) </span><span style="color: #79C0FF">format</span><span style="color: #C9D1D9">(</span><span style="color: #A5D6FF">&#39;woff2&#39;</span><span style="color: #C9D1D9">);</span></span>
-<span class="line"><span style="color: #C9D1D9">		</span><span style="color: #79C0FF">src</span><span style="color: #C9D1D9">: </span><span style="color: #79C0FF">url</span><span style="color: #C9D1D9">(</span><span style="color: #FFA657">PATH</span><span style="color: #C9D1D9">) </span><span style="color: #79C0FF">format</span><span style="color: #C9D1D9">(</span><span style="color: #A5D6FF">&#39;woff&#39;</span><span style="color: #C9D1D9">);</span></span>
+</ul>
+<p>I used the following @font-face format:</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #C9D1D9">	</span><span style="color: #FF7B72">@font-face</span><span style="color: #C9D1D9"> {</span></span>
+<span class="line"><span style="color: #C9D1D9">		</span><span style="color: #79C0FF">font-family</span><span style="color: #C9D1D9">: </span><span style="color: #A5D6FF">'FontName'</span><span style="color: #C9D1D9">;</span></span>
+<span class="line"><span style="color: #C9D1D9">		</span><span style="color: #79C0FF">src</span><span style="color: #C9D1D9">: </span><span style="color: #79C0FF">url</span><span style="color: #C9D1D9">(</span><span style="color: #FFA657">PATH</span><span style="color: #C9D1D9">) </span><span style="color: #79C0FF">format</span><span style="color: #C9D1D9">(</span><span style="color: #A5D6FF">'woff2'</span><span style="color: #C9D1D9">);</span></span>
+<span class="line"><span style="color: #C9D1D9">		</span><span style="color: #79C0FF">src</span><span style="color: #C9D1D9">: </span><span style="color: #79C0FF">url</span><span style="color: #C9D1D9">(</span><span style="color: #FFA657">PATH</span><span style="color: #C9D1D9">) </span><span style="color: #79C0FF">format</span><span style="color: #C9D1D9">(</span><span style="color: #A5D6FF">'woff'</span><span style="color: #C9D1D9">);</span></span>
 <span class="line"><span style="color: #C9D1D9">		</span><span style="color: #79C0FF">font-weight</span><span style="color: #C9D1D9">: whatever that is;</span></span>
 <span class="line"><span style="color: #C9D1D9">		</span><span style="color: #79C0FF">font-style</span><span style="color: #C9D1D9">: </span><span style="color: #79C0FF">normal</span><span style="color: #C9D1D9">;</span></span>
 <span class="line"><span style="color: #C9D1D9">		</span><span style="color: #79C0FF">font-display</span><span style="color: #C9D1D9">: </span><span style="color: #79C0FF">swap</span><span style="color: #C9D1D9">;</span></span>
-<span class="line"><span style="color: #C9D1D9">	}</span></span></code></pre><p>In terms of the preload code, I recommend the following:</p><p><code>&lt;link rel="preload" href="PATH" type="font/woff2" as="font" crossorigin=""&gt;</code></p><p>I’ve gone with woff2 only as it’s widely supported and smaller in file size, which compounds the benefits of preloading for page speed. Just be careful of <a href="https://fonts.google.com/knowledge/glossary/fout">FOUT</a> and set your <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control">Cache-Control headers</a>!</p><p>And make sure to put that ahead of the <code>wp_head()</code> in your header.php file so it can preload before the CSS (I believe that’s how it works lol).</p>
+<span class="line"><span style="color: #C9D1D9">	}</span></span></code></pre>
+<p>In terms of the preload code, I recommend the following:</p>
+<p><code>&#x3C;link rel="preload" href="PATH" type="font/woff2" as="font" crossorigin=""></code></p>
+<p>I’ve gone with woff2 only as it’s widely supported and smaller in file size, which compounds the benefits of preloading for page speed. Just be careful of <a href="https://fonts.google.com/knowledge/glossary/fout">FOUT</a> and set your <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control">Cache-Control headers</a>!</p>
+<p>And make sure to put that ahead of the <code>wp_head()</code> in your header.php file so it can preload before the CSS (I believe that’s how it works lol).</p>
     </main>
   </article>
 </div>

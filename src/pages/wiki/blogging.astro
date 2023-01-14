@@ -1,7 +1,6 @@
 ---
 // COMPONENTS
 
-import Markdown from '@astrojs/markdown-component';
 import BaseHead from '../../components/BaseHead.astro';
 import BlogHeader from '../../components/BlogHeader.astro';
 import BlogFooter from '../../components/BlogFooter.astro';
@@ -39,66 +38,66 @@ let domain = "https://lukealexdavis.co.uk"
 <html lang="en">
   <head>
     <BaseHead title={'wiki/' + title.toLowerCase()} description={description} canonicalURL={domain + slug} />
-</head>
-
+  </head>
   <body>
     <BlogHeader />
-      <div class="layout">
-        <article class="content">
-          <Breadcrumbs title={title}/>
-            <section class="intro">
-
-              <h1>{title}</h1>
-              <p class="desc">{description}</p>
-       </section>
-            <section>
-             
-              <h2 class="wiki-h2">Inner voice</h2>
-                <Markdown>
-                  * [/1-vs-10-000.md](/post/1-vs-10-000/)
-                  * [/this-is-my-content-creation-flow.md](/post/this-is-my-content-creation-flow/)
-                  * [/4-article-ideas-the-read.md](/post/4-article-ideas-the-read/)
-                  * [/blogging-as-self-expression.md](/post/blogging-as-self-expression/)
-                  * [/blogs-and-hats.md](/post/blogs-and-hats/)
-                  * [/ceci-nest-pas-un-blog.md](/post/ceci-nest-pas-un-blog/)
-                  * [/feeling-guilty-for-pursuing-your-passions.md](/post/feeling-guilty-for-pursuing-your-passions/)
-                  * [/first-year-professional-seo.md](/post/first-year-professional-seo/)
-                  * [/halt-and-make-fire.md](/post/halt-and-make-fire/)
-                  * [/how-much-do-my-blogs-cost.md](/post/how-much-do-my-blogs-cost/)
-                  * [/meta-meta-blogging.md](/post/meta-meta-blogging/)
-                  * [/my-review-of-2017.md](/post/my-review-of-2017/)
-                  * [/second-year-professional-seo.md](/post/second-year-professional-seo/)
-                  * [/speeches-thanks.md](/post/speeches-thanks/)
-                </Markdown>
-            </section>
-      
-            <section>
-              <h2 class="wiki-h2">Out loud</h2>
-              <ul class="post-list">
-                {remoteData.map((item) => (
-                <li class="post-preview wiki-listing post-list">
-            <a href={item.link}><Fragment set:html={item.title.rendered}></a>
-          </li>
-             ))}
-             </ul>
-              <h2 class="wiki-h2">Second opinions</h2>
-                <Markdown>
-                  * [Blogging Is Most Certainly Not Dead](https://mailchi.mp/kottke/blogging-is-not-dead-edition-2575912502)
-                  * [Nadia Eghbal](https://nadiaeghbal.com/)
-                  * [Nadia Eghbal, Re: Writing Hypertext](https://www.kickscondor.com/nadia-eghbal/)
-                  * [Ed Silverman of Pharmalot on building longevity — and audience loyalty — in blogging](https://www.niemanlab.org/2015/10/ed-silverman-of-pharmalot-on-building-longevity-and-audience-loyalty-in-blogging/)
-                  * [Building a digital garden](https://tomcritchlow.com/2019/02/17/building-digital-garden/)
-                  * [Of Digital Streams, Campfires and Gardens](https://tomcritchlow.com/2018/10/10/of-gardens-and-wikis/)
-                  * [Last blog standing, “last guy dancing”: How Jason Kottke is thinking about kottke.org at 20](https://www.niemanlab.org/2018/02/last-blog-standing-last-guy-dancing-how-jason-kottke-is-thinking-about-kottke-org-at-20/)
-                  * [Jason Kottke, OG blogger](https://creatorinterviews.com/2019/03/05/jason-kottke-og-blogger/)
-                  * [Jason Kottke, the Modern State of Blogging, and My Own Blogging Mission](https://opuszine.us/posts/jason-kottke-modern-state-blogging-my-own-blogging-mission)
-                  * [New blogging](https://tomcritchlow.com/wiki/blogging/new-blogging/)
-                  * [Tom Critchlow's wiki on blogging](https://tomcritchlow.com/wiki/blogging/)
-                  * [Digital gardens let you cultivate your own little bit of the internet](https://www.technologyreview.com/2020/09/03/1007716/digital-gardens-let-you-cultivate-your-own-little-bit-of-the-internet/)
-                  * [Recipe atttribution](https://www.davidlebovitz.com/recipe-attribution/)
-                </Markdown>
-            </section>
-        </article>
+    <div class="layout">
+      <article class="content">
+        <Breadcrumbs title={title}/>
+        <section class="intro">
+          <h1>{title}</h1>
+          <p class="desc">{description}</p>
+        </section>
+        <section>
+          
+          <h2 class="wiki-h2">Inner voice</h2>
+          <ul>
+            <li><a href="/post/1-vs-10-000/">/1-vs-10-000.md</a></li>
+            <li><a href="/post/this-is-my-content-creation-flow/">/this-is-my-content-creation-flow.md</a></li>
+            <li><a href="/post/4-article-ideas-the-read/">/4-article-ideas-the-read.md</a></li>
+            <li><a href="/post/blogging-as-self-expression/">/blogging-as-self-expression.md</a></li>
+            <li><a href="/post/blogs-and-hats/">/blogs-and-hats.md</a></li>
+            <li><a href="/post/ceci-nest-pas-un-blog/">/ceci-nest-pas-un-blog.md</a></li>
+            <li><a href="/post/feeling-guilty-for-pursuing-your-passions/">/feeling-guilty-for-pursuing-your-passions.md</a></li>
+            <li><a href="/post/first-year-professional-seo/">/first-year-professional-seo.md</a></li>
+            <li><a href="/post/halt-and-make-fire/">/halt-and-make-fire.md</a></li>
+            <li><a href="/post/how-much-do-my-blogs-cost/">/how-much-do-my-blogs-cost.md</a></li>
+            <li><a href="/post/meta-meta-blogging/">/meta-meta-blogging.md</a></li>
+            <li><a href="/post/my-review-of-2017/">/my-review-of-2017.md</a></li>
+            <li><a href="/post/second-year-professional-seo/">/second-year-professional-seo.md</a></li>
+            <li><a href="/post/speeches-thanks/">/speeches-thanks.md</a></li>
+          </ul>
+        </section>
+        
+        <section>
+          <h2 class="wiki-h2">Out loud</h2>
+          <ul class="post-list">
+            {remoteData.map((item) => (
+            <li class="post-preview wiki-listing post-list">
+              <a href={item.link}><Fragment set:html={item.title.rendered}></a>
+            </li>
+            ))}
+          </ul>
+          <h2 class="wiki-h2">Second opinions</h2>
+          
+          <ul>
+            <li><a href="https://mailchi.mp/kottke/blogging-is-not-dead-edition-2575912502">Blogging Is Most Certainly Not Dead</a></li>
+            <li><a href="https://nadiaeghbal.com/">Nadia Eghbal</a></li>
+            <li><a href="https://www.kickscondor.com/nadia-eghbal/">Nadia Eghbal, Re: Writing Hypertext</a></li>
+            <li><a href="https://www.niemanlab.org/2015/10/ed-silverman-of-pharmalot-on-building-longevity-and-audience-loyalty-in-blogging/">Ed Silverman of Pharmalot on building longevity — and audience loyalty — in blogging</a></li>
+            <li><a href="https://tomcritchlow.com/2019/02/17/building-digital-garden/">Building a digital garden</a></li>
+            <li><a href="https://tomcritchlow.com/2018/10/10/of-gardens-and-wikis/">Of Digital Streams, Campfires and Gardens</a></li>
+            <li><a href="https://www.niemanlab.org/2018/02/last-blog-standing-last-guy-dancing-how-jason-kottke-is-thinking-about-kottke-org-at-20/">Last blog standing, “last guy dancing”: How Jason Kottke is thinking about kottke.org at 20</a></li>
+            <li><a href="https://creatorinterviews.com/2019/03/05/jason-kottke-og-blogger/">Jason Kottke, OG blogger</a></li>
+            <li><a href="https://opuszine.us/posts/jason-kottke-modern-state-blogging-my-own-blogging-mission">Jason Kottke, the Modern State of Blogging, and My Own Blogging Mission</a></li>
+            <li><a href="https://tomcritchlow.com/wiki/blogging/new-blogging/">New blogging</a></li>
+            <li><a href="https://tomcritchlow.com/wiki/blogging/">Tom Critchlow&#39;s wiki on blogging</a></li>
+            <li><a href="https://www.technologyreview.com/2020/09/03/1007716/digital-gardens-let-you-cultivate-your-own-little-bit-of-the-internet/">Digital gardens let you cultivate your own little bit of the internet</a></li>
+            <li><a href="https://www.davidlebovitz.com/recipe-attribution/">Recipe atttribution</a></li>
+          </ul>
+          
+        </section>
+      </article>
       
     </div>
     <BlogFooter></BlogFooter>

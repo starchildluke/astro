@@ -7,7 +7,7 @@
 <title>Introducing RALTS (Really Awesome Lexicon and Tag Suggester)</title>
 <meta name="title" content="Introducing RALTS (Really Awesome Lexicon and Tag Suggester)">
 <meta name="description">
-<meta name="generator" content="astro-^1.0.0-beta.72">
+<meta name="generator" content="astro-^1.9.2">
 <link rel="canonical" href="https://lukealexdavis.co.uk/post/introducing-ralts/">
 <link rel="alternate" type="application/rss+xml" title="Luke Alex Davis" href="https://lukealexdavis.co.uk/feed/blog.xml">
 <link rel="preload" href="/fonts/Karla-Light-subset.woff2" as="font" type="font/woff" crossorigin>
@@ -56,7 +56,10 @@
       <p class="publish-date">28 Feb 2022</p>
       <h1>Introducing RALTS (Really Awesome Lexicon and Tag Suggester)</h1>
     <main>
-      <p>I’ve been learning Python since October 2019 and exploring NLP since the end of last year and they’ve changed my life for the better. As I learn by doing, I’ve decided to show off arguably my greatest creation to do date. I wasn’t sure whether to do it as it’s very niche to me but I’ve taken a step out of my comfort zone.</p><p><a href="https://github.com/lukedavisseo/ralts">GitHub link to RALTS repository</a></p><h2 id="table-of-contents">Table of contents</h2><ol>
+      <p>I’ve been learning Python since October 2019 and exploring NLP since the end of last year and they’ve changed my life for the better. As I learn by doing, I’ve decided to show off arguably my greatest creation to do date. I wasn’t sure whether to do it as it’s very niche to me but I’ve taken a step out of my comfort zone.</p>
+<p><a href="https://github.com/lukedavisseo/ralts">GitHub link to RALTS repository</a></p>
+<h2 id="table-of-contents">Table of contents</h2>
+<ol>
 <li><a href="#ralts">What is RALTS?</a></li>
 <li><a href="#why_did_you_make_this">Why did I make it?</a></li>
 <li><a href="#notes_on_my_coding">Notes on my coding</a></li>
@@ -66,13 +69,31 @@
 <li><a href="#who_could_this_benefit">Who could this benefit?</a></li>
 <li><a href="#evaluation">Evaluation</a></li>
 <li><a href="#summary">Summary</a></li>
-</ol><h2 id="ralts"> What is RALTS?</h2><p>RALTS stands for (Really Awesome Lexicon and Tag Suggester) and it’s a script that extracts entities, topics, and categories from a body of text using the TextRazor API. But what it also does is use NLP classification to analyse that text based on labels pulled from the extracted topics. Confused? I’ll explain those all in more detail later.</p><p>There is also a secondary function that has nothing to do with suggesting tags but I’ll explain it here. I have also set up functionality that pulls all my tags from my blogs and randomly joins them together in a Google search query for content ideas. They are inversely weighted so the least used tags appear more frequently in the randomised search queries.</p><p>Examples:</p><ul>
+</ol>
+<h2 id="ralts"> What is RALTS?</h2>
+<p>RALTS stands for (Really Awesome Lexicon and Tag Suggester) and it’s a script that extracts entities, topics, and categories from a body of text using the TextRazor API. But what it also does is use NLP classification to analyse that text based on labels pulled from the extracted topics. Confused? I’ll explain those all in more detail later.</p>
+<p>There is also a secondary function that has nothing to do with suggesting tags but I’ll explain it here. I have also set up functionality that pulls all my tags from my blogs and randomly joins them together in a Google search query for content ideas. They are inversely weighted so the least used tags appear more frequently in the randomised search queries.</p>
+<p>Examples:</p>
+<ul>
 <li><a href="https://google.com/search?q=vhs+black+cinema">https://google.com/search?q=vhs+black+cinema</a></li>
 <li><a href="https://google.com/search?q=cuba+snow">https://google.com/search?q=cuba+snow</a></li>
 <li><a href="https://google.com/search?q=nike+poetry">https://google.com/search?q=nike+poetry</a></li>
 <li><a href="https://google.com/search?q=night+keith+haring">https://google.com/search?q=night+keith+haring</a></li>
 <li><a href="https://google.com/search?q=australia+dogs">https://google.com/search?q=australia+dogs</a></li>
-</ul><p>In terms of the name, I chose RALTS because all the Sesame Street references were taken and I’m a Pokémon fan. It’s a backronym but it works for me.</p><h2 id="why_did_you_make_this">Why did I make it?</h2><p>tl;dr: it aids my blogging process.</p><p>I love anything to do with taxonomies, ontologies, and classification. I’m a tagger and a labeler. There are limits to what and how I label in a social and metaphysical sense but for my blogs, I love the process. It helps my information retrieval and it ties so well into SEO (which is my profession in case you missed it).</p><p>Fundamentally, I wanted a script to tell me what tags to use for my blogs if I couldn’t think of any or had retrospectively missed anything. By extracting entities and topics, I can cross reference it with existing tags or spot any new ones that make sense or keep cropping up.</p><h2 id="notes_on_my_coding">Notes on my coding</h2><p>Before I dive into the code, I want to make something clear: I’ve only been coding in Python for just under 2.5 years. I’ve done all of this in my own time with no formal training and following a Udemy course I still haven’t finished. You’ll likely see some inefficient or unpythonic code. If you do, feel free to shout up as that will help me improve. But please: only constructive feedback. There are way too many videos online calling people out for “stupid code” and I find it demeaning and gatekeep-y (technical term).</p><p>I also want to give credit to Joe Davison whose data plot code I used from his <a href="https://github.com/joeddav/zero-shot-demo">zero shot demo</a>. He wrote a great piece on <a href="https://joeddav.github.io/blog/2020/05/29/ZSL.html">zero shot learning</a> which you should read if you’re interested.</p><p><a href="https://huggingface.co/zero-shot/">There’s also a live zero shot classification demo you can try that shows the code I copied in action</a>.</p><p>If I’ve taken anything that belongs to anyone whom I’ve forgotten to credit or if you’d prefer I remove it, please let me know and accept my sincerest apologies.</p><h2 id="some_definitions">Some definitions</h2><p>So, about that original explanation. Let’s look at some definitions:</p><ul>
+</ul>
+<p>In terms of the name, I chose RALTS because all the Sesame Street references were taken and I’m a Pokémon fan. It’s a backronym but it works for me.</p>
+<h2 id="why_did_you_make_this">Why did I make it?</h2>
+<p>tl;dr: it aids my blogging process.</p>
+<p>I love anything to do with taxonomies, ontologies, and classification. I’m a tagger and a labeler. There are limits to what and how I label in a social and metaphysical sense but for my blogs, I love the process. It helps my information retrieval and it ties so well into SEO (which is my profession in case you missed it).</p>
+<p>Fundamentally, I wanted a script to tell me what tags to use for my blogs if I couldn’t think of any or had retrospectively missed anything. By extracting entities and topics, I can cross reference it with existing tags or spot any new ones that make sense or keep cropping up.</p>
+<h2 id="notes_on_my_coding">Notes on my coding</h2>
+<p>Before I dive into the code, I want to make something clear: I’ve only been coding in Python for just under 2.5 years. I’ve done all of this in my own time with no formal training and following a Udemy course I still haven’t finished. You’ll likely see some inefficient or unpythonic code. If you do, feel free to shout up as that will help me improve. But please: only constructive feedback. There are way too many videos online calling people out for “stupid code” and I find it demeaning and gatekeep-y (technical term).</p>
+<p>I also want to give credit to Joe Davison whose data plot code I used from his <a href="https://github.com/joeddav/zero-shot-demo">zero shot demo</a>. He wrote a great piece on <a href="https://joeddav.github.io/blog/2020/05/29/ZSL.html">zero shot learning</a> which you should read if you’re interested.</p>
+<p><a href="https://huggingface.co/zero-shot/">There’s also a live zero shot classification demo you can try that shows the code I copied in action</a>.</p>
+<p>If I’ve taken anything that belongs to anyone whom I’ve forgotten to credit or if you’d prefer I remove it, please let me know and accept my sincerest apologies.</p>
+<h2 id="some_definitions">Some definitions</h2>
+<p>So, about that original explanation. Let’s look at some definitions:</p>
+<ul>
 <li>
 <p>Entities - Real-world objects, such as people, organisations, locations, products, that can be denoted with a proper name. They can be abstract or have a physical existence. Examples of named entities include: Python, London, David Beckham, Nelson Mandela, Manchester United, The Simpsons, cooking.</p>
 </li>
@@ -88,30 +109,42 @@
 <li>
 <p>Labels - Forms of annotation that classify what a text is about. They’re basically like tags.</p>
 </li>
-</ul><h2 id="tech_requirements">Tech requirements</h2><p>These are the following Python packages used in the script:</p><pre class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">streamlit&gt;=1.0.0</span></span>
-<span class="line"><span style="color: #c9d1d9">pandas&gt;=1.2.3</span></span>
-<span class="line"><span style="color: #c9d1d9">transformers&gt;=4.12.3</span></span>
-<span class="line"><span style="color: #c9d1d9">requests&gt;=2.25.1</span></span>
-<span class="line"><span style="color: #c9d1d9">bs4&gt;=0.0.1</span></span>
-<span class="line"><span style="color: #c9d1d9">plotly&gt;=5.4.0</span></span>
-<span class="line"><span style="color: #c9d1d9">numpy&gt;=1.18.0</span></span>
+</ul>
+<h2 id="tech_requirements">Tech requirements</h2>
+<p>These are the following Python packages used in the script:</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">streamlit>=1.0.0</span></span>
+<span class="line"><span style="color: #c9d1d9">pandas>=1.2.3</span></span>
+<span class="line"><span style="color: #c9d1d9">transformers>=4.12.3</span></span>
+<span class="line"><span style="color: #c9d1d9">requests>=2.25.1</span></span>
+<span class="line"><span style="color: #c9d1d9">bs4>=0.0.1</span></span>
+<span class="line"><span style="color: #c9d1d9">plotly>=5.4.0</span></span>
+<span class="line"><span style="color: #c9d1d9">numpy>=1.18.0</span></span>
 <span class="line"><span style="color: #c9d1d9">textrazor==1.4.0</span></span>
-<span class="line"><span style="color: #c9d1d9">tensorflow&gt;=2.7.0</span></span></code></pre><p><a href="https://streamlit.io/">Streamlit</a> for the UI, <a href="https://pandas.pydata.org/">pandas</a> for data manipulation, <a href="https://huggingface.co/docs/transformers/main_classes/pipelines">Transformers</a> for the language model, requests and <a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/">BeautifulSoup</a> for web scraping, <a href="https://plotly.com/">plotly</a> and <a href="https://numpy.org/">NumPy</a> for data viz, <a href="https://www.textrazor.com/">TextRazor</a> for the entities and such, and <a href="https://www.tensorflow.org/">TensorFlow</a> for the language model.</p><p>Regarding TensorFlow, the language model I’m using is called <a href="https://huggingface.co/valhalla/distilbart-mnli-12-9">DistilBart-MNLI</a> and instructions can be found on the Hugging Face link about how to download, fine-tune, deploy, and use in Transformers via Python.</p><h2 id="the_code">The code</h2><p>The code is split into different parts:</p><h3 id="1-textrazor-api-key-and-client-details">1. TextRazor API key and client details</h3><pre class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9"># TextRazor details</span></span>
+<span class="line"><span style="color: #c9d1d9">tensorflow>=2.7.0</span></span></code></pre>
+<p><a href="https://streamlit.io/">Streamlit</a> for the UI, <a href="https://pandas.pydata.org/">pandas</a> for data manipulation, <a href="https://huggingface.co/docs/transformers/main_classes/pipelines">Transformers</a> for the language model, requests and <a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/">BeautifulSoup</a> for web scraping, <a href="https://plotly.com/">plotly</a> and <a href="https://numpy.org/">NumPy</a> for data viz, <a href="https://www.textrazor.com/">TextRazor</a> for the entities and such, and <a href="https://www.tensorflow.org/">TensorFlow</a> for the language model.</p>
+<p>Regarding TensorFlow, the language model I’m using is called <a href="https://huggingface.co/valhalla/distilbart-mnli-12-9">DistilBart-MNLI</a> and instructions can be found on the Hugging Face link about how to download, fine-tune, deploy, and use in Transformers via Python.</p>
+<h2 id="the_code">The code</h2>
+<p>The code is split into different parts:</p>
+<h3 id="1-textrazor-api-key-and-client-details">1. TextRazor API key and client details</h3>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9"># TextRazor details</span></span>
 <span class="line"><span style="color: #c9d1d9">textrazor.api_key = API_KEY</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">client = textrazor.TextRazor(extractors=[&quot;entities&quot;, &quot;topics&quot;])</span></span>
-<span class="line"><span style="color: #c9d1d9">client.set_classifiers([&quot;textrazor_newscodes&quot;])</span></span></code></pre><p>We set the API key (which you can generate with a free account on the TextRazor website) and tell the client to use the entities and topics extractors. We also set the classifiers to <code>textrazor_newscodes</code>. <a href="https://www.textrazor.com/classification">Find out more on TextRazor’s Classification page</a>.</p><h3 id="2-function-for-loading-the-language-model-via-a-pipeline-using-zero-shot-classification-the-classification-process-plotting-the-results-and-web-scraping">2. Function for loading the language model via a pipeline using zero shot classification, the classification process, plotting the results, and web scraping</h3><pre class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9"># Load model</span></span>
+<span class="line"><span style="color: #c9d1d9">client = textrazor.TextRazor(extractors=["entities", "topics"])</span></span>
+<span class="line"><span style="color: #c9d1d9">client.set_classifiers(["textrazor_newscodes"])</span></span></code></pre>
+<p>We set the API key (which you can generate with a free account on the TextRazor website) and tell the client to use the entities and topics extractors. We also set the classifiers to <code>textrazor_newscodes</code>. <a href="https://www.textrazor.com/classification">Find out more on TextRazor’s Classification page</a>.</p>
+<h3 id="2-function-for-loading-the-language-model-via-a-pipeline-using-zero-shot-classification-the-classification-process-plotting-the-results-and-web-scraping">2. Function for loading the language model via a pipeline using zero shot classification, the classification process, plotting the results, and web scraping</h3>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9"># Load model</span></span>
 <span class="line"><span style="color: #c9d1d9">@st.cache(allow_output_mutation=True)</span></span>
 <span class="line"><span style="color: #c9d1d9">def load_model():</span></span>
-<span class="line"><span style="color: #c9d1d9">	return pipeline(&quot;zero-shot-classification&quot;, </span></span>
-<span class="line"><span style="color: #c9d1d9">	model=&#39;valhalla/distilbart-mnli-12-9&#39;, </span></span>
+<span class="line"><span style="color: #c9d1d9">	return pipeline("zero-shot-classification", </span></span>
+<span class="line"><span style="color: #c9d1d9">	model='valhalla/distilbart-mnli-12-9', </span></span>
 <span class="line"><span style="color: #c9d1d9">	multi_label=True)</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
 <span class="line"><span style="color: #c9d1d9"># Classification function</span></span>
 <span class="line"><span style="color: #c9d1d9">def classify(sequences, candidate_labels):</span></span>
 <span class="line"><span style="color: #c9d1d9">	output_results = load_model()(sequences=sequences,</span></span>
 <span class="line"><span style="color: #c9d1d9">		candidate_labels=candidate_labels)</span></span>
-<span class="line"><span style="color: #c9d1d9">	return output_results[&#39;labels&#39;], output_results[&#39;scores&#39;]</span></span>
+<span class="line"><span style="color: #c9d1d9">	return output_results['labels'], output_results['scores']</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
 <span class="line"><span style="color: #c9d1d9"># Graph plot function</span></span>
 <span class="line"><span style="color: #c9d1d9">def plot_result(top_topics, scores):</span></span>
@@ -120,82 +153,95 @@
 <span class="line"><span style="color: #c9d1d9">	scores *= 100</span></span>
 <span class="line"><span style="color: #c9d1d9">	fig = px.bar(x=scores, </span></span>
 <span class="line"><span style="color: #c9d1d9">		y=top_topics,</span></span>
-<span class="line"><span style="color: #c9d1d9">		orientation=&#39;h&#39;, </span></span>
-<span class="line"><span style="color: #c9d1d9">		labels={&#39;x&#39;: &#39;Confidence&#39;, &#39;y&#39;: &#39;Label&#39;},</span></span>
+<span class="line"><span style="color: #c9d1d9">		orientation='h', </span></span>
+<span class="line"><span style="color: #c9d1d9">		labels={'x': 'Confidence', 'y': 'Label'},</span></span>
 <span class="line"><span style="color: #c9d1d9">		text=scores,</span></span>
 <span class="line"><span style="color: #c9d1d9">		range_x=(0,115),</span></span>
-<span class="line"><span style="color: #c9d1d9">		title=&#39;Top Predictions&#39;,</span></span>
+<span class="line"><span style="color: #c9d1d9">		title='Top Predictions',</span></span>
 <span class="line"><span style="color: #c9d1d9">		color=np.linspace(0,1,len(scores)),</span></span>
-<span class="line"><span style="color: #c9d1d9">		color_continuous_scale=&#39;GnBu&#39;)</span></span>
+<span class="line"><span style="color: #c9d1d9">		color_continuous_scale='GnBu')</span></span>
 <span class="line"><span style="color: #c9d1d9">	fig.update(layout_coloraxis_showscale=False)</span></span>
-<span class="line"><span style="color: #c9d1d9">	fig.update_traces(texttemplate=&#39;%{text:0.1f}%&#39;,</span></span>
-<span class="line"><span style="color: #c9d1d9">	textposition=&#39;outside&#39;)</span></span>
+<span class="line"><span style="color: #c9d1d9">	fig.update_traces(texttemplate='%{text:0.1f}%',</span></span>
+<span class="line"><span style="color: #c9d1d9">	textposition='outside')</span></span>
 <span class="line"><span style="color: #c9d1d9">	st.plotly_chart(fig)</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
 <span class="line"><span style="color: #c9d1d9">def req(url):</span></span>
 <span class="line"><span style="color: #c9d1d9">	resp = requests.get(url)</span></span>
-<span class="line"><span style="color: #c9d1d9">	soup = BeautifulSoup(resp.content, &#39;html.parser&#39;)</span></span>
-<span class="line"><span style="color: #c9d1d9">	if soup.find(&quot;div&quot;, id=&quot;comments&quot;) or soup.find(&quot;div&quot;, id=&quot;secondary&quot;):</span></span>
-<span class="line"><span style="color: #c9d1d9">		remove_comments = soup.find(&quot;div&quot;, id=&quot;comments&quot;)</span></span>
+<span class="line"><span style="color: #c9d1d9">	soup = BeautifulSoup(resp.content, 'html.parser')</span></span>
+<span class="line"><span style="color: #c9d1d9">	if soup.find("div", id="comments") or soup.find("div", id="secondary"):</span></span>
+<span class="line"><span style="color: #c9d1d9">		remove_comments = soup.find("div", id="comments")</span></span>
 <span class="line"><span style="color: #c9d1d9">		remove_comments.extract()</span></span>
-<span class="line"><span style="color: #c9d1d9">		remove_secondary = soup.find(&quot;div&quot;, id=&quot;secondary&quot;)</span></span>
+<span class="line"><span style="color: #c9d1d9">		remove_secondary = soup.find("div", id="secondary")</span></span>
 <span class="line"><span style="color: #c9d1d9">		remove_secondary.extract()</span></span>
-<span class="line"><span style="color: #c9d1d9">		ext_t = [t.text for t in soup.find_all([&#39;h1&#39;, &#39;p&#39;])]</span></span>
-<span class="line"><span style="color: #c9d1d9">		paragraphs = &#39; &#39;.join(ext_t)</span></span>
+<span class="line"><span style="color: #c9d1d9">		ext_t = [t.text for t in soup.find_all(['h1', 'p'])]</span></span>
+<span class="line"><span style="color: #c9d1d9">		paragraphs = ' '.join(ext_t)</span></span>
 <span class="line"><span style="color: #c9d1d9">		return paragraphs</span></span>
 <span class="line"><span style="color: #c9d1d9">	else:</span></span>
-<span class="line"><span style="color: #c9d1d9">		ext_t = [t.text for t in soup.find_all([&#39;h1&#39;, &#39;p&#39;])]</span></span>
-<span class="line"><span style="color: #c9d1d9">		paragraphs = &#39; &#39;.join(ext_t)</span></span>
+<span class="line"><span style="color: #c9d1d9">		ext_t = [t.text for t in soup.find_all(['h1', 'p'])]</span></span>
+<span class="line"><span style="color: #c9d1d9">		paragraphs = ' '.join(ext_t)</span></span>
 <span class="line"><span style="color: #c9d1d9">		return paragraphs</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
 <span class="line"><span style="color: #c9d1d9"># Main function</span></span>
 <span class="line"><span style="color: #c9d1d9">def main():</span></span>
-<span class="line"><span style="color: #c9d1d9">	with st.spinner(&#39;Classifying...&#39;):</span></span>
+<span class="line"><span style="color: #c9d1d9">	with st.spinner('Classifying...'):</span></span>
 <span class="line"><span style="color: #c9d1d9">		global txt</span></span>
 <span class="line"><span style="color: #c9d1d9">		df_classify_topic = pd.DataFrame(topics_dict)</span></span>
 <span class="line"><span style="color: #c9d1d9">		df_classify_topic = df_classify_topic.sort_values(</span></span>
-<span class="line"><span style="color: #c9d1d9">			by=&#39;Relevance Score&#39;, ascending=False)</span></span>
+<span class="line"><span style="color: #c9d1d9">			by='Relevance Score', ascending=False)</span></span>
 <span class="line"><span style="color: #c9d1d9">		classify_topic_score = list(</span></span>
-<span class="line"><span style="color: #c9d1d9">			df_classify_topic[&#39;Topic&#39;][:10])</span></span>
-<span class="line"><span style="color: #c9d1d9">		if input_type == &#39;Text&#39;:</span></span>
+<span class="line"><span style="color: #c9d1d9">			df_classify_topic['Topic'][:10])</span></span>
+<span class="line"><span style="color: #c9d1d9">		if input_type == 'Text':</span></span>
 <span class="line"><span style="color: #c9d1d9">			top_topics, scores = classify(</span></span>
 <span class="line"><span style="color: #c9d1d9">				txt, classify_topic_score)</span></span>
-<span class="line"><span style="color: #c9d1d9">		elif input_type == &#39;URL&#39;:</span></span>
+<span class="line"><span style="color: #c9d1d9">		elif input_type == 'URL':</span></span>
 <span class="line"><span style="color: #c9d1d9">			txt = req(url)</span></span>
 <span class="line"><span style="color: #c9d1d9">			top_topics, scores = classify(</span></span>
 <span class="line"><span style="color: #c9d1d9">				txt, classify_topic_score)</span></span>
-<span class="line"><span style="color: #c9d1d9">		elif input_type == &#39;Multiple URLs&#39;:</span></span>
-<span class="line"><span style="color: #c9d1d9">			txt = &#39; &#39;.join(all_txt)</span></span>
+<span class="line"><span style="color: #c9d1d9">		elif input_type == 'Multiple URLs':</span></span>
+<span class="line"><span style="color: #c9d1d9">			txt = ' '.join(all_txt)</span></span>
 <span class="line"><span style="color: #c9d1d9">			top_topics, scores = classify(</span></span>
 <span class="line"><span style="color: #c9d1d9">				txt, classify_topic_score)</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">	plot_result(top_topics[::-1][-10:], scores[::-1][-10:])</span></span></code></pre><p>There’s a lot here so I’ll break it down further.</p><p>The first function loads the distilbart model for this task and uses zero-shot classification to determine classification. I have also set a cache so it doesn’t reload every time, which saves loading time and CPU/GPU resources.</p><p>The second function is for the actual classification. It loads the model, and generates output results containing the labels and the relevance scores for each. Which labels we use are determined later.</p><p>The third function plots a horizontal bar chart of the top 10 labels alongside their scores. This allows us to visualise the best classification labels of the analysed text.</p><p>Here’s how the model classified this blog post:</p><p><img src="/images/classification-labels.jpg" alt="A graph showing 10 labels the language model thinks my blog post is about. For example, the number 1 label is Blog with a 90% score"></p><p>The fourth function is the URL scraper. It takes a URL, extracts the HTML, ignores any comments sections or text found in sidebars (<a href="https://twitter.com/jessthebp/status/1496153327779950604">thanks to Jess for the help with that</a>) and finally filters the remaining text down to just the H1 title and text found in p tags, ready for analysis.</p><p>The fifth and final function brings everything together. It creates dataframes out of the found entities and topics and orders them by relevance score for ease.</p><h3 id="3-dictionaries">3. Dictionaries</h3><pre class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">kw_dict = {</span></span>
-<span class="line"><span style="color: #c9d1d9">	&#39;Keyword&#39;: []</span></span>
+<span class="line"><span style="color: #c9d1d9">	plot_result(top_topics[::-1][-10:], scores[::-1][-10:])</span></span></code></pre>
+<p>There’s a lot here so I’ll break it down further.</p>
+<p>The first function loads the distilbart model for this task and uses zero-shot classification to determine classification. I have also set a cache so it doesn’t reload every time, which saves loading time and CPU/GPU resources.</p>
+<p>The second function is for the actual classification. It loads the model, and generates output results containing the labels and the relevance scores for each. Which labels we use are determined later.</p>
+<p>The third function plots a horizontal bar chart of the top 10 labels alongside their scores. This allows us to visualise the best classification labels of the analysed text.</p>
+<p>Here’s how the model classified this blog post:</p>
+<p><img src="/images/classification-labels.jpg" alt="A graph showing 10 labels the language model thinks my blog post is about. For example, the number 1 label is Blog with a 90% score"></p>
+<p>The fourth function is the URL scraper. It takes a URL, extracts the HTML, ignores any comments sections or text found in sidebars (<a href="https://twitter.com/jessthebp/status/1496153327779950604">thanks to Jess for the help with that</a>) and finally filters the remaining text down to just the H1 title and text found in p tags, ready for analysis.</p>
+<p>The fifth and final function brings everything together. It creates dataframes out of the found entities and topics and orders them by relevance score for ease.</p>
+<h3 id="3-dictionaries">3. Dictionaries</h3>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">kw_dict = {</span></span>
+<span class="line"><span style="color: #c9d1d9">	'Keyword': []</span></span>
 <span class="line"><span style="color: #c9d1d9">}</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
 <span class="line"><span style="color: #c9d1d9">ent_dict = {</span></span>
-<span class="line"><span style="color: #c9d1d9">	&#39;Keyword&#39;: [],</span></span>
-<span class="line"><span style="color: #c9d1d9">	&#39;Relevance Score&#39;: [],</span></span>
-<span class="line"><span style="color: #c9d1d9">	&#39;Existing Tag&#39;: []</span></span>
+<span class="line"><span style="color: #c9d1d9">	'Keyword': [],</span></span>
+<span class="line"><span style="color: #c9d1d9">	'Relevance Score': [],</span></span>
+<span class="line"><span style="color: #c9d1d9">	'Existing Tag': []</span></span>
 <span class="line"><span style="color: #c9d1d9">}</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
 <span class="line"><span style="color: #c9d1d9">topics_dict = {</span></span>
-<span class="line"><span style="color: #c9d1d9">	&#39;Topic&#39;: [],</span></span>
-<span class="line"><span style="color: #c9d1d9">	&#39;Relevance Score&#39;: [],</span></span>
-<span class="line"><span style="color: #c9d1d9">	&#39;Existing Tag&#39;: []</span></span>
+<span class="line"><span style="color: #c9d1d9">	'Topic': [],</span></span>
+<span class="line"><span style="color: #c9d1d9">	'Relevance Score': [],</span></span>
+<span class="line"><span style="color: #c9d1d9">	'Existing Tag': []</span></span>
 <span class="line"><span style="color: #c9d1d9">}</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
 <span class="line"><span style="color: #c9d1d9">categories_dict = {</span></span>
-<span class="line"><span style="color: #c9d1d9">	&#39;Category&#39;: [],</span></span>
-<span class="line"><span style="color: #c9d1d9">	&#39;Relevance Score&#39;: []</span></span>
+<span class="line"><span style="color: #c9d1d9">	'Category': [],</span></span>
+<span class="line"><span style="color: #c9d1d9">	'Relevance Score': []</span></span>
 <span class="line"><span style="color: #c9d1d9">}</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
 <span class="line"><span style="color: #c9d1d9">tags = {</span></span>
-<span class="line"><span style="color: #c9d1d9">	&#39;Tag&#39;: [],</span></span>
-<span class="line"><span style="color: #c9d1d9">	&#39;ID&#39;: [],</span></span>
-<span class="line"><span style="color: #c9d1d9">	&#39;Count&#39;: []</span></span>
-<span class="line"><span style="color: #c9d1d9">}</span></span></code></pre><p>Arguably the easiest part, just setting the dictionaries for our entity outputs as well as the tags for the additional part of our script which is up next.</p><h3 id="4-establishing-the-blogs-to-cross-reference-my-entities-with-their-respective-tag-lists">4. Establishing the blogs to cross-reference my entities with their respective tag lists</h3><pre class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9"># Blog list</span></span>
-<span class="line"><span style="color: #c9d1d9">blogs = [&#39;sampleface.co.uk&#39;, &#39;cultrface.co.uk&#39;, &#39;logicface.co.uk&#39;, &#39;playrface.co.uk&#39;, &#39;distantarcade.co.uk&#39;]</span></span>
+<span class="line"><span style="color: #c9d1d9">	'Tag': [],</span></span>
+<span class="line"><span style="color: #c9d1d9">	'ID': [],</span></span>
+<span class="line"><span style="color: #c9d1d9">	'Count': []</span></span>
+<span class="line"><span style="color: #c9d1d9">}</span></span></code></pre>
+<p>Arguably the easiest part, just setting the dictionaries for our entity outputs as well as the tags for the additional part of our script which is up next.</p>
+<h3 id="4-establishing-the-blogs-to-cross-reference-my-entities-with-their-respective-tag-lists">4. Establishing the blogs to cross-reference my entities with their respective tag lists</h3>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9"># Blog list</span></span>
+<span class="line"><span style="color: #c9d1d9">blogs = ['sampleface.co.uk', 'cultrface.co.uk', 'logicface.co.uk', 'playrface.co.uk', 'distantarcade.co.uk']</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
 <span class="line"><span style="color: #c9d1d9"># Empty lists for existing tags and text from multiple URLs to go in</span></span>
 <span class="line"><span style="color: #c9d1d9">existing_tags = []</span></span>
@@ -203,116 +249,128 @@
 <span class="line"><span style="color: #c9d1d9"></span></span>
 <span class="line"><span style="color: #c9d1d9"># Upper limits for tag page range</span></span>
 <span class="line"><span style="color: #c9d1d9">upper_limits = {</span></span>
-<span class="line"><span style="color: #c9d1d9">	&#39;sampleface.co.uk&#39;: 4,</span></span>
-<span class="line"><span style="color: #c9d1d9">	&#39;cultrface.co.uk&#39;: 4,</span></span>
-<span class="line"><span style="color: #c9d1d9">	&#39;logicface.co.uk&#39;: 2,</span></span>
-<span class="line"><span style="color: #c9d1d9">	&#39;playrface.co.uk&#39;: 2,</span></span>
-<span class="line"><span style="color: #c9d1d9">	&#39;distantarcade.co.uk&#39;: 2,</span></span>
-<span class="line"><span style="color: #c9d1d9">	&#39;ld89.org&#39;: 1</span></span>
-<span class="line"><span style="color: #c9d1d9">}</span></span></code></pre><p>Here, we introduce the blogs for our content ideas generator using tags from my blogs. I made a list of all 5 blogs to choose, created empty lists to add existing tags and set upper limits for the tag page ranges.</p><p>The tag data comes from WordPress’s REST API which lists various elements of a WordPress blog such as tags, categories, posts, and media. For the tags, I can pull data at 100 tags per page but when I need to run the for-loop to pull what I need, I need to set an upper limit (eg. if I have 350 tags, the range would be from 0 to 4).</p><p>Also, I have to set this upper limit manually as I have no way of automating it (but if such a way exists, please let me know!)</p><h3 id="5-the-streamlit-ui-stuff">5. The Streamlit UI stuff</h3><pre class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9"># Streamlit stuff</span></span>
+<span class="line"><span style="color: #c9d1d9">	'sampleface.co.uk': 4,</span></span>
+<span class="line"><span style="color: #c9d1d9">	'cultrface.co.uk': 4,</span></span>
+<span class="line"><span style="color: #c9d1d9">	'logicface.co.uk': 2,</span></span>
+<span class="line"><span style="color: #c9d1d9">	'playrface.co.uk': 2,</span></span>
+<span class="line"><span style="color: #c9d1d9">	'distantarcade.co.uk': 2,</span></span>
+<span class="line"><span style="color: #c9d1d9">	'ld89.org': 1</span></span>
+<span class="line"><span style="color: #c9d1d9">}</span></span></code></pre>
+<p>Here, we introduce the blogs for our content ideas generator using tags from my blogs. I made a list of all 5 blogs to choose, created empty lists to add existing tags and set upper limits for the tag page ranges.</p>
+<p>The tag data comes from WordPress’s REST API which lists various elements of a WordPress blog such as tags, categories, posts, and media. For the tags, I can pull data at 100 tags per page but when I need to run the for-loop to pull what I need, I need to set an upper limit (eg. if I have 350 tags, the range would be from 0 to 4).</p>
+<p>Also, I have to set this upper limit manually as I have no way of automating it (but if such a way exists, please let me know!)</p>
+<h3 id="5-the-streamlit-ui-stuff">5. The Streamlit UI stuff</h3>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9"># Streamlit stuff</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">st.sidebar.title(&#39;Tag suggester&#39;)</span></span>
+<span class="line"><span style="color: #c9d1d9">st.sidebar.title('Tag suggester')</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">input_type = st.sidebar.radio(&#39;Select your input type&#39;, [&#39;Text&#39;, &#39;URL&#39;, &#39;Multiple URLs&#39;])</span></span>
+<span class="line"><span style="color: #c9d1d9">input_type = st.sidebar.radio('Select your input type', ['Text', 'URL', 'Multiple URLs'])</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">update_tags = st.sidebar.button(&#39;↻ Refresh tags&#39;)</span></span>
+<span class="line"><span style="color: #c9d1d9">update_tags = st.sidebar.button('↻ Refresh tags')</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">tag_ideas = st.sidebar.button(&#39;Load tag ideas&#39;)</span></span>
+<span class="line"><span style="color: #c9d1d9">tag_ideas = st.sidebar.button('Load tag ideas')</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
 <span class="line"><span style="color: #c9d1d9"># Determines input types</span></span>
-<span class="line"><span style="color: #c9d1d9">st.title(&#39;Welcome to RALTS (Really Awesome Lexicon and Tag Suggester)!&#39;)</span></span>
-<span class="line"><span style="color: #c9d1d9">st.write(&#39;This script can analyse any body of text or URL to find extract keywords, topics, and categories using NLP (natural language processing).&#39;)</span></span>
-<span class="line"><span style="color: #c9d1d9">if input_type == &#39;Text&#39;:</span></span>
-<span class="line"><span style="color: #c9d1d9">	txt = st.text_area(&#39;Enter text to be analysed...&#39;)</span></span>
-<span class="line"><span style="color: #c9d1d9">	txt = txt.replace(&#39;\n&#39;, &#39; &#39;).replace(&#39;&quot;&#39;, &#39;&#39;).replace(&#39;“&#39;,&#39;&#39;).replace(&#39;”&#39;, &#39;&#39;).replace(&#39;‘&#39;,&#39;&#39;).replace(&#39;’&#39;, &#39;&#39;).replace(&quot;&#39;s&quot;, &#39;&#39;).replace(&quot;,&quot;, &#39;&#39;)</span></span>
+<span class="line"><span style="color: #c9d1d9">st.title('Welcome to RALTS (Really Awesome Lexicon and Tag Suggester)!')</span></span>
+<span class="line"><span style="color: #c9d1d9">st.write('This script can analyse any body of text or URL to find extract keywords, topics, and categories using NLP (natural language processing).')</span></span>
+<span class="line"><span style="color: #c9d1d9">if input_type == 'Text':</span></span>
+<span class="line"><span style="color: #c9d1d9">	txt = st.text_area('Enter text to be analysed...')</span></span>
+<span class="line"><span style="color: #c9d1d9">	txt = txt.replace('\n', ' ').replace('"', '').replace('“','').replace('”', '').replace('‘','').replace('’', '').replace("'s", '').replace(",", '')</span></span>
 <span class="line"><span style="color: #c9d1d9">	st.write(len(txt))</span></span>
-<span class="line"><span style="color: #c9d1d9">elif input_type == &#39;URL&#39;:</span></span>
-<span class="line"><span style="color: #c9d1d9">	url = st.text_input(&#39;Enter URL&#39;)</span></span>
-<span class="line"><span style="color: #c9d1d9">elif input_type == &#39;Multiple URLs&#39;:</span></span>
-<span class="line"><span style="color: #c9d1d9">	multi_url = st.text_area(&#39;Enter keywords, 1 per line&#39;)</span></span></code></pre><p>This displays all the inputs and radio buttons needed to pick the right functionality.</p><h3 id="6-functions-for-updating-my-tag-lists-via-wordpresss-rest-api">6. Functions for updating my tag lists via WordPress’s REST API</h3><pre class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">def update_all_tags():</span></span>
+<span class="line"><span style="color: #c9d1d9">elif input_type == 'URL':</span></span>
+<span class="line"><span style="color: #c9d1d9">	url = st.text_input('Enter URL')</span></span>
+<span class="line"><span style="color: #c9d1d9">elif input_type == 'Multiple URLs':</span></span>
+<span class="line"><span style="color: #c9d1d9">	multi_url = st.text_area('Enter keywords, 1 per line')</span></span></code></pre>
+<p>This displays all the inputs and radio buttons needed to pick the right functionality.</p>
+<h3 id="6-functions-for-updating-my-tag-lists-via-wordpresss-rest-api">6. Functions for updating my tag lists via WordPress’s REST API</h3>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">def update_all_tags():</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">	with st.spinner(&#39;Reloading tags...&#39;):</span></span>
+<span class="line"><span style="color: #c9d1d9">	with st.spinner('Reloading tags...'):</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
 <span class="line"><span style="color: #c9d1d9">		for blog in blogs:</span></span>
 <span class="line"><span style="color: #c9d1d9">		</span></span>
 <span class="line"><span style="color: #c9d1d9">			# Get tag data</span></span>
 <span class="line"><span style="color: #c9d1d9">			for pg in range(1, upper_limits[blog]+1):</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">				tag_url = f&#39;https://{blog}/wp-json/wp/v2/tags?per_page=100&amp;page={pg}&#39;</span></span>
+<span class="line"><span style="color: #c9d1d9">				tag_url = f'https://{blog}/wp-json/wp/v2/tags?per_page=100&#x26;page={pg}'</span></span>
 <span class="line"><span style="color: #c9d1d9">				r_tag = requests.get(tag_url)</span></span>
 <span class="line"><span style="color: #c9d1d9">				api_tags = r_tag.json()</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
 <span class="line"><span style="color: #c9d1d9">				for n in range(0,len(api_tags)):</span></span>
-<span class="line"><span style="color: #c9d1d9">					tags[&#39;Tag&#39;].append(api_tags[n][&#39;name&#39;])</span></span>
-<span class="line"><span style="color: #c9d1d9">					tags[&#39;ID&#39;].append(api_tags[n][&#39;id&#39;])</span></span>
-<span class="line"><span style="color: #c9d1d9">					tags[&#39;Count&#39;].append(api_tags[n][&#39;count&#39;])</span></span>
+<span class="line"><span style="color: #c9d1d9">					tags['Tag'].append(api_tags[n]['name'])</span></span>
+<span class="line"><span style="color: #c9d1d9">					tags['ID'].append(api_tags[n]['id'])</span></span>
+<span class="line"><span style="color: #c9d1d9">					tags['Count'].append(api_tags[n]['count'])</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">				with open(f&quot;{blog}.json&quot;, &quot;w&quot;) as outfile:</span></span>
+<span class="line"><span style="color: #c9d1d9">				with open(f"{blog}.json", "w") as outfile:</span></span>
 <span class="line"><span style="color: #c9d1d9">					json.dump(tags, outfile)</span></span>
-<span class="line"><span style="color: #c9d1d9">			tags[&#39;Tag&#39;] = []</span></span>
-<span class="line"><span style="color: #c9d1d9">			tags[&#39;ID&#39;] = []</span></span>
-<span class="line"><span style="color: #c9d1d9">			tags[&#39;Count&#39;] = []</span></span>
+<span class="line"><span style="color: #c9d1d9">			tags['Tag'] = []</span></span>
+<span class="line"><span style="color: #c9d1d9">			tags['ID'] = []</span></span>
+<span class="line"><span style="color: #c9d1d9">			tags['Count'] = []</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">list_of_blogs = st.radio(&quot;Select the corresponding blog&quot;, blogs)</span></span>
+<span class="line"><span style="color: #c9d1d9">list_of_blogs = st.radio("Select the corresponding blog", blogs)</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
 <span class="line"><span style="color: #c9d1d9"># Load JSON files</span></span>
-<span class="line"><span style="color: #c9d1d9">with open(f&#39;{list_of_blogs}.json&#39;, &#39;rb&#39;) as f:</span></span>
+<span class="line"><span style="color: #c9d1d9">with open(f'{list_of_blogs}.json', 'rb') as f:</span></span>
 <span class="line"><span style="color: #c9d1d9">	blog_json = json.load(f)</span></span>
-<span class="line"><span style="color: #c9d1d9">	x = blog_json[&#39;Tag&#39;]</span></span>
+<span class="line"><span style="color: #c9d1d9">	x = blog_json['Tag']</span></span>
 <span class="line"><span style="color: #c9d1d9">	for n in x:</span></span>
 <span class="line"><span style="color: #c9d1d9">		existing_tags.append(n)</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">submit = st.button(&#39;Submit&#39;)</span></span>
+<span class="line"><span style="color: #c9d1d9">submit = st.button('Submit')</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
 <span class="line"><span style="color: #c9d1d9">if update_tags:</span></span>
-<span class="line"><span style="color: #c9d1d9">	update_all_tags()</span></span></code></pre><p>There are two functions linked to the tag data. First is a function that pulls the tag name, tag ID, and how many posts have been assigned to that tag and adds them to a dictionary. This is then saved to a JSON file for offline use. Doing this avoids making multiple API calls since, theoretically, the tag data won’t change that frequently. But when it does change, you can refresh the JSON files. These were formerly pickle files but due to the poor security, I spent a few hours switching this code out. I still love pickles though.</p><p>From there, we can also read those files and add them to our existing_tags list ready for cross referencing against the extracted entities we find.</p><h3 id="7-the-random-functions-for-content-ideas">7. The random functions for content ideas</h3><pre class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9"># Tag ideas functions</span></span>
+<span class="line"><span style="color: #c9d1d9">	update_all_tags()</span></span></code></pre>
+<p>There are two functions linked to the tag data. First is a function that pulls the tag name, tag ID, and how many posts have been assigned to that tag and adds them to a dictionary. This is then saved to a JSON file for offline use. Doing this avoids making multiple API calls since, theoretically, the tag data won’t change that frequently. But when it does change, you can refresh the JSON files. These were formerly pickle files but due to the poor security, I spent a few hours switching this code out. I still love pickles though.</p>
+<p>From there, we can also read those files and add them to our existing_tags list ready for cross referencing against the extracted entities we find.</p>
+<h3 id="7-the-random-functions-for-content-ideas">7. The random functions for content ideas</h3>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9"># Tag ideas functions</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
 <span class="line"><span style="color: #c9d1d9">def sf_words():</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">	with open(&quot;sampleface.co.uk.json&quot;) as sf_json_file:</span></span>
+<span class="line"><span style="color: #c9d1d9">	with open("sampleface.co.uk.json") as sf_json_file:</span></span>
 <span class="line"><span style="color: #c9d1d9">		sf = json.load(sf_json_file)</span></span>
-<span class="line"><span style="color: #c9d1d9">	sf_words_lists = sf[&#39;Tag&#39;]</span></span>
+<span class="line"><span style="color: #c9d1d9">	sf_words_lists = sf['Tag']</span></span>
 <span class="line"><span style="color: #c9d1d9">	return sf_words_lists</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
 <span class="line"><span style="color: #c9d1d9">def cultr_words():</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">	with open(&quot;cultrface.co.uk.json&quot;) as cf_json_file:</span></span>
+<span class="line"><span style="color: #c9d1d9">	with open("cultrface.co.uk.json") as cf_json_file:</span></span>
 <span class="line"><span style="color: #c9d1d9">		cf = json.load(cf_json_file)</span></span>
-<span class="line"><span style="color: #c9d1d9">	cf_words_lists = cf[&#39;Tag&#39;]</span></span>
+<span class="line"><span style="color: #c9d1d9">	cf_words_lists = cf['Tag']</span></span>
 <span class="line"><span style="color: #c9d1d9">	return cf_words_lists</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
 <span class="line"><span style="color: #c9d1d9">def logic_words():</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">	with open(&quot;logicface.co.uk.json&quot;) as lf_json_file:</span></span>
+<span class="line"><span style="color: #c9d1d9">	with open("logicface.co.uk.json") as lf_json_file:</span></span>
 <span class="line"><span style="color: #c9d1d9">		lf = json.load(lf_json_file)</span></span>
-<span class="line"><span style="color: #c9d1d9">	lf_words_lists = lf[&#39;Tag&#39;]</span></span>
+<span class="line"><span style="color: #c9d1d9">	lf_words_lists = lf['Tag']</span></span>
 <span class="line"><span style="color: #c9d1d9">	return lf_words_lists</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
 <span class="line"><span style="color: #c9d1d9">def playr_words():</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">	with open(&quot;playrface.co.uk.json&quot;) as pf_json_file:</span></span>
+<span class="line"><span style="color: #c9d1d9">	with open("playrface.co.uk.json") as pf_json_file:</span></span>
 <span class="line"><span style="color: #c9d1d9">		pf = json.load(pf_json_file)</span></span>
-<span class="line"><span style="color: #c9d1d9">	pf_words_lists = pf[&#39;Tag&#39;]</span></span>
+<span class="line"><span style="color: #c9d1d9">	pf_words_lists = pf['Tag']</span></span>
 <span class="line"><span style="color: #c9d1d9">	return pf_words_lists</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
 <span class="line"><span style="color: #c9d1d9">def da_words():</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">	with open(&quot;distantarcade.co.uk.json&quot;) as da_json_file:</span></span>
+<span class="line"><span style="color: #c9d1d9">	with open("distantarcade.co.uk.json") as da_json_file:</span></span>
 <span class="line"><span style="color: #c9d1d9">		da = json.load(da_json_file)</span></span>
-<span class="line"><span style="color: #c9d1d9">	da_words_lists = da[&#39;Tag&#39;]</span></span>
+<span class="line"><span style="color: #c9d1d9">	da_words_lists = da['Tag']</span></span>
 <span class="line"><span style="color: #c9d1d9">	return da_words_lists</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
 <span class="line"><span style="color: #c9d1d9">all_words_list = [sf_words(), cultr_words(), logic_words(), playr_words(), da_words()]</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
 <span class="line"><span style="color: #c9d1d9">def sampleface():</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">	st.header(&#39;Sampleface ideas&#39;)</span></span>
+<span class="line"><span style="color: #c9d1d9">	st.header('Sampleface ideas')</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
 <span class="line"><span style="color: #c9d1d9">	for sample in range(5):</span></span>
-<span class="line"><span style="color: #c9d1d9">		with open(&quot;sampleface.co.uk.json&quot;) as sf_json_file:</span></span>
+<span class="line"><span style="color: #c9d1d9">		with open("sampleface.co.uk.json") as sf_json_file:</span></span>
 <span class="line"><span style="color: #c9d1d9">			sf = json.load(sf_json_file)</span></span>
-<span class="line"><span style="color: #c9d1d9">		sf_words_count_lists = sf[&#39;Count&#39;]</span></span>
+<span class="line"><span style="color: #c9d1d9">		sf_words_count_lists = sf['Count']</span></span>
 <span class="line"><span style="color: #c9d1d9">		try:</span></span>
 <span class="line"><span style="color: #c9d1d9">			x = [n/(n+1) for n in sf_words_count_lists]</span></span>
 <span class="line"><span style="color: #c9d1d9">		except ZeroDivisionError:</span></span>
@@ -320,16 +378,16 @@
 <span class="line"><span style="color: #c9d1d9">			# sf_choices = random.choices(sf_words_count_lists, weights=(1/n), k=2)</span></span>
 <span class="line"><span style="color: #c9d1d9">		sample = random.choices(sf_words(), x, k=2)</span></span>
 <span class="line"><span style="color: #c9d1d9">		</span></span>
-<span class="line"><span style="color: #c9d1d9">		st.write(&#39;https://google.com/search?q=&#39; + &#39;+&#39;.join(sample).lower().replace(&#39; &#39;, &#39;+&#39;).replace(&#39;&amp;&#39;, &#39;&#39;))</span></span>
+<span class="line"><span style="color: #c9d1d9">		st.write('https://google.com/search?q=' + '+'.join(sample).lower().replace(' ', '+').replace('&#x26;', ''))</span></span>
 <span class="line"><span style="color: #c9d1d9">	</span></span>
 <span class="line"><span style="color: #c9d1d9">def cultrface():</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">	st.header(&#39;Cultrface ideas&#39;)</span></span>
+<span class="line"><span style="color: #c9d1d9">	st.header('Cultrface ideas')</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
 <span class="line"><span style="color: #c9d1d9">	for sample in range(5):</span></span>
-<span class="line"><span style="color: #c9d1d9">		with open(&quot;cultrface.co.uk.json&quot;) as cf_json_file:</span></span>
+<span class="line"><span style="color: #c9d1d9">		with open("cultrface.co.uk.json") as cf_json_file:</span></span>
 <span class="line"><span style="color: #c9d1d9">			cf = json.load(cf_json_file)</span></span>
-<span class="line"><span style="color: #c9d1d9">		cf_words_count_lists = cf[&#39;Count&#39;]</span></span>
+<span class="line"><span style="color: #c9d1d9">		cf_words_count_lists = cf['Count']</span></span>
 <span class="line"><span style="color: #c9d1d9">		try:</span></span>
 <span class="line"><span style="color: #c9d1d9">			x = [n/(n+1) for n in cf_words_count_lists]</span></span>
 <span class="line"><span style="color: #c9d1d9">		except ZeroDivisionError:</span></span>
@@ -337,55 +395,55 @@
 <span class="line"><span style="color: #c9d1d9">			# sf_choices = random.choices(sf_words_count_lists, weights=(1/n), k=2)</span></span>
 <span class="line"><span style="color: #c9d1d9">		sample = random.choices(cultr_words(), x, k=2)</span></span>
 <span class="line"><span style="color: #c9d1d9">		</span></span>
-<span class="line"><span style="color: #c9d1d9">		st.write(&#39;https://google.com/search?q=&#39; + &#39;+&#39;.join(sample).lower().replace(&#39; &#39;, &#39;+&#39;).replace(&#39;&amp;&#39;, &#39;&#39;))</span></span>
+<span class="line"><span style="color: #c9d1d9">		st.write('https://google.com/search?q=' + '+'.join(sample).lower().replace(' ', '+').replace('&#x26;', ''))</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
 <span class="line"><span style="color: #c9d1d9">def logicface():</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">	st.header(&#39;LOGiCFACE ideas&#39;)</span></span>
+<span class="line"><span style="color: #c9d1d9">	st.header('LOGiCFACE ideas')</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
 <span class="line"><span style="color: #c9d1d9">	for sample in range(5):</span></span>
-<span class="line"><span style="color: #c9d1d9">		with open(&quot;logicface.co.uk.json&quot;) as lf_json_file:</span></span>
+<span class="line"><span style="color: #c9d1d9">		with open("logicface.co.uk.json") as lf_json_file:</span></span>
 <span class="line"><span style="color: #c9d1d9">			lf = json.load(lf_json_file)</span></span>
-<span class="line"><span style="color: #c9d1d9">		lf_words_count_lists = lf[&#39;Count&#39;]</span></span>
+<span class="line"><span style="color: #c9d1d9">		lf_words_count_lists = lf['Count']</span></span>
 <span class="line"><span style="color: #c9d1d9">		try:</span></span>
 <span class="line"><span style="color: #c9d1d9">			x = [n/(n+1) for n in lf_words_count_lists]</span></span>
 <span class="line"><span style="color: #c9d1d9">		except ZeroDivisionError:</span></span>
 <span class="line"><span style="color: #c9d1d9">			continue</span></span>
 <span class="line"><span style="color: #c9d1d9">		sample = random.choices(logic_words(), x, k=2)</span></span>
 <span class="line"><span style="color: #c9d1d9">		</span></span>
-<span class="line"><span style="color: #c9d1d9">		st.write(&#39;https://google.com/search?q=&#39; + &#39;+&#39;.join(sample).lower().replace(&#39; &#39;, &#39;+&#39;).replace(&#39;&amp;&#39;, &#39;&#39;))</span></span>
+<span class="line"><span style="color: #c9d1d9">		st.write('https://google.com/search?q=' + '+'.join(sample).lower().replace(' ', '+').replace('&#x26;', ''))</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
 <span class="line"><span style="color: #c9d1d9">def playrface():</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">	st.header(&#39;Playrface ideas&#39;)</span></span>
+<span class="line"><span style="color: #c9d1d9">	st.header('Playrface ideas')</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
 <span class="line"><span style="color: #c9d1d9">	for sample in range(5):</span></span>
-<span class="line"><span style="color: #c9d1d9">		with open(&quot;playrface.co.uk.json&quot;) as pf_json_file:</span></span>
+<span class="line"><span style="color: #c9d1d9">		with open("playrface.co.uk.json") as pf_json_file:</span></span>
 <span class="line"><span style="color: #c9d1d9">			pf = json.load(pf_json_file)</span></span>
-<span class="line"><span style="color: #c9d1d9">		pf_words_count_lists = pf[&#39;Count&#39;]</span></span>
+<span class="line"><span style="color: #c9d1d9">		pf_words_count_lists = pf['Count']</span></span>
 <span class="line"><span style="color: #c9d1d9">		try:</span></span>
 <span class="line"><span style="color: #c9d1d9">			x = [n/(n+1) for n in pf_words_count_lists]</span></span>
 <span class="line"><span style="color: #c9d1d9">		except ZeroDivisionError:</span></span>
 <span class="line"><span style="color: #c9d1d9">			continue</span></span>
 <span class="line"><span style="color: #c9d1d9">		sample = random.choices(playr_words(), x, k=2)</span></span>
 <span class="line"><span style="color: #c9d1d9">		</span></span>
-<span class="line"><span style="color: #c9d1d9">		st.write(&#39;https://google.com/search?q=&#39; + &#39;+&#39;.join(sample).lower().replace(&#39; &#39;, &#39;+&#39;).replace(&#39;&amp;&#39;, &#39;&#39;))</span></span>
+<span class="line"><span style="color: #c9d1d9">		st.write('https://google.com/search?q=' + '+'.join(sample).lower().replace(' ', '+').replace('&#x26;', ''))</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
 <span class="line"><span style="color: #c9d1d9">def distantarcade():</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">	st.header(&#39;Distant Arcade ideas&#39;)</span></span>
+<span class="line"><span style="color: #c9d1d9">	st.header('Distant Arcade ideas')</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
 <span class="line"><span style="color: #c9d1d9">	for sample in range(5):</span></span>
-<span class="line"><span style="color: #c9d1d9">		with open(&quot;distantarcade.co.uk.json&quot;) as da_json_file:</span></span>
+<span class="line"><span style="color: #c9d1d9">		with open("distantarcade.co.uk.json") as da_json_file:</span></span>
 <span class="line"><span style="color: #c9d1d9">			da = json.load(da_json_file)</span></span>
-<span class="line"><span style="color: #c9d1d9">		da_words_count_lists = da[&#39;Count&#39;]</span></span>
+<span class="line"><span style="color: #c9d1d9">		da_words_count_lists = da['Count']</span></span>
 <span class="line"><span style="color: #c9d1d9">		try:</span></span>
 <span class="line"><span style="color: #c9d1d9">			x = [n/(n+1) for n in da_words_count_lists]</span></span>
 <span class="line"><span style="color: #c9d1d9">		except ZeroDivisionError:</span></span>
 <span class="line"><span style="color: #c9d1d9">			continue</span></span>
 <span class="line"><span style="color: #c9d1d9">		sample = random.choices(da_words(), x, k=2)</span></span>
 <span class="line"><span style="color: #c9d1d9">		</span></span>
-<span class="line"><span style="color: #c9d1d9">		st.write(&#39;https://google.com/search?q=&#39; + &#39;+&#39;.join(sample).lower().replace(&#39; &#39;, &#39;+&#39;).replace(&#39;&amp;&#39;, &#39;&#39;))</span></span>
+<span class="line"><span style="color: #c9d1d9">		st.write('https://google.com/search?q=' + '+'.join(sample).lower().replace(' ', '+').replace('&#x26;', ''))</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
 <span class="line"><span style="color: #c9d1d9">def all_blogs():</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
@@ -393,274 +451,299 @@
 <span class="line"><span style="color: #c9d1d9">	cultrface()</span></span>
 <span class="line"><span style="color: #c9d1d9">	logicface()</span></span>
 <span class="line"><span style="color: #c9d1d9">	playrface()</span></span>
-<span class="line"><span style="color: #c9d1d9">	distantarcade()</span></span></code></pre><p>I’ll try to summarise this part as it is quite lengthy. Each JSON file is read and the relevant list is pulled containing all the respective blogs’ tags. To generate the Google Search URLs, a for-loop picks out the tags’ counts and generates a new list which can be used for weighting in the random.choices method. Then a series of 2-3 tags are chosen at random, weighted by least used tag = most likely chosen and appended to the Google Search URL.</p><p>Finally, they’re all grouped together in a main function ready to be called at the click of a button.</p><h3 id="8-the-entity-topic-and-category-functions-using-the-textrazor-api">8. The entity, topic, and category functions using the TextRazor API</h3><pre class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9"># Keyword extraction function to analyse with TextRazor</span></span>
+<span class="line"><span style="color: #c9d1d9">	distantarcade()</span></span></code></pre>
+<p>I’ll try to summarise this part as it is quite lengthy. Each JSON file is read and the relevant list is pulled containing all the respective blogs’ tags. To generate the Google Search URLs, a for-loop picks out the tags’ counts and generates a new list which can be used for weighting in the random.choices method. Then a series of 2-3 tags are chosen at random, weighted by least used tag = most likely chosen and appended to the Google Search URL.</p>
+<p>Finally, they’re all grouped together in a main function ready to be called at the click of a button.</p>
+<h3 id="8-the-entity-topic-and-category-functions-using-the-textrazor-api">8. The entity, topic, and category functions using the TextRazor API</h3>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9"># Keyword extraction function to analyse with TextRazor</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
 <span class="line"><span style="color: #c9d1d9">def textrazor_extraction(input_type):</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">	if input_type == &#39;Text&#39;:</span></span>
+<span class="line"><span style="color: #c9d1d9">	if input_type == 'Text':</span></span>
 <span class="line"><span style="color: #c9d1d9">		global txt</span></span>
 <span class="line"><span style="color: #c9d1d9">		response = client.analyze(txt)</span></span>
 <span class="line"><span style="color: #c9d1d9">		for entity in response.entities():</span></span>
-<span class="line"><span style="color: #c9d1d9">			if entity.relevance_score &gt; 0:</span></span>
-<span class="line"><span style="color: #c9d1d9">				ent_dict[&#39;Keyword&#39;].append(entity.id)</span></span>
-<span class="line"><span style="color: #c9d1d9">				ent_dict[&#39;Relevance Score&#39;].append(entity.relevance_score)</span></span>
+<span class="line"><span style="color: #c9d1d9">			if entity.relevance_score > 0:</span></span>
+<span class="line"><span style="color: #c9d1d9">				ent_dict['Keyword'].append(entity.id)</span></span>
+<span class="line"><span style="color: #c9d1d9">				ent_dict['Relevance Score'].append(entity.relevance_score)</span></span>
 <span class="line"><span style="color: #c9d1d9">				if entity.id.lower() in existing_tags or entity.id.capitalize() in existing_tags:</span></span>
-<span class="line"><span style="color: #c9d1d9">					ent_dict[&#39;Existing Tag&#39;].append(1)</span></span>
+<span class="line"><span style="color: #c9d1d9">					ent_dict['Existing Tag'].append(1)</span></span>
 <span class="line"><span style="color: #c9d1d9">				else:</span></span>
-<span class="line"><span style="color: #c9d1d9">					ent_dict[&#39;Existing Tag&#39;].append(0)</span></span>
+<span class="line"><span style="color: #c9d1d9">					ent_dict['Existing Tag'].append(0)</span></span>
 <span class="line"><span style="color: #c9d1d9">		</span></span>
 <span class="line"><span style="color: #c9d1d9">		for topic in response.topics():</span></span>
-<span class="line"><span style="color: #c9d1d9">			if topic.score &gt; 0.6:</span></span>
-<span class="line"><span style="color: #c9d1d9">				topics_dict[&#39;Topic&#39;].append(topic.label)</span></span>
-<span class="line"><span style="color: #c9d1d9">				topics_dict[&#39;Relevance Score&#39;].append(topic.score)</span></span>
+<span class="line"><span style="color: #c9d1d9">			if topic.score > 0.6:</span></span>
+<span class="line"><span style="color: #c9d1d9">				topics_dict['Topic'].append(topic.label)</span></span>
+<span class="line"><span style="color: #c9d1d9">				topics_dict['Relevance Score'].append(topic.score)</span></span>
 <span class="line"><span style="color: #c9d1d9">				if topic.label.lower() in existing_tags or topic.label.capitalize() in existing_tags:</span></span>
-<span class="line"><span style="color: #c9d1d9">					topics_dict[&#39;Existing Tag&#39;].append(1)</span></span>
+<span class="line"><span style="color: #c9d1d9">					topics_dict['Existing Tag'].append(1)</span></span>
 <span class="line"><span style="color: #c9d1d9">				else:</span></span>
-<span class="line"><span style="color: #c9d1d9">					topics_dict[&#39;Existing Tag&#39;].append(0)</span></span>
+<span class="line"><span style="color: #c9d1d9">					topics_dict['Existing Tag'].append(0)</span></span>
 <span class="line"><span style="color: #c9d1d9">		</span></span>
 <span class="line"><span style="color: #c9d1d9">		for category in response.categories():</span></span>
-<span class="line"><span style="color: #c9d1d9">			categories_dict[&#39;Category&#39;].append(category.label)</span></span>
-<span class="line"><span style="color: #c9d1d9">			categories_dict[&#39;Relevance Score&#39;].append(category.score)</span></span>
+<span class="line"><span style="color: #c9d1d9">			categories_dict['Category'].append(category.label)</span></span>
+<span class="line"><span style="color: #c9d1d9">			categories_dict['Relevance Score'].append(category.score)</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">	elif input_type == &#39;URL&#39;:</span></span>
+<span class="line"><span style="color: #c9d1d9">	elif input_type == 'URL':</span></span>
 <span class="line"><span style="color: #c9d1d9">		txt = req(url)</span></span>
 <span class="line"><span style="color: #c9d1d9">		response = client.analyze(txt)</span></span>
 <span class="line"><span style="color: #c9d1d9">		for entity in response.entities():</span></span>
-<span class="line"><span style="color: #c9d1d9">			if entity.relevance_score &gt; 0:</span></span>
-<span class="line"><span style="color: #c9d1d9">				ent_dict[&#39;Keyword&#39;].append(entity.id)</span></span>
-<span class="line"><span style="color: #c9d1d9">				ent_dict[&#39;Relevance Score&#39;].append(entity.relevance_score)</span></span>
+<span class="line"><span style="color: #c9d1d9">			if entity.relevance_score > 0:</span></span>
+<span class="line"><span style="color: #c9d1d9">				ent_dict['Keyword'].append(entity.id)</span></span>
+<span class="line"><span style="color: #c9d1d9">				ent_dict['Relevance Score'].append(entity.relevance_score)</span></span>
 <span class="line"><span style="color: #c9d1d9">				if entity.id.lower() in existing_tags or entity.id.capitalize() in existing_tags:</span></span>
-<span class="line"><span style="color: #c9d1d9">					ent_dict[&#39;Existing Tag&#39;].append(1)</span></span>
+<span class="line"><span style="color: #c9d1d9">					ent_dict['Existing Tag'].append(1)</span></span>
 <span class="line"><span style="color: #c9d1d9">				else:</span></span>
-<span class="line"><span style="color: #c9d1d9">					ent_dict[&#39;Existing Tag&#39;].append(0)</span></span>
+<span class="line"><span style="color: #c9d1d9">					ent_dict['Existing Tag'].append(0)</span></span>
 <span class="line"><span style="color: #c9d1d9">		</span></span>
 <span class="line"><span style="color: #c9d1d9">		for topic in response.topics():</span></span>
-<span class="line"><span style="color: #c9d1d9">			if topic.score &gt; 0.6:</span></span>
-<span class="line"><span style="color: #c9d1d9">				topics_dict[&#39;Topic&#39;].append(topic.label)</span></span>
-<span class="line"><span style="color: #c9d1d9">				topics_dict[&#39;Relevance Score&#39;].append(topic.score)</span></span>
+<span class="line"><span style="color: #c9d1d9">			if topic.score > 0.6:</span></span>
+<span class="line"><span style="color: #c9d1d9">				topics_dict['Topic'].append(topic.label)</span></span>
+<span class="line"><span style="color: #c9d1d9">				topics_dict['Relevance Score'].append(topic.score)</span></span>
 <span class="line"><span style="color: #c9d1d9">				if topic.label.lower() in existing_tags or topic.label.capitalize() in existing_tags:</span></span>
-<span class="line"><span style="color: #c9d1d9">					topics_dict[&#39;Existing Tag&#39;].append(1)</span></span>
+<span class="line"><span style="color: #c9d1d9">					topics_dict['Existing Tag'].append(1)</span></span>
 <span class="line"><span style="color: #c9d1d9">				else:</span></span>
-<span class="line"><span style="color: #c9d1d9">					topics_dict[&#39;Existing Tag&#39;].append(0)</span></span>
+<span class="line"><span style="color: #c9d1d9">					topics_dict['Existing Tag'].append(0)</span></span>
 <span class="line"><span style="color: #c9d1d9">		</span></span>
 <span class="line"><span style="color: #c9d1d9">		for category in response.categories():</span></span>
-<span class="line"><span style="color: #c9d1d9">			categories_dict[&#39;Category&#39;].append(category.label)</span></span>
-<span class="line"><span style="color: #c9d1d9">			categories_dict[&#39;Relevance Score&#39;].append(category.score)</span></span>
+<span class="line"><span style="color: #c9d1d9">			categories_dict['Category'].append(category.label)</span></span>
+<span class="line"><span style="color: #c9d1d9">			categories_dict['Relevance Score'].append(category.score)</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">	elif input_type == &#39;Multiple URLs&#39;:</span></span>
+<span class="line"><span style="color: #c9d1d9">	elif input_type == 'Multiple URLs':</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
 <span class="line"><span style="color: #c9d1d9">		for u in urls:</span></span>
 <span class="line"><span style="color: #c9d1d9">			txt = req(u)</span></span>
 <span class="line"><span style="color: #c9d1d9">			all_txt.append(txt)</span></span>
 <span class="line"><span style="color: #c9d1d9">			response = client.analyze(txt)</span></span>
 <span class="line"><span style="color: #c9d1d9">			for entity in response.entities():</span></span>
-<span class="line"><span style="color: #c9d1d9">				if entity.relevance_score &gt; 0:</span></span>
-<span class="line"><span style="color: #c9d1d9">					ent_dict[&#39;Keyword&#39;].append(entity.id)</span></span>
-<span class="line"><span style="color: #c9d1d9">					ent_dict[&#39;Relevance Score&#39;].append(entity.relevance_score)</span></span>
+<span class="line"><span style="color: #c9d1d9">				if entity.relevance_score > 0:</span></span>
+<span class="line"><span style="color: #c9d1d9">					ent_dict['Keyword'].append(entity.id)</span></span>
+<span class="line"><span style="color: #c9d1d9">					ent_dict['Relevance Score'].append(entity.relevance_score)</span></span>
 <span class="line"><span style="color: #c9d1d9">					if entity.id.lower() in existing_tags or entity.id.capitalize() in existing_tags:</span></span>
-<span class="line"><span style="color: #c9d1d9">						ent_dict[&#39;Existing Tag&#39;].append(1)</span></span>
+<span class="line"><span style="color: #c9d1d9">						ent_dict['Existing Tag'].append(1)</span></span>
 <span class="line"><span style="color: #c9d1d9">					else:</span></span>
-<span class="line"><span style="color: #c9d1d9">						ent_dict[&#39;Existing Tag&#39;].append(0)</span></span>
+<span class="line"><span style="color: #c9d1d9">						ent_dict['Existing Tag'].append(0)</span></span>
 <span class="line"><span style="color: #c9d1d9">			</span></span>
 <span class="line"><span style="color: #c9d1d9">			for topic in response.topics():</span></span>
-<span class="line"><span style="color: #c9d1d9">				if topic.score &gt; 0.6:</span></span>
-<span class="line"><span style="color: #c9d1d9">					topics_dict[&#39;Topic&#39;].append(topic.label)</span></span>
-<span class="line"><span style="color: #c9d1d9">					topics_dict[&#39;Relevance Score&#39;].append(topic.score)</span></span>
+<span class="line"><span style="color: #c9d1d9">				if topic.score > 0.6:</span></span>
+<span class="line"><span style="color: #c9d1d9">					topics_dict['Topic'].append(topic.label)</span></span>
+<span class="line"><span style="color: #c9d1d9">					topics_dict['Relevance Score'].append(topic.score)</span></span>
 <span class="line"><span style="color: #c9d1d9">					if topic.label.lower() in existing_tags or topic.label.capitalize() in existing_tags:</span></span>
-<span class="line"><span style="color: #c9d1d9">						topics_dict[&#39;Existing Tag&#39;].append(1)</span></span>
+<span class="line"><span style="color: #c9d1d9">						topics_dict['Existing Tag'].append(1)</span></span>
 <span class="line"><span style="color: #c9d1d9">					else:</span></span>
-<span class="line"><span style="color: #c9d1d9">						topics_dict[&#39;Existing Tag&#39;].append(0)</span></span>
+<span class="line"><span style="color: #c9d1d9">						topics_dict['Existing Tag'].append(0)</span></span>
 <span class="line"><span style="color: #c9d1d9">			</span></span>
 <span class="line"><span style="color: #c9d1d9">			for category in response.categories():</span></span>
-<span class="line"><span style="color: #c9d1d9">				categories_dict[&#39;Category&#39;].append(category.label)</span></span>
-<span class="line"><span style="color: #c9d1d9">				categories_dict[&#39;Relevance Score&#39;].append(category.score)</span></span></code></pre><p>Depending on the input (text, URL, or multiple URLs), this function analyses the text, finds the topics, entities, and categories and adds them to a dictionary. I set a threshold for the relevance score to ignore anything that had a score of 0. I also added a check for matching tags, so if an entity is already in my tag list, it’ll give me a 1 or 0 if not. It’s worth noting that this is inconsistent despite my best efforts so if you see the code and can tell me how to do this better, let me know!</p><h3 id="9-the-function-for-displaying-that-data-in-dataframe-form">9. The function for displaying that data in DataFrame form</h3><pre class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9"># DataFrames to present above data</span></span>
+<span class="line"><span style="color: #c9d1d9">				categories_dict['Category'].append(category.label)</span></span>
+<span class="line"><span style="color: #c9d1d9">				categories_dict['Relevance Score'].append(category.score)</span></span></code></pre>
+<p>Depending on the input (text, URL, or multiple URLs), this function analyses the text, finds the topics, entities, and categories and adds them to a dictionary. I set a threshold for the relevance score to ignore anything that had a score of 0. I also added a check for matching tags, so if an entity is already in my tag list, it’ll give me a 1 or 0 if not. It’s worth noting that this is inconsistent despite my best efforts so if you see the code and can tell me how to do this better, let me know!</p>
+<h3 id="9-the-function-for-displaying-that-data-in-dataframe-form">9. The function for displaying that data in DataFrame form</h3>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9"># DataFrames to present above data</span></span>
 <span class="line"><span style="color: #c9d1d9">def data_viz():</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">	if input_type == &#39;Text&#39;:</span></span>
+<span class="line"><span style="color: #c9d1d9">	if input_type == 'Text':</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
 <span class="line"><span style="color: #c9d1d9">		# df_kw = pd.DataFrame(kw_dict)</span></span>
-<span class="line"><span style="color: #c9d1d9">		# # grouped_df_kw = df_kw.groupby([&#39;Keyword&#39;]).agg({&#39;Relevance Score&#39;: [&#39;mean&#39;], &#39;Existing Tag&#39;: [&#39;max&#39;]}).round(3)</span></span>
+<span class="line"><span style="color: #c9d1d9">		# # grouped_df_kw = df_kw.groupby(['Keyword']).agg({'Relevance Score': ['mean'], 'Existing Tag': ['max']}).round(3)</span></span>
 <span class="line"><span style="color: #c9d1d9">		# # grouped_df_kw = grouped_df_kw.reset_index()</span></span>
-<span class="line"><span style="color: #c9d1d9">		# st.header(&#39;Keywords&#39;)</span></span>
+<span class="line"><span style="color: #c9d1d9">		# st.header('Keywords')</span></span>
 <span class="line"><span style="color: #c9d1d9">		# st.dataframe(df_kw)</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
 <span class="line"><span style="color: #c9d1d9">		df_ent = pd.DataFrame(ent_dict)</span></span>
-<span class="line"><span style="color: #c9d1d9">		grouped_df_ent = df_ent.groupby([&#39;Keyword&#39;]).agg({&#39;Relevance Score&#39;: [&#39;mean&#39;], &#39;Existing Tag&#39;: [&#39;max&#39;]}).round(3)</span></span>
+<span class="line"><span style="color: #c9d1d9">		grouped_df_ent = df_ent.groupby(['Keyword']).agg({'Relevance Score': ['mean'], 'Existing Tag': ['max']}).round(3)</span></span>
 <span class="line"><span style="color: #c9d1d9">		grouped_df_ent = grouped_df_ent.reset_index()</span></span>
-<span class="line"><span style="color: #c9d1d9">		st.header(&#39;Entities&#39;)</span></span>
+<span class="line"><span style="color: #c9d1d9">		st.header('Entities')</span></span>
 <span class="line"><span style="color: #c9d1d9">		st.dataframe(grouped_df_ent)</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
 <span class="line"><span style="color: #c9d1d9">		df_topic = pd.DataFrame(topics_dict)</span></span>
-<span class="line"><span style="color: #c9d1d9">		grouped_df_topic = df_topic.groupby([&#39;Topic&#39;]).agg({&#39;Relevance Score&#39;: [&#39;mean&#39;], &#39;Existing Tag&#39;: [&#39;max&#39;]}).round(3)</span></span>
+<span class="line"><span style="color: #c9d1d9">		grouped_df_topic = df_topic.groupby(['Topic']).agg({'Relevance Score': ['mean'], 'Existing Tag': ['max']}).round(3)</span></span>
 <span class="line"><span style="color: #c9d1d9">		grouped_df_topic = grouped_df_topic.reset_index()</span></span>
-<span class="line"><span style="color: #c9d1d9">		st.header(&#39;Topics&#39;)</span></span>
+<span class="line"><span style="color: #c9d1d9">		st.header('Topics')</span></span>
 <span class="line"><span style="color: #c9d1d9">		st.dataframe(grouped_df_topic)</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
 <span class="line"><span style="color: #c9d1d9">		df_cat = pd.DataFrame(categories_dict)</span></span>
-<span class="line"><span style="color: #c9d1d9">		grouped_df_cat = df_cat.groupby([&#39;Category&#39;]).agg({&#39;Relevance Score&#39;: [&#39;mean&#39;]}).round(3)</span></span>
+<span class="line"><span style="color: #c9d1d9">		grouped_df_cat = df_cat.groupby(['Category']).agg({'Relevance Score': ['mean']}).round(3)</span></span>
 <span class="line"><span style="color: #c9d1d9">		grouped_df_cat = grouped_df_cat.reset_index()</span></span>
-<span class="line"><span style="color: #c9d1d9">		st.header(&#39;Categories&#39;)</span></span>
+<span class="line"><span style="color: #c9d1d9">		st.header('Categories')</span></span>
 <span class="line"><span style="color: #c9d1d9">		st.dataframe(grouped_df_cat)</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">	elif input_type == &#39;URL&#39;:</span></span>
+<span class="line"><span style="color: #c9d1d9">	elif input_type == 'URL':</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
 <span class="line"><span style="color: #c9d1d9">		df_ent = pd.DataFrame(ent_dict)</span></span>
-<span class="line"><span style="color: #c9d1d9">		grouped_df_ent = df_ent.groupby([&#39;Keyword&#39;]).agg({&#39;Relevance Score&#39;: [&#39;mean&#39;], &#39;Existing Tag&#39;: [&#39;max&#39;]}).round(3)</span></span>
+<span class="line"><span style="color: #c9d1d9">		grouped_df_ent = df_ent.groupby(['Keyword']).agg({'Relevance Score': ['mean'], 'Existing Tag': ['max']}).round(3)</span></span>
 <span class="line"><span style="color: #c9d1d9">		grouped_df_ent = grouped_df_ent.reset_index()</span></span>
-<span class="line"><span style="color: #c9d1d9">		st.header(&#39;Entities&#39;)</span></span>
+<span class="line"><span style="color: #c9d1d9">		st.header('Entities')</span></span>
 <span class="line"><span style="color: #c9d1d9">		st.dataframe(grouped_df_ent)</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
 <span class="line"><span style="color: #c9d1d9">		df_topic = pd.DataFrame(topics_dict)</span></span>
-<span class="line"><span style="color: #c9d1d9">		grouped_df_topic = df_topic.groupby([&#39;Topic&#39;]).agg({&#39;Relevance Score&#39;: [&#39;mean&#39;], &#39;Existing Tag&#39;: [&#39;max&#39;]}).round(3)</span></span>
+<span class="line"><span style="color: #c9d1d9">		grouped_df_topic = df_topic.groupby(['Topic']).agg({'Relevance Score': ['mean'], 'Existing Tag': ['max']}).round(3)</span></span>
 <span class="line"><span style="color: #c9d1d9">		grouped_df_topic = grouped_df_topic.reset_index()</span></span>
-<span class="line"><span style="color: #c9d1d9">		st.header(&#39;Topics&#39;)</span></span>
+<span class="line"><span style="color: #c9d1d9">		st.header('Topics')</span></span>
 <span class="line"><span style="color: #c9d1d9">		st.dataframe(grouped_df_topic)</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
 <span class="line"><span style="color: #c9d1d9">		df_cat = pd.DataFrame(categories_dict)</span></span>
-<span class="line"><span style="color: #c9d1d9">		grouped_df_cat = df_cat.groupby([&#39;Category&#39;]).agg({&#39;Relevance Score&#39;: [&#39;mean&#39;]}).round(3)</span></span>
+<span class="line"><span style="color: #c9d1d9">		grouped_df_cat = df_cat.groupby(['Category']).agg({'Relevance Score': ['mean']}).round(3)</span></span>
 <span class="line"><span style="color: #c9d1d9">		grouped_df_cat = grouped_df_cat.reset_index()</span></span>
-<span class="line"><span style="color: #c9d1d9">		st.header(&#39;Categories&#39;)</span></span>
+<span class="line"><span style="color: #c9d1d9">		st.header('Categories')</span></span>
 <span class="line"><span style="color: #c9d1d9">		st.dataframe(grouped_df_cat)</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">	elif input_type == &#39;Multiple URLs&#39;:</span></span>
+<span class="line"><span style="color: #c9d1d9">	elif input_type == 'Multiple URLs':</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
 <span class="line"><span style="color: #c9d1d9">		df_ent = pd.DataFrame(ent_dict)</span></span>
-<span class="line"><span style="color: #c9d1d9">		grouped_df_ent = df_ent.groupby([&#39;Keyword&#39;, &#39;Existing Tag&#39;]).describe().round(3)</span></span>
+<span class="line"><span style="color: #c9d1d9">		grouped_df_ent = df_ent.groupby(['Keyword', 'Existing Tag']).describe().round(3)</span></span>
 <span class="line"><span style="color: #c9d1d9">		grouped_df_ent = grouped_df_ent.reset_index()</span></span>
-<span class="line"><span style="color: #c9d1d9">		st.header(&#39;Entities&#39;)</span></span>
+<span class="line"><span style="color: #c9d1d9">		st.header('Entities')</span></span>
 <span class="line"><span style="color: #c9d1d9">		st.dataframe(grouped_df_ent)</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
 <span class="line"><span style="color: #c9d1d9">		df_topic = pd.DataFrame(topics_dict)</span></span>
-<span class="line"><span style="color: #c9d1d9">		grouped_df_topic = df_topic.groupby([&#39;Topic&#39;, &#39;Existing Tag&#39;]).describe().round(3)</span></span>
+<span class="line"><span style="color: #c9d1d9">		grouped_df_topic = df_topic.groupby(['Topic', 'Existing Tag']).describe().round(3)</span></span>
 <span class="line"><span style="color: #c9d1d9">		grouped_df_topic = grouped_df_topic.reset_index()</span></span>
-<span class="line"><span style="color: #c9d1d9">		st.header(&#39;Topics&#39;)</span></span>
+<span class="line"><span style="color: #c9d1d9">		st.header('Topics')</span></span>
 <span class="line"><span style="color: #c9d1d9">		st.dataframe(grouped_df_topic)</span></span>
 <span class="line"><span style="color: #c9d1d9"></span></span>
 <span class="line"><span style="color: #c9d1d9">		df_cat = pd.DataFrame(categories_dict)</span></span>
-<span class="line"><span style="color: #c9d1d9">		grouped_df_cat = df_cat.groupby(&#39;Category&#39;).describe().round(3)</span></span>
+<span class="line"><span style="color: #c9d1d9">		grouped_df_cat = df_cat.groupby('Category').describe().round(3)</span></span>
 <span class="line"><span style="color: #c9d1d9">		grouped_df_cat = grouped_df_cat.reset_index()</span></span>
-<span class="line"><span style="color: #c9d1d9">		st.header(&#39;Categories&#39;)</span></span>
-<span class="line"><span style="color: #c9d1d9">		st.dataframe(grouped_df_cat)</span></span></code></pre><p>The penultimate function converts those dictionaries into dataframes. The data is aggregated by relevance score (if multiple instances of an entity are found, I get the mean relevance score), and the max value of existing tags (1 or 0). For multiple URLs, I’ve used describe() to give me a full range of statistical data. Most of it is superfluous but it was the best thing I could find to get the data I needed.</p><p>Below is a table of the top 5 entities found in this blog post, ordered by relevance score:</p><table>
-<thead>
-<tr>
-<th>Keyword</th>
-<th>Relevance Score</th>
-<th>Existing tag</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Website</td>
-<td>0.6620</td>
-<td>0</td>
-</tr>
-<tr>
-<td>Search engine optimization</td>
-<td>0.6460</td>
-<td>0</td>
-</tr>
-<tr>
-<td>Web scraping</td>
-<td>0.6450</td>
-<td>0</td>
-</tr>
-<tr>
-<td>World Wide Website</td>
-<td>0.6440</td>
-<td>0</td>
-</tr>
-<tr>
-<td>HTML</td>
-<td>0.6320</td>
-<td>0</td>
-</tr>
-</tbody>
-</table><p>A table of the top 5 topics found in this blog post, ordered by relevance score:</p><table>
-<thead>
-<tr>
-<th>Topic</th>
-<th>Relevance Score</th>
-<th>Existing tag</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>API</td>
-<td>1.0000</td>
-<td>0</td>
-</tr>
-<tr>
-<td>Blog</td>
-<td>1.0000</td>
-<td>0</td>
-</tr>
-<tr>
-<td>Computer science</td>
-<td>1.0000</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Computing</td>
-<td>1.0000</td>
-<td>0</td>
-</tr>
-<tr>
-<td>Google Search</td>
-<td>1.0000</td>
-<td>0</td>
-</tr>
-</tbody>
-</table><p>And a table of the top 5 categories found in this blog post, ordered by relevance score:</p><table>
-<thead>
-<tr>
-<th>Category</th>
-<th>Relevance Score</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>economy, business and finance>computing and information technology</td>
-<td>0.8100</td>
-</tr>
-<tr>
-<td>economy, business and finance>computing and information technology>software</td>
-<td>0.7330</td>
-</tr>
-<tr>
-<td>arts, culture and entertainment>internet</td>
-<td>0.6020</td>
-</tr>
-<tr>
-<td>arts, culture and entertainment>language</td>
-<td>0.5620</td>
-</tr>
-<tr>
-<td>science and technology>engineering</td>
-<td>0.5360</td>
-</tr>
-</tbody>
-</table><h3 id="10-execution-of-the-all-the-functions-to-make-it-work">10. Execution of the all the functions to make it work</h3><pre class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9"># Execute functions</span></span>
+<span class="line"><span style="color: #c9d1d9">		st.header('Categories')</span></span>
+<span class="line"><span style="color: #c9d1d9">		st.dataframe(grouped_df_cat)</span></span></code></pre>
+<p>The penultimate function converts those dictionaries into dataframes. The data is aggregated by relevance score (if multiple instances of an entity are found, I get the mean relevance score), and the max value of existing tags (1 or 0). For multiple URLs, I’ve used describe() to give me a full range of statistical data. Most of it is superfluous but it was the best thing I could find to get the data I needed.</p>
+<p>Below is a table of the top 5 entities found in this blog post, ordered by relevance score:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Keyword</th><th>Relevance Score</th><th>Existing tag</th></tr></thead><tbody><tr><td>Website</td><td>0.6620</td><td>0</td></tr><tr><td>Search engine optimization</td><td>0.6460</td><td>0</td></tr><tr><td>Web scraping</td><td>0.6450</td><td>0</td></tr><tr><td>World Wide Website</td><td>0.6440</td><td>0</td></tr><tr><td>HTML</td><td>0.6320</td><td>0</td></tr></tbody></table>
+<p>A table of the top 5 topics found in this blog post, ordered by relevance score:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Topic</th><th>Relevance Score</th><th>Existing tag</th></tr></thead><tbody><tr><td>API</td><td>1.0000</td><td>0</td></tr><tr><td>Blog</td><td>1.0000</td><td>0</td></tr><tr><td>Computer science</td><td>1.0000</td><td>1</td></tr><tr><td>Computing</td><td>1.0000</td><td>0</td></tr><tr><td>Google Search</td><td>1.0000</td><td>0</td></tr></tbody></table>
+<p>And a table of the top 5 categories found in this blog post, ordered by relevance score:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Category</th><th>Relevance Score</th></tr></thead><tbody><tr><td>economy, business and finance>computing and information technology</td><td>0.8100</td></tr><tr><td>economy, business and finance>computing and information technology>software</td><td>0.7330</td></tr><tr><td>arts, culture and entertainment>internet</td><td>0.6020</td></tr><tr><td>arts, culture and entertainment>language</td><td>0.5620</td></tr><tr><td>science and technology>engineering</td><td>0.5360</td></tr></tbody></table>
+<h3 id="10-execution-of-the-all-the-functions-to-make-it-work">10. Execution of the all the functions to make it work</h3>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9"># Execute functions</span></span>
 <span class="line"><span style="color: #c9d1d9">if tag_ideas:</span></span>
 <span class="line"><span style="color: #c9d1d9">	all_blogs()</span></span>
-<span class="line"><span style="color: #c9d1d9">elif submit and input_type and input_type == &#39;Text&#39;:</span></span>
-<span class="line"><span style="color: #c9d1d9">	textrazor_extraction(&#39;Text&#39;)</span></span>
+<span class="line"><span style="color: #c9d1d9">elif submit and input_type and input_type == 'Text':</span></span>
+<span class="line"><span style="color: #c9d1d9">	textrazor_extraction('Text')</span></span>
 <span class="line"><span style="color: #c9d1d9">	data_viz()</span></span>
 <span class="line"><span style="color: #c9d1d9">	main()</span></span>
-<span class="line"><span style="color: #c9d1d9">elif submit and input_type == &#39;URL&#39;:</span></span>
-<span class="line"><span style="color: #c9d1d9">	textrazor_extraction(&#39;URL&#39;)</span></span>
+<span class="line"><span style="color: #c9d1d9">elif submit and input_type == 'URL':</span></span>
+<span class="line"><span style="color: #c9d1d9">	textrazor_extraction('URL')</span></span>
 <span class="line"><span style="color: #c9d1d9">	data_viz()</span></span>
 <span class="line"><span style="color: #c9d1d9">	main()</span></span>
-<span class="line"><span style="color: #c9d1d9">elif submit and input_type == &#39;Multiple URLs&#39;:</span></span>
-<span class="line"><span style="color: #c9d1d9">	urls = [line for line in multi_url.split(&quot;\n&quot;)]</span></span>
-<span class="line"><span style="color: #c9d1d9">	textrazor_extraction(&#39;Multiple URLs&#39;)</span></span>
-<span class="line"><span style="color: #c9d1d9">	data_viz()</span></span></code></pre><p>Finally, we have all the functions ready to call, depending on whether I’m analysing raw text or URLs.</p><h2 id="who_could_this_benefit">Who could this benefit?</h2><p>As I said earlier, I’ve made this mainly for myself and as a way to improve my taxonomies. I made a pledge to write about more Black content and scripts like this keep me in check as I can fill in gaps where content is lacking. It also inspires me to learn new things I never would have found from plain searching or from the blogs I follow (<a href="/post/this-is-my-content-creation-flow/">also part of my process which I wrote about a few years ago</a>).</p><p>But this kind of script is for any of the following types of people:</p><ul>
+<span class="line"><span style="color: #c9d1d9">elif submit and input_type == 'Multiple URLs':</span></span>
+<span class="line"><span style="color: #c9d1d9">	urls = [line for line in multi_url.split("\n")]</span></span>
+<span class="line"><span style="color: #c9d1d9">	textrazor_extraction('Multiple URLs')</span></span>
+<span class="line"><span style="color: #c9d1d9">	data_viz()</span></span></code></pre>
+<p>Finally, we have all the functions ready to call, depending on whether I’m analysing raw text or URLs.</p>
+<h2 id="who_could_this_benefit">Who could this benefit?</h2>
+<p>As I said earlier, I’ve made this mainly for myself and as a way to improve my taxonomies. I made a pledge to write about more Black content and scripts like this keep me in check as I can fill in gaps where content is lacking. It also inspires me to learn new things I never would have found from plain searching or from the blogs I follow (<a href="/post/this-is-my-content-creation-flow/">also part of my process which I wrote about a few years ago</a>).</p>
+<p>But this kind of script is for any of the following types of people:</p>
+<ul>
 <li>To analyse text for entity relevance</li>
 <li>To find internal linking opportunities, particularly those interested in using LOD (linked open data)</li>
 <li>Content ideas</li>
 <li>To check if your text is aligned how you want it</li>
-</ul><h2 id="evaluation">Evaluation</h2><p>This Python script is not perfect. It’s rough around the edges and works for my specific use case so for anyone else, they would need to tweak it or potentially rewrite it for their own needs.</p><p>One significant change that could be made is with the use of the BART model. This isn’t fine-tuned in anyway so its classification could be improved if you trained the model on specific datasets.</p><p>There are also no means of downloading the outputted data. This is a personal preference as I tend to read off the screen and move on but for other use cases, you may want the CSVs. That can be added in.</p><h2 id="summary">Summary</h2><p>I hope this has been insightful for anyone reading. While I’ve been learning Python and it makes sense to me, I appreciate it can feel daunting to take this in without the same knowledge. I rarely have to explain my personal projects and don’t like to say “hey, I made this thing” because who cares (that’s what I say in my head anyway). At the very least, I can say I did a thing and explained why and it will benefit me.</p><div class="tagged-as">Tagged as:</div><span class="tags"><a href="/wiki/tech/python/">Python</a> </span>
-<span class="tags"><a href="/wiki/tech/seo/">SEO</a> </span>
-
+</ul>
+<h2 id="evaluation">Evaluation</h2>
+<p>This Python script is not perfect. It’s rough around the edges and works for my specific use case so for anyone else, they would need to tweak it or potentially rewrite it for their own needs.</p>
+<p>One significant change that could be made is with the use of the BART model. This isn’t fine-tuned in anyway so its classification could be improved if you trained the model on specific datasets.</p>
+<p>There are also no means of downloading the outputted data. This is a personal preference as I tend to read off the screen and move on but for other use cases, you may want the CSVs. That can be added in.</p>
+<h2 id="summary">Summary</h2>
+<p>I hope this has been insightful for anyone reading. While I’ve been learning Python and it makes sense to me, I appreciate it can feel daunting to take this in without the same knowledge. I rarely have to explain my personal projects and don’t like to say “hey, I made this thing” because who cares (that’s what I say in my head anyway). At the very least, I can say I did a thing and explained why and it will benefit me.</p><div class="tagged-as">Tagged as:</div><p><span class="tags"><a href="/wiki/tech/python/">Python</a> </span><span class="tags"><a href="/wiki/tech/seo/">SEO</a> </span></p>
 
     </main>
   </article>

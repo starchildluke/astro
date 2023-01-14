@@ -1,7 +1,6 @@
 ---
 // COMPONENTS
 
-import Markdown from '@astrojs/markdown-component';
 import BaseHead from '../../components/BaseHead.astro';
 import BlogHeader from '../../components/BlogHeader.astro';
 import BlogFooter from '../../components/BlogFooter.astro';
@@ -41,49 +40,50 @@ let domain = "https://lukealexdavis.co.uk"
 <html lang="en">
   <head>
     <BaseHead title={'wiki/' + title.toLowerCase()} description={description} canonicalURL={domain + slug} />
-</head>
-
+  </head>
   <body>
     <BlogHeader />
-      <div class="layout">
-        <article class="content">
-          <Breadcrumbs title={title}/>
-            <section class="intro">
-
-              <h1>{title}</h1>
-              <p class="desc">{description}</p>
-       </section>
-            <section>
-             
-              <h2 class="wiki-h2">Inner voice</h2>
-                <Markdown>
-                  * [/new-normal.md](/post/new-normal/)
-                  * [/beyond-tired-4.md](/post/beyond-tired-4/)
-                  * [/boats-storms-rockets.md](/post/boats-storms-rockets/)
-                </Markdown>
-            </section>
-      
-            <section>
-              <h2 class="wiki-h2">Out loud</h2>
-              <ul class="post-list">
-                {remoteData.map((item) => (
-                <li class="post-preview wiki-listing post-list">
-            <a href={item.link}><Fragment set:html={item.title.rendered}></a>
-          </li>
-             ))}
-             {remoteData2.map((item) => (
-                <li class="post-preview wiki-listing post-list">
-            <a href={item.link}><Fragment set:html={item.title.rendered}></a>
-          </li>
-             ))}
-             </ul>
-              <h2 class="wiki-h2">Second opinions</h2>
-                <Markdown>
-                  * [How long can I keep using the same N95 respirator mask? Here’s what Bay Area experts say](https://www.sfchronicle.com/health/article/How-long-can-I-keep-using-the-same-N95-respirator-16765593.php)
-                  * [Here's a brief recap of some new publications, preprints, and reports related to COVID-19 that have come out recently](https://twitter.com/TRyanGregory/status/1522658781049626624)
-                </Markdown>
-            </section>
-        </article>
+    <div class="layout">
+      <article class="content">
+        <Breadcrumbs title={title}/>
+        <section class="intro">
+          <h1>{title}</h1>
+          <p class="desc">{description}</p>
+        </section>
+        <section>
+          
+          <h2 class="wiki-h2">Inner voice</h2>
+          
+          <ul>
+            <li><a href="/post/new-normal/">/new-normal.md</a></li>
+            <li><a href="/post/beyond-tired-4/">/beyond-tired-4.md</a></li>
+            <li><a href="/post/boats-storms-rockets/">/boats-storms-rockets.md</a></li>
+          </ul>
+          
+        </section>
+        
+        <section>
+          <h2 class="wiki-h2">Out loud</h2>
+          <ul class="post-list">
+            {remoteData.map((item) => (
+            <li class="post-preview wiki-listing post-list">
+              <a href={item.link}><Fragment set:html={item.title.rendered}></a>
+            </li>
+            ))}
+            {remoteData2.map((item) => (
+            <li class="post-preview wiki-listing post-list">
+              <a href={item.link}><Fragment set:html={item.title.rendered}></a>
+            </li>
+            ))}
+          </ul>
+          <h2 class="wiki-h2">Second opinions</h2>
+          
+          <ul>
+            <li><a href="https://www.sfchronicle.com/health/article/How-long-can-I-keep-using-the-same-N95-respirator-16765593.php">How long can I keep using the same N95 respirator mask? Here’s what Bay Area experts say</a></li>
+            <li><a href="https://twitter.com/TRyanGregory/status/1522658781049626624">Here&#39;s a brief recap of some new publications, preprints, and reports related to COVID-19 that have come out recently</a></li>
+          </ul>
+        </section>
+      </article>
       
     </div>
     <BlogFooter></BlogFooter>

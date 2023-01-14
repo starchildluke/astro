@@ -1,7 +1,6 @@
 ---
 // COMPONENTS
 
-import { Markdown } from 'astro/components';
 import BaseHead from '../../../components/BaseHead.astro';
 import BlogHeader from '../../../components/BlogHeader.astro';
 import BlogFooter from '../../../components/BlogFooter.astro';
@@ -58,14 +57,14 @@ let domain = "https://lukealexdavis.co.uk"
             <section>
              
               <h2 class="wiki-h2">Inner voice</h2>
-                <Markdown>
-                  * [**/internet**](/wiki/tech/internet/)
-                  * [/whats-the-obsession-with-folding-phone.md](/post/whats-the-obsession-with-folding-phone/)
-                  * [/my-phone-history.md](/post/my-phone-history/)
-                  * [/my-love-of-sony-hardware-design.md](/post/my-love-of-sony-hardware-design/)
-                  * [/halt-and-make-fire.md](/post/halt-and-make-fire/)
-                  * [/computer-words.md](/post/wikinotes/computer-words/)
-                </Markdown>
+                <ul>
+                  <li><a href="/wiki/tech/internet/"><strong>/internet</strong></a></li>
+                  <li><a href="/post/whats-the-obsession-with-folding-phone/">/whats-the-obsession-with-folding-phone.md</a></li>
+                  <li><a href="/post/my-phone-history/">/my-phone-history.md</a></li>
+                  <li><a href="/post/my-love-of-sony-hardware-design/">/my-love-of-sony-hardware-design.md</a></li>
+                  <li><a href="/post/halt-and-make-fire/">/halt-and-make-fire.md</a></li>
+                  <li><a href="/post/wikinotes/computer-words/">/computer-words.md</a></li>
+                </ul>
             </section>
       
             <section>
@@ -73,24 +72,24 @@ let domain = "https://lukealexdavis.co.uk"
               <ul class="post-list">
                 {remoteData.map((item) => (
                 <li class="post-preview wiki-listing post-list">
-            <a href={item.link}>{item.title.rendered}</a>
+            <a href={item.link}><Fragment set:html={item.title.rendered}></a>
           </li>
              ))}
           {remoteData2.map((item) => (
                 <li class="post-preview wiki-listing post-list">
-            <a href={item.link}>{item.title.rendered}</a>
+            <a href={item.link}><Fragment set:html={item.title.rendered}></a>
           </li>
              ))}
              {remoteData3.map((item) => (
                 <li class="post-preview wiki-listing post-list">
-            <a href={item.link}>{item.title.rendered}</a>
+            <a href={item.link}><Fragment set:html={item.title.rendered}></a>
           </li>
              ))}
              </ul>
               <h2 class="wiki-h2">Second opinions</h2>
-                <Markdown>
-                  * Coming soon...
-                </Markdown>
+                <ul>
+                  <li>Coming soon...</li>
+                </ul>
             </section>
         </article>
       

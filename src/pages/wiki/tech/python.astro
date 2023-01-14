@@ -1,7 +1,6 @@
 ---
 // COMPONENTS
 
-import { Markdown } from 'astro/components';
 import BaseHead from '../../../components/BaseHead.astro';
 import BlogHeader from '../../../components/BlogHeader.astro';
 import BlogFooter from '../../../components/BlogFooter.astro';
@@ -39,42 +38,42 @@ let domain = "https://lukealexdavis.co.uk"
 <html lang="en">
   <head>
     <BaseHead title={'wiki/' + title.toLowerCase()} description={description} canonicalURL={domain + slug} />
-</head>
-
+  </head>
   <body>
     <BlogHeader />
-      <div class="layout">
-        <article class="content">
-          <Breadcrumbs title={title}/>
-            <section class="intro">
-
-              <h1>{title}</h1>
-              <p class="desc">{description}</p>
-       </section>
-            <section>
-             
-              <h2 class="wiki-h2">Inner voice</h2>
-                <Markdown>
-                  * [/introducing-ralts.md](/post/introducing-ralts/)
-                  * [/you-dont-have-to-learn-python-but-it-might-help.md](/post/you-dont-have-to-learn-python-but-it-might-help/)
-                </Markdown>
-            </section>
-      
-            <section>
-              <h2 class="wiki-h2">Out loud</h2>
-              <ul class="post-list">
-                {remoteData.map((item) => (
-                <li class="post-preview wiki-listing post-list">
-            <a href={item.link}><Fragment set:html={item.title.rendered}></a>
-          </li>
-             ))}
-             </ul>
-              <h2 class="wiki-h2">Second opinions</h2>
-                <Markdown>
-                  Coming soon...
-                </Markdown>
-            </section>
-        </article>
+    <div class="layout">
+      <article class="content">
+        <Breadcrumbs title={title}/>
+        <section class="intro">
+          <h1>{title}</h1>
+          <p class="desc">{description}</p>
+        </section>
+        <section>
+          
+          <h2 class="wiki-h2">Inner voice</h2>
+          
+          <ul>
+            <li><a href="/post/introducing-ralts/">/introducing-ralts.md</a></li>
+            <li><a href="/post/you-dont-have-to-learn-python-but-it-might-help/">/you-dont-have-to-learn-python-but-it-might-help.md</a></li>
+          </ul>
+          
+        </section>
+        
+        <section>
+          <h2 class="wiki-h2">Out loud</h2>
+          <ul class="post-list">
+            {remoteData.map((item) => (
+            <li class="post-preview wiki-listing post-list">
+              <a href={item.link}><Fragment set:html={item.title.rendered}></a>
+            </li>
+            ))}
+          </ul>
+          <h2 class="wiki-h2">Second opinions</h2>
+          
+          <ul><li>Coming soon...</li></ul>
+          
+        </section>
+      </article>
       
     </div>
     <BlogFooter></BlogFooter>
