@@ -20,11 +20,11 @@ const { post } = Astro.props;
 
 // HOW FETCHING!
 
-const remoteData = await fetch('https://cultrface.co.uk/wp-json/wp/v2/posts?categories=828&per_page=100').then(response => response.json());
+const remoteData = await fetch('https://cultrface.co.uk/wp-json/wp/v2/posts?categories=828&per_page=5').then(response => response.json());
 
-const remoteData2 = await fetch('https://sampleface.co.uk/wp-json/wp/v2/posts?tags=2622').then(response => response.json());
+const remoteData2 = await fetch('https://sampleface.co.uk/wp-json/wp/v2/posts?tags=2622&per_page=5').then(response => response.json());
 
-const remoteData3 = await fetch('https://logicface.co.uk/wp-json/wp/v2/posts?categories=236&per_page=100').then(response => response.json());
+const remoteData3 = await fetch('https://logicface.co.uk/wp-json/wp/v2/posts?categories=236&per_page=5').then(response => response.json());
 
 // METADATA VARIABLES
 

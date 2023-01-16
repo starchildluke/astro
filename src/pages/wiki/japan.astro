@@ -25,11 +25,11 @@ const { post } = Astro.props;
 
 // HOW FETCHING!
 
-const sfJapan = await fetch('https://sampleface.co.uk/wp-json/wp/v2/posts?tags=285&per_page=100').then(response => response.json());
-const cfJapan = await fetch('https://cultrface.co.uk/wp-json/wp/v2/posts?tags=52&per_page=100').then(response => response.json());
-const lfJapan = await fetch('https://logicface.co.uk/wp-json/wp/v2/posts?tags=13&per_page=100').then(response => response.json());
-const pfJapan = await fetch('https://playrface.co.uk/wp-json/wp/v2/posts?tags=393&per_page=100').then(response => response.json());
-const daJapan = await fetch('https://distantarcade.co.uk/wp-json/wp/v2/posts?tags=157&per_page=100').then(response => response.json());
+const sfJapan = await fetch('https://sampleface.co.uk/wp-json/wp/v2/posts?tags=285&per_page=2').then(response => response.json());
+const cfJapan = await fetch('https://cultrface.co.uk/wp-json/wp/v2/posts?tags=52&per_page=2').then(response => response.json());
+const lfJapan = await fetch('https://logicface.co.uk/wp-json/wp/v2/posts?tags=13&per_page=2').then(response => response.json());
+const pfJapan = await fetch('https://playrface.co.uk/wp-json/wp/v2/posts?tags=393&per_page=2').then(response => response.json());
+const daJapan = await fetch('https://distantarcade.co.uk/wp-json/wp/v2/posts?tags=157&per_page=2').then(response => response.json());
 
 // METADATA VARIABLES
 
