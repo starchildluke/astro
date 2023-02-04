@@ -30,3 +30,9 @@ Time for another quote from the same piece:
 > I’m not really going anywhere in particular with this: I’m just thinking out loud in public, which is what having a blog lets me do! I also trusted (because it works every time I’m in a blogging slump) that if I actually started writing something, anything, here, things would start to turn around for me, because the process itself is a tonic.
 
 I couldn't have put it better myself. And so I'll leave it there. Without a major point. Just another ramble from yours truly.
+
+### Related
+
+* [Blogs and hats](/post/blogs-and-hats/)
+* [Blogging gratitude](/post/blogging-gratitude/)
+* [Get a website](/post/get-a-website/)
