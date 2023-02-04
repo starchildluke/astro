@@ -4,17 +4,19 @@
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <link rel="icon" type="image/png" href="/favicon.png">
-<title>Luke Davis: technical SEO, music producer &amp; creator</title>
-<meta name="title" content="Luke Davis: technical SEO, music producer &#38; creator">
-<meta name="description" content="The digital home of Luke Davis: a technical SEO, music producer, and content creator based in Nottingham, UK.">
+<title>Morsel #8 - Bandcamp Album Length Calculator</title>
+<meta name="title" content="Morsel #8 - Bandcamp Album Length Calculator">
+<meta name="description">
 <meta name="generator" content="astro-^1.9.2">
-<link rel="canonical" href="https://lukealexdavis.co.uk/">
+<link rel="canonical" href="https://lukealexdavis.co.uk/post/morsels/morsel-8/">
 <link rel="alternate" type="application/rss+xml" title="Luke Alex Davis" href="https://lukealexdavis.co.uk/feed/blog.xml">
 <link rel="preload" href="/fonts/Karla-Light-subset.woff2" as="font" type="font/woff" crossorigin>
 <link rel="preload" as="style" href="/style/blog.css" type="text/css">
 <link rel="stylesheet" type="text/css" href="/style/blog.css">
 <script defer data-domain="lukealexdavis.co.uk" src="https://plausible.io/js/plausible.js"></script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://lukealexdavis.co.uk/#website","url":"https://lukealexdavis.co.uk","name":"Luke Davis","publisher":{"@id":"https://lukealexdavis.co.uk/#Person"},"inLanguage":"en-GB"},{"@type":"Article","headline":{"title":"Morsel #8 - Bandcamp Album Length Calculator"},"datePublished":{"date":"4 Feb 2023"},"author":{"@type":"Person","name":"Luke Davis","@id":"https://lukealexdavis.co.uk/","url":"https://lukealexdavis.co.uk/"},"publisher":{"@id":"https://lukealexdavis.co.uk/#Person","@type":"Person","name":"Luke Davis"},"name":{"title":"Morsel #8 - Bandcamp Album Length Calculator"},"@id":"https://lukealexdavis.co.uk/post/morsels/morsel-8/#richSnippet","inLanguage":"en-GB","mainEntityOfPage":{"@id":"https://lukealexdavis.co.uk/post/morsels/morsel-8/#webpage"}},{"@type":"Person","image":["https://lukealexdavis.co.uk/images/k5t2wVcf-Luke-Davis-640x600.png","https://lukealexdavis.co.uk/images/lukedavis_jpg.jpg"],"url":"https://lukealexdavis.co.uk","sameAs":["https://uk.linkedin.com/in/lukealexdavis","https://twitter.com/LukeDavisSEO","https://www.instagram.com/lukealexdavis/","https://www.impression.co.uk/about/our-team/luke-davis/","https://www.searchenginejournal.com/author/luke-davis/","https://www.semrush.com/user/147747585/","https://www.adzooma.com/blog/author/lukedavis/","https://www.patreon.com/lukealexdavis","https://www.wikidata.org/wiki/Q110132394","https://lukealexdavis.contently.com/","https://ko-fi.com/lklxdvs"],"alternateName":["Luke Davis","Luke Alex Davis"],"name":"Luke Davis","jobTitle":"Technical SEO","gender":"Male"}]}</script>
   </head>
+
   <body>
     <header class="center">
       <nav class="links">
@@ -49,18 +51,40 @@
         </ul>
       </nav>
 </header>
-    <main class="layout">
-      <article class="content">
-          <h1>Luke Davis</h1>
-      <h2 id="hello">Boa noite!</h2>
-      <p>I'm a technical SEO, music producer, and content creator based in Nottingham, UK. I specialise in technical creativity and problem solving with a pragmatic approach.</p>
-      <p>I'm also the founder of <a href="https://pandog.media">Pandog Media</a>, the home of <a href="https://sampleface.co.uk">Sampleface</a>, <a href="https://cultrface.co.uk">Cultrface</a>, <a href="https://logicface.co.uk">LOGiCFACE</a>, <a href="https://playrface.co.uk">Playrface</a>, and <a href="https://distantarcade.co.uk">Distant Arcade</a>.</p>
-      <h2>Want to find out more?</h2>
-      <p><a href="mailto:luke@lukealexdavis.co.uk">Send an email</a>, <a href="https://twitter.com/LukeDavisSEO" rel="nofollow">a tweet</a>, or read <a href="/about/">my about page</a>.</p>
-      <p>There are ways you <a href="/support/">support me</a> too.</p>
-      <p>Smell ya later!</p>
-      </article>
+    <div class="layout">
+  <article class="content">
+      <p class="publish-date">4 Feb 2023</p>
+      <h1>Morsel #8 - Bandcamp Album Length Calculator</h1>
+    <main>
+      <p>My eighth morsel is a <a href="/wiki/tech/python/">Python</a> script that returns the running time of an album from Bandcamp in your CLI of choice. I previously used a JS plugin/applet in my browser but it stopped working and couldn’t find a replacement (there probably is one but I also don’t like installing add-ons unless I have to because Chromium browsers already hog enough memory!)</p>
+<p>Then I thought “why not create a quick script to do the job?“. I have also made this into a Streamlit app but that’ll be coming in a future morsel. In the meantime, I discovered argparse and thought it’d be handy for me to have everything run in my CLI and print out the album length. No frills!</p>
+<h2 id="links">Links</h2>
+<ul>
+<li><a href="https://github.com/starchildluke/bandcamp_calc">GitHub link</a></li>
+</ul>
+<h2 id="requirements">Requirements</h2>
+<ul>
+<li><a href="https://www.python.org/downloads/">Python 3</a></li>
+<li>Beautiful Soup</li>
+<li>Requests</li>
+</ul>
+<h2 id="how-to-use">How to use</h2>
+<p>In your command line, enter <code>python3 bandcamp_calc.py -u [URL]</code> and it will print out the running time in seconds.</p>
+<h2 id="python-functions-used">Python functions used</h2>
+<ul>
+<li><a href="https://realpython.com/python-lists-tuples/#python-lists">Lists</a>
+<ul>
+<li><a href="https://realpython.com/list-comprehension-python/#using-list-comprehensions">List comprehensions</a></li>
+</ul>
+</li>
+<li><a href="https://realpython.com/python-for-loop/">For loops</a></li>
+<li><a href="https://realpython.com/python-sum-function/">sum</a></li>
+<li><a href="https://docs.python.org/3/library/datetime.html">datetime</a></li>
+<li><a href="https://docs.python.org/3/library/argparse.html">argparse</a></li>
+</ul>
     </main>
+  </article>
+</div>
     <footer>
     <p>Built with HTML, CSS, and <a href="https://astro.build/">Astro</a> which has made this super fun. <a href="https://twitter.com/t3dotgg/status/1481344430921502720">Special tweet added for good luck.</a></p>
     <p>[ <a href="/html-sitemap/">HTML Sitemap</a> ]</p>
@@ -71,37 +95,4 @@
     <p>- - - - -</p>
     <p>Copyright 2023 © Luke Davis</p>
 </footer>
-    <script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"Person",
-  "mainEntityOfPage": "https://lukealexdavis.co.uk",
-  "description":"I'm a technical SEO, music producer, and content creator based in Nottingham, UK. I specialise in technical creativity, and problem solving with a pragmatic and minimalist style.",
-  "image":["https://lukealexdavis.co.uk/images/k5t2wVcf-Luke-Davis-640x600.png","https://lukealexdavis.co.uk/images/lukedavis_jpg.jpg"],
-  "url":"https://lukealexdavis.co.uk",
-  "sameAs":["https://uk.linkedin.com/in/lukealexdavis", "https://twitter.com/LukeDavisSEO", "https://www.instagram.com/lukealexdavis/", "https://www.impression.co.uk/about/our-team/luke-davis/", "https://www.searchenginejournal.com/author/luke-davis/", "https://www.semrush.com/user/147747585/", "https://www.adzooma.com/blog/author/lukedavis/", "https://www.patreon.com/lukealexdavis", "https://www.wikidata.org/wiki/Q110132394", "https://lukealexdavis.contently.com/", "https://ko-fi.com/lklxdvs"],
-  "subjectOf":["https://ccnworldtech.com/seo-interview-luke-davis/", "https://bytraject.com/blog/experimenting-with-seo-luke-davis/", "https://page2podcast.fm/episodes/45-luke-davis", "https://www.impression.co.uk/resources/podcasts/technical-seo-automation-rankup-with-luke-davis/", "https://marketersofcolour.com/experimenting-with-seo-on-the-b-sides-with-luke-davis/", "https://www.cmdncmds.com/authors/luke-alex-davis/"],
-  "alternateName":["Luke Davis", "Luke Alex Davis"],
-  "name":"Luke Davis",
-  "familyName":"Davis",
-  "givenName":"Luke",
-  "jobTitle":"Technical SEO",
-  "gender":"Male",
-  "birthPlace":{
-    "@type":"City",
-    "address":
-      {"@type":
-      "PostalAddress","addressLocality":"Bradford","addressCountry":"United Kingdom"}}, 
- "nationality":{"@type":"Country","name":"United Kingdom"},
- "worksFor":{"@type":"Organization", "name":"Impression","url":"https://impression.co.uk/"},
-     "knowsAbout": {
-       "type": "Thing",
-       "name": "SEO",
-       "sameas": "https://www.wikidata.org/wiki/Q180711",
-       "description": "The practice of increasing online visibility in search engine results pages.",
-       "alternatename": "Search Engine Optimization"
-     }
-   }
- </script>
-  </body>
-</html>
+  </body></html>
