@@ -7,7 +7,7 @@ tags:
 - '[pokemon](/wiki/pokemon/)'
 ---
 
-* Satoshi Tajiri pitched Pokémon to Nintendo but it was initially rejected
+* Satoshi Tajiri pitched [Pokémon](/wiki/pokemon/) to Nintendo but it was initially rejected
 * Due to issues with copyright, the name "CapuMon" was considered before settling on Pocket Monsters
 * Game Freak struggled with the development of Red & Green in Japan. Low finances caused many of the staff to leave
 * Tajiri worked long hours, many of them unpaid

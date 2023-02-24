@@ -5,13 +5,14 @@ date: '27 Sept 2022'
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[me](/about/)'
+- '[happiness](/wiki/happiness/)'
 ---
 
 * 001 – Watching WWE Attitude Era matches
 * 002 – Modernist architecture
 * 003 – Music
 * 004 – Playing with my son
-* 005 – Coding (particularly Python, HTML, and CSS)
+* 005 – Coding (particularly [Python](/wiki/tech/python), HTML, and CSS)
 * 006 – Spending time with my parents
 * 007 – Crate digging (I miss that)
 * 008 – Going back to Bradford to just walk around
@@ -21,18 +22,18 @@ tags:
 * 012 – TV from the 90s
 * 013 – Watching We Bare Bears
 * 014 – American commercials
-* 015 – Playing Pokémon (but not VGC)
+* 015 – Playing [Pokémon](wiki/pokemon/) (but not VGC)
 * 016 – Being loved and loving someone back
 * 017 – A good cup of tea
 * 018 – A hug from my son for no reason
 * 019 – Nutella B-ready
 * 020 – A good scented candle (specifically the discontinued Orange Flower & Cedar candle from Sainsbury's)
-* 021 – Roger Federer
+* 021 – [Roger Federer](/wiki/sport/roger-federer/)
 * 022 – Pepsi Max from a draught (with ice)
 * 023 – A warm house
 * 024 – A silent disco
 * 025 – Giving a cat scritches
-* 026 – Just being in Lisbon
+* 026 – Just being in [Lisbon](/wiki/lisbon/)
 * 027 – Driving videos
 * 028 – Not having to get out of bed at a particular time at the weekend
 * 029 – A walk by the river

@@ -42,7 +42,7 @@ I have to thank my good friend Stephanie Vaughn for the conection. It's no secre
 
 ## 6. Nguyen Le
 
-Roger Federer fans unite! I stumbled upon Nguyen Le while browsing on Dribbble and I was immediately drawn to a personal project dedicated to my favourite tennis player. His attention to detail and minimalist style spoke to me and I've been following his work ever since. He runs a design course which I would happily join (again, if I wasn't poor.) In terms of art/design direction, Le is the man you should be paying attention to in 2017.
+[Roger Federer](/wiki/sport/roger-federer/) fans unite! I stumbled upon Nguyen Le while browsing on Dribbble and I was immediately drawn to a personal project dedicated to my favourite tennis player. His attention to detail and minimalist style spoke to me and I've been following his work ever since. He runs a design course which I would happily join (again, if I wasn't poor.) In terms of art/design direction, Le is the man you should be paying attention to in 2017.
 
 [Website](https://www.verse-co.com) | [Dribbble](https://dribbble.com/newincreative)
 
@@ -50,7 +50,7 @@ Roger Federer fans unite! I stumbled upon Nguyen Le while browsing on Dribbble a
 
 I can't speak highly enough of KUMA, particularly for the fact he has made trap music audible for me. His production style is close to my own in some ways and I think that's where I feel the kinship so strongly. Of course, he is much better than me which helps when I want to be improve myself and while I think he deserves a lot more recognition or even a deal, you know what? A deal might taint the output - not because I think he would falter (NEVER that) but I've seen major-ish deals sour free creativity. He is embarking on a world trip and that will only further his creativity and produce even better music. I can't wait.
 
-[Instagram](https://www.instagram.com/kuma.gold/) | [Spotify](https://open.spotify.com/artist/1oJv5fqPPUvH240dU5GZ9P?si=DUiijsvmSOelIfK1zg-SKg) | [Twitter](https://twitter.com/SuperKumaGold)
+[Website](https://kuma.gold) | [Instagram](https://www.instagram.com/kuma.gold/) | [Spotify](https://open.spotify.com/artist/1oJv5fqPPUvH240dU5GZ9P?si=DUiijsvmSOelIfK1zg-SKg) | [Twitter](https://twitter.com/SuperKumaGold)
 
 ## 8. The Music Snobs
 
