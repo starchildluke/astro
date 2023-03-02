@@ -5,6 +5,7 @@ date: '22 Feb 2023'
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[tech](/wiki/tech/)'
+- '[AI](/wiki/tech/ai/)'
 ---
 
 I still feel weird about how [prompt engineering](https://en.wikipedia.org/wiki/Prompt_engineering) is promoted as a new concept.

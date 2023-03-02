@@ -5,6 +5,7 @@ date: '30 Jan 2023'
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[tech](/wiki/tech/)'
+- '[AI](/wiki/tech/ai/)'
 ---
 
 ![Homer Simpson holding an orange with the caption "For you see, AI is a lot like an orange."](/images/501867.jpeg)
