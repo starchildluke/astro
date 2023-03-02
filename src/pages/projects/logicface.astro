@@ -1,0 +1,51 @@
+---
+
+// COMPONENTS
+
+import BaseHead from '../../components/BaseHead.astro';
+import BlogHeader from '../../components/BlogHeader.astro';
+import BlogFooter from '../../components/BlogFooter.astro';
+import BlogPostPreview from '../../components/BlogPostPreview.astro';
+
+// METADATA VARIABLES
+
+let metaTitle = ' | Luke Davis';
+let title = 'LOGiCFACE';
+let description = 'LOGiCFACE project page';
+let canonicalURL = Astro.url;
+
+---
+<html lang="en">
+  <head>
+    <BaseHead title={title + metaTitle} description={description} canonicalURL={canonicalURL} />
+    <style>.table-cells {font-family: Georgia, serif;}</style>
+  </head>
+  <body>
+    <BlogHeader />
+    <main class="layout">
+      <article class="content">
+        <h1>{title}</h1>
+          <table>
+            <tbody>
+              <tr>
+                <td><span class="table-cells"><strong>Date established</strong></span></td>
+                <td>2015</td>
+              </tr>
+              <tr>
+                <td><span class="table-cells"><strong>Link</strong></span></td>
+                <td><a href="https://logicface.co.uk/">logicface.co.uk</a></td>
+              </tr>
+              <tr>
+                <td><span class="table-cells"><strong>Made with</strong></span></td>
+                <td><a href="https://wordpress.org/">WordPress</a></td>
+              </tr>
+            </tbody>
+          </table>
+          <h2>Description</h2>
+          <p>LOGiCFACE is a blog about science, tech, engineering, and mathematics (better known as STEM).</p>
+          <p>You can <a href="https://twitter.com/logcface">follow LOGiCFACE on Twitter.</a></p>
+      </article>
+    </main>
+    <BlogFooter></BlogFooter>
+  </body>
+</html>
