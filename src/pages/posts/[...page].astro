@@ -118,7 +118,7 @@ let description = "";
     <ul>
     {items.map((post) => (
       <li class="post-listing">
-        <a href={post.url}>{post.frontmatter.title}</a>
+        <a href={post.url}><Fragment set:html={post.frontmatter.title}></a>
         <span class="publish-date">{post.frontmatter.date}</span>
       </li>
     ))}
