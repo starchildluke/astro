@@ -6,6 +6,7 @@
 RewriteEngine On
 RewriteCond %{SERVER_PORT} 80
 RewriteRule ^(.*)$ https://lukealexdavis.co.uk/$1 [R,L]     
+RedirectMatch 301 /archive/jamiroquai-rock-dust-light-star/ /post/jamiroquai-rock-dust-light-star-review/
 
 # Set content-type for fonts
 AddType font/woff .woff
