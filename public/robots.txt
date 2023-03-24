@@ -1,6 +1,9 @@
 User-agent: *
 Allow: /
 
+User-Agent: ChatGPT-User
+Disallow: /
+
 Sitemap: https://lukealexdavis.co.uk/sitemap.xml
 
 #                              ,AAAAAAAAAAAAAAAAA                               
