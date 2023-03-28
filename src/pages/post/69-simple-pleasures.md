@@ -12,7 +12,7 @@ tags:
 * 002 – Modernist architecture
 * 003 – Music
 * 004 – Playing with my son
-* 005 – Coding (particularly [Python](/wiki/tech/python), HTML, and CSS)
+* 005 – Coding (particularly [Python](/wiki/tech/python/), HTML, and CSS)
 * 006 – Spending time with my parents
 * 007 – Crate digging (I miss that)
 * 008 – Going back to Bradford to just walk around
@@ -22,7 +22,7 @@ tags:
 * 012 – TV from the 90s
 * 013 – Watching We Bare Bears
 * 014 – American commercials
-* 015 – Playing [Pokémon](wiki/pokemon/) (but not VGC)
+* 015 – Playing [Pokémon](/wiki/pokemon/) (but not VGC)
 * 016 – Being loved and loving someone back
 * 017 – A good cup of tea
 * 018 – A hug from my son for no reason

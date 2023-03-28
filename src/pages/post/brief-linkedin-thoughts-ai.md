@@ -4,10 +4,10 @@ published: true
 date: '17 Mar 2023'
 layout: ../../layouts/BlogPost.astro
 tags:
-- '[AI](/wiki/tech/AI/)'
+- '[AI](/wiki/tech/ai/)'
 ---
 
-I wrote this comment on a LinkedIn post by Garrett Sussman who I've known for nearly as long as I've been an [SEO](/wiki/tech/SEO/).
+I wrote this comment on a LinkedIn post by Garrett Sussman who I've known for nearly as long as I've been an [SEO](/wiki/tech/seo/).
 
 This was his [original post](https://www.linkedin.com/posts/garrettsussman_at-least-50-of-people-dont-care-that-tools-activity-7041768961473925121-lIXj):
 
