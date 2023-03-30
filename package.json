@@ -7,29 +7,29 @@
     "build": "astro build"
   },
   "devDependencies": {
-    "@snowpack/plugin-svelte": "^3.1.0",
+    "@snowpack/plugin-svelte": "^3.7.0",
     "astro": "^2.1.8",
-    "prettier": "^2.6.2"
+    "prettier": "^2.8.7"
   },
   "dependencies": {
-    "@astrojs/markdown-component": "^1.0.1",
-    "@astrojs/markdown-remark": "^0.11.3",
-    "@astrojs/renderer-svelte": "^0.5.0",
-    "@astrojs/rss": "^2.1.1",
-    "@astrojs/sitemap": "^0.1.2",
+    "@astrojs/markdown-component": "^1.0.3",
+    "@astrojs/markdown-remark": "^2.1.2",
+    "@astrojs/renderer-svelte": "^0.5.2",
+    "@astrojs/rss": "^2.3.1",
+    "@astrojs/sitemap": "^1.2.1",
     "esbuild": "^0.17.14",
-    "esbuild-darwin-64": "^0.15.12",
-    "got": "^12.1.0",
-    "jsdom": "^20.0.0",
+    "esbuild-darwin-64": "^0.15.18",
+    "got": "^12.6.0",
+    "jsdom": "^21.1.1",
     "major": "^0.0.0",
     "mime": "^3.0.0",
-    "minimist": "^1.2.7",
+    "minimist": "^1.2.8",
     "react-dom": "^18.2.0",
-    "rollup-plugin-svelte": "^7.1.0",
-    "sitemapper": "^3.2.2",
+    "rollup-plugin-svelte": "^7.1.4",
+    "sitemapper": "^3.2.6",
     "ssr-utils": "^0.1.1-0",
-    "svelte": "^3.49.0",
-    "version": "^0.0.1",
-    "vite": "^2.9.12"
+    "svelte": "^3.57.0",
+    "version": "^0.1.2",
+    "vite": "^4.2.1"
   }
 }
