@@ -12,7 +12,7 @@ Oapy is a web app that uses OpenAI's GPT models to generate [SEO](/wiki/tech/seo
 ## Links
 
 * [Oapy](https://oapy-impression.streamlit.app/)
-* [Impression guide to Oapy](https://www.impression.co.uk/resources/tools/oapy/)
+* [Impression guide to Oapy](https://www.impressiondigital.com/resources/tools/oapy/)
 
 ## Requirements
 
