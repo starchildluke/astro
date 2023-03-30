@@ -8,7 +8,7 @@
   },
   "devDependencies": {
     "@snowpack/plugin-svelte": "^3.1.0",
-    "astro": "^1.9.2",
+    "astro": "^2.1.8",
     "prettier": "^2.6.2"
   },
   "dependencies": {
@@ -28,7 +28,7 @@
     "sitemapper": "^3.2.2",
     "ssr-utils": "^0.1.1-0",
     "svelte": "^3.49.0",
-    "version": "^0.0.4",
+    "version": "^0.0.1",
     "vite": "^2.9.12"
   }
 }
