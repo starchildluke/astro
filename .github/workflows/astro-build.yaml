@@ -38,7 +38,7 @@ jobs:
           SITE_URL: ${{ inputs.site-url }}
         run: |
           npm ci
-          npm run build
+          npm cache --force clean && npm run build --force
 
 # Please do not touch the following action
       - name: Store deployment content
