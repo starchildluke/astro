@@ -1,5 +1,5 @@
 ---
-title: 'Morsel #8 - Bandcamp Album Length Calculator'
+title: 'Morsel #8: Bandcamp Album Length Calculator'
 published: true
 date: '4 Feb 2023'
 layout: ../../../layouts/Morsels.astro

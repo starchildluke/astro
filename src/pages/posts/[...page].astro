@@ -115,7 +115,7 @@ let description = "";
     {postGroups.map(({ year, items }) => (
   <section>
     <h3>{year}</h3>
-    <ul>
+    <ul class="post-list">
     {items.map((post) => (
       <li class="post-listing">
         <a href={post.url}><Fragment set:html={post.frontmatter.title}></a>

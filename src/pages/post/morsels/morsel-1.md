@@ -1,5 +1,5 @@
 ---
-title: 'Morsel #1 - The Tag Suggester'
+title: 'Morsel #1: The Tag Suggester'
 published: true
 date: '15 Apr 2022'
 layout: ../../../layouts/Morsels.astro

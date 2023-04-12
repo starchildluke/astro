@@ -1,5 +1,5 @@
 ---
-title: "Last Donut Of The Night: When Federer and Dilla United For One Weekend"
+title: "Last Donut of the Night: when Federer & Dilla united for a weekend"
 date: "17 Dec 2016"
 layout: ../../layouts/BlogPost.astro
 tags:

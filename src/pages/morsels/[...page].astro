@@ -34,74 +34,6 @@ const { page } = Astro.props;
 <html lang="en">
   <head>
     <BaseHead title={title} description={description} canonicalURL={canonicalURL} />
-
-    <style>
-
-      .content {
-        margin-bottom: 8rem;
-      }
-
-      .content :global(main > * + *) {
-        margin-top: 1rem;
-      }
-
-      .intro {
-        padding-bottom: 1.4rem;
-      }
-
-      .intro > * {
-        margin: 0;
-      }
-
-      .content :global(main > * + *) {
-  margin-top: 1rem;
-}
-
-.post-listing {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between;
-  }
-
-.post-preview {
-  padding-bottom: 1rem;
-}
-
-.post-listing a {
-  max-width: 60%;
-}
-
-.publish-date {
-  letter-spacing: 2px;
-}
-
-header {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  align-items: flex-start;
-  justify-content: center;
-
-  padding-bottom: 2rem;
-}
-
-.title, .publish-date {
-  margin: 0;
-}
-
-.publish-date{
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-.title {
-  font-size: 2.25rem;
-  font-weight: 700;
-  color: var(--theme-text);
-}
-
-    </style>
   </head>
 
   <body>
@@ -117,7 +49,7 @@ header {
     <section>
        <ul class="post-list">
       {page.data.map(post => (
-            <li class="post-preview post-listing post-list">
+            <li class="post-listing">
               <a href={post.url}>{post.frontmatter.title}</a>
               <span class="publish-date">{post.frontmatter.date}</span>
             </li>

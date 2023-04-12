@@ -1,5 +1,5 @@
 ---
-title: 'Morsel #2 - The YouTube Thumbnail Extractor'
+title: 'Morsel #2: The YouTube Thumbnail Extractor'
 published: true
 date: '01 May 2022'
 layout: ../../../layouts/Morsels.astro

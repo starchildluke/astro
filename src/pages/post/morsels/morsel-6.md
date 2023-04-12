@@ -1,5 +1,5 @@
 ---
-title: 'Morsel #6 - Federer in The Guardian'
+title: 'Morsel #6: Federer in The Guardian'
 published: true
 date: '10 Jul 2022'
 layout: ../../../layouts/Morsels.astro

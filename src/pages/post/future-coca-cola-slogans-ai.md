@@ -65,7 +65,7 @@ While researching for a blog post about Coca-Cola, I found a list of their sloga
 </details>
 
 
-And that got me thinking... what would GPT-3.5 create based on those examples? So I put it in using a private "lite" version of Oapy with the following prompt:
+And that got me thinking... what would GPT-3.5 create based on those examples? So I put it in using a private "lite" version of [Oapy](/post/morsels/morsel-9/) with the following prompt:
 
 <code>Create 10 more Coca-Cola slogans based on the following examples and following the format: [THE ABOVE LIST WENT HERE]</code>
 
