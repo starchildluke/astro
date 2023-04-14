@@ -7,7 +7,7 @@
 <title>Morsel #3: a custom font preload fix in WordPress</title>
 <meta name="title" content="Morsel #3: a custom font preload fix in WordPress">
 <meta name="description">
-<meta name="generator" content="Astro v2.1.8">
+<meta name="generator" content="Astro v2.3.0">
 <link rel="canonical" href="https://lukealexdavis.co.uk/post/morsels/morsel-3/">
 <link rel="alternate" type="application/rss+xml" title="Luke Alex Davis" href="https://lukealexdavis.co.uk/feed/blog.xml">
 <!--link rel="preload" href="/fonts/Karla-Light-subset.woff2" as="font" type="font/woff" crossorigin-->
@@ -56,6 +56,7 @@
       <p class="publish-date">25 May 2022</p>
       <h1>Morsel #3: a custom font preload fix in WordPress</h1>
     <main>
+      
       <p>My third morsel is actually a WordPress fix.</p>
 <p>I decided to write this as I couldn’t find the answer I was looking for myself and thought it might help anyone who had the same problem in the future.</p>
 <p><strong>Problem</strong>: I realised the custom self-hosted fonts I was using on my WordPress sites weren’t actually loading. I realised this after seeing the following message:</p>
@@ -78,6 +79,7 @@
 <p><code>&#x3C;link rel="preload" href="PATH" type="font/woff2" as="font" crossorigin=""></code></p>
 <p>I’ve gone with woff2 only as it’s widely supported and smaller in file size, which compounds the benefits of preloading for page speed. Just be careful of <a href="https://fonts.google.com/knowledge/glossary/fout">FOUT</a> and set your <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control">Cache-Control headers</a>!</p>
 <p>And make sure to put that ahead of the <code>wp_head()</code> in your header.php file so it can preload before the CSS (I believe that’s how it works lol).</p>
+    
     </main>
   </article>
 </div>
