@@ -4,7 +4,7 @@ published: true
 date: '21 Aug 2020'
 layout: ../../layouts/BlogPost.astro
 tags:
-- '[film](/wiki/film/)'
+- 'film'
 ---
 
 Note: this post contains an Amazon affiliate link.

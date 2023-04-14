@@ -4,8 +4,8 @@ published: true
 date: '19 Jan 2020'
 layout: ../../layouts/BlogPost.astro
 tags:
-- illness
-- life
+- 'illness'
+- 'life'
 ---
 
 For the first time in a year, I got sick. It started with a sneeze on Thursday, then turned into a phlegmy throat, and it descended from there.

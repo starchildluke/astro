@@ -4,7 +4,7 @@ published: true
 date: "1 Jan 2017"
 layout: ../../layouts/BlogPost.astro
 tags:
-- life
+- 'life'
 ---
 
 Firstly, happy new year to you all!

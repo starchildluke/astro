@@ -27,6 +27,8 @@ const { post } = Astro.props;
 
 const remoteData = await fetch('https://cultrface.co.uk/wp-json/wp/v2/posts?categories=290&per_page=10').then(response => response.json());
 
+const siteData = await fetch('https://lukealexdavis.co.uk/sitemap.json').then(response => response.json()).then((json) => console.log(json));
+
 // METADATA VARIABLES
 
 let title = 'Architecture';

@@ -4,7 +4,7 @@ date: "6 Jan 2021"
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[COVID-19](/wiki/covid-19/)'
-- life
+- 'life'
 ---
 
 Happy new year. Sort of.

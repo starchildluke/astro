@@ -6,7 +6,7 @@ layout: ../../layouts/BlogPost.astro
 tags:
 - '[film](/wiki/film/)'
 - '[black](/wiki/black/)'
-- mental health
+- 'mental health'
 - '[me](/about/)'
 ---
 

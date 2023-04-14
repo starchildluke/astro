@@ -5,7 +5,7 @@ date: '27 Sept 2022'
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[me](/about/)'
-- '[happiness](/wiki/happiness/)'
+- "creativity"
 ---
 
 * 001 – Watching WWE Attitude Era matches

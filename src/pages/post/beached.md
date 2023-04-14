@@ -4,7 +4,7 @@ published: true
 date: '21 Jul 2021'
 layout: ../../layouts/BlogPost.astro
 tags:
-- creativity
+- "creativity"
 ---
 
 <iframe src="https://player.vimeo.com/video/1785993?color=ffffff" width="100%" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>

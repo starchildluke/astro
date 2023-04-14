@@ -3,8 +3,8 @@ title: 'Black and Tired'
 date: '21 Jun 2020'
 layout: ../../layouts/BlogPost.astro
 tags:
-- racism
-- life
+- 'racism'
+- 'life'
 ---
 
 How many times are non-Black people gonna derail the Black Lives Matter hashtag and in how many different ways?

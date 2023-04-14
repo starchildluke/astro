@@ -3,7 +3,7 @@ title: "Inspiring Creatives For 2017"
 date: "4 Jan 2017"
 layout: ../../layouts/BlogPost.astro
 tags:
-- creativity
+- 'creativity'
 ---
 
 _(This page contains Bookshop affiliate links where I receive a small profit for every sale.)_

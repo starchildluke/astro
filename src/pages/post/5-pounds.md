@@ -4,7 +4,7 @@ published: true
 date: '3 Sept 2022'
 layout: ../../layouts/BlogPost.astro
 tags:
-- 'creativity'
+- "creativity"
 ---
 
 Saturday morning  

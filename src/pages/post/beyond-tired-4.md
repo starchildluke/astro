@@ -3,8 +3,8 @@ title: "Beyond tired: Part 4"
 date: "12 Jul 2021"
 layout: ../../layouts/BlogPost.astro
 tags:
-- racism
-- life
+- 'racism'
+- 'life'
 ---
 
 Don't tell me you're disgusted at racism against Black footballers.  

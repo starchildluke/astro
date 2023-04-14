@@ -3,9 +3,9 @@ title: 'Artistic Inspirations'
 published: true
 date: '24 Sept 2017'
 layout: ../../layouts/BlogPost.astro
-tags: 
+tags:
 - '[art](/wiki/art/)'
-- inspiration
+- 'inspiration'
 ---
 
 * Jean-Michel Basquiat
