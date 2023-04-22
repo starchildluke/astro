@@ -19,6 +19,7 @@
     "@astrojs/renderer-svelte": "^0.5.2",
     "@astrojs/rss": "^2.3.1",
     "@astrojs/sitemap": "^1.2.1",
+    "@tinacms/cli": "^1.5.6",
     "esbuild": "^0.17.14",
     "got": "^12.6.0",
     "init": "^0.1.2",
@@ -32,6 +33,7 @@
     "sitemapper": "^3.2.6",
     "ssr-utils": "^0.1.1-0",
     "svelte": "^3.57.0",
+    "tinacms": "^1.4.6",
     "version": "^0.1.2",
     "vite": "^4.2.1"
   }
