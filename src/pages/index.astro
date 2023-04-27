@@ -12,7 +12,7 @@ let metaTitle = 'Luke Davis: technical SEO, music producer & creator';
 let title = 'Luke Davis';
 let description = 'The digital home of Luke Davis: a technical SEO, music producer, and content creator based in Nottingham, UK.';
 let slug = '/';
-let greetings = ['Bom dia!', 'Boa noite!', 'Buenos dias!', 'Buenos tardes!', 'Buenos noches!', 'Hola!', 'Ola!', 'Good morning!', 'Good afternoon!', 'Good evening!', 'Bonjour!', 'Bonsoir!'];
+let greetings = ['Bom dia!', 'Boa tarde!', 'Boa noite!', 'Buenos dias!', 'Buenos tardes!', 'Buenos noches!', 'Hola!', 'Ola!', 'Good morning!', 'Good afternoon!', 'Good evening!', 'Bonjour!', 'Bonsoir!'];
 let sayHello = greetings[Math.floor(Math.random()*greetings.length)];
 let canonicalURL = Astro.url;
 
@@ -27,8 +27,8 @@ let canonicalURL = Astro.url;
       <article class="content">
           <h1>{title}</h1>
       <h2 id="hello">{sayHello}</h2>
-      <p>I'm a technical SEO, music producer, and content creator based in Nottingham, UK. I specialise in technical creativity and problem solving with a pragmatic approach.</p>
-      <p>I'm also the founder of <a href="https://pandog.media">Pandog Media</a>, the home of <a href="https://sampleface.co.uk">Sampleface</a>, <a href="https://cultrface.co.uk">Cultrface</a>, <a href="https://logicface.co.uk">LOGiCFACE</a>, <a href="https://playrface.co.uk">Playrface</a>, and <a href="https://distantarcade.co.uk">Distant Arcade</a>.</p>
+      <p>I'm a technical SEO, music producer, advocate for ethical AI, and content creator based in Nottingham, UK. I specialise in technical creativity and problem solving with a pragmatic approach.</p>
+      <p>I currently work for <a href="https://www.impressiondigital.com/">Impression</a> and I'm also the founder of <a href="https://pandog.media">Pandog Media</a>, the home of <a href="https://sampleface.co.uk">Sampleface</a>, <a href="https://cultrface.co.uk">Cultrface</a>, <a href="https://logicface.co.uk">LOGiCFACE</a>, <a href="https://playrface.co.uk">Playrface</a>, and <a href="https://distantarcade.co.uk">Distant Arcade</a>.</p>
       <h2>Want to find out more?</h2>
       <p><a href="mailto:luke@lukealexdavis.co.uk">Send an email</a>, <a href="https://twitter.com/LukeDavisSEO">a tweet</a>, or read <a href="/about/">my about page</a>.</p>
       <p>There are ways you can <a href="/support/">support me</a> too.</p>
@@ -41,11 +41,11 @@ let canonicalURL = Astro.url;
   "@context":"https://schema.org",
   "@type":"Person",
   "mainEntityOfPage": "https://lukealexdavis.co.uk",
-  "description":"I'm a technical SEO, music producer, and content creator based in Nottingham, UK. I specialise in technical creativity, and problem solving with a pragmatic and minimalist style.",
+  "description":"I'm a technical SEO, music producer, advocate for ethical AI, and content creator based in Nottingham, UK. I specialise in technical creativity and problem solving with a pragmatic approach.",
   "image":["https://lukealexdavis.co.uk/images/k5t2wVcf-Luke-Davis-640x600.png","https://lukealexdavis.co.uk/images/lukedavis_jpg.jpg"],
   "url":"https://lukealexdavis.co.uk",
   "sameAs":["https://uk.linkedin.com/in/lukealexdavis", "https://twitter.com/LukeDavisSEO", "https://www.instagram.com/lukealexdavis/", "https://www.impressiondigital.com/about/our-team/luke-davis/", "https://www.searchenginejournal.com/author/luke-davis/", "https://www.semrush.com/user/147747585/", "https://www.adzooma.com/blog/author/lukedavis/", "https://www.patreon.com/lukealexdavis", "https://lukealexdavis.contently.com/", "https://ko-fi.com/lklxdvs"],
-  "subjectOf":["https://ccnworldtech.com/seo-interview-luke-davis/", "https://bytraject.com/blog/experimenting-with-seo-luke-davis/", "https://page2podcast.fm/episodes/45-luke-davis", "https://www.impressiondigital.com/resources/podcasts/technical-seo-automation-rankup-with-luke-davis/", "https://marketersofcolour.com/experimenting-with-seo-on-the-b-sides-with-luke-davis/", "https://www.cmdncmds.com/authors/luke-alex-davis/"],
+  "subjectOf":["https://ccnworldtech.com/seo-interview-luke-davis/", "https://bytraject.com/blog/experimenting-with-seo-luke-davis/", "https://page2podcast.fm/episodes/45-luke-davis", "https://www.impressiondigital.com/resources/podcasts/technical-seo-automation-rankup-with-luke-davis/", "https://marketersofcolour.com/experimenting-with-seo-on-the-b-sides-with-luke-davis/", "https://www.cmdncmds.com/authors/luke-alex-davis/", "https://www.youtube.com/watch?v=kpVi10kJ1Do"],
   "alternateName":["Luke Davis", "Luke Alex Davis"],
   "name":"Luke Davis",
   "familyName":"Davis",
@@ -58,14 +58,29 @@ let canonicalURL = Astro.url;
       {"@type":
       "PostalAddress","addressLocality":"Bradford","addressCountry":"United Kingdom"}}, 
  "nationality":{"@type":"Country","name":"United Kingdom"},
- "worksFor":{"@type":"Organization", "name":"Impression","url":"https://impression.co.uk/"},
-     "knowsAbout": {
+ "worksFor":{"@type":"Organization", "name":"Impression","url":"https://www.impressiondigital.com/"},
+     "knowsAbout": [{
        "type": "Thing",
        "name": "SEO",
        "sameas": "https://www.wikidata.org/wiki/Q180711",
        "description": "The practice of increasing online visibility on search engine results pages.",
        "alternatename": "Search Engine Optimization"
+     },
+     {
+       "type": "Thing",
+       "name": "artificial intelligence",
+       "sameas": "https://www.wikidata.org/wiki/Q11660",
+       "description": "field of computer science and engineering practices for intelligence demonstrated by machines and intelligent agents.",
+       "alternatename": "AI"
+     },
+     {
+       "type": "Thing",
+       "name": "Pokémon",
+       "sameas": "https://www.wikidata.org/wiki/Q864",
+       "description": "Pokémon is a Japanese media franchise managed by The Pokémon Company, founded by Nintendo, Game Freak, and Creatures. The franchise was created by Satoshi Tajiri in 1996, and is centered around fictional creatures called 'Pokémon'.",
+       "alternatename": ["Pokemon", "Pocket Monsters"]
      }
+   ]
    }
  </script>
   </body>
