@@ -1,5 +1,5 @@
 ---
-title: 'Emptygold Blogger'
+title: "I'm an Emptygold Blogger"
 published: true
 date: '10 Jan 2023'
 layout: ../../layouts/BlogPost.astro

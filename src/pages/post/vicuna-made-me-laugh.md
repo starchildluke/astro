@@ -59,6 +59,6 @@ I tried another pair of entities to see how they were linked (Martin Luther King
 ### More on AI
 
 * [/prompt-engineering.md](/post/prompt-engineering/)
-* [/ai-is-a-lot-like-an-orange.md](/post/ai-is-a-lot-like-an-orange)
+* [/ai-is-a-lot-like-an-orange.md](/post/ai-is-a-lot-like-an-orange/)
 * [/future-coca-cola-slogans-ai.md](/post/future-coca-cola-slogans-ai/)
 * [/a-poem-about-how-search-engines-cant-interpret-poems.md](/post/a-poem-about-how-search-engines-cant-interpret-poems/)
