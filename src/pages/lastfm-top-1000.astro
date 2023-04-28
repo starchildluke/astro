@@ -1,0 +1,47 @@
+---
+// COMPONENTS
+
+import BaseHead from '../components/BaseHead.astro';
+import BlogHeader from '../components/BlogHeader.astro';
+import BlogFooter from '../components/BlogFooter.astro';
+import BlogPostPreview from '../components/BlogPostPreview.astro';
+import lastfm from '../data/lastfm.json';
+
+// METADATA VARIABLES
+
+let title = 'My Last.fm Top 1000 Artists';
+let description = '';
+let canonicalURL = Astro.url;
+
+---
+<html lang="en">
+  <head>
+    <BaseHead title={title} description={description} canonicalURL={canonicalURL} />
+  </head>
+  <body>
+  <BlogHeader />
+  <main class="layout">
+    <article class="content">
+        <h1>{title}</h1>
+      <table>
+              <thead>
+                <tr>
+                  <th>Pos.</th>
+                  <th>Artist</th>
+                  <th>Playcount</th>
+                </tr>
+              </thead>
+              {lastfm.topartists.artist.map((item) => (
+              <tr>
+                  <td>{item.attr.rank}</td>
+                  <td><a href={item.url}>{item.name}</a></td>
+                  <td>{item.playcount.toLocaleString()}</td>
+                </tr>
+              ))}
+            </table>
+      
+  </article>
+</main>
+<BlogFooter></BlogFooter>
+</body>
+</html>

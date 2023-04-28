@@ -127,83 +127,83 @@
 <h2 id="the_code">The code</h2>
 <p>The code is split into different parts:</p>
 <h3 id="1-textrazor-api-key-and-client-details">1. TextRazor API key and client details</h3>
-<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9"># TextRazor details</span></span>
-<span class="line"><span style="color: #c9d1d9">textrazor.api_key = API_KEY</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">client = textrazor.TextRazor(extractors=["entities", "topics"])</span></span>
-<span class="line"><span style="color: #c9d1d9">client.set_classifiers(["textrazor_newscodes"])</span></span></code></pre>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #8B949E"># TextRazor details</span></span>
+<span class="line"><span style="color: #C9D1D9">textrazor.api_key </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> </span><span style="color: #79C0FF">API_KEY</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C9D1D9">client </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> textrazor.TextRazor(</span><span style="color: #FFA657">extractors</span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9">[</span><span style="color: #A5D6FF">"entities"</span><span style="color: #C9D1D9">, </span><span style="color: #A5D6FF">"topics"</span><span style="color: #C9D1D9">])</span></span>
+<span class="line"><span style="color: #C9D1D9">client.set_classifiers([</span><span style="color: #A5D6FF">"textrazor_newscodes"</span><span style="color: #C9D1D9">])</span></span></code></pre>
 <p>We set the API key (which you can generate with a free account on the TextRazor website) and tell the client to use the entities and topics extractors. We also set the classifiers to <code>textrazor_newscodes</code>. <a href="https://www.textrazor.com/classification">Find out more on TextRazor’s Classification page</a>.</p>
 <h3 id="2-function-for-loading-the-language-model-via-a-pipeline-using-zero-shot-classification-the-classification-process-plotting-the-results-and-web-scraping">2. Function for loading the language model via a pipeline using zero shot classification, the classification process, plotting the results, and web scraping</h3>
-<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9"># Load model</span></span>
-<span class="line"><span style="color: #c9d1d9">@st.cache(allow_output_mutation=True)</span></span>
-<span class="line"><span style="color: #c9d1d9">def load_model():</span></span>
-<span class="line"><span style="color: #c9d1d9">	return pipeline("zero-shot-classification", </span></span>
-<span class="line"><span style="color: #c9d1d9">	model='valhalla/distilbart-mnli-12-9', </span></span>
-<span class="line"><span style="color: #c9d1d9">	multi_label=True)</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9"># Classification function</span></span>
-<span class="line"><span style="color: #c9d1d9">def classify(sequences, candidate_labels):</span></span>
-<span class="line"><span style="color: #c9d1d9">	output_results = load_model()(sequences=sequences,</span></span>
-<span class="line"><span style="color: #c9d1d9">		candidate_labels=candidate_labels)</span></span>
-<span class="line"><span style="color: #c9d1d9">	return output_results['labels'], output_results['scores']</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9"># Graph plot function</span></span>
-<span class="line"><span style="color: #c9d1d9">def plot_result(top_topics, scores):</span></span>
-<span class="line"><span style="color: #c9d1d9">	top_topics = np.array(top_topics)</span></span>
-<span class="line"><span style="color: #c9d1d9">	scores = np.array(scores)</span></span>
-<span class="line"><span style="color: #c9d1d9">	scores *= 100</span></span>
-<span class="line"><span style="color: #c9d1d9">	fig = px.bar(x=scores, </span></span>
-<span class="line"><span style="color: #c9d1d9">		y=top_topics,</span></span>
-<span class="line"><span style="color: #c9d1d9">		orientation='h', </span></span>
-<span class="line"><span style="color: #c9d1d9">		labels={'x': 'Confidence', 'y': 'Label'},</span></span>
-<span class="line"><span style="color: #c9d1d9">		text=scores,</span></span>
-<span class="line"><span style="color: #c9d1d9">		range_x=(0,115),</span></span>
-<span class="line"><span style="color: #c9d1d9">		title='Top Predictions',</span></span>
-<span class="line"><span style="color: #c9d1d9">		color=np.linspace(0,1,len(scores)),</span></span>
-<span class="line"><span style="color: #c9d1d9">		color_continuous_scale='GnBu')</span></span>
-<span class="line"><span style="color: #c9d1d9">	fig.update(layout_coloraxis_showscale=False)</span></span>
-<span class="line"><span style="color: #c9d1d9">	fig.update_traces(texttemplate='%{text:0.1f}%',</span></span>
-<span class="line"><span style="color: #c9d1d9">	textposition='outside')</span></span>
-<span class="line"><span style="color: #c9d1d9">	st.plotly_chart(fig)</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">def req(url):</span></span>
-<span class="line"><span style="color: #c9d1d9">	resp = requests.get(url)</span></span>
-<span class="line"><span style="color: #c9d1d9">	soup = BeautifulSoup(resp.content, 'html.parser')</span></span>
-<span class="line"><span style="color: #c9d1d9">	if soup.find("div", id="comments") or soup.find("div", id="secondary"):</span></span>
-<span class="line"><span style="color: #c9d1d9">		remove_comments = soup.find("div", id="comments")</span></span>
-<span class="line"><span style="color: #c9d1d9">		remove_comments.extract()</span></span>
-<span class="line"><span style="color: #c9d1d9">		remove_secondary = soup.find("div", id="secondary")</span></span>
-<span class="line"><span style="color: #c9d1d9">		remove_secondary.extract()</span></span>
-<span class="line"><span style="color: #c9d1d9">		ext_t = [t.text for t in soup.find_all(['h1', 'p'])]</span></span>
-<span class="line"><span style="color: #c9d1d9">		paragraphs = ' '.join(ext_t)</span></span>
-<span class="line"><span style="color: #c9d1d9">		return paragraphs</span></span>
-<span class="line"><span style="color: #c9d1d9">	else:</span></span>
-<span class="line"><span style="color: #c9d1d9">		ext_t = [t.text for t in soup.find_all(['h1', 'p'])]</span></span>
-<span class="line"><span style="color: #c9d1d9">		paragraphs = ' '.join(ext_t)</span></span>
-<span class="line"><span style="color: #c9d1d9">		return paragraphs</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9"># Main function</span></span>
-<span class="line"><span style="color: #c9d1d9">def main():</span></span>
-<span class="line"><span style="color: #c9d1d9">	with st.spinner('Classifying...'):</span></span>
-<span class="line"><span style="color: #c9d1d9">		global txt</span></span>
-<span class="line"><span style="color: #c9d1d9">		df_classify_topic = pd.DataFrame(topics_dict)</span></span>
-<span class="line"><span style="color: #c9d1d9">		df_classify_topic = df_classify_topic.sort_values(</span></span>
-<span class="line"><span style="color: #c9d1d9">			by='Relevance Score', ascending=False)</span></span>
-<span class="line"><span style="color: #c9d1d9">		classify_topic_score = list(</span></span>
-<span class="line"><span style="color: #c9d1d9">			df_classify_topic['Topic'][:10])</span></span>
-<span class="line"><span style="color: #c9d1d9">		if input_type == 'Text':</span></span>
-<span class="line"><span style="color: #c9d1d9">			top_topics, scores = classify(</span></span>
-<span class="line"><span style="color: #c9d1d9">				txt, classify_topic_score)</span></span>
-<span class="line"><span style="color: #c9d1d9">		elif input_type == 'URL':</span></span>
-<span class="line"><span style="color: #c9d1d9">			txt = req(url)</span></span>
-<span class="line"><span style="color: #c9d1d9">			top_topics, scores = classify(</span></span>
-<span class="line"><span style="color: #c9d1d9">				txt, classify_topic_score)</span></span>
-<span class="line"><span style="color: #c9d1d9">		elif input_type == 'Multiple URLs':</span></span>
-<span class="line"><span style="color: #c9d1d9">			txt = ' '.join(all_txt)</span></span>
-<span class="line"><span style="color: #c9d1d9">			top_topics, scores = classify(</span></span>
-<span class="line"><span style="color: #c9d1d9">				txt, classify_topic_score)</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">	plot_result(top_topics[::-1][-10:], scores[::-1][-10:])</span></span></code></pre>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #8B949E"># Load model</span></span>
+<span class="line"><span style="color: #D2A8FF">@st.cache</span><span style="color: #C9D1D9">(</span><span style="color: #FFA657">allow_output_mutation</span><span style="color: #FF7B72">=</span><span style="color: #79C0FF">True</span><span style="color: #C9D1D9">)</span></span>
+<span class="line"><span style="color: #FF7B72">def</span><span style="color: #C9D1D9"> </span><span style="color: #D2A8FF">load_model</span><span style="color: #C9D1D9">():</span></span>
+<span class="line"><span style="color: #C9D1D9">  </span><span style="color: #FF7B72">return</span><span style="color: #C9D1D9"> pipeline(</span><span style="color: #A5D6FF">"zero-shot-classification"</span><span style="color: #C9D1D9">, </span></span>
+<span class="line"><span style="color: #C9D1D9">  </span><span style="color: #FFA657">model</span><span style="color: #FF7B72">=</span><span style="color: #A5D6FF">'valhalla/distilbart-mnli-12-9'</span><span style="color: #C9D1D9">, </span></span>
+<span class="line"><span style="color: #C9D1D9">  </span><span style="color: #FFA657">multi_label</span><span style="color: #FF7B72">=</span><span style="color: #79C0FF">True</span><span style="color: #C9D1D9">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #8B949E"># Classification function</span></span>
+<span class="line"><span style="color: #FF7B72">def</span><span style="color: #C9D1D9"> </span><span style="color: #D2A8FF">classify</span><span style="color: #C9D1D9">(sequences, candidate_labels):</span></span>
+<span class="line"><span style="color: #C9D1D9">  output_results </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> load_model()(</span><span style="color: #FFA657">sequences</span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9">sequences,</span></span>
+<span class="line"><span style="color: #C9D1D9">    </span><span style="color: #FFA657">candidate_labels</span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9">candidate_labels)</span></span>
+<span class="line"><span style="color: #C9D1D9">  </span><span style="color: #FF7B72">return</span><span style="color: #C9D1D9"> output_results[</span><span style="color: #A5D6FF">'labels'</span><span style="color: #C9D1D9">], output_results[</span><span style="color: #A5D6FF">'scores'</span><span style="color: #C9D1D9">]</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #8B949E"># Graph plot function</span></span>
+<span class="line"><span style="color: #FF7B72">def</span><span style="color: #C9D1D9"> </span><span style="color: #D2A8FF">plot_result</span><span style="color: #C9D1D9">(top_topics, scores):</span></span>
+<span class="line"><span style="color: #C9D1D9">  top_topics </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> np.array(top_topics)</span></span>
+<span class="line"><span style="color: #C9D1D9">  scores </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> np.array(scores)</span></span>
+<span class="line"><span style="color: #C9D1D9">  scores </span><span style="color: #FF7B72">*=</span><span style="color: #C9D1D9"> </span><span style="color: #79C0FF">100</span></span>
+<span class="line"><span style="color: #C9D1D9">  fig </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> px.bar(</span><span style="color: #FFA657">x</span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9">scores, </span></span>
+<span class="line"><span style="color: #C9D1D9">    </span><span style="color: #FFA657">y</span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9">top_topics,</span></span>
+<span class="line"><span style="color: #C9D1D9">    </span><span style="color: #FFA657">orientation</span><span style="color: #FF7B72">=</span><span style="color: #A5D6FF">'h'</span><span style="color: #C9D1D9">, </span></span>
+<span class="line"><span style="color: #C9D1D9">    </span><span style="color: #FFA657">labels</span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9">{</span><span style="color: #A5D6FF">'x'</span><span style="color: #C9D1D9">: </span><span style="color: #A5D6FF">'Confidence'</span><span style="color: #C9D1D9">, </span><span style="color: #A5D6FF">'y'</span><span style="color: #C9D1D9">: </span><span style="color: #A5D6FF">'Label'</span><span style="color: #C9D1D9">},</span></span>
+<span class="line"><span style="color: #C9D1D9">    </span><span style="color: #FFA657">text</span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9">scores,</span></span>
+<span class="line"><span style="color: #C9D1D9">    </span><span style="color: #FFA657">range_x</span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9">(</span><span style="color: #79C0FF">0</span><span style="color: #C9D1D9">,</span><span style="color: #79C0FF">115</span><span style="color: #C9D1D9">),</span></span>
+<span class="line"><span style="color: #C9D1D9">    </span><span style="color: #FFA657">title</span><span style="color: #FF7B72">=</span><span style="color: #A5D6FF">'Top Predictions'</span><span style="color: #C9D1D9">,</span></span>
+<span class="line"><span style="color: #C9D1D9">    </span><span style="color: #FFA657">color</span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9">np.linspace(</span><span style="color: #79C0FF">0</span><span style="color: #C9D1D9">,</span><span style="color: #79C0FF">1</span><span style="color: #C9D1D9">,</span><span style="color: #79C0FF">len</span><span style="color: #C9D1D9">(scores)),</span></span>
+<span class="line"><span style="color: #C9D1D9">    </span><span style="color: #FFA657">color_continuous_scale</span><span style="color: #FF7B72">=</span><span style="color: #A5D6FF">'GnBu'</span><span style="color: #C9D1D9">)</span></span>
+<span class="line"><span style="color: #C9D1D9">  fig.update(</span><span style="color: #FFA657">layout_coloraxis_showscale</span><span style="color: #FF7B72">=</span><span style="color: #79C0FF">False</span><span style="color: #C9D1D9">)</span></span>
+<span class="line"><span style="color: #C9D1D9">  fig.update_traces(</span><span style="color: #FFA657">texttemplate</span><span style="color: #FF7B72">=</span><span style="color: #A5D6FF">'%</span><span style="color: #79C0FF">{text</span><span style="color: #FF7B72">:0.1f</span><span style="color: #79C0FF">}</span><span style="color: #A5D6FF">%'</span><span style="color: #C9D1D9">,</span></span>
+<span class="line"><span style="color: #C9D1D9">  </span><span style="color: #FFA657">textposition</span><span style="color: #FF7B72">=</span><span style="color: #A5D6FF">'outside'</span><span style="color: #C9D1D9">)</span></span>
+<span class="line"><span style="color: #C9D1D9">  st.plotly_chart(fig)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #FF7B72">def</span><span style="color: #C9D1D9"> </span><span style="color: #D2A8FF">req</span><span style="color: #C9D1D9">(url):</span></span>
+<span class="line"><span style="color: #C9D1D9">  resp </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> requests.get(url)</span></span>
+<span class="line"><span style="color: #C9D1D9">  soup </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> BeautifulSoup(resp.content, </span><span style="color: #A5D6FF">'html.parser'</span><span style="color: #C9D1D9">)</span></span>
+<span class="line"><span style="color: #C9D1D9">  </span><span style="color: #FF7B72">if</span><span style="color: #C9D1D9"> soup.find(</span><span style="color: #A5D6FF">"div"</span><span style="color: #C9D1D9">, </span><span style="color: #FFA657">id</span><span style="color: #FF7B72">=</span><span style="color: #A5D6FF">"comments"</span><span style="color: #C9D1D9">) </span><span style="color: #FF7B72">or</span><span style="color: #C9D1D9"> soup.find(</span><span style="color: #A5D6FF">"div"</span><span style="color: #C9D1D9">, </span><span style="color: #FFA657">id</span><span style="color: #FF7B72">=</span><span style="color: #A5D6FF">"secondary"</span><span style="color: #C9D1D9">):</span></span>
+<span class="line"><span style="color: #C9D1D9">    remove_comments </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> soup.find(</span><span style="color: #A5D6FF">"div"</span><span style="color: #C9D1D9">, </span><span style="color: #FFA657">id</span><span style="color: #FF7B72">=</span><span style="color: #A5D6FF">"comments"</span><span style="color: #C9D1D9">)</span></span>
+<span class="line"><span style="color: #C9D1D9">    remove_comments.extract()</span></span>
+<span class="line"><span style="color: #C9D1D9">    remove_secondary </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> soup.find(</span><span style="color: #A5D6FF">"div"</span><span style="color: #C9D1D9">, </span><span style="color: #FFA657">id</span><span style="color: #FF7B72">=</span><span style="color: #A5D6FF">"secondary"</span><span style="color: #C9D1D9">)</span></span>
+<span class="line"><span style="color: #C9D1D9">    remove_secondary.extract()</span></span>
+<span class="line"><span style="color: #C9D1D9">    ext_t </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> [t.text </span><span style="color: #FF7B72">for</span><span style="color: #C9D1D9"> t </span><span style="color: #FF7B72">in</span><span style="color: #C9D1D9"> soup.find_all([</span><span style="color: #A5D6FF">'h1'</span><span style="color: #C9D1D9">, </span><span style="color: #A5D6FF">'p'</span><span style="color: #C9D1D9">])]</span></span>
+<span class="line"><span style="color: #C9D1D9">    paragraphs </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> </span><span style="color: #A5D6FF">' '</span><span style="color: #C9D1D9">.join(ext_t)</span></span>
+<span class="line"><span style="color: #C9D1D9">    </span><span style="color: #FF7B72">return</span><span style="color: #C9D1D9"> paragraphs</span></span>
+<span class="line"><span style="color: #C9D1D9">  </span><span style="color: #FF7B72">else</span><span style="color: #C9D1D9">:</span></span>
+<span class="line"><span style="color: #C9D1D9">    ext_t </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> [t.text </span><span style="color: #FF7B72">for</span><span style="color: #C9D1D9"> t </span><span style="color: #FF7B72">in</span><span style="color: #C9D1D9"> soup.find_all([</span><span style="color: #A5D6FF">'h1'</span><span style="color: #C9D1D9">, </span><span style="color: #A5D6FF">'p'</span><span style="color: #C9D1D9">])]</span></span>
+<span class="line"><span style="color: #C9D1D9">    paragraphs </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> </span><span style="color: #A5D6FF">' '</span><span style="color: #C9D1D9">.join(ext_t)</span></span>
+<span class="line"><span style="color: #C9D1D9">    </span><span style="color: #FF7B72">return</span><span style="color: #C9D1D9"> paragraphs</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #8B949E"># Main function</span></span>
+<span class="line"><span style="color: #FF7B72">def</span><span style="color: #C9D1D9"> </span><span style="color: #D2A8FF">main</span><span style="color: #C9D1D9">():</span></span>
+<span class="line"><span style="color: #C9D1D9">  </span><span style="color: #FF7B72">with</span><span style="color: #C9D1D9"> st.spinner(</span><span style="color: #A5D6FF">'Classifying...'</span><span style="color: #C9D1D9">):</span></span>
+<span class="line"><span style="color: #C9D1D9">    </span><span style="color: #FF7B72">global</span><span style="color: #C9D1D9"> txt</span></span>
+<span class="line"><span style="color: #C9D1D9">    df_classify_topic </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> pd.DataFrame(topics_dict)</span></span>
+<span class="line"><span style="color: #C9D1D9">    df_classify_topic </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> df_classify_topic.sort_values(</span></span>
+<span class="line"><span style="color: #C9D1D9">      </span><span style="color: #FFA657">by</span><span style="color: #FF7B72">=</span><span style="color: #A5D6FF">'Relevance Score'</span><span style="color: #C9D1D9">, </span><span style="color: #FFA657">ascending</span><span style="color: #FF7B72">=</span><span style="color: #79C0FF">False</span><span style="color: #C9D1D9">)</span></span>
+<span class="line"><span style="color: #C9D1D9">    classify_topic_score </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> </span><span style="color: #79C0FF">list</span><span style="color: #C9D1D9">(</span></span>
+<span class="line"><span style="color: #C9D1D9">      df_classify_topic[</span><span style="color: #A5D6FF">'Topic'</span><span style="color: #C9D1D9">][:</span><span style="color: #79C0FF">10</span><span style="color: #C9D1D9">])</span></span>
+<span class="line"><span style="color: #C9D1D9">    </span><span style="color: #FF7B72">if</span><span style="color: #C9D1D9"> input_type </span><span style="color: #FF7B72">==</span><span style="color: #C9D1D9"> </span><span style="color: #A5D6FF">'Text'</span><span style="color: #C9D1D9">:</span></span>
+<span class="line"><span style="color: #C9D1D9">      top_topics, scores </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> classify(</span></span>
+<span class="line"><span style="color: #C9D1D9">        txt, classify_topic_score)</span></span>
+<span class="line"><span style="color: #C9D1D9">    </span><span style="color: #FF7B72">elif</span><span style="color: #C9D1D9"> input_type </span><span style="color: #FF7B72">==</span><span style="color: #C9D1D9"> </span><span style="color: #A5D6FF">'URL'</span><span style="color: #C9D1D9">:</span></span>
+<span class="line"><span style="color: #C9D1D9">      txt </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> req(url)</span></span>
+<span class="line"><span style="color: #C9D1D9">      top_topics, scores </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> classify(</span></span>
+<span class="line"><span style="color: #C9D1D9">        txt, classify_topic_score)</span></span>
+<span class="line"><span style="color: #C9D1D9">    </span><span style="color: #FF7B72">elif</span><span style="color: #C9D1D9"> input_type </span><span style="color: #FF7B72">==</span><span style="color: #C9D1D9"> </span><span style="color: #A5D6FF">'Multiple URLs'</span><span style="color: #C9D1D9">:</span></span>
+<span class="line"><span style="color: #C9D1D9">      txt </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> </span><span style="color: #A5D6FF">' '</span><span style="color: #C9D1D9">.join(all_txt)</span></span>
+<span class="line"><span style="color: #C9D1D9">      top_topics, scores </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> classify(</span></span>
+<span class="line"><span style="color: #C9D1D9">        txt, classify_topic_score)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C9D1D9">  plot_result(top_topics[::</span><span style="color: #FF7B72">-</span><span style="color: #79C0FF">1</span><span style="color: #C9D1D9">][</span><span style="color: #FF7B72">-</span><span style="color: #79C0FF">10</span><span style="color: #C9D1D9">:], scores[::</span><span style="color: #FF7B72">-</span><span style="color: #79C0FF">1</span><span style="color: #C9D1D9">][</span><span style="color: #FF7B72">-</span><span style="color: #79C0FF">10</span><span style="color: #C9D1D9">:])</span></span></code></pre>
 <p>There’s a lot here so I’ll break it down further.</p>
 <p>The first function loads the distilbart model for this task and uses zero-shot classification to determine classification. I have also set a cache so it doesn’t reload every time, which saves loading time and CPU/GPU resources.</p>
 <p>The second function is for the actual classification. It loads the model, and generates output results containing the labels and the relevance scores for each. Which labels we use are determined later.</p>
@@ -213,400 +213,406 @@
 <p>The fourth function is the URL scraper. It takes a URL, extracts the HTML, ignores any comments sections or text found in sidebars (<a href="https://twitter.com/jessthebp/status/1496153327779950604">thanks to Jess for the help with that</a>) and finally filters the remaining text down to just the H1 title and text found in p tags, ready for analysis.</p>
 <p>The fifth and final function brings everything together. It creates dataframes out of the found entities and topics and orders them by relevance score for ease.</p>
 <h3 id="3-dictionaries">3. Dictionaries</h3>
-<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">kw_dict = {</span></span>
-<span class="line"><span style="color: #c9d1d9">	'Keyword': []</span></span>
-<span class="line"><span style="color: #c9d1d9">}</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">ent_dict = {</span></span>
-<span class="line"><span style="color: #c9d1d9">	'Keyword': [],</span></span>
-<span class="line"><span style="color: #c9d1d9">	'Relevance Score': [],</span></span>
-<span class="line"><span style="color: #c9d1d9">	'Existing Tag': []</span></span>
-<span class="line"><span style="color: #c9d1d9">}</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">topics_dict = {</span></span>
-<span class="line"><span style="color: #c9d1d9">	'Topic': [],</span></span>
-<span class="line"><span style="color: #c9d1d9">	'Relevance Score': [],</span></span>
-<span class="line"><span style="color: #c9d1d9">	'Existing Tag': []</span></span>
-<span class="line"><span style="color: #c9d1d9">}</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">categories_dict = {</span></span>
-<span class="line"><span style="color: #c9d1d9">	'Category': [],</span></span>
-<span class="line"><span style="color: #c9d1d9">	'Relevance Score': []</span></span>
-<span class="line"><span style="color: #c9d1d9">}</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">tags = {</span></span>
-<span class="line"><span style="color: #c9d1d9">	'Tag': [],</span></span>
-<span class="line"><span style="color: #c9d1d9">	'ID': [],</span></span>
-<span class="line"><span style="color: #c9d1d9">	'Count': []</span></span>
-<span class="line"><span style="color: #c9d1d9">}</span></span></code></pre>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #C9D1D9">kw_dict </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> {</span></span>
+<span class="line"><span style="color: #C9D1D9">  </span><span style="color: #A5D6FF">'Keyword'</span><span style="color: #C9D1D9">: []</span></span>
+<span class="line"><span style="color: #C9D1D9">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C9D1D9">ent_dict </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> {</span></span>
+<span class="line"><span style="color: #C9D1D9">  </span><span style="color: #A5D6FF">'Keyword'</span><span style="color: #C9D1D9">: [],</span></span>
+<span class="line"><span style="color: #C9D1D9">  </span><span style="color: #A5D6FF">'Relevance Score'</span><span style="color: #C9D1D9">: [],</span></span>
+<span class="line"><span style="color: #C9D1D9">  </span><span style="color: #A5D6FF">'Existing Tag'</span><span style="color: #C9D1D9">: []</span></span>
+<span class="line"><span style="color: #C9D1D9">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C9D1D9">topics_dict </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> {</span></span>
+<span class="line"><span style="color: #C9D1D9">  </span><span style="color: #A5D6FF">'Topic'</span><span style="color: #C9D1D9">: [],</span></span>
+<span class="line"><span style="color: #C9D1D9">  </span><span style="color: #A5D6FF">'Relevance Score'</span><span style="color: #C9D1D9">: [],</span></span>
+<span class="line"><span style="color: #C9D1D9">  </span><span style="color: #A5D6FF">'Existing Tag'</span><span style="color: #C9D1D9">: []</span></span>
+<span class="line"><span style="color: #C9D1D9">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C9D1D9">categories_dict </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> {</span></span>
+<span class="line"><span style="color: #C9D1D9">  </span><span style="color: #A5D6FF">'Category'</span><span style="color: #C9D1D9">: [],</span></span>
+<span class="line"><span style="color: #C9D1D9">  </span><span style="color: #A5D6FF">'Relevance Score'</span><span style="color: #C9D1D9">: []</span></span>
+<span class="line"><span style="color: #C9D1D9">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C9D1D9">tags </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> {</span></span>
+<span class="line"><span style="color: #C9D1D9">  </span><span style="color: #A5D6FF">'Tag'</span><span style="color: #C9D1D9">: [],</span></span>
+<span class="line"><span style="color: #C9D1D9">  </span><span style="color: #A5D6FF">'ID'</span><span style="color: #C9D1D9">: [],</span></span>
+<span class="line"><span style="color: #C9D1D9">  </span><span style="color: #A5D6FF">'Count'</span><span style="color: #C9D1D9">: []</span></span>
+<span class="line"><span style="color: #C9D1D9">}</span></span></code></pre>
 <p>Arguably the easiest part, just setting the dictionaries for our entity outputs as well as the tags for the additional part of our script which is up next.</p>
 <h3 id="4-establishing-the-blogs-to-cross-reference-my-entities-with-their-respective-tag-lists">4. Establishing the blogs to cross-reference my entities with their respective tag lists</h3>
-<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9"># Blog list</span></span>
-<span class="line"><span style="color: #c9d1d9">blogs = ['sampleface.co.uk', 'cultrface.co.uk', 'logicface.co.uk', 'playrface.co.uk', 'distantarcade.co.uk']</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9"># Empty lists for existing tags and text from multiple URLs to go in</span></span>
-<span class="line"><span style="color: #c9d1d9">existing_tags = []</span></span>
-<span class="line"><span style="color: #c9d1d9">all_txt = []</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9"># Upper limits for tag page range</span></span>
-<span class="line"><span style="color: #c9d1d9">upper_limits = {</span></span>
-<span class="line"><span style="color: #c9d1d9">	'sampleface.co.uk': 4,</span></span>
-<span class="line"><span style="color: #c9d1d9">	'cultrface.co.uk': 4,</span></span>
-<span class="line"><span style="color: #c9d1d9">	'logicface.co.uk': 2,</span></span>
-<span class="line"><span style="color: #c9d1d9">	'playrface.co.uk': 2,</span></span>
-<span class="line"><span style="color: #c9d1d9">	'distantarcade.co.uk': 2,</span></span>
-<span class="line"><span style="color: #c9d1d9">	'ld89.org': 1</span></span>
-<span class="line"><span style="color: #c9d1d9">}</span></span></code></pre>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #8B949E"># Blog list</span></span>
+<span class="line"><span style="color: #C9D1D9">blogs </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> [</span><span style="color: #A5D6FF">'sampleface.co.uk'</span><span style="color: #C9D1D9">,</span></span>
+<span class="line"><span style="color: #C9D1D9">	</span><span style="color: #A5D6FF">'cultrface.co.uk'</span><span style="color: #C9D1D9">,</span></span>
+<span class="line"><span style="color: #C9D1D9">	</span><span style="color: #A5D6FF">'logicface.co.uk'</span><span style="color: #C9D1D9">,</span></span>
+<span class="line"><span style="color: #C9D1D9">	</span><span style="color: #A5D6FF">'playrface.co.uk'</span><span style="color: #C9D1D9">,</span></span>
+<span class="line"><span style="color: #C9D1D9">	</span><span style="color: #A5D6FF">'distantarcade.co.uk'</span><span style="color: #C9D1D9">]</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #8B949E"># Empty lists for existing tags and text from multiple URLs</span></span>
+<span class="line"><span style="color: #C9D1D9">existing_tags </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> []</span></span>
+<span class="line"><span style="color: #C9D1D9">all_txt </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> []</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #8B949E"># Upper limits for tag page range</span></span>
+<span class="line"><span style="color: #C9D1D9">upper_limits </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> {</span></span>
+<span class="line"><span style="color: #C9D1D9">  </span><span style="color: #A5D6FF">'sampleface.co.uk'</span><span style="color: #C9D1D9">: </span><span style="color: #79C0FF">4</span><span style="color: #C9D1D9">,</span></span>
+<span class="line"><span style="color: #C9D1D9">  </span><span style="color: #A5D6FF">'cultrface.co.uk'</span><span style="color: #C9D1D9">: </span><span style="color: #79C0FF">4</span><span style="color: #C9D1D9">,</span></span>
+<span class="line"><span style="color: #C9D1D9">  </span><span style="color: #A5D6FF">'logicface.co.uk'</span><span style="color: #C9D1D9">: </span><span style="color: #79C0FF">2</span><span style="color: #C9D1D9">,</span></span>
+<span class="line"><span style="color: #C9D1D9">  </span><span style="color: #A5D6FF">'playrface.co.uk'</span><span style="color: #C9D1D9">: </span><span style="color: #79C0FF">2</span><span style="color: #C9D1D9">,</span></span>
+<span class="line"><span style="color: #C9D1D9">  </span><span style="color: #A5D6FF">'distantarcade.co.uk'</span><span style="color: #C9D1D9">: </span><span style="color: #79C0FF">2</span><span style="color: #C9D1D9">,</span></span>
+<span class="line"><span style="color: #C9D1D9">  </span><span style="color: #A5D6FF">'ld89.org'</span><span style="color: #C9D1D9">: </span><span style="color: #79C0FF">1</span></span>
+<span class="line"><span style="color: #C9D1D9">}</span></span></code></pre>
 <p>Here, we introduce the blogs for our content ideas generator using tags from my blogs. I made a list of all 5 blogs to choose, created empty lists to add existing tags and set upper limits for the tag page ranges.</p>
 <p>The tag data comes from WordPress’s REST API which lists various elements of a WordPress blog such as tags, categories, posts, and media. For the tags, I can pull data at 100 tags per page but when I need to run the for-loop to pull what I need, I need to set an upper limit (eg. if I have 350 tags, the range would be from 0 to 4).</p>
 <p>Also, I have to set this upper limit manually as I have no way of automating it (but if such a way exists, please let me know!)</p>
 <h3 id="5-the-streamlit-ui-stuff">5. The Streamlit UI stuff</h3>
-<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9"># Streamlit stuff</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">st.sidebar.title('Tag suggester')</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">input_type = st.sidebar.radio('Select your input type', ['Text', 'URL', 'Multiple URLs'])</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">update_tags = st.sidebar.button('↻ Refresh tags')</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">tag_ideas = st.sidebar.button('Load tag ideas')</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9"># Determines input types</span></span>
-<span class="line"><span style="color: #c9d1d9">st.title('Welcome to RALTS (Really Awesome Lexicon and Tag Suggester)!')</span></span>
-<span class="line"><span style="color: #c9d1d9">st.write('This script can analyse any body of text or URL to find extract keywords, topics, and categories using NLP (natural language processing).')</span></span>
-<span class="line"><span style="color: #c9d1d9">if input_type == 'Text':</span></span>
-<span class="line"><span style="color: #c9d1d9">	txt = st.text_area('Enter text to be analysed...')</span></span>
-<span class="line"><span style="color: #c9d1d9">	txt = txt.replace('\n', ' ').replace('"', '').replace('“','').replace('”', '').replace('‘','').replace('’', '').replace("'s", '').replace(",", '')</span></span>
-<span class="line"><span style="color: #c9d1d9">	st.write(len(txt))</span></span>
-<span class="line"><span style="color: #c9d1d9">elif input_type == 'URL':</span></span>
-<span class="line"><span style="color: #c9d1d9">	url = st.text_input('Enter URL')</span></span>
-<span class="line"><span style="color: #c9d1d9">elif input_type == 'Multiple URLs':</span></span>
-<span class="line"><span style="color: #c9d1d9">	multi_url = st.text_area('Enter keywords, 1 per line')</span></span></code></pre>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #8B949E"># Streamlit stuff</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C9D1D9">st.sidebar.title(</span><span style="color: #A5D6FF">'Tag suggester'</span><span style="color: #C9D1D9">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C9D1D9">input_type </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> st.sidebar.radio(</span></span>
+<span class="line"><span style="color: #C9D1D9">	</span><span style="color: #A5D6FF">'Select your input type'</span><span style="color: #C9D1D9">,</span></span>
+<span class="line"><span style="color: #C9D1D9">	[</span><span style="color: #A5D6FF">'Text'</span><span style="color: #C9D1D9">, </span><span style="color: #A5D6FF">'URL'</span><span style="color: #C9D1D9">, </span><span style="color: #A5D6FF">'Multiple URLs'</span><span style="color: #C9D1D9">])</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C9D1D9">update_tags </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> st.sidebar.button(</span><span style="color: #A5D6FF">'↻ Refresh tags'</span><span style="color: #C9D1D9">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C9D1D9">tag_ideas </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> st.sidebar.button(</span><span style="color: #A5D6FF">'Load tag ideas'</span><span style="color: #C9D1D9">)</span></span>
+<span class="line"></span>
+<span class="line"></span>
+<span class="line"><span style="color: #8B949E"># Determines input types</span></span>
+<span class="line"><span style="color: #C9D1D9">st.title(</span><span style="color: #A5D6FF">'Welcome to RALTS (Really Awesome Lexicon and Tag Suggester)!'</span><span style="color: #C9D1D9">)</span></span>
+<span class="line"><span style="color: #C9D1D9">st.write(</span><span style="color: #A5D6FF">'This script can analyse any body of text or URL to find extract keywords, topics, and categories using NLP (natural language processing).'</span><span style="color: #C9D1D9">)</span></span>
+<span class="line"><span style="color: #FF7B72">if</span><span style="color: #C9D1D9"> input_type </span><span style="color: #FF7B72">==</span><span style="color: #C9D1D9"> </span><span style="color: #A5D6FF">'Text'</span><span style="color: #C9D1D9">:</span></span>
+<span class="line"><span style="color: #C9D1D9">  txt </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> st.text_area(</span><span style="color: #A5D6FF">'Enter text to be analysed...'</span><span style="color: #C9D1D9">)</span></span>
+<span class="line"><span style="color: #C9D1D9">  txt </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> txt.replace(</span><span style="color: #A5D6FF">'</span><span style="color: #79C0FF">\n</span><span style="color: #A5D6FF">'</span><span style="color: #C9D1D9">, </span><span style="color: #A5D6FF">' '</span><span style="color: #C9D1D9">).replace(</span><span style="color: #A5D6FF">'"'</span><span style="color: #C9D1D9">, </span><span style="color: #A5D6FF">''</span><span style="color: #C9D1D9">).replace(</span><span style="color: #A5D6FF">'“'</span><span style="color: #C9D1D9">,</span><span style="color: #A5D6FF">''</span><span style="color: #C9D1D9">).replace(</span><span style="color: #A5D6FF">'”'</span><span style="color: #C9D1D9">, </span><span style="color: #A5D6FF">''</span><span style="color: #C9D1D9">).replace(</span><span style="color: #A5D6FF">'‘'</span><span style="color: #C9D1D9">,</span><span style="color: #A5D6FF">''</span><span style="color: #C9D1D9">).replace(</span><span style="color: #A5D6FF">'’'</span><span style="color: #C9D1D9">, </span><span style="color: #A5D6FF">''</span><span style="color: #C9D1D9">).replace(</span><span style="color: #A5D6FF">"'s"</span><span style="color: #C9D1D9">, </span><span style="color: #A5D6FF">''</span><span style="color: #C9D1D9">).replace(</span><span style="color: #A5D6FF">","</span><span style="color: #C9D1D9">, </span><span style="color: #A5D6FF">''</span><span style="color: #C9D1D9">)</span></span>
+<span class="line"><span style="color: #C9D1D9">  st.write(</span><span style="color: #79C0FF">len</span><span style="color: #C9D1D9">(txt))</span></span>
+<span class="line"><span style="color: #FF7B72">elif</span><span style="color: #C9D1D9"> input_type </span><span style="color: #FF7B72">==</span><span style="color: #C9D1D9"> </span><span style="color: #A5D6FF">'URL'</span><span style="color: #C9D1D9">:</span></span>
+<span class="line"><span style="color: #C9D1D9">  url </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> st.text_input(</span><span style="color: #A5D6FF">'Enter URL'</span><span style="color: #C9D1D9">)</span></span>
+<span class="line"><span style="color: #FF7B72">elif</span><span style="color: #C9D1D9"> input_type </span><span style="color: #FF7B72">==</span><span style="color: #C9D1D9"> </span><span style="color: #A5D6FF">'Multiple URLs'</span><span style="color: #C9D1D9">:</span></span>
+<span class="line"><span style="color: #C9D1D9">  multi_url </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> st.text_area(</span><span style="color: #A5D6FF">'Enter keywords, 1 per line'</span><span style="color: #C9D1D9">)</span></span></code></pre>
 <p>This displays all the inputs and radio buttons needed to pick the right functionality.</p>
 <h3 id="6-functions-for-updating-my-tag-lists-via-wordpresss-rest-api">6. Functions for updating my tag lists via WordPress’s REST API</h3>
-<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">def update_all_tags():</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">	with st.spinner('Reloading tags...'):</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">		for blog in blogs:</span></span>
-<span class="line"><span style="color: #c9d1d9">		</span></span>
-<span class="line"><span style="color: #c9d1d9">			# Get tag data</span></span>
-<span class="line"><span style="color: #c9d1d9">			for pg in range(1, upper_limits[blog]+1):</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">				tag_url = f'https://{blog}/wp-json/wp/v2/tags?per_page=100&#x26;page={pg}'</span></span>
-<span class="line"><span style="color: #c9d1d9">				r_tag = requests.get(tag_url)</span></span>
-<span class="line"><span style="color: #c9d1d9">				api_tags = r_tag.json()</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">				for n in range(0,len(api_tags)):</span></span>
-<span class="line"><span style="color: #c9d1d9">					tags['Tag'].append(api_tags[n]['name'])</span></span>
-<span class="line"><span style="color: #c9d1d9">					tags['ID'].append(api_tags[n]['id'])</span></span>
-<span class="line"><span style="color: #c9d1d9">					tags['Count'].append(api_tags[n]['count'])</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">				with open(f"{blog}.json", "w") as outfile:</span></span>
-<span class="line"><span style="color: #c9d1d9">					json.dump(tags, outfile)</span></span>
-<span class="line"><span style="color: #c9d1d9">			tags['Tag'] = []</span></span>
-<span class="line"><span style="color: #c9d1d9">			tags['ID'] = []</span></span>
-<span class="line"><span style="color: #c9d1d9">			tags['Count'] = []</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">list_of_blogs = st.radio("Select the corresponding blog", blogs)</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9"># Load JSON files</span></span>
-<span class="line"><span style="color: #c9d1d9">with open(f'{list_of_blogs}.json', 'rb') as f:</span></span>
-<span class="line"><span style="color: #c9d1d9">	blog_json = json.load(f)</span></span>
-<span class="line"><span style="color: #c9d1d9">	x = blog_json['Tag']</span></span>
-<span class="line"><span style="color: #c9d1d9">	for n in x:</span></span>
-<span class="line"><span style="color: #c9d1d9">		existing_tags.append(n)</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">submit = st.button('Submit')</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">if update_tags:</span></span>
-<span class="line"><span style="color: #c9d1d9">	update_all_tags()</span></span></code></pre>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #FF7B72">def</span><span style="color: #C9D1D9"> </span><span style="color: #D2A8FF">update_all_tags</span><span style="color: #C9D1D9">():</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C9D1D9">  </span><span style="color: #FF7B72">with</span><span style="color: #C9D1D9"> st.spinner(</span><span style="color: #A5D6FF">'Reloading tags...'</span><span style="color: #C9D1D9">):</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C9D1D9">    </span><span style="color: #FF7B72">for</span><span style="color: #C9D1D9"> blog </span><span style="color: #FF7B72">in</span><span style="color: #C9D1D9"> blogs:</span></span>
+<span class="line"><span style="color: #C9D1D9">    </span></span>
+<span class="line"><span style="color: #C9D1D9">      </span><span style="color: #8B949E"># Get tag data</span></span>
+<span class="line"><span style="color: #C9D1D9">      </span><span style="color: #FF7B72">for</span><span style="color: #C9D1D9"> pg </span><span style="color: #FF7B72">in</span><span style="color: #C9D1D9"> </span><span style="color: #79C0FF">range</span><span style="color: #C9D1D9">(</span><span style="color: #79C0FF">1</span><span style="color: #C9D1D9">, upper_limits[blog]</span><span style="color: #FF7B72">+</span><span style="color: #79C0FF">1</span><span style="color: #C9D1D9">):</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C9D1D9">        tag_url </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> </span><span style="color: #FF7B72">f</span><span style="color: #A5D6FF">'https://</span><span style="color: #79C0FF">{</span><span style="color: #C9D1D9">blog</span><span style="color: #79C0FF">}</span><span style="color: #A5D6FF">/wp-json/wp/v2/tags?per_page=100&#x26;page=</span><span style="color: #79C0FF">{</span><span style="color: #C9D1D9">pg</span><span style="color: #79C0FF">}</span><span style="color: #A5D6FF">'</span></span>
+<span class="line"><span style="color: #C9D1D9">        r_tag </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> requests.get(tag_url)</span></span>
+<span class="line"><span style="color: #C9D1D9">        api_tags </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> r_tag.json()</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C9D1D9">        </span><span style="color: #FF7B72">for</span><span style="color: #C9D1D9"> n </span><span style="color: #FF7B72">in</span><span style="color: #C9D1D9"> </span><span style="color: #79C0FF">range</span><span style="color: #C9D1D9">(</span><span style="color: #79C0FF">0</span><span style="color: #C9D1D9">,</span><span style="color: #79C0FF">len</span><span style="color: #C9D1D9">(api_tags)):</span></span>
+<span class="line"><span style="color: #C9D1D9">          tags[</span><span style="color: #A5D6FF">'Tag'</span><span style="color: #C9D1D9">].append(api_tags[n][</span><span style="color: #A5D6FF">'name'</span><span style="color: #C9D1D9">])</span></span>
+<span class="line"><span style="color: #C9D1D9">          tags[</span><span style="color: #A5D6FF">'ID'</span><span style="color: #C9D1D9">].append(api_tags[n][</span><span style="color: #A5D6FF">'id'</span><span style="color: #C9D1D9">])</span></span>
+<span class="line"><span style="color: #C9D1D9">          tags[</span><span style="color: #A5D6FF">'Count'</span><span style="color: #C9D1D9">].append(api_tags[n][</span><span style="color: #A5D6FF">'count'</span><span style="color: #C9D1D9">])</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C9D1D9">        </span><span style="color: #FF7B72">with</span><span style="color: #C9D1D9"> </span><span style="color: #79C0FF">open</span><span style="color: #C9D1D9">(</span><span style="color: #FF7B72">f</span><span style="color: #A5D6FF">"</span><span style="color: #79C0FF">{</span><span style="color: #C9D1D9">blog</span><span style="color: #79C0FF">}</span><span style="color: #A5D6FF">.json"</span><span style="color: #C9D1D9">, </span><span style="color: #A5D6FF">"w"</span><span style="color: #C9D1D9">) </span><span style="color: #FF7B72">as</span><span style="color: #C9D1D9"> outfile:</span></span>
+<span class="line"><span style="color: #C9D1D9">          json.dump(tags, outfile)</span></span>
+<span class="line"><span style="color: #C9D1D9">      tags[</span><span style="color: #A5D6FF">'Tag'</span><span style="color: #C9D1D9">] </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> []</span></span>
+<span class="line"><span style="color: #C9D1D9">      tags[</span><span style="color: #A5D6FF">'ID'</span><span style="color: #C9D1D9">] </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> []</span></span>
+<span class="line"><span style="color: #C9D1D9">      tags[</span><span style="color: #A5D6FF">'Count'</span><span style="color: #C9D1D9">] </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> []</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C9D1D9">list_of_blogs </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> st.radio(</span><span style="color: #A5D6FF">"Select the corresponding blog"</span><span style="color: #C9D1D9">, blogs)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #8B949E"># Load JSON files</span></span>
+<span class="line"><span style="color: #FF7B72">with</span><span style="color: #C9D1D9"> </span><span style="color: #79C0FF">open</span><span style="color: #C9D1D9">(</span><span style="color: #FF7B72">f</span><span style="color: #A5D6FF">'</span><span style="color: #79C0FF">{</span><span style="color: #C9D1D9">list_of_blogs</span><span style="color: #79C0FF">}</span><span style="color: #A5D6FF">.json'</span><span style="color: #C9D1D9">, </span><span style="color: #A5D6FF">'rb'</span><span style="color: #C9D1D9">) </span><span style="color: #FF7B72">as</span><span style="color: #C9D1D9"> f:</span></span>
+<span class="line"><span style="color: #C9D1D9">  blog_json </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> json.load(f)</span></span>
+<span class="line"><span style="color: #C9D1D9">  x </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> blog_json[</span><span style="color: #A5D6FF">'Tag'</span><span style="color: #C9D1D9">]</span></span>
+<span class="line"><span style="color: #C9D1D9">  </span><span style="color: #FF7B72">for</span><span style="color: #C9D1D9"> n </span><span style="color: #FF7B72">in</span><span style="color: #C9D1D9"> x:</span></span>
+<span class="line"><span style="color: #C9D1D9">    existing_tags.append(n)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C9D1D9">submit </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> st.button(</span><span style="color: #A5D6FF">'Submit'</span><span style="color: #C9D1D9">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #FF7B72">if</span><span style="color: #C9D1D9"> update_tags:</span></span>
+<span class="line"><span style="color: #C9D1D9">  update_all_tags()</span></span></code></pre>
 <p>There are two functions linked to the tag data. First is a function that pulls the tag name, tag ID, and how many posts have been assigned to that tag and adds them to a dictionary. This is then saved to a JSON file for offline use. Doing this avoids making multiple API calls since, theoretically, the tag data won’t change that frequently. But when it does change, you can refresh the JSON files. These were formerly pickle files but due to the poor security, I spent a few hours switching this code out. I still love pickles though.</p>
 <p>From there, we can also read those files and add them to our existing_tags list ready for cross referencing against the extracted entities we find.</p>
 <h3 id="7-the-random-functions-for-content-ideas">7. The random functions for content ideas</h3>
-<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9"># Tag ideas functions</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">def sf_words():</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">	with open("sampleface.co.uk.json") as sf_json_file:</span></span>
-<span class="line"><span style="color: #c9d1d9">		sf = json.load(sf_json_file)</span></span>
-<span class="line"><span style="color: #c9d1d9">	sf_words_lists = sf['Tag']</span></span>
-<span class="line"><span style="color: #c9d1d9">	return sf_words_lists</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">def cultr_words():</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">	with open("cultrface.co.uk.json") as cf_json_file:</span></span>
-<span class="line"><span style="color: #c9d1d9">		cf = json.load(cf_json_file)</span></span>
-<span class="line"><span style="color: #c9d1d9">	cf_words_lists = cf['Tag']</span></span>
-<span class="line"><span style="color: #c9d1d9">	return cf_words_lists</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">def logic_words():</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">	with open("logicface.co.uk.json") as lf_json_file:</span></span>
-<span class="line"><span style="color: #c9d1d9">		lf = json.load(lf_json_file)</span></span>
-<span class="line"><span style="color: #c9d1d9">	lf_words_lists = lf['Tag']</span></span>
-<span class="line"><span style="color: #c9d1d9">	return lf_words_lists</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">def playr_words():</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">	with open("playrface.co.uk.json") as pf_json_file:</span></span>
-<span class="line"><span style="color: #c9d1d9">		pf = json.load(pf_json_file)</span></span>
-<span class="line"><span style="color: #c9d1d9">	pf_words_lists = pf['Tag']</span></span>
-<span class="line"><span style="color: #c9d1d9">	return pf_words_lists</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">def da_words():</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">	with open("distantarcade.co.uk.json") as da_json_file:</span></span>
-<span class="line"><span style="color: #c9d1d9">		da = json.load(da_json_file)</span></span>
-<span class="line"><span style="color: #c9d1d9">	da_words_lists = da['Tag']</span></span>
-<span class="line"><span style="color: #c9d1d9">	return da_words_lists</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">all_words_list = [sf_words(), cultr_words(), logic_words(), playr_words(), da_words()]</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">def sampleface():</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">	st.header('Sampleface ideas')</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">	for sample in range(5):</span></span>
-<span class="line"><span style="color: #c9d1d9">		with open("sampleface.co.uk.json") as sf_json_file:</span></span>
-<span class="line"><span style="color: #c9d1d9">			sf = json.load(sf_json_file)</span></span>
-<span class="line"><span style="color: #c9d1d9">		sf_words_count_lists = sf['Count']</span></span>
-<span class="line"><span style="color: #c9d1d9">		try:</span></span>
-<span class="line"><span style="color: #c9d1d9">			x = [n/(n+1) for n in sf_words_count_lists]</span></span>
-<span class="line"><span style="color: #c9d1d9">		except ZeroDivisionError:</span></span>
-<span class="line"><span style="color: #c9d1d9">			continue</span></span>
-<span class="line"><span style="color: #c9d1d9">			# sf_choices = random.choices(sf_words_count_lists, weights=(1/n), k=2)</span></span>
-<span class="line"><span style="color: #c9d1d9">		sample = random.choices(sf_words(), x, k=2)</span></span>
-<span class="line"><span style="color: #c9d1d9">		</span></span>
-<span class="line"><span style="color: #c9d1d9">		st.write('https://google.com/search?q=' + '+'.join(sample).lower().replace(' ', '+').replace('&#x26;', ''))</span></span>
-<span class="line"><span style="color: #c9d1d9">	</span></span>
-<span class="line"><span style="color: #c9d1d9">def cultrface():</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">	st.header('Cultrface ideas')</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">	for sample in range(5):</span></span>
-<span class="line"><span style="color: #c9d1d9">		with open("cultrface.co.uk.json") as cf_json_file:</span></span>
-<span class="line"><span style="color: #c9d1d9">			cf = json.load(cf_json_file)</span></span>
-<span class="line"><span style="color: #c9d1d9">		cf_words_count_lists = cf['Count']</span></span>
-<span class="line"><span style="color: #c9d1d9">		try:</span></span>
-<span class="line"><span style="color: #c9d1d9">			x = [n/(n+1) for n in cf_words_count_lists]</span></span>
-<span class="line"><span style="color: #c9d1d9">		except ZeroDivisionError:</span></span>
-<span class="line"><span style="color: #c9d1d9">			continue</span></span>
-<span class="line"><span style="color: #c9d1d9">			# sf_choices = random.choices(sf_words_count_lists, weights=(1/n), k=2)</span></span>
-<span class="line"><span style="color: #c9d1d9">		sample = random.choices(cultr_words(), x, k=2)</span></span>
-<span class="line"><span style="color: #c9d1d9">		</span></span>
-<span class="line"><span style="color: #c9d1d9">		st.write('https://google.com/search?q=' + '+'.join(sample).lower().replace(' ', '+').replace('&#x26;', ''))</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">def logicface():</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">	st.header('LOGiCFACE ideas')</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">	for sample in range(5):</span></span>
-<span class="line"><span style="color: #c9d1d9">		with open("logicface.co.uk.json") as lf_json_file:</span></span>
-<span class="line"><span style="color: #c9d1d9">			lf = json.load(lf_json_file)</span></span>
-<span class="line"><span style="color: #c9d1d9">		lf_words_count_lists = lf['Count']</span></span>
-<span class="line"><span style="color: #c9d1d9">		try:</span></span>
-<span class="line"><span style="color: #c9d1d9">			x = [n/(n+1) for n in lf_words_count_lists]</span></span>
-<span class="line"><span style="color: #c9d1d9">		except ZeroDivisionError:</span></span>
-<span class="line"><span style="color: #c9d1d9">			continue</span></span>
-<span class="line"><span style="color: #c9d1d9">		sample = random.choices(logic_words(), x, k=2)</span></span>
-<span class="line"><span style="color: #c9d1d9">		</span></span>
-<span class="line"><span style="color: #c9d1d9">		st.write('https://google.com/search?q=' + '+'.join(sample).lower().replace(' ', '+').replace('&#x26;', ''))</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">def playrface():</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">	st.header('Playrface ideas')</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">	for sample in range(5):</span></span>
-<span class="line"><span style="color: #c9d1d9">		with open("playrface.co.uk.json") as pf_json_file:</span></span>
-<span class="line"><span style="color: #c9d1d9">			pf = json.load(pf_json_file)</span></span>
-<span class="line"><span style="color: #c9d1d9">		pf_words_count_lists = pf['Count']</span></span>
-<span class="line"><span style="color: #c9d1d9">		try:</span></span>
-<span class="line"><span style="color: #c9d1d9">			x = [n/(n+1) for n in pf_words_count_lists]</span></span>
-<span class="line"><span style="color: #c9d1d9">		except ZeroDivisionError:</span></span>
-<span class="line"><span style="color: #c9d1d9">			continue</span></span>
-<span class="line"><span style="color: #c9d1d9">		sample = random.choices(playr_words(), x, k=2)</span></span>
-<span class="line"><span style="color: #c9d1d9">		</span></span>
-<span class="line"><span style="color: #c9d1d9">		st.write('https://google.com/search?q=' + '+'.join(sample).lower().replace(' ', '+').replace('&#x26;', ''))</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">def distantarcade():</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">	st.header('Distant Arcade ideas')</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">	for sample in range(5):</span></span>
-<span class="line"><span style="color: #c9d1d9">		with open("distantarcade.co.uk.json") as da_json_file:</span></span>
-<span class="line"><span style="color: #c9d1d9">			da = json.load(da_json_file)</span></span>
-<span class="line"><span style="color: #c9d1d9">		da_words_count_lists = da['Count']</span></span>
-<span class="line"><span style="color: #c9d1d9">		try:</span></span>
-<span class="line"><span style="color: #c9d1d9">			x = [n/(n+1) for n in da_words_count_lists]</span></span>
-<span class="line"><span style="color: #c9d1d9">		except ZeroDivisionError:</span></span>
-<span class="line"><span style="color: #c9d1d9">			continue</span></span>
-<span class="line"><span style="color: #c9d1d9">		sample = random.choices(da_words(), x, k=2)</span></span>
-<span class="line"><span style="color: #c9d1d9">		</span></span>
-<span class="line"><span style="color: #c9d1d9">		st.write('https://google.com/search?q=' + '+'.join(sample).lower().replace(' ', '+').replace('&#x26;', ''))</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">def all_blogs():</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">	sampleface()</span></span>
-<span class="line"><span style="color: #c9d1d9">	cultrface()</span></span>
-<span class="line"><span style="color: #c9d1d9">	logicface()</span></span>
-<span class="line"><span style="color: #c9d1d9">	playrface()</span></span>
-<span class="line"><span style="color: #c9d1d9">	distantarcade()</span></span></code></pre>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #8B949E"># Tag ideas functions</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #FF7B72">def</span><span style="color: #C9D1D9"> </span><span style="color: #D2A8FF">sf_words</span><span style="color: #C9D1D9">():</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C9D1D9">	</span><span style="color: #FF7B72">with</span><span style="color: #C9D1D9"> </span><span style="color: #79C0FF">open</span><span style="color: #C9D1D9">(</span><span style="color: #A5D6FF">"sampleface.co.uk.json"</span><span style="color: #C9D1D9">) </span><span style="color: #FF7B72">as</span><span style="color: #C9D1D9"> sf_json_file:</span></span>
+<span class="line"><span style="color: #C9D1D9">		sf </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> json.load(sf_json_file)</span></span>
+<span class="line"><span style="color: #C9D1D9">	sf_words_lists </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> sf[</span><span style="color: #A5D6FF">'Tag'</span><span style="color: #C9D1D9">]</span></span>
+<span class="line"><span style="color: #C9D1D9">	</span><span style="color: #FF7B72">return</span><span style="color: #C9D1D9"> sf_words_lists</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #FF7B72">def</span><span style="color: #C9D1D9"> </span><span style="color: #D2A8FF">cultr_words</span><span style="color: #C9D1D9">():</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C9D1D9">	</span><span style="color: #FF7B72">with</span><span style="color: #C9D1D9"> </span><span style="color: #79C0FF">open</span><span style="color: #C9D1D9">(</span><span style="color: #A5D6FF">"cultrface.co.uk.json"</span><span style="color: #C9D1D9">) </span><span style="color: #FF7B72">as</span><span style="color: #C9D1D9"> cf_json_file:</span></span>
+<span class="line"><span style="color: #C9D1D9">		cf </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> json.load(cf_json_file)</span></span>
+<span class="line"><span style="color: #C9D1D9">	cf_words_lists </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> cf[</span><span style="color: #A5D6FF">'Tag'</span><span style="color: #C9D1D9">]</span></span>
+<span class="line"><span style="color: #C9D1D9">	</span><span style="color: #FF7B72">return</span><span style="color: #C9D1D9"> cf_words_lists</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #FF7B72">def</span><span style="color: #C9D1D9"> </span><span style="color: #D2A8FF">logic_words</span><span style="color: #C9D1D9">():</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C9D1D9">	</span><span style="color: #FF7B72">with</span><span style="color: #C9D1D9"> </span><span style="color: #79C0FF">open</span><span style="color: #C9D1D9">(</span><span style="color: #A5D6FF">"logicface.co.uk.json"</span><span style="color: #C9D1D9">) </span><span style="color: #FF7B72">as</span><span style="color: #C9D1D9"> lf_json_file:</span></span>
+<span class="line"><span style="color: #C9D1D9">		lf </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> json.load(lf_json_file)</span></span>
+<span class="line"><span style="color: #C9D1D9">	lf_words_lists </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> lf[</span><span style="color: #A5D6FF">'Tag'</span><span style="color: #C9D1D9">]</span></span>
+<span class="line"><span style="color: #C9D1D9">	</span><span style="color: #FF7B72">return</span><span style="color: #C9D1D9"> lf_words_lists</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #FF7B72">def</span><span style="color: #C9D1D9"> </span><span style="color: #D2A8FF">playr_words</span><span style="color: #C9D1D9">():</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C9D1D9">	</span><span style="color: #FF7B72">with</span><span style="color: #C9D1D9"> </span><span style="color: #79C0FF">open</span><span style="color: #C9D1D9">(</span><span style="color: #A5D6FF">"playrface.co.uk.json"</span><span style="color: #C9D1D9">) </span><span style="color: #FF7B72">as</span><span style="color: #C9D1D9"> pf_json_file:</span></span>
+<span class="line"><span style="color: #C9D1D9">		pf </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> json.load(pf_json_file)</span></span>
+<span class="line"><span style="color: #C9D1D9">	pf_words_lists </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> pf[</span><span style="color: #A5D6FF">'Tag'</span><span style="color: #C9D1D9">]</span></span>
+<span class="line"><span style="color: #C9D1D9">	</span><span style="color: #FF7B72">return</span><span style="color: #C9D1D9"> pf_words_lists</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #FF7B72">def</span><span style="color: #C9D1D9"> </span><span style="color: #D2A8FF">da_words</span><span style="color: #C9D1D9">():</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C9D1D9">	</span><span style="color: #FF7B72">with</span><span style="color: #C9D1D9"> </span><span style="color: #79C0FF">open</span><span style="color: #C9D1D9">(</span><span style="color: #A5D6FF">"distantarcade.co.uk.json"</span><span style="color: #C9D1D9">) </span><span style="color: #FF7B72">as</span><span style="color: #C9D1D9"> da_json_file:</span></span>
+<span class="line"><span style="color: #C9D1D9">		da </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> json.load(da_json_file)</span></span>
+<span class="line"><span style="color: #C9D1D9">	da_words_lists </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> da[</span><span style="color: #A5D6FF">'Tag'</span><span style="color: #C9D1D9">]</span></span>
+<span class="line"><span style="color: #C9D1D9">	</span><span style="color: #FF7B72">return</span><span style="color: #C9D1D9"> da_words_lists</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C9D1D9">all_words_list </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> [sf_words(), cultr_words(), logic_words(), playr_words(), da_words()]</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #FF7B72">def</span><span style="color: #C9D1D9"> </span><span style="color: #D2A8FF">sampleface</span><span style="color: #C9D1D9">():</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C9D1D9">	st.header(</span><span style="color: #A5D6FF">'Sampleface ideas'</span><span style="color: #C9D1D9">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C9D1D9">	</span><span style="color: #FF7B72">for</span><span style="color: #C9D1D9"> sample </span><span style="color: #FF7B72">in</span><span style="color: #C9D1D9"> </span><span style="color: #79C0FF">range</span><span style="color: #C9D1D9">(</span><span style="color: #79C0FF">5</span><span style="color: #C9D1D9">):</span></span>
+<span class="line"><span style="color: #C9D1D9">		</span><span style="color: #FF7B72">with</span><span style="color: #C9D1D9"> </span><span style="color: #79C0FF">open</span><span style="color: #C9D1D9">(</span><span style="color: #A5D6FF">"sampleface.co.uk.json"</span><span style="color: #C9D1D9">) </span><span style="color: #FF7B72">as</span><span style="color: #C9D1D9"> sf_json_file:</span></span>
+<span class="line"><span style="color: #C9D1D9">			sf </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> json.load(sf_json_file)</span></span>
+<span class="line"><span style="color: #C9D1D9">		sf_words_count_lists </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> sf[</span><span style="color: #A5D6FF">'Count'</span><span style="color: #C9D1D9">]</span></span>
+<span class="line"><span style="color: #C9D1D9">		</span><span style="color: #FF7B72">try</span><span style="color: #C9D1D9">:</span></span>
+<span class="line"><span style="color: #C9D1D9">			x </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> [n</span><span style="color: #FF7B72">/</span><span style="color: #C9D1D9">(n</span><span style="color: #FF7B72">+</span><span style="color: #79C0FF">1</span><span style="color: #C9D1D9">) </span><span style="color: #FF7B72">for</span><span style="color: #C9D1D9"> n </span><span style="color: #FF7B72">in</span><span style="color: #C9D1D9"> sf_words_count_lists]</span></span>
+<span class="line"><span style="color: #C9D1D9">		</span><span style="color: #FF7B72">except</span><span style="color: #C9D1D9"> </span><span style="color: #79C0FF">ZeroDivisionError</span><span style="color: #C9D1D9">:</span></span>
+<span class="line"><span style="color: #C9D1D9">			</span><span style="color: #FF7B72">continue</span></span>
+<span class="line"><span style="color: #C9D1D9">			</span><span style="color: #8B949E"># sf_choices = random.choices(sf_words_count_lists, weights=(1/n), k=2)</span></span>
+<span class="line"><span style="color: #C9D1D9">		sample </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> random.choices(sf_words(), x, </span><span style="color: #FFA657">k</span><span style="color: #FF7B72">=</span><span style="color: #79C0FF">2</span><span style="color: #C9D1D9">)</span></span>
+<span class="line"><span style="color: #C9D1D9">		</span></span>
+<span class="line"><span style="color: #C9D1D9">		st.write(</span><span style="color: #A5D6FF">'https://google.com/search?q='</span><span style="color: #C9D1D9"> </span><span style="color: #FF7B72">+</span><span style="color: #C9D1D9"> </span><span style="color: #A5D6FF">'+'</span><span style="color: #C9D1D9">.join(sample).lower().replace(</span><span style="color: #A5D6FF">' '</span><span style="color: #C9D1D9">, </span><span style="color: #A5D6FF">'+'</span><span style="color: #C9D1D9">).replace(</span><span style="color: #A5D6FF">'&#x26;'</span><span style="color: #C9D1D9">, </span><span style="color: #A5D6FF">''</span><span style="color: #C9D1D9">))</span></span>
+<span class="line"><span style="color: #C9D1D9">	</span></span>
+<span class="line"><span style="color: #FF7B72">def</span><span style="color: #C9D1D9"> </span><span style="color: #D2A8FF">cultrface</span><span style="color: #C9D1D9">():</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C9D1D9">	st.header(</span><span style="color: #A5D6FF">'Cultrface ideas'</span><span style="color: #C9D1D9">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C9D1D9">	</span><span style="color: #FF7B72">for</span><span style="color: #C9D1D9"> sample </span><span style="color: #FF7B72">in</span><span style="color: #C9D1D9"> </span><span style="color: #79C0FF">range</span><span style="color: #C9D1D9">(</span><span style="color: #79C0FF">5</span><span style="color: #C9D1D9">):</span></span>
+<span class="line"><span style="color: #C9D1D9">		</span><span style="color: #FF7B72">with</span><span style="color: #C9D1D9"> </span><span style="color: #79C0FF">open</span><span style="color: #C9D1D9">(</span><span style="color: #A5D6FF">"cultrface.co.uk.json"</span><span style="color: #C9D1D9">) </span><span style="color: #FF7B72">as</span><span style="color: #C9D1D9"> cf_json_file:</span></span>
+<span class="line"><span style="color: #C9D1D9">			cf </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> json.load(cf_json_file)</span></span>
+<span class="line"><span style="color: #C9D1D9">		cf_words_count_lists </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> cf[</span><span style="color: #A5D6FF">'Count'</span><span style="color: #C9D1D9">]</span></span>
+<span class="line"><span style="color: #C9D1D9">		</span><span style="color: #FF7B72">try</span><span style="color: #C9D1D9">:</span></span>
+<span class="line"><span style="color: #C9D1D9">			x </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> [n</span><span style="color: #FF7B72">/</span><span style="color: #C9D1D9">(n</span><span style="color: #FF7B72">+</span><span style="color: #79C0FF">1</span><span style="color: #C9D1D9">) </span><span style="color: #FF7B72">for</span><span style="color: #C9D1D9"> n </span><span style="color: #FF7B72">in</span><span style="color: #C9D1D9"> cf_words_count_lists]</span></span>
+<span class="line"><span style="color: #C9D1D9">		</span><span style="color: #FF7B72">except</span><span style="color: #C9D1D9"> </span><span style="color: #79C0FF">ZeroDivisionError</span><span style="color: #C9D1D9">:</span></span>
+<span class="line"><span style="color: #C9D1D9">			</span><span style="color: #FF7B72">continue</span></span>
+<span class="line"><span style="color: #C9D1D9">			</span><span style="color: #8B949E"># sf_choices = random.choices(sf_words_count_lists, weights=(1/n), k=2)</span></span>
+<span class="line"><span style="color: #C9D1D9">		sample </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> random.choices(cultr_words(), x, </span><span style="color: #FFA657">k</span><span style="color: #FF7B72">=</span><span style="color: #79C0FF">2</span><span style="color: #C9D1D9">)</span></span>
+<span class="line"><span style="color: #C9D1D9">		</span></span>
+<span class="line"><span style="color: #C9D1D9">		st.write(</span><span style="color: #A5D6FF">'https://google.com/search?q='</span><span style="color: #C9D1D9"> </span><span style="color: #FF7B72">+</span><span style="color: #C9D1D9"> </span><span style="color: #A5D6FF">'+'</span><span style="color: #C9D1D9">.join(sample).lower().replace(</span><span style="color: #A5D6FF">' '</span><span style="color: #C9D1D9">, </span><span style="color: #A5D6FF">'+'</span><span style="color: #C9D1D9">).replace(</span><span style="color: #A5D6FF">'&#x26;'</span><span style="color: #C9D1D9">, </span><span style="color: #A5D6FF">''</span><span style="color: #C9D1D9">))</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #FF7B72">def</span><span style="color: #C9D1D9"> </span><span style="color: #D2A8FF">logicface</span><span style="color: #C9D1D9">():</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C9D1D9">	st.header(</span><span style="color: #A5D6FF">'LOGiCFACE ideas'</span><span style="color: #C9D1D9">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C9D1D9">	</span><span style="color: #FF7B72">for</span><span style="color: #C9D1D9"> sample </span><span style="color: #FF7B72">in</span><span style="color: #C9D1D9"> </span><span style="color: #79C0FF">range</span><span style="color: #C9D1D9">(</span><span style="color: #79C0FF">5</span><span style="color: #C9D1D9">):</span></span>
+<span class="line"><span style="color: #C9D1D9">		</span><span style="color: #FF7B72">with</span><span style="color: #C9D1D9"> </span><span style="color: #79C0FF">open</span><span style="color: #C9D1D9">(</span><span style="color: #A5D6FF">"logicface.co.uk.json"</span><span style="color: #C9D1D9">) </span><span style="color: #FF7B72">as</span><span style="color: #C9D1D9"> lf_json_file:</span></span>
+<span class="line"><span style="color: #C9D1D9">			lf </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> json.load(lf_json_file)</span></span>
+<span class="line"><span style="color: #C9D1D9">		lf_words_count_lists </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> lf[</span><span style="color: #A5D6FF">'Count'</span><span style="color: #C9D1D9">]</span></span>
+<span class="line"><span style="color: #C9D1D9">		</span><span style="color: #FF7B72">try</span><span style="color: #C9D1D9">:</span></span>
+<span class="line"><span style="color: #C9D1D9">			x </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> [n</span><span style="color: #FF7B72">/</span><span style="color: #C9D1D9">(n</span><span style="color: #FF7B72">+</span><span style="color: #79C0FF">1</span><span style="color: #C9D1D9">) </span><span style="color: #FF7B72">for</span><span style="color: #C9D1D9"> n </span><span style="color: #FF7B72">in</span><span style="color: #C9D1D9"> lf_words_count_lists]</span></span>
+<span class="line"><span style="color: #C9D1D9">		</span><span style="color: #FF7B72">except</span><span style="color: #C9D1D9"> </span><span style="color: #79C0FF">ZeroDivisionError</span><span style="color: #C9D1D9">:</span></span>
+<span class="line"><span style="color: #C9D1D9">			</span><span style="color: #FF7B72">continue</span></span>
+<span class="line"><span style="color: #C9D1D9">		sample </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> random.choices(logic_words(), x, </span><span style="color: #FFA657">k</span><span style="color: #FF7B72">=</span><span style="color: #79C0FF">2</span><span style="color: #C9D1D9">)</span></span>
+<span class="line"><span style="color: #C9D1D9">		</span></span>
+<span class="line"><span style="color: #C9D1D9">		st.write(</span><span style="color: #A5D6FF">'https://google.com/search?q='</span><span style="color: #C9D1D9"> </span><span style="color: #FF7B72">+</span><span style="color: #C9D1D9"> </span><span style="color: #A5D6FF">'+'</span><span style="color: #C9D1D9">.join(sample).lower().replace(</span><span style="color: #A5D6FF">' '</span><span style="color: #C9D1D9">, </span><span style="color: #A5D6FF">'+'</span><span style="color: #C9D1D9">).replace(</span><span style="color: #A5D6FF">'&#x26;'</span><span style="color: #C9D1D9">, </span><span style="color: #A5D6FF">''</span><span style="color: #C9D1D9">))</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #FF7B72">def</span><span style="color: #C9D1D9"> </span><span style="color: #D2A8FF">playrface</span><span style="color: #C9D1D9">():</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C9D1D9">	st.header(</span><span style="color: #A5D6FF">'Playrface ideas'</span><span style="color: #C9D1D9">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C9D1D9">	</span><span style="color: #FF7B72">for</span><span style="color: #C9D1D9"> sample </span><span style="color: #FF7B72">in</span><span style="color: #C9D1D9"> </span><span style="color: #79C0FF">range</span><span style="color: #C9D1D9">(</span><span style="color: #79C0FF">5</span><span style="color: #C9D1D9">):</span></span>
+<span class="line"><span style="color: #C9D1D9">		</span><span style="color: #FF7B72">with</span><span style="color: #C9D1D9"> </span><span style="color: #79C0FF">open</span><span style="color: #C9D1D9">(</span><span style="color: #A5D6FF">"playrface.co.uk.json"</span><span style="color: #C9D1D9">) </span><span style="color: #FF7B72">as</span><span style="color: #C9D1D9"> pf_json_file:</span></span>
+<span class="line"><span style="color: #C9D1D9">			pf </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> json.load(pf_json_file)</span></span>
+<span class="line"><span style="color: #C9D1D9">		pf_words_count_lists </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> pf[</span><span style="color: #A5D6FF">'Count'</span><span style="color: #C9D1D9">]</span></span>
+<span class="line"><span style="color: #C9D1D9">		</span><span style="color: #FF7B72">try</span><span style="color: #C9D1D9">:</span></span>
+<span class="line"><span style="color: #C9D1D9">			x </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> [n</span><span style="color: #FF7B72">/</span><span style="color: #C9D1D9">(n</span><span style="color: #FF7B72">+</span><span style="color: #79C0FF">1</span><span style="color: #C9D1D9">) </span><span style="color: #FF7B72">for</span><span style="color: #C9D1D9"> n </span><span style="color: #FF7B72">in</span><span style="color: #C9D1D9"> pf_words_count_lists]</span></span>
+<span class="line"><span style="color: #C9D1D9">		</span><span style="color: #FF7B72">except</span><span style="color: #C9D1D9"> </span><span style="color: #79C0FF">ZeroDivisionError</span><span style="color: #C9D1D9">:</span></span>
+<span class="line"><span style="color: #C9D1D9">			</span><span style="color: #FF7B72">continue</span></span>
+<span class="line"><span style="color: #C9D1D9">		sample </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> random.choices(playr_words(), x, </span><span style="color: #FFA657">k</span><span style="color: #FF7B72">=</span><span style="color: #79C0FF">2</span><span style="color: #C9D1D9">)</span></span>
+<span class="line"><span style="color: #C9D1D9">		</span></span>
+<span class="line"><span style="color: #C9D1D9">		st.write(</span><span style="color: #A5D6FF">'https://google.com/search?q='</span><span style="color: #C9D1D9"> </span><span style="color: #FF7B72">+</span><span style="color: #C9D1D9"> </span><span style="color: #A5D6FF">'+'</span><span style="color: #C9D1D9">.join(sample).lower().replace(</span><span style="color: #A5D6FF">' '</span><span style="color: #C9D1D9">, </span><span style="color: #A5D6FF">'+'</span><span style="color: #C9D1D9">).replace(</span><span style="color: #A5D6FF">'&#x26;'</span><span style="color: #C9D1D9">, </span><span style="color: #A5D6FF">''</span><span style="color: #C9D1D9">))</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #FF7B72">def</span><span style="color: #C9D1D9"> </span><span style="color: #D2A8FF">distantarcade</span><span style="color: #C9D1D9">():</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C9D1D9">	st.header(</span><span style="color: #A5D6FF">'Distant Arcade ideas'</span><span style="color: #C9D1D9">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C9D1D9">	</span><span style="color: #FF7B72">for</span><span style="color: #C9D1D9"> sample </span><span style="color: #FF7B72">in</span><span style="color: #C9D1D9"> </span><span style="color: #79C0FF">range</span><span style="color: #C9D1D9">(</span><span style="color: #79C0FF">5</span><span style="color: #C9D1D9">):</span></span>
+<span class="line"><span style="color: #C9D1D9">		</span><span style="color: #FF7B72">with</span><span style="color: #C9D1D9"> </span><span style="color: #79C0FF">open</span><span style="color: #C9D1D9">(</span><span style="color: #A5D6FF">"distantarcade.co.uk.json"</span><span style="color: #C9D1D9">) </span><span style="color: #FF7B72">as</span><span style="color: #C9D1D9"> da_json_file:</span></span>
+<span class="line"><span style="color: #C9D1D9">			da </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> json.load(da_json_file)</span></span>
+<span class="line"><span style="color: #C9D1D9">		da_words_count_lists </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> da[</span><span style="color: #A5D6FF">'Count'</span><span style="color: #C9D1D9">]</span></span>
+<span class="line"><span style="color: #C9D1D9">		</span><span style="color: #FF7B72">try</span><span style="color: #C9D1D9">:</span></span>
+<span class="line"><span style="color: #C9D1D9">			x </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> [n</span><span style="color: #FF7B72">/</span><span style="color: #C9D1D9">(n</span><span style="color: #FF7B72">+</span><span style="color: #79C0FF">1</span><span style="color: #C9D1D9">) </span><span style="color: #FF7B72">for</span><span style="color: #C9D1D9"> n </span><span style="color: #FF7B72">in</span><span style="color: #C9D1D9"> da_words_count_lists]</span></span>
+<span class="line"><span style="color: #C9D1D9">		</span><span style="color: #FF7B72">except</span><span style="color: #C9D1D9"> </span><span style="color: #79C0FF">ZeroDivisionError</span><span style="color: #C9D1D9">:</span></span>
+<span class="line"><span style="color: #C9D1D9">			</span><span style="color: #FF7B72">continue</span></span>
+<span class="line"><span style="color: #C9D1D9">		sample </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> random.choices(da_words(), x, </span><span style="color: #FFA657">k</span><span style="color: #FF7B72">=</span><span style="color: #79C0FF">2</span><span style="color: #C9D1D9">)</span></span>
+<span class="line"><span style="color: #C9D1D9">		</span></span>
+<span class="line"><span style="color: #C9D1D9">		st.write(</span><span style="color: #A5D6FF">'https://google.com/search?q='</span><span style="color: #C9D1D9"> </span><span style="color: #FF7B72">+</span><span style="color: #C9D1D9"> </span><span style="color: #A5D6FF">'+'</span><span style="color: #C9D1D9">.join(sample).lower().replace(</span><span style="color: #A5D6FF">' '</span><span style="color: #C9D1D9">, </span><span style="color: #A5D6FF">'+'</span><span style="color: #C9D1D9">).replace(</span><span style="color: #A5D6FF">'&#x26;'</span><span style="color: #C9D1D9">, </span><span style="color: #A5D6FF">''</span><span style="color: #C9D1D9">))</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #FF7B72">def</span><span style="color: #C9D1D9"> </span><span style="color: #D2A8FF">all_blogs</span><span style="color: #C9D1D9">():</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C9D1D9">	sampleface()</span></span>
+<span class="line"><span style="color: #C9D1D9">	cultrface()</span></span>
+<span class="line"><span style="color: #C9D1D9">	logicface()</span></span>
+<span class="line"><span style="color: #C9D1D9">	playrface()</span></span>
+<span class="line"><span style="color: #C9D1D9">	distantarcade()</span></span></code></pre>
 <p>I’ll try to summarise this part as it is quite lengthy. Each JSON file is read and the relevant list is pulled containing all the respective blogs’ tags. To generate the Google Search URLs, a for-loop picks out the tags’ counts and generates a new list which can be used for weighting in the random.choices method. Then a series of 2-3 tags are chosen at random, weighted by least used tag = most likely chosen and appended to the Google Search URL.</p>
 <p>Finally, they’re all grouped together in a main function ready to be called at the click of a button.</p>
 <h3 id="8-the-entity-topic-and-category-functions-using-the-textrazor-api">8. The entity, topic, and category functions using the TextRazor API</h3>
-<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9"># Keyword extraction function to analyse with TextRazor</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">def textrazor_extraction(input_type):</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">	if input_type == 'Text':</span></span>
-<span class="line"><span style="color: #c9d1d9">		global txt</span></span>
-<span class="line"><span style="color: #c9d1d9">		response = client.analyze(txt)</span></span>
-<span class="line"><span style="color: #c9d1d9">		for entity in response.entities():</span></span>
-<span class="line"><span style="color: #c9d1d9">			if entity.relevance_score > 0:</span></span>
-<span class="line"><span style="color: #c9d1d9">				ent_dict['Keyword'].append(entity.id)</span></span>
-<span class="line"><span style="color: #c9d1d9">				ent_dict['Relevance Score'].append(entity.relevance_score)</span></span>
-<span class="line"><span style="color: #c9d1d9">				if entity.id.lower() in existing_tags or entity.id.capitalize() in existing_tags:</span></span>
-<span class="line"><span style="color: #c9d1d9">					ent_dict['Existing Tag'].append(1)</span></span>
-<span class="line"><span style="color: #c9d1d9">				else:</span></span>
-<span class="line"><span style="color: #c9d1d9">					ent_dict['Existing Tag'].append(0)</span></span>
-<span class="line"><span style="color: #c9d1d9">		</span></span>
-<span class="line"><span style="color: #c9d1d9">		for topic in response.topics():</span></span>
-<span class="line"><span style="color: #c9d1d9">			if topic.score > 0.6:</span></span>
-<span class="line"><span style="color: #c9d1d9">				topics_dict['Topic'].append(topic.label)</span></span>
-<span class="line"><span style="color: #c9d1d9">				topics_dict['Relevance Score'].append(topic.score)</span></span>
-<span class="line"><span style="color: #c9d1d9">				if topic.label.lower() in existing_tags or topic.label.capitalize() in existing_tags:</span></span>
-<span class="line"><span style="color: #c9d1d9">					topics_dict['Existing Tag'].append(1)</span></span>
-<span class="line"><span style="color: #c9d1d9">				else:</span></span>
-<span class="line"><span style="color: #c9d1d9">					topics_dict['Existing Tag'].append(0)</span></span>
-<span class="line"><span style="color: #c9d1d9">		</span></span>
-<span class="line"><span style="color: #c9d1d9">		for category in response.categories():</span></span>
-<span class="line"><span style="color: #c9d1d9">			categories_dict['Category'].append(category.label)</span></span>
-<span class="line"><span style="color: #c9d1d9">			categories_dict['Relevance Score'].append(category.score)</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">	elif input_type == 'URL':</span></span>
-<span class="line"><span style="color: #c9d1d9">		txt = req(url)</span></span>
-<span class="line"><span style="color: #c9d1d9">		response = client.analyze(txt)</span></span>
-<span class="line"><span style="color: #c9d1d9">		for entity in response.entities():</span></span>
-<span class="line"><span style="color: #c9d1d9">			if entity.relevance_score > 0:</span></span>
-<span class="line"><span style="color: #c9d1d9">				ent_dict['Keyword'].append(entity.id)</span></span>
-<span class="line"><span style="color: #c9d1d9">				ent_dict['Relevance Score'].append(entity.relevance_score)</span></span>
-<span class="line"><span style="color: #c9d1d9">				if entity.id.lower() in existing_tags or entity.id.capitalize() in existing_tags:</span></span>
-<span class="line"><span style="color: #c9d1d9">					ent_dict['Existing Tag'].append(1)</span></span>
-<span class="line"><span style="color: #c9d1d9">				else:</span></span>
-<span class="line"><span style="color: #c9d1d9">					ent_dict['Existing Tag'].append(0)</span></span>
-<span class="line"><span style="color: #c9d1d9">		</span></span>
-<span class="line"><span style="color: #c9d1d9">		for topic in response.topics():</span></span>
-<span class="line"><span style="color: #c9d1d9">			if topic.score > 0.6:</span></span>
-<span class="line"><span style="color: #c9d1d9">				topics_dict['Topic'].append(topic.label)</span></span>
-<span class="line"><span style="color: #c9d1d9">				topics_dict['Relevance Score'].append(topic.score)</span></span>
-<span class="line"><span style="color: #c9d1d9">				if topic.label.lower() in existing_tags or topic.label.capitalize() in existing_tags:</span></span>
-<span class="line"><span style="color: #c9d1d9">					topics_dict['Existing Tag'].append(1)</span></span>
-<span class="line"><span style="color: #c9d1d9">				else:</span></span>
-<span class="line"><span style="color: #c9d1d9">					topics_dict['Existing Tag'].append(0)</span></span>
-<span class="line"><span style="color: #c9d1d9">		</span></span>
-<span class="line"><span style="color: #c9d1d9">		for category in response.categories():</span></span>
-<span class="line"><span style="color: #c9d1d9">			categories_dict['Category'].append(category.label)</span></span>
-<span class="line"><span style="color: #c9d1d9">			categories_dict['Relevance Score'].append(category.score)</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">	elif input_type == 'Multiple URLs':</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">		for u in urls:</span></span>
-<span class="line"><span style="color: #c9d1d9">			txt = req(u)</span></span>
-<span class="line"><span style="color: #c9d1d9">			all_txt.append(txt)</span></span>
-<span class="line"><span style="color: #c9d1d9">			response = client.analyze(txt)</span></span>
-<span class="line"><span style="color: #c9d1d9">			for entity in response.entities():</span></span>
-<span class="line"><span style="color: #c9d1d9">				if entity.relevance_score > 0:</span></span>
-<span class="line"><span style="color: #c9d1d9">					ent_dict['Keyword'].append(entity.id)</span></span>
-<span class="line"><span style="color: #c9d1d9">					ent_dict['Relevance Score'].append(entity.relevance_score)</span></span>
-<span class="line"><span style="color: #c9d1d9">					if entity.id.lower() in existing_tags or entity.id.capitalize() in existing_tags:</span></span>
-<span class="line"><span style="color: #c9d1d9">						ent_dict['Existing Tag'].append(1)</span></span>
-<span class="line"><span style="color: #c9d1d9">					else:</span></span>
-<span class="line"><span style="color: #c9d1d9">						ent_dict['Existing Tag'].append(0)</span></span>
-<span class="line"><span style="color: #c9d1d9">			</span></span>
-<span class="line"><span style="color: #c9d1d9">			for topic in response.topics():</span></span>
-<span class="line"><span style="color: #c9d1d9">				if topic.score > 0.6:</span></span>
-<span class="line"><span style="color: #c9d1d9">					topics_dict['Topic'].append(topic.label)</span></span>
-<span class="line"><span style="color: #c9d1d9">					topics_dict['Relevance Score'].append(topic.score)</span></span>
-<span class="line"><span style="color: #c9d1d9">					if topic.label.lower() in existing_tags or topic.label.capitalize() in existing_tags:</span></span>
-<span class="line"><span style="color: #c9d1d9">						topics_dict['Existing Tag'].append(1)</span></span>
-<span class="line"><span style="color: #c9d1d9">					else:</span></span>
-<span class="line"><span style="color: #c9d1d9">						topics_dict['Existing Tag'].append(0)</span></span>
-<span class="line"><span style="color: #c9d1d9">			</span></span>
-<span class="line"><span style="color: #c9d1d9">			for category in response.categories():</span></span>
-<span class="line"><span style="color: #c9d1d9">				categories_dict['Category'].append(category.label)</span></span>
-<span class="line"><span style="color: #c9d1d9">				categories_dict['Relevance Score'].append(category.score)</span></span></code></pre>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #8B949E"># Keyword extraction function to analyse with TextRazor</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #FF7B72">def</span><span style="color: #C9D1D9"> </span><span style="color: #D2A8FF">textrazor_extraction</span><span style="color: #C9D1D9">(input_type):</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C9D1D9">	</span><span style="color: #FF7B72">if</span><span style="color: #C9D1D9"> input_type </span><span style="color: #FF7B72">==</span><span style="color: #C9D1D9"> </span><span style="color: #A5D6FF">'Text'</span><span style="color: #C9D1D9">:</span></span>
+<span class="line"><span style="color: #C9D1D9">		</span><span style="color: #FF7B72">global</span><span style="color: #C9D1D9"> txt</span></span>
+<span class="line"><span style="color: #C9D1D9">		response </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> client.analyze(txt)</span></span>
+<span class="line"><span style="color: #C9D1D9">		</span><span style="color: #FF7B72">for</span><span style="color: #C9D1D9"> entity </span><span style="color: #FF7B72">in</span><span style="color: #C9D1D9"> response.entities():</span></span>
+<span class="line"><span style="color: #C9D1D9">			</span><span style="color: #FF7B72">if</span><span style="color: #C9D1D9"> entity.relevance_score </span><span style="color: #FF7B72">></span><span style="color: #C9D1D9"> </span><span style="color: #79C0FF">0</span><span style="color: #C9D1D9">:</span></span>
+<span class="line"><span style="color: #C9D1D9">				ent_dict[</span><span style="color: #A5D6FF">'Keyword'</span><span style="color: #C9D1D9">].append(entity.id)</span></span>
+<span class="line"><span style="color: #C9D1D9">				ent_dict[</span><span style="color: #A5D6FF">'Relevance Score'</span><span style="color: #C9D1D9">].append(entity.relevance_score)</span></span>
+<span class="line"><span style="color: #C9D1D9">				</span><span style="color: #FF7B72">if</span><span style="color: #C9D1D9"> entity.id.lower() </span><span style="color: #FF7B72">in</span><span style="color: #C9D1D9"> existing_tags </span><span style="color: #FF7B72">or</span><span style="color: #C9D1D9"> entity.id.capitalize() </span><span style="color: #FF7B72">in</span><span style="color: #C9D1D9"> existing_tags:</span></span>
+<span class="line"><span style="color: #C9D1D9">					ent_dict[</span><span style="color: #A5D6FF">'Existing Tag'</span><span style="color: #C9D1D9">].append(</span><span style="color: #79C0FF">1</span><span style="color: #C9D1D9">)</span></span>
+<span class="line"><span style="color: #C9D1D9">				</span><span style="color: #FF7B72">else</span><span style="color: #C9D1D9">:</span></span>
+<span class="line"><span style="color: #C9D1D9">					ent_dict[</span><span style="color: #A5D6FF">'Existing Tag'</span><span style="color: #C9D1D9">].append(</span><span style="color: #79C0FF">0</span><span style="color: #C9D1D9">)</span></span>
+<span class="line"><span style="color: #C9D1D9">		</span></span>
+<span class="line"><span style="color: #C9D1D9">		</span><span style="color: #FF7B72">for</span><span style="color: #C9D1D9"> topic </span><span style="color: #FF7B72">in</span><span style="color: #C9D1D9"> response.topics():</span></span>
+<span class="line"><span style="color: #C9D1D9">			</span><span style="color: #FF7B72">if</span><span style="color: #C9D1D9"> topic.score </span><span style="color: #FF7B72">></span><span style="color: #C9D1D9"> </span><span style="color: #79C0FF">0.6</span><span style="color: #C9D1D9">:</span></span>
+<span class="line"><span style="color: #C9D1D9">				topics_dict[</span><span style="color: #A5D6FF">'Topic'</span><span style="color: #C9D1D9">].append(topic.label)</span></span>
+<span class="line"><span style="color: #C9D1D9">				topics_dict[</span><span style="color: #A5D6FF">'Relevance Score'</span><span style="color: #C9D1D9">].append(topic.score)</span></span>
+<span class="line"><span style="color: #C9D1D9">				</span><span style="color: #FF7B72">if</span><span style="color: #C9D1D9"> topic.label.lower() </span><span style="color: #FF7B72">in</span><span style="color: #C9D1D9"> existing_tags </span><span style="color: #FF7B72">or</span><span style="color: #C9D1D9"> topic.label.capitalize() </span><span style="color: #FF7B72">in</span><span style="color: #C9D1D9"> existing_tags:</span></span>
+<span class="line"><span style="color: #C9D1D9">					topics_dict[</span><span style="color: #A5D6FF">'Existing Tag'</span><span style="color: #C9D1D9">].append(</span><span style="color: #79C0FF">1</span><span style="color: #C9D1D9">)</span></span>
+<span class="line"><span style="color: #C9D1D9">				</span><span style="color: #FF7B72">else</span><span style="color: #C9D1D9">:</span></span>
+<span class="line"><span style="color: #C9D1D9">					topics_dict[</span><span style="color: #A5D6FF">'Existing Tag'</span><span style="color: #C9D1D9">].append(</span><span style="color: #79C0FF">0</span><span style="color: #C9D1D9">)</span></span>
+<span class="line"><span style="color: #C9D1D9">		</span></span>
+<span class="line"><span style="color: #C9D1D9">		</span><span style="color: #FF7B72">for</span><span style="color: #C9D1D9"> category </span><span style="color: #FF7B72">in</span><span style="color: #C9D1D9"> response.categories():</span></span>
+<span class="line"><span style="color: #C9D1D9">			categories_dict[</span><span style="color: #A5D6FF">'Category'</span><span style="color: #C9D1D9">].append(category.label)</span></span>
+<span class="line"><span style="color: #C9D1D9">			categories_dict[</span><span style="color: #A5D6FF">'Relevance Score'</span><span style="color: #C9D1D9">].append(category.score)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C9D1D9">	</span><span style="color: #FF7B72">elif</span><span style="color: #C9D1D9"> input_type </span><span style="color: #FF7B72">==</span><span style="color: #C9D1D9"> </span><span style="color: #A5D6FF">'URL'</span><span style="color: #C9D1D9">:</span></span>
+<span class="line"><span style="color: #C9D1D9">		txt </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> req(url)</span></span>
+<span class="line"><span style="color: #C9D1D9">		response </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> client.analyze(txt)</span></span>
+<span class="line"><span style="color: #C9D1D9">		</span><span style="color: #FF7B72">for</span><span style="color: #C9D1D9"> entity </span><span style="color: #FF7B72">in</span><span style="color: #C9D1D9"> response.entities():</span></span>
+<span class="line"><span style="color: #C9D1D9">			</span><span style="color: #FF7B72">if</span><span style="color: #C9D1D9"> entity.relevance_score </span><span style="color: #FF7B72">></span><span style="color: #C9D1D9"> </span><span style="color: #79C0FF">0</span><span style="color: #C9D1D9">:</span></span>
+<span class="line"><span style="color: #C9D1D9">				ent_dict[</span><span style="color: #A5D6FF">'Keyword'</span><span style="color: #C9D1D9">].append(entity.id)</span></span>
+<span class="line"><span style="color: #C9D1D9">				ent_dict[</span><span style="color: #A5D6FF">'Relevance Score'</span><span style="color: #C9D1D9">].append(entity.relevance_score)</span></span>
+<span class="line"><span style="color: #C9D1D9">				</span><span style="color: #FF7B72">if</span><span style="color: #C9D1D9"> entity.id.lower() </span><span style="color: #FF7B72">in</span><span style="color: #C9D1D9"> existing_tags </span><span style="color: #FF7B72">or</span><span style="color: #C9D1D9"> entity.id.capitalize() </span><span style="color: #FF7B72">in</span><span style="color: #C9D1D9"> existing_tags:</span></span>
+<span class="line"><span style="color: #C9D1D9">					ent_dict[</span><span style="color: #A5D6FF">'Existing Tag'</span><span style="color: #C9D1D9">].append(</span><span style="color: #79C0FF">1</span><span style="color: #C9D1D9">)</span></span>
+<span class="line"><span style="color: #C9D1D9">				</span><span style="color: #FF7B72">else</span><span style="color: #C9D1D9">:</span></span>
+<span class="line"><span style="color: #C9D1D9">					ent_dict[</span><span style="color: #A5D6FF">'Existing Tag'</span><span style="color: #C9D1D9">].append(</span><span style="color: #79C0FF">0</span><span style="color: #C9D1D9">)</span></span>
+<span class="line"><span style="color: #C9D1D9">		</span></span>
+<span class="line"><span style="color: #C9D1D9">		</span><span style="color: #FF7B72">for</span><span style="color: #C9D1D9"> topic </span><span style="color: #FF7B72">in</span><span style="color: #C9D1D9"> response.topics():</span></span>
+<span class="line"><span style="color: #C9D1D9">			</span><span style="color: #FF7B72">if</span><span style="color: #C9D1D9"> topic.score </span><span style="color: #FF7B72">></span><span style="color: #C9D1D9"> </span><span style="color: #79C0FF">0.6</span><span style="color: #C9D1D9">:</span></span>
+<span class="line"><span style="color: #C9D1D9">				topics_dict[</span><span style="color: #A5D6FF">'Topic'</span><span style="color: #C9D1D9">].append(topic.label)</span></span>
+<span class="line"><span style="color: #C9D1D9">				topics_dict[</span><span style="color: #A5D6FF">'Relevance Score'</span><span style="color: #C9D1D9">].append(topic.score)</span></span>
+<span class="line"><span style="color: #C9D1D9">				</span><span style="color: #FF7B72">if</span><span style="color: #C9D1D9"> topic.label.lower() </span><span style="color: #FF7B72">in</span><span style="color: #C9D1D9"> existing_tags </span><span style="color: #FF7B72">or</span><span style="color: #C9D1D9"> topic.label.capitalize() </span><span style="color: #FF7B72">in</span><span style="color: #C9D1D9"> existing_tags:</span></span>
+<span class="line"><span style="color: #C9D1D9">					topics_dict[</span><span style="color: #A5D6FF">'Existing Tag'</span><span style="color: #C9D1D9">].append(</span><span style="color: #79C0FF">1</span><span style="color: #C9D1D9">)</span></span>
+<span class="line"><span style="color: #C9D1D9">				</span><span style="color: #FF7B72">else</span><span style="color: #C9D1D9">:</span></span>
+<span class="line"><span style="color: #C9D1D9">					topics_dict[</span><span style="color: #A5D6FF">'Existing Tag'</span><span style="color: #C9D1D9">].append(</span><span style="color: #79C0FF">0</span><span style="color: #C9D1D9">)</span></span>
+<span class="line"><span style="color: #C9D1D9">		</span></span>
+<span class="line"><span style="color: #C9D1D9">		</span><span style="color: #FF7B72">for</span><span style="color: #C9D1D9"> category </span><span style="color: #FF7B72">in</span><span style="color: #C9D1D9"> response.categories():</span></span>
+<span class="line"><span style="color: #C9D1D9">			categories_dict[</span><span style="color: #A5D6FF">'Category'</span><span style="color: #C9D1D9">].append(category.label)</span></span>
+<span class="line"><span style="color: #C9D1D9">			categories_dict[</span><span style="color: #A5D6FF">'Relevance Score'</span><span style="color: #C9D1D9">].append(category.score)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C9D1D9">	</span><span style="color: #FF7B72">elif</span><span style="color: #C9D1D9"> input_type </span><span style="color: #FF7B72">==</span><span style="color: #C9D1D9"> </span><span style="color: #A5D6FF">'Multiple URLs'</span><span style="color: #C9D1D9">:</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C9D1D9">		</span><span style="color: #FF7B72">for</span><span style="color: #C9D1D9"> u </span><span style="color: #FF7B72">in</span><span style="color: #C9D1D9"> urls:</span></span>
+<span class="line"><span style="color: #C9D1D9">			txt </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> req(u)</span></span>
+<span class="line"><span style="color: #C9D1D9">			all_txt.append(txt)</span></span>
+<span class="line"><span style="color: #C9D1D9">			response </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> client.analyze(txt)</span></span>
+<span class="line"><span style="color: #C9D1D9">			</span><span style="color: #FF7B72">for</span><span style="color: #C9D1D9"> entity </span><span style="color: #FF7B72">in</span><span style="color: #C9D1D9"> response.entities():</span></span>
+<span class="line"><span style="color: #C9D1D9">				</span><span style="color: #FF7B72">if</span><span style="color: #C9D1D9"> entity.relevance_score </span><span style="color: #FF7B72">></span><span style="color: #C9D1D9"> </span><span style="color: #79C0FF">0</span><span style="color: #C9D1D9">:</span></span>
+<span class="line"><span style="color: #C9D1D9">					ent_dict[</span><span style="color: #A5D6FF">'Keyword'</span><span style="color: #C9D1D9">].append(entity.id)</span></span>
+<span class="line"><span style="color: #C9D1D9">					ent_dict[</span><span style="color: #A5D6FF">'Relevance Score'</span><span style="color: #C9D1D9">].append(entity.relevance_score)</span></span>
+<span class="line"><span style="color: #C9D1D9">					</span><span style="color: #FF7B72">if</span><span style="color: #C9D1D9"> entity.id.lower() </span><span style="color: #FF7B72">in</span><span style="color: #C9D1D9"> existing_tags </span><span style="color: #FF7B72">or</span><span style="color: #C9D1D9"> entity.id.capitalize() </span><span style="color: #FF7B72">in</span><span style="color: #C9D1D9"> existing_tags:</span></span>
+<span class="line"><span style="color: #C9D1D9">						ent_dict[</span><span style="color: #A5D6FF">'Existing Tag'</span><span style="color: #C9D1D9">].append(</span><span style="color: #79C0FF">1</span><span style="color: #C9D1D9">)</span></span>
+<span class="line"><span style="color: #C9D1D9">					</span><span style="color: #FF7B72">else</span><span style="color: #C9D1D9">:</span></span>
+<span class="line"><span style="color: #C9D1D9">						ent_dict[</span><span style="color: #A5D6FF">'Existing Tag'</span><span style="color: #C9D1D9">].append(</span><span style="color: #79C0FF">0</span><span style="color: #C9D1D9">)</span></span>
+<span class="line"><span style="color: #C9D1D9">			</span></span>
+<span class="line"><span style="color: #C9D1D9">			</span><span style="color: #FF7B72">for</span><span style="color: #C9D1D9"> topic </span><span style="color: #FF7B72">in</span><span style="color: #C9D1D9"> response.topics():</span></span>
+<span class="line"><span style="color: #C9D1D9">				</span><span style="color: #FF7B72">if</span><span style="color: #C9D1D9"> topic.score </span><span style="color: #FF7B72">></span><span style="color: #C9D1D9"> </span><span style="color: #79C0FF">0.6</span><span style="color: #C9D1D9">:</span></span>
+<span class="line"><span style="color: #C9D1D9">					topics_dict[</span><span style="color: #A5D6FF">'Topic'</span><span style="color: #C9D1D9">].append(topic.label)</span></span>
+<span class="line"><span style="color: #C9D1D9">					topics_dict[</span><span style="color: #A5D6FF">'Relevance Score'</span><span style="color: #C9D1D9">].append(topic.score)</span></span>
+<span class="line"><span style="color: #C9D1D9">					</span><span style="color: #FF7B72">if</span><span style="color: #C9D1D9"> topic.label.lower() </span><span style="color: #FF7B72">in</span><span style="color: #C9D1D9"> existing_tags </span><span style="color: #FF7B72">or</span><span style="color: #C9D1D9"> topic.label.capitalize() </span><span style="color: #FF7B72">in</span><span style="color: #C9D1D9"> existing_tags:</span></span>
+<span class="line"><span style="color: #C9D1D9">						topics_dict[</span><span style="color: #A5D6FF">'Existing Tag'</span><span style="color: #C9D1D9">].append(</span><span style="color: #79C0FF">1</span><span style="color: #C9D1D9">)</span></span>
+<span class="line"><span style="color: #C9D1D9">					</span><span style="color: #FF7B72">else</span><span style="color: #C9D1D9">:</span></span>
+<span class="line"><span style="color: #C9D1D9">						topics_dict[</span><span style="color: #A5D6FF">'Existing Tag'</span><span style="color: #C9D1D9">].append(</span><span style="color: #79C0FF">0</span><span style="color: #C9D1D9">)</span></span>
+<span class="line"><span style="color: #C9D1D9">			</span></span>
+<span class="line"><span style="color: #C9D1D9">			</span><span style="color: #FF7B72">for</span><span style="color: #C9D1D9"> category </span><span style="color: #FF7B72">in</span><span style="color: #C9D1D9"> response.categories():</span></span>
+<span class="line"><span style="color: #C9D1D9">				categories_dict[</span><span style="color: #A5D6FF">'Category'</span><span style="color: #C9D1D9">].append(category.label)</span></span>
+<span class="line"><span style="color: #C9D1D9">				categories_dict[</span><span style="color: #A5D6FF">'Relevance Score'</span><span style="color: #C9D1D9">].append(category.score)</span></span></code></pre>
 <p>Depending on the input (text, URL, or multiple URLs), this function analyses the text, finds the topics, entities, and categories and adds them to a dictionary. I set a threshold for the relevance score to ignore anything that had a score of 0. I also added a check for matching tags, so if an entity is already in my tag list, it’ll give me a 1 or 0 if not. It’s worth noting that this is inconsistent despite my best efforts so if you see the code and can tell me how to do this better, let me know!</p>
 <h3 id="9-the-function-for-displaying-that-data-in-dataframe-form">9. The function for displaying that data in DataFrame form</h3>
-<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9"># DataFrames to present above data</span></span>
-<span class="line"><span style="color: #c9d1d9">def data_viz():</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">	if input_type == 'Text':</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">		# df_kw = pd.DataFrame(kw_dict)</span></span>
-<span class="line"><span style="color: #c9d1d9">		# # grouped_df_kw = df_kw.groupby(['Keyword']).agg({'Relevance Score': ['mean'], 'Existing Tag': ['max']}).round(3)</span></span>
-<span class="line"><span style="color: #c9d1d9">		# # grouped_df_kw = grouped_df_kw.reset_index()</span></span>
-<span class="line"><span style="color: #c9d1d9">		# st.header('Keywords')</span></span>
-<span class="line"><span style="color: #c9d1d9">		# st.dataframe(df_kw)</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">		df_ent = pd.DataFrame(ent_dict)</span></span>
-<span class="line"><span style="color: #c9d1d9">		grouped_df_ent = df_ent.groupby(['Keyword']).agg({'Relevance Score': ['mean'], 'Existing Tag': ['max']}).round(3)</span></span>
-<span class="line"><span style="color: #c9d1d9">		grouped_df_ent = grouped_df_ent.reset_index()</span></span>
-<span class="line"><span style="color: #c9d1d9">		st.header('Entities')</span></span>
-<span class="line"><span style="color: #c9d1d9">		st.dataframe(grouped_df_ent)</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">		df_topic = pd.DataFrame(topics_dict)</span></span>
-<span class="line"><span style="color: #c9d1d9">		grouped_df_topic = df_topic.groupby(['Topic']).agg({'Relevance Score': ['mean'], 'Existing Tag': ['max']}).round(3)</span></span>
-<span class="line"><span style="color: #c9d1d9">		grouped_df_topic = grouped_df_topic.reset_index()</span></span>
-<span class="line"><span style="color: #c9d1d9">		st.header('Topics')</span></span>
-<span class="line"><span style="color: #c9d1d9">		st.dataframe(grouped_df_topic)</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">		df_cat = pd.DataFrame(categories_dict)</span></span>
-<span class="line"><span style="color: #c9d1d9">		grouped_df_cat = df_cat.groupby(['Category']).agg({'Relevance Score': ['mean']}).round(3)</span></span>
-<span class="line"><span style="color: #c9d1d9">		grouped_df_cat = grouped_df_cat.reset_index()</span></span>
-<span class="line"><span style="color: #c9d1d9">		st.header('Categories')</span></span>
-<span class="line"><span style="color: #c9d1d9">		st.dataframe(grouped_df_cat)</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">	elif input_type == 'URL':</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">		df_ent = pd.DataFrame(ent_dict)</span></span>
-<span class="line"><span style="color: #c9d1d9">		grouped_df_ent = df_ent.groupby(['Keyword']).agg({'Relevance Score': ['mean'], 'Existing Tag': ['max']}).round(3)</span></span>
-<span class="line"><span style="color: #c9d1d9">		grouped_df_ent = grouped_df_ent.reset_index()</span></span>
-<span class="line"><span style="color: #c9d1d9">		st.header('Entities')</span></span>
-<span class="line"><span style="color: #c9d1d9">		st.dataframe(grouped_df_ent)</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">		df_topic = pd.DataFrame(topics_dict)</span></span>
-<span class="line"><span style="color: #c9d1d9">		grouped_df_topic = df_topic.groupby(['Topic']).agg({'Relevance Score': ['mean'], 'Existing Tag': ['max']}).round(3)</span></span>
-<span class="line"><span style="color: #c9d1d9">		grouped_df_topic = grouped_df_topic.reset_index()</span></span>
-<span class="line"><span style="color: #c9d1d9">		st.header('Topics')</span></span>
-<span class="line"><span style="color: #c9d1d9">		st.dataframe(grouped_df_topic)</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">		df_cat = pd.DataFrame(categories_dict)</span></span>
-<span class="line"><span style="color: #c9d1d9">		grouped_df_cat = df_cat.groupby(['Category']).agg({'Relevance Score': ['mean']}).round(3)</span></span>
-<span class="line"><span style="color: #c9d1d9">		grouped_df_cat = grouped_df_cat.reset_index()</span></span>
-<span class="line"><span style="color: #c9d1d9">		st.header('Categories')</span></span>
-<span class="line"><span style="color: #c9d1d9">		st.dataframe(grouped_df_cat)</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">	elif input_type == 'Multiple URLs':</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">		df_ent = pd.DataFrame(ent_dict)</span></span>
-<span class="line"><span style="color: #c9d1d9">		grouped_df_ent = df_ent.groupby(['Keyword', 'Existing Tag']).describe().round(3)</span></span>
-<span class="line"><span style="color: #c9d1d9">		grouped_df_ent = grouped_df_ent.reset_index()</span></span>
-<span class="line"><span style="color: #c9d1d9">		st.header('Entities')</span></span>
-<span class="line"><span style="color: #c9d1d9">		st.dataframe(grouped_df_ent)</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">		df_topic = pd.DataFrame(topics_dict)</span></span>
-<span class="line"><span style="color: #c9d1d9">		grouped_df_topic = df_topic.groupby(['Topic', 'Existing Tag']).describe().round(3)</span></span>
-<span class="line"><span style="color: #c9d1d9">		grouped_df_topic = grouped_df_topic.reset_index()</span></span>
-<span class="line"><span style="color: #c9d1d9">		st.header('Topics')</span></span>
-<span class="line"><span style="color: #c9d1d9">		st.dataframe(grouped_df_topic)</span></span>
-<span class="line"><span style="color: #c9d1d9"></span></span>
-<span class="line"><span style="color: #c9d1d9">		df_cat = pd.DataFrame(categories_dict)</span></span>
-<span class="line"><span style="color: #c9d1d9">		grouped_df_cat = df_cat.groupby('Category').describe().round(3)</span></span>
-<span class="line"><span style="color: #c9d1d9">		grouped_df_cat = grouped_df_cat.reset_index()</span></span>
-<span class="line"><span style="color: #c9d1d9">		st.header('Categories')</span></span>
-<span class="line"><span style="color: #c9d1d9">		st.dataframe(grouped_df_cat)</span></span></code></pre>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #8B949E"># DataFrames to present above data</span></span>
+<span class="line"><span style="color: #FF7B72">def</span><span style="color: #C9D1D9"> </span><span style="color: #D2A8FF">data_viz</span><span style="color: #C9D1D9">():</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C9D1D9">	</span><span style="color: #FF7B72">if</span><span style="color: #C9D1D9"> input_type </span><span style="color: #FF7B72">==</span><span style="color: #C9D1D9"> </span><span style="color: #A5D6FF">'Text'</span><span style="color: #C9D1D9">:</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C9D1D9">		</span><span style="color: #8B949E"># df_kw = pd.DataFrame(kw_dict)</span></span>
+<span class="line"><span style="color: #C9D1D9">		</span><span style="color: #8B949E"># # grouped_df_kw = df_kw.groupby(['Keyword']).agg({'Relevance Score': ['mean'], 'Existing Tag': ['max']}).round(3)</span></span>
+<span class="line"><span style="color: #C9D1D9">		</span><span style="color: #8B949E"># # grouped_df_kw = grouped_df_kw.reset_index()</span></span>
+<span class="line"><span style="color: #C9D1D9">		</span><span style="color: #8B949E"># st.header('Keywords')</span></span>
+<span class="line"><span style="color: #C9D1D9">		</span><span style="color: #8B949E"># st.dataframe(df_kw)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C9D1D9">		df_ent </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> pd.DataFrame(ent_dict)</span></span>
+<span class="line"><span style="color: #C9D1D9">		grouped_df_ent </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> df_ent.groupby([</span><span style="color: #A5D6FF">'Keyword'</span><span style="color: #C9D1D9">]).agg({</span><span style="color: #A5D6FF">'Relevance Score'</span><span style="color: #C9D1D9">: [</span><span style="color: #A5D6FF">'mean'</span><span style="color: #C9D1D9">], </span><span style="color: #A5D6FF">'Existing Tag'</span><span style="color: #C9D1D9">: [</span><span style="color: #A5D6FF">'max'</span><span style="color: #C9D1D9">]}).round(</span><span style="color: #79C0FF">3</span><span style="color: #C9D1D9">)</span></span>
+<span class="line"><span style="color: #C9D1D9">		grouped_df_ent </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> grouped_df_ent.reset_index()</span></span>
+<span class="line"><span style="color: #C9D1D9">		st.header(</span><span style="color: #A5D6FF">'Entities'</span><span style="color: #C9D1D9">)</span></span>
+<span class="line"><span style="color: #C9D1D9">		st.dataframe(grouped_df_ent)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C9D1D9">		df_topic </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> pd.DataFrame(topics_dict)</span></span>
+<span class="line"><span style="color: #C9D1D9">		grouped_df_topic </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> df_topic.groupby([</span><span style="color: #A5D6FF">'Topic'</span><span style="color: #C9D1D9">]).agg({</span><span style="color: #A5D6FF">'Relevance Score'</span><span style="color: #C9D1D9">: [</span><span style="color: #A5D6FF">'mean'</span><span style="color: #C9D1D9">], </span><span style="color: #A5D6FF">'Existing Tag'</span><span style="color: #C9D1D9">: [</span><span style="color: #A5D6FF">'max'</span><span style="color: #C9D1D9">]}).round(</span><span style="color: #79C0FF">3</span><span style="color: #C9D1D9">)</span></span>
+<span class="line"><span style="color: #C9D1D9">		grouped_df_topic </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> grouped_df_topic.reset_index()</span></span>
+<span class="line"><span style="color: #C9D1D9">		st.header(</span><span style="color: #A5D6FF">'Topics'</span><span style="color: #C9D1D9">)</span></span>
+<span class="line"><span style="color: #C9D1D9">		st.dataframe(grouped_df_topic)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C9D1D9">		df_cat </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> pd.DataFrame(categories_dict)</span></span>
+<span class="line"><span style="color: #C9D1D9">		grouped_df_cat </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> df_cat.groupby([</span><span style="color: #A5D6FF">'Category'</span><span style="color: #C9D1D9">]).agg({</span><span style="color: #A5D6FF">'Relevance Score'</span><span style="color: #C9D1D9">: [</span><span style="color: #A5D6FF">'mean'</span><span style="color: #C9D1D9">]}).round(</span><span style="color: #79C0FF">3</span><span style="color: #C9D1D9">)</span></span>
+<span class="line"><span style="color: #C9D1D9">		grouped_df_cat </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> grouped_df_cat.reset_index()</span></span>
+<span class="line"><span style="color: #C9D1D9">		st.header(</span><span style="color: #A5D6FF">'Categories'</span><span style="color: #C9D1D9">)</span></span>
+<span class="line"><span style="color: #C9D1D9">		st.dataframe(grouped_df_cat)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C9D1D9">	</span><span style="color: #FF7B72">elif</span><span style="color: #C9D1D9"> input_type </span><span style="color: #FF7B72">==</span><span style="color: #C9D1D9"> </span><span style="color: #A5D6FF">'URL'</span><span style="color: #C9D1D9">:</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C9D1D9">		df_ent </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> pd.DataFrame(ent_dict)</span></span>
+<span class="line"><span style="color: #C9D1D9">		grouped_df_ent </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> df_ent.groupby([</span><span style="color: #A5D6FF">'Keyword'</span><span style="color: #C9D1D9">]).agg({</span><span style="color: #A5D6FF">'Relevance Score'</span><span style="color: #C9D1D9">: [</span><span style="color: #A5D6FF">'mean'</span><span style="color: #C9D1D9">], </span><span style="color: #A5D6FF">'Existing Tag'</span><span style="color: #C9D1D9">: [</span><span style="color: #A5D6FF">'max'</span><span style="color: #C9D1D9">]}).round(</span><span style="color: #79C0FF">3</span><span style="color: #C9D1D9">)</span></span>
+<span class="line"><span style="color: #C9D1D9">		grouped_df_ent </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> grouped_df_ent.reset_index()</span></span>
+<span class="line"><span style="color: #C9D1D9">		st.header(</span><span style="color: #A5D6FF">'Entities'</span><span style="color: #C9D1D9">)</span></span>
+<span class="line"><span style="color: #C9D1D9">		st.dataframe(grouped_df_ent)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C9D1D9">		df_topic </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> pd.DataFrame(topics_dict)</span></span>
+<span class="line"><span style="color: #C9D1D9">		grouped_df_topic </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> df_topic.groupby([</span><span style="color: #A5D6FF">'Topic'</span><span style="color: #C9D1D9">]).agg({</span><span style="color: #A5D6FF">'Relevance Score'</span><span style="color: #C9D1D9">: [</span><span style="color: #A5D6FF">'mean'</span><span style="color: #C9D1D9">], </span><span style="color: #A5D6FF">'Existing Tag'</span><span style="color: #C9D1D9">: [</span><span style="color: #A5D6FF">'max'</span><span style="color: #C9D1D9">]}).round(</span><span style="color: #79C0FF">3</span><span style="color: #C9D1D9">)</span></span>
+<span class="line"><span style="color: #C9D1D9">		grouped_df_topic </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> grouped_df_topic.reset_index()</span></span>
+<span class="line"><span style="color: #C9D1D9">		st.header(</span><span style="color: #A5D6FF">'Topics'</span><span style="color: #C9D1D9">)</span></span>
+<span class="line"><span style="color: #C9D1D9">		st.dataframe(grouped_df_topic)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C9D1D9">		df_cat </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> pd.DataFrame(categories_dict)</span></span>
+<span class="line"><span style="color: #C9D1D9">		grouped_df_cat </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> df_cat.groupby([</span><span style="color: #A5D6FF">'Category'</span><span style="color: #C9D1D9">]).agg({</span><span style="color: #A5D6FF">'Relevance Score'</span><span style="color: #C9D1D9">: [</span><span style="color: #A5D6FF">'mean'</span><span style="color: #C9D1D9">]}).round(</span><span style="color: #79C0FF">3</span><span style="color: #C9D1D9">)</span></span>
+<span class="line"><span style="color: #C9D1D9">		grouped_df_cat </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> grouped_df_cat.reset_index()</span></span>
+<span class="line"><span style="color: #C9D1D9">		st.header(</span><span style="color: #A5D6FF">'Categories'</span><span style="color: #C9D1D9">)</span></span>
+<span class="line"><span style="color: #C9D1D9">		st.dataframe(grouped_df_cat)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C9D1D9">	</span><span style="color: #FF7B72">elif</span><span style="color: #C9D1D9"> input_type </span><span style="color: #FF7B72">==</span><span style="color: #C9D1D9"> </span><span style="color: #A5D6FF">'Multiple URLs'</span><span style="color: #C9D1D9">:</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C9D1D9">		df_ent </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> pd.DataFrame(ent_dict)</span></span>
+<span class="line"><span style="color: #C9D1D9">		grouped_df_ent </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> df_ent.groupby([</span><span style="color: #A5D6FF">'Keyword'</span><span style="color: #C9D1D9">, </span><span style="color: #A5D6FF">'Existing Tag'</span><span style="color: #C9D1D9">]).describe().round(</span><span style="color: #79C0FF">3</span><span style="color: #C9D1D9">)</span></span>
+<span class="line"><span style="color: #C9D1D9">		grouped_df_ent </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> grouped_df_ent.reset_index()</span></span>
+<span class="line"><span style="color: #C9D1D9">		st.header(</span><span style="color: #A5D6FF">'Entities'</span><span style="color: #C9D1D9">)</span></span>
+<span class="line"><span style="color: #C9D1D9">		st.dataframe(grouped_df_ent)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C9D1D9">		df_topic </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> pd.DataFrame(topics_dict)</span></span>
+<span class="line"><span style="color: #C9D1D9">		grouped_df_topic </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> df_topic.groupby([</span><span style="color: #A5D6FF">'Topic'</span><span style="color: #C9D1D9">, </span><span style="color: #A5D6FF">'Existing Tag'</span><span style="color: #C9D1D9">]).describe().round(</span><span style="color: #79C0FF">3</span><span style="color: #C9D1D9">)</span></span>
+<span class="line"><span style="color: #C9D1D9">		grouped_df_topic </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> grouped_df_topic.reset_index()</span></span>
+<span class="line"><span style="color: #C9D1D9">		st.header(</span><span style="color: #A5D6FF">'Topics'</span><span style="color: #C9D1D9">)</span></span>
+<span class="line"><span style="color: #C9D1D9">		st.dataframe(grouped_df_topic)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C9D1D9">		df_cat </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> pd.DataFrame(categories_dict)</span></span>
+<span class="line"><span style="color: #C9D1D9">		grouped_df_cat </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> df_cat.groupby(</span><span style="color: #A5D6FF">'Category'</span><span style="color: #C9D1D9">).describe().round(</span><span style="color: #79C0FF">3</span><span style="color: #C9D1D9">)</span></span>
+<span class="line"><span style="color: #C9D1D9">		grouped_df_cat </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> grouped_df_cat.reset_index()</span></span>
+<span class="line"><span style="color: #C9D1D9">		st.header(</span><span style="color: #A5D6FF">'Categories'</span><span style="color: #C9D1D9">)</span></span>
+<span class="line"><span style="color: #C9D1D9">		st.dataframe(grouped_df_cat)</span></span></code></pre>
 <p>The penultimate function converts those dictionaries into dataframes. The data is aggregated by relevance score (if multiple instances of an entity are found, I get the mean relevance score), and the max value of existing tags (1 or 0). For multiple URLs, I’ve used describe() to give me a full range of statistical data. Most of it is superfluous but it was the best thing I could find to get the data I needed.</p>
 <p>Below is a table of the top 5 entities found in this blog post, ordered by relevance score:</p>
 
@@ -714,21 +720,21 @@
 
 <table><thead><tr><th>Category</th><th>Relevance Score</th></tr></thead><tbody><tr><td>economy, business and finance>computing and information technology</td><td>0.8100</td></tr><tr><td>economy, business and finance>computing and information technology>software</td><td>0.7330</td></tr><tr><td>arts, culture and entertainment>internet</td><td>0.6020</td></tr><tr><td>arts, culture and entertainment>language</td><td>0.5620</td></tr><tr><td>science and technology>engineering</td><td>0.5360</td></tr></tbody></table>
 <h3 id="10-execution-of-the-all-the-functions-to-make-it-work">10. Execution of the all the functions to make it work</h3>
-<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9"># Execute functions</span></span>
-<span class="line"><span style="color: #c9d1d9">if tag_ideas:</span></span>
-<span class="line"><span style="color: #c9d1d9">	all_blogs()</span></span>
-<span class="line"><span style="color: #c9d1d9">elif submit and input_type and input_type == 'Text':</span></span>
-<span class="line"><span style="color: #c9d1d9">	textrazor_extraction('Text')</span></span>
-<span class="line"><span style="color: #c9d1d9">	data_viz()</span></span>
-<span class="line"><span style="color: #c9d1d9">	main()</span></span>
-<span class="line"><span style="color: #c9d1d9">elif submit and input_type == 'URL':</span></span>
-<span class="line"><span style="color: #c9d1d9">	textrazor_extraction('URL')</span></span>
-<span class="line"><span style="color: #c9d1d9">	data_viz()</span></span>
-<span class="line"><span style="color: #c9d1d9">	main()</span></span>
-<span class="line"><span style="color: #c9d1d9">elif submit and input_type == 'Multiple URLs':</span></span>
-<span class="line"><span style="color: #c9d1d9">	urls = [line for line in multi_url.split("\n")]</span></span>
-<span class="line"><span style="color: #c9d1d9">	textrazor_extraction('Multiple URLs')</span></span>
-<span class="line"><span style="color: #c9d1d9">	data_viz()</span></span></code></pre>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #8B949E"># Execute functions</span></span>
+<span class="line"><span style="color: #FF7B72">if</span><span style="color: #C9D1D9"> tag_ideas:</span></span>
+<span class="line"><span style="color: #C9D1D9">	all_blogs()</span></span>
+<span class="line"><span style="color: #FF7B72">elif</span><span style="color: #C9D1D9"> submit </span><span style="color: #FF7B72">and</span><span style="color: #C9D1D9"> input_type </span><span style="color: #FF7B72">and</span><span style="color: #C9D1D9"> input_type </span><span style="color: #FF7B72">==</span><span style="color: #C9D1D9"> </span><span style="color: #A5D6FF">'Text'</span><span style="color: #C9D1D9">:</span></span>
+<span class="line"><span style="color: #C9D1D9">	textrazor_extraction(</span><span style="color: #A5D6FF">'Text'</span><span style="color: #C9D1D9">)</span></span>
+<span class="line"><span style="color: #C9D1D9">	data_viz()</span></span>
+<span class="line"><span style="color: #C9D1D9">	main()</span></span>
+<span class="line"><span style="color: #FF7B72">elif</span><span style="color: #C9D1D9"> submit </span><span style="color: #FF7B72">and</span><span style="color: #C9D1D9"> input_type </span><span style="color: #FF7B72">==</span><span style="color: #C9D1D9"> </span><span style="color: #A5D6FF">'URL'</span><span style="color: #C9D1D9">:</span></span>
+<span class="line"><span style="color: #C9D1D9">	textrazor_extraction(</span><span style="color: #A5D6FF">'URL'</span><span style="color: #C9D1D9">)</span></span>
+<span class="line"><span style="color: #C9D1D9">	data_viz()</span></span>
+<span class="line"><span style="color: #C9D1D9">	main()</span></span>
+<span class="line"><span style="color: #FF7B72">elif</span><span style="color: #C9D1D9"> submit </span><span style="color: #FF7B72">and</span><span style="color: #C9D1D9"> input_type </span><span style="color: #FF7B72">==</span><span style="color: #C9D1D9"> </span><span style="color: #A5D6FF">'Multiple URLs'</span><span style="color: #C9D1D9">:</span></span>
+<span class="line"><span style="color: #C9D1D9">	urls </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> [line </span><span style="color: #FF7B72">for</span><span style="color: #C9D1D9"> line </span><span style="color: #FF7B72">in</span><span style="color: #C9D1D9"> multi_url.split(</span><span style="color: #A5D6FF">"</span><span style="color: #79C0FF">\n</span><span style="color: #A5D6FF">"</span><span style="color: #C9D1D9">)]</span></span>
+<span class="line"><span style="color: #C9D1D9">	textrazor_extraction(</span><span style="color: #A5D6FF">'Multiple URLs'</span><span style="color: #C9D1D9">)</span></span>
+<span class="line"><span style="color: #C9D1D9">	data_viz()</span></span></code></pre>
 <p>Finally, we have all the functions ready to call, depending on whether I’m analysing raw text or URLs.</p>
 <h2 id="who_could_this_benefit">Who could this benefit?</h2>
 <p>As I said earlier, I’ve made this mainly for myself and as a way to improve my taxonomies. I made a pledge to write about more Black content and scripts like this keep me in check as I can fill in gaps where content is lacking. It also inspires me to learn new things I never would have found from plain searching or from the blogs I follow (<a href="/post/this-is-my-content-creation-flow/">also part of my process which I wrote about a few years ago</a>).</p>

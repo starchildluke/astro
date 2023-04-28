@@ -21,14 +21,14 @@ That basically means the font loaded but it wasn't used _at all_. I tried all th
 I used the following @font-face format:
 
 ```css
-	@font-face {
-		font-family: 'FontName';
-		src: url(PATH) format('woff2');
-		src: url(PATH) format('woff');
-		font-weight: whatever that is;
-		font-style: normal;
-		font-display: swap;
-	}
+@font-face {
+  font-family: 'FontName';
+  src: url(PATH) format('woff2');
+  src: url(PATH) format('woff');
+  font-weight: whatever that is;
+  font-style: normal;
+  font-display: swap;
+}
 ```
 
 In terms of the preload code, I recommend the following:

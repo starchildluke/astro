@@ -99,7 +99,7 @@ The code is split into different parts:
 
 ### 1. TextRazor API key and client details
 
-```
+```python
 # TextRazor details
 textrazor.api_key = API_KEY
 
@@ -111,77 +111,77 @@ We set the API key (which you can generate with a free account on the TextRazor 
 
 ### 2. Function for loading the language model via a pipeline using zero shot classification, the classification process, plotting the results, and web scraping
 
-```
+```python
 # Load model
 @st.cache(allow_output_mutation=True)
 def load_model():
-	return pipeline("zero-shot-classification", 
-	model='valhalla/distilbart-mnli-12-9', 
-	multi_label=True)
+  return pipeline("zero-shot-classification", 
+  model='valhalla/distilbart-mnli-12-9', 
+  multi_label=True)
 
 # Classification function
 def classify(sequences, candidate_labels):
-	output_results = load_model()(sequences=sequences,
-		candidate_labels=candidate_labels)
-	return output_results['labels'], output_results['scores']
+  output_results = load_model()(sequences=sequences,
+    candidate_labels=candidate_labels)
+  return output_results['labels'], output_results['scores']
 
 # Graph plot function
 def plot_result(top_topics, scores):
-	top_topics = np.array(top_topics)
-	scores = np.array(scores)
-	scores *= 100
-	fig = px.bar(x=scores, 
-		y=top_topics,
-		orientation='h', 
-		labels={'x': 'Confidence', 'y': 'Label'},
-		text=scores,
-		range_x=(0,115),
-		title='Top Predictions',
-		color=np.linspace(0,1,len(scores)),
-		color_continuous_scale='GnBu')
-	fig.update(layout_coloraxis_showscale=False)
-	fig.update_traces(texttemplate='%{text:0.1f}%',
-	textposition='outside')
-	st.plotly_chart(fig)
+  top_topics = np.array(top_topics)
+  scores = np.array(scores)
+  scores *= 100
+  fig = px.bar(x=scores, 
+    y=top_topics,
+    orientation='h', 
+    labels={'x': 'Confidence', 'y': 'Label'},
+    text=scores,
+    range_x=(0,115),
+    title='Top Predictions',
+    color=np.linspace(0,1,len(scores)),
+    color_continuous_scale='GnBu')
+  fig.update(layout_coloraxis_showscale=False)
+  fig.update_traces(texttemplate='%{text:0.1f}%',
+  textposition='outside')
+  st.plotly_chart(fig)
 
 def req(url):
-	resp = requests.get(url)
-	soup = BeautifulSoup(resp.content, 'html.parser')
-	if soup.find("div", id="comments") or soup.find("div", id="secondary"):
-		remove_comments = soup.find("div", id="comments")
-		remove_comments.extract()
-		remove_secondary = soup.find("div", id="secondary")
-		remove_secondary.extract()
-		ext_t = [t.text for t in soup.find_all(['h1', 'p'])]
-		paragraphs = ' '.join(ext_t)
-		return paragraphs
-	else:
-		ext_t = [t.text for t in soup.find_all(['h1', 'p'])]
-		paragraphs = ' '.join(ext_t)
-		return paragraphs
+  resp = requests.get(url)
+  soup = BeautifulSoup(resp.content, 'html.parser')
+  if soup.find("div", id="comments") or soup.find("div", id="secondary"):
+    remove_comments = soup.find("div", id="comments")
+    remove_comments.extract()
+    remove_secondary = soup.find("div", id="secondary")
+    remove_secondary.extract()
+    ext_t = [t.text for t in soup.find_all(['h1', 'p'])]
+    paragraphs = ' '.join(ext_t)
+    return paragraphs
+  else:
+    ext_t = [t.text for t in soup.find_all(['h1', 'p'])]
+    paragraphs = ' '.join(ext_t)
+    return paragraphs
 
 # Main function
 def main():
-	with st.spinner('Classifying...'):
-		global txt
-		df_classify_topic = pd.DataFrame(topics_dict)
-		df_classify_topic = df_classify_topic.sort_values(
-			by='Relevance Score', ascending=False)
-		classify_topic_score = list(
-			df_classify_topic['Topic'][:10])
-		if input_type == 'Text':
-			top_topics, scores = classify(
-				txt, classify_topic_score)
-		elif input_type == 'URL':
-			txt = req(url)
-			top_topics, scores = classify(
-				txt, classify_topic_score)
-		elif input_type == 'Multiple URLs':
-			txt = ' '.join(all_txt)
-			top_topics, scores = classify(
-				txt, classify_topic_score)
+  with st.spinner('Classifying...'):
+    global txt
+    df_classify_topic = pd.DataFrame(topics_dict)
+    df_classify_topic = df_classify_topic.sort_values(
+      by='Relevance Score', ascending=False)
+    classify_topic_score = list(
+      df_classify_topic['Topic'][:10])
+    if input_type == 'Text':
+      top_topics, scores = classify(
+        txt, classify_topic_score)
+    elif input_type == 'URL':
+      txt = req(url)
+      top_topics, scores = classify(
+        txt, classify_topic_score)
+    elif input_type == 'Multiple URLs':
+      txt = ' '.join(all_txt)
+      top_topics, scores = classify(
+        txt, classify_topic_score)
 
-	plot_result(top_topics[::-1][-10:], scores[::-1][-10:])
+  plot_result(top_topics[::-1][-10:], scores[::-1][-10:])
 ```
 
 There's a lot here so I'll break it down further.
@@ -202,32 +202,32 @@ The fifth and final function brings everything together. It creates dataframes o
 
 ### 3. Dictionaries
 
-```
+```python
 kw_dict = {
-	'Keyword': []
+  'Keyword': []
 }
 
 ent_dict = {
-	'Keyword': [],
-	'Relevance Score': [],
-	'Existing Tag': []
+  'Keyword': [],
+  'Relevance Score': [],
+  'Existing Tag': []
 }
 
 topics_dict = {
-	'Topic': [],
-	'Relevance Score': [],
-	'Existing Tag': []
+  'Topic': [],
+  'Relevance Score': [],
+  'Existing Tag': []
 }
 
 categories_dict = {
-	'Category': [],
-	'Relevance Score': []
+  'Category': [],
+  'Relevance Score': []
 }
 
 tags = {
-	'Tag': [],
-	'ID': [],
-	'Count': []
+  'Tag': [],
+  'ID': [],
+  'Count': []
 }
 ```
 
@@ -235,22 +235,26 @@ Arguably the easiest part, just setting the dictionaries for our entity outputs 
 
 ### 4. Establishing the blogs to cross-reference my entities with their respective tag lists
 
-```
+```python
 # Blog list
-blogs = ['sampleface.co.uk', 'cultrface.co.uk', 'logicface.co.uk', 'playrface.co.uk', 'distantarcade.co.uk']
+blogs = ['sampleface.co.uk',
+	'cultrface.co.uk',
+	'logicface.co.uk',
+	'playrface.co.uk',
+	'distantarcade.co.uk']
 
-# Empty lists for existing tags and text from multiple URLs to go in
+# Empty lists for existing tags and text from multiple URLs
 existing_tags = []
 all_txt = []
 
 # Upper limits for tag page range
 upper_limits = {
-	'sampleface.co.uk': 4,
-	'cultrface.co.uk': 4,
-	'logicface.co.uk': 2,
-	'playrface.co.uk': 2,
-	'distantarcade.co.uk': 2,
-	'ld89.org': 1
+  'sampleface.co.uk': 4,
+  'cultrface.co.uk': 4,
+  'logicface.co.uk': 2,
+  'playrface.co.uk': 2,
+  'distantarcade.co.uk': 2,
+  'ld89.org': 1
 }
 ```
 
@@ -262,12 +266,14 @@ Also, I have to set this upper limit manually as I have no way of automating it 
 
 ### 5. The Streamlit UI stuff
 
-```
+```python
 # Streamlit stuff
 
 st.sidebar.title('Tag suggester')
 
-input_type = st.sidebar.radio('Select your input type', ['Text', 'URL', 'Multiple URLs'])
+input_type = st.sidebar.radio(
+	'Select your input type',
+	['Text', 'URL', 'Multiple URLs'])
 
 update_tags = st.sidebar.button('↻ Refresh tags')
 
@@ -278,57 +284,57 @@ tag_ideas = st.sidebar.button('Load tag ideas')
 st.title('Welcome to RALTS (Really Awesome Lexicon and Tag Suggester)!')
 st.write('This script can analyse any body of text or URL to find extract keywords, topics, and categories using NLP (natural language processing).')
 if input_type == 'Text':
-	txt = st.text_area('Enter text to be analysed...')
-	txt = txt.replace('\n', ' ').replace('"', '').replace('“','').replace('”', '').replace('‘','').replace('’', '').replace("'s", '').replace(",", '')
-	st.write(len(txt))
+  txt = st.text_area('Enter text to be analysed...')
+  txt = txt.replace('\n', ' ').replace('"', '').replace('“','').replace('”', '').replace('‘','').replace('’', '').replace("'s", '').replace(",", '')
+  st.write(len(txt))
 elif input_type == 'URL':
-	url = st.text_input('Enter URL')
+  url = st.text_input('Enter URL')
 elif input_type == 'Multiple URLs':
-	multi_url = st.text_area('Enter keywords, 1 per line')
+  multi_url = st.text_area('Enter keywords, 1 per line')
 ```
 
 This displays all the inputs and radio buttons needed to pick the right functionality.
 
 ### 6. Functions for updating my tag lists via WordPress's REST API
 
-```
+```python
 def update_all_tags():
 
-	with st.spinner('Reloading tags...'):
+  with st.spinner('Reloading tags...'):
 
-		for blog in blogs:
-		
-			# Get tag data
-			for pg in range(1, upper_limits[blog]+1):
+    for blog in blogs:
+    
+      # Get tag data
+      for pg in range(1, upper_limits[blog]+1):
 
-				tag_url = f'https://{blog}/wp-json/wp/v2/tags?per_page=100&page={pg}'
-				r_tag = requests.get(tag_url)
-				api_tags = r_tag.json()
+        tag_url = f'https://{blog}/wp-json/wp/v2/tags?per_page=100&page={pg}'
+        r_tag = requests.get(tag_url)
+        api_tags = r_tag.json()
 
-				for n in range(0,len(api_tags)):
-					tags['Tag'].append(api_tags[n]['name'])
-					tags['ID'].append(api_tags[n]['id'])
-					tags['Count'].append(api_tags[n]['count'])
+        for n in range(0,len(api_tags)):
+          tags['Tag'].append(api_tags[n]['name'])
+          tags['ID'].append(api_tags[n]['id'])
+          tags['Count'].append(api_tags[n]['count'])
 
-				with open(f"{blog}.json", "w") as outfile:
-					json.dump(tags, outfile)
-			tags['Tag'] = []
-			tags['ID'] = []
-			tags['Count'] = []
+        with open(f"{blog}.json", "w") as outfile:
+          json.dump(tags, outfile)
+      tags['Tag'] = []
+      tags['ID'] = []
+      tags['Count'] = []
 
 list_of_blogs = st.radio("Select the corresponding blog", blogs)
 
 # Load JSON files
 with open(f'{list_of_blogs}.json', 'rb') as f:
-	blog_json = json.load(f)
-	x = blog_json['Tag']
-	for n in x:
-		existing_tags.append(n)
+  blog_json = json.load(f)
+  x = blog_json['Tag']
+  for n in x:
+    existing_tags.append(n)
 
 submit = st.button('Submit')
 
 if update_tags:
-	update_all_tags()
+  update_all_tags()
 ```
 
 There are two functions linked to the tag data. First is a function that pulls the tag name, tag ID, and how many posts have been assigned to that tag and adds them to a dictionary. This is then saved to a JSON file for offline use. Doing this avoids making multiple API calls since, theoretically, the tag data won't change that frequently. But when it does change, you can refresh the JSON files. These were formerly pickle files but due to the poor security, I spent a few hours switching this code out. I still love pickles though.
@@ -337,7 +343,7 @@ From there, we can also read those files and add them to our existing_tags list 
 
 ### 7. The random functions for content ideas
 
-```
+```python
 # Tag ideas functions
 
 def sf_words():
@@ -474,7 +480,7 @@ Finally, they're all grouped together in a main function ready to be called at t
 
 ### 8. The entity, topic, and category functions using the TextRazor API
 
-```
+```python
 # Keyword extraction function to analyse with TextRazor
 
 def textrazor_extraction(input_type):
@@ -562,7 +568,7 @@ Depending on the input (text, URL, or multiple URLs), this function analyses the
 
 ### 9. The function for displaying that data in DataFrame form
 
-```
+```python
 # DataFrames to present above data
 def data_viz():
 
@@ -667,7 +673,7 @@ And a table of the top 5 categories found in this blog post, ordered by relevanc
 
 ### 10. Execution of the all the functions to make it work
 
-```
+```python
 # Execute functions
 if tag_ideas:
 	all_blogs()
