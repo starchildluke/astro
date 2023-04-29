@@ -4,8 +4,7 @@ published: true
 date: '18 Feb 2019'
 layout: ../../../layouts/BlogPost.astro
 tags:
-  - 'tech'
-  - 'music ideas'
+  - '[tech](/wiki/tech/)'
 ---
 
 * Applet

@@ -4,7 +4,7 @@ published: true
 date: '8 Apr 2023'
 layout: ../../../layouts/BlogPost.astro
 tags:
-  - 'Pokémon'
+  - '[Pokémon](/wiki/pokemon/)'
 ---
 
 ## Scarlet & Violet

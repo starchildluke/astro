@@ -4,7 +4,7 @@ published: true
 date: '28 Sept 2017'
 layout: ../../layouts/BlogPost.astro
 tags:
-- '[pokemon](/wiki/pokemon/)'
+- '[Pokémon](/wiki/pokemon/)'
 ---
 
 * Satoshi Tajiri pitched [Pokémon](/wiki/pokemon/) to Nintendo but it was initially rejected

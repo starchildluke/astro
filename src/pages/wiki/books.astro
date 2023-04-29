@@ -58,12 +58,7 @@ let domain = "https://lukealexdavis.co.uk"
           
           <h2 class="wiki-h2">Inner voice</h2>
           
-          <ul>
-            <li><a href="/post/12-facts-i-didnt-know-about-pokemon/">/12-facts-i-didnt-know-about-pokemon.md</a></li>
-            <li><a href="/post/boom-tetris-for-jeff/">/boom-tetris-for-jeff.md</a></li>
-            <li><a href="/post/my-new-obsession-is-sega/">/my-new-obsession-is-sega.md</a></li>
-            <li><a href="/post/my-five-favourite-video-games-of-all-time/">/my-five-favourite-video-games-of-all-time.md</a></li>
-          </ul>
+          <p>Coming soon...</p>
           
         </section>
         
@@ -72,22 +67,22 @@ let domain = "https://lukealexdavis.co.uk"
           <ul class="post-list">
             {remoteData.map((item) => (
             <li class="post-preview wiki-listing post-list">
-              <a href={item.link}>{item.title.rendered}</a>
+              <a href={item.link}><Fragment set:html={item.title.rendered}></a>
             </li>
             ))}
             {remoteData2.map((item) => (
             <li class="post-preview wiki-listing post-list">
-              <a href={item.link}>{item.title.rendered}</a>
+              <a href={item.link}><Fragment set:html={item.title.rendered}></a>
             </li>
             ))}
             {remoteData3.map((item) => (
             <li class="post-preview wiki-listing post-list">
-              <a href={item.link}>{item.title.rendered}</a>
+              <a href={item.link}><Fragment set:html={item.title.rendered}></a>
             </li>
             ))}
             {remoteData4.map((item) => (
             <li class="post-preview wiki-listing post-list">
-              <a href={item.link}>{item.title.rendered}</a>
+              <a href={item.link}><Fragment set:html={item.title.rendered}></a>
             </li>
             ))}
           </ul>

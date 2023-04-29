@@ -5,6 +5,7 @@ date: '6 Sept 2020'
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[me](/about/)'
+- '[happiness](/wiki/happiness/)'
 ---
 
 In 2012, I answered the Proust Questionnaire and brought it over from my old blog. I'm taking it again.

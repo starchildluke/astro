@@ -5,6 +5,7 @@ date: '2 Sept 2012'
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[me](/about/)'
+- '[happiness](/wiki/happiness/)'
 ---
 
 * What is your idea of perfect happiness?

@@ -5,6 +5,7 @@ date: '28 Apr 2023'
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[music](/wiki/music/)'
+- '[Python](/wiki/tech/python/)'
 ---
 
 I decided to create a page to [display my Last.fm top 1000 artists](/lastfm-top-1000/). Here's how I did it.

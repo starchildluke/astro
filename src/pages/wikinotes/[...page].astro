@@ -1,0 +1,77 @@
+---
+
+// IMPORTS
+
+import BaseHead from '../../components/BaseHead.astro';
+import BlogHeader from '../../components/BlogHeader.astro';
+import BlogFooter from '../../components/BlogFooter.astro';
+import site from '../../data/site.json'
+
+export interface Props {
+  post: any;
+}
+
+const { posts, post, canonicalURL = Astro.url } = Astro.props;
+
+// METADATA
+
+let title = 'Wikinotes';
+let description = "Notes and things";
+
+export async function getStaticPaths({paginate, rss}) {
+  const allPosts = await Astro.glob('../post/wikinotes/*.md');
+  const sortedPosts = allPosts.sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date));
+  
+  // Return a paginated collection of paths for all posts
+  return paginate(sortedPosts, {pageSize: 25});
+}
+
+const { page } = Astro.props;
+---
+<html lang="en">
+  <head>
+    <BaseHead title={title} description={description} canonicalURL={canonicalURL} />    
+  </head>
+
+  <body>
+    <BlogHeader />
+    <div class="layout">
+      <article class="content">
+        <section class="intro">
+          <h1>{title}</h1>
+        </section>
+        <section>
+          <p>These are my wikinotes. You know that scene in Bruce Almighty where he had all those Post-It notes everywhere? This is a neater looking version of that, minus the prayers. It's a rare glimpse into my mind and the many thoughts I have about things that matter to me.</p>
+        </section>
+    <section>
+       <ul class="post-list">
+      {page.data.map(post => (
+            <li class="post-listing">
+              <a href={post.url}>{post.frontmatter.title}</a>
+              <span class="publish-date">{post.frontmatter.date}</span>
+            </li>
+          ))}
+        </ul>
+    </section>
+        <div class="page-links">{page.url.prev && (
+          <a
+            class='prev'
+            href={page.url.prev || '#'}
+          >
+            &laquo; Prev
+          </a>
+        )}
+        {page.url.prev && page.url.next && ""}
+        {page.url.next && (
+          <a
+            class='Next'
+            href={page.url.next || '#'}
+          >
+            Next &raquo;
+          </a>
+        )}</div>
+      </article>      
+    </div>
+    <BlogFooter></BlogFooter>
+  </body>
+</html>
