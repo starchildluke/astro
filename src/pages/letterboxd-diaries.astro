@@ -1,0 +1,183 @@
+---
+// COMPONENTS
+
+import BaseHead from '../components/BaseHead.astro';
+import BlogHeader from '../components/BlogHeader.astro';
+import BlogFooter from '../components/BlogFooter.astro';
+import BlogPostPreview from '../components/BlogPostPreview.astro';
+import boxd_2023 from '../data/2023_letterboxd_diary.json';
+import boxd_2022 from '../data/2022_letterboxd_diary.json';
+import boxd_2021 from '../data/2021_letterboxd_diary.json';
+import boxd_2020 from '../data/2020_letterboxd_diary.json';
+import boxd_2019 from '../data/2019_letterboxd_diary.json';
+import boxd_2018 from '../data/2018_letterboxd_diary.json';
+
+// METADATA VARIABLES
+
+let title = 'My Letterboxd Diaries';
+let description = 'All the movies I\'ve watched and logged since my Letterboxd account started (excluding historic logs)';
+let canonicalURL = Astro.url;
+
+---
+<html lang="en">
+  <head>
+    <BaseHead title={title} description={description} canonicalURL={canonicalURL} />
+  </head>
+  <body>
+    <BlogHeader />
+    <main class="layout">
+      <article class="content">
+        <h1>{title}</h1>
+        <p>This page is dedicated to all the films I've watched since 2018. It shows their genres, their year of release, my rating, and when I watched them. I thought it'd be cool to display this data on the site for readers to see and get an idea of my taste in movies. Plus, it's a fun way for me to look back on all the films I've enjoyed (and not enjoyed) over the years.</p>
+        <h2>2023</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Genre(s)</th>
+              <th>Year</th>
+              <th>Rating</th>
+              <th>Watched Date</th>
+            </tr>
+          </thead>
+          {boxd_2023.map((film) => (
+          <tr>
+            <td>{film.Name}</td>
+            <td>{film.Genres.join(", ")}</td>
+            <td>{film.Year}</td>
+            <td>{film.Rating}</td>
+            <td>{new Date(film['Watched Date']).toLocaleDateString('en-GB', { year:"numeric", month:"short", day:"numeric"})
+            }</td>
+          </tr>
+          ))}
+        </table>
+        <h2>2022</h2>
+        <details>
+        <summary>Reveal 2022 table</summary>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Genre(s)</th>
+              <th>Year</th>
+              <th>Rating</th>
+              <th>Watched Date</th>
+            </tr>
+          </thead>
+          {boxd_2022.map((film) => (
+          <tr>
+            <td>{film.Name}</td>
+            <td>{film.Genres.join(", ")}</td>
+            <td>{film.Year}</td>
+            <td>{film.Rating}</td>
+            <td>{new Date(film['Watched Date']).toLocaleDateString('en-GB', { year:"numeric", month:"short", day:"numeric"})
+            }</td>
+          </tr>
+          ))}
+        </table>
+      </details>
+        <h2>2021</h2>
+        <details>
+        <summary>Reveal 2021 table</summary>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Genre(s)</th>
+              <th>Year</th>
+              <th>Rating</th>
+              <th>Watched Date</th>
+            </tr>
+          </thead>
+          {boxd_2021.map((film) => (
+          <tr>
+            <td>{film.Name}</td>
+            <td>{film.Genres.join(", ")}</td>
+            <td>{film.Year}</td>
+            <td>{film.Rating}</td>
+            <td>{new Date(film['Watched Date']).toLocaleDateString('en-GB', { year:"numeric", month:"short", day:"numeric"})
+            }</td>
+          </tr>
+          ))}
+        </table>
+      </details>
+        <h2>2020</h2>
+        <details>
+        <summary>Reveal 2020 table</summary>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Genre(s)</th>
+              <th>Year</th>
+              <th>Rating</th>
+              <th>Watched Date</th>
+            </tr>
+          </thead>
+          {boxd_2020.map((film) => (
+          <tr>
+            <td>{film.Name}</td>
+            <td>{film.Genres.join(", ")}</td>
+            <td>{film.Year}</td>
+            <td>{film.Rating}</td>
+            <td>{new Date(film['Watched Date']).toLocaleDateString('en-GB', { year:"numeric", month:"short", day:"numeric"})
+            }</td>
+          </tr>
+          ))}
+        </table>
+      </details>
+        <h2>2019</h2>
+        <details>
+        <summary>Reveal 2019 table</summary>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Genre(s)</th>
+              <th>Year</th>
+              <th>Rating</th>
+              <th>Watched Date</th>
+            </tr>
+          </thead>
+          {boxd_2019.map((film) => (
+          <tr>
+            <td>{film.Name}</td>
+            <td>{film.Genres.join(", ")}</td>
+            <td>{film.Year}</td>
+            <td>{film.Rating}</td>
+            <td>{new Date(film['Watched Date']).toLocaleDateString('en-GB', { year:"numeric", month:"short", day:"numeric"})
+            }</td>
+          </tr>
+          ))}
+        </table>
+      </details>
+        <h2>2018</h2>
+        <details>
+        <summary>Reveal 2018 table</summary>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Genre(s)</th>
+              <th>Year</th>
+              <th>Rating</th>
+              <th>Watched Date</th>
+            </tr>
+          </thead>
+          {boxd_2018.map((film) => (
+          <tr>
+            <td>{film.Name}</td>
+            <td>{film.Genres.join(", ")}</td>
+            <td>{film.Year}</td>
+            <td>{film.Rating}</td>
+            <td>{new Date(film['Watched Date']).toLocaleDateString('en-GB', { year:"numeric", month:"short", day:"numeric"})
+            }</td>
+          </tr>
+          ))}
+        </table>
+      </details>
+      </article>
+    </main>
+    <BlogFooter></BlogFooter>
+  </body>
+</html>
