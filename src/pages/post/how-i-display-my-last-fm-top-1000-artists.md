@@ -8,6 +8,8 @@ tags:
 - '[Python](/wiki/tech/python/)'
 ---
 
+<em>Note: I have since updated the below code as of 4th May 2023.</em>
+
 I decided to create a page to [display my Last.fm top 1000 artists](/lastfm-top-1000/). Here's how I did it.
 
 ## 1. Get the data
@@ -17,6 +19,7 @@ To get this data, you need the [Last.fm API](https://www.last.fm/api) and an acc
 ```python
 import requests
 import json
+import datetime
 
 payload = {
   'api_key': API_KEY,
@@ -30,24 +33,16 @@ res = r.json()
 
 for key in range(0,len(res['topartists']['artist'])):
     
-  # Change #text to text
-  for i in range(0,len(res['topartists']['artist'][key]['image'])):
-    res['topartists']['artist'][key]['image'][i]['text'] = res['topartists']['artist'][key]['image'][i]['#text']
-    del res['topartists']['artist'][key]['image'][i]['#text']
-    
-  # Change @attr to attr
-  res['topartists']['artist'][key]['attr'] = res['topartists']['artist'][key]['@attr']
-  del res['topartists']['artist'][key]['@attr']
-    
-  # Change playCount from str to int
-  res['topartists']['artist'][key]['playcount'] = int(res['topartists']['artist'][key]['playcount'])
+    # Change playCount from str to int
+    res['topartists']['artist'][key]['playcount'] = int(res['topartists']['artist'][key]['playcount'])
 
+    res['last updated'] = datetime.datetime.now().strftime('%d %B %Y')
 
-with open('FILEPATH', "w+") as f:
-  json.dump(res, f, indent=4)
+with open('../data/lastfm.json', "w+") as f:
+    json.dump(res, f, indent=4)
 ```
 
-This created a <code>lastfm.json</code> file. You'll notice that I've made a few changes to the JSON object before writing it to the file. This is because the '@' and '#' characters cause issues when using the map() function in JavaScript (more on that later). Now there's time to use the Fetch API.
+This created a <code>lastfm.json</code> file. I also included a key for the date when I update the file so I can display that on the page. Now there's time to use the Fetch API.
 
 ## 2. Fetch the data
 
@@ -60,22 +55,23 @@ import lastfm from '../data/lastfm.json';
 Then I use .map() to map the rank, artist, and playcount to a table.
 
 ```html
-<table>
-  <thead>
+<p>Last updated: {lastfm['last updated']}</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Pos.</th>
+        <th>Artist</th>
+        <th>Playcount</th>
+      </tr>
+    </thead>
+  {lastfm.topartists.artist.map((item) => (
     <tr>
-      <th>Pos.</th>
-      <th>Artist</th>
-      <th>Playcount</th>
+      <td>{item['@attr'].rank}</td>
+      <td><a href={item.url}>{item.name}</a></td>
+      <td>{item.playcount.toLocaleString()}</td>
     </tr>
-  </thead>
-{lastfm.topartists.artist.map((item) => (
-  <tr>
-    <td>{item.attr.rank}</td>
-    <td><a href={item.url}>{item.name}</a></td>
-    <td>{item.playcount.toLocaleString()}</td>
-  </tr>
-))}
-</table>
+  ))}
+  </table>
 ```
 
 A couple of things to note: <code>lastfm.topartists.artist.map</code> gets all the artist data and <code>item.playcount.toLocaleString()</code> converts the playcount and adds a thousands comma seperator.

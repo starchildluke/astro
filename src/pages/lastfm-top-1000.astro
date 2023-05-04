@@ -23,6 +23,7 @@ let canonicalURL = Astro.url;
   <main class="layout">
     <article class="content">
         <h1>{title}</h1>
+        <p>Last updated: {lastfm['last updated']}</p>
       <table>
               <thead>
                 <tr>
@@ -33,7 +34,7 @@ let canonicalURL = Astro.url;
               </thead>
               {lastfm.topartists.artist.map((item) => (
               <tr>
-                  <td>{item.attr.rank}</td>
+                  <td>{item['@attr'].rank}</td>
                   <td><a href={item.url}>{item.name}</a></td>
                   <td>{item.playcount.toLocaleString()}</td>
                 </tr>

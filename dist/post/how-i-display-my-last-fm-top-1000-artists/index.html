@@ -47,6 +47,7 @@
           <li><a href="/lists/">Lists</a></li>
           <li><a href="/projects/">Projects</a></li>
           <li><a href="/press/">Press</a></li>
+          <li><a href="/support/">Support</a></li>
           <li><a href="/misc/">Misc</a></li>
         </ul>
       </nav>
@@ -57,11 +58,13 @@
       <h1>How I display my Last.fm top 1000 artists</h1>
     <main>
       
-      <p>I decided to create a page to <a href="/lastfm-top-1000/">display my Last.fm top 1000 artists</a>. Here’s how I did it.</p>
+      <p><em>Note: I have since updated the below code as of 4th May 2023.</em></p>
+<p>I decided to create a page to <a href="/lastfm-top-1000/">display my Last.fm top 1000 artists</a>. Here’s how I did it.</p>
 <h2 id="1-get-the-data">1. Get the data</h2>
 <p>To get this data, you need the <a href="https://www.last.fm/api">Last.fm API</a> and an account. With my credentials, I wrote a script that scraped the data and created a JSON file out of it:</p>
 <pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #FF7B72">import</span><span style="color: #C9D1D9"> requests</span></span>
 <span class="line"><span style="color: #FF7B72">import</span><span style="color: #C9D1D9"> json</span></span>
+<span class="line"><span style="color: #FF7B72">import</span><span style="color: #C9D1D9"> datetime</span></span>
 <span class="line"></span>
 <span class="line"><span style="color: #C9D1D9">payload </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> {</span></span>
 <span class="line"><span style="color: #C9D1D9">  </span><span style="color: #A5D6FF">'api_key'</span><span style="color: #C9D1D9">: </span><span style="color: #79C0FF">API_KEY</span><span style="color: #C9D1D9">,</span></span>
@@ -75,42 +78,35 @@
 <span class="line"></span>
 <span class="line"><span style="color: #FF7B72">for</span><span style="color: #C9D1D9"> key </span><span style="color: #FF7B72">in</span><span style="color: #C9D1D9"> </span><span style="color: #79C0FF">range</span><span style="color: #C9D1D9">(</span><span style="color: #79C0FF">0</span><span style="color: #C9D1D9">,</span><span style="color: #79C0FF">len</span><span style="color: #C9D1D9">(res[</span><span style="color: #A5D6FF">'topartists'</span><span style="color: #C9D1D9">][</span><span style="color: #A5D6FF">'artist'</span><span style="color: #C9D1D9">])):</span></span>
 <span class="line"><span style="color: #C9D1D9">    </span></span>
-<span class="line"><span style="color: #C9D1D9">  </span><span style="color: #8B949E"># Change #text to text</span></span>
-<span class="line"><span style="color: #C9D1D9">  </span><span style="color: #FF7B72">for</span><span style="color: #C9D1D9"> i </span><span style="color: #FF7B72">in</span><span style="color: #C9D1D9"> </span><span style="color: #79C0FF">range</span><span style="color: #C9D1D9">(</span><span style="color: #79C0FF">0</span><span style="color: #C9D1D9">,</span><span style="color: #79C0FF">len</span><span style="color: #C9D1D9">(res[</span><span style="color: #A5D6FF">'topartists'</span><span style="color: #C9D1D9">][</span><span style="color: #A5D6FF">'artist'</span><span style="color: #C9D1D9">][key][</span><span style="color: #A5D6FF">'image'</span><span style="color: #C9D1D9">])):</span></span>
-<span class="line"><span style="color: #C9D1D9">    res[</span><span style="color: #A5D6FF">'topartists'</span><span style="color: #C9D1D9">][</span><span style="color: #A5D6FF">'artist'</span><span style="color: #C9D1D9">][key][</span><span style="color: #A5D6FF">'image'</span><span style="color: #C9D1D9">][i][</span><span style="color: #A5D6FF">'text'</span><span style="color: #C9D1D9">] </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> res[</span><span style="color: #A5D6FF">'topartists'</span><span style="color: #C9D1D9">][</span><span style="color: #A5D6FF">'artist'</span><span style="color: #C9D1D9">][key][</span><span style="color: #A5D6FF">'image'</span><span style="color: #C9D1D9">][i][</span><span style="color: #A5D6FF">'#text'</span><span style="color: #C9D1D9">]</span></span>
-<span class="line"><span style="color: #C9D1D9">    </span><span style="color: #FF7B72">del</span><span style="color: #C9D1D9"> res[</span><span style="color: #A5D6FF">'topartists'</span><span style="color: #C9D1D9">][</span><span style="color: #A5D6FF">'artist'</span><span style="color: #C9D1D9">][key][</span><span style="color: #A5D6FF">'image'</span><span style="color: #C9D1D9">][i][</span><span style="color: #A5D6FF">'#text'</span><span style="color: #C9D1D9">]</span></span>
-<span class="line"><span style="color: #C9D1D9">    </span></span>
-<span class="line"><span style="color: #C9D1D9">  </span><span style="color: #8B949E"># Change @attr to attr</span></span>
-<span class="line"><span style="color: #C9D1D9">  res[</span><span style="color: #A5D6FF">'topartists'</span><span style="color: #C9D1D9">][</span><span style="color: #A5D6FF">'artist'</span><span style="color: #C9D1D9">][key][</span><span style="color: #A5D6FF">'attr'</span><span style="color: #C9D1D9">] </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> res[</span><span style="color: #A5D6FF">'topartists'</span><span style="color: #C9D1D9">][</span><span style="color: #A5D6FF">'artist'</span><span style="color: #C9D1D9">][key][</span><span style="color: #A5D6FF">'@attr'</span><span style="color: #C9D1D9">]</span></span>
-<span class="line"><span style="color: #C9D1D9">  </span><span style="color: #FF7B72">del</span><span style="color: #C9D1D9"> res[</span><span style="color: #A5D6FF">'topartists'</span><span style="color: #C9D1D9">][</span><span style="color: #A5D6FF">'artist'</span><span style="color: #C9D1D9">][key][</span><span style="color: #A5D6FF">'@attr'</span><span style="color: #C9D1D9">]</span></span>
-<span class="line"><span style="color: #C9D1D9">    </span></span>
-<span class="line"><span style="color: #C9D1D9">  </span><span style="color: #8B949E"># Change playCount from str to int</span></span>
-<span class="line"><span style="color: #C9D1D9">  res[</span><span style="color: #A5D6FF">'topartists'</span><span style="color: #C9D1D9">][</span><span style="color: #A5D6FF">'artist'</span><span style="color: #C9D1D9">][key][</span><span style="color: #A5D6FF">'playcount'</span><span style="color: #C9D1D9">] </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> </span><span style="color: #79C0FF">int</span><span style="color: #C9D1D9">(res[</span><span style="color: #A5D6FF">'topartists'</span><span style="color: #C9D1D9">][</span><span style="color: #A5D6FF">'artist'</span><span style="color: #C9D1D9">][key][</span><span style="color: #A5D6FF">'playcount'</span><span style="color: #C9D1D9">])</span></span>
+<span class="line"><span style="color: #C9D1D9">    </span><span style="color: #8B949E"># Change playCount from str to int</span></span>
+<span class="line"><span style="color: #C9D1D9">    res[</span><span style="color: #A5D6FF">'topartists'</span><span style="color: #C9D1D9">][</span><span style="color: #A5D6FF">'artist'</span><span style="color: #C9D1D9">][key][</span><span style="color: #A5D6FF">'playcount'</span><span style="color: #C9D1D9">] </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> </span><span style="color: #79C0FF">int</span><span style="color: #C9D1D9">(res[</span><span style="color: #A5D6FF">'topartists'</span><span style="color: #C9D1D9">][</span><span style="color: #A5D6FF">'artist'</span><span style="color: #C9D1D9">][key][</span><span style="color: #A5D6FF">'playcount'</span><span style="color: #C9D1D9">])</span></span>
 <span class="line"></span>
+<span class="line"><span style="color: #C9D1D9">    res[</span><span style="color: #A5D6FF">'last updated'</span><span style="color: #C9D1D9">] </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> datetime.datetime.now().strftime(</span><span style="color: #A5D6FF">'</span><span style="color: #79C0FF">%d</span><span style="color: #A5D6FF"> %B %Y'</span><span style="color: #C9D1D9">)</span></span>
 <span class="line"></span>
-<span class="line"><span style="color: #FF7B72">with</span><span style="color: #C9D1D9"> </span><span style="color: #79C0FF">open</span><span style="color: #C9D1D9">(</span><span style="color: #A5D6FF">'FILEPATH'</span><span style="color: #C9D1D9">, </span><span style="color: #A5D6FF">"w+"</span><span style="color: #C9D1D9">) </span><span style="color: #FF7B72">as</span><span style="color: #C9D1D9"> f:</span></span>
-<span class="line"><span style="color: #C9D1D9">  json.dump(res, f, </span><span style="color: #FFA657">indent</span><span style="color: #FF7B72">=</span><span style="color: #79C0FF">4</span><span style="color: #C9D1D9">)</span></span></code></pre>
-<p>This created a <code>lastfm.json</code> file. You’ll notice that I’ve made a few changes to the JSON object before writing it to the file. This is because the ’@’ and ’#’ characters cause issues when using the map() function in JavaScript (more on that later). Now there’s time to use the Fetch API.</p>
+<span class="line"><span style="color: #FF7B72">with</span><span style="color: #C9D1D9"> </span><span style="color: #79C0FF">open</span><span style="color: #C9D1D9">(</span><span style="color: #A5D6FF">'../data/lastfm.json'</span><span style="color: #C9D1D9">, </span><span style="color: #A5D6FF">"w+"</span><span style="color: #C9D1D9">) </span><span style="color: #FF7B72">as</span><span style="color: #C9D1D9"> f:</span></span>
+<span class="line"><span style="color: #C9D1D9">    json.dump(res, f, </span><span style="color: #FFA657">indent</span><span style="color: #FF7B72">=</span><span style="color: #79C0FF">4</span><span style="color: #C9D1D9">)</span></span></code></pre>
+<p>This created a <code>lastfm.json</code> file. I also included a key for the date when I update the file so I can display that on the page. Now there’s time to use the Fetch API.</p>
 <h2 id="2-fetch-the-data">2. Fetch the data</h2>
 <p>I use the Fetch API for my wiki pages to pull data from my other WordPress blogs via the REST API. In this case, I’m pulling from a local JSON file so I start by importing the file:</p>
 <pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #FF7B72">import</span><span style="color: #C9D1D9"> lastfm </span><span style="color: #FF7B72">from</span><span style="color: #C9D1D9"> </span><span style="color: #A5D6FF">'../data/lastfm.json'</span><span style="color: #C9D1D9">;</span></span></code></pre>
 <p>Then I use .map() to map the rank, artist, and playcount to a table.</p>
-<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #C9D1D9">&#x3C;</span><span style="color: #7EE787">table</span><span style="color: #C9D1D9">></span></span>
-<span class="line"><span style="color: #C9D1D9">  &#x3C;</span><span style="color: #7EE787">thead</span><span style="color: #C9D1D9">></span></span>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #C9D1D9">&#x3C;</span><span style="color: #7EE787">p</span><span style="color: #C9D1D9">>Last updated: {lastfm['last updated']}&#x3C;/</span><span style="color: #7EE787">p</span><span style="color: #C9D1D9">></span></span>
+<span class="line"><span style="color: #C9D1D9">  &#x3C;</span><span style="color: #7EE787">table</span><span style="color: #C9D1D9">></span></span>
+<span class="line"><span style="color: #C9D1D9">    &#x3C;</span><span style="color: #7EE787">thead</span><span style="color: #C9D1D9">></span></span>
+<span class="line"><span style="color: #C9D1D9">      &#x3C;</span><span style="color: #7EE787">tr</span><span style="color: #C9D1D9">></span></span>
+<span class="line"><span style="color: #C9D1D9">        &#x3C;</span><span style="color: #7EE787">th</span><span style="color: #C9D1D9">>Pos.&#x3C;/</span><span style="color: #7EE787">th</span><span style="color: #C9D1D9">></span></span>
+<span class="line"><span style="color: #C9D1D9">        &#x3C;</span><span style="color: #7EE787">th</span><span style="color: #C9D1D9">>Artist&#x3C;/</span><span style="color: #7EE787">th</span><span style="color: #C9D1D9">></span></span>
+<span class="line"><span style="color: #C9D1D9">        &#x3C;</span><span style="color: #7EE787">th</span><span style="color: #C9D1D9">>Playcount&#x3C;/</span><span style="color: #7EE787">th</span><span style="color: #C9D1D9">></span></span>
+<span class="line"><span style="color: #C9D1D9">      &#x3C;/</span><span style="color: #7EE787">tr</span><span style="color: #C9D1D9">></span></span>
+<span class="line"><span style="color: #C9D1D9">    &#x3C;/</span><span style="color: #7EE787">thead</span><span style="color: #C9D1D9">></span></span>
+<span class="line"><span style="color: #C9D1D9">  {lastfm.topartists.artist.map((item) => (</span></span>
 <span class="line"><span style="color: #C9D1D9">    &#x3C;</span><span style="color: #7EE787">tr</span><span style="color: #C9D1D9">></span></span>
-<span class="line"><span style="color: #C9D1D9">      &#x3C;</span><span style="color: #7EE787">th</span><span style="color: #C9D1D9">>Pos.&#x3C;/</span><span style="color: #7EE787">th</span><span style="color: #C9D1D9">></span></span>
-<span class="line"><span style="color: #C9D1D9">      &#x3C;</span><span style="color: #7EE787">th</span><span style="color: #C9D1D9">>Artist&#x3C;/</span><span style="color: #7EE787">th</span><span style="color: #C9D1D9">></span></span>
-<span class="line"><span style="color: #C9D1D9">      &#x3C;</span><span style="color: #7EE787">th</span><span style="color: #C9D1D9">>Playcount&#x3C;/</span><span style="color: #7EE787">th</span><span style="color: #C9D1D9">></span></span>
+<span class="line"><span style="color: #C9D1D9">      &#x3C;</span><span style="color: #7EE787">td</span><span style="color: #C9D1D9">>{item['@attr'].rank}&#x3C;/</span><span style="color: #7EE787">td</span><span style="color: #C9D1D9">></span></span>
+<span class="line"><span style="color: #C9D1D9">      &#x3C;</span><span style="color: #7EE787">td</span><span style="color: #C9D1D9">>&#x3C;</span><span style="color: #7EE787">a</span><span style="color: #C9D1D9"> </span><span style="color: #79C0FF">href</span><span style="color: #C9D1D9">=</span><span style="color: #A5D6FF">{item.url}</span><span style="color: #C9D1D9">>{item.name}&#x3C;/</span><span style="color: #7EE787">a</span><span style="color: #C9D1D9">>&#x3C;/</span><span style="color: #7EE787">td</span><span style="color: #C9D1D9">></span></span>
+<span class="line"><span style="color: #C9D1D9">      &#x3C;</span><span style="color: #7EE787">td</span><span style="color: #C9D1D9">>{item.playcount.toLocaleString()}&#x3C;/</span><span style="color: #7EE787">td</span><span style="color: #C9D1D9">></span></span>
 <span class="line"><span style="color: #C9D1D9">    &#x3C;/</span><span style="color: #7EE787">tr</span><span style="color: #C9D1D9">></span></span>
-<span class="line"><span style="color: #C9D1D9">  &#x3C;/</span><span style="color: #7EE787">thead</span><span style="color: #C9D1D9">></span></span>
-<span class="line"><span style="color: #C9D1D9">{lastfm.topartists.artist.map((item) => (</span></span>
-<span class="line"><span style="color: #C9D1D9">  &#x3C;</span><span style="color: #7EE787">tr</span><span style="color: #C9D1D9">></span></span>
-<span class="line"><span style="color: #C9D1D9">    &#x3C;</span><span style="color: #7EE787">td</span><span style="color: #C9D1D9">>{item.attr.rank}&#x3C;/</span><span style="color: #7EE787">td</span><span style="color: #C9D1D9">></span></span>
-<span class="line"><span style="color: #C9D1D9">    &#x3C;</span><span style="color: #7EE787">td</span><span style="color: #C9D1D9">>&#x3C;</span><span style="color: #7EE787">a</span><span style="color: #C9D1D9"> </span><span style="color: #79C0FF">href</span><span style="color: #C9D1D9">=</span><span style="color: #A5D6FF">{item.url}</span><span style="color: #C9D1D9">>{item.name}&#x3C;/</span><span style="color: #7EE787">a</span><span style="color: #C9D1D9">>&#x3C;/</span><span style="color: #7EE787">td</span><span style="color: #C9D1D9">></span></span>
-<span class="line"><span style="color: #C9D1D9">    &#x3C;</span><span style="color: #7EE787">td</span><span style="color: #C9D1D9">>{item.playcount.toLocaleString()}&#x3C;/</span><span style="color: #7EE787">td</span><span style="color: #C9D1D9">></span></span>
-<span class="line"><span style="color: #C9D1D9">  &#x3C;/</span><span style="color: #7EE787">tr</span><span style="color: #C9D1D9">></span></span>
-<span class="line"><span style="color: #C9D1D9">))}</span></span>
-<span class="line"><span style="color: #C9D1D9">&#x3C;/</span><span style="color: #7EE787">table</span><span style="color: #C9D1D9">></span></span></code></pre>
+<span class="line"><span style="color: #C9D1D9">  ))}</span></span>
+<span class="line"><span style="color: #C9D1D9">  &#x3C;/</span><span style="color: #7EE787">table</span><span style="color: #C9D1D9">></span></span></code></pre>
 <p>A couple of things to note: <code>lastfm.topartists.artist.map</code> gets all the artist data and <code>item.playcount.toLocaleString()</code> converts the playcount and adds a thousands comma seperator.</p>
 <p>And that’s it. If you have any questions, email me or tweet me.</p>
       <div class="tagged-as">Tagged as:</div>
@@ -122,9 +118,9 @@
     <footer>
     <p>Built with HTML, CSS, and <a href="https://astro.build/">Astro</a> which has made this super fun. <a href="https://twitter.com/t3dotgg/status/1481344430921502720">Special tweet added for good luck.</a></p>
     <p>[ <a href="/html-sitemap/">HTML Sitemap</a> ]</p>
-    <p>Member of the <a href="https://512kb.club/">512KB Club</a> and <a href="https://1mb.club/">1MB Club</a>.</p>
+    <p>Member of the <a href="https://250kb.club/">250KB Club</a>, <a href="https://512kb.club/">512KB Club</a> and <a href="https://1mb.club/">1MB Club</a></p>
     <p><a href="https://hotlinewebring.club/lukealexdavis/previous">&#8604;</a> Member of the <a href="https://hotlinewebring.club/">Hotline Webring</a> <a href="https://hotlinewebring.club/lukealexdavis/next">&rarrw;</a></p>
-    <p><a href="https://webring.dinhe.net/prev/https://lukealexdavis.co.uk/">&#8604;</a> Member of the <a href="https://hotlinewebring.club/">Retronaut Webring</a> <a href="https://webring.dinhe.net/next/https://lukealexdavis.co.uk/">&rarrw;</a></p>
+    <p>And I'm not only a member of the Hair Club for Men&mdash;I'm also the president.</p>
     <p>Listed @ <a href="https://linklane.net" target="_blank">LinkLane.Net</a></p>
     <p>- - - - -</p>
     <a href="https://github.com/uxai/non-profit-bloggers/">

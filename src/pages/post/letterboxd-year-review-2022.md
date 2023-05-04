@@ -4,7 +4,7 @@ published: true
 date: '9 Jan 2023'
 layout: ../../layouts/BlogPost.astro
 tags:
-- film
+- '[film](/wiki/film/)'
 ---
 
 I not a Letterboxd Pro user so I only get the basic year review stats but here they are:
@@ -24,3 +24,5 @@ I not a Letterboxd Pro user so I only get the basic year review stats but here t
 * Nope (2022) &ndash; ★★★★★
 * Turning Red (2022) &ndash; ★★★★½
 * The Bad Guys (2022) &ndash; ★★★★
+
+UPDATE: I've managed to export [my Letterboxd data for 2022](/letterboxd-diaries/#2022) and created a page for it, along with all preceding years.

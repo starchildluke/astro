@@ -18,7 +18,7 @@ I suffer from [hayfever](/post/wikinotes/hay-fever-haiku/) and it kills me for 4
 * Cured meats: bacon, salami, pepperoni, luncheon meats, and hot dogs
 * Soured foods: sour cream, sour milk, buttermilk, soured bread
 * Dried fruit: apricots, prunes, dates, figs, raisins
-* Most citrus fruits
+* [Most citrus fruits](/list/list-of-citrus-culvitars-and-hybrids/)
 * Aged cheese including goat cheese
 * Nuts: walnuts, cashews, and peanuts
 * Vegetables: avocados, eggplant, spinach, and tomatoes
