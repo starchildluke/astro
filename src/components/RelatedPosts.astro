@@ -1,0 +1,18 @@
+---
+
+import data from '../data/lad_title_url.json';
+
+// Shuffle array
+const shuffled = data.sort(() => 0.5 - Math.random());
+
+// Get sub-array of first n elements after shuffled
+let selected = shuffled.slice(0, 4);
+
+---
+
+<div>
+  <h3>Random posts you might be interested in:</h3>
+  <ul>
+  {selected.map(tag => <li class="tags"><a href={tag.url}>{tag.title}</a></li>)}
+</ul>
+</div>

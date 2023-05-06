@@ -5,9 +5,10 @@ import BlogHeader from '../components/BlogHeader.astro';
 import BlogPost from '../components/BlogPost.astro';
 import BlogFooter from '../components/BlogFooter.astro';
 import StructuredData from '../components/StructuredData.astro';
+import RelatedPosts from '../components/RelatedPosts.astro';
 
 const {content} = Astro.props;
-const {title, description, date, canonicalURL, tags, tag_urls} = content;
+const {title, description, date, canonicalURL, tags, relatedposts} = content;
 
 ---
 <html lang="en">
@@ -24,6 +25,7 @@ const {title, description, date, canonicalURL, tags, tag_urls} = content;
       <Markdown>
         {tags.map(tag => <span class="tags">{tag} </span>)}
       </Markdown>
+      <RelatedPosts />
     </BlogPost>
     <BlogFooter />
   </body>
