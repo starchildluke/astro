@@ -42,4 +42,12 @@ You know when you go into a room and forget why you're there? Well, imagine that
 
 All the things you've ever see me create? 99.9% of it was done alone. I don't like to rely on people too much as I appreciate we all have lives to live and can't definitely commit. That means if I know I need something and I can do it myself, I will. And so I work alone and find a way where I can. Working with one other person works for me but whole groups with multiple voices? I'm not good at it and I don't feel like I should assimilate because "that's just how it's done". Reject tradition; embrace chaos!
 
+## 5. I need detailed explanations
+
+I've had to learn how to read between the lines when people ask me to do things or tell me stuff. But it's very tiring and I don't always get what people are trying to say. So I need detailed explanations if you want me to do something for you. Vagueness confuses me or will lead me to try a method that takes more time than I should spend on the task. That doesn't necessarily mean hand-holding but I tend to get flustered if I go down a path and get told that I'm doing it wrong or "why are you doing it that way?!"
+
+## 6. I hyperfocus a lot
+
+I love learning, especially if I find something cool. But that can lead to hyperfocusing, which means I'll hone in on something and spend hours getting into it. Building this website is an example of that. I spent hours over weeks in 2021 putting this site together and learning Astro. Same goes for Neo4j and graph science. And Python. Even Pokémon back when I was young (although that's probably not indicative to autism as it's Pokémon after all lol). Hyperfocusing has lead me to build knowledge in a lot of areas but the downside is creating time sinks where I could be doing literally anything else. Like resting. Less sleep is not good, no matter what people tell you.
+
 **Sidenote**: _if you have any comments about this, for yourself, and we know each other, feel free to talk to me. If you have any criticisms, keep them to yourself. If you have any advice, ask me whether I'm open to this first. I don't like unsolicited advice as it often comes from a different life experience to mine and the rapport is almost never established beforehand so it sounds like someone offering a smile, a biscuit, and a cup of tea for mental health issues. I've been accused of being standoffish and aloof many times before when I've actually been struggling and nobody thought to check in first. Don't be that person._
