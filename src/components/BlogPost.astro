@@ -4,12 +4,12 @@ const { title, date } = Astro.props;
 
 ---
 
-<div class="layout">
+<main class="layout">
   <article class="content">
       <p class="publish-date">{date}</p>
       <h1>{title}</h1>
-    <main>
+    <section>
       <slot />
-    </main>
+    </section>
   </article>
 </div>
