@@ -5,7 +5,7 @@ date: '29 Aug 2020'
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[film](/wiki/film/)'
-- '[black](/wiki/black/)'
+- '[Black](/wiki/black/)'
 - 'mental health'
 - '[me](/about/)'
 ---
