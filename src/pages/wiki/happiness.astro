@@ -6,7 +6,8 @@ import BlogHeader from '../../components/BlogHeader.astro';
 import BlogFooter from '../../components/BlogFooter.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import site from '../../data/site.json';
-import wiki from '../../data/wiki.json'
+import wiki from '../../data/wiki.json';
+import tags from '../../data/tags.json';
 
 // EXPORT
 
@@ -45,12 +46,14 @@ let domain = "https://lukealexdavis.co.uk"
         </section>
         <section>
           <h2 class="wiki-h2">Inner voice</h2>
-          
+
           <ul>
-            <li><a href="/post/happy-accident-1/">/happy-accident-1.md</a></li>
-            <li><a href="/post/proust-questionnaire/">/proust-questionnaire.md</a></li>
-            <li><a href="/post/proust-questionnaire-2020/">/proust-questionnaire-2020.md</a></li>
-          </ul>
+            {tags.happiness.map((tag) => (
+            <li class="post-preview wiki-listing post-list">
+              <a href={tag.link}>{tag.title}</a>
+            </li>
+          ))}
+        </ul>
           
         </section>
         <section>

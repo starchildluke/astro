@@ -52,11 +52,11 @@
         </ul>
       </nav>
 </header>
-    <div class="layout">
+    <main class="layout">
   <article class="content">
       <p class="publish-date">25 May 2022</p>
       <h1>Morsel #3: a custom font preload fix in WordPress</h1>
-    <main>
+    <section>
       
       <p>My third morsel is actually a WordPress fix.</p>
 <p>I decided to write this as I couldn’t find the answer I was looking for myself and thought it might help anyone who had the same problem in the future.</p>
@@ -81,9 +81,9 @@
 <p>I’ve gone with woff2 only as it’s widely supported and smaller in file size, which compounds the benefits of preloading for page speed. Just be careful of <a href="https://fonts.google.com/knowledge/glossary/fout">FOUT</a> and set your <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control">Cache-Control headers</a>!</p>
 <p>And make sure to put that ahead of the <code>wp_head()</code> in your header.php file so it can preload before the CSS (I believe that’s how it works lol).</p>
     
-    </main>
+    </section>
   </article>
-</div>
+</main>
     <footer>
     <p>Built with HTML, CSS, and <a href="https://astro.build/">Astro</a> which has made this super fun. <a href="https://twitter.com/t3dotgg/status/1481344430921502720">Special tweet added for good luck.</a></p>
     <p>[ <a href="/html-sitemap/">HTML Sitemap</a> ]</p>
@@ -103,7 +103,7 @@
             <rect x="0.5" y="0.5" width="117" height="19" rx="2.5" stroke="#9D9CD3"></rect>
             <defs>
             <linearGradient id="paint0_linear_55_5" x1="1" y1="1" x2="117.69" y2="10.6591" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#BEBDFF"></stop>
+                <stop offset="0.1" stop-color="#BEBDFF"></stop>
                 <stop offset="1" stop-color="#D1ADFF"></stop>
             </linearGradient>
             <linearGradient id="paint1_linear_55_5" x1="59" y1="1" x2="59" y2="1.5" gradientUnits="userSpaceOnUse">

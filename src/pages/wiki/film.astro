@@ -7,6 +7,7 @@ import BlogFooter from '../../components/BlogFooter.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import site from '../../data/site.json';
 import wiki from '../../data/wiki.json'
+import tags from '../../data/tags.json'
 
 // EXPORT
 
@@ -51,15 +52,15 @@ let domain = "https://lukealexdavis.co.uk"
         <section>
           
           <h2 class="wiki-h2">Inner voice</h2>
-          
+
           <ul>
-            <li><strong><a href="/letterboxd-diaries/">/letterbox-diaries</a></strong></li>
-            <li><a href="/post/1001-movies-you-must-see-before-you-die-2008-edition/">/1001-movies-you-must-see-before-you-die-2008-edition.md</a></li>
-            <li><a href="/post/bad-boys-for-years/">/bad-boys-for-years.md</a></li>
-            <li><a href="/post/black-panther-and-therapy/">/black-panther-and-therapy.md</a></li>
-            <li><a href="/post/still-elephant/">/still-elephant.md</a></li>
-            <li><a href="/post/letterboxd-year-review-2022/">/letterboxd-year-review-2022.md</a></li>
-          </ul>
+            <li class="post-preview wiki-listing post-list"><strong><a href="/letterboxd-diaries/">My Letterboxd Diaries</a></strong></li>
+            {tags.film.map((tag) => (
+            <li class="post-preview wiki-listing post-list">
+              <a href={tag.link}>{tag.title}</a>
+            </li>
+          ))}
+        </ul>
           
         </section>
         

@@ -7,6 +7,7 @@ import BlogFooter from '../../components/BlogFooter.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import site from '../../data/site.json';
 import wiki from '../../data/wiki.json'
+import tags from '../../data/tags.json'
 
 // EXPORT
 
@@ -51,6 +52,14 @@ let domain = "https://lukealexdavis.co.uk"
         <section>
           
           <h2 class="wiki-h2">Inner voice</h2>
+
+          <ul>
+            {tags.gaming.map((tag) => (
+            <li class="post-preview wiki-listing post-list">
+              <a href={tag.link}>{tag.title}</a>
+            </li>
+          ))}
+        </ul>
           
           <ul>
             <li><a href="/post/12-facts-i-didnt-know-about-pokemon/">/12-facts-i-didnt-know-about-pokemon.md</a></li>

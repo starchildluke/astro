@@ -6,6 +6,7 @@ layout: ../../layouts/BlogPost.astro
 tags: 
 - racism
 - '[me](/about/)'
+- '[Black](/wiki/black/)'
 ---
 
 I've taken a break from my main account on Twitter. I run about 6 others and I'm still active on those but I tweet mostly from @lukealexdavis. It's not the first time I've taken a break but I've decided not to deactivate this time. Why am I drawing more attention to this? Because I'm tired. Whether it's the [Windrush scandal](https://en.wikipedia.org/wiki/Windrush_scandal), Kanye being a right-wing sympathiser, or Bill Cosby and Nas apologists, there are people who have suffered or are suffering and people out there defending them. And I'm tired of all of it. I'm very vocal about race on my account because I've been subjected to my own relative experiences.

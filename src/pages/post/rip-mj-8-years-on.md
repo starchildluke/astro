@@ -5,6 +5,7 @@ layout: ../../layouts/BlogPost.astro
 tags:
 - '[music](/wiki/music/)'
 - michael jackson
+- '[Black](/wiki/black/)'
 ---
 
 <p>I can't believe it's been 9 years. I remember where I was and what I was doing that evening and for the next few days trying to process it all. One of the most surreal weeks of my life. I'd only become a fan in 2003 after watching this video but it changed my life, no exaggeration:</p>

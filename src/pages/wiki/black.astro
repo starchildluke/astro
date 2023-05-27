@@ -7,6 +7,7 @@ import BlogFooter from '../../components/BlogFooter.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import site from '../../data/site.json';
 import wiki from '../../data/wiki.json'
+import tags from '../../data/tags.json'
 
 // EXPORT
 
@@ -48,23 +49,14 @@ let domain = "https://lukealexdavis.co.uk"
         </section>
         <section>
           <h2 class="wiki-h2">Inner voice</h2>
-          
+
           <ul>
-            <li><a href="/post/1-year-later/">/1-year-later.md</a></li>
-            <li><a href="/post/4-article-ideas-the-read/">/4-article-ideas-the-read.md</a></li>
-            <li><a href="/post/beyond-tired-part-2/">/beyond-tired-part-2.md</a></li>
-            <li><a href="/post/beyond-tired-3/">/beyond-tired-3.md</a></li>
-            <li><a href="/post/beyond-tired-4/">/beyond-tired-4.md</a></li>
-            <li><a href="/post/black-and-tired/">/black-and-tired.md</a></li>
-            <li><a href="/post/black-panther-and-therapy/">/black-panther-and-therapy.md</a></li>
-            <li><a href="/post/black-survival-is-black-excellence/">/black-survival-is-black-excellence.md</a></li>
-            <li><a href="/post/blackness/">/blackness.md</a></li>
-            <li><a href="/post/im-racially-tired/">/im-racially-tired.md</a></li>
-            <li><a href="/post/kamala-harris-is-still-a-cop/">/kamala-harris-is-still-a-cop.md</a></li>
-            <li><a href="/post/night-off/">/night-off.md</a></li>
-            <li><a href="/post/rip-mj-8-years-on/">/rip-mj-8-years-on.md</a></li>
-            <li><a href="/post/we-are-not-data-points/">/we-are-not-data-points.md</a></li>
-          </ul>
+            {tags.black.map((tag) => (
+            <li class="post-preview wiki-listing post-list">
+              <a href={tag.link}>{tag.title}</a>
+            </li>
+          ))}
+        </ul>
         </section>
         <section>
           

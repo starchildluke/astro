@@ -7,6 +7,7 @@ import BlogFooter from '../../components/BlogFooter.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import site from '../../data/site.json';
 import wiki from '../../data/wiki.json'
+import tags from '../../data/tags.json'
 
 // EXPORT
 
@@ -51,22 +52,14 @@ let domain = "https://lukealexdavis.co.uk"
         <section>
           
           <h2 class="wiki-h2">Inner voice</h2>
+
           <ul>
-            <li><a href="/post/1-vs-10-000/">/1-vs-10-000.md</a></li>
-            <li><a href="/post/this-is-my-content-creation-flow/">/this-is-my-content-creation-flow.md</a></li>
-            <li><a href="/post/4-article-ideas-the-read/">/4-article-ideas-the-read.md</a></li>
-            <li><a href="/post/blogging-as-self-expression/">/blogging-as-self-expression.md</a></li>
-            <li><a href="/post/blogs-and-hats/">/blogs-and-hats.md</a></li>
-            <li><a href="/post/ceci-nest-pas-un-blog/">/ceci-nest-pas-un-blog.md</a></li>
-            <li><a href="/post/feeling-guilty-for-pursuing-your-passions/">/feeling-guilty-for-pursuing-your-passions.md</a></li>
-            <li><a href="/post/first-year-professional-seo/">/first-year-professional-seo.md</a></li>
-            <li><a href="/post/halt-and-make-fire/">/halt-and-make-fire.md</a></li>
-            <li><a href="/post/how-much-do-my-blogs-cost/">/how-much-do-my-blogs-cost.md</a></li>
-            <li><a href="/post/meta-meta-blogging/">/meta-meta-blogging.md</a></li>
-            <li><a href="/post/my-review-of-2017/">/my-review-of-2017.md</a></li>
-            <li><a href="/post/second-year-professional-seo/">/second-year-professional-seo.md</a></li>
-            <li><a href="/post/speeches-thanks/">/speeches-thanks.md</a></li>
-          </ul>
+            {tags.blogging.map((tag) => (
+            <li class="post-preview wiki-listing post-list">
+              <a href={tag.link}>{tag.title}</a>
+            </li>
+          ))}
+        </ul>
         </section>
         
         <section>

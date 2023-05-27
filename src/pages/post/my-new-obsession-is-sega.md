@@ -3,7 +3,8 @@ title: 'My New Obsession Is... Sega'
 date: '7 Jun 2017'
 layout: ../../layouts/BlogPost.astro
 tags:
-- sega
+- SEGA
+- '[gaming](/wiki/gaming/)'
 ---
 
 I thought I’d revive this series where I talk about my latest obsession. Other obsessions have included [Andy Cole](https://themovehubdotcom.wordpress.com/2018/11/21/my-footballing-magi/) and Luke Cage but my latest craze is Sega. I wasn’t fortunate enough to own any Sega consoles until I was in my 20s (or any at all until my teens) but my cousins did. It was the coolest thing in the world to be able to play Sonic 2 on the Sega Genesis and, 3 years later, NiGHTS into Dreams on the Sega Saturn. I always wanted a Game Gear but ended up with a Game Boy in 1998, which illustrates the longevity of Nintendo’s consoles and Sega’s downfall. My rare experiences with the Dreamcast didn’t hold the lustre of the Genesis and Saturn, despite being a superior device.             

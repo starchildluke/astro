@@ -5,6 +5,7 @@ layout: ../../layouts/BlogPost.astro
 tags:
 - 'racism'
 - 'life'
+- '[Black](/wiki/black/)'
 ---
 
 Don't tell me you're disgusted at racism against Black footballers.  
