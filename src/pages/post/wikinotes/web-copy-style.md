@@ -16,7 +16,7 @@ This document does not offer a comprehensive guide to usage, nor is it intended 
 
 The standards set herein are my own, though they owe a debt to other style guides I have seen, and to my experiences using them. Certain conventions ("web" and "website," for example) reflect predominant usage online more than any personal preference on my own part, however.
 
-You are free to use this style guide for any personal purpose; however, if you wish to excerpt any part of it elsewhere, please include an attribution and link to this site. Thoughts, suggestions and reactions of any nature <a href=" http://www.provenanceunknown.com/about/contact.html">are welcome</a>.
+You are free to use this style guide for any personal purpose; however, if you wish to excerpt any part of it elsewhere, please include an attribution and link to this site. Thoughts, suggestions and reactions of any nature <a href="http://web.archive.org/web/20220709170602/http://www.provenanceunknown.com/about/contact.html">are welcome</a>.
 
 <b>Note:</b> This is only a guide. Hopefully, most of its conventions will
 serve you well, but you may find some that you don't like, or that don't
