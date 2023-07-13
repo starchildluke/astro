@@ -10,7 +10,7 @@ My sixth morsel is a quick script that scrapes The Guardian API for articles fea
 ## Requirements
 
 * [Python 3](https://www.python.org/downloads/)
-* [requests](https://docs.python-requests.org/)
+* [requests](https://requests.readthedocs.io/en/latest/)
 * [An API key from The Guardian](https://open-platform.theguardian.com/)
 
 ## Links

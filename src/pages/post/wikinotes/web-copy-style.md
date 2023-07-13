@@ -16,7 +16,7 @@ This document does not offer a comprehensive guide to usage, nor is it intended 
 
 The standards set herein are my own, though they owe a debt to other style guides I have seen, and to my experiences using them. Certain conventions ("web" and "website," for example) reflect predominant usage online more than any personal preference on my own part, however.
 
-You are free to use this style guide for any personal purpose; however, if you wish to excerpt any part of it elsewhere, please include an attribution and link to this site. Thoughts, suggestions and reactions of any nature <a href="http://web.archive.org/web/20220709170602/http://www.provenanceunknown.com/about/contact.html">are welcome</a>.
+You are free to use this style guide for any personal purpose; however, if you wish to excerpt any part of it elsewhere, please include an attribution and link to this site. Thoughts, suggestions and reactions of any nature <a href="http://web.archive.org/web/20220127234244/http://www.provenanceunknown.com/about/contact.html">are welcome</a>.
 
 <b>Note:</b> This is only a guide. Hopefully, most of its conventions will
 serve you well, but you may find some that you don't like, or that don't
@@ -113,7 +113,7 @@ Local conventions for specifying dates vary. To avoid ambiguity,
 either specify a date's month by name or letter abbreviation, or use the international standard
 date notation, yyyy-mm-dd. For example, Feb. 24, 1998, or 1998-02-24.
 (A summary of the international standard for date and time notation is
-<a href="http://www.cl.cam.ac.uk/~mgk25/iso-time.html" title="A Summary of the International Standard Date and Time Notation">here</a>.)
+<a href="https://www.cl.cam.ac.uk/~mgk25/iso-time.html" title="A Summary of the International Standard Date and Time Notation">here</a>.)
 
 Specify time of day by either using a 24-hour clock or omitting the seconds
 and using a.m. and p.m. For example, 17:15:23, or 5:15 p.m.
@@ -122,7 +122,7 @@ Noon is 12:00:00 or 12:00 p.m.
 
 In general, include the relevant time zone abbreviation when specifying the time of day.
 Time zone abbreviations are capitalized and separated from the time by a space.
-For example, 10:54 a.m. ET. (<a href="http://www.timeanddate.com/time/abbreviations.html" title="Time Zone Abbreviations">This list</a> provides proper abbreviations for time zones.)
+For example, 10:54 a.m. ET. (<a href="http://web.archive.org/web/20030801073443/http://www.timeanddate.com:80/time/abbreviations.html" title="Time Zone Abbreviations">This list</a> provides proper abbreviations for time zones.)
 </blockquote>
 
 <b>decimals</b>
@@ -471,8 +471,8 @@ address, including the http://.</blockquote>
 <b>web links</b>
 > Use hyperlinks selectively, and keep them short.
 When linking text, link from a noun or noun phrase if possible, but link to a verb phrase if necessary
-to avoid confusion. For example: Dean Allen's <a href="https://web.archive.org/web/20020212000526/http://www.textism.com">Textism</a> is often very good. He once wrote <a href="https://web.archive.org/web/20020212000526/http://www.textism.com/article/402/">a story</a> about a cat. And he even <a href="https://web.archive.org/web/20020212000526/http://www.textism.com/resources/index.html?id=5">uses
-the word "dude"</a> sometimes. Not to mention these <a href="https://web.archive.org/web/20020212000526/http://www.textism.com/resources/index.html?id=9">handy
+to avoid confusion. For example: Dean Allen's <a href="https://web.archive.org/web/20020212000526/http://www.textism.com/">Textism</a> is often very good. He once wrote <a href="https://web.archive.org/web/20020212000526/http://www.textism.com/article/402/">a story</a> about a cat. And he even <a href="https://web.archive.org/web/20020212000526/http://www.textism.com/resources/index.html?id=5">uses
+the word "dude"</a> sometimes. Not to mention these <a href="https://web.archive.org/web/20020207203153/http://textism.com/resources/index.html?id=9">handy
 scripts</a> he wrote for coding web pages. And Digital Web magazine <a href="https://web.archive.org/web/20020210074652/http://www.digital-web.com/profiles/dean_allen.shtml">says</a>
 he was born in Vancouver! <br><br>
 > (Note: There are usability considerations to take into account with

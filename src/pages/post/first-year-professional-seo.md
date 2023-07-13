@@ -34,7 +34,7 @@ There's still a sexism problem. It's not as bad as it used to be but there's sti
 
 ### brightonSEO
 
-A friend of mine went to [brightonSEO](https://www.brightonseo.com/) one year and I was super jealous. Then I got to go last year and it was awesome. And I'm going again this year, with more experience under my belt.
+A friend of mine went to [brightonSEO](https://brightonseo.com/) one year and I was super jealous. Then I got to go last year and it was awesome. And I'm going again this year, with more experience under my belt.
 
 I loved being there and being able to immerse myself in an industry conference. I anticipate this year's being just as good if not better.
 
@@ -72,7 +72,7 @@ Does a site need so many scripts and frameworks? Is jQuery essential? Is there a
 
 Is there anything APIs can't do? Actually, don't answer that.
 
-An API fuels my scraper. Every time I use a service, I ask myself "does this have an API" and it usually does and I make a note of it for future use. [Pokémon](https://pokeapi.co/) and [Spotify](https://developer.spotify.com/documentation/web-api/) are two examples. Even better if the APIs are free to access. They're a great way to practise in your language of choice.
+An API fuels my scraper. Every time I use a service, I ask myself "does this have an API" and it usually does and I make a note of it for future use. [Pokémon](https://pokeapi.co/) and [Spotify](https://developer.spotify.com/documentation/web-api) are two examples. Even better if the APIs are free to access. They're a great way to practise in your language of choice.
 
 ## Content and Links
 ### Use headings more

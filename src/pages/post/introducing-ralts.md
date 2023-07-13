@@ -53,7 +53,7 @@ Fundamentally, I wanted a script to tell me what tags to use for my blogs if I c
 
 Before I dive into the code, I want to make something clear: I've only been coding in Python for just under 2.5 years. I've done all of this in my own time with no formal training and following a Udemy course I still haven't finished. You'll likely see some inefficient or unpythonic code. If you do, feel free to shout up as that will help me improve. But please: only constructive feedback. There are way too many videos online calling people out for "stupid code" and I find it demeaning and gatekeep-y (technical term).
 
-I also want to give credit to Joe Davison whose data plot code I used from his [zero shot demo](https://github.com/joeddav/zero-shot-demo). He wrote a great piece on [zero shot learning](https://joeddav.github.io/blog/2020/05/29/ZSL.html) which you should read if you're interested.
+I also want to give credit to Joe Davison whose data plot code I used from his zero shot demo. He wrote a great piece on [zero shot learning](https://joeddav.github.io/blog/2020/05/29/ZSL.html) which you should read if you're interested.
 
 [There's also a live zero shot classification demo you can try that shows the code I copied in action](https://huggingface.co/zero-shot/).
 

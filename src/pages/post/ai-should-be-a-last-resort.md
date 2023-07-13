@@ -10,7 +10,7 @@ tags:
 
 Ooh, edgy title! But let me back up my _lukewarm_ take (heh).
 
-We're told that [AI](/wiki/tech/ai/) is simultaneously the present and the future and you'll be a husk of a human being if you don't just embrace it and get on the train. Of course, this is absolute nonsense fueled by hypercapitalism but that doesn't make it any less convincing to "experts" and companies looking for more profit and less outlay (see: [tech layoffs](https://techcrunch.com/2023/05/12/tech-industry-layoffs/)).
+We're told that [AI](/wiki/tech/ai/) is simultaneously the present and the future and you'll be a husk of a human being if you don't just embrace it and get on the train. Of course, this is absolute nonsense fueled by hypercapitalism but that doesn't make it any less convincing to "experts" and companies looking for more profit and less outlay (see: [tech layoffs](https://techcrunch.com/2023/07/11/tech-industry-layoffs-2023/)).
 
 The problem with this ideology is the implication that whatever you're doing now is outdated because we said so and regardless of whether it works. Writers aren't any less qualified or effective than they were in 2019 or before. So why is this burgeoning technology suddenly an answer to a problem that never really existed? Except there _is_ a problem: companies need to recoup the money they lost during the pandemic, and what better way to do that than to **not** pay employees who need pay rises and instead completely replace them with language models they can tinker with at the fraction of the price. If those writers are lucky, they might stay on but have an increased workload (for no extra pay) involving editing <abbr title="large language model">LLM</abbr> outputs rather than writing copy from scratch.
 

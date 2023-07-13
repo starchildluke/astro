@@ -20,7 +20,6 @@ Places like Twitter, Instagram, et al should be extending tools and platforms. I
 * [Wix](https://www.wix.com/)
 * [Shopify](https://www.shopify.com/)
 * [Webflow](https://webflow.com/)
-* [Web.com](https://web.com)
 * [Gator from Hostgator](https://www.hostgator.com/)
 * [Cargo](https://cargo.site/)
 

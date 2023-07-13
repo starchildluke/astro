@@ -29,7 +29,7 @@ It's a **very** bad caricature of Don King but it made me laugh _because_ it was
 
 ## More on Vicuna
 
-[Vicuna published a full breakdown of the model](https://vicuna.lmsys.org/), it's advantages, and disadvantages. The tl;dr: it's a good open-source alternative but it could never be as good as Bard/any GPT model. Unfortunately, the dataset isn't available and there are no plans to release it which is a shame and undermines the open-sourceness of it a little, but it might also be a legal thing; I dunno.
+[Vicuna published a full breakdown of the model](https://lmsys.org/blog/2023-03-30-vicuna/), it's advantages, and disadvantages. The tl;dr: it's a good open-source alternative but it could never be as good as Bard/any GPT model. Unfortunately, the dataset isn't available and there are no plans to release it which is a shame and undermines the open-sourceness of it a little, but it might also be a legal thing; I dunno.
 
 ## A different test
 
