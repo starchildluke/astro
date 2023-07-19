@@ -1,7 +1,7 @@
 ---
 title: 'Get a website'
 published: true
-date: '4 Sept 2021'
+date: '4 Sep 2021'
 layout: ../../layouts/BlogPost.astro
 tags:
 - the web

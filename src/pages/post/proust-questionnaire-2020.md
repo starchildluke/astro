@@ -1,7 +1,7 @@
 ---
 title: 'Proust Questionnaire - 2020'
 published: true
-date: '6 Sept 2020'
+date: '6 Sep 2020'
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[me](/about/)'

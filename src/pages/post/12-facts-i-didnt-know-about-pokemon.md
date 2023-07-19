@@ -1,7 +1,7 @@
 ---
 title: '12 Facts I Didn''t Know About Pokémon'
 published: true
-date: '28 Sept 2017'
+date: '28 Sep 2017'
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[Pokémon](/wiki/pokemon/)'

@@ -6,8 +6,36 @@ import BlogPost from '../components/BlogPost.astro';
 import BlogFooter from '../components/BlogFooter.astro';
 import StructuredData from '../components/StructuredData.astro';
 import RelatedPosts from '../components/RelatedPosts.astro';
+import prevNext from '../data/next_prev.json';
 
-const {content} = Astro.props;
+function prevNextLinking() {
+
+  for(let i = 0; i < prevNext.length; i++)
+{
+  if(prevNext[0]["url"] == Astro.url.pathname)
+  {
+    let prevLink = prevNext[0]["link_data"][0]["prev"]
+    let prevTitle = prevNext[0]["link_data"][0]["title"]
+    let nextLink = "";
+    let nextTitle = "";
+    return "<a href=" + prevLink + ">" + prevTitle + "</a>";
+  } else if(prevNext[prevNext.length - 1]["url"] == Astro.url.pathname) {
+    let prevLink = "";
+    let prevTitle = "";
+    let nextLink = prevNext[prevNext.length - 1]["link_data"][0]["next"]
+    let nextTitle = prevNext[prevNext.length - 1]["link_data"][0]["title"]
+    return "<a href=" + nextLink + ">" + nextTitle + "</a>";
+  } else if(prevNext[i]["url"] == Astro.url.pathname) {
+    let prevLink = prevNext[i]["link_data"][0]["prev"]
+    let prevTitle = prevNext[i]["link_data"][0]["title"]
+    let nextLink = prevNext[i]["link_data"][1]["next"]
+    let nextTitle = prevNext[i]["link_data"][1]["title"]
+    return "<a href=" + nextLink + ">" + nextTitle + "</a>"  + " " + "<a href=" + prevLink + ">" + prevTitle + "</a>";
+  }
+}
+}
+
+const {content} = Astro.props; 
 const {title, description, date, canonicalURL, tags, relatedposts} = content;
 
 ---
@@ -16,7 +44,6 @@ const {title, description, date, canonicalURL, tags, relatedposts} = content;
     <BaseHead {title} {description} {canonicalURL} />
     <StructuredData {title} {date} />
   </head>
-
   <body>
     <BlogHeader />
     <BlogPost {title} {date}>
@@ -25,6 +52,7 @@ const {title, description, date, canonicalURL, tags, relatedposts} = content;
       <Markdown>
         {tags.map(tag => <span class="tags">{tag} </span>)}
       </Markdown>
+      <!-- <Fragment set:html={prevNextLinking()}> -->
       <RelatedPosts />
     </BlogPost>
     <BlogFooter />

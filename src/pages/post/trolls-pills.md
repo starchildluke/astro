@@ -2,7 +2,7 @@
 title: "Trolls and pills"
 published: true
 layout: ../../layouts/BlogPost.astro
-date: "8 Sept 2020"
+date: "8 Sep 2020"
 tags:
 - 'the web'
 ---
