@@ -2,7 +2,7 @@
 title: 'Hay fever (haiku)'
 published: true
 date: '20 Jun 2022'
-layout: ../../../layouts/BlogPost.astro
+layout: ../../../layouts/Wikinotes.astro
 tags:
   - 'poetry'
 ---

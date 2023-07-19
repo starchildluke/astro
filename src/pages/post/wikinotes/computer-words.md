@@ -2,7 +2,7 @@
 title: 'Computer words'
 published: true
 date: '18 Feb 2019'
-layout: ../../../layouts/BlogPost.astro
+layout: ../../../layouts/Wikinotes.astro
 tags:
   - '[tech](/wiki/tech/)'
 ---

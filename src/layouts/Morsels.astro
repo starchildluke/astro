@@ -5,6 +5,34 @@ import BlogHeader from '../components/BlogHeader.astro';
 import BlogPost from '../components/BlogPost.astro';
 import BlogFooter from '../components/BlogFooter.astro';
 import StructuredData from '../components/StructuredData.astro';
+import prevNextMorsels from '../data/next_prev_morsels.json';
+
+function prevNextLinking() {
+
+  for(let i = 0; i < prevNextMorsels.length; i++)
+{
+  if(prevNextMorsels[0]["url"] == Astro.url.pathname)
+  {
+    let prevLink = prevNextMorsels[0]["link_data"][0]["prev"]
+    let prevTitle = prevNextMorsels[0]["link_data"][0]["title"]
+    let nextLink = "";
+    let nextTitle = "";
+    return "<a href=" + prevLink + " class='post-pagination-item post-pagination-prev' >" + prevTitle + "</a>";
+  } else if(prevNextMorsels[prevNextMorsels.length - 1]["url"] == Astro.url.pathname) {
+    let prevLink = "";
+    let prevTitle = "";
+    let nextLink = prevNextMorsels[prevNextMorsels.length - 1]["link_data"][0]["next"]
+    let nextTitle = prevNextMorsels[prevNextMorsels.length - 1]["link_data"][0]["title"]
+    return "<a href=" + nextLink + " class='post-pagination-item post-pagination-next' >" + nextTitle + "</a>";
+  } else if(prevNextMorsels[i]["url"] == Astro.url.pathname) {
+    let prevLink = prevNextMorsels[i]["link_data"][0]["prev"]
+    let prevTitle = prevNextMorsels[i]["link_data"][0]["title"]
+    let nextLink = prevNextMorsels[i]["link_data"][1]["next"]
+    let nextTitle = prevNextMorsels[i]["link_data"][1]["title"]
+    return "<a href=" + prevLink + " class='post-pagination-item post-pagination-prev'>" + prevTitle + "</a>"  + " " + "<a href=" + nextLink + " class='post-pagination-item post-pagination-next' >" + nextTitle + "</a>";
+  }
+}
+}
 
 const {content} = Astro.props;
 const {title, description, date, canonicalURL} = content;
@@ -20,6 +48,9 @@ const {title, description, date, canonicalURL} = content;
     <BlogHeader />
     <BlogPost {title} {date}>
       <slot />
+      <div class="post-pagination">
+        <Fragment set:html={prevNextLinking()}>
+      </div>
     </BlogPost>
     <BlogFooter />
   </body>

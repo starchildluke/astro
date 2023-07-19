@@ -2,7 +2,7 @@
 title: 'My favourite Pokémon generations'
 published: true
 date: '14 May 2023'
-layout: ../../../layouts/BlogPost.astro
+layout: ../../../layouts/Wikinotes.astro
 tags:
   - '[Pokémon](/wiki/pokemon/)'
 ---
