@@ -1,0 +1,30 @@
+---
+// COMPONENTS
+
+import BaseHead from '../components/BaseHead.astro';
+import BlogHeader from '../components/BlogHeader.astro';
+import BlogFooter from '../components/BlogFooter.astro';
+import BlogPostPreview from '../components/BlogPostPreview.astro';
+
+// METADATA VARIABLES
+
+let title = '404';
+let description = 'Ruh roh.';
+let canonicalURL = Astro.url;
+
+---
+<html lang="en">
+  <head>
+    <BaseHead title={title} description={description} canonicalURL={canonicalURL} />
+  </head>
+  <body>
+  <BlogHeader />
+  <main class="layout">
+    <article class="content">
+        <h1>{title}</h1>
+      <p>Uh oh, looks like you hit a 404!</p>
+  </article>
+</main>
+<BlogFooter></BlogFooter>
+</body>
+</html>
