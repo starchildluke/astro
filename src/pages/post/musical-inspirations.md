@@ -5,6 +5,7 @@ layout: ../../layouts/BlogPost.astro
 tags:
 - '[music](/wiki/music/)'
 - inspiration
+- '[Prince](/wiki/music/prince/)'
 ---
 
 * J Dilla

@@ -4,9 +4,9 @@ published: true
 date: '11 Mar 2020'
 layout: ../../layouts/BlogPost.astro
 tags:
-- the web
-- css
-- Prince
+- '[the Internet](/wiki/tech/internet/)'
+- CSS
+- '[Prince](wiki/music/prince/)'
 ---
 
 Evert Pot wrote an article about using [a:visited](https://evertpot.com/visited-links/) in your stylesheets.

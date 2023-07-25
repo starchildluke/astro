@@ -6,6 +6,7 @@ layout: ../../layouts/BlogPost.astro
 tags:
 - '[music](/wiki/music/)'
 - '[aoty](/wiki/music/aoty/)'
+- '[Prince](wiki/music/prince/)'
 ---
 
 <p>Gonna keep it short and sweet. This is my album of the year list. They’re ranked as most favourite to least favourite and I know I’ve missed some pretty big releases but I didn’t have the time to listen to hundreds of albums and EPs. You probably won’t agree with the ranking but your faves ≠ my faves.</p>

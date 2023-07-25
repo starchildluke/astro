@@ -12,7 +12,7 @@ So now you have this. It's still about [Bad Boys](https://www.youtube.com/watch?
 
 [I logged it in Letterboxd](/letterboxd-diaries/#2020) and noticed there have been multiple films made called Bad Boys.
 
-* [Bad Boys (1961)](https://www.filmaffinity.com/us/film372179.html) - A Japanese film about "a young delinquent who takes part in a robbery and is sentenced to a juvenile detention centre, where he clashes with other youths and reflects on his life experiences".
+* [Bad Boys (1961)](https://www.filmaffinity.com/us/film372179.html) - A [Japanese](/wiki/japan/) film about "a young delinquent who takes part in a robbery and is sentenced to a juvenile detention centre, where he clashes with other youths and reflects on his life experiences".
 * [Bad Boys (1983)](https://www.youtube.com/watch?v=RRILgwNJNkI) - A similar film (is it a Western remake?) about a delinquent sent to a juvenile detention centre starring Sean Penn, Clancy Brown, and Ally Sheedy
 * Bad Boys (2003) - A Finnish "true story" with four topless white men on the cover
 * Bad Boys (2014) - A documentary about the [Detroit Pistons](https://www.youtube.com/watch?v=QDFa4BChz5w)

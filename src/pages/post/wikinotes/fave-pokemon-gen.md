@@ -5,6 +5,7 @@ date: '14 May 2023'
 layout: ../../../layouts/Wikinotes.astro
 tags:
   - '[Pokémon](/wiki/pokemon/)'
+  - '[Japan](/wiki/japan/)'
 ---
 
 I thought I'd compile a list of my favourite Pokémon generations. This list will undoubtedly change over time as I play more of these games and as new games get released. Therefore, these positions won't stick (except for the top 3; [those are laminated](https://www.youtube.com/watch?v=vOWAggYhgHQ).)

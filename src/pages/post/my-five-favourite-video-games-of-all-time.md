@@ -5,7 +5,8 @@ date: '5 Aug 2017'
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[gaming](/wiki/gaming/)'
-- lists
+- '[Sonic the Hedgehog](/wiki/sonic-the-hedgehog/)'
+- '[lists](/lists/)'
 ---
 
 Taken this from a [viral tweet](https://twitter.com/epicgeezr/status/891781690540118018) and [kottke.org](https://kottke.org/17/08/my-five-favorite-video-games-of-all-time). I'm not much of a gamer either so it wasn't too difficult to make a list of my five favourites.

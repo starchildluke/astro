@@ -5,7 +5,7 @@ layout: ../../layouts/BlogPost.astro
 tags:
 - '[music](/wiki/music/)'
 - writing
-- J Dilla
+- '[J Dilla](https://sampleface.co.uk/tag/j-dilla/)'
 - '[Roger Federer](/wiki/sport/roger-federer/)'
 ---
 
@@ -26,7 +26,7 @@ For me as a huge Federer fan, it was nerve wracking. I still wasn’t used to th
 
 My hip hop journey initially started roughly in 2006 but I wasn’t aware of its impact until much later. It was a compilation featuring a wide range of genres – hip hop, jazz, folk, electronica – and it was the third track, Jealousy by Slum Village, that burrowed under my skin without me realising. The group comprised of three members: T3, Baatin and emcee/producer Jay Dee. I paid enough attention to acknowledge the beat was smooth, the lyrics unremarkable but catered to the rhythm. The next year, I went to university to study Computer Science but dropped out after 6 months. I fell into a state of depression during and after my brief time there and music became the crutch for me. I carried this through and it became my lifeblood. Hip hop was the nucleus and through connections, I came across Jay Dee once again, now known to me as J Dilla.
 
-By now, I’d discovered he’d passed away in 2006, somewhat poignant given the first time I heard his work; circle of life and all that. I listened to Donuts, didn’t enjoy it, listened to artists he inspired, came back to it and BOOM! What the HELL was I thinking? The legend behind Donuts lives on and continues to grow with [every new anecdote and every year that passes](https://sampleface.co.uk/?s=donuts). His music became my new obsession. He was a deft craftsman with an incredible ear for samples, rhythm and arrangement. He knew exactly where things needed to be and when. His unorthodoxy became staples amongst his peers, blowing away colleagues and fans alike with incredible reinterpretations. He was akin to Federer in black music form.
+By now, I’d discovered he’d passed away in 2006, somewhat poignant given the first time I heard his work; circle of life and all that. I listened to [Donuts](https://sampleface.co.uk/28-days-of-dilla-28-j-dilla-donuts/), didn’t enjoy it, listened to artists he inspired, came back to it and BOOM! What the HELL was I thinking? The legend behind Donuts lives on and continues to grow with every new anecdote and every year that passes. His music became my new obsession. He was a deft craftsman with an incredible ear for samples, rhythm and arrangement. He knew exactly where things needed to be and when. His unorthodoxy became staples amongst his peers, blowing away colleagues and fans alike with incredible reinterpretations. He was akin to Federer in black music form.
 
 ## Act 3: Union and Victory
 

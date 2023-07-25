@@ -6,6 +6,7 @@ layout: ../../layouts/BlogPost.astro
 tags:
 - '[Pokémon](/wiki/pokemon/)'
 - '[gaming](/wiki/gaming/)'
+- '[Japan](/wiki/japan/)'
 ---
 
 * Satoshi Tajiri pitched [Pokémon](/wiki/pokemon/) to Nintendo but it was initially rejected
