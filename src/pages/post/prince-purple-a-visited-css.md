@@ -6,7 +6,7 @@ layout: ../../layouts/BlogPost.astro
 tags:
 - '[the Internet](/wiki/tech/internet/)'
 - CSS
-- '[Prince](wiki/music/prince/)'
+- '[Prince](/wiki/music/prince/)'
 ---
 
 Evert Pot wrote an article about using [a:visited](https://evertpot.com/visited-links/) in your stylesheets.
