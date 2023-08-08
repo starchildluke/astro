@@ -9,7 +9,6 @@ tags:
 ---
 
 * Jean-Michel Basquiat
-* Chuck Close
 * Theodore Taylor III
 * Louie Zong
 * Lois van Baarle
@@ -17,8 +16,6 @@ tags:
 * Salvador Dali
 * Barkley L. Hendricks
 * Jackson Pollock
-* Monica Renn
-* Sook Moon
 * Gustav Klimt
 * Waajeed
 * Herb Ritts
@@ -28,4 +25,5 @@ tags:
 * Upendo Taylor
 * Tay Butler
 * John Akomfrah
-* "Alfie"
+
+(Updated: 2/8/2023)
