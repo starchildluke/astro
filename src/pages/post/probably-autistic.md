@@ -55,3 +55,7 @@ I love learning, especially if I find something cool. But that can lead to hyper
 I like my peace and quiet a lot of the time. So when I'm in a shopping centre or at work or even at home where my son watches TV at a loud volume and then plays on his Switch at near full volume, it gets too much. It's why I often have headphones in as a way to regulate the sounds I hear. Sensory overload often turns into irritability so if you catch me in that funk, give me a second.
 
 **Sidenote**: _if you have any comments about this, for yourself, and we know each other, feel free to talk to me. If you have any criticisms, keep them to yourself. If you have any advice, ask me whether I'm open to this first. I don't like unsolicited advice as it often comes from a different life experience to mine and the rapport is almost never established beforehand so it sounds like someone offering a smile, a biscuit, and a cup of tea for mental health issues. I've been accused of being standoffish and aloof many times before when I've actually been struggling and nobody thought to check in first. Don't be that person._
+
+## Resources
+
+* [How I get shit done (or at least get started) while having executive dysfunction](https://www.autisticasfxxk.com/blog/get-shit-done/) - This is sound advice for any other neurodivergent folks reading this
