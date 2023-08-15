@@ -1,11 +1,26 @@
 [
     {
+        "url": "/post/seo-of-pokemon-nicknames/",
+        "link_data": [
+            {
+                "prev": "/post/ai-lower-inertia-getting-started/",
+                "title": "AI as a tool to lower the inertia of getting started",
+                "date": "2023-07-17"
+            }
+        ]
+    },
+    {
         "url": "/post/ai-lower-inertia-getting-started/",
         "link_data": [
             {
                 "prev": "/post/some-caveats-to-seo-and-web-perf/",
                 "title": "Some caveats to SEO and web performance",
                 "date": "2023-07-02"
+            },
+            {
+                "next": "/post/seo-of-pokemon-nicknames/",
+                "title": "The SEO of Pok\u00e9mon nicknames",
+                "date": "2023-08-12"
             }
         ]
     },
@@ -703,8 +718,8 @@
         "url": "/post/cherish/",
         "link_data": [
             {
-                "prev": "/post/boats-storms-rockets/",
-                "title": "Boats, storms, and rockets",
+                "prev": "/post/beached/",
+                "title": "Beached",
                 "date": "2021-07-21"
             },
             {
@@ -715,11 +730,11 @@
         ]
     },
     {
-        "url": "/post/boats-storms-rockets/",
+        "url": "/post/beached/",
         "link_data": [
             {
-                "prev": "/post/beached/",
-                "title": "Beached",
+                "prev": "/post/boats-storms-rockets/",
+                "title": "Boats, storms, and rockets",
                 "date": "2021-07-21"
             },
             {
@@ -730,7 +745,7 @@
         ]
     },
     {
-        "url": "/post/beached/",
+        "url": "/post/boats-storms-rockets/",
         "link_data": [
             {
                 "prev": "/post/happy-accident-1/",
@@ -738,8 +753,8 @@
                 "date": "2021-07-18"
             },
             {
-                "next": "/post/boats-storms-rockets/",
-                "title": "Boats, storms, and rockets",
+                "next": "/post/beached/",
+                "title": "Beached",
                 "date": "2021-07-21"
             }
         ]
@@ -753,8 +768,8 @@
                 "date": "2021-07-12"
             },
             {
-                "next": "/post/beached/",
-                "title": "Beached",
+                "next": "/post/boats-storms-rockets/",
+                "title": "Boats, storms, and rockets",
                 "date": "2021-07-21"
             }
         ]
@@ -1168,28 +1183,13 @@
         "url": "/post/nyt-first-said-visualisation/",
         "link_data": [
             {
-                "prev": "/post/wander-in-porto/",
-                "title": "Wander in Porto",
-                "date": "2020-08-24"
-            },
-            {
-                "next": "/post/the-exclusive-website/",
-                "title": "The Exclusive Website",
-                "date": "2020-08-27"
-            }
-        ]
-    },
-    {
-        "url": "/post/wander-in-porto/",
-        "link_data": [
-            {
                 "prev": "/post/not-in-the-constitution/",
                 "title": "Things that aren&#39;t in the U.S. Constitution",
                 "date": "2020-08-24"
             },
             {
-                "next": "/post/nyt-first-said-visualisation/",
-                "title": "Visualising @nyt_said_first",
+                "next": "/post/the-exclusive-website/",
+                "title": "The Exclusive Website",
                 "date": "2020-08-27"
             }
         ]
@@ -1203,9 +1203,9 @@
                 "date": "2020-08-24"
             },
             {
-                "next": "/post/wander-in-porto/",
-                "title": "Wander in Porto",
-                "date": "2020-08-24"
+                "next": "/post/nyt-first-said-visualisation/",
+                "title": "Visualising @nyt_said_first",
+                "date": "2020-08-27"
             }
         ]
     },
@@ -1213,13 +1213,28 @@
         "url": "/post/how-much-do-my-blogs-cost/",
         "link_data": [
             {
+                "prev": "/post/wander-in-porto/",
+                "title": "Wander in Porto",
+                "date": "2020-08-24"
+            },
+            {
+                "next": "/post/not-in-the-constitution/",
+                "title": "Things that aren&#39;t in the U.S. Constitution",
+                "date": "2020-08-24"
+            }
+        ]
+    },
+    {
+        "url": "/post/wander-in-porto/",
+        "link_data": [
+            {
                 "prev": "/post/boom-tetris-for-jeff/",
                 "title": "BOOM! Tetris for Jeff",
                 "date": "2020-08-23"
             },
             {
-                "next": "/post/not-in-the-constitution/",
-                "title": "Things that aren&#39;t in the U.S. Constitution",
+                "next": "/post/how-much-do-my-blogs-cost/",
+                "title": "How much do my blogs cost?",
                 "date": "2020-08-24"
             }
         ]
@@ -1233,8 +1248,8 @@
                 "date": "2020-08-22"
             },
             {
-                "next": "/post/how-much-do-my-blogs-cost/",
-                "title": "How much do my blogs cost?",
+                "next": "/post/wander-in-porto/",
+                "title": "Wander in Porto",
                 "date": "2020-08-24"
             }
         ]
@@ -1303,8 +1318,8 @@
         "url": "/post/saddam-hussein-bacon-number-3/",
         "link_data": [
             {
-                "prev": "/post/still-elephant/",
-                "title": "Still Elephant",
+                "prev": "/post/kamala-harris-is-still-a-cop/",
+                "title": "Kamala Harris is still a cop",
                 "date": "2020-08-13"
             },
             {
@@ -1315,11 +1330,11 @@
         ]
     },
     {
-        "url": "/post/still-elephant/",
+        "url": "/post/kamala-harris-is-still-a-cop/",
         "link_data": [
             {
-                "prev": "/post/kamala-harris-is-still-a-cop/",
-                "title": "Kamala Harris is still a cop",
+                "prev": "/post/still-elephant/",
+                "title": "Still Elephant",
                 "date": "2020-08-13"
             },
             {
@@ -1330,7 +1345,7 @@
         ]
     },
     {
-        "url": "/post/kamala-harris-is-still-a-cop/",
+        "url": "/post/still-elephant/",
         "link_data": [
             {
                 "prev": "/post/talk-work-think-different-thanks-web/",
@@ -1338,8 +1353,8 @@
                 "date": "2020-08-13"
             },
             {
-                "next": "/post/still-elephant/",
-                "title": "Still Elephant",
+                "next": "/post/kamala-harris-is-still-a-cop/",
+                "title": "Kamala Harris is still a cop",
                 "date": "2020-08-13"
             }
         ]
@@ -1353,8 +1368,8 @@
                 "date": "2020-08-11"
             },
             {
-                "next": "/post/kamala-harris-is-still-a-cop/",
-                "title": "Kamala Harris is still a cop",
+                "next": "/post/still-elephant/",
+                "title": "Still Elephant",
                 "date": "2020-08-13"
             }
         ]
