@@ -1,11 +1,26 @@
 [
     {
+        "url": "/post/my-big-pokemon-week/",
+        "link_data": [
+            {
+                "prev": "/post/seo-of-pokemon-nicknames/",
+                "title": "The SEO of Pok\u00e9mon nicknames",
+                "date": "2023-08-12"
+            }
+        ]
+    },
+    {
         "url": "/post/seo-of-pokemon-nicknames/",
         "link_data": [
             {
                 "prev": "/post/ai-lower-inertia-getting-started/",
                 "title": "AI as a tool to lower the inertia of getting started",
                 "date": "2023-07-17"
+            },
+            {
+                "next": "/post/my-big-pokemon-week/",
+                "title": "My big Pok\u00e9mon self-project",
+                "date": "2023-08-20"
             }
         ]
     },
@@ -133,8 +148,8 @@
         "url": "/post/things-that-ai-isnt/",
         "link_data": [
             {
-                "prev": "/post/a-note-on-some-notes-on-writing/",
-                "title": "A note on some notes on writing",
+                "prev": "/post/aoty-2022/",
+                "title": "My Albums Of The Year List: 2022",
                 "date": "2023-03-27"
             },
             {
@@ -145,11 +160,11 @@
         ]
     },
     {
-        "url": "/post/a-note-on-some-notes-on-writing/",
+        "url": "/post/aoty-2022/",
         "link_data": [
             {
-                "prev": "/post/aoty-2022/",
-                "title": "My Albums Of The Year List: 2022",
+                "prev": "/post/a-note-on-some-notes-on-writing/",
+                "title": "A note on some notes on writing",
                 "date": "2023-03-27"
             },
             {
@@ -160,7 +175,7 @@
         ]
     },
     {
-        "url": "/post/aoty-2022/",
+        "url": "/post/a-note-on-some-notes-on-writing/",
         "link_data": [
             {
                 "prev": "/post/we-are-not-data-points/",
@@ -168,8 +183,8 @@
                 "date": "2023-03-25"
             },
             {
-                "next": "/post/a-note-on-some-notes-on-writing/",
-                "title": "A note on some notes on writing",
+                "next": "/post/aoty-2022/",
+                "title": "My Albums Of The Year List: 2022",
                 "date": "2023-03-27"
             }
         ]
@@ -183,8 +198,8 @@
                 "date": "2023-03-17"
             },
             {
-                "next": "/post/aoty-2022/",
-                "title": "My Albums Of The Year List: 2022",
+                "next": "/post/a-note-on-some-notes-on-writing/",
+                "title": "A note on some notes on writing",
                 "date": "2023-03-27"
             }
         ]
@@ -718,8 +733,8 @@
         "url": "/post/cherish/",
         "link_data": [
             {
-                "prev": "/post/beached/",
-                "title": "Beached",
+                "prev": "/post/boats-storms-rockets/",
+                "title": "Boats, storms, and rockets",
                 "date": "2021-07-21"
             },
             {
@@ -730,11 +745,11 @@
         ]
     },
     {
-        "url": "/post/beached/",
+        "url": "/post/boats-storms-rockets/",
         "link_data": [
             {
-                "prev": "/post/boats-storms-rockets/",
-                "title": "Boats, storms, and rockets",
+                "prev": "/post/beached/",
+                "title": "Beached",
                 "date": "2021-07-21"
             },
             {
@@ -745,7 +760,7 @@
         ]
     },
     {
-        "url": "/post/boats-storms-rockets/",
+        "url": "/post/beached/",
         "link_data": [
             {
                 "prev": "/post/happy-accident-1/",
@@ -753,8 +768,8 @@
                 "date": "2021-07-18"
             },
             {
-                "next": "/post/beached/",
-                "title": "Beached",
+                "next": "/post/boats-storms-rockets/",
+                "title": "Boats, storms, and rockets",
                 "date": "2021-07-21"
             }
         ]
@@ -768,8 +783,8 @@
                 "date": "2021-07-12"
             },
             {
-                "next": "/post/boats-storms-rockets/",
-                "title": "Boats, storms, and rockets",
+                "next": "/post/beached/",
+                "title": "Beached",
                 "date": "2021-07-21"
             }
         ]
@@ -1153,8 +1168,8 @@
         "url": "/post/black-panther-and-therapy/",
         "link_data": [
             {
-                "prev": "/post/the-exclusive-website/",
-                "title": "The Exclusive Website",
+                "prev": "/post/nyt-first-said-visualisation/",
+                "title": "Visualising @nyt_said_first",
                 "date": "2020-08-27"
             },
             {
@@ -1165,11 +1180,11 @@
         ]
     },
     {
-        "url": "/post/the-exclusive-website/",
+        "url": "/post/nyt-first-said-visualisation/",
         "link_data": [
             {
-                "prev": "/post/nyt-first-said-visualisation/",
-                "title": "Visualising @nyt_said_first",
+                "prev": "/post/the-exclusive-website/",
+                "title": "The Exclusive Website",
                 "date": "2020-08-27"
             },
             {
@@ -1180,7 +1195,22 @@
         ]
     },
     {
-        "url": "/post/nyt-first-said-visualisation/",
+        "url": "/post/the-exclusive-website/",
+        "link_data": [
+            {
+                "prev": "/post/wander-in-porto/",
+                "title": "Wander in Porto",
+                "date": "2020-08-24"
+            },
+            {
+                "next": "/post/nyt-first-said-visualisation/",
+                "title": "Visualising @nyt_said_first",
+                "date": "2020-08-27"
+            }
+        ]
+    },
+    {
+        "url": "/post/wander-in-porto/",
         "link_data": [
             {
                 "prev": "/post/not-in-the-constitution/",
@@ -1203,9 +1233,9 @@
                 "date": "2020-08-24"
             },
             {
-                "next": "/post/nyt-first-said-visualisation/",
-                "title": "Visualising @nyt_said_first",
-                "date": "2020-08-27"
+                "next": "/post/wander-in-porto/",
+                "title": "Wander in Porto",
+                "date": "2020-08-24"
             }
         ]
     },
@@ -1213,28 +1243,13 @@
         "url": "/post/how-much-do-my-blogs-cost/",
         "link_data": [
             {
-                "prev": "/post/wander-in-porto/",
-                "title": "Wander in Porto",
-                "date": "2020-08-24"
-            },
-            {
-                "next": "/post/not-in-the-constitution/",
-                "title": "Things that aren&#39;t in the U.S. Constitution",
-                "date": "2020-08-24"
-            }
-        ]
-    },
-    {
-        "url": "/post/wander-in-porto/",
-        "link_data": [
-            {
                 "prev": "/post/boom-tetris-for-jeff/",
                 "title": "BOOM! Tetris for Jeff",
                 "date": "2020-08-23"
             },
             {
-                "next": "/post/how-much-do-my-blogs-cost/",
-                "title": "How much do my blogs cost?",
+                "next": "/post/not-in-the-constitution/",
+                "title": "Things that aren&#39;t in the U.S. Constitution",
                 "date": "2020-08-24"
             }
         ]
@@ -1248,8 +1263,8 @@
                 "date": "2020-08-22"
             },
             {
-                "next": "/post/wander-in-porto/",
-                "title": "Wander in Porto",
+                "next": "/post/how-much-do-my-blogs-cost/",
+                "title": "How much do my blogs cost?",
                 "date": "2020-08-24"
             }
         ]
@@ -1273,8 +1288,8 @@
         "url": "/post/1001-movies-you-must-see-before-you-die-2008-edition/",
         "link_data": [
             {
-                "prev": "/post/support-me/",
-                "title": "5 Ways You Can Support Me",
+                "prev": "/post/headless-chickens/",
+                "title": "Headless chickens",
                 "date": "2020-08-16"
             },
             {
@@ -1285,11 +1300,11 @@
         ]
     },
     {
-        "url": "/post/support-me/",
+        "url": "/post/headless-chickens/",
         "link_data": [
             {
-                "prev": "/post/headless-chickens/",
-                "title": "Headless chickens",
+                "prev": "/post/support-me/",
+                "title": "5 Ways You Can Support Me",
                 "date": "2020-08-16"
             },
             {
@@ -1300,7 +1315,7 @@
         ]
     },
     {
-        "url": "/post/headless-chickens/",
+        "url": "/post/support-me/",
         "link_data": [
             {
                 "prev": "/post/saddam-hussein-bacon-number-3/",
@@ -1308,8 +1323,8 @@
                 "date": "2020-08-14"
             },
             {
-                "next": "/post/support-me/",
-                "title": "5 Ways You Can Support Me",
+                "next": "/post/headless-chickens/",
+                "title": "Headless chickens",
                 "date": "2020-08-16"
             }
         ]
@@ -1323,8 +1338,8 @@
                 "date": "2020-08-13"
             },
             {
-                "next": "/post/headless-chickens/",
-                "title": "Headless chickens",
+                "next": "/post/support-me/",
+                "title": "5 Ways You Can Support Me",
                 "date": "2020-08-16"
             }
         ]
@@ -1333,8 +1348,8 @@
         "url": "/post/kamala-harris-is-still-a-cop/",
         "link_data": [
             {
-                "prev": "/post/still-elephant/",
-                "title": "Still Elephant",
+                "prev": "/post/talk-work-think-different-thanks-web/",
+                "title": "We talk, work, and think different thanks to the Web",
                 "date": "2020-08-13"
             },
             {
@@ -1345,11 +1360,11 @@
         ]
     },
     {
-        "url": "/post/still-elephant/",
+        "url": "/post/talk-work-think-different-thanks-web/",
         "link_data": [
             {
-                "prev": "/post/talk-work-think-different-thanks-web/",
-                "title": "We talk, work, and think different thanks to the Web",
+                "prev": "/post/still-elephant/",
+                "title": "Still Elephant",
                 "date": "2020-08-13"
             },
             {
@@ -1360,7 +1375,7 @@
         ]
     },
     {
-        "url": "/post/talk-work-think-different-thanks-web/",
+        "url": "/post/still-elephant/",
         "link_data": [
             {
                 "prev": "/post/gains/",
@@ -1368,8 +1383,8 @@
                 "date": "2020-08-11"
             },
             {
-                "next": "/post/still-elephant/",
-                "title": "Still Elephant",
+                "next": "/post/talk-work-think-different-thanks-web/",
+                "title": "We talk, work, and think different thanks to the Web",
                 "date": "2020-08-13"
             }
         ]
@@ -1383,8 +1398,8 @@
                 "date": "2020-08-10"
             },
             {
-                "next": "/post/talk-work-think-different-thanks-web/",
-                "title": "We talk, work, and think different thanks to the Web",
+                "next": "/post/still-elephant/",
+                "title": "Still Elephant",
                 "date": "2020-08-13"
             }
         ]
@@ -2038,8 +2053,8 @@
         "url": "/post/musical-inspirations/",
         "link_data": [
             {
-                "prev": "/post/aoty-2016/",
-                "title": "My Albums Of The Year List: 2016",
+                "prev": "/post/my-idea-debt/",
+                "title": "My Idea Debt",
                 "date": "2017-02-01"
             },
             {
@@ -2050,11 +2065,11 @@
         ]
     },
     {
-        "url": "/post/aoty-2016/",
+        "url": "/post/my-idea-debt/",
         "link_data": [
             {
-                "prev": "/post/my-idea-debt/",
-                "title": "My Idea Debt",
+                "prev": "/post/aoty-2016/",
+                "title": "My Albums Of The Year List: 2016",
                 "date": "2017-02-01"
             },
             {
@@ -2065,7 +2080,7 @@
         ]
     },
     {
-        "url": "/post/my-idea-debt/",
+        "url": "/post/aoty-2016/",
         "link_data": [
             {
                 "prev": "/post/10-inspiring-creatives-2017/",
@@ -2073,8 +2088,8 @@
                 "date": "2017-01-04"
             },
             {
-                "next": "/post/aoty-2016/",
-                "title": "My Albums Of The Year List: 2016",
+                "next": "/post/my-idea-debt/",
+                "title": "My Idea Debt",
                 "date": "2017-02-01"
             }
         ]
@@ -2088,8 +2103,8 @@
                 "date": "2017-01-01"
             },
             {
-                "next": "/post/my-idea-debt/",
-                "title": "My Idea Debt",
+                "next": "/post/aoty-2016/",
+                "title": "My Albums Of The Year List: 2016",
                 "date": "2017-02-01"
             }
         ]
