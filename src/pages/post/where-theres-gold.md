@@ -1,6 +1,6 @@
 ---
 title: "Where there's gold"
-date: "15 Apr 2021"
+pubDate: "15 Apr 2021"
 layout: ../../layouts/BlogPost.astro
 slug: "/posts/where-theres-gold"
 tags:

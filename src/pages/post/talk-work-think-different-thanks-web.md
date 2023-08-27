@@ -1,7 +1,7 @@
 ---
 title: 'We talk, work, and think different thanks to the Web'
 published: true
-date: '13 Aug 2020'
+pubDate: '13 Aug 2020'
 layout: ../../layouts/BlogPost.astro
 tags:
 - the web

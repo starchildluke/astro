@@ -1,6 +1,6 @@
 ---
 title: '5 Ways You Can Support Me'
-date: '16 Aug 2020'
+pubDate: '16 Aug 2020'
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[me](/about/)'

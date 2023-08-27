@@ -1,7 +1,7 @@
 ---
 title: 'How much do my blogs cost?'
 published: true
-date: '24 Aug 2020'
+pubDate: '24 Aug 2020'
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[blogging](/wiki/blogging/)'

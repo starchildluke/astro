@@ -1,7 +1,7 @@
 ---
 title: "The Problem With Google It"
 published: true
-date: "9 Jan 2016"
+pubDate: "9 Jan 2016"
 layout: ../../layouts/BlogPost.astro
 tags:
 - 'knowledge'

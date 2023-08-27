@@ -1,7 +1,7 @@
 ---
 title: "Videos I've been watching to keep me going"
 published: true
-date: "5 May 2021"
+pubDate: "5 May 2021"
 layout: ../../layouts/BlogPost.astro
 tags:
 - 'video'

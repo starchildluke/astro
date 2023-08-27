@@ -1,7 +1,7 @@
 ---
 title: 'Artistic Inspirations'
 published: true
-date: '24 Sep 2017'
+pubDate: '24 Sep 2017'
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[art](/wiki/art/)'

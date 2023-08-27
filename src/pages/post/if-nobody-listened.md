@@ -1,6 +1,6 @@
 ---
 title: 'If Nobody Listened, Would I Still Make Music?'
-date: '18 Dec 2016'
+pubDate: '18 Dec 2016'
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[music](/wiki/music/)'

@@ -1,7 +1,7 @@
 ---
 title: 'Open Offices Are Overrated'
 published: true
-date: '5 Oct 2017'
+pubDate: '5 Oct 2017'
 layout: ../../layouts/BlogPost.astro
 tags:
 - 'video'

@@ -1,7 +1,7 @@
 ---
 title: 'My Albums of the Year: 2011'
 published: true
-date: '31 Dec 2011'
+pubDate: '31 Dec 2011'
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[aoty](/wiki/music/aoty/)'

@@ -1,6 +1,6 @@
 ---
 title: 'Hayfever and Histamines'
-date: '26 Jun 2017'
+pubDate: '26 Jun 2017'
 layout: ../../layouts/BlogPost.astro
 tags:
 - hayfever

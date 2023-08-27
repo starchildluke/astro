@@ -1,7 +1,7 @@
 ---
 title: 'AI should be a last resort'
 published: true
-date: '14 May 2023'
+pubDate: '14 May 2023'
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[AI](/wiki/tech/ai/)'

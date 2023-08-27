@@ -1,7 +1,7 @@
 ---
 title: '4 Creative Article Ideas - Inspired By "The Read"'
 published: true
-date: "14 Apr 2018"
+pubDate: "14 Apr 2018"
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[Black](/wiki/black/)'

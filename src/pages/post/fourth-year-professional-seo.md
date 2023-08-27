@@ -1,6 +1,6 @@
 ---
 title: "8 Things I Learnt In My 4th Year As A Professional SEO"
-date: "4 Mar 2023"
+pubDate: "4 Mar 2023"
 description: "I've been a SEO for 4 years now. But what more have I learnt? I wrote a list of 12 things I've picked up over that period."
 layout: ../../layouts/BlogPost.astro
 tags:

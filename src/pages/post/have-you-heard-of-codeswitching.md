@@ -1,6 +1,6 @@
 ---
 title: 'Have you heard of codeswitching?'
-date: '15 Feb 2020'
+pubDate: '15 Feb 2020'
 layout: ../../layouts/BlogPost.astro
 tags:
 - codeswitching

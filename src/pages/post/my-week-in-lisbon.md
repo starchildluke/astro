@@ -1,7 +1,7 @@
 ---
 title: 'My Week In Lisbon'
 published: true
-date: '3 Dec 2017'
+pubDate: '3 Dec 2017'
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[me](/about/)'

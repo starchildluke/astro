@@ -1,7 +1,7 @@
 ---
 title: Eight
 published: true
-date: '15 Feb 2019'
+pubDate: '15 Feb 2019'
 layout: ../../layouts/BlogPost.astro
 tags:
 - life

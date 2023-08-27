@@ -1,7 +1,7 @@
 ---
 title: "It's binary time!"
 layout: ../../layouts/BlogPost.astro
-date: "3 Dec 2020"
+pubDate: "3 Dec 2020"
 tags:
 - mathematics
 ---

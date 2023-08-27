@@ -36,17 +36,17 @@ function prevNextLinking() {
 }
 
 const {content} = Astro.props; 
-const {title, description, date, canonicalURL, tags, relatedposts} = content;
+const {title, description, pubDate, canonicalURL, tags, relatedposts} = content;
 
 ---
 <html lang="en">
   <head>
     <BaseHead {title} {description} {canonicalURL} />
-    <StructuredData {title} {date} />
+    <StructuredData {title} {pubDate} />
   </head>
   <body>
     <BlogHeader />
-    <BlogPost {title} {date}>
+    <BlogPost {title} {pubDate}>
       <slot />
       <div class="tagged-as">Tagged as:</div>
       <Markdown>

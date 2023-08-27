@@ -1,7 +1,7 @@
 ---
 title: 'Connections'
 published: true
-date: '9 Dec 2021'
+pubDate: '9 Dec 2021'
 layout: ../../layouts/BlogPost.astro
 tags:
 - travel

@@ -1,7 +1,7 @@
 ---
 title: 'Things that aren&#39;t in the U.S. Constitution'
 published: true
-date: '24 Aug 2020'
+pubDate: '24 Aug 2020'
 layout: ../../layouts/BlogPost.astro
 tags:
 - 'USA'

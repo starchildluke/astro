@@ -1,7 +1,7 @@
 ---
 title: "Sustained grief"
 published: true
-date: "28 Feb 2021"
+pubDate: "28 Feb 2021"
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[me](/about/)'

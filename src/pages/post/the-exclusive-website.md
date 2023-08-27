@@ -1,7 +1,7 @@
 ---
 title: 'The Exclusive Website'
 published: true
-date: '27 Aug 2020'
+pubDate: '27 Aug 2020'
 layout: ../../layouts/BlogPost.astro
 tags:
 - 'the web'

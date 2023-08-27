@@ -1,7 +1,7 @@
 ---
 title: '24 Hour Virus'
 published: true
-date: '19 Jan 2020'
+pubDate: '19 Jan 2020'
 layout: ../../layouts/BlogPost.astro
 tags:
 - 'illness'

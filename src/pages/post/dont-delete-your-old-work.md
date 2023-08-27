@@ -1,7 +1,7 @@
 ---
 title: 'Don''t delete your old work (but restore it if you do)'
 published: true
-date: '8 Jun 2022'
+pubDate: '8 Jun 2022'
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[blogging](/wiki/blogging/)'

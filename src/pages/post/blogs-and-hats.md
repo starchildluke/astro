@@ -1,7 +1,7 @@
 ---
 title: 'Blogs and hats'
 published: true
-date: '24 Feb 2020'
+pubDate: '24 Feb 2020'
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[blogging](/wiki/blogging/)'

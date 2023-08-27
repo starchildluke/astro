@@ -1,7 +1,7 @@
 ---
 title: "The meaning of life"
 published: true
-date: "27 Jan 2021"
+pubDate: "27 Jan 2021"
 layout: ../../layouts/BlogPost.astro
 tags:
 - 'life'

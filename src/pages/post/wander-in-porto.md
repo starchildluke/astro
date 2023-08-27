@@ -1,7 +1,7 @@
 ---
 title: 'Wander in Porto'
 published: true
-date: '24 Aug 2020'
+pubDate: '24 Aug 2020'
 layout: ../../layouts/BlogPost.astro
 tags:
 - 'portugal'

@@ -1,7 +1,7 @@
 ---
 title: "Link dump #1"
 published: true
-date: "24 Mar 2021"
+pubDate: "24 Mar 2021"
 layout: ../../layouts/BlogPost.astro
 tags:
 - link dump

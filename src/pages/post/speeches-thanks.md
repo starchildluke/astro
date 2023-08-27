@@ -1,7 +1,7 @@
 ---
 title: 'I''m not really one for speeches so I''ll just say ''thanks'''
 published: true
-date: '9 Aug 2020'
+pubDate: '9 Aug 2020'
 layout: ../../layouts/BlogPost.astro
 tags:
 - racism

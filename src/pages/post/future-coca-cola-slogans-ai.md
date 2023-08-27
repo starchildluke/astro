@@ -1,7 +1,7 @@
 ---
 title: 'Future Coca-Cola slogans with GPT-3.5'
 published: true
-date: '12 Apr 2023'
+pubDate: '12 Apr 2023'
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[AI](/wiki/tech/ai/)'

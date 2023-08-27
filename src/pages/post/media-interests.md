@@ -1,7 +1,7 @@
 ---
 title: 'Media interests'
 published: true
-date: '3 Aug 2021'
+pubDate: '3 Aug 2021'
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[me](/about/)'

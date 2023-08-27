@@ -1,7 +1,7 @@
 ---
 title: 'Today is a special day'
 published: true
-date: '29 Jan 2022'
+pubDate: '29 Jan 2022'
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[me](/about/)'

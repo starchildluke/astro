@@ -1,7 +1,7 @@
 ---
 title: "My Phone History"
 published: true
-date: "21 Jun 2018"
+pubDate: "21 Jun 2018"
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[tech](/wiki/tech/)'

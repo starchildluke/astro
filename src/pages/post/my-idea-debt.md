@@ -1,7 +1,7 @@
 ---
 title: "My Idea Debt"
 published: true
-date: "1 Feb 2017"
+pubDate: "1 Feb 2017"
 description: "Earlier this week, I read about a concept called Idea Debt. It’s when you hold onto ideas without actually putting them into place."
 layout: ../../layouts/BlogPost.astro
 tags:

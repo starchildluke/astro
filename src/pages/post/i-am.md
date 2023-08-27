@@ -1,7 +1,7 @@
 ---
 title: 'I am...'
 published: true
-date: '28 Jul 2017'
+pubDate: '28 Jul 2017'
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[me](/about/)'

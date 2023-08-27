@@ -1,6 +1,6 @@
 ---
 title: 'What''s the obsession with folding phone?'
-date: '25 May 2020'
+pubDate: '25 May 2020'
 layout: ../../layouts/BlogPost.astro
 tags:
 - 'phones'

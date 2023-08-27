@@ -1,7 +1,7 @@
 ---
 title: Failure
 published: true
-date: "21 Dec 2020"
+pubDate: "21 Dec 2020"
 layout: ../../layouts/BlogPost.astro
 description: "Before we ask people what they think success looks like, maybe we should ask what failure looks like."
 tags:

@@ -1,7 +1,7 @@
 ---
 title: 'Things that AI isn''t'
 published: true
-date: '30 Mar 2023'
+pubDate: '30 Mar 2023'
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[AI](/wiki/tech/ai/)'

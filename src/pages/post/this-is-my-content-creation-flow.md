@@ -1,6 +1,6 @@
 ---
 title: 'This is my content creation flow'
-date: '19 Mar 2020'
+pubDate: '19 Mar 2020'
 layout: ../../layouts/BlogPost.astro
 tags:
 - the web

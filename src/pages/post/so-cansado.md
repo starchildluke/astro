@@ -1,6 +1,6 @@
 ---
 title: 'Só cansado'
-date: '17 Feb 2020'
+pubDate: '17 Feb 2020'
 layout: ../../layouts/BlogPost.astro
 tags:
 - 'Twitter'

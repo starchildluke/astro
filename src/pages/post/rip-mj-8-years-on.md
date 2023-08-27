@@ -1,6 +1,6 @@
 ---
 title: "RIP MJ - 8 Years On"
-date: "25 Jun 2017"
+pubDate: "25 Jun 2017"
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[music](/wiki/music/)'

@@ -1,7 +1,7 @@
 ---
 title: "Unusual side effect"
 published: true
-date: "26 Mar 2021"
+pubDate: "26 Mar 2021"
 layout: ../../layouts/BlogPost.astro
 tags:
 - phones

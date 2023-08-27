@@ -1,7 +1,7 @@
 ---
 title: 'Probably Autistic'
 published: true
-date: '10 May 2023'
+pubDate: '10 May 2023'
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[me](/about/)'

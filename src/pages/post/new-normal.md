@@ -1,7 +1,7 @@
 ---
 title: 'New normal'
 published: true
-date: '6 Sep 2021'
+pubDate: '6 Sep 2021'
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[me](/about/)'

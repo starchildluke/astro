@@ -1,7 +1,7 @@
 ---
 title: "Blogging as self-expression"
 published: true
-date: "17 May 2021"
+pubDate: "17 May 2021"
 layout: ../../layouts/BlogPost.astro
 slug: "/posts/blogging-as-self-expression"
 tags:

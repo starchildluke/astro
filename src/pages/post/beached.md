@@ -1,7 +1,7 @@
 ---
 title: 'Beached'
 published: true
-date: '21 Jul 2021'
+pubDate: '21 Jul 2021'
 layout: ../../layouts/BlogPost.astro
 tags:
 - "creativity"

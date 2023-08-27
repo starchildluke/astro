@@ -1,6 +1,6 @@
 ---
 title: "Last Donut of the Night: when Federer & Dilla united for a weekend"
-date: "17 Dec 2016"
+pubDate: "17 Dec 2016"
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[music](/wiki/music/)'

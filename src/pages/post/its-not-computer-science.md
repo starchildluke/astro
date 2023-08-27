@@ -1,7 +1,7 @@
 ---
 title: 'It''s not computer science!'
 published: true
-date: '14 Dec 2021'
+pubDate: '14 Dec 2021'
 layout: ../../layouts/BlogPost.astro
 tags: 
 - computer science

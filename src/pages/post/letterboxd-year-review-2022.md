@@ -1,7 +1,7 @@
 ---
 title: 'My Letterboxd Year In Review for 2022'
 published: true
-date: '9 Jan 2023'
+pubDate: '9 Jan 2023'
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[film](/wiki/film/)'

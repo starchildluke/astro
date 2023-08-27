@@ -1,7 +1,7 @@
 ---
 title: 'Some caveats to SEO and web performance'
 published: true
-date: '2 Jul 2023'
+pubDate: '2 Jul 2023'
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[SEO](/wiki/tech/seo/)'

@@ -1,7 +1,7 @@
 ---
 title: "Give The Drummer Sum: J Dilla’s Influence on the Modern Drummer"
 published: true
-date: "11 Dec 2020"
+pubDate: "11 Dec 2020"
 layout: ../../layouts/BlogPost.astro
 description: "J Dilla was mean on the MPC but his live drumming had influences on a number of his peers who have since helped carry his legacy on."
 tags:

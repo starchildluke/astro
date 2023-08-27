@@ -1,7 +1,7 @@
 ---
 title: 'Everyone''s a writer'
 published: true
-date: '10 Aug 2020'
+pubDate: '10 Aug 2020'
 layout: ../../layouts/BlogPost.astro
 tags:
 - writing

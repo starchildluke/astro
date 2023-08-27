@@ -1,6 +1,6 @@
 ---
 title: 'Halt and Make Fire'
-date: '10 Aug 2020'
+pubDate: '10 Aug 2020'
 layout: ../../layouts/BlogPost.astro
 tags:
 - the web

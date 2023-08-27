@@ -1,7 +1,7 @@
 ---
 title: 'What is blackness?'
 published: true
-date: '18 Feb 2019'
+pubDate: '18 Feb 2019'
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[Black](/wiki/black/)'

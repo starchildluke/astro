@@ -1,7 +1,7 @@
 ---
 title: 'Boats, storms, and rockets'
 published: true
-date: '21 Jul 2021'
+pubDate: '21 Jul 2021'
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[COVID-19](/wiki/covid-19/)'

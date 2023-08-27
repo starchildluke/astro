@@ -1,7 +1,7 @@
 ---
 title: "They don't see us as human"
 published: true
-date: "22 Apr 2021"
+pubDate: "22 Apr 2021"
 layout: ../../layouts/BlogPost.astro
 tags:
 - 'life'

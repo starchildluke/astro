@@ -1,7 +1,7 @@
 ---
 title: 'BOOM! Tetris for Jeff'
 published: true
-date: '23 Aug 2020'
+pubDate: '23 Aug 2020'
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[gaming](/wiki/gaming/)'

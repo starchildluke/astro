@@ -1,7 +1,7 @@
 ---
 title: Eff COVID-19
 published: true
-date: '14 Mar 2020'
+pubDate: '14 Mar 2020'
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[COVID-19](/wiki/covid-19/)'

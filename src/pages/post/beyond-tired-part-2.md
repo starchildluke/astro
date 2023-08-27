@@ -1,7 +1,7 @@
 ---
 title: 'Beyond tired: Part 2'
 published: true
-date: '1 Sep 2020'
+pubDate: '1 Sep 2020'
 layout: ../../layouts/BlogPost.astro
 tags:
 - 'racism'

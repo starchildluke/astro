@@ -1,7 +1,7 @@
 ---
 title: 'Beyond tired'
 published: true
-date: '30 Aug 2020'
+pubDate: '30 Aug 2020'
 layout: ../../layouts/BlogPost.astro
 tags:
 - 'life'

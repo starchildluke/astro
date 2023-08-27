@@ -1,7 +1,7 @@
 ---
 title: 'Keep writing anyway'
 published: true
-date: '3 Feb 2022'
+pubDate: '3 Feb 2022'
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[blogging](/wiki/blogging/)'

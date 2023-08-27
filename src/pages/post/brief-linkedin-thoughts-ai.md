@@ -1,7 +1,7 @@
 ---
 title: 'Brief LinkedIn thoughts on AI'
 published: true
-date: '17 Mar 2023'
+pubDate: '17 Mar 2023'
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[AI](/wiki/tech/ai/)'

@@ -1,7 +1,7 @@
 --- 
 title: 'Social anxiety' 
 published: true 
-date: '21 Aug 2022' 
+pubDate: '21 Aug 2022' 
 layout: ../../layouts/BlogPost.astro 
 tags: 
 - '[me](/about/)' 

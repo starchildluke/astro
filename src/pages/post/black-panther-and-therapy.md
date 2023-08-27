@@ -1,7 +1,7 @@
 ---
 title: 'Black Panther and therapy'
 published: true
-date: '29 Aug 2020'
+pubDate: '29 Aug 2020'
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[film](/wiki/film/)'

@@ -1,7 +1,7 @@
 ---
 title: 'AI as a tool to lower the inertia of getting started'
 published: true
-date: '17 Jul 2023'
+pubDate: '17 Jul 2023'
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[AI](/wiki/tech/ai/)'

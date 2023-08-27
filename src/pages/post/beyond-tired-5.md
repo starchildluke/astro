@@ -1,6 +1,6 @@
 ---
 title: "Beyond tired: Part 5"
-date: "15 Oct 2021"
+pubDate: "15 Oct 2021"
 layout: ../../layouts/BlogPost.astro
 tags:
 - 'life'

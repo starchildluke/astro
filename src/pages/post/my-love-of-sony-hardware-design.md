@@ -1,7 +1,7 @@
 ---
 title: 'My love of Sony hardware design'
 published: true
-date: '16 Aug 2018'
+pubDate: '16 Aug 2018'
 layout: ../../layouts/BlogPost.astro
 tags:
 - design

@@ -1,6 +1,6 @@
 ---
 title: "My Favourite Albums of 2020"
-date: 31 Dec 2020
+pubDate: 31 Dec 2020
 layout: ../../layouts/BlogPost.astro
 tags:
 - aoty

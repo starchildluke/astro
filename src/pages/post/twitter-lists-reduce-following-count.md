@@ -1,7 +1,7 @@
 ---
 title: "How To Use Twitter Lists To Reduce Your Following Count"
 published: true
-date: "25 Nov 2018"
+pubDate: "25 Nov 2018"
 layout: ../../layouts/BlogPost.astro
 tags:
 - 'Twitter'

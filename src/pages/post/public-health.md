@@ -1,7 +1,7 @@
 ---
 title: 'Public health'
 published: true
-date: '16 Nov 2021'
+pubDate: '16 Nov 2021'
 layout: ../../layouts/BlogPost.astro
 tags:
 - life

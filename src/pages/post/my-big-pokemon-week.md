@@ -1,7 +1,7 @@
 ---
 title: 'My big Pokémon self-project'
 published: true
-date: '20 Aug 2023'
+pubDate: '20 Aug 2023'
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[Pokémon](/wiki/pokemon/)'

@@ -1,7 +1,7 @@
 ---
 title: 'The Last 5 Games of the 2017 Australian Open'
 published: true
-date: '12 Mar 2018'
+pubDate: '12 Mar 2018'
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[Roger Federer](/wiki/sport/roger-federer/)'

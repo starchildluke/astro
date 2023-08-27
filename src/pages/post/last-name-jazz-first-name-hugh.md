@@ -1,6 +1,6 @@
 ---
 title: 'Last Name Jazz, First Name Hugh [Playlist]'
-date: '18 May 2017'
+pubDate: '18 May 2017'
 layout: ../../layouts/BlogPost.astro
 tags:
 - jazz

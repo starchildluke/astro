@@ -1,7 +1,7 @@
 ---
 title: 'My Five Favourite Video Games of All Time'
 published: true
-date: '5 Aug 2017'
+pubDate: '5 Aug 2017'
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[gaming](/wiki/gaming/)'

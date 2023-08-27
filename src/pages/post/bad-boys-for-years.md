@@ -1,6 +1,6 @@
 ---
 title: 'Bad Boys For Years'
-date: '22 Jan 2020'
+pubDate: '22 Jan 2020'
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[film](/wiki/film/)'

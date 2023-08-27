@@ -1,7 +1,7 @@
 ---
 title: 'Chocolate fudge cake recipe'
 published: true
-date: '5 Jul 2010'
+pubDate: '5 Jul 2010'
 layout: ../../layouts/BlogPost.astro
 tags:
 - recipes

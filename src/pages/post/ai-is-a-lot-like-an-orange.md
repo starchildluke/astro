@@ -1,7 +1,7 @@
 ---
 title: 'AI is a lot like an orange'
 published: true
-date: '30 Jan 2023'
+pubDate: '30 Jan 2023'
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[tech](/wiki/tech/)'

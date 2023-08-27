@@ -1,7 +1,7 @@
 ---
 title: 'Acceptable volume numbers'
 published: true
-date: '23 Oct 2022'
+pubDate: '23 Oct 2022'
 layout: ../../layouts/BlogPost.astro
 tags:
 - 'mathematics'

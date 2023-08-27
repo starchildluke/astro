@@ -2,7 +2,7 @@
 title: 'You don''t have to learn Python to work here but it might help'
 description: 'Python. It''s a word that either strikes fear into the hearts of SEOs or ignites a fire in their bellies. I can tell you: I’ve felt both.'
 published: true
-date: '9 Mar 2022'
+pubDate: '9 Mar 2022'
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[Python](/wiki/tech/python/)'

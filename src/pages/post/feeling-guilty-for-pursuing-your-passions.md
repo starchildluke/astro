@@ -1,7 +1,7 @@
 ---
 title: 'Feeling Guilty For Pursuing Your Passions'
 published: true
-date: '6 Dec 2017'
+pubDate: '6 Dec 2017'
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[blogging](/wiki/blogging/)'

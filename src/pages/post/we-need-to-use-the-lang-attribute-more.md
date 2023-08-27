@@ -1,7 +1,7 @@
 ---
 title: 'We Need To Use The Lang Attribute More'
 published: true
-date: '14 Jun 2018'
+pubDate: '14 Jun 2018'
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[the web](/wiki/tech/internet/)'

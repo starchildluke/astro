@@ -1,6 +1,6 @@
 ---
 title: "Beyond tired: Part 4"
-date: "12 Jul 2021"
+pubDate: "12 Jul 2021"
 layout: ../../layouts/BlogPost.astro
 tags:
 - 'racism'

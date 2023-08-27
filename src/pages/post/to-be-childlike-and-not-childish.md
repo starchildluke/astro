@@ -1,6 +1,6 @@
 ---
 title: "To Be Childlike And Not Childish"
-date: "4 Jun 2017"
+pubDate: "4 Jun 2017"
 layout: ../../layouts/BlogPost.astro
 tags:
 - 'life'

@@ -1,7 +1,7 @@
 ---
 title: 'The Luke 100'
 published: true
-date: '12 Dec 2017'
+pubDate: '12 Dec 2017'
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[me](/about/)'

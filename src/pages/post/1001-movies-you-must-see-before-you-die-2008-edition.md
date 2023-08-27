@@ -1,7 +1,7 @@
 ---
 title: '1001 Movies You Must See Before You Die (2008 edition)'
 published: true
-date: '21 Aug 2020'
+pubDate: '21 Aug 2020'
 layout: ../../layouts/BlogPost.astro
 tags:
 - 'film'

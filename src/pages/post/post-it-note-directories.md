@@ -1,7 +1,7 @@
 ---
 title: 'Post-It Note directories'
 published: true
-date: '30 Jun 2023'
+pubDate: '30 Jun 2023'
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[SEO](/wiki/tech/seo/)'

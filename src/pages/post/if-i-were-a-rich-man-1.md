@@ -1,6 +1,6 @@
 ---
 title: 'If I were a rich man #1'
-date: '22 Aug 2020'
+pubDate: '22 Aug 2020'
 layout: ../../layouts/BlogPost.astro
 tags:
 - keith haring

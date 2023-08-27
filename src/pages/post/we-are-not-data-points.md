@@ -1,7 +1,7 @@
 ---
 title: 'We are not data points. We are people.'
 published: true
-date: '25 Mar 2023'
+pubDate: '25 Mar 2023'
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[black](/wiki/black/)'

@@ -1,7 +1,7 @@
 ---
 title: 'You rocked my world, you know you did…'
 published: true
-date: '31 May 2011'
+pubDate: '31 May 2011'
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[music](/wiki/music/)'

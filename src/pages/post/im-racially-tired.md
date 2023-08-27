@@ -1,7 +1,7 @@
 ---
 title: 'I''m Racially Tired'
 published: true
-date: '28 Apr 2018'
+pubDate: '28 Apr 2018'
 layout: ../../layouts/BlogPost.astro
 tags: 
 - racism

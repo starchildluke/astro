@@ -1,6 +1,6 @@
 ---
 title: 'Kamala Harris is still a cop'
-date: '13 Aug 2020'
+pubDate: '13 Aug 2020'
 layout: ../../layouts/BlogPost.astro
 tags:
 - USA

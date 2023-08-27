@@ -1,7 +1,7 @@
 ---
 title: 'Visualising @nyt_said_first'
 published: true
-date: '27 Aug 2020'
+pubDate: '27 Aug 2020'
 layout: ../../layouts/BlogPost.astro
 tags:
 - 'words'

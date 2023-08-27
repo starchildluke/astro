@@ -1,7 +1,7 @@
 ---
 title: 'I tried Vicuna and it made me laugh'
 published: true
-date: '27 Apr 2023'
+pubDate: '27 Apr 2023'
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[AI](/wiki/tech/ai/)'

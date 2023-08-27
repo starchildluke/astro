@@ -1,7 +1,7 @@
 ---
 title: 'A note on some notes on writing'
 published: true
-date: '27 Mar 2023'
+pubDate: '27 Mar 2023'
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[blogging](/wiki/blogging/)'

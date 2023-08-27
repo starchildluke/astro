@@ -1,7 +1,7 @@
 ---
 title: 'The Colour Of Pi'
 published: true
-date: '3 Nov 2014'
+pubDate: '3 Nov 2014'
 layout: ../../layouts/BlogPost.astro
 tags:
 - 'mathematics'

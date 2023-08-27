@@ -1,7 +1,7 @@
 ---
 title: 'My Review of 2017'
 published: true
-date: '30 Dec 2017'
+pubDate: '30 Dec 2017'
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[me](/about/)'

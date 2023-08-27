@@ -1,7 +1,7 @@
 ---
 title: "Night off"
 published: true
-date: "8 Mar 2021"
+pubDate: "8 Mar 2021"
 layout: ../../layouts/BlogPost.astro
 tags:
 - women

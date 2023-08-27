@@ -1,7 +1,7 @@
 ---
 title: 'Prompt engineering'
 published: true
-date: '22 Feb 2023'
+pubDate: '22 Feb 2023'
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[tech](/wiki/tech/)'

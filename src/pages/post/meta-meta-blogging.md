@@ -1,7 +1,7 @@
 ---
 title: Meta-meta-blogging
 published: true
-date: "23 Jan 2021"
+pubDate: "23 Jan 2021"
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[blogging](/wiki/blogging/)'

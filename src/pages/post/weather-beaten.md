@@ -1,7 +1,7 @@
 ---
 title: 'Weather-beaten'
 published: true
-date: '22 Oct 2022'
+pubDate: '22 Oct 2022'
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[me](/about/)'

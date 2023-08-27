@@ -1,7 +1,7 @@
 ---
 title: 'Happy accident #1'
 published: true
-date: '18 Jul 2021'
+pubDate: '18 Jul 2021'
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[happiness](/wiki/happiness/)'

@@ -1,6 +1,6 @@
 ---
 title: 'Musical Inspirations'
-date: '1 Mar 2017'
+pubDate: '1 Mar 2017'
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[music](/wiki/music/)'

@@ -1,7 +1,7 @@
 ---
 title: 'How I display my Last.fm top 1000 artists'
 published: true
-date: '28 Apr 2023'
+pubDate: '28 Apr 2023'
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[music](/wiki/music/)'

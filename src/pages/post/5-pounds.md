@@ -1,7 +1,7 @@
 ---
 title: '£5'
 published: true
-date: '3 Sep 2022'
+pubDate: '3 Sep 2022'
 layout: ../../layouts/BlogPost.astro
 tags:
 - "creativity"

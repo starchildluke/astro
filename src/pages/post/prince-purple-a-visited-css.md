@@ -1,7 +1,7 @@
 ---
 title: 'Use Prince''s purple for a:visited in your CSS'
 published: true
-date: '11 Mar 2020'
+pubDate: '11 Mar 2020'
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[the Internet](/wiki/tech/internet/)'

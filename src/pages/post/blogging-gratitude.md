@@ -1,7 +1,7 @@
 ---
 title: 'Blogging gratitude'
 published: true
-date: '8 Nov 2021'
+pubDate: '8 Nov 2021'
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[blogging](/wiki/blogging/)'

@@ -1,7 +1,7 @@
 ---
 title: 'Visionary'
 published: true
-date: '25 Aug 2021'
+pubDate: '25 Aug 2021'
 layout: ../../layouts/BlogPost.astro
 tags:
 - creativity

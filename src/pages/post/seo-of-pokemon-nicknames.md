@@ -1,7 +1,7 @@
 ---
 title: 'The SEO of Pokémon nicknames'
 published: true
-date: '12 Aug 2023'
+pubDate: '12 Aug 2023'
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[Pokémon](/wiki/pokemon/)'

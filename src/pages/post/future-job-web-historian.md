@@ -1,7 +1,7 @@
 ---
 title: 'Future job: Web historian'
 published: true
-date: '20 Feb 2020'
+pubDate: '20 Feb 2020'
 layout: ../../layouts/BlogPost.astro
 tags:
 - the web

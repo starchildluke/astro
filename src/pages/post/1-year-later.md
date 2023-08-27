@@ -1,9 +1,8 @@
 ---
 title: "1 Year Later"
 published: true
-date: "27 May 2021"
+pubDate: "27 May 2021"
 layout: ../../layouts/BlogPost.astro
-slug: "/posts/1-year-later"
 tags:
 - '[Black](/wiki/black/)'
 ---

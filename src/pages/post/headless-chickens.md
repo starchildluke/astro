@@ -1,6 +1,6 @@
 ---
 title: 'Headless chickens'
-date: '16 Aug 2020'
+pubDate: '16 Aug 2020'
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[COVID-19](/wiki/covid-19/)'

@@ -1,7 +1,7 @@
 ---
 title: "Sound familiar?"
 published: true
-date: "19 Jan 2021"
+pubDate: "19 Jan 2021"
 layout: ../../layouts/BlogPost.astro
 tags:
 - 'life'

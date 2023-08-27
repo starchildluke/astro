@@ -1,7 +1,7 @@
 ---
 title: 'A poem about how search engines can''t interpret poems'
 published: true
-date: '24 Aug 2022'
+pubDate: '24 Aug 2022'
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[SEO](/wiki/tech/seo/)'

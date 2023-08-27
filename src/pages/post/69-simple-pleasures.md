@@ -1,7 +1,7 @@
 ---
 title: '69 simple pleasures'
 published: true
-date: '27 Sep 2022'
+pubDate: '27 Sep 2022'
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[me](/about/)'

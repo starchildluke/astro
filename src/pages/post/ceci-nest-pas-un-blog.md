@@ -1,7 +1,7 @@
 ---
 title: 'Ceci n’est pas une blog'
 published: true
-date: '7 Jun 2011'
+pubDate: '7 Jun 2011'
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[blogging](/wiki/blogging/)'

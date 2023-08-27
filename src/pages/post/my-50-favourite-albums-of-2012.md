@@ -1,7 +1,7 @@
 ---
 title: 'My 49 Favourite Albums of 2012'
 published: true
-date: '2 Jan 2013'
+pubDate: '2 Jan 2013'
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[aoty](/wiki/music/aoty/)'

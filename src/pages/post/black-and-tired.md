@@ -1,6 +1,6 @@
 ---
 title: 'Black and Tired'
-date: '21 Jun 2020'
+pubDate: '21 Jun 2020'
 layout: ../../layouts/BlogPost.astro
 tags:
 - 'racism'

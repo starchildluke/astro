@@ -1,6 +1,6 @@
 ---
 title: 'Teams I Look Out For, Post-Man Utd (Updated for 2021)'
-date: '10 Jul 2021'
+pubDate: '10 Jul 2021'
 layout: ../../layouts/BlogPost.astro
 tags:
 - 'football'

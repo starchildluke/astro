@@ -1,7 +1,7 @@
 ---
 title: Gains
 published: true
-date: '11 Aug 2020'
+pubDate: '11 Aug 2020'
 layout: ../../layouts/BlogPost.astro
 tags:
 - illness

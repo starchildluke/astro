@@ -1,7 +1,7 @@
 ---
 title: "I'm an Emptygold Blogger"
 published: true
-date: '10 Jan 2023'
+pubDate: '10 Jan 2023'
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[blogging](/wiki/blogging/)'

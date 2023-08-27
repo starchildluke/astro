@@ -1,7 +1,7 @@
 ---
 title: 'Somebody* on life learning'
 published: true
-date: '14 Jul 2020'
+pubDate: '14 Jul 2020'
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[me](/about/)'

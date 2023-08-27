@@ -1,7 +1,7 @@
 ---
 title: 'Cherish'
 published: true
-date: '2 Aug 2021'
+pubDate: '2 Aug 2021'
 layout: ../../layouts/BlogPost.astro
 tags:
 - life

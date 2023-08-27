@@ -1,7 +1,7 @@
 ---
 title: 'What are your most used apps?'
 published: true
-date: '18 Dec 2021'
+pubDate: '18 Dec 2021'
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[tech](/wiki/tech/)'

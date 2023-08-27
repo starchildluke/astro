@@ -1,6 +1,6 @@
 ---
 title: "Inspiring Creatives For 2017"
-date: "4 Jan 2017"
+pubDate: "4 Jan 2017"
 layout: ../../layouts/BlogPost.astro
 tags:
 - 'creativity'

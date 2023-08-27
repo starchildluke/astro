@@ -1,7 +1,7 @@
 ---
 title: "My Record Store Day"
 published: true
-date: "20 Apr 2013"
+pubDate: "20 Apr 2013"
 layout: ../../layouts/BlogPost.astro
 tags:
 - '[music](/wiki/music/)'
