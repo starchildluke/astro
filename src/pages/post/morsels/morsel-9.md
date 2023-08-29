@@ -1,7 +1,7 @@
 ---
 title: 'Morsel #9: Oapy'
 published: true
-date: '23 Mar 2023'
+pubDate: '23 Mar 2023'
 layout: ../../../layouts/Morsels.astro
 ---
 

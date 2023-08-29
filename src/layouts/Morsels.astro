@@ -35,18 +35,18 @@ function prevNextLinking() {
 }
 
 const {content} = Astro.props;
-const {title, description, date, canonicalURL} = content;
+const {title, description, pubDate, canonicalURL} = content;
 
 ---
 <html lang="en">
   <head>
     <BaseHead {title} {description} {canonicalURL} />
-    <StructuredData {title} {date} />
+    <StructuredData {title} {pubDate} />
   </head>
 
   <body>
     <BlogHeader />
-    <BlogPost {title} {date}>
+    <BlogPost {title} {pubDate}>
       <slot />
       <div class="post-pagination">
         <Fragment set:html={prevNextLinking()}>

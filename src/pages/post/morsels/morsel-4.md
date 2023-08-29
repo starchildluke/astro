@@ -1,7 +1,7 @@
 ---
 title: 'Morsel #4: bulk upload to Internet Archive with waybackpy'
 published: true
-date: '26 May 2022'
+pubDate: '26 May 2022'
 layout: ../../../layouts/Morsels.astro
 ---
 

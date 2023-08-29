@@ -1,7 +1,7 @@
 ---
 title: 'Morsel #7: Random Pokémon Team Generator'
 published: true
-date: '23 Jul 2022'
+pubDate: '23 Jul 2022'
 layout: ../../../layouts/Morsels.astro
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: 'Morsel #5: Black fabric'
 published: true
-date: '8 Jul 2022'
+pubDate: '8 Jul 2022'
 layout: ../../../layouts/Morsels.astro
 ---
 

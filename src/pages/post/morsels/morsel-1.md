@@ -1,7 +1,7 @@
 ---
 title: 'Morsel #1: The Tag Suggester'
 published: true
-date: '15 Apr 2022'
+pubDate: '15 Apr 2022'
 layout: ../../../layouts/Morsels.astro
 ---
 

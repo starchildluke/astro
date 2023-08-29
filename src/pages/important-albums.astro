@@ -6,6 +6,7 @@ import BaseHead from '../components/BaseHead.astro';
 import BlogHeader from '../components/BlogHeader.astro';
 import BlogFooter from '../components/BlogFooter.astro';
 import BlogPostPreview from '../components/BlogPostPreview.astro';
+import AlbumsStructuredData from '../components/AlbumsStructuredData.astro';
 import albums from '../data/albums.json'
 
 // EXPORT
@@ -40,13 +41,14 @@ let canonicalURL = Astro.url;
     <main class="layout">
       <article class="content">
           <h1>{title}</h1>
-          <p>This is a list of all the important albums I've listened to in my life. They've saved me, inspired me, given me life, made me think, laugh, smile, cry, and everything in between. I don't update this often but you'll undoubtedly find a classic in the list.</p>
+          <p>This is a list of all the important albums I've listened to in my life. They've saved me, inspired me, given me life, made me think, laugh, smile, cry, and everything in between.</p>
             <table>
               <thead>
                 <tr>
                   <th>Artist</th>
                   <th>Album</th>
                   <th>Release Date</th>
+                  <th>Why it's important</th>
                 </tr>
               </thead>
               {albums.albums.map((item) => ( 
@@ -54,6 +56,7 @@ let canonicalURL = Astro.url;
                   <td>{item.artist}</td>
                   <td>{item.album}</td>
                   <td>{item.release_date}</td>
+                  <td>{item.importance}</td>
                 </tr>
               ))}
             </table>            
