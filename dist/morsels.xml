@@ -108,8 +108,7 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://github.com/starchildluke/wayback&quot;&gt;GitHub link&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Credit to &lt;a href=&quot;https://www.holisticseo.digital/python-seo/internet-archive/&quot;&gt;Koray Tuğberk GÜBÜR&lt;/a&gt; for the code and the idea.&lt;/p&gt;
-&lt;p&gt;I only made a slight variation, using advertools to pull pages from a sitemap and &lt;code&gt;to_list()&lt;/code&gt; over &lt;code&gt;apply()&lt;/code&gt; and a &lt;code&gt;lambda&lt;/code&gt; function when extracting URLs to iterate over. Purely a preference thing.&lt;/p&gt;
+&lt;p&gt;I adapted some code from Koray Tuğberk GÜBÜR by using advertools to pull pages from a sitemap and &lt;code&gt;to_list()&lt;/code&gt; over &lt;code&gt;apply()&lt;/code&gt; and a &lt;code&gt;lambda&lt;/code&gt; function when extracting URLs to iterate over. Purely a preference thing.&lt;/p&gt;
 &lt;p&gt;Also shout out to &lt;a href=&quot;https://github.com/eliasdabbas/advertools&quot;&gt;Elias Dabbas for the advertools library&lt;/a&gt; which has made sitemap handling in Python so much easier.&lt;/p&gt;</content:encoded></item><item><title>Morsel #3: a custom font preload fix in WordPress</title><link>https://lukealexdavis.co.uk/post/morsels/morsel-3/</link><guid>https://lukealexdavis.co.uk/post/morsels/morsel-3/</guid><pubDate>Tue, 24 May 2022 23:00:00 GMT</pubDate><content:encoded>&lt;p&gt;My third morsel is actually a WordPress fix.&lt;/p&gt;
 &lt;p&gt;I decided to write this as I couldn’t find the answer I was looking for myself and thought it might help anyone who had the same problem in the future.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Problem&lt;/strong&gt;: I realised the custom self-hosted fonts I was using on my WordPress sites weren’t actually loading. I realised this after seeing the following message:&lt;/p&gt;
