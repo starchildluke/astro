@@ -10,7 +10,7 @@ tags:
 
 Something I've been doing recently is looking for Pokémon nickname ideas. I'll search "Pokémon + nickname" and the site I always go to, regardless of rank, is PKMN.NET. They have a section called The Name Rater where people submit their nicknames and the name rater rates them with a healthy dose of snark and cynicism. The [kayfabe](https://tvtropes.org/pmwiki/pmwiki.php/Main/Kayfabe) was real!
 
-Now, [PKMN.NET](https://pkmn.net/) is an old side and it does remarkably well for these "Pokémon + nickname" queries. You'll often find them ranking in second place which is great going but the remarkable part is that the pages aren't optimised.
+[PKMN.NET](https://pkmn.net/) is a UK Pokémon fan website and forum, founded by Psythor (James O'Malley), which officially opened on 10th January 2000. And It does remarkably well for these "Pokémon + nickname" queries. You'll often find them ranking in second place which is great going but the remarkable part is that the pages aren't optimised.
 
 Here's the metadata for [Blastoise's Name Rater page](https://pkmn.net/?action=rater&page=pokemon&id=9):
 
@@ -25,7 +25,7 @@ But read that meta description again:
 
 > PKMN.NET is one of the largest Europe-based pokemon sites filled with not only plain information, but also other features to make life online that bit more interesting
 
-I don't know the accuracy of that "one of the largest Europe-based pokemon sites" claim but given its ranking stature, I'd say it has some weight to it. Those nickname submissions also date as far back as 2007. Sites like this would have had a lot of traffic back then and while it might have decreased, they'll maintain a steady stream today. I did a rough [Ahrefs](https://ahrefs.com/) search of over 400 "Pokémon + nicknames" queries (e.g. `fuecoco nicknames`) and found average monthly search volumes of up to 900 and total of 29,000. If you're ranking #2-#10 for something as niche as Pokémon nicknames without any optimisation, you're doing really well.
+Thanks to [a recent interview with The Johto Times](https://johto.substack.com/p/vol1-33), the accolade of being "one of the largest Europe-based pokemon sites" is true. Those nickname submissions also date as far back as 2007. Sites like this would have had a lot of traffic back then and while it might have decreased, they'll maintain a steady stream today. I did a rough [Ahrefs](https://ahrefs.com/) search of over 400 "Pokémon + nicknames" queries (e.g. `fuecoco nicknames`) and found average monthly search volumes of up to 900 and total of 29,000. If you're ranking #2-#10 for something as niche as Pokémon nicknames without any optimisation, you're doing really well.
 
 Of course, there are plenty of other factors contributing to this and the main one is probably links. Another check on Ahrefs showed:
 

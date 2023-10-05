@@ -7,6 +7,9 @@ Disallow: /
 User-Agent: GPTBot
 Disallow: /
 
+User-agent: Google-Extended
+Disallow: /
+
 Sitemap: https://lukealexdavis.co.uk/sitemap.xml
 
 #                              ,AAAAAAAAAAAAAAAAA                               

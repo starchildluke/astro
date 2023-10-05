@@ -46,7 +46,9 @@ Photographer [Trevor Price](https://msha.ke/tv_trev/) hasn’t seen much change 
 
 Clarissa Ankrah didn’t feel supported when she joined the industry in a few years ago:
 
-I worked my first marketing role in early 2021\. It was a hybrid role - working as a Marketing Assistant. Due to my working abroad and taking regular trips back to the office to attend office days it was a good balance for me. However, I do admit, starting a new field of marketing that was rather intense starting out, I definitely did not feel supported by my manager. I found myself as the only black woman working for the company, code-switching.
+I really enjoyed having the flexibility to work abroad and take regular trips back to attend office days. It gave me a good sense of balance to connect with the team and explore new surroundings.
+
+However, starting a new field of marketing was challenging, and I sometimes found it difficult to seek support from my manager. I also found myself code-switching as the only black woman working for the company.
 
 For Black women, the microaggressions are still more acute and stronger. In an article by Daphna Motro, Jonathan B. Evans, Aleksander P.J. Ellis, and Lehman Benson III entitled ‘[The “Angry Black Woman” Stereotype at Work](https://hbr.org/2022/01/the-angry-black-woman-stereotype-at-work)’, they looked at how the racist trope pervades office life in the US and prevent Black women from speaking out against discrimination:
 
