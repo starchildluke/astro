@@ -1,11 +1,26 @@
 [
     {
+        "url": "/post/being-black-in-digital-marketing-2023/",
+        "link_data": [
+            {
+                "prev": "/post/my-big-pokemon-week/",
+                "title": "My big Pok\u00e9mon self-project",
+                "date": "2023-08-20"
+            }
+        ]
+    },
+    {
         "url": "/post/my-big-pokemon-week/",
         "link_data": [
             {
                 "prev": "/post/seo-of-pokemon-nicknames/",
                 "title": "The SEO of Pok\u00e9mon nicknames",
                 "date": "2023-08-12"
+            },
+            {
+                "next": "/post/being-black-in-digital-marketing-2023/",
+                "title": "Being Black in digital marketing in 2023",
+                "date": "2023-10-01"
             }
         ]
     },
@@ -148,8 +163,8 @@
         "url": "/post/things-that-ai-isnt/",
         "link_data": [
             {
-                "prev": "/post/aoty-2022/",
-                "title": "My Albums Of The Year List: 2022",
+                "prev": "/post/a-note-on-some-notes-on-writing/",
+                "title": "A note on some notes on writing",
                 "date": "2023-03-27"
             },
             {
@@ -160,11 +175,11 @@
         ]
     },
     {
-        "url": "/post/aoty-2022/",
+        "url": "/post/a-note-on-some-notes-on-writing/",
         "link_data": [
             {
-                "prev": "/post/a-note-on-some-notes-on-writing/",
-                "title": "A note on some notes on writing",
+                "prev": "/post/aoty-2022/",
+                "title": "My Albums Of The Year List: 2022",
                 "date": "2023-03-27"
             },
             {
@@ -175,7 +190,7 @@
         ]
     },
     {
-        "url": "/post/a-note-on-some-notes-on-writing/",
+        "url": "/post/aoty-2022/",
         "link_data": [
             {
                 "prev": "/post/we-are-not-data-points/",
@@ -183,8 +198,8 @@
                 "date": "2023-03-25"
             },
             {
-                "next": "/post/aoty-2022/",
-                "title": "My Albums Of The Year List: 2022",
+                "next": "/post/a-note-on-some-notes-on-writing/",
+                "title": "A note on some notes on writing",
                 "date": "2023-03-27"
             }
         ]
@@ -198,8 +213,8 @@
                 "date": "2023-03-17"
             },
             {
-                "next": "/post/a-note-on-some-notes-on-writing/",
-                "title": "A note on some notes on writing",
+                "next": "/post/aoty-2022/",
+                "title": "My Albums Of The Year List: 2022",
                 "date": "2023-03-27"
             }
         ]
@@ -733,8 +748,8 @@
         "url": "/post/cherish/",
         "link_data": [
             {
-                "prev": "/post/boats-storms-rockets/",
-                "title": "Boats, storms, and rockets",
+                "prev": "/post/beached/",
+                "title": "Beached",
                 "date": "2021-07-21"
             },
             {
@@ -745,11 +760,11 @@
         ]
     },
     {
-        "url": "/post/boats-storms-rockets/",
+        "url": "/post/beached/",
         "link_data": [
             {
-                "prev": "/post/beached/",
-                "title": "Beached",
+                "prev": "/post/boats-storms-rockets/",
+                "title": "Boats, storms, and rockets",
                 "date": "2021-07-21"
             },
             {
@@ -760,7 +775,7 @@
         ]
     },
     {
-        "url": "/post/beached/",
+        "url": "/post/boats-storms-rockets/",
         "link_data": [
             {
                 "prev": "/post/happy-accident-1/",
@@ -768,8 +783,8 @@
                 "date": "2021-07-18"
             },
             {
-                "next": "/post/boats-storms-rockets/",
-                "title": "Boats, storms, and rockets",
+                "next": "/post/beached/",
+                "title": "Beached",
                 "date": "2021-07-21"
             }
         ]
@@ -783,8 +798,8 @@
                 "date": "2021-07-12"
             },
             {
-                "next": "/post/beached/",
-                "title": "Beached",
+                "next": "/post/boats-storms-rockets/",
+                "title": "Boats, storms, and rockets",
                 "date": "2021-07-21"
             }
         ]
@@ -1288,8 +1303,8 @@
         "url": "/post/1001-movies-you-must-see-before-you-die-2008-edition/",
         "link_data": [
             {
-                "prev": "/post/headless-chickens/",
-                "title": "Headless chickens",
+                "prev": "/post/support-me/",
+                "title": "5 Ways You Can Support Me",
                 "date": "2020-08-16"
             },
             {
@@ -1300,11 +1315,11 @@
         ]
     },
     {
-        "url": "/post/headless-chickens/",
+        "url": "/post/support-me/",
         "link_data": [
             {
-                "prev": "/post/support-me/",
-                "title": "5 Ways You Can Support Me",
+                "prev": "/post/headless-chickens/",
+                "title": "Headless chickens",
                 "date": "2020-08-16"
             },
             {
@@ -1315,27 +1330,12 @@
         ]
     },
     {
-        "url": "/post/support-me/",
+        "url": "/post/headless-chickens/",
         "link_data": [
             {
                 "prev": "/post/saddam-hussein-bacon-number-3/",
                 "title": "Saddam Hussein had a Bacon number of 3",
                 "date": "2020-08-14"
-            },
-            {
-                "next": "/post/headless-chickens/",
-                "title": "Headless chickens",
-                "date": "2020-08-16"
-            }
-        ]
-    },
-    {
-        "url": "/post/saddam-hussein-bacon-number-3/",
-        "link_data": [
-            {
-                "prev": "/post/kamala-harris-is-still-a-cop/",
-                "title": "Kamala Harris is still a cop",
-                "date": "2020-08-13"
             },
             {
                 "next": "/post/support-me/",
@@ -1345,7 +1345,7 @@
         ]
     },
     {
-        "url": "/post/kamala-harris-is-still-a-cop/",
+        "url": "/post/saddam-hussein-bacon-number-3/",
         "link_data": [
             {
                 "prev": "/post/talk-work-think-different-thanks-web/",
@@ -1353,9 +1353,9 @@
                 "date": "2020-08-13"
             },
             {
-                "next": "/post/saddam-hussein-bacon-number-3/",
-                "title": "Saddam Hussein had a Bacon number of 3",
-                "date": "2020-08-14"
+                "next": "/post/headless-chickens/",
+                "title": "Headless chickens",
+                "date": "2020-08-16"
             }
         ]
     },
@@ -1368,9 +1368,9 @@
                 "date": "2020-08-13"
             },
             {
-                "next": "/post/kamala-harris-is-still-a-cop/",
-                "title": "Kamala Harris is still a cop",
-                "date": "2020-08-13"
+                "next": "/post/saddam-hussein-bacon-number-3/",
+                "title": "Saddam Hussein had a Bacon number of 3",
+                "date": "2020-08-14"
             }
         ]
     },
@@ -1378,13 +1378,28 @@
         "url": "/post/still-elephant/",
         "link_data": [
             {
+                "prev": "/post/kamala-harris-is-still-a-cop/",
+                "title": "Kamala Harris is still a cop",
+                "date": "2020-08-13"
+            },
+            {
+                "next": "/post/talk-work-think-different-thanks-web/",
+                "title": "We talk, work, and think different thanks to the Web",
+                "date": "2020-08-13"
+            }
+        ]
+    },
+    {
+        "url": "/post/kamala-harris-is-still-a-cop/",
+        "link_data": [
+            {
                 "prev": "/post/gains/",
                 "title": "Gains",
                 "date": "2020-08-11"
             },
             {
-                "next": "/post/talk-work-think-different-thanks-web/",
-                "title": "We talk, work, and think different thanks to the Web",
+                "next": "/post/still-elephant/",
+                "title": "Still Elephant",
                 "date": "2020-08-13"
             }
         ]
@@ -1398,8 +1413,8 @@
                 "date": "2020-08-10"
             },
             {
-                "next": "/post/still-elephant/",
-                "title": "Still Elephant",
+                "next": "/post/kamala-harris-is-still-a-cop/",
+                "title": "Kamala Harris is still a cop",
                 "date": "2020-08-13"
             }
         ]
@@ -1903,29 +1918,14 @@
         "url": "/post/open-offices-are-overrated/",
         "link_data": [
             {
-                "prev": "/post/12-facts-i-didnt-know-about-pokemon/",
-                "title": "12 Facts I Didn't Know About Pok\u00e9mon",
-                "date": "2017-09-28"
-            },
-            {
-                "next": "/post/my-week-in-lisbon/",
-                "title": "My Week In Lisbon",
-                "date": "2017-12-03"
-            }
-        ]
-    },
-    {
-        "url": "/post/12-facts-i-didnt-know-about-pokemon/",
-        "link_data": [
-            {
                 "prev": "/post/artistic-inspirations/",
                 "title": "Artistic Inspirations",
                 "date": "2017-09-24"
             },
             {
-                "next": "/post/open-offices-are-overrated/",
-                "title": "Open Offices Are Overrated",
-                "date": "2017-10-05"
+                "next": "/post/my-week-in-lisbon/",
+                "title": "My Week In Lisbon",
+                "date": "2017-12-03"
             }
         ]
     },
@@ -1938,9 +1938,9 @@
                 "date": "2017-08-05"
             },
             {
-                "next": "/post/12-facts-i-didnt-know-about-pokemon/",
-                "title": "12 Facts I Didn't Know About Pok\u00e9mon",
-                "date": "2017-09-28"
+                "next": "/post/open-offices-are-overrated/",
+                "title": "Open Offices Are Overrated",
+                "date": "2017-10-05"
             }
         ]
     },
