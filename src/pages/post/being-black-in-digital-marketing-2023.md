@@ -7,7 +7,7 @@ tags:
 - 'racism'
 - 'life'
 - '[Black](/wiki/black/)'
-- '[SEO](/wiki/tech/seo)'
+- '[SEO](/wiki/tech/seo/)'
 ---
 
 **In a follow-up to my 2020 piece ‘Being Black in Digital Marketing’, I asked the same Black marketers if anything has changed in the last 3 years.**
