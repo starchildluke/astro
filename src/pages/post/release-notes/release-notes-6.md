@@ -1,7 +1,7 @@
 ---
 title: 'Release Notes #6'
 published: true
-date: '27 Apr 2022'
+pubDate: '27 Apr 2022'
 layout: ../../../layouts/ReleaseNotes.astro
 ---
 

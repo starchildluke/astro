@@ -38,7 +38,7 @@ As of 20th August, I'm currently on Pokémon Platinum which will give me the fol
 * Shaymin<sup id="gen4_mythical_ref"><a href="#gen4_mythicals">**5**</a></sup>
 * Arceus<sup id="gen4_mythical_ref"><a href="#gen4_mythicals">**5**</a></sup>
 
-I'll be updating this through my quest and will likely update my [Pokémon teams list](/my-pokemon-teams/) to document who got me through each game. Wish me luck!
+I'll be updating this through my quest and will likely update my [Pokémon teams list](https://centiskor.ch/logs/my-pokemon-teams/) to document who got me through each game. Wish me luck!
 
 <ol style="font-size:80%;">
 	<li>

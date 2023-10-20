@@ -5,7 +5,6 @@ import BlogHeader from '../components/BlogHeader.astro';
 import BlogPost from '../components/BlogPost.astro';
 import BlogFooter from '../components/BlogFooter.astro';
 import StructuredData from '../components/StructuredData.astro';
-import RelatedPosts from '../components/RelatedPosts.astro';
 import prevNext from '../data/next_prev.json';
 
 function prevNextLinking() {
@@ -36,7 +35,7 @@ function prevNextLinking() {
 }
 
 const {content} = Astro.props; 
-const {title, description, pubDate, canonicalURL, tags, relatedposts} = content;
+const {title, description, pubDate, canonicalURL, tags} = content;
 
 ---
 <html lang="en">
