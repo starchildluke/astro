@@ -23,7 +23,7 @@ let domain = "https://lukealexdavis.co.uk"
 
 export async function getStaticPaths({paginate, rss}) {
   const allPosts = await Astro.glob('../post/release-notes/*.md');
-  const sortedPosts = allPosts.sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date));
+  const sortedPosts = allPosts.sort((a, b) => new Date(b.frontmatter.pubDate) - new Date(a.frontmatter.pubDate));
   
   // Return a paginated collection of paths for all posts
   return paginate(sortedPosts, {pageSize: 25});
@@ -51,7 +51,7 @@ const { page } = Astro.props;
       {page.data.map(post => (
             <li class="post-listing">
               <a href={post.url}>{post.frontmatter.title}</a>
-              <span class="publish-date">{post.frontmatter.date}</span>
+              <span class="publish-date">{post.frontmatter.pubDate}</span>
             </li>
           ))}
         </ul>
