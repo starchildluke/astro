@@ -1,7 +1,7 @@
 ---
 title: 'Web copy style'
 published: true
-date: '13 May 2023'
+pubDate: '13 May 2023'
 layout: ../../../layouts/Wikinotes.astro
 tags:
   - '[the Internet](/wiki/tech/internet/)'

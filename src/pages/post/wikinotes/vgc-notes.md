@@ -1,7 +1,7 @@
 ---
 title: 'VGC Notes'
 published: true
-date: '8 Apr 2023'
+pubDate: '8 Apr 2023'
 layout: ../../../layouts/Wikinotes.astro
 tags:
   - '[Pokémon](/wiki/pokemon/)'

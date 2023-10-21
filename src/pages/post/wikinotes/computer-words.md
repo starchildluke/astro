@@ -1,7 +1,7 @@
 ---
 title: 'Computer words'
 published: true
-date: '18 Feb 2019'
+pubDate: '18 Feb 2019'
 layout: ../../../layouts/Wikinotes.astro
 tags:
   - '[tech](/wiki/tech/)'

@@ -5,7 +5,6 @@ import BlogHeader from '../components/BlogHeader.astro';
 import BlogPost from '../components/BlogPost.astro';
 import BlogFooter from '../components/BlogFooter.astro';
 import StructuredData from '../components/StructuredData.astro';
-import RelatedPosts from '../components/RelatedPosts.astro';
 import prevNextWikinotes from '../data/next_prev_wikinotes.json';
 
 function prevNextLinking() {
@@ -36,22 +35,21 @@ function prevNextLinking() {
 }
 
 const {content} = Astro.props; 
-const {title, description, date, canonicalURL, tags, relatedposts} = content;
+const {title, description, pubDate, canonicalURL} = content;
 
 ---
 <html lang="en">
   <head>
     <BaseHead {title} {description} {canonicalURL} />
-    <StructuredData {title} {date} />
+    <StructuredData {title} {pubDate} />
   </head>
   <body>
     <BlogHeader />
-    <BlogPost {title} {date}>
+    <BlogPost {title} {pubDate}>
       <slot />
       <div class="post-pagination">
         <Fragment set:html={prevNextLinking()}>
       </div>
-      <RelatedPosts />
     </BlogPost>
     <BlogFooter />
   </body>
