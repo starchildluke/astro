@@ -2,9 +2,8 @@
 // COMPONENTS
 
 import BaseHead from '../components/BaseHead.astro';
-import BlogHeader from '../components/BlogHeader.astro';
-import BlogFooter from '../components/BlogFooter.astro';
-import BlogPostPreview from '../components/BlogPostPreview.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 
 // METADATA VARIABLES
 
@@ -19,11 +18,11 @@ let canonicalURL = Astro.url;
     <BaseHead title={title} description={description} canonicalURL={canonicalURL} />
   </head>
   <body>
-  <BlogHeader />
+  <Header />
   <main class="layout">
     <article class="content">
         <h1>{title}</h1>
-      <h2>About me</h2>
+      <p>Here are some facts about me and the site.</p>
       <ul>
         <li>I was born in Bradford, West Yorkshire.</li>
         <li>I love the Web a great deal. I fell down the WWW rabbit hole back in 2000 and got into coding a year later. Via graphic design, mathematics, a music tech degree, and 7 years in customer service, I found myself in digital marketing. I'm now an SEO.</li>
@@ -42,7 +41,7 @@ let canonicalURL = Astro.url;
       <h2>About the site (aka the colophon)</h2>
       <p>I’ve had so many versions of this site, I’ve lost count. It originally started life as starcrazy.org back in 2009(?) but eventually, I moved over to lukealexdavis.co.uk in 2010. Since then, it’s taken the form of a blog and a hand-coded personal site with numerous cosmetic changes.</p>
       <p>Now, the site is built using <a href="https://astro.build/">Astro</a> and hosted on <a href="https://www.ionos.co.uk/">IONOS</a> <a href="http://aklam.io/9o3lTc">(referral link)</a>.</p>
-      <p>The fonts I'm using are <span style="font-family: Arial Black;">Arial Black</span> for headings and your device's default system font for body text.</p>
+      <p>The fonts I'm using are <span style="font-family: Erode-Bold;">Erode Bold</span> for headings and your device's default system font for body text.</p>
       <p>The <span style="background:#285f2b;color:#f7f7f7;padding:0.2rem;">green</span> used on the site is <code>#285f2b</code>, or <code>rgb(41, 95, 43)</code> if you'd prefer.</p>
       <p>My relationship with the Web has influenced how I’ve made and remade this site, from FrontPage Express to Microsoft FrontPage to Dreamweaver to Sublime Text. Other influences include:</p>
       <ul>
@@ -54,9 +53,9 @@ let canonicalURL = Astro.url;
       <h2>Copyright</h2>
         <p>All content on this site and my external projects are available under the <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/">CC BY 2.0 licence</a>. All I ask is you credit my work if you use it anywhere and <strong>link back to the site</strong>.</p>
         <p>Page created: 25 Nov 2016 (approx.)</p>
-        <p>Page last updated: 4 Sep 2023</p>
+        <p>Page last updated: 25 Oct 2023</p>
   </article>
 </main>
-<BlogFooter></BlogFooter>
+<Footer></Footer>
 </body>
 </html>

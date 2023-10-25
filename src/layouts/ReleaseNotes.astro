@@ -1,57 +1,18 @@
 ---
-import Markdown from '@astrojs/markdown-component';
+import Layout from '../layouts/Layout.astro';
+import Footer from '../components/Footer.astro';
+import type { CollectionEntry } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
-import BlogHeader from '../components/BlogHeader.astro';
-import BlogPost from '../components/BlogPost.astro';
-import BlogFooter from '../components/BlogFooter.astro';
 import StructuredData from '../components/StructuredData.astro';
-import prevNextReleaseNotes from '../data/next_prev_release_notes.json';
 
-function prevNextLinking() {
-
-  for(let i = 0; i < prevNextReleaseNotes.length; i++)
-{
-  if(prevNextReleaseNotes[0]["url"] == Astro.url.pathname)
-  {
-    let prevLink = prevNextReleaseNotes[0]["link_data"][0]["prev"]
-    let prevTitle = prevNextReleaseNotes[0]["link_data"][0]["title"]
-    let nextLink = "";
-    let nextTitle = "";
-    return "<a href=" + prevLink + " class='post-pagination-item post-pagination-prev' >" + prevTitle + "</a>";
-  } else if(prevNextReleaseNotes[prevNextReleaseNotes.length - 1]["url"] == Astro.url.pathname) {
-    let prevLink = "";
-    let prevTitle = "";
-    let nextLink = prevNextReleaseNotes[prevNextReleaseNotes.length - 1]["link_data"][0]["next"]
-    let nextTitle = prevNextReleaseNotes[prevNextReleaseNotes.length - 1]["link_data"][0]["title"]
-    return "<a href=" + nextLink + " class='post-pagination-item post-pagination-next' >" + nextTitle + "</a>";
-  } else if(prevNextReleaseNotes[i]["url"] == Astro.url.pathname) {
-    let prevLink = prevNextReleaseNotes[i]["link_data"][0]["prev"]
-    let prevTitle = prevNextReleaseNotes[i]["link_data"][0]["title"]
-    let nextLink = prevNextReleaseNotes[i]["link_data"][1]["next"]
-    let nextTitle = prevNextReleaseNotes[i]["link_data"][1]["title"]
-    return "<a href=" + prevLink + " class='post-pagination-item post-pagination-prev'>" + prevTitle + "</a>"  + " " + "<a href=" + nextLink + " class='post-pagination-item post-pagination-next' >" + nextTitle + "</a>";
-  }
-}
-}
-
-const {content} = Astro.props;
-const {title, description, pubDate, canonicalURL} = content;
+const { title, description, pubDate, canonicalURL = Astro.url } = Astro.props;
 
 ---
-<html lang="en">
-  <head>
-    <BaseHead {title} {description} {canonicalURL} />
-    <StructuredData {title} {pubDate} />
-  </head>
-
-  <body>
-    <BlogHeader />
-    <BlogPost {title} {pubDate}>
+<section>
       <slot />
-      <div class="post-pagination">
-        <Fragment set:html={prevNextLinking()}>
-      </div>
-    </BlogPost>
-    <BlogFooter />
-  </body>
+    </section>
+  </article>
+</div>
+</main>
+</body>
 </html>

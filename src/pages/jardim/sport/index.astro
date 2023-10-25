@@ -1,0 +1,57 @@
+---
+// COMPONENTS
+
+import BaseHead from '../../../components/BaseHead.astro';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+import Layout from '../../../layouts/Layout.astro';
+import Breadcrumbs from '../../../components/Breadcrumbs.astro';
+import site from '../../../data/site.json';
+import jardim from '../../../data/jardim.json'
+
+// PROPS
+
+const { post } = Astro.props;
+
+const remoteData = await fetch('https://playrface.co.uk/wp-json/wp/v2/posts?per_page=10').then(response => response.json());
+
+let title = 'Sport';
+let description = "A page all about sport.";
+
+---
+<Layout {title} {description}>
+    <main class="layout">
+      <article class="content">
+        <h1>{title}</h1>
+        <p class="desc">{description}</p>
+        <p>Sport has the ability to immerse you as if you're the one playing, and I love that. No matter how I feel about specific sports or matches now, every sporting discipline I've watched has had some kind of effect on me and shaped how I see other games and sometimes my own life.</p>
+        <h2 class="wiki-h2">Inner voice</h2>
+        <ul>
+          <li><a href="/jardim/sport/roger-federer/"><strong>/roger-federer</strong></a></li>
+          <li><a href="/posts/last-donut-of-the-night-when-federer-dilla-united-for-1-weekend/">/last-donut-of-the-night-when-federer-dilla-united-for-1-weekend.md</a></li>
+          <li><a href="/posts/khruangbin-and-federer/">/khruangbin-and-federer.md</a></li>
+          <li><a href="/posts/roger-federer-numbers-game/">/roger-federer-numbers-game.md</a></li>
+          <li><a href="/posts/the-last-5-games-of-the-2017-australian-open/">/the-last-5-games-of-the-2017-australian-open.md</a></li>
+          <li><a href="/posts/teams-i-look-out-for-post-man-utd/">/teams-i-look-out-for-post-man-utd.md</a></li>
+          <li><a href="/release-notes/release-notes-1/">/release-notes/release-notes-1.md</a></li>
+        </ul>
+        <h2 class="wiki-h2">Out loud</h2>
+        <h3>From Playrface</h3>
+        <ul>
+          {remoteData.map((item) => (
+          <li>
+            <a href={item.link}><Fragment set:html={item.title.rendered}></a>
+          </li>
+          ))}
+        </ul>
+        <p><a href="https://playrface.co.uk/">Read more on Playrface</a></p>
+        <h2 class="wiki-h2">Second opinions</h2>
+        <ul>
+          <li><a href="https://moesquare.medium.com/football-flashbacks-ronaldo-lu%C3%ADs-naz%C3%A1rio-de-lima-bebee6134d1c">Football Flashbacks: Ronaldo Luís Nazário de Lima</a></li>
+        </ul>
+      </article>
+      
+    </main>
+    <Footer/>
+  </body>
+</html>

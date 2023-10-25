@@ -1,27 +1,17 @@
 ---
-
 // COMPONENTS
 
+import Layout from '../../layouts/Layout.astro';
 import BaseHead from '../../components/BaseHead.astro';
-import BlogHeader from '../../components/BlogHeader.astro';
-import BlogFooter from '../../components/BlogFooter.astro';
-import BlogPostPreview from '../../components/BlogPostPreview.astro';
+import Footer from '../../components/Footer.astro';
 
 // METADATA VARIABLES
 
-let metaTitle = ' | Luke Davis';
 let title = 'Sampleface';
 let description = 'Sampleface project page';
-let canonicalURL = Astro.url;
 
 ---
-<html lang="en">
-  <head>
-    <BaseHead title={title + metaTitle} description={description} canonicalURL={canonicalURL} />
-    <style>.table-cells {font-family: Georgia, serif;}</style>
-  </head>
-  <body>
-    <BlogHeader />
+<Layout {title} {description}>
     <main class="layout">
       <article class="content">
         <h1>{title}</h1>
@@ -46,6 +36,6 @@ let canonicalURL = Astro.url;
           <p>You can <a href="https://twitter.com/sampleface">follow Sampleface on Twitter.</a></p>
       </article>
     </main>
-    <BlogFooter></BlogFooter>
+    <Footer/>
   </body>
 </html>

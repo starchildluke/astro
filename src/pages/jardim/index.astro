@@ -1,0 +1,54 @@
+---
+// COMPONENTS
+
+import Layout from '../../layouts/Layout.astro';
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import site from '../../data/site.json';
+import jardim from '../../data/jardim.json'
+
+// EXPORT
+
+export interface Props {
+  post: any;
+}
+
+// PROPS
+
+const { post, canonicalURL = Astro.url } = Astro.props;
+
+// METADATA VARIABLES
+
+let title = 'Jardim';
+let description = "A digital garden, or jardim, full of the things I love, with lots of ideas, rough drafts, and related miscellany.";
+
+---
+<Layout {title} {description}>
+      <main class="layout">
+        <article class="content">
+            <section class="intro">
+          <h1>{title}</h1>
+        </section>
+        <section>
+          <p>Inspired by <a href="https://tomcritchlow.com/wiki/">Tom Critchlow's Wiki</a>, this is my digital garden, affectionally known as <span lang="pt">meu jardim</span>, or "my garden" in English. I collect blog posts (both my own and stuff I've found online), ideas, rough drafts, and things like that.</p>
+          <p>For individual notes, you can also read my mini notes or <span lang="pt"><a href="/recortes/">recortes</a></span> ("cuttings" in English&mdash;to go with the garden theme).</p>
+        </section>
+      <section>
+    <section>
+       <ul>
+            {jardim.branches.map((item) => (
+              <li>
+            <a href={item.url}>{item.name}</a>
+          </li>
+             ))}
+        </ul>
+    </section>
+    </section>
+      </article>
+      
+    </main>
+    <Footer/>
+  </body>
+</html>

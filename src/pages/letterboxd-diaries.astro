@@ -2,9 +2,8 @@
 // COMPONENTS
 
 import BaseHead from '../components/BaseHead.astro';
-import BlogHeader from '../components/BlogHeader.astro';
-import BlogFooter from '../components/BlogFooter.astro';
-import BlogPostPreview from '../components/BlogPostPreview.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 import boxd_2023 from '../data/2023_letterboxd_diary.json';
 import boxd_2022 from '../data/2022_letterboxd_diary.json';
 import boxd_2021 from '../data/2021_letterboxd_diary.json';
@@ -24,7 +23,7 @@ let canonicalURL = Astro.url;
     <BaseHead title={title} description={description} canonicalURL={canonicalURL} />
   </head>
   <body>
-    <BlogHeader />
+    <Header />
     <main class="layout">
       <article class="content">
         <h1>{title}</h1>
@@ -178,6 +177,6 @@ let canonicalURL = Astro.url;
       </details>
       </article>
     </main>
-    <BlogFooter></BlogFooter>
+    <Footer/>
   </body>
 </html>

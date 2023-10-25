@@ -1,27 +1,17 @@
 ---
-
 // COMPONENTS
 
+import Layout from '../layouts/Layout.astro';
 import BaseHead from '../components/BaseHead.astro';
-import BlogHeader from '../components/BlogHeader.astro';
-import BlogFooter from '../components/BlogFooter.astro';
-import BlogPostPreview from '../components/BlogPostPreview.astro';
+import Footer from '../components/Footer.astro';
 
 // METADATA VARIABLES
 
-let metaTitle = ' | Luke Davis';
 let title = 'Press';
 let description = 'A collection of articles I\'ve written and talks I\'ve done.';
-let slug = '/press';
-let canonicalURL = Astro.url;
 
 ---
-<html lang="en">
-      <head>
-            <BaseHead title={title + metaTitle} description={description} canonicalURL={canonicalURL} />
-      </head>
-      <body>
-            <BlogHeader />
+<Layout {title} {description}>
             <main class="layout">
                   <article class="content">
                         <h1>{title}</h1>
@@ -64,6 +54,6 @@ let canonicalURL = Astro.url;
                         </ul>
                   </article>
             </main>
-            <BlogFooter></BlogFooter>
+            <Footer/>
       </body>
 </html>

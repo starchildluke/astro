@@ -2,9 +2,8 @@
 // COMPONENTS
 
 import BaseHead from '../components/BaseHead.astro';
-import BlogHeader from '../components/BlogHeader.astro';
-import BlogFooter from '../components/BlogFooter.astro';
-import BlogPostPreview from '../components/BlogPostPreview.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 
 // METADATA VARIABLES
 
@@ -12,7 +11,7 @@ let metaTitle = 'Luke Davis: technical SEO, music producer & creator';
 let title = 'Luke Davis';
 let description = 'The digital home of Luke Davis: a technical SEO, music producer, and content creator based in Nottingham, UK.';
 let slug = '/';
-let greetings = ['Bom dia!', 'Boa tarde!', 'Boa noite!', 'Buenos dias!', 'Buenos tardes!', 'Buenos noches!', 'Hola!', 'Ola!', 'Good morning!', 'Good afternoon!', 'Good evening!', 'Bonjour!', 'Bonsoir!'];
+let greetings = ['bom dia!', 'boa tarde!', 'boa noite!', '¡buenos dias!', '¡buenos tardes!', '¡buenos noches!', 'hola!', 'ola!', 'good morning!', 'good afternoon!', 'good evening!', 'bonjour!', 'bonsoir!'];
 let sayHello = greetings[Math.floor(Math.random()*greetings.length)];
 let canonicalURL = Astro.url;
 
@@ -22,20 +21,23 @@ let canonicalURL = Astro.url;
     <BaseHead title={metaTitle} description={description} canonicalURL={canonicalURL} />
   </head>
   <body>
-    <BlogHeader />
+    <Header />
     <main class="layout">
       <article class="content">
+        <section class="home-intro">
           <h1>{title}</h1>
-      <h2 id="hello">{sayHello}</h2>
-      <p>I'm a technical SEO, music producer, advocate for ethical AI, and content creator based in Nottingham, UK. I specialise in technical creativity and problem solving with a pragmatic approach.</p>
+          <p style="font-family:Georgia;"><em><span id="hello">{sayHello}</span> and welcome to my corner of the world wide web.</em></p>
+        </section>
+        <section class="home-middle">
+      <p>I'm a technical SEO, music producer, advocate for ethical AI, and blogger based in Nottingham, UK. I specialise in technical creativity and problem solving with a pragmatic approach.</p>
       <p>I currently work for <a href="https://www.impressiondigital.com/">Impression</a> and I'm also the founder of <a href="https://pandog.media">Pandog Media</a>, the home of <a href="https://sampleface.co.uk">Sampleface</a>, <a href="https://cultrface.co.uk">Cultrface</a>, <a href="https://logicface.co.uk">LOGiCFACE</a>, <a href="https://playrface.co.uk">Playrface</a>, and <a href="https://distantarcade.co.uk">Distant Arcade</a>.</p>
+      </section>
       <h2>Want to find out more?</h2>
-      <p><a href="mailto:luke@lukealexdavis.co.uk">Send an email</a>, <a href="https://twitter.com/LukeDavisSEO">a tweet</a>, or read <a href="/about/">my about page</a>.</p>
-      <p>There are ways you can <a href="/support/">support me</a> too.</p>
+      <p><a href="mailto:luke@lukealexdavis.co.uk">Send an email</a>, <a href="https://twitter.com/LukeDavisSEO">a tweet</a>, read <a href="/about/">my about page</a>, or find out how you can <a href="/support/">support me</a>.</p>
       <p>Smell ya later!</p>
       </article>
     </main>
-    <BlogFooter></BlogFooter>
+    <Footer/>
     <script type="application/ld+json">
 {
   "@context":"https://schema.org",

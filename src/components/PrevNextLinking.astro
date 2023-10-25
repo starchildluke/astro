@@ -1,0 +1,34 @@
+---
+import prevNext from '../data/next_prev.json';
+
+function prevNextLinking() {
+
+  for(let i = 0; i < prevNext.length; i++)
+{
+  if(prevNext[0]["url"] == Astro.url.pathname)
+  {
+    let prevLink = prevNext[0]["link_data"][0]["prev"]
+    let prevTitle = prevNext[0]["link_data"][0]["title"]
+    let nextLink = "";
+    let nextTitle = "";
+    return "<a href=" + prevLink + " class='post-pagination-item post-pagination-prev' >" + prevTitle + "</a>";
+  } else if(prevNext[prevNext.length - 1]["url"] == Astro.url.pathname) {
+    let prevLink = "";
+    let prevTitle = "";
+    let nextLink = prevNext[prevNext.length - 1]["link_data"][0]["next"]
+    let nextTitle = prevNext[prevNext.length - 1]["link_data"][0]["title"]
+    return "<a href=" + nextLink + " class='post-pagination-item post-pagination-next' >" + nextTitle + "</a>";
+  } else if(prevNext[i]["url"] == Astro.url.pathname) {
+    let prevLink = prevNext[i]["link_data"][0]["prev"]
+    let prevTitle = prevNext[i]["link_data"][0]["title"]
+    let nextLink = prevNext[i]["link_data"][1]["next"]
+    let nextTitle = prevNext[i]["link_data"][1]["title"]
+    return "<a href=" + prevLink + " class='post-pagination-item post-pagination-prev'>" + prevTitle + "</a>"  + "<div class='post-pagination-divider'></div>" + "<a href=" + nextLink + " class='post-pagination-item post-pagination-next' >" + nextTitle + "</a>";
+  }
+}
+}
+---
+
+<div class="post-pagination">
+  <Fragment set:html={prevNextLinking()} />
+</div>

@@ -1,125 +1,66 @@
 ---
+import Layout from '../../layouts/Layout.astro';
 import BaseHead from '../../components/BaseHead.astro';
-import BlogHeader from '../../components/BlogHeader.astro';
-import BlogFooter from '../../components/BlogFooter.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import FormattedDate from '../../components/FormattedDate.astro';
 import site from '../../data/site.json';
+import { getCollection } from 'astro:content';
 
-export async function getStaticPaths({rss, paginate}) {
-  // Load your data with fetch(), Astro.fetchContent(), etc.
-  let allPosts = await Astro.glob('../post/*.md')
-  allPosts = allPosts.sort((a, b) => new Date(b.frontmatter.pubDate) - new Date(a.frontmatter.pubDate));
-  // Return a paginated collection of paths for all posts
-  return paginate(allPosts, { pageSize: 25 });
+export async function getStaticPaths({paginate}) {
+  const allPosts = await getCollection('posts');
+  const sortedPosts = allPosts.sort((a, b) => new Date(b.data.pubDate) - new Date(a.data.pubDate));
+  return paginate(sortedPosts, { pageSize: 25 });
 }
 
-// If set up correctly, The page prop now has everything that
-// you need to render a single page (see next section).
 const { page, canonicalURL = Astro.url } = Astro.props
-  
-interface Post {
-    title: string
-    pubDate: string
-    url: string
-}
 
-/**
- * This takes a list of post objects and groups them by year, into an array similar to
- * [
- *   {
- *     year: 2021,
- *     items: []
- *   },
- *   {
- *     year: 2020,
- *     items: []
- *   }
- * ]
- */
 function postsByYear(posts: Post[]) {
-  // Data structure used to group items by year
   interface PostsByYearData {
     year: number
     items: Post[]
   }
 
-  /**
-   * This builds a map similar to {
-   *   2021: {
-   *     year: 2021,
-   *     items: []
-   *   },
-   *   2020: {
-   *     year: 2020,
-   *     items: []
-   *   }
-   * }
-   */
   const postsByYearMap = posts.reduce(function(acc, post) {
-    // get the post's year
-    const year = new Date(post.frontmatter.pubDate).getFullYear()
-
-    /**
-     * Try to find the list of posts found so far for the same year.
-     * If it doesn't exist yet, start with an empty array
-     */
+    const year = new Date(post.data.pubDate).getFullYear()
     const existing = acc.get(year)?.items || []
-    
-    /**
-     * Update the map with a new object for the year,
-     * adding the current post to the list of previously found posts (from existing above)
-     */
     acc.set(year, {
       year,
       items: existing.concat(post)
     })
-    
-    // make sure you return the value in a reduce()!
     return acc;
   }, new Map<number, PostsByYearData>())
 
-  /**
-   * Get an array of posts by year, and sort with the most recent posts first
-   * The [...] syntax is used here to create a basic JS array from an iterable Map
-   */
   return [...postsByYearMap.values()]
     .sort((a, b) => b.year - a.year);
 }
 
-// Take the current page of posts from getStaticPaths' paginate helper
-// and pass them to postsByYear to get a sorted list of year/posts data
 const postGroups = postsByYear(page.data)
 
-// Component Script:
-// You can write any JavaScript/TypeScript that you'd like here.
-// It will run during the build, but never in the browser.
-// All variables are available to use in the HTML template below.
 let domain = 'https://lukealexdavis.co.uk';
-let title = 'Posts';
+let fullTitle = `Posts (Page ${page.currentPage}/${page.lastPage})`
 let description = "The blog listings page.";
 ---
-<html lang="en">
-  <head>
-    <BaseHead title={title + ' (Page ' + page.currentPage + '/' + page.lastPage + ')'} description={description} canonicalURL={canonicalURL} />
-  </head>
-
-  <body>
-    <BlogHeader />
+<Layout title={fullTitle} description={description} canonicalURL={canonicalURL} />
     <div class="layout">
       <article class="content">
         <section class="intro">
-          <h1>{title + ' (Page ' + page.currentPage + '/' + page.lastPage + ')'}</h1>
+          <h1>{fullTitle}</h1>
         </section>
         <section>
-          <p>You can follow the blog via an <a href="/blog.xml">RSS feed.</a></p>
+          <p>Welcome to my blog.</p>
+          <p>I write about all kinds of topics including SEO, AI, music, life, and the Web. You can also follow the blog via an <a href="/blog.xml">RSS feed</a> wherever you get your RSS feeds... read?</p>
+          <p>I also write <a href="/release-notes/">Release Notes</a>, for when I want to get things off my chest, and <a href="/morsels/">Morsels</a>, which relate to cool coding stuff I've made.</p>
         </section>
     {postGroups.map(({ year, items }) => (
   <section>
-    <h3>{year}</h3>
+    <hr>
+    <h2>{year}</h2>
     <ul class="post-list">
     {items.map((post) => (
       <li class="post-listing">
-        <a href={post.url}><Fragment set:html={post.frontmatter.title}></a>
-        <span class="publish-date">{post.frontmatter.pubDate}</span>
+        <a href={`/posts/${post.slug}/`}><Fragment set:html={post.data.title}></a>
+          <span class="publish-date"><FormattedDate date={post.data.pubDate} /></span>
       </li>
     ))}
     </ul>
@@ -134,6 +75,4 @@ let description = "The blog listings page.";
         )}</div>
       </article>
     </div>
-    <BlogFooter></BlogFooter>
-  </body>
-</html>
+    <Footer />

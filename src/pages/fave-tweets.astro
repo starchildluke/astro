@@ -1,10 +1,12 @@
 ---
 // COMPONENTS
+
 import BaseHead from '../components/BaseHead.astro';
-import BlogHeader from '../components/BlogHeader.astro';
-import BlogFooter from '../components/BlogFooter.astro';
-import BlogPostPreview from '../components/BlogPostPreview.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
 // METADATA VARIABLES
+
 let title = 'Favourite tweets';
 let description = 'A list of my favourite tweets.';
 let slug = '/fave-tweets/';
@@ -15,7 +17,7 @@ let canonicalURL = Astro.url;
     <BaseHead title={title} description={description} canonicalURL={canonicalURL} />
   </head>
   <body>
-    <BlogHeader />
+    <Header />
     <main class="layout">
       <article class="content">
         <h1>{title}</h1>
@@ -99,6 +101,6 @@ let canonicalURL = Astro.url;
           <li><a href="https://twitter.com/imTerenceLester/status/1392263489461358603">@imTerenceLester on Twitter</a></li>
         </article>
       </main>
-      <BlogFooter></BlogFooter>
+      <Footer/>
     </body>
   </html>

@@ -1,0 +1,79 @@
+---
+// COMPONENTS
+
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import site from '../../data/site.json';
+import jardim from '../../data/jardim.json'
+
+// PROPS
+
+const { post } = Astro.props;
+
+// HOW FETCHING!
+
+const lisbonCultrface = await fetch('https://cultrface.co.uk/wp-json/wp/v2/posts?tags=968&per_page=5').then(response => response.json());
+const lisbonPlayrface = await fetch('https://playrface.co.uk/wp-json/wp/v2/posts?tags=304&per_page=5').then(response => response.json());
+
+// METADATA VARIABLES
+
+let title = 'Lisbon';
+let description = 'A page all about Lisbon in Portugal.';
+let domain = "https://lukealexdavis.co.uk"
+
+---
+<Layout {title} {description}>
+      <main class="layout">
+        <article class="content">
+          <Breadcrumbs title={title}/>
+            <section class="intro">
+
+              <h1>{title}</h1>
+              <p class="desc">{description}</p>
+
+              <p>Lisbon is the capital city of Portugal and my favourite city in the world. I first visited in 2017 for my birthday and returned in 2018 and 2022. 2023 is my next planned trip.</p>
+
+              <p lang="pt">Lisboa é a capital de Portugal e minha cidade favorita no mundo. Eu visitei pela primeira vez em 2017 para o meu aniversário e voltarei em 2018 e 2022. 2023 é a minha próxima viagem planeada.</p>
+
+            </section>
+            <section>
+             
+              <h2 class="wiki-h2">Inner voice</h2>
+                <ul>
+                  <li><a href="/post/my-week-in-lisbon/">/my-week-in-lisbon.md</a></li>
+                </ul>
+            </section>
+      
+            <section>
+              <h2 class="wiki-h2">Out loud</h2>
+              <ul>
+                {lisbonCultrface.map(( post ) => (
+                  <li>
+                    <a href={post.link}><Fragment set:html={post.title.rendered}></a>
+                  </li>
+                ))}
+                {lisbonPlayrface.map((item) => (
+                <li>
+            <a href={item.link}><Fragment set:html={item.title.rendered}></a>
+          </li>
+             ))}
+              </ul>
+              <h2 class="wiki-h2">Second opinions</h2>
+                <ul>
+                  <li>
+                    Coming soon...
+                  </li>
+                </ul>
+            </section>
+        </article>
+      
+      </main>
+    
+    <Footer/>
+  
+  </body>
+
+</html>

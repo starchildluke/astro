@@ -1,29 +1,23 @@
-import rss, { pagesGlobToRssItems } from '@astrojs/rss';
+import rss from '@astrojs/rss';
+import { getCollection } from 'astro:content';
 import site from '../data/site.json';
 import sanitizeHtml from 'sanitize-html';
-
-const allPostsGlob = import.meta.glob('./post/morsels/*.{md,mdx}', {
-  eager: true,
-});
-
-// Sort posts by newest first
-const allPosts = Object.values(allPostsGlob).sort(
-  (a, b) =>
-    new Date(b.frontmatter.pubDate).valueOf() -
-    new Date(a.frontmatter.pubDate).valueOf()
-);
+import MarkdownIt from 'markdown-it';
+const parser = new MarkdownIt();
 
 export async function get(context) {
+  const posts = await getCollection('morsels');
+  const allPosts = posts.sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
   return rss({
-    title: "Luke Alex Davis's Morsels",
-    description: 'The RSS feed for my coding morsels.',
+    title: "The coding morsels of Luke Alex Davis",
+    description: "My RSS feed of coding snippets.",
     site: context.site,
     items: allPosts.map((post) => ({
-      link: post.url,
-      title: post.frontmatter.title,
-      pubDate: post.frontmatter.pubDate,
-      content: sanitizeHtml(post.compiledContent()),
-      ...post.frontmatter,
-    })),
-  });
-}
+      link: `/posts/${post.slug}/`,
+      content: sanitizeHtml(parser.render(post.body)),
+      ...post.data,
+    }))
+    });
+  }

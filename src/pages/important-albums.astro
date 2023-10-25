@@ -1,11 +1,9 @@
 ---
 // COMPONENTS
 
-import Markdown from '@astrojs/markdown-component';
 import BaseHead from '../components/BaseHead.astro';
-import BlogHeader from '../components/BlogHeader.astro';
-import BlogFooter from '../components/BlogFooter.astro';
-import BlogPostPreview from '../components/BlogPostPreview.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 import AlbumsStructuredData from '../components/AlbumsStructuredData.astro';
 import albums from '../data/albums.json'
 
@@ -37,7 +35,7 @@ let canonicalURL = Astro.url;
     <BaseHead title={title} description={description} canonicalURL={canonicalURL} />
   </head>
 <body>
-  <BlogHeader />
+  <Header />
     <main class="layout">
       <article class="content">
           <h1>{title}</h1>
@@ -62,6 +60,6 @@ let canonicalURL = Astro.url;
             </table>            
               </article>
             </main>
-      <BlogFooter></BlogFooter>
+      <Footer/>
   </body>
 </html>

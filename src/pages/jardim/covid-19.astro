@@ -1,0 +1,77 @@
+---
+// COMPONENTS
+
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import site from '../../data/site.json';
+import jardim from '../../data/jardim.json'
+import tags from '../../data/tags.json'
+
+// PROPS
+
+const { post } = Astro.props;
+
+// HOW FETCHING!
+
+const remoteData = await fetch('https://logicface.co.uk/wp-json/wp/v2/posts?tags=268&per_page=5').then(response => response.json());
+
+const remoteData2 = await fetch('https://cultrface.co.uk/wp-json/wp/v2/posts?tags=563&per_page=5').then(response => response.json());
+
+// METADATA VARIABLES
+
+let title = 'COVID-19';
+let description = 'A wiki page all about COVID-19.';
+
+---
+<Layout {title} {description}>
+    <main class="layout">
+      <article class="content">
+        <Breadcrumbs title={title}/>
+        <section class="intro">
+          <h1>{title}</h1>
+          <p class="desc">{description}</p>
+        </section>
+        <section>
+          
+          <h2 class="wiki-h2">Inner voice</h2>
+
+          <ul>
+            {tags["COVID-19"].map((tag) => (
+            <li>
+              <a href={tag.link}>{tag.title}</a>
+            </li>
+          ))}
+        </ul>
+          
+        </section>
+        
+        <section>
+          <h2 class="wiki-h2">Out loud</h2>
+          <ul>
+            {remoteData.map((item) => (
+            <li>
+              <a href={item.link}><Fragment set:html={item.title.rendered}></a>
+            </li>
+            ))}
+            {remoteData2.map((item) => (
+            <li>
+              <a href={item.link}><Fragment set:html={item.title.rendered}></a>
+            </li>
+            ))}
+          </ul>
+          <h2 class="wiki-h2">Second opinions</h2>
+          
+          <ul>
+            <li><a href="https://www.sfchronicle.com/health/article/How-long-can-I-keep-using-the-same-N95-respirator-16765593.php">How long can I keep using the same N95 respirator mask? Here’s what Bay Area experts say</a></li>
+            <li><a href="https://twitter.com/TRyanGregory/status/1522658781049626624">Here&#39;s a brief recap of some new publications, preprints, and reports related to COVID-19 that have come out recently</a></li>
+          </ul>
+        </section>
+      </article>
+      
+    </main>
+    <Footer/>
+  </body>
+</html>

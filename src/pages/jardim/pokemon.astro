@@ -1,0 +1,80 @@
+---
+// COMPONENTS
+
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import site from '../../data/site.json';
+import tags from '../../data/tags.json';
+
+// PROPS
+
+const { post } = Astro.props;
+
+// HOW FETCHING!
+
+const cultrData = await fetch('https://cultrface.co.uk/wp-json/wp/v2/posts?tags=136&per_page=3').then(response => response.json());
+const logicData = await fetch('https://logicface.co.uk/wp-json/wp/v2/posts?tags=22&per_page=3').then(response => response.json());
+const daData = await fetch('https://distantarcade.co.uk/wp-json/wp/v2/posts?categories=137&per_page=4').then(response => response.json());
+
+// METADATA VARIABLES
+
+let title = 'Pokémon';
+let description = 'A wiki page all about Pokémon.';
+
+---
+<Layout {title} {description}>
+      <main class="layout">
+        <article class="content">
+          <Breadcrumbs title={title}/>
+            <section class="intro">
+
+              <h1>{title}</h1>
+              <p class="desc">{description}</p>
+              <p><strong>Pokémon</strong> is a video game franchise created by Satoshi Tajiri that began in 1996 with the release of <em>Pokémon Red and Green</em>. It revolutionized the gaming industry, with its unique take on monster collecting and RPG battling, and inadvertently revived the life cycle of the Game Boy, nearly a decade after its release. With over 1,000 different species to collect and train, Pokémon is a global phenomenon and one very close to my heart.</p>
+              <p><strong>Related terms</strong>: <a href="/wiki/gaming/">gaming</a> | <a href="/wiki/japan/">Japan</a></p>
+            </section>
+            <section>
+             
+              <h2 class="wiki-h2">Inner voice</h2>
+                <ul>
+                  <li><strong><a href="https://centiskor.ch/">centiskor.ch</a></strong></li>
+            {tags["Pokémon"].map((tag) => (
+            <li>
+              <a href={tag.link}>{tag.title}</a>
+            </li>
+          ))}
+        </ul>
+            </section>
+      
+            <section>
+              <h2 class="wiki-h2">Out loud</h2>
+              <ul>
+                {cultrData.map(( post ) => (
+                  <li>
+                    <a href={post.link}><Fragment set:html={post.title.rendered}></a>
+                  </li>
+                ))}
+                {logicData.map((post) => (
+                <li>
+            <a href={post.link}><Fragment set:html={post.title.rendered}></a>
+          </li>
+             ))}
+             {daData.map((post) => (
+                <li>
+            <a href={post.link}><Fragment set:html={post.title.rendered}></a>
+          </li>
+             ))}
+              </ul>
+            </section>
+        </article>
+      
+      </main>
+    
+   <Footer/>
+  
+  </body>
+
+</html>

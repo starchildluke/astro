@@ -1,0 +1,34 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import StructuredData from '../../components/StructuredData.astro';
+import Header from '../../components/Header.astro';
+import Recortes from '../../layouts/Recortes.astro';
+import Layout from '../../layouts/Layout.astro';
+import Footer from '../../components/Footer.astro';
+import { CollectionEntry, getCollection } from 'astro:content';
+import FormattedDate from '../../components/FormattedDate.astro';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('recortes');
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: post,
+  }));
+}
+type Props = CollectionEntry<'recortes'>;
+
+const post = Astro.props;
+const { Content } = await post.render();
+
+---
+<Layout title={post.data.title} description={post.data.description}>
+<Recortes {...post.data}>
+  <main class="layout">
+    <article class="content">
+      <p class="publish-date">{post.data.pubDate}</p>
+        <h1>{post.data.title}</h1>
+          <Content />
+    </article>
+  </main>
+<Footer />
+</Recortes>

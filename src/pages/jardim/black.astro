@@ -1,0 +1,81 @@
+---
+// COMPONENTS
+
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import site from '../../data/site.json';
+import jardim from '../../data/jardim.json'
+import tags from '../../data/tags.json'
+
+// PROPS
+
+const { post } = Astro.props;
+
+// HOW FETCHING!
+
+const remoteData = await fetch('https://cultrface.co.uk/wp-json/wp/v2/posts?categories=828&per_page=5').then(response => response.json());
+
+const remoteData2 = await fetch('https://sampleface.co.uk/wp-json/wp/v2/posts?tags=2622&per_page=5').then(response => response.json());
+
+const remoteData3 = await fetch('https://logicface.co.uk/wp-json/wp/v2/posts?categories=236&per_page=5').then(response => response.json());
+
+// METADATA VARIABLES
+
+let title = 'Black';
+let description = "A wiki page all about blackness.";
+
+---
+<Layout {title} {description}>
+    <main class="layout">
+      <article class="content">
+        <Breadcrumbs title={title}/>
+        <section class="intro">
+          <h1>{title}</h1>
+        </section>
+        <section>
+          <h2 class="wiki-h2">Inner voice</h2>
+
+          <ul>
+            {tags.Black.map((tag) => (
+            <li>
+              <a href={tag.link}>{tag.title}</a>
+            </li>
+          ))}
+        </ul>
+        </section>
+        <section>
+          
+          <section>
+            <h2 class="wiki-h2">Out loud</h2>
+            <ul>
+              {remoteData.map((item) => (
+              <li>
+                <a href={item.link}><Fragment set:html={item.title.rendered}></a>
+              </li>
+              ))}
+              {remoteData2.map((item) => (
+              <li>
+                <a href={item.link}><Fragment set:html={item.title.rendered}></a>
+              </li>
+              ))}
+              {remoteData3.map((item) => (
+              <li>
+                <a href={item.link}><Fragment set:html={item.title.rendered}></a>
+              </li>
+              ))}
+            </ul>
+            <h2 class="wiki-h2">Second opinions</h2>
+            <ul>
+              <li><a href="https://daily.jstor.org/the-history-of-black-owned-record-labels/">The History of Black-Owned Record Labels</a></li>
+            </ul>
+          </section>
+        </section>
+      </article>
+      
+    </main>
+    <Footer/>
+  </body>
+</html>

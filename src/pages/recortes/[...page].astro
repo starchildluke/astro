@@ -1,0 +1,70 @@
+---
+// IMPORTS
+
+import Layout from '../../layouts/Layout.astro';
+import BaseHead from '../../components/BaseHead.astro';
+import Footer from '../../components/Footer.astro';
+import site from '../../data/site.json'
+import { getCollection } from 'astro:content';
+
+export interface Props {
+  post: any;
+}
+
+const { canonicalURL = Astro.url } = Astro.props;
+
+// METADATA
+
+let title = 'Recortes';
+let description = "Cuttings, notes and things";
+
+export async function getStaticPaths({paginate}) {
+  const allPosts = await getCollection('recortes');
+  
+  // Return a paginated collection of paths for all posts
+  return paginate(allPosts, {pageSize: 25});
+}
+
+const { page } = Astro.props;
+---
+<Layout {title} {description}/>
+    <div class="layout">
+      <article class="content">
+        <section class="intro">
+          <h1>{title}</h1>
+        </section>
+        <section>
+          <p>These are my <span lang="pt">recortes</span>, or "cuttings". You know that scene in Bruce Almighty where he had all those Post-It notes everywhere? This is a neater looking version of that, minus the prayers. It's a rare glimpse into my mind and the many thoughts I have about things that matter to me.</p>
+        </section>
+    <section>
+       <ul class="post-list">
+      {page.data.map(post => (
+            <li class="post-listing">
+              <a href={`/recortes/${post.slug}/`}>{post.data.title}</a>
+              <span class="publish-date">{post.data.pubDate}</span>
+            </li>
+          ))}
+        </ul>
+    </section>
+        <div class="page-links">{page.url.prev && (
+          <a
+            class='prev'
+            href={page.url.prev || '#'}
+          >
+            &laquo; Prev
+          </a>
+        )}
+        {page.url.prev && page.url.next && ""}
+        {page.url.next && (
+          <a
+            class='Next'
+            href={page.url.next || '#'}
+          >
+            Next &raquo;
+          </a>
+        )}</div>
+      </article>      
+    </div>
+    <Footer/>
+  </body>
+</html>

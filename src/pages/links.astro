@@ -1,22 +1,9 @@
 ---
 // COMPONENTS
 
-import Markdown from '@astrojs/markdown-component';
+import Layout from '../layouts/Layout.astro';
 import BaseHead from '../components/BaseHead.astro';
-import BlogHeader from '../components/BlogHeader.astro';
-import BlogFooter from '../components/BlogFooter.astro';
-import BlogPostPreview from '../components/BlogPostPreview.astro';
-
-// EXPORT
-
-export interface Props {
-  post: any;
-  metaTitle: string;
-  title: string;
-  slug: string;
-  description: string;
-  domain: string;
-}
+import Footer from '../components/Footer.astro';
 
 // PROPS
 
@@ -24,18 +11,11 @@ const { post } = Astro.props;
 
 // METADATA VARIABLES
 
-let metaTitle = ' | Luke Davis';
 let title = 'Links';
 let description = 'A page of links.';
-let canonicalURL = Astro.url;
 ---
 
-<html lang="en">
-  <head>
-    <BaseHead title={title} description={description} canonicalURL={canonicalURL} />
-  </head>
-<body>
-  <BlogHeader />
+<Layout {title} {description}>
     <main class="layout">
       <article class="content">
           <h1>{title}</h1>
@@ -50,6 +30,6 @@ let canonicalURL = Astro.url;
          </ul>       
               </article>
             </main>
-      <BlogFooter></BlogFooter>
+      <Footer/>
   </body>
 </html>

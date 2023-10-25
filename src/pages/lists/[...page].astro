@@ -1,10 +1,12 @@
 ---
 
-// Component Imports
+import Layout from '../../layouts/Layout.astro';
 import BaseHead from '../../components/BaseHead.astro';
-import BlogHeader from '../../components/BlogHeader.astro';
-import BlogFooter from '../../components/BlogFooter.astro';
-import site from '../../data/site.json'
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import FormattedDate from '../../components/FormattedDate.astro';
+import site from '../../data/site.json';
+import { getCollection } from 'astro:content';
 
 export interface Props {
   list: any;
@@ -15,12 +17,10 @@ const { list, canonicalURL = Astro.url } = Astro.props;
 let title = 'Lists';
 let description = "My lists";
 
-export async function getStaticPaths({paginate, rss}) {
-  const allLists = await Astro.glob('../list/*.md');
-  const sortedLists = allLists.sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date));
-  
-  // Return a paginated collection of paths for all posts
-  return paginate(sortedLists, {pageSize: 25});
+export async function getStaticPaths({paginate}) {
+  const allPosts = await getCollection('lists');
+  const sortedPosts = allPosts.sort((a, b) => new Date(b.data.pubDate) - new Date(a.data.pubDate));
+  return paginate(sortedPosts, { pageSize: 25 });
 }
 
 const { page } = Astro.props;
@@ -103,7 +103,7 @@ const { page } = Astro.props;
   </head>
 
   <body>
-    <BlogHeader />
+    <Header />
     <div class="layout">
       <article class="content">
         <section class="intro">
@@ -116,8 +116,8 @@ const { page } = Astro.props;
        <ul class="post-list">
       {page.data.map(list => (
             <li>
-              <a href={list.url}>{list.frontmatter.title}</a>
-              <p class="date-smaller">{list.frontmatter.date}</p>
+              <a href={`/lists/${list.slug}/`}>{list.data.title}</a>
+              <p class="date-smaller"><FormattedDate date={list.data.pubDate} /></p>
             </li>
           ))}
         </ul>
@@ -141,6 +141,6 @@ const { page } = Astro.props;
         )}</div>
       </article>      
     </div>
-    <BlogFooter></BlogFooter>
+    <Footer/>
   </body>
 </html>

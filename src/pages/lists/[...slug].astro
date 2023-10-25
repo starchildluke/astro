@@ -1,0 +1,36 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import StructuredData from '../../components/StructuredData.astro';
+import Header from '../../components/Header.astro';
+import Lists from '../../layouts/Lists.astro';
+import Layout from '../../layouts/Layout.astro';
+import Footer from '../../components/Footer.astro';
+import { CollectionEntry, getCollection } from 'astro:content';
+import FormattedDate from '../../components/FormattedDate.astro';
+import PrevNextLinking from '../../components/PrevNextLinking.astro';
+
+export async function getStaticPaths() {
+  const lists = await getCollection('lists');
+  return lists.map((post) => ({
+    params: { slug: post.slug },
+    props: post,
+  }));
+}
+type Props = CollectionEntry<'lists'>;
+
+const post = Astro.props;
+const { Content } = await post.render();
+
+---
+<Layout title={post.data.title} description={post.data.description}>
+<Lists {...post.data}>
+  <main class="layout">
+    <article class="content">
+      <p class="publish-date"><FormattedDate date={post.data.pubDate} /></p>
+        <h1>{post.data.title}</h1>
+          <Content />
+            <PrevNextLinking />
+    </article>
+  </main>
+<Footer />
+</Lists>

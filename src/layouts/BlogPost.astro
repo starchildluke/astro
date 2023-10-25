@@ -1,60 +1,20 @@
 ---
-import Markdown from '@astrojs/markdown-component';
+import Layout from '../layouts/Layout.astro';
+import Footer from '../components/Footer.astro';
+import type { CollectionEntry } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
-import BlogHeader from '../components/BlogHeader.astro';
-import BlogPost from '../components/BlogPost.astro';
-import BlogFooter from '../components/BlogFooter.astro';
 import StructuredData from '../components/StructuredData.astro';
-import prevNext from '../data/next_prev.json';
 
-function prevNextLinking() {
+type Props = CollectionEntry<'posts'>['data'];
 
-  for(let i = 0; i < prevNext.length; i++)
-{
-  if(prevNext[0]["url"] == Astro.url.pathname)
-  {
-    let prevLink = prevNext[0]["link_data"][0]["prev"]
-    let prevTitle = prevNext[0]["link_data"][0]["title"]
-    let nextLink = "";
-    let nextTitle = "";
-    return "<a href=" + prevLink + " class='post-pagination-item post-pagination-prev' >" + prevTitle + "</a>";
-  } else if(prevNext[prevNext.length - 1]["url"] == Astro.url.pathname) {
-    let prevLink = "";
-    let prevTitle = "";
-    let nextLink = prevNext[prevNext.length - 1]["link_data"][0]["next"]
-    let nextTitle = prevNext[prevNext.length - 1]["link_data"][0]["title"]
-    return "<a href=" + nextLink + " class='post-pagination-item post-pagination-next' >" + nextTitle + "</a>";
-  } else if(prevNext[i]["url"] == Astro.url.pathname) {
-    let prevLink = prevNext[i]["link_data"][0]["prev"]
-    let prevTitle = prevNext[i]["link_data"][0]["title"]
-    let nextLink = prevNext[i]["link_data"][1]["next"]
-    let nextTitle = prevNext[i]["link_data"][1]["title"]
-    return "<a href=" + prevLink + " class='post-pagination-item post-pagination-prev'>" + prevTitle + "</a>"  + " " + "<a href=" + nextLink + " class='post-pagination-item post-pagination-next' >" + nextTitle + "</a>";
-  }
-}
-}
-
-const {content} = Astro.props; 
-const {title, description, pubDate, canonicalURL, tags} = content;
-
+const { title, description, pubDate, canonicalURL = Astro.url } = Astro.props;
 ---
-<html lang="en">
-  <head>
-    <BaseHead {title} {description} {canonicalURL} />
-    <StructuredData {title} {pubDate} />
-  </head>
-  <body>
-    <BlogHeader />
-    <BlogPost {title} {pubDate}>
+
+    <section>
       <slot />
-      <div class="tagged-as">Tagged as:</div>
-      <Markdown>
-        {tags.map(tag => <span class="tags">{tag} </span>)}
-      </Markdown>
-      <div class="post-pagination">
-        <Fragment set:html={prevNextLinking()}>
-      </div>
-    </BlogPost>
-    <BlogFooter />
-  </body>
+    </section>
+  </article>
+</div>
+</main>
+</body>
 </html>
