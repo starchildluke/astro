@@ -2,7 +2,6 @@
 title: "Where there's gold"
 pubDate: "15 Apr 2021"
 layout: ../../layouts/BlogPost.astro
-slug: "/posts/where-theres-gold"
 tags:
 - '[music](/wiki/music/)'
 - video

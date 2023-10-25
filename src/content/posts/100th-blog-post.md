@@ -3,7 +3,6 @@ title: "100th Blog Post"
 published: true
 pubDate: "9 May 2021"
 layout: ../../layouts/BlogPost.astro
-slug: "/posts/100th-blog-post"
 tags:
 - '[me](/about/)'
 ---
