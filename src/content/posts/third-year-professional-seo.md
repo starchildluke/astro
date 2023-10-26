@@ -7,7 +7,7 @@ tags:
 - '[SEO](/wiki/tech/seo/)'
 ---
 
-Today marks the third anniversary of me becoming a digital marketer ([read about my first year here](/post/first-year-professional-seo/) and [my second year here](/post/second-year-professional-seo/)).
+Today marks the third anniversary of me becoming a digital marketer ([read about my first year here](/posts/first-year-professional-seo/) and [my second year here](/posts/second-year-professional-seo/)).
 
 Here is what I've learnt in my third year as a professional.
 
@@ -43,7 +43,7 @@ I've also really got into ontologies and how they work so if search ontologist b
 
 ### 6. Python is still amazing and I'm getting back into it.
 
-I released my first proper Python project out in the open (not including the defunct [WatSERP script](https://www.semrush.com/blog/python-content-briefs-seo/) that I will eventually reupload in the future). [Read more about RALTS in its dedicated blog post](https://lukealexdavis.co.uk/post/introducing-ralts/).
+I released my first proper Python project out in the open (not including the defunct [WatSERP script](https://www.semrush.com/blog/python-content-briefs-seo/) that I will eventually reupload in the future). [Read more about RALTS in its dedicated blog post](/posts/introducing-ralts/).
 
 ### 7. I love Google Search Console
 

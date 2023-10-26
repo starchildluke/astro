@@ -9,7 +9,7 @@ tags:
 
 I'm a little premature with this post but I feel like I tweet more about SEO than I write. At least in a personal capacity.
 
-[I wrote about my journey in digital marketing](/post/eight/) when I got my job. Here is what I've learnt in my first year as a professional.
+[I wrote about my journey in digital marketing](/posts/eight/) when I got my job. Here is what I've learnt in my first year as a professional.
 
 ## People
 ### Women in SEO are the best
@@ -47,7 +47,7 @@ Suddenly it was about clusters of rich, meaningful content interlinked with othe
 
 ### Ranking for a targeted keyword was my highlight
 
-I've been [blogging](/wiki/blogging/) for over a decade and most of the time, I don't write with a keyword in mind. Last year, I wrote an article for work and it now ranks for industry-related keywords. Page session times are always great and the page has lead to conversions. It feels good to know I did that (even if the original had to be cut down for reasons)
+I've been [blogging](/jardim/blogging/) for over a decade and most of the time, I don't write with a keyword in mind. Last year, I wrote an article for work and it now ranks for industry-related keywords. Page session times are always great and the page has lead to conversions. It feels good to know I did that (even if the original had to be cut down for reasons)
 
 ## Technical
 ### Technical SEO is my strong suit

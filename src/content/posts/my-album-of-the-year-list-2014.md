@@ -17,4 +17,4 @@ tags:
 
 <p><strong>Dishonourable mentions</strong>: Soul. Chef – Long Hot Summer, Solex – Smooth Soul, Aer – Aer, Cazzette – Eject</p>
 
-Read: [My Albums Of The Year List: 2016](/post/aoty-2016/)
+Read: [My Albums Of The Year List: 2016](/posts/aoty-2016/)

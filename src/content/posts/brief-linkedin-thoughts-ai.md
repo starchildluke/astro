@@ -7,7 +7,7 @@ tags:
 - '[AI](/wiki/tech/ai/)'
 ---
 
-I wrote this comment on a LinkedIn post by Garrett Sussman who I've known for nearly as long as I've been an [SEO](/wiki/tech/seo/).
+I wrote this comment on a LinkedIn post by Garrett Sussman who I've known for nearly as long as I've been an [SEO](/jardim/tech/seo/).
 
 This was his [original post](https://www.linkedin.com/posts/garrettsussman_at-least-50-of-people-dont-care-that-tools-activity-7041768961473925121-lIXj):
 

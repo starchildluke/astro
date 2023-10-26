@@ -17,7 +17,7 @@ This date is a date of triumph. The last couple of years have been hell but on t
 
 ## Related articles
 
-* [/the-last-5-games-of-the-2017-australian-open.md](/post/the-last-5-games-of-the-2017-australian-open/)
-* [/eight.md](/post/eight/)
-* [/first-year-professional-seo.md](/post/first-year-professional-seo/)
-* [/second-year-professional-seo.md](/post/second-year-professional-seo/)
+* [/the-last-5-games-of-the-2017-australian-open.md](/posts/the-last-5-games-of-the-2017-australian-open/)
+* [/eight.md](/posts/eight/)
+* [/first-year-professional-seo.md](/posts/first-year-professional-seo/)
+* [/second-year-professional-seo.md](/posts/second-year-professional-seo/)
