@@ -26,7 +26,7 @@ Let's go!
 8. In the SEO community, there are more articles demonstrating intermediate and advanced concepts than there are basics and this is overwhelming for beginners and even intermediate and advanced users.
 8a. Because of this, it puts people off from even starting and fuels the ideology that Python is a fad for nerds who don't care about content and links and then you get people scoffing at it and demanding we focus on content and links and strategy as if those ideas has ever been ignored in the history of SEO
 9. If you know me for Python, you should also know I most of my personal scripts print out words and numbers or data into CSV files.
-10. [The script that I wrote about about a week ago](/post/introducing-ralts/) took hours to make. My first major script took days, lots of headaches, and it's still a mess and could probably be cleaned up.
+10. [The script that I wrote about about a week ago](/posts/introducing-ralts/) took hours to make. My first major script took days, lots of headaches, and it's still a mess and could probably be cleaned up.
 10a. If you learn, embrace the mess. Don't neaten it up until you get it working and even then you don't necessarily _have_ to but if you're planning on explaining how it works, I recommend you make it presentable.
 10b. Actually, it's best to write comments to explain your code to yourself at least. That makes it easier to debug.
 11. If in doubt, print out lines of code to see if they don't work

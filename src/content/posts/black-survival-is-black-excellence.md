@@ -6,4 +6,4 @@ tags:
 - '[Black](/wiki/black/)'
 ---
 
-[Black survival is Black excellence.](/wiki/black/)
+[Black survival is Black excellence.](/jardim/black/)

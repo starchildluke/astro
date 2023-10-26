@@ -28,7 +28,7 @@ My job hunt has been a nightmare. I've applied for jobs and been turned down due
 
 ## I Got A Break
 
-Lisbon. What a city. [I decided to go after reading about it in a magazine](/post/my-week-in-lisbon/) and the week away was the best time I've ever had. I could merge amongst the crowds without feeling like an outsider. The culture and weather were warm and inviting. Nobody bothered me and I could finally "be". Lisbon was a representation of me. I ate what I wanted and when I wanted. I explored the places I wanted to see and I visited the best museums I've ever seen. It was a cultural renaissance and opened my mind to a new world, away from everything I knew. I will endeavour to return next year. That's my new "soul hub".
+Lisbon. What a city. [I decided to go after reading about it in a magazine](/posts/my-week-in-lisbon/) and the week away was the best time I've ever had. I could merge amongst the crowds without feeling like an outsider. The culture and weather were warm and inviting. Nobody bothered me and I could finally "be". Lisbon was a representation of me. I ate what I wanted and when I wanted. I explored the places I wanted to see and I visited the best museums I've ever seen. It was a cultural renaissance and opened my mind to a new world, away from everything I knew. I will endeavour to return next year. That's my new "soul hub".
 
 ## Could "Pandog Media" Be The Answer?
 

@@ -11,7 +11,7 @@ tags:
 ---
 
 ![Roger Federer](/images/roger-federer-5-bit.png)
-<p>I love Roger Federer (<a href="/post/last-donut-of-the-night-when-federer-dilla-united-for-1-weekend/">here's proof</a>). This is an ongoing collection of some of his best stats (many of which standalone).</p>
+<p>I love Roger Federer (<a href="/posts/last-donut-of-the-night-when-federer-dilla-united-for-1-weekend/">here's proof</a>). This is an ongoing collection of some of his best stats (many of which standalone).</p>
 
 <p><em>(Information correct as of 7th July 2022)</em></p>
 

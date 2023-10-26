@@ -7,7 +7,7 @@ layout: ../../layouts/Morsels.astro
 
 My ninth morsel is a work one.
 
-Oapy is a web app that uses OpenAI's GPT models to generate [SEO](/wiki/tech/seo/) content at scale. That means anything from metadata (titles and descriptions) to category copy. But with the Playground mode (similar to OpenAI's Playground tool), you can generate any kind of written content.
+Oapy is a web app that uses OpenAI's GPT models to generate [SEO](/jardim/tech/seo/) content at scale. That means anything from metadata (titles and descriptions) to category copy. But with the Playground mode (similar to OpenAI's Playground tool), you can generate any kind of written content.
 
 ## Links
 

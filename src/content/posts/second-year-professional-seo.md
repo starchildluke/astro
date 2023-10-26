@@ -85,7 +85,7 @@ A few weeks ago, I realised I was a Commercial Web marketer by day and a Small W
 Oh, I haven't explained what they are. Briefly:
 
 - Commercial Web = the stuff associated with and optimised for _conversions_, _landing pages_, _sales funnels_, and _ROI_.
-- Small Web = the old days of [blogging](/wiki/blogging/) where you wrote about stuff that wasn't for SEO, posted links with no other content
+- Small Web = the old days of [blogging](/jardim/blogging/) where you wrote about stuff that wasn't for SEO, posted links with no other content
 
 Unless you have a strong following on social media or have a large and engaging email list, your primary source of traffic will be organic and unoptimised content won't rank as highly. It's that simple. I relinquished that control last year and decided to write exactly what I wanted without focusing _too_ much on SEO. In some cases, I don't care about it at all. And it was liberating. And I _still_ got traffic.
 

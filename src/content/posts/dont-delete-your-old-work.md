@@ -8,7 +8,7 @@ tags:
 - '[the Internet](/wiki/tech/internet/)'
 ---
 
-Being an [SEO](/wiki/tech/seo/) is a blessing and a curse sometimes. It means I can help businesses improve the _quality_ and _volume_ of their organic visibility but I start to see the Web in a way that doesn't fit my origins. I can't always look in wonder because my professional side starts auditing sites. Then I've done some 'SEO things' on my own sites such as deleting pages that 'had little-to-no value'.
+Being an [SEO](/jardim/tech/seo/) is a blessing and a curse sometimes. It means I can help businesses improve the _quality_ and _volume_ of their organic visibility but I start to see the Web in a way that doesn't fit my origins. I can't always look in wonder because my professional side starts auditing sites. Then I've done some 'SEO things' on my own sites such as deleting pages that 'had little-to-no value'.
 
 I culled about 500 posts off one of my blogs a while back and while I saw a benefit (causation ≠ correlation etc. etc.), I realised that was a bad thing for me. Why? Because who am I to say if they had value or not? I've been thinking about that a lot lately as I've been restoring another site with blog posts via the Wayback Machine. It was originally hacked and taken down for good a few years ago and I had the idea of bringing it back (with permission) and I've been slowly bringing the old posts back. It's been a cathartic experience and I will likely do the same for my other blog.
 

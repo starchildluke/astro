@@ -10,7 +10,7 @@ tags:
 
 How many times are non-Black people gonna derail the Black Lives Matter hashtag and in how many different ways?
 
-I keep having to remind myself that it isn't tiring being [Black](/wiki/black/), it's tiring fighting white supremacy. That's where the exhaustion lies. Day-to-day engagement with and battling against a system put in place to dehumanise and murder Black people.
+I keep having to remind myself that it isn't tiring being [Black](/jardim/black/), it's tiring fighting white supremacy. That's where the exhaustion lies. Day-to-day engagement with and battling against a system put in place to dehumanise and murder Black people.
 
 In theory, this sounds like a simple and reasonable request. But because white supremacy permeates everything about our lives, it involves constant dodging alongside other bigoted manifestations like at the micro and macro level. It fucking sucks.
 

@@ -7,7 +7,7 @@ tags:
 - '[me](/about/)' 
 ---
 
-By the end of 2019, I was in the best place I'd been in years. I was finally in the career I'd fought to get into for the past 8 years, money was alright, I had a partner and I was happy. And then [2020 did its thing](/wiki/covid-19/) and ran through my life like a wrecking ball. But of all the things that the last couple of years have ruined that upsets me the most, it's the work on my social anxiety.
+By the end of 2019, I was in the best place I'd been in years. I was finally in the career I'd fought to get into for the past 8 years, money was alright, I had a partner and I was happy. And then [2020 did its thing](/jardim/covid-19/) and ran through my life like a wrecking ball. But of all the things that the last couple of years have ruined that upsets me the most, it's the work on my social anxiety.
 
 When I was a child, I was very outgoing and had little inhibitions. Confidence was sky high (to the point of arrogance sometimes but being precocious is part of childhood, right?) Then high school changed that. I had friendship group but I always felt... different or "outside". I was picked on quite a lot in my final year and made a very stupid decision a few years before that for me excluded for a week (I won't discuss that here). College was my attempt to shrug off my academic prowess for a taste of pseudo-extroversion and it kinda worked for a couple of years, and into uni but then I developed depression. And dropped out.
 
