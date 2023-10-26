@@ -3,9 +3,7 @@ title: "I'm an Emptygold Blogger"
 published: true
 pubDate: '10 Jan 2023'
 layout: ../../layouts/BlogPost.astro
-tags:
-- '[blogging](/wiki/blogging/)'
-- '[Emptygold Blogger](/projects/emptygold-blogger/)'
+tags: ["blogging"]
 ---
 
 [On Twitter, I asked the following question](https://twitter.com/LukeDavisSEO/status/1608818032721235969):

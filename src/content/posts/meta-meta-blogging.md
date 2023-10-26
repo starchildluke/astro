@@ -17,13 +17,13 @@ On my journey, I found this 2018 article from Rohan Maitzen called [A Brief Retu
 
 > If you got into blogging because you wanted to write about what you were reading, read about what other people were reading, and have a bit of discussion in both directions, I think (though my experience may not be representative, as it always depends on particulars) you might not feel things have changed all that much, at least in the spirit of the exercise.
 
-This was in reference to a change in the blogosphere that happened towards the late 00s, when the popular indie bloggers started getting jobs at corporate publications, they became more money/ad-driven, and the faux-liberalism drifted even further to the right. Suddenly, [blogging](/wiki/blogging/) about your experiences became rhetoric-pushing through the guise of journalism.
+This was in reference to a change in the blogosphere that happened towards the late 00s, when the popular indie bloggers started getting jobs at corporate publications, they became more money/ad-driven, and the faux-liberalism drifted even further to the right. Suddenly, [blogging](/jardim/blogging/) about your experiences became rhetoric-pushing through the guise of journalism.
 
 This, in turn, changed how readers perceived the remaining indie bloggers and their output in a general sense. And the blogosphere shrunk more as time went on. I joined it all in 2008 without knowing any of this (I did my due diligence and read old stuff from the likes of Jason Kottke and did my research so as this is second/third-hand information, I suggest you do the same and don't take my paraphrasing as gospel - even if my name is Luke!)
 
 But back to the present day and the quote. That's exactly why I blog. I like to write about what I read, read about other people doing the same, and share my thoughts amongst it all. SEO has played a varying part in all that but I think therefore I write. And, yes, the spirit remains because apparently the flame hasn't died for about 10 years.
 
-I must admit, I do plug my Patreon in relation to this because all of this does cost me money ([and I discussed this last year](/post/how-much-do-my-blogs-cost/)) but I don't try to acquire Andrew Sullivan or Laurie Penny levels of income (or try to attain their intellectual level of garbage that garner the money). My means are small in comparison and I feel if people enjoy it, they can pay it forward if that's a possibility for them. But I don't blog _for_ money. There's no money in content, at least not inherently, and certainly not in the kind of stuff I write.
+I must admit, I do plug my Patreon in relation to this because all of this does cost me money ([and I discussed this last year](/posts/how-much-do-my-blogs-cost/)) but I don't try to acquire Andrew Sullivan or Laurie Penny levels of income (or try to attain their intellectual level of garbage that garner the money). My means are small in comparison and I feel if people enjoy it, they can pay it forward if that's a possibility for them. But I don't blog _for_ money. There's no money in content, at least not inherently, and certainly not in the kind of stuff I write.
 
 Time for another quote from the same piece:
 
@@ -33,6 +33,6 @@ I couldn't have put it better myself. And so I'll leave it there. Without a majo
 
 ### Related
 
-* [Blogs and hats](/post/blogs-and-hats/)
-* [Blogging gratitude](/post/blogging-gratitude/)
-* [Get a website](/post/get-a-website/)
+* [Blogs and hats](/posts/blogs-and-hats/)
+* [Blogging gratitude](/posts/blogging-gratitude/)
+* [Get a website](/posts/get-a-website/)

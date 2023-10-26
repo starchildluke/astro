@@ -3,8 +3,7 @@ title: 'I tried Vicuna and it made me laugh'
 published: true
 pubDate: '27 Apr 2023'
 layout: ../../layouts/BlogPost.astro
-tags:
-- '[AI](/wiki/tech/ai/)'
+tags: ["AI"]
 ---
 
 Two weeks ago, I found [Vicuna](https://chat.lmsys.org/), "an open-source chatbot impressing GPT-4 with 90%* ChatGPT quality". I knew to take that 90% stat with a pinch of salt, regarless of the asterisk, but wanted to try it. ([tweet for proof](https://twitter.com/LukeDavisSEO/status/1646540360670228482))
@@ -58,7 +57,7 @@ I tried another pair of entities to see how they were linked (Martin Luther King
 
 ### More on AI
 
-* [/prompt-engineering.md](/post/prompt-engineering/)
-* [/ai-is-a-lot-like-an-orange.md](/post/ai-is-a-lot-like-an-orange/)
-* [/future-coca-cola-slogans-ai.md](/post/future-coca-cola-slogans-ai/)
-* [/a-poem-about-how-search-engines-cant-interpret-poems.md](/post/a-poem-about-how-search-engines-cant-interpret-poems/)
+* [/prompt-engineering.md](/posts/prompt-engineering/)
+* [/ai-is-a-lot-like-an-orange.md](/posts/ai-is-a-lot-like-an-orange/)
+* [/future-coca-cola-slogans-ai.md](/posts/future-coca-cola-slogans-ai/)
+* [/a-poem-about-how-search-engines-cant-interpret-poems.md](/posts/a-poem-about-how-search-engines-cant-interpret-poems/)

@@ -13,4 +13,4 @@ I'm a big fan of Marijn van Hoorn's blogosphere and they wrote a piece on how th
 
 That's a pretty serious side effect! A Windows Phone in 2021? I hope they don't actually buy it with the second vaccine.
 
-[And to think I bought one](/post/my-phone-history/) without a needle or a vaccine.
+[And to think I bought one](/posts/my-phone-history/) without a needle or a vaccine.

@@ -14,4 +14,4 @@ I don't know what happened to warrant such comments but they're overzealous in m
 
 We all need some downtime and relief from the world around us. Relaxation is fundamental for our mental health. Life is stressful enough as it is. I love the airport but I've not always enjoyed the process of getting their, sorting out the bags, checking you've got your passport, checking in, baggage drop offm boarding passes, going through customs, taking stuff out of your bags, being searched, all the incessant queueing. Where's the respite? If a man wants to use a colouring book and a woman play on her phone, _just let them_. Who are they harming? It's not business of anyone to be telling someone how to live their lives unless they cause undue pain on others. This does not fall in that category. Now if you'll excuse me, there's a spacehopper outside with my name on it.
 
-**Related**: [A list of my favourite airports](/list/list-of-favourite-airports/)
+**Related**: [A list of my favourite airports](/lists/list-of-favourite-airports/)

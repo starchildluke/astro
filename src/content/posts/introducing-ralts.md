@@ -3,10 +3,7 @@ title: 'Introducing RALTS (Really Awesome Lexicon and Tag Suggester)'
 published: true
 pubDate: '28 Feb 2022'
 layout: ../../layouts/BlogPost.astro
-tags:
-- '[Python](/wiki/tech/python/)'
-- '[SEO](/wiki/tech/seo/)'
-- '[AI](/wiki/tech/ai/)'
+tags: ['Python', 'SEO', 'AI']
 ---
 
 I've been learning Python since October 2019 and exploring NLP since the end of last year and they've changed my life for the better. As I learn by doing, I've decided to show off arguably my greatest creation to do date. I wasn't sure whether to do it as it's very niche to me but I've taken a step out of my comfort zone.
@@ -695,7 +692,7 @@ Finally, we have all the functions ready to call, depending on whether I'm analy
 
 <h2 id="who_could_this_benefit">Who could this benefit?</h2>
 
-As I said earlier, I've made this mainly for myself and as a way to improve my taxonomies. I made a pledge to write about more Black content and scripts like this keep me in check as I can fill in gaps where content is lacking. It also inspires me to learn new things I never would have found from plain searching or from the blogs I follow ([also part of my process which I wrote about a few years ago](/post/this-is-my-content-creation-flow/)).
+As I said earlier, I've made this mainly for myself and as a way to improve my taxonomies. I made a pledge to write about more Black content and scripts like this keep me in check as I can fill in gaps where content is lacking. It also inspires me to learn new things I never would have found from plain searching or from the blogs I follow ([also part of my process which I wrote about a few years ago](/posts/this-is-my-content-creation-flow/)).
 
 But this kind of script is for any of the following types of people:
 

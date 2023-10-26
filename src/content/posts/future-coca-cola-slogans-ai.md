@@ -3,8 +3,7 @@ title: 'Future Coca-Cola slogans with GPT-3.5'
 published: true
 pubDate: '12 Apr 2023'
 layout: ../../layouts/BlogPost.astro
-tags:
-- '[AI](/wiki/tech/ai/)'
+tags: ['AI']
 ---
 
 While researching for a blog post about Coca-Cola, I found a list of their slogans dating as far back as 1886:
@@ -65,7 +64,7 @@ While researching for a blog post about Coca-Cola, I found a list of their sloga
 </details>
 
 
-And that got me thinking... what would GPT-3.5 create based on those examples? So I put it in using a private "lite" version of [Oapy](/post/morsels/morsel-9/) with the following prompt:
+And that got me thinking... what would GPT-3.5 create based on those examples? So I put it in using a private "lite" version of [Oapy](/morsels/morsel-9/) with the following prompt:
 
 <code>Create 10 more Coca-Cola slogans based on the following examples and following the format: [THE ABOVE LIST WENT HERE]</code>
 

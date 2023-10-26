@@ -3,12 +3,10 @@ title: "8 Things I Learnt In My 4th Year As A Professional SEO"
 pubDate: "4 Mar 2023"
 description: "I've been a SEO for 4 years now. But what more have I learnt? I wrote a list of 12 things I've picked up over that period."
 layout: ../../layouts/BlogPost.astro
-tags:
-- '[SEO](/wiki/tech/seo/)'
-- '[AI](/wiki/tech/ai/)'
+tags: ['SEO', 'AI']
 ---
 
-Today marks the fourth anniversary of me becoming a digital marketer ([read about my first year](/post/first-year-professional-seo/), [my second year](/post/second-year-professional-seo/)), and [my third year](/post/third-year-professional-seo/)).
+Today marks the fourth anniversary of me becoming a digital marketer ([read about my first year](/posts/first-year-professional-seo/), [my second year](/posts/second-year-professional-seo/)), and [my third year](/posts/third-year-professional-seo/)).
 
 Here is what I've learnt in my fourth year as a professional.
 
@@ -16,7 +14,7 @@ Here is what I've learnt in my fourth year as a professional.
 
 ### 1. SEOs still love experts, even when they pass off second-hand information
 
-I still get called an "expert" in things. I'm still grateful for the recognition in my field. I still don't personally own that accolade. Many others still do despite primarily passing off second-hand information from experts outside [SEO](/wiki/tech/seo/) (I'm referring to [AI](/wiki/tech/ai/)).
+I still get called an "expert" in things. I'm still grateful for the recognition in my field. I still don't personally own that accolade. Many others still do despite primarily passing off second-hand information from experts outside [SEO](/jardim/tech/seo/) (I'm referring to [AI](/jardim/tech/ai/)).
 
 If you want someone who knows their stuff in a different field, talk to someone in that field. Read papers, watch videos, attend conferences. Don't follow the sole advice of a "SEO guru" (eww, David!), and especially one that doesn't expand on the key areas of interest (such as biases and harms).
 
@@ -58,7 +56,7 @@ But I won't go back in my shell. When I'm not okay, people who need to know will
 
 ### 8. The industry still isn't great and AI is gonna make it worse
 
-Egos are still rampant in SEO but now that we have AI, I feel like it's going to get worse. [Prompt engineering](/post/prompt-engineering/) is the latest craze that [I've previously tweeted about as a close analogue to Facebook's video pivot controversy](https://twitter.com/LukeDavisSEO/status/1630506643136937985). We still don't know why these prompts work in the way they do but damned if someone with an expert complex is gonna be honest about that!
+Egos are still rampant in SEO but now that we have AI, I feel like it's going to get worse. [Prompt engineering](/posts/prompt-engineering/) is the latest craze that [I've previously tweeted about as a close analogue to Facebook's video pivot controversy](https://twitter.com/LukeDavisSEO/status/1630506643136937985). We still don't know why these prompts work in the way they do but damned if someone with an expert complex is gonna be honest about that!
 
 Lemme just say to be careful whose words you follow as gospel. And read papers by language tech pros and ask them questions instead.
 

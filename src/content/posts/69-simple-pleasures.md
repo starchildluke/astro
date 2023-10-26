@@ -12,7 +12,7 @@ tags:
 * 002 – Modernist architecture
 * 003 – Music
 * 004 – Playing with my son
-* 005 – Coding (particularly [Python](/wiki/tech/python/), HTML, and CSS)
+* 005 – Coding (particularly [Python](/jardim/tech/python/), HTML, and CSS)
 * 006 – Spending time with my parents
 * 007 – Crate digging (I miss that)
 * 008 – Going back to Bradford to just walk around
@@ -22,18 +22,18 @@ tags:
 * 012 – TV from the 90s
 * 013 – Watching We Bare Bears
 * 014 – American commercials
-* 015 – Playing [Pokémon](/wiki/pokemon/) (but not VGC)
+* 015 – Playing [Pokémon](/jardim/pokemon/) (but not VGC)
 * 016 – Being loved and loving someone back
 * 017 – A good cup of tea
 * 018 – A hug from my son for no reason
 * 019 – Nutella B-ready
 * 020 – A good scented candle (specifically the discontinued Orange Flower & Cedar candle from Sainsbury's)
-* 021 – [Roger Federer](/wiki/sport/roger-federer/)
+* 021 – [Roger Federer](/jardim/sport/roger-federer/)
 * 022 – Pepsi Max from a draught (with ice)
 * 023 – A warm house
 * 024 – A silent disco
 * 025 – Giving a cat scritches
-* 026 – Just being in [Lisbon](/wiki/lisbon/)
+* 026 – Just being in [Lisbon](/jardim/lisbon/)
 * 027 – Driving videos
 * 028 – Not having to get out of bed at a particular time at the weekend
 * 029 – A walk by the river
@@ -60,11 +60,11 @@ tags:
 * 050 – Madlib
 * 051 - A Tribe Called Quest
 * 052 - When my partner says something before I was about to think it
-* 053 - [Watching this](/post/boom-tetris-for-jeff/)
+* 053 - [Watching this](/posts/boom-tetris-for-jeff/)
 * 054 - Halt and Catch Fire
 * 055 - Lee Pace
 * 056 - Colours
-* 057 - [The Last 5 Games of the 2017 Australian Open](/post/the-last-5-games-of-the-2017-australian-open/)
+* 057 - [The Last 5 Games of the 2017 Australian Open](/posts/the-last-5-games-of-the-2017-australian-open/)
 * 058 - 90s football
 * 059 - Immersing myself in a music video
 * 060 - Listening to jazz

@@ -7,7 +7,7 @@ tags:
 - illness
 ---
 
-I suffer from [hayfever](/post/wikinotes/hay-fever-haiku/) and it kills me for 4-5 months of the year. It's got to the stage where my current max dosage of fexofenadine isn't enough. One of the best suggestions is a change in diet. Easier said than done, right? But before I give you the list, here are what histamines are and what they do:
+I suffer from [hayfever](/recortes/hay-fever-haiku/) and it kills me for 4-5 months of the year. It's got to the stage where my current max dosage of fexofenadine isn't enough. One of the best suggestions is a change in diet. Easier said than done, right? But before I give you the list, here are what histamines are and what they do:
 
 <p>Histamines are neurotransmitters that can cause inflammatory responses when your immune system feels an imminent attack. As you may know, histamine can cause swelling in your blood vessels, allowing for white blood cells to find and attack the source in your body. This can lead to headaches, a flushed feeling, itchiness and miserable. Sound familiar?</p>
 
@@ -18,7 +18,7 @@ I suffer from [hayfever](/post/wikinotes/hay-fever-haiku/) and it kills me for 4
 * Cured meats: bacon, salami, pepperoni, luncheon meats, and hot dogs
 * Soured foods: sour cream, sour milk, buttermilk, soured bread
 * Dried fruit: apricots, prunes, dates, figs, raisins
-* [Most citrus fruits](/list/list-of-citrus-culvitars-and-hybrids/)
+* [Most citrus fruits](/lists/list-of-citrus-culvitars-and-hybrids/)
 * Aged cheese including goat cheese
 * Nuts: walnuts, cashews, and peanuts
 * Vegetables: avocados, eggplant, spinach, and tomatoes
