@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>The coding morsels of Luke Alex Davis</title><description>My RSS feed of coding snippets.</description><link>https://lukealexdavis.co.uk/</link><item><title>Morsel #9: Oapy</title><link>https://lukealexdavis.co.uk/posts/morsel-9/</link><guid isPermaLink="true">https://lukealexdavis.co.uk/posts/morsel-9/</guid><pubDate>Thu, 23 Mar 2023 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;My ninth morsel is a work one.&lt;/p&gt;
-&lt;p&gt;Oapy is a web app that uses OpenAI&apos;s GPT models to generate &lt;a href=&quot;/wiki/tech/seo/&quot;&gt;SEO&lt;/a&gt; content at scale. That means anything from metadata (titles and descriptions) to category copy. But with the Playground mode (similar to OpenAI&apos;s Playground tool), you can generate any kind of written content.&lt;/p&gt;
+&lt;p&gt;Oapy is a web app that uses OpenAI&apos;s GPT models to generate &lt;a href=&quot;/jardim/tech/seo/&quot;&gt;SEO&lt;/a&gt; content at scale. That means anything from metadata (titles and descriptions) to category copy. But with the Playground mode (similar to OpenAI&apos;s Playground tool), you can generate any kind of written content.&lt;/p&gt;
 &lt;h2&gt;Links&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://oapy-impression.streamlit.app/&quot;&gt;Oapy&lt;/a&gt;&lt;/li&gt;
@@ -23,7 +23,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-</content:encoded></item><item><title>Morsel #8: Bandcamp Album Length Calculator</title><link>https://lukealexdavis.co.uk/posts/morsel-8/</link><guid isPermaLink="true">https://lukealexdavis.co.uk/posts/morsel-8/</guid><pubDate>Sat, 04 Feb 2023 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;My eighth morsel is a &lt;a href=&quot;/wiki/tech/python/&quot;&gt;Python&lt;/a&gt; script that returns the running time of an album from Bandcamp in your CLI of choice. I previously used a JS plugin/applet in my browser but it stopped working and couldn&apos;t find a replacement (there probably is one but I also don&apos;t like installing add-ons unless I have to because Chromium browsers already hog enough memory!)&lt;/p&gt;
+</content:encoded></item><item><title>Morsel #8: Bandcamp Album Length Calculator</title><link>https://lukealexdavis.co.uk/posts/morsel-8/</link><guid isPermaLink="true">https://lukealexdavis.co.uk/posts/morsel-8/</guid><pubDate>Sat, 04 Feb 2023 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;My eighth morsel is a &lt;a href=&quot;/jardim/tech/python/&quot;&gt;Python&lt;/a&gt; script that returns the running time of an album from Bandcamp in your CLI of choice. I previously used a JS plugin/applet in my browser but it stopped working and couldn&apos;t find a replacement (there probably is one but I also don&apos;t like installing add-ons unless I have to because Chromium browsers already hog enough memory!)&lt;/p&gt;
 &lt;p&gt;Then I thought &quot;why not create a quick script to do the job?&quot;. I have also made this into a Streamlit app but that&apos;ll be coming in a future morsel. In the meantime, I discovered argparse and thought it&apos;d be handy for me to have everything run in my CLI and print out the album length. No frills!&lt;/p&gt;
 &lt;h2&gt;Links&lt;/h2&gt;
 &lt;ul&gt;
@@ -75,7 +75,7 @@
 &lt;li&gt;&lt;a href=&quot;https://realpython.com/python-for-loop/&quot;&gt;For loops&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://pynative.com/python-random-sample/&quot;&gt;&lt;code&gt;Random.sample()&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</content:encoded></item><item><title>Morsel #6: Federer in The Guardian</title><link>https://lukealexdavis.co.uk/posts/morsel-6/</link><guid isPermaLink="true">https://lukealexdavis.co.uk/posts/morsel-6/</guid><pubDate>Sat, 09 Jul 2022 23:00:00 GMT</pubDate><content:encoded>&lt;p&gt;My sixth morsel is a quick script that scrapes The Guardian API for articles featuring &quot;Federer&quot; in the headline. This can, of course, be amended to search for any query in the API but I wanted some article to fill out my &lt;a href=&quot;/wiki/sport/roger-federer/&quot;&gt;Federer wiki page&lt;/a&gt;.&lt;/p&gt;
+</content:encoded></item><item><title>Morsel #6: Federer in The Guardian</title><link>https://lukealexdavis.co.uk/posts/morsel-6/</link><guid isPermaLink="true">https://lukealexdavis.co.uk/posts/morsel-6/</guid><pubDate>Sat, 09 Jul 2022 23:00:00 GMT</pubDate><content:encoded>&lt;p&gt;My sixth morsel is a quick script that scrapes The Guardian API for articles featuring &quot;Federer&quot; in the headline. This can, of course, be amended to search for any query in the API but I wanted some article to fill out my &lt;a href=&quot;/jardim/sport/roger-federer/&quot;&gt;Federer wiki page&lt;/a&gt;.&lt;/p&gt;
 &lt;h2&gt;Requirements&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://www.python.org/downloads/&quot;&gt;Python 3&lt;/a&gt;&lt;/li&gt;
