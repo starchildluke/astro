@@ -1,5 +1,6 @@
 ---
 title: 'My Letterboxd Year In Review for 2022'
+description: "I not a Letterboxd Pro user so I only get the basic year review stats but here they are."
 published: true
 pubDate: '9 Jan 2023'
 layout: ../../layouts/BlogPost.astro

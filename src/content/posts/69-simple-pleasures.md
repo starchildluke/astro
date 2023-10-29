@@ -1,5 +1,6 @@
 ---
 title: '69 simple pleasures'
+description: "I'm a simple man with a NICE! number of pleasure."
 published: true
 pubDate: '27 Sep 2022'
 layout: ../../layouts/BlogPost.astro

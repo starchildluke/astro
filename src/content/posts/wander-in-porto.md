@@ -1,5 +1,6 @@
 ---
 title: 'Wander in Porto'
+description: "I've never been to Porto but after extolling the virtues of Lisbon, people have recommended it to me. Maybe one day."
 published: true
 pubDate: '24 Aug 2020'
 layout: ../../layouts/BlogPost.astro

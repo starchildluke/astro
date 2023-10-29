@@ -1,5 +1,6 @@
 ---
 title: "The meaning of life"
+description: "Today, I had a taxipiphany an epiphany in a taxi on my way home from my son's school."
 published: true
 pubDate: "27 Jan 2021"
 layout: ../../layouts/BlogPost.astro

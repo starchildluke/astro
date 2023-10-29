@@ -1,5 +1,6 @@
 ---
 title: 'Happy accident #1'
+description: "My son wanted to listen to something on Spotify. What happened next will SHOCK you."
 published: true
 pubDate: '18 Jul 2021'
 layout: ../../layouts/BlogPost.astro

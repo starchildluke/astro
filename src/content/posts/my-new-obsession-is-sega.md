@@ -1,5 +1,6 @@
 ---
 title: 'My New Obsession Is... Sega'
+description: "I thought I’d revive this series where I talk about my latest obsession. My latest craze is Sega."
 pubDate: '7 Jun 2017'
 layout: ../../layouts/BlogPost.astro
 tags:

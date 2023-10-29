@@ -1,5 +1,6 @@
 ---
 title: 'Connections'
+description: "Some thoughts about how connections in life."
 published: true
 pubDate: '9 Dec 2021'
 layout: ../../layouts/BlogPost.astro

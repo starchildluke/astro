@@ -1,5 +1,6 @@
 ---
 title: 'Post-It Note directories'
+description: "Web directories are long out of fashion but the purpose of them has never died - informational retrieval and discoverability."
 published: true
 pubDate: '30 Jun 2023'
 layout: ../../layouts/BlogPost.astro

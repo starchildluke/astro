@@ -1,5 +1,6 @@
 ---
 title: 'I tried Vicuna and it made me laugh'
+description: "Some thoughts on the hilarity of large language models"
 published: true
 pubDate: '27 Apr 2023'
 layout: ../../layouts/BlogPost.astro

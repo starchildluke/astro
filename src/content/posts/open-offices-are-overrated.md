@@ -1,5 +1,6 @@
 ---
 title: 'Open Offices Are Overrated'
+description: "Vox Media have made a video all about open offices as part of their Overrated series."
 published: true
 pubDate: '5 Oct 2017'
 layout: ../../layouts/BlogPost.astro

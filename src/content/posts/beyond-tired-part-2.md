@@ -1,5 +1,6 @@
 ---
 title: 'Beyond tired: Part 2'
+description: "Some thoughts on racism and 'at least they did something'."
 published: true
 pubDate: '1 Sep 2020'
 layout: ../../layouts/BlogPost.astro

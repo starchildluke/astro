@@ -1,5 +1,6 @@
 ---
 title: 'The Exclusive Website'
+description: "The Exclusive Website is an exclusive club in the form of a website with cheesy elevator music in the background (which you can mute)."
 published: true
 pubDate: '27 Aug 2020'
 layout: ../../layouts/BlogPost.astro

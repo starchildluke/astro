@@ -1,5 +1,6 @@
 ---
 title: 'Everyone''s a writer'
+description: "As long as you have intent, it doesn't matter whether your scribbles are intelligible or not—you are a writer"
 published: true
 pubDate: '10 Aug 2020'
 layout: ../../layouts/BlogPost.astro

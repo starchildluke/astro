@@ -1,5 +1,6 @@
 ---
 title: 'Public health'
+description: "Imagine public health policies that included mental + physical check ups with dedicated healthcare professionals, accomodating for different cultures, genders, sexualities, + disabilities etc. etc."
 published: true
 pubDate: '16 Nov 2021'
 layout: ../../layouts/BlogPost.astro

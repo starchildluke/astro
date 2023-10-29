@@ -1,5 +1,6 @@
 ---
 title: 'AI is a lot like an orange'
+description: "There are plenty of analogies for AI but mine is the best."
 published: true
 pubDate: '30 Jan 2023'
 layout: ../../layouts/BlogPost.astro

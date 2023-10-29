@@ -1,5 +1,6 @@
 ---
 title: 'Today is a special day'
+description: "29th January is special for two reasons."
 published: true
 pubDate: '29 Jan 2022'
 layout: ../../layouts/BlogPost.astro

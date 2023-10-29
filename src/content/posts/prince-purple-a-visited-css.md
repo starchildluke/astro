@@ -1,5 +1,6 @@
 ---
 title: 'Use Prince''s purple for a:visited in your CSS'
+description: "A way to add some purple to your web design"
 published: true
 pubDate: '11 Mar 2020'
 layout: ../../layouts/BlogPost.astro

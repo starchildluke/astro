@@ -1,5 +1,6 @@
 ---
 title: 'Banana rum cake recipe'
+description: "Here's how to make a banana rum cake recipe"
 published: true
 pubDate: '5 Jul 2010'
 layout: ../../layouts/BlogPost.astro

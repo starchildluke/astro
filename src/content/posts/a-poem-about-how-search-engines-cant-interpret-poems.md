@@ -1,5 +1,6 @@
 ---
 title: 'A poem about how search engines can''t interpret poems'
+description: "The following is a poem about how search engines can't interpret poems using GPT-3.5 Turbo"
 published: true
 pubDate: '24 Aug 2022'
 layout: ../../layouts/BlogPost.astro

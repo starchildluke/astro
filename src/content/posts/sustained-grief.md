@@ -1,5 +1,6 @@
 ---
 title: "Sustained grief"
+description: "Some thoughts on sustained grief, inspired by bell hooks"
 published: true
 pubDate: "28 Feb 2021"
 layout: ../../layouts/BlogPost.astro

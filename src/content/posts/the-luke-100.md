@@ -1,5 +1,6 @@
 ---
 title: 'The Luke 100'
+description: "It's a list of 100 things I want to do in my life."
 published: true
 pubDate: '12 Dec 2017'
 layout: ../../layouts/BlogPost.astro

@@ -1,5 +1,6 @@
 ---
 title: "My Record Store Day"
+description: "As a producer and crate digger, Record Store Day is a like a second Christmas."
 published: true
 pubDate: "20 Apr 2013"
 layout: ../../layouts/BlogPost.astro

@@ -1,5 +1,6 @@
 ---
 title: 'My big Pokémon self-project'
+description: "After watching the Pokémon World Championships last week, I felt inspired to get all the legendaries from every game up to SV (Scarlet & Violet)."
 published: true
 pubDate: '20 Aug 2023'
 layout: ../../layouts/BlogPost.astro

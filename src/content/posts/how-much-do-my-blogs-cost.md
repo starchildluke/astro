@@ -1,5 +1,6 @@
 ---
 title: 'How much do my blogs cost?'
+description: "Blogging costs money to maintain. Here's how much."
 published: true
 pubDate: '24 Aug 2020'
 layout: ../../layouts/BlogPost.astro

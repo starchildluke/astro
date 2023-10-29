@@ -1,5 +1,6 @@
 --- 
-title: 'Social anxiety' 
+title: 'Social anxiety'
+description: "How my social anxiety has grown since COVID-19"
 published: true 
 pubDate: '21 Aug 2022' 
 layout: ../../layouts/BlogPost.astro 

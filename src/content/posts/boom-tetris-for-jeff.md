@@ -1,5 +1,6 @@
 ---
 title: 'BOOM! Tetris for Jeff'
+description: "This video gives me unbridled joy and Jeff Moore is arguably my favourite gamer ever. He's such a cool guy and an awesome Tetris player."
 published: true
 pubDate: '23 Aug 2020'
 layout: ../../layouts/BlogPost.astro

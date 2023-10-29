@@ -1,5 +1,6 @@
 ---
 title: 'My love of Sony hardware design'
+description: "I've not owned many Sony products but I've always admired their design. Here are some of my favourites."
 published: true
 pubDate: '16 Aug 2018'
 layout: ../../layouts/BlogPost.astro

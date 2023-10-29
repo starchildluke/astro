@@ -1,5 +1,6 @@
 ---
 title: "Unusual side effect"
+description: "Who gets an urge to buy a Windows Phone? Must be something in this vaccine..."
 published: true
 pubDate: "26 Mar 2021"
 layout: ../../layouts/BlogPost.astro

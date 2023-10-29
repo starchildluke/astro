@@ -1,5 +1,6 @@
 ---
 title: 'Feeling Guilty For Pursuing Your Passions'
+description: "I used to feel really empowered and inspired when I worked on my music or blogged until one day I was questioned about it."
 published: true
 pubDate: '6 Dec 2017'
 layout: ../../layouts/BlogPost.astro

@@ -1,5 +1,6 @@
 ---
 title: 'Some caveats to SEO and web performance'
+description: "As a technical SEO, I am very passionate about web performance. Here's why nuance is needed when talking about its relationship with SEO"
 published: true
 pubDate: '2 Jul 2023'
 layout: ../../layouts/BlogPost.astro

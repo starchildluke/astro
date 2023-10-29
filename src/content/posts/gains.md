@@ -1,5 +1,6 @@
 ---
 title: Gains
+description: "Today was the first day I got back into exercise after a brief illness."
 published: true
 pubDate: '11 Aug 2020'
 layout: ../../layouts/BlogPost.astro

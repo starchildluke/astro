@@ -1,5 +1,6 @@
 ---
 title: 'The Last 5 Games of the 2017 Australian Open'
+description: "Or: the greatest sporting moment in my life."
 published: true
 pubDate: '12 Mar 2018'
 layout: ../../layouts/BlogPost.astro

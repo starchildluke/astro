@@ -1,5 +1,6 @@
 ---
 title: 'Visionary'
+description: "Data > Experience > Opinion > Vision"
 published: true
 pubDate: '25 Aug 2021'
 layout: ../../layouts/BlogPost.astro

@@ -1,5 +1,6 @@
 ---
 title: "They don't see us as human"
+description: "Some thoughts on the othering of marginalised groups"
 published: true
 pubDate: "22 Apr 2021"
 layout: ../../layouts/BlogPost.astro

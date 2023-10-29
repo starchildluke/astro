@@ -1,5 +1,6 @@
 ---
 title: 'It''s not computer science!'
+description: "Still super wild that I dropped out of a computer science degree when I was 18 and now I'm using machine learning, language models, and reading papers on this DAILY."
 published: true
 pubDate: '14 Dec 2021'
 layout: ../../layouts/BlogPost.astro

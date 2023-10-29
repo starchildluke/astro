@@ -1,5 +1,6 @@
 ---
 title: 'I redesigned my site a little'
+description: "You may have noticed the site looks a little different. Here's why I did made some design changes."
 published: true
 pubDate: '29 Oct 2023'
 layout: ../../layouts/BlogPost.astro

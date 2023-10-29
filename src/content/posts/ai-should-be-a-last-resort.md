@@ -1,5 +1,6 @@
 ---
 title: 'AI should be a last resort'
+description: "We're told that AI is simultaneously the present and the future and you'll be a husk of a human being if you don't just embrace it and get on the train. Here's why that's untrue."
 published: true
 pubDate: '14 May 2023'
 layout: ../../layouts/BlogPost.astro

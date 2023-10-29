@@ -1,5 +1,6 @@
 ---
 title: "Night off"
+description: "Tonight, I deactivated from Twitter. It's only for the night although if tomorrow is as bad as today, I'll extend it."
 published: true
 pubDate: "8 Mar 2021"
 layout: ../../layouts/BlogPost.astro

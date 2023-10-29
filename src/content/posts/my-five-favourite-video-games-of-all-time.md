@@ -1,5 +1,6 @@
 ---
 title: 'My Five Favourite Video Games of All Time'
+description: "A list of my five fave games of all time"
 published: true
 pubDate: '5 Aug 2017'
 layout: ../../layouts/BlogPost.astro

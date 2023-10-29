@@ -188,6 +188,13 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"lists": {
+"artistic-inspirations.md": {
+	id: "artistic-inspirations.md";
+  slug: "artistic-inspirations";
+  body: string;
+  collection: "lists";
+  data: InferEntrySchema<"lists">
+} & { render(): Render[".md"] };
 "list-of-ai-use-cases.md": {
 	id: "list-of-ai-use-cases.md";
   slug: "list-of-ai-use-cases";
@@ -212,6 +219,13 @@ declare module 'astro:content' {
 "list-of-favourite-scents.md": {
 	id: "list-of-favourite-scents.md";
   slug: "list-of-favourite-scents";
+  body: string;
+  collection: "lists";
+  data: InferEntrySchema<"lists">
+} & { render(): Render[".md"] };
+"musical-inspirations.md": {
+	id: "musical-inspirations.md";
+  slug: "musical-inspirations";
   body: string;
   collection: "lists";
   data: InferEntrySchema<"lists">
@@ -426,13 +440,6 @@ declare module 'astro:content' {
 "aoty-2022.md": {
 	id: "aoty-2022.md";
   slug: "aoty-2022";
-  body: string;
-  collection: "posts";
-  data: InferEntrySchema<"posts">
-} & { render(): Render[".md"] };
-"artistic-inspirations.md": {
-	id: "artistic-inspirations.md";
-  slug: "artistic-inspirations";
   body: string;
   collection: "posts";
   data: InferEntrySchema<"posts">
@@ -892,13 +899,6 @@ declare module 'astro:content' {
   collection: "posts";
   data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
-"musical-inspirations.md": {
-	id: "musical-inspirations.md";
-  slug: "musical-inspirations";
-  body: string;
-  collection: "posts";
-  data: InferEntrySchema<"posts">
-} & { render(): Render[".md"] };
 "my-50-favourite-albums-of-2012.md": {
 	id: "my-50-favourite-albums-of-2012.md";
   slug: "my-50-favourite-albums-of-2012";
@@ -1165,13 +1165,6 @@ declare module 'astro:content' {
   collection: "posts";
   data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
-"support-me.md": {
-	id: "support-me.md";
-  slug: "support-me";
-  body: string;
-  collection: "posts";
-  data: InferEntrySchema<"posts">
-} & { render(): Render[".md"] };
 "sustained-grief.md": {
 	id: "sustained-grief.md";
   slug: "sustained-grief";
@@ -1182,13 +1175,6 @@ declare module 'astro:content' {
 "talk-work-think-different-thanks-web.md": {
 	id: "talk-work-think-different-thanks-web.md";
   slug: "talk-work-think-different-thanks-web";
-  body: string;
-  collection: "posts";
-  data: InferEntrySchema<"posts">
-} & { render(): Render[".md"] };
-"teams-i-look-out-for-post-man-utd.md": {
-	id: "teams-i-look-out-for-post-man-utd.md";
-  slug: "teams-i-look-out-for-post-man-utd";
   body: string;
   collection: "posts";
   data: InferEntrySchema<"posts">

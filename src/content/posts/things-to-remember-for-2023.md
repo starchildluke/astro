@@ -1,5 +1,6 @@
 ---
 title: 'Things to remember for 2023'
+description: "What we need to keep in mind this year."
 published: true
 pubDate: '6 Jan 2023'
 layout: ../../layouts/BlogPost.astro

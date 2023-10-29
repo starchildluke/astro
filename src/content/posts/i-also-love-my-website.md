@@ -1,5 +1,6 @@
 ---
 title: 'I also love my website'
+description: "My website is a labour of love. But it's mine."
 published: true
 pubDate: '23 Oct 2023'
 layout: ../../layouts/BlogPost.astro

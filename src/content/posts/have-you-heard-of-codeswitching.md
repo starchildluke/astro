@@ -1,5 +1,6 @@
 ---
 title: 'Have you heard of codeswitching?'
+description: "Still reading through kottke.org's archives and found a 2003 post on 'bilingual conversations'"
 pubDate: '15 Feb 2020'
 layout: ../../layouts/BlogPost.astro
 tags:

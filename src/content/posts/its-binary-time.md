@@ -1,5 +1,6 @@
 ---
 title: "It's binary time!"
+description: "A list of binary times, only using 1's and 0's"
 layout: ../../layouts/BlogPost.astro
 pubDate: "3 Dec 2020"
 tags:

@@ -1,5 +1,6 @@
 ---
 title: 'Don''t delete your old work (but restore it if you do)'
+description: "Why you shouldn't delete your old work and find value beyond the monetary."
 published: true
 pubDate: '8 Jun 2022'
 layout: ../../layouts/BlogPost.astro

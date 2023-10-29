@@ -1,5 +1,6 @@
 ---
 title: 'My Albums of the Year: 2011'
+description: "A list of my fave albums from 2011"
 published: true
 pubDate: '31 Dec 2011'
 layout: ../../layouts/BlogPost.astro

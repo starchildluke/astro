@@ -1,6 +1,7 @@
 ---
 title: "2017 Needs Brevity And Nuance"
 published: true
+description: "This post has been on my mind for a while and seeing as it's the start of a new year, I thought it necessary to write it now while I'm in a writing mood."
 pubDate: "1 Jan 2017"
 layout: ../../layouts/BlogPost.astro
 tags:

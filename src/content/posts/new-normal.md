@@ -1,5 +1,6 @@
 ---
 title: 'New normal'
+description: "'The phrase ‘new normal’ is one that grinds my gears in a very particular way, because look around… nothing has fundamentally changed.'"
 published: true
 pubDate: '6 Sep 2021'
 layout: ../../layouts/BlogPost.astro

@@ -1,5 +1,6 @@
 ---
 title: 'The SEO of Pokémon nicknames'
+description: "Something I've been doing recently is looking for Pokémon nickname ideas. They have some cool SEO behind them."
 published: true
 pubDate: '12 Aug 2023'
 layout: ../../layouts/BlogPost.astro

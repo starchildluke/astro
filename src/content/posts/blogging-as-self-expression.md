@@ -1,5 +1,6 @@
 ---
 title: "Blogging as self-expression"
+description: "For me, blogging is about self-expression (alongside self-experimentation)."
 published: true
 pubDate: "17 May 2021"
 layout: ../../layouts/BlogPost.astro

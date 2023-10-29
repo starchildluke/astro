@@ -1,5 +1,6 @@
 ---
 title: Eight
+description: "I finally got a new job so I'm celebrating with words."
 published: true
 pubDate: '15 Feb 2019'
 layout: ../../layouts/BlogPost.astro

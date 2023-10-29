@@ -1,5 +1,6 @@
 ---
 title: 'Being Black in digital marketing in 2023'
+description: "In a follow-up to my 2020 piece ‘Being Black in Digital Marketing’, I asked the same Black marketers if anything has changed in the last 3 years."
 published: true
 pubDate: '1 Oct 2023'
 layout: ../../layouts/BlogPost.astro

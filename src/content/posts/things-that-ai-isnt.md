@@ -1,5 +1,6 @@
 ---
 title: 'Things that AI isn''t'
+description: "A short list of what AI isn't"
 published: true
 pubDate: '30 Mar 2023'
 layout: ../../layouts/BlogPost.astro

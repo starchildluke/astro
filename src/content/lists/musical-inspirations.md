@@ -1,11 +1,7 @@
 ---
 title: 'Musical Inspirations'
 pubDate: '1 Mar 2017'
-layout: ../../layouts/BlogPost.astro
-tags:
-- '[music](/wiki/music/)'
-- inspiration
-- '[Prince](/wiki/music/prince/)'
+layout: ../../layouts/Lists.astro
 ---
 
 * J Dilla

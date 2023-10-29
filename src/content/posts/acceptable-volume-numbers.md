@@ -1,6 +1,7 @@
 ---
 title: 'Acceptable volume numbers'
-published: true
+description: "I like numbers."
+publshed: true
 pubDate: '23 Oct 2022'
 layout: ../../layouts/BlogPost.astro
 tags:

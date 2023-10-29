@@ -1,5 +1,6 @@
 ---
 title: 'Chocolate fudge cake recipe'
+description: 'How to make a chocolate fudge cake'
 published: true
 pubDate: '5 Jul 2010'
 layout: ../../layouts/BlogPost.astro
