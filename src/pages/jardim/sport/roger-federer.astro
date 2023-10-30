@@ -7,7 +7,8 @@ import Footer from '../../../components/Footer.astro';
 import Layout from '../../../layouts/Layout.astro';
 import Breadcrumbs from '../../../components/Breadcrumbs.astro';
 import site from '../../../data/site.json';
-import jardim from '../../../data/jardim.json'
+import jardim from '../../../data/jardim.json';
+import Tags from '../../../components/Tags.astro';
 
 // PROPS
 
@@ -31,13 +32,7 @@ let description = "A wiki page all about Roger Federer.";
         <p class="desc">{description}</p>
         <p>Roger Federer is a Swiss former professional tennis player. He is also my favourite athlete of all time and my pick for the male tennis GOAT.</p>
         <h2 class="wiki-h2">Inner voice</h2>
-        <ul>
-          <li><a href="/posts/10-inspiring-creatives-2017/">/10-inspiring-creatives-2017.md</a></li>
-          <li><a href="/posts/khruangbin-and-federer/">/khruangbin-and-federer.md</a></li>
-          <li><a href="/posts/last-donut-of-the-night-when-federer-dilla-united-for-1-weekend/">/last-donut-of-the-night-when-federer-dilla-united-for-1-weekend.md/</a></li>
-          <li><a href="/posts/roger-federer-numbers-game/">/roger-federer-numbers-game.md</a></li>
-          <li><a href="/posts/the-last-5-games-of-the-2017-australian-open/">/the-last-5-games-of-the-2017-australian-open.md</a></li>
-        </ul>
+        <Tags tagName="Roger Federer" />
         <h2 class="wiki-h2">Out loud</h2>
         <ul>
           {remoteData.map(( post ) => (

@@ -3,9 +3,7 @@ title: "Where there's gold"
 description: "I'd forgotten just how great this song by Seal was."
 pubDate: "15 Apr 2021"
 layout: ../../layouts/BlogPost.astro
-tags:
-- '[music](/wiki/music/)'
-- video
+tags: ['music']
 ---
 
 I'd forgotten just how great this song was (and I say that every time i hear it after months away)

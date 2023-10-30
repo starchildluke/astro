@@ -3,9 +3,7 @@ title: 'Hayfever and Histamines'
 description: "Some thoughts and facts on hay fever and histamines"
 pubDate: '26 Jun 2017'
 layout: ../../layouts/BlogPost.astro
-tags:
-- hayfever
-- illness
+tags: ['life']
 ---
 
 I suffer from [hayfever](/recortes/hay-fever-haiku/) and it kills me for 4-5 months of the year. It's got to the stage where my current max dosage of fexofenadine isn't enough. One of the best suggestions is a change in diet. Easier said than done, right? But before I give you the list, here are what histamines are and what they do:

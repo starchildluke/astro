@@ -4,7 +4,7 @@ description: "Some thoughts on the hilarity of large language models"
 published: true
 pubDate: '27 Apr 2023'
 layout: ../../layouts/BlogPost.astro
-tags: ["AI"]
+tags: ["AI", 'tech']
 ---
 
 Two weeks ago, I found [Vicuna](https://chat.lmsys.org/), "an open-source chatbot impressing GPT-4 with 90%* ChatGPT quality". I knew to take that 90% stat with a pinch of salt, regarless of the asterisk, but wanted to try it. ([tweet for proof](https://twitter.com/LukeDavisSEO/status/1646540360670228482))

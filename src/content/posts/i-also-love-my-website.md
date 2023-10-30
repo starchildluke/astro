@@ -4,9 +4,7 @@ description: "My website is a labour of love. But it's mine."
 published: true
 pubDate: '23 Oct 2023'
 layout: ../../layouts/BlogPost.astro
-tags:
-- '[blogging](/wiki/blogging/)'
-- '[the Web](/wiki/tech/internet/)'
+tags: ['blogging', 'the Internet']
 ---
 
 I discovered [anhvn.com](https://anhvn.com/), the personal site of Anh, a designer and artist based in Canada and I love it. Then I found one of her blog posts called ["I love my website"](https://anhvn.com/posts/2021/2021-12-14-i-love-my-website/) which was part of a chain following similar posts by <a href="https://winnielim.org/notes/i-love-my-website-too/">Winnie Lim</a>, <a href="https://tracydurnell.com/2021/11/19/personal-websites-are-the-best/">Tracy Durnell</a>, <a href="https://jamesg.blog/2021/11/16/i-love-my-website/">James</a>, and <a href="https://adactio.com/articles/10887">Jeremy Keith</a>.

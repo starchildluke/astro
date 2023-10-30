@@ -4,9 +4,7 @@ description: "Why you shouldn't delete your old work and find value beyond the m
 published: true
 pubDate: '8 Jun 2022'
 layout: ../../layouts/BlogPost.astro
-tags:
-- '[blogging](/wiki/blogging/)'
-- '[the Internet](/wiki/tech/internet/)'
+tags: ['blogging', 'the Internet']
 ---
 
 Being an [SEO](/jardim/tech/seo/) is a blessing and a curse sometimes. It means I can help businesses improve the _quality_ and _volume_ of their organic visibility but I start to see the Web in a way that doesn't fit my origins. I can't always look in wonder because my professional side starts auditing sites. Then I've done some 'SEO things' on my own sites such as deleting pages that 'had little-to-no value'.

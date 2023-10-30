@@ -4,11 +4,7 @@ description: "Web directories are long out of fashion but the purpose of them ha
 published: true
 pubDate: '30 Jun 2023'
 layout: ../../layouts/BlogPost.astro
-tags:
-- '[SEO](/wiki/tech/seo/)'
-- '[AI](/wiki/tech/ai/)'
-- '[tech](/wiki/tech/)'
-- '[the Internet](/wiki/tech/internet/)'
+tags: ['SEO', 'AI', 'tech', 'the Internet']
 ---
 
 There's a scene in Halt and Catch Fire S4 where [Joe MacMillan is collecting Post-Its of websites](https://www.youtube.com/watch?v=FwgQYLWTsmk). It's basically a manual index and I found that fascinating. Even in 2023, I love the idea of collecting websites and links and displaying them for all to see.

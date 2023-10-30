@@ -7,8 +7,8 @@ import Footer from '../../components/Footer.astro';
 import Layout from '../../layouts/Layout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import site from '../../data/site.json';
-import jardim from '../../data/jardim.json'
-import tags from '../../data/tags.json'
+import jardim from '../../data/jardim.json';
+import Tags from '../../components/Tags.astro';
 
 // PROPS
 
@@ -35,16 +35,7 @@ let description = 'A wiki page all about films.';
         <section>
           
           <h2 class="wiki-h2">Inner voice</h2>
-
-          <ul>
-            <li><strong><a href="/letterboxd-diaries/">My Letterboxd Diaries</a></strong></li>
-            {tags.film.map((tag) => (
-            <li>
-              <a href={tag.link}>{tag.title}</a>
-            </li>
-          ))}
-        </ul>
-          
+            <Tags tagName="film" />
         </section>
         
         <section>

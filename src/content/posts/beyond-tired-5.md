@@ -3,8 +3,7 @@ title: "Beyond tired: Part 5"
 description: "Some thoughts on my mental health and therapy."
 pubDate: "15 Oct 2021"
 layout: ../../layouts/BlogPost.astro
-tags:
-- 'life'
+tags: ['life']
 ---
 
 Hey, it's me&mdash;tired again.

@@ -3,8 +3,7 @@ title: 'What''s the obsession with folding phone?'
 description: "I don't get the obsession with folding phones. At all."
 pubDate: '25 May 2020'
 layout: ../../layouts/BlogPost.astro
-tags:
-- 'phones'
+tags: ['tech']
 ---
 
 I don't get it. I guess, by that, I'm not their target audience anyway but the technology seems superfluous to me.

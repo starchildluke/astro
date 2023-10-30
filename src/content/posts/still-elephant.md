@@ -4,8 +4,7 @@ description: "An anecdote from 2004 about Columbine"
 published: true
 pubDate: '13 Aug 2020'
 layout: ../../layouts/BlogPost.astro
-tags:
-- 'film'
+tags: ['film']
 ---
 
 I've been [going through Kottke.org's archives again](https://kottke.org/04/07/elephant) and found this anecdote:

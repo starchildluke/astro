@@ -4,10 +4,7 @@ description: "What I really like about this album is that it fills in any gaps m
 published: true
 pubDate: '11 Nov 2010'
 layout: ../../layouts/BlogPost.astro
-tags:
-- '[music](/wiki/music/)'
-- Jamiroquai
-- writing
+tags: ['music', 'writing']
 ---
 
 ## “Here it is, there’s no way to make it better.”

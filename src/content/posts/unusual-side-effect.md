@@ -4,8 +4,7 @@ description: "Who gets an urge to buy a Windows Phone? Must be something in this
 published: true
 pubDate: "26 Mar 2021"
 layout: ../../layouts/BlogPost.astro
-tags:
-- phones
+tags: ['tech']
 ---
 
 I'm a big fan of Marijn van Hoorn's blogosphere and they wrote a piece on how they got vaccinated (can't find the blog post now). My favourite line was the last one:

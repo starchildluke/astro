@@ -4,8 +4,7 @@ description: "A short list of what AI isn't"
 published: true
 pubDate: '30 Mar 2023'
 layout: ../../layouts/BlogPost.astro
-tags:
-- '[AI](/wiki/tech/ai/)'
+tags: ['AI']
 ---
 
 * Another word for machine learning

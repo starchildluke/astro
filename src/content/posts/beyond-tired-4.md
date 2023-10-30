@@ -3,10 +3,7 @@ title: "Beyond tired: Part 4"
 description: "Some thoughts on racism in football and in general"
 pubDate: "12 Jul 2021"
 layout: ../../layouts/BlogPost.astro
-tags:
-- 'racism'
-- 'life'
-- '[Black](/wiki/black/)'
+tags: ['black', 'life']
 ---
 
 Don't tell me you're disgusted at racism against Black footballers.  

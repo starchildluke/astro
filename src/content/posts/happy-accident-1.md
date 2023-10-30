@@ -4,8 +4,7 @@ description: "My son wanted to listen to something on Spotify. What happened nex
 published: true
 pubDate: '18 Jul 2021'
 layout: ../../layouts/BlogPost.astro
-tags:
-- '[happiness](/wiki/happiness/)'
+tags: ['life', 'happiness']
 ---
 
 My son wanted to listen to something on Spotify and said *something* to my Google Home Mini. And its response:

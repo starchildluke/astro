@@ -4,9 +4,7 @@ description: "'The phrase ‘new normal’ is one that grinds my gears in a very
 published: true
 pubDate: '6 Sep 2021'
 layout: ../../layouts/BlogPost.astro
-tags:
-- '[me](/about/)'
-- '[COVID-19](/wiki/covid-19/)'
+tags: ['life', 'COVID-19']
 ---
 
 [@clvtno on Twitter wrote a good impromptu thread about the 'new normal' and the fallacy of the term](https://twitter.com/clvtno/status/1434670846241644545):

@@ -4,8 +4,7 @@ description: 'How to make a chocolate fudge cake'
 published: true
 pubDate: '5 Jul 2010'
 layout: ../../layouts/BlogPost.astro
-tags:
-- recipes
+tags: ['food & drink']
 ---
 
 * 2 1/2 c Sugar

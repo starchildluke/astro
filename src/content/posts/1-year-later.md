@@ -4,8 +4,7 @@ description: "It's been a year since the death of George Floyd. But what has cha
 published: true
 pubDate: "27 May 2021"
 layout: ../../layouts/BlogPost.astro
-tags:
-- '[Black](/wiki/black/)'
+tags: ['Black']
 ---
 
 I'll be brief.

@@ -3,9 +3,7 @@ title: "Beyond tired: Part 3"
 description: "Some thoughts on my mental health during the pandemic."
 pubDate: "6 Jan 2021"
 layout: ../../layouts/BlogPost.astro
-tags:
-- '[COVID-19](/wiki/covid-19/)'
-- 'life'
+tags: ['COVID-19', 'life']
 ---
 
 Happy new year. Sort of.

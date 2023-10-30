@@ -4,8 +4,7 @@ description: "Here's how to make a banana rum cake recipe"
 published: true
 pubDate: '5 Jul 2010'
 layout: ../../layouts/BlogPost.astro
-tags:
-- "recipes"
+tags: ['food & drink']
 ---
 
 Here is my recipe – Banana Rum Cake. It is roughly measured as I don’t have exact equipment here, but the recipe is very forgiving.

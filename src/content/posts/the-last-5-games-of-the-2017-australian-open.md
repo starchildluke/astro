@@ -4,9 +4,7 @@ description: "Or: the greatest sporting moment in my life."
 published: true
 pubDate: '12 Mar 2018'
 layout: ../../layouts/BlogPost.astro
-tags:
-- '[Roger Federer](/wiki/sport/roger-federer/)'
-- tennis
+tags: ['Roger Federer', 'sport']
 ---
 
 Never gets old.

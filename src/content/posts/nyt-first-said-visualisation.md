@@ -4,8 +4,7 @@ description: "The people behind @nyt_first_said created a visual 'machine' of ho
 published: true
 pubDate: '27 Aug 2020'
 layout: ../../layouts/BlogPost.astro
-tags:
-- 'words'
+tags: ['writing']
 ---
 
 ![@nyt_first_said visualisation](/images/Screenshot%202020-08-27%20at%2014.58.33.png)

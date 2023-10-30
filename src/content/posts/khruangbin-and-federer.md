@@ -4,11 +4,7 @@ description: "Two of my favourite things in the world: a great band and a great 
 published: true
 pubDate: '12 Jun 2018'
 layout: ../../layouts/BlogPost.astro
-tags:
-- '[Roger Federer](/wiki/sport/roger-federer/)'
-- Khruangbin
-- '[music](/wiki/music/)'
-- tennis
+tags: ['Roger Federer', 'music', 'sport']
 ---
 
 I did a Twitter poll for suggestions on what to do tonight and "write something" won out so here I am.

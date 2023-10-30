@@ -4,8 +4,7 @@ description: 'Is it a closed question? Can it be worn like a winter coat or a pa
 published: true
 pubDate: '18 Feb 2019'
 layout: ../../layouts/BlogPost.astro
-tags:
-- '[Black](/wiki/black/)'
+tags: ['Black']
 ---
 
 Is it a closed question? Can it be worn like a winter coat or a pair of cool sunglasses? Does it give owners freedom of their cities? Can it even be explained in a length of text? Blackness is everything and it is nothing. It is a weaponised concept and it is a blanket of community. In the right hands, those tired hands passed down by ancestors, it can revolt and rejoice through the pain of its history. In the wrong hands, those clean hands of oppressors, its coloured connotations are brought to the forefront; darkness, blacklisted, blacked out, evil. It is misconstrued as a binary system - the one drop rule has never died, just changed its visage. There is no percentage competition with [blackness](/jardim/black/) but it is used as such. What is “HALF-caste” really? There are gradients to this rhetoric but blackness isn’t a rhetoric. No one can “speak” in Blackness as a single entity for the truth is blackness is composed of numerous planes. The fact I speak of Blackness now in this language – my native tongue – betrays its true origins and yet represents its history so well. The English language is a melting pot of others, tracing centuries of raping and pillaging from other lands, taking words and refashioning them as “loan words” that have never been returned (much like artefacts of Blackness on those English language museums). The words I utter to describe this unfathomably large concept were given to my ancestors by force but without those words, I could not sit down to speak of Blackness. What a conundrum!   

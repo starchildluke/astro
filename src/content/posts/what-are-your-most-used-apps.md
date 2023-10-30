@@ -4,8 +4,7 @@ description: "My most used apps in 2021"
 published: true
 pubDate: '18 Dec 2021'
 layout: ../../layouts/BlogPost.astro
-tags:
-- '[tech](/wiki/tech/)'
+tags: ['tech']
 ---
 
 As of December 2021:

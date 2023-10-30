@@ -21,8 +21,8 @@ const daRemoteData = await fetch('https://distantarcade.co.uk/wp-json/wp/v2/post
 
 // METADATA VARIABLES
 
-let title = 'Sonic the Hedgehog';
-let description = 'A wiki page all about Sonic.';
+let title = 'Life';
+let description = 'A wiki page all about life.';
 
 ---
 <Layout {title} {description}>
@@ -30,41 +30,12 @@ let description = 'A wiki page all about Sonic.';
         <article class="content">
           <Breadcrumbs title={title}/>
             <section class="intro">
-
               <h1>{title}</h1>
               <p class="desc">{description}</p>
-
             </section>
             <section>
-             
               <h2 class="wiki-h2">Inner voice</h2>
-                <Tags tagName="Sonic the Hedgehog" />
-            </section>
-      
-            <section>
-              <h2 class="wiki-h2">Out loud</h2>
-              <h3>From Cultrface</h3>
-              <ul>
-                {remoteData.map(( post ) => (
-                  <li>
-                    <a href={post.link}><Fragment set:html={post.title.rendered}></a>
-                  </li>
-                ))}
-              </ul>
-              <p><a href="https://cultrface.co.uk/tag/sonic-the-hedgehog/">More on Cultrface</a></p>
-              <h3>From Distant Arcade</h3>
-              <ul>
-                {daRemoteData.map((item) => (
-                <li>
-            <a href={item.link}><Fragment set:html={item.title.rendered}></a>
-          </li>
-             ))}
-              </ul>
-              <p><a href="https://distantarcade.co.uk/tag/sonic-the-hedgehog/">More on Distant Arcade</a></p>
-              <h2 class="wiki-h2">Second opinions</h2>
-                <ul>
-                  <li>Coming soon...</li>
-                </ul>
+                <Tags tagName="life" />
             </section>
         </article>
       

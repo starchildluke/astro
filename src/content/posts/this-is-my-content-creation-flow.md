@@ -3,9 +3,7 @@ title: 'This is my content creation flow'
 description: "Here is how I create content"
 pubDate: '19 Mar 2020'
 layout: ../../layouts/BlogPost.astro
-tags:
-- the web
-- '[blogging](/wiki/blogging/)'
+tags: ['blogging', 'the Internet']
 ---
 
 A few months ago, [I "revealed" my content creation flow](https://twitter.com/LukeDavisSEO/status/1233102657826566144?s=20) (as if it was a secret) and I said I'd write about it in more detail. So here it is.

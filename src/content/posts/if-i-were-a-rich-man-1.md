@@ -3,8 +3,7 @@ title: 'If I were a rich man #1'
 description: "Things I'd want if I was rich."
 pubDate: '22 Aug 2020'
 layout: ../../layouts/BlogPost.astro
-tags:
-- keith haring
+tags: ['art']
 ---
 
 ![Keith Haring - POP SHOP III (3), 1989 SCREENPRINT](/images/keith-haring.jpeg)

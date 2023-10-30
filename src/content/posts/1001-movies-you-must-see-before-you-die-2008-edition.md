@@ -4,8 +4,7 @@ description: "I decided to see how many films I'd seen from the 2008 edition of 
 published: true
 pubDate: '21 Aug 2020'
 layout: ../../layouts/BlogPost.astro
-tags:
-- 'film'
+tags: ['film']
 ---
 
 Note: this post contains an Amazon affiliate link.

@@ -4,8 +4,7 @@ description: "I get sick of hearing about 'freedom of speech'', especially in th
 published: true
 pubDate: '24 Aug 2020'
 layout: ../../layouts/BlogPost.astro
-tags:
-- 'USA'
+tags: []
 ---
 
 I get sick of hearing about "freedom of speech", especially in the UK who have, like a lot of things, adopted it from the US because they have no ideas of their own (see also, ironically: the British Empire). So I found this and thought it was interesting:

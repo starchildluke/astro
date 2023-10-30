@@ -4,9 +4,7 @@ description: "I'm a simple man with a NICE! number of pleasure."
 published: true
 pubDate: '27 Sep 2022'
 layout: ../../layouts/BlogPost.astro
-tags:
-- '[me](/about/)'
-- "creativity"
+tags: ['life', 'sport', 'architecture', 'Roger Federer', 'tech', 'Pokémon', 'Lisbon', 'Python']
 ---
 
 * 001 – Watching WWE Attitude Era matches

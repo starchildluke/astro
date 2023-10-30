@@ -4,8 +4,7 @@ description: "A poem about my childhood."
 published: true
 pubDate: '3 Sep 2022'
 layout: ../../layouts/BlogPost.astro
-tags:
-- "creativity"
+tags: ['writing']
 ---
 
 Saturday morning  
@@ -18,4 +17,4 @@ My day is all set
 
 The cold air soothes me  
 My ball rebounds off the wall  
-And I swing for four  
+And I swing for four

@@ -4,11 +4,7 @@ description: "I went to therapy last year and talked about Black Panther."
 published: true
 pubDate: '29 Aug 2020'
 layout: ../../layouts/BlogPost.astro
-tags:
-- '[film](/wiki/film/)'
-- '[Black](/wiki/black/)'
-- 'mental health'
-- '[me](/about/)'
+tags: ['Black', 'film', 'life']
 ---
 
 I went to therapy last year.

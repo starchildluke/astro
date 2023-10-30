@@ -4,11 +4,7 @@ description: "My vote for the male GOAT and the numbers that make him so."
 published: true
 pubDate: '7 Jul 2022'
 layout: ../../layouts/BlogPost.astro
-tags:
-- '[Roger Federer](/wiki/sport/roger-federer/)'
-- tennis
-- '[sport](/wiki/sport/)'
-- lists
+tags: ['Roger Federer', 'sport']
 ---
 
 ![Roger Federer](/images/roger-federer-5-bit.png)

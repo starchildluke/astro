@@ -4,9 +4,7 @@ description: "I've not owned many Sony products but I've always admired their de
 published: true
 pubDate: '16 Aug 2018'
 layout: ../../layouts/BlogPost.astro
-tags:
-- design
-- sony
+tags: ['tech']
 ---
 
 ![Sony design](/images/412A-rqHLqL._AC_SY400_.jpg)

@@ -3,10 +3,7 @@ title: 'Black and Tired'
 description: "How many times are non-Black people gonna derail the Black Lives Matter hashtag and in how many different ways?"
 pubDate: '21 Jun 2020'
 layout: ../../layouts/BlogPost.astro
-tags:
-- 'racism'
-- 'life'
-- '[Black](/wiki/black/)'
+tags: ['life', 'Black']
 ---
 
 How many times are non-Black people gonna derail the Black Lives Matter hashtag and in how many different ways?

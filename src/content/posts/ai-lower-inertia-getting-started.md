@@ -4,9 +4,7 @@ description: "AI isn't the thing. It's the thing that gets you to the thing."
 published: true
 pubDate: '17 Jul 2023'
 layout: ../../layouts/BlogPost.astro
-tags:
-- '[AI](/wiki/tech/ai/)'
-- '[tech](/wiki/tech/)'
+tags: ['AI', 'tech']
 ---
 
 I was talking to a friend on Twitter about how large language models (LLMs) have helped me get work done in a roundabout way:

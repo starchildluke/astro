@@ -4,9 +4,7 @@ description: "I answered the Proust Questionnaire. Here are my answers."
 published: true
 pubDate: '2 Sep 2012'
 layout: ../../layouts/BlogPost.astro
-tags:
-- '[me](/about/)'
-- '[happiness](/wiki/happiness/)'
+tags: ['life', 'happiness']
 ---
 
 * What is your idea of perfect happiness?

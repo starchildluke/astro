@@ -7,7 +7,8 @@ import Footer from '../../../components/Footer.astro';
 import Layout from '../../../layouts/Layout.astro';
 import Breadcrumbs from '../../../components/Breadcrumbs.astro';
 import site from '../../../data/site.json';
-import jardim from '../../../data/jardim.json'
+import jardim from '../../../data/jardim.json';
+import Tags from '../../../components/Tags.astro';
 
 // PROPS
 
@@ -32,11 +33,7 @@ let description = 'A page all about Prince.';
         <p class="desc">{description}</p>
         <p>Prince Rogers Nelson, better known as Prince, was an Black American singer-songwriter, musician, actor, and record producer. He's also one of the greatest musicians the world has ever known. This page features articles from myself and others about Prince's genius.</p>
         <h2 class="wiki-h2">Inner voice</h2>
-        <ul>
-          <li><a href="/posts/prince-purple-a-visited-css/">/prince-purple-a-visited-css.md</a></li>
-          <li><a href="/posts/musical-inspirations/">/musical-inspirations.md</a></li>
-          <li><a href="/posts/videos-ive-been-watching-to-keep-me-going/">/videos-ive-been-watching-to-keep-me-going.md</a></li>
-        </ul>
+        <Tags tagName="Prince" />
         <h2 class="wiki-h2">Out loud</h2>
         <ul>
           {remoteData.map((item) => (

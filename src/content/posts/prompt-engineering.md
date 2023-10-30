@@ -4,9 +4,7 @@ description: "I still feel weird about how prompt engineering is promoted as a n
 published: true
 pubDate: '22 Feb 2023'
 layout: ../../layouts/BlogPost.astro
-tags:
-- '[tech](/wiki/tech/)'
-- '[AI](/wiki/tech/ai/)'
+tags: ['tech', 'AI']
 ---
 
 I still feel weird about how [prompt engineering](https://en.wikipedia.org/wiki/Prompt_engineering) is promoted as a new concept.

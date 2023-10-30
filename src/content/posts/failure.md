@@ -4,8 +4,7 @@ description: "Some thoughts on failure and why it means different things for dif
 published: true
 pubDate: "21 Dec 2020"
 layout: ../../layouts/BlogPost.astro
-tags:
-- failure
+tags: []
 ---
 
 Think of any multi-billion dollar company and you'll remember their successes. After all, that's how they made all that money, right? But for every successful business, there have been a lot of failures which would have bankrupted or otherwise ruined other businesses–or people for that matter (and they probably have but why spoil a successful capitalist story).

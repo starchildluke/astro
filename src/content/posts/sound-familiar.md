@@ -4,8 +4,7 @@ description: "Some thoughts on people's cookie cutter conversations."
 published: true
 pubDate: "19 Jan 2021"
 layout: ../../layouts/BlogPost.astro
-tags:
-- 'life'
+tags: ['life']
 ---
 
 <p><b>Person 1</b>: This piece of technology could do this really helpful thing</p>

@@ -3,8 +3,7 @@ title: "My Favourite Albums of 2020"
 description: "A list of my favourite albums from 2020."
 pubDate: 31 Dec 2020
 layout: ../../layouts/BlogPost.astro
-tags:
-- aoty
+tags: ['AOTY']
 ---
 
 Hopefully by the end of the year, I'll have listened to 200 albums which I never expected to do. At the time of writing, I've listened to 195 and it's been a revelation. A lot of great music came out in a year where it would have been acceptable to curl into a ball and not want to create anything. But my favourite artists did and produced some of their best works to date.

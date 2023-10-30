@@ -4,8 +4,7 @@ description: "After watching the Pokémon World Championships last week, I felt 
 published: true
 pubDate: '20 Aug 2023'
 layout: ../../layouts/BlogPost.astro
-tags:
-- '[Pokémon](/wiki/pokemon/)'
+tags: ['Pokémon']
 ---
 
 After watching the [Pokémon World Championships](https://worlds.pokemon.com/en-us/) last week, I felt inspired to get all the legendaries from every game up to SV (Scarlet & Violet). Obtaining them has been made a lot easier in recent years, with Dynamax Adventures in Sword & Shield, and Ultra Wormholes in Ultra Sun & Ultra Moon. Those games can take a long time to complete to get there so I figured playing the older games would be a lot quicker.

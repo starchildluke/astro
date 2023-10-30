@@ -4,9 +4,7 @@ description: "A lengthy post on how I create my list of Last.fm top 1000 artists
 published: true
 pubDate: '28 Apr 2023'
 layout: ../../layouts/BlogPost.astro
-tags:
-- '[music](/wiki/music/)'
-- '[Python](/wiki/tech/python/)'
+tags: ['music', 'Python']
 ---
 
 <em>Note: I have since updated the below code as of 4th May 2023.</em>

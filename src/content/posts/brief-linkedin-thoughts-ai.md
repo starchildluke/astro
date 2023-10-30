@@ -4,8 +4,7 @@ description: "I wrote a comment on a LinkedIn post about AI and what it means in
 published: true
 pubDate: '17 Mar 2023'
 layout: ../../layouts/BlogPost.astro
-tags:
-- '[AI](/wiki/tech/ai/)'
+tags: ['AI']
 ---
 
 I wrote this comment on a LinkedIn post by Garrett Sussman who I've known for nearly as long as I've been an [SEO](/jardim/tech/seo/).

@@ -4,8 +4,7 @@ description: "If you're overwhelmed by all the SEO tips, future trends, Python s
 published: true
 pubDate: '18 Jul 2022'
 layout: ../../layouts/BlogPost.astro
-tags:
-- '[SEO](/wiki/tech/seo/)'
+tags: ['SEO']
 ---
 
 To whomstever needs to hear this:

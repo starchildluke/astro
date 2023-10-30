@@ -4,9 +4,7 @@ description: "My relationship with rock music has been… well, rocky, for lack 
 published: true
 pubDate: '31 May 2011'
 layout: ../../layouts/BlogPost.astro
-tags:
-- '[music](/wiki/music/)'
-- writing
+tags: ['writing', 'music']
 ---
 
 My relationship with rock music has been… well, rocky, for lack of a better word. I always tried to shy away from it, pretending there wasn’t an issue; “I’m okay with rock music, I just don’t love it”. The truth is, I was barely okay with it. My idea of rock was everyone’s idea of pop music. It was always a genre that I neglected when it came to acquiring music, after all, I’ve yet to physically buy a rock CD. Plenty of pop, soul, jazz, hip hop, funk and even acid jazz. But no rock. And why is this? What’s the big deal? Well, today for the first time, I sat down and thought about it on my way to London (on a trip to some music shops, no less) and during the journey, I attributed it to two things.

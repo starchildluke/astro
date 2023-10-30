@@ -7,7 +7,8 @@ import Footer from '../../../components/Footer.astro';
 import Layout from '../../../layouts/Layout.astro';
 import Breadcrumbs from '../../../components/Breadcrumbs.astro';
 import site from '../../../data/site.json';
-import jardim from '../../../data/jardim.json'
+import jardim from '../../../data/jardim.json';
+import Tags from '../../../components/Tags.astro';
 
 // PROPS
 
@@ -32,19 +33,8 @@ let description = 'A wiki page all about SEO.';
           <p class="desc">{description}</p>
         </section>
         <section>
-          
           <h2 class="wiki-h2">Inner voice</h2>
-          
-          <ul>
-            <li><a href="/posts/first-year-professional-seo/">/first-year-professional-seo.md</a></li>
-            <li><a href="/posts/second-year-professional-seo/">/second-year-professional-seo.md</a></li>
-            <li><a href="/posts/third-year-professional-seo/">/third-year-professional-seo.md</a></li>
-            <li><a href="/posts/fourth-year-professional-seo/">/fourth-year-professional-seo.md</a></li>
-            <li><a href="/posts/introducing-ralts/">/introducing-ralts.md</a></li>
-            <li><a href="/posts/a-poem-about-how-search-engines-cant-interpret-poems/">/a-poem-about-how-search-engines-cant-interpret-poems.md</a></li>
-            <li><a href="/posts/seoicism/">/seoicism.md</a></li>
-          </ul>
-          
+          <Tags tagName="SEO" />
         </section>
         
         <section>

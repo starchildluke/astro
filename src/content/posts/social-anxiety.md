@@ -4,8 +4,7 @@ description: "How my social anxiety has grown since COVID-19"
 published: true 
 pubDate: '21 Aug 2022' 
 layout: ../../layouts/BlogPost.astro 
-tags: 
-- '[me](/about/)' 
+tags: ['life']
 ---
 
 By the end of 2019, I was in the best place I'd been in years. I was finally in the career I'd fought to get into for the past 8 years, money was alright, I had a partner and I was happy. And then [2020 did its thing](/jardim/covid-19/) and ran through my life like a wrecking ball. But of all the things that the last couple of years have ruined that upsets me the most, it's the work on my social anxiety.

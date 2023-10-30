@@ -3,11 +3,7 @@ title: "Last Donut of the Night: when Federer & Dilla united for a weekend"
 description: "Tennis and hip hop rarely come together (bar Drake and Redfoo’s attempts.) But this is completely different. To tell this story, I need to break it down into three parts."
 pubDate: "17 Dec 2016"
 layout: ../../layouts/BlogPost.astro
-tags:
-- '[music](/wiki/music/)'
-- writing
-- '[J Dilla](https://sampleface.co.uk/tag/j-dilla/)'
-- '[Roger Federer](/wiki/sport/roger-federer/)'
+tags: ['music', 'writing', 'Roger Federer', 'sport']
 ---
 
 I’m proud of this essay; it’s the only one of its kind. Tennis and hip hop rarely come together (bar Drake and Redfoo’s attempts.) But this is completely different. To tell this story, I need to break it down into three parts. Think of it as a concerto, an ode to the greatest to ever do it.

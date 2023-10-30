@@ -8,7 +8,7 @@ import Layout from '../../layouts/Layout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import site from '../../data/site.json';
 import jardim from '../../data/jardim.json'
-import tags from '../../data/tags.json'
+import Tags from '../../components/Tags.astro';
 
 // PROPS
 
@@ -33,19 +33,9 @@ let description = 'A wiki page all about art.';
           <p class="desc">{description}</p>
         </section>
         <section>
-          
           <h2 class="wiki-h2">Inner voice</h2>
-          
-          <ul>
-            {tags.art.map((tag) => (
-            <li>
-              <a href={tag.link}>{tag.title}</a>
-            </li>
-          ))}
-        </ul>
-          
+          <Tags tagName="art" />
         </section>
-        
         <section>
           <h2 class="wiki-h2">Out loud</h2>
           <ul>

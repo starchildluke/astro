@@ -4,9 +4,7 @@ description: "Some thoughts on sustained grief, inspired by bell hooks"
 published: true
 pubDate: "28 Feb 2021"
 layout: ../../layouts/BlogPost.astro
-tags:
-- '[me](/about/)'
-- life
+tags: ['life']
 ---
 
 <a href="https://twitter.com/_Zeets/status/1366155880966799360">@\_Zeets on Twitter</a> posted this bell hooks quote earlier:

@@ -4,8 +4,7 @@ description: "A list of my fave albums from 2011"
 published: true
 pubDate: '31 Dec 2011'
 layout: ../../layouts/BlogPost.astro
-tags:
-- '[aoty](/wiki/music/aoty/)'
+tags: ['AOTY', 'music']
 ---
 
 Yes, it’s that time of year – the “album list” blog post. But this one is slightly different. This is purely based on the albums I’ve listened to this year from 2011, ordered by my favourite right down to my “least” favourite. In that respect, these are MY albums of the year. I won’t like the same albums you will and vice versa so saying “why is X not ahead of Y” is futile. This is a common disclaimer in these kinds of posts and it’s a shame but it needs to be said. So, enough of all that.

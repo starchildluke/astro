@@ -5,8 +5,7 @@ description: "This is technically the 100th blog post on this iteration of my bl
 "
 pubDate: "9 May 2021"
 layout: ../../layouts/BlogPost.astro
-tags:
-- '[me](/about/)'
+tags: ['life']
 ---
 
 This is technically the 100th blog post on this iteration of my blog.

@@ -4,8 +4,7 @@ description: "I finally got a new job so I'm celebrating with words."
 published: true
 pubDate: '15 Feb 2019'
 layout: ../../layouts/BlogPost.astro
-tags:
-- life
+tags: ['life']
 ---
 
 I wrote about this on Instagram but thought I’d put it here too. It’s been a while since I’ve written a blog post. Sometimes I feel like writing but the motivation leaves me like air from a balloon. But this is worthy of prose. I’ll start from the beginning.

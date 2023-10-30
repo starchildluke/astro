@@ -4,10 +4,7 @@ description: "From 20th - 27th November, I spent a week in Lisbon. It was a life
 published: true
 pubDate: '3 Dec 2017'
 layout: ../../layouts/BlogPost.astro
-tags:
-- '[me](/about/)'
-- '[lisbon](/wiki/lisbon/)'
-- '[architecture](/wiki/architecture/)'
+tags: ['life', 'Lisbon', 'architecture']
 ---
 
 ![MAAT (Museum of Art, Architecture and Technology)](/images/MAAT-Lisbon-Amanda-Levet-Architects-0016_1.png)

@@ -7,6 +7,7 @@ const posts = defineCollection({
 		description: z.string().optional(),
 		image: z.string().optional(),
 		published: z.boolean().optional(),
+		tags: z.array(z.string()),
 		pubDate: z
 			.string()
 			.or(z.date())

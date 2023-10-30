@@ -4,9 +4,7 @@ description: "In 2012, I answered the Proust Questionnaire and brought it over f
 published: true
 pubDate: '6 Sep 2020'
 layout: ../../layouts/BlogPost.astro
-tags:
-- '[me](/about/)'
-- '[happiness](/wiki/happiness/)'
+tags: ['life', 'happiness']
 ---
 
 In 2012, I answered the Proust Questionnaire and brought it over from my old blog. I'm taking it again.

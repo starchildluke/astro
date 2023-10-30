@@ -4,8 +4,7 @@ description: "I've never been to Porto but after extolling the virtues of Lisbon
 published: true
 pubDate: '24 Aug 2020'
 layout: ../../layouts/BlogPost.astro
-tags:
-- 'portugal'
+tags: []
 ---
 
 I've never been to Porto but after extolling the virtues of [Lisbon](/posts/my-week-in-lisbon/), people have recommended it to me. Maybe one day.

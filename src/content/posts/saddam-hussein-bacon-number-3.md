@@ -3,9 +3,7 @@ title: 'Saddam Hussein had a Bacon number of 3'
 description: "Saddam Hussein was CONNECTED"
 pubDate: '14 Aug 2020'
 layout: ../../layouts/BlogPost.astro
-tags:
-- mathematics
-- '[film](/wiki/film/)'
+tags: ['mathematics', 'film']
 ---
 
 From a [Brewers' fan forum](https://brewerfanatic.com/forums/topic/7164-six-degrees-of-kevin-bacon/page/2/#comment-23095) in 2007:

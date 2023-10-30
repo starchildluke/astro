@@ -7,7 +7,8 @@ import Footer from '../../components/Footer.astro';
 import Layout from '../../layouts/Layout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import site from '../../data/site.json';
-import jardim from '../../data/jardim.json'
+import jardim from '../../data/jardim.json';
+import Tags from '../../components/Tags.astro';
 
 // PROPS
 
@@ -42,9 +43,7 @@ let domain = "https://lukealexdavis.co.uk"
             <section>
              
               <h2 class="wiki-h2">Inner voice</h2>
-                <ul>
-                  <li><a href="/posts/my-week-in-lisbon/">/my-week-in-lisbon.md</a></li>
-                </ul>
+                <Tags tagName="Lisbon" />
             </section>
       
             <section>

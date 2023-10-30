@@ -8,6 +8,8 @@ import Layout from '../../../layouts/Layout.astro';
 import Breadcrumbs from '../../../components/Breadcrumbs.astro';
 import site from '../../../data/site.json';
 import jardim from '../../../data/jardim.json'
+import { getCollection } from 'astro:content';
+import Tags from '../../../components/Tags.astro';
 
 // PROPS
 
@@ -40,18 +42,7 @@ let description = 'A page all about artificial intelligence (or AI).';
         </section>
         <section>
           <h2 class="wiki-h2">Inner voice</h2>
-          <ul>
-            <li><a href="/posts/ai-lower-inertia-getting-started/">/ai-lower-inertia-getting-started.md</a></li>
-            <li><a href="/posts/ai-should-be-a-last-resort/">/ai-should-be-a-last-resort.md</a></li>
-            <li><a href="/posts/vicuna-made-me-laugh/">/vicuna-made-me-laugh.md</a></li>
-            <li><a href="/posts/future-coca-cola-slogans-ai/">/future-coca-cola-slogans-ai.md</a></li>
-            <li><a href="/posts/things-that-ai-isnt/">/things-that-ai-isnt.md</a></li>
-            <li><a href="/posts/brief-linkedin-thoughts-ai/">/brief-linkedin-thoughts-ai.md</a></li>
-            <li><a href="/posts/prompt-engineering/">/prompt-engineering.md</a></li>
-            <li><a href="/posts/ai-is-a-lot-like-an-orange/">/ai-is-a-lot-like-an-orange.md</a></li>
-            <li><a href="/posts/a-poem-about-how-search-engines-cant-interpret-poems/">/a-poem-about-how-search-engines-cant-interpret-poems.md</a></li>
-            <li><a href="/posts/introducing-ralts/">/introducing-ralts.md</a></li>
-          </ul>
+          <Tags tagName="AI" />
         </section>
         
         <section>

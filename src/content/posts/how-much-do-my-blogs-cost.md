@@ -4,8 +4,7 @@ description: "Blogging costs money to maintain. Here's how much."
 published: true
 pubDate: '24 Aug 2020'
 layout: ../../layouts/BlogPost.astro
-tags:
-- '[blogging](/wiki/blogging/)'
+tags: ['blogging']
 ---
 
 As I continue working on my microscopic media empire (stolen from [Jason Kottke](https://www.lifehacker.com.au/2018/09/im-jason-kottke-creator-of-kottkeorg-and-this-is-how-i-parent/) but also [other people](http://www.jimestill.com/2016/02/ceo-and-7-minute-workout.html?m=1)), I asked myself: whow much does it cost to run all [my blogs and various mini projects](/projects/). I decided to keep it easy and calculate all the outgoings in 2020 so far and income I get from Patreon to calculate the gross and net costs.

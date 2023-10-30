@@ -4,8 +4,7 @@ description: "If being Black, queer, and neurodivergent has taught me anything, 
 published: true
 pubDate: '25 Mar 2023'
 layout: ../../layouts/BlogPost.astro
-tags:
-- '[black](/wiki/black/)'
+tags: ['Black']
 ---
 
 If being Black, queer, and neurodivergent has taught me anything, it's that you don't need data and reports to tell you to treat people with love and compassion. These are bare minimum requirements for every human on the planet. Just because someone is LGBTQ+ or disabled or part of any combination of marginalised groups doesn't mean you need to collect data and create a report to tell you... discrimination exists and people feel excluded. And that's all these reports really do. If you're lucky to get actions from them, they're devoid of communication with these groups and suggest things like:

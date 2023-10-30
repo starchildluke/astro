@@ -4,10 +4,7 @@ description: "Some thoughts on racism and 'at least they did something'."
 published: true
 pubDate: '1 Sep 2020'
 layout: ../../layouts/BlogPost.astro
-tags:
-- 'racism'
-- 'life'
-- '[Black](/wiki/black/)'
+tags: ['Black', 'life']
 ---
 
 I debated writing this or tweeting it but I'd rather it be in my online possession. [I tweeted this yesterday](https://twitter.com/LukeDavisSEO/status/1300351382520815618) and people have reached out since, which I'm grateful for. I'm not in a state that warrants therapy or someone professional to speak to but I know my options if necessary. My tiredness is fundamentally two-fold:

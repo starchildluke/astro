@@ -4,7 +4,7 @@ description: "You may have noticed the site looks a little different. Here's why
 published: true
 pubDate: '29 Oct 2023'
 layout: ../../layouts/BlogPost.astro
-tags: ["me"]
+tags: ["life"]
 ---
 
 Hello.

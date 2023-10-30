@@ -3,8 +3,7 @@ title: "Beyond tired: Part 6"
 description: "Some thoughts on my mental health and burnout"
 pubDate: "13 Apr 2022"
 layout: ../../layouts/BlogPost.astro
-tags:
-- 'life'
+tags: ['life']
 ---
 
 Hey, it's me&mdash;tired yet again.

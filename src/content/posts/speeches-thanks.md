@@ -4,9 +4,7 @@ description: "Some thoughts on the BLM protests and blogging and stuff."
 published: true
 pubDate: '9 Aug 2020'
 layout: ../../layouts/BlogPost.astro
-tags:
-- racism
-- halt and catch fire
+tags: ['blogging']
 ---
 
 <p><em>(This is a copy of my last newsletter edition.)</a></em></p>

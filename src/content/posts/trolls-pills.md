@@ -4,8 +4,7 @@ description: "Taken from a 2006 NYT article called How to Be a Curmudgeon on the
 published: true
 layout: ../../layouts/BlogPost.astro
 pubDate: "8 Sep 2020"
-tags:
-- 'the web'
+tags: ['the Internet']
 ---
 
 Taken from a 2006 NYT article called [How to Be a Curmudgeon on the Internet](https://www.nytimes.com/2006/01/18/technology/circuits/how-to-be-a-curmudgeon-on-the-internet.html)

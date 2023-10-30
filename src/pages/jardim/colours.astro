@@ -7,7 +7,7 @@ import Footer from '../../components/Footer.astro';
 import Layout from '../../layouts/Layout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import site from '../../data/site.json';
-import jardim from '../../data/jardim.json'
+import Tags from '../../components/Tags.astro';
 
 // PROPS
 
@@ -33,12 +33,8 @@ let description = 'A wiki page all about colours.';
               <p class="desc">{description}</p>
        </section>
             <section>
-             
               <h2 class="wiki-h2">Inner voice</h2>
-                <ul>
-                  <li><a href="/posts/prince-purple-a-visited-css/">/prince-purple-a-visited-css.md</a></li>
-                  <li><a href="/posts/the-colour-of-pi/">/the-colour-of-pi.md</a></li>
-                </ul>
+              <Tags tagName="colours" />
             </section>
       
             <section>

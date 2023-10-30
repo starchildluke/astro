@@ -4,9 +4,7 @@ description: "What we need to keep in mind this year."
 published: true
 pubDate: '6 Jan 2023'
 layout: ../../layouts/BlogPost.astro
-tags:
-- '[me](/about/)'
-- life
+tags: ['life']
 ---
 
 Happy new year! This is a list of stuff I need to remember to do/be/think/feel in 2023. They're not goals or resolutions or anything set in stone. I'll make changes to the list as the year goes on.

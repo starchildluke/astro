@@ -4,8 +4,7 @@ description: "You never know, by answering the question, you could learn somethi
 published: true
 pubDate: "9 Jan 2016"
 layout: ../../layouts/BlogPost.astro
-tags:
-- 'knowledge'
+tags: ['tech']
 ---
 
 We've all been there - we've asked a question on social media that would have been better suited on Google. My worst related crime was asking "who Ayn Rand was". I received mini ridicule and it was a fair cop. But sometimes the question is asked and we'd rather not trudge our way through Google and its index of links to get an answer. Sometimes the question(s) we ask are quite broad and a simple reply would be succinct and quench the knowledge thirst. And there are times when we just want a conversation.

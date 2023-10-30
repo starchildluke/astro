@@ -4,10 +4,7 @@ description: "A way to add some purple to your web design"
 published: true
 pubDate: '11 Mar 2020'
 layout: ../../layouts/BlogPost.astro
-tags:
-- '[the Internet](/wiki/tech/internet/)'
-- CSS
-- '[Prince](/wiki/music/prince/)'
+tags: ['the Internet', 'Prince', 'colours']
 ---
 
 Evert Pot wrote an article about using [a:visited](https://evertpot.com/visited-links/) in your stylesheets.

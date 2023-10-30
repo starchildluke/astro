@@ -4,9 +4,7 @@ description: "Something I've been doing recently is looking for Pokémon nicknam
 published: true
 pubDate: '12 Aug 2023'
 layout: ../../layouts/BlogPost.astro
-tags:
-- '[Pokémon](/wiki/pokemon/)'
-- '[SEO](/wiki/tech/seo/)'
+tags: ['Pokémon', 'SEO']
 ---
 
 Something I've been doing recently is looking for Pokémon nickname ideas. I'll search "Pokémon + nickname" and the site I always go to, regardless of rank, is PKMN.NET. They have a section called The Name Rater where people submit their nicknames and the name rater rates them with a healthy dose of snark and cynicism. The [kayfabe](https://tvtropes.org/pmwiki/pmwiki.php/Main/Kayfabe) was real!

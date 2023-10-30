@@ -4,9 +4,7 @@ description: "Why I love different languages and I admire polyglots."
 published: true
 pubDate: '14 Jun 2018'
 layout: ../../layouts/BlogPost.astro
-tags:
-- '[the web](/wiki/tech/internet/)'
-- css
+tags: ['the Internet']
 ---
 
 I love different languages and I admire polyglots. I'm currently learning Portuguese and brushing up on Spanish and French on Duolingo and my reading is much better than my speaking. But what if you had impaired sight and needed to use a screen reader. <a href="https://www.youtube.com/watch?v=ox5QVbZSPBk">Foreign languages written on English websites are read in English voices as if they were English words</a>. That's no good to a foreign language speaker. But there is a solution.

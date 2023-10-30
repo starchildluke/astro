@@ -4,8 +4,7 @@ description: "My name is Luke and I'm Probably Autistic."
 published: true
 pubDate: '10 May 2023'
 layout: ../../layouts/BlogPost.astro
-tags:
-- '[me](/about/)'
+tags: ['life']
 ---
 
 My name is Luke and I'm Probably Autistic.

@@ -4,10 +4,7 @@ description: "I've had 12 phones to date. Here they all are."
 published: true
 pubDate: "21 Jun 2018"
 layout: ../../layouts/BlogPost.astro
-tags:
-- '[tech](/wiki/tech/)'
-- '[me](/about/)'
-- phones
+tags: ['tech']
 ---
 
 I've had 12 phones to date. The **HTC Wildfire** was the worst (or, rather, the handsets Vodafone gave me) while the **Pixel 3A XL** is my favourite so far.
