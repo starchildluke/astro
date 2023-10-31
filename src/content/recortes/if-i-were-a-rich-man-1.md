@@ -2,7 +2,7 @@
 title: 'If I were a rich man #1'
 description: "Things I'd want if I was rich."
 pubDate: '22 Aug 2020'
-layout: ../../layouts/BlogPost.astro
+layout: ../../layouts/Recortes.astro
 tags: ['art']
 ---
 

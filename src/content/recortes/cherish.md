@@ -3,7 +3,7 @@ title: 'Cherish'
 description: "Whoever or whatever you love, cherish them."
 published: true
 pubDate: '2 Aug 2021'
-layout: ../../layouts/BlogPost.astro
+layout: ../../layouts/Recortes.astro
 tags: ['life']
 ---
 

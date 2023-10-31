@@ -188,9 +188,30 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"lists": {
+"acceptable-volume-numbers.md": {
+	id: "acceptable-volume-numbers.md";
+  slug: "acceptable-volume-numbers";
+  body: string;
+  collection: "lists";
+  data: any
+} & { render(): Render[".md"] };
 "artistic-inspirations.md": {
 	id: "artistic-inspirations.md";
   slug: "artistic-inspirations";
+  body: string;
+  collection: "lists";
+  data: any
+} & { render(): Render[".md"] };
+"computer-words.md": {
+	id: "computer-words.md";
+  slug: "computer-words";
+  body: string;
+  collection: "lists";
+  data: any
+} & { render(): Render[".md"] };
+"its-binary-time.md": {
+	id: "its-binary-time.md";
+  slug: "its-binary-time";
   body: string;
   collection: "lists";
   data: any
@@ -219,6 +240,13 @@ declare module 'astro:content' {
 "list-of-favourite-scents.md": {
 	id: "list-of-favourite-scents.md";
   slug: "list-of-favourite-scents";
+  body: string;
+  collection: "lists";
+  data: any
+} & { render(): Render[".md"] };
+"media-interests.md": {
+	id: "media-interests.md";
+  slug: "media-interests";
   body: string;
   collection: "lists";
   data: any
@@ -395,13 +423,6 @@ declare module 'astro:content' {
   collection: "posts";
   data: any
 } & { render(): Render[".md"] };
-"acceptable-volume-numbers.md": {
-	id: "acceptable-volume-numbers.md";
-  slug: "acceptable-volume-numbers";
-  body: string;
-  collection: "posts";
-  data: any
-} & { render(): Render[".md"] };
 "ai-is-a-lot-like-an-orange.md": {
 	id: "ai-is-a-lot-like-an-orange.md";
   slug: "ai-is-a-lot-like-an-orange";
@@ -535,13 +556,6 @@ declare module 'astro:content' {
   collection: "posts";
   data: any
 } & { render(): Render[".md"] };
-"black-survival-is-black-excellence.md": {
-	id: "black-survival-is-black-excellence.md";
-  slug: "black-survival-is-black-excellence";
-  body: string;
-  collection: "posts";
-  data: any
-} & { render(): Render[".md"] };
 "blackness.md": {
 	id: "blackness.md";
   slug: "blackness";
@@ -594,13 +608,6 @@ declare module 'astro:content' {
 "ceci-nest-pas-un-blog.md": {
 	id: "ceci-nest-pas-un-blog.md";
   slug: "ceci-nest-pas-un-blog";
-  body: string;
-  collection: "posts";
-  data: any
-} & { render(): Render[".md"] };
-"cherish.md": {
-	id: "cherish.md";
-  slug: "cherish";
   body: string;
   collection: "posts";
   data: any
@@ -724,13 +731,6 @@ declare module 'astro:content' {
   collection: "posts";
   data: any
 } & { render(): Render[".md"] };
-"happy-accident-1.md": {
-	id: "happy-accident-1.md";
-  slug: "happy-accident-1";
-  body: string;
-  collection: "posts";
-  data: any
-} & { render(): Render[".md"] };
 "have-you-heard-of-codeswitching.md": {
 	id: "have-you-heard-of-codeswitching.md";
   slug: "have-you-heard-of-codeswitching";
@@ -780,13 +780,6 @@ declare module 'astro:content' {
   collection: "posts";
   data: any
 } & { render(): Render[".md"] };
-"if-i-were-a-rich-man-1.md": {
-	id: "if-i-were-a-rich-man-1.md";
-  slug: "if-i-were-a-rich-man-1";
-  body: string;
-  collection: "posts";
-  data: any
-} & { render(): Render[".md"] };
 "if-nobody-listened.md": {
 	id: "if-nobody-listened.md";
   slug: "if-nobody-listened";
@@ -804,13 +797,6 @@ declare module 'astro:content' {
 "introducing-ralts.md": {
 	id: "introducing-ralts.md";
   slug: "introducing-ralts";
-  body: string;
-  collection: "posts";
-  data: any
-} & { render(): Render[".md"] };
-"its-binary-time.md": {
-	id: "its-binary-time.md";
-  slug: "its-binary-time";
   body: string;
   collection: "posts";
   data: any
@@ -874,13 +860,6 @@ declare module 'astro:content' {
 "link-dump-1.md": {
 	id: "link-dump-1.md";
   slug: "link-dump-1";
-  body: string;
-  collection: "posts";
-  data: any
-} & { render(): Render[".md"] };
-"media-interests.md": {
-	id: "media-interests.md";
-  slug: "media-interests";
   body: string;
   collection: "posts";
   data: any
@@ -1109,13 +1088,6 @@ declare module 'astro:content' {
   collection: "posts";
   data: any
 } & { render(): Render[".md"] };
-"so-cansado.md": {
-	id: "so-cansado.md";
-  slug: "so-cansado";
-  body: string;
-  collection: "posts";
-  data: any
-} & { render(): Render[".md"] };
 "social-anxiety.md": {
 	id: "social-anxiety.md";
   slug: "social-anxiety";
@@ -1133,13 +1105,6 @@ declare module 'astro:content' {
 "somebody-on-life-learning.md": {
 	id: "somebody-on-life-learning.md";
   slug: "somebody-on-life-learning";
-  body: string;
-  collection: "posts";
-  data: any
-} & { render(): Render[".md"] };
-"sound-familiar.md": {
-	id: "sound-familiar.md";
-  slug: "sound-familiar";
   body: string;
   collection: "posts";
   data: any
@@ -1298,13 +1263,6 @@ declare module 'astro:content' {
   collection: "posts";
   data: any
 } & { render(): Render[".md"] };
-"visionary.md": {
-	id: "visionary.md";
-  slug: "visionary";
-  body: string;
-  collection: "posts";
-  data: any
-} & { render(): Render[".md"] };
 "wander-in-porto.md": {
 	id: "wander-in-porto.md";
   slug: "wander-in-porto";
@@ -1370,9 +1328,23 @@ declare module 'astro:content' {
 } & { render(): Render[".md"] };
 };
 "recortes": {
-"computer-words.md": {
-	id: "computer-words.md";
-  slug: "computer-words";
+"black-survival-is-black-excellence.md": {
+	id: "black-survival-is-black-excellence.md";
+  slug: "black-survival-is-black-excellence";
+  body: string;
+  collection: "recortes";
+  data: any
+} & { render(): Render[".md"] };
+"cherish.md": {
+	id: "cherish.md";
+  slug: "cherish";
+  body: string;
+  collection: "recortes";
+  data: any
+} & { render(): Render[".md"] };
+"happy-accident-1.md": {
+	id: "happy-accident-1.md";
+  slug: "happy-accident-1";
   body: string;
   collection: "recortes";
   data: any
@@ -1384,9 +1356,37 @@ declare module 'astro:content' {
   collection: "recortes";
   data: any
 } & { render(): Render[".md"] };
+"if-i-were-a-rich-man-1.md": {
+	id: "if-i-were-a-rich-man-1.md";
+  slug: "if-i-were-a-rich-man-1";
+  body: string;
+  collection: "recortes";
+  data: any
+} & { render(): Render[".md"] };
+"so-cansado.md": {
+	id: "so-cansado.md";
+  slug: "so-cansado";
+  body: string;
+  collection: "recortes";
+  data: any
+} & { render(): Render[".md"] };
+"sound-familiar.md": {
+	id: "sound-familiar.md";
+  slug: "sound-familiar";
+  body: string;
+  collection: "recortes";
+  data: any
+} & { render(): Render[".md"] };
 "vgc-notes.md": {
 	id: "vgc-notes.md";
   slug: "vgc-notes";
+  body: string;
+  collection: "recortes";
+  data: any
+} & { render(): Render[".md"] };
+"visionary.md": {
+	id: "visionary.md";
+  slug: "visionary";
   body: string;
   collection: "recortes";
   data: any

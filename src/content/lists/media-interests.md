@@ -3,7 +3,7 @@ title: 'Media interests'
 description: "A list of my media interests including Pokémon, modernism, and Michael Jackson"
 published: true
 pubDate: '3 Aug 2021'
-layout: ../../layouts/BlogPost.astro
+layout: ../../layouts/Lists.astro
 tags: ["life"]
 ---
 

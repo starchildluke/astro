@@ -16,13 +16,14 @@ const { canonicalURL = Astro.url } = Astro.props;
 // METADATA
 
 let title = 'Recortes';
-let description = "Cuttings, notes and things";
+let description = "Cuttings, notes and things. These are my 'recortes', or 'cuttings'. You know that scene in Bruce Almighty where he had all those Post-It notes everywhere? This is a neater looking version of that, minus the prayers. It's a rare glimpse into my mind and the many thoughts I have about things that matter to me.";
 
 export async function getStaticPaths({paginate}) {
   const allPosts = await getCollection('recortes');
+  const sortedPosts = allPosts.sort((a, b) => new Date(b.data.pubDate) - new Date(a.data.pubDate));
   
   // Return a paginated collection of paths for all posts
-  return paginate(allPosts, {pageSize: 25});
+  return paginate(sortedPosts, {pageSize: 25});
 }
 
 const { page } = Astro.props;

@@ -2,7 +2,7 @@
 title: 'Computer words'
 published: true
 pubDate: '18 Feb 2019'
-layout: ../../layouts/Recortes.astro
+layout: ../../layouts/Lists.astro
 ---
 
 * Applet
