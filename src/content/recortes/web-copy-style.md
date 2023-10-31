@@ -3,9 +3,7 @@ title: 'Web copy style'
 published: true
 pubDate: '13 May 2023'
 layout: ../../layouts/Recortes.astro
-tags:
-  - '[the Internet](/wiki/tech/internet/)'
-  - 'writing'
+tags: ['the Internet', 'writing']
 ---
 
 <small><em>(Disclaimer: this was originally published by Matt Pfeffer in 2002. <a href="http://web.archive.org/web/20220127224548/http://www.provenanceunknown.com/edit/style.html">It is archived on the Web Archive</a> but just in case the US courts decide to destroy it, I'm putting it here for preservation. In some cases, links have been amended if they were broken or outdated. Copyright ©2001-2003 Matt Pfeffer.)</em></small>

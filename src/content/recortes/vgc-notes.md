@@ -3,8 +3,7 @@ title: 'VGC Notes'
 published: true
 pubDate: '8 Apr 2023'
 layout: ../../layouts/Recortes.astro
-tags:
-  - '[Pokémon](/wiki/pokemon/)'
+tags: ['Pokémon']
 ---
 
 ## Scarlet & Violet
