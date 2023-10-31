@@ -778,8 +778,8 @@
         "url": "/posts/cherish/",
         "link_data": [
             {
-                "prev": "/posts/boats-storms-rockets/",
-                "title": "Boats, storms, and rockets",
+                "prev": "/posts/beached/",
+                "title": "Beached",
                 "date": "2021-07-21"
             },
             {
@@ -790,11 +790,11 @@
         ]
     },
     {
-        "url": "/posts/boats-storms-rockets/",
+        "url": "/posts/beached/",
         "link_data": [
             {
-                "prev": "/posts/beached/",
-                "title": "Beached",
+                "prev": "/posts/boats-storms-rockets/",
+                "title": "Boats, storms, and rockets",
                 "date": "2021-07-21"
             },
             {
@@ -805,7 +805,7 @@
         ]
     },
     {
-        "url": "/posts/beached/",
+        "url": "/posts/boats-storms-rockets/",
         "link_data": [
             {
                 "prev": "/posts/happy-accident-1/",
@@ -813,8 +813,8 @@
                 "date": "2021-07-18"
             },
             {
-                "next": "/posts/boats-storms-rockets/",
-                "title": "Boats, storms, and rockets",
+                "next": "/posts/beached/",
+                "title": "Beached",
                 "date": "2021-07-21"
             }
         ]
@@ -828,8 +828,8 @@
                 "date": "2021-07-12"
             },
             {
-                "next": "/posts/beached/",
-                "title": "Beached",
+                "next": "/posts/boats-storms-rockets/",
+                "title": "Boats, storms, and rockets",
                 "date": "2021-07-21"
             }
         ]
@@ -913,29 +913,14 @@
         "url": "/posts/they-dont-see-us-as-human/",
         "link_data": [
             {
-                "prev": "/posts/where-theres-gold/",
-                "title": "Where there's gold",
-                "date": "2021-04-15"
-            },
-            {
-                "next": "/posts/videos-ive-been-watching-to-keep-me-going/",
-                "title": "Videos I've been watching to keep me going",
-                "date": "2021-05-05"
-            }
-        ]
-    },
-    {
-        "url": "/posts/where-theres-gold/",
-        "link_data": [
-            {
                 "prev": "/posts/unusual-side-effect/",
                 "title": "Unusual side effect",
                 "date": "2021-03-26"
             },
             {
-                "next": "/posts/they-dont-see-us-as-human/",
-                "title": "They don't see us as human",
-                "date": "2021-04-22"
+                "next": "/posts/videos-ive-been-watching-to-keep-me-going/",
+                "title": "Videos I've been watching to keep me going",
+                "date": "2021-05-05"
             }
         ]
     },
@@ -948,9 +933,9 @@
                 "date": "2021-03-24"
             },
             {
-                "next": "/posts/where-theres-gold/",
-                "title": "Where there's gold",
-                "date": "2021-04-15"
+                "next": "/posts/they-dont-see-us-as-human/",
+                "title": "They don't see us as human",
+                "date": "2021-04-22"
             }
         ]
     },
@@ -1363,8 +1348,8 @@
         "url": "/posts/talk-work-think-different-thanks-web/",
         "link_data": [
             {
-                "prev": "/posts/kamala-harris-is-still-a-cop/",
-                "title": "Kamala Harris is still a cop",
+                "prev": "/posts/still-elephant/",
+                "title": "Still Elephant",
                 "date": "2020-08-13"
             },
             {
@@ -1375,11 +1360,11 @@
         ]
     },
     {
-        "url": "/posts/kamala-harris-is-still-a-cop/",
+        "url": "/posts/still-elephant/",
         "link_data": [
             {
-                "prev": "/posts/still-elephant/",
-                "title": "Still Elephant",
+                "prev": "/posts/kamala-harris-is-still-a-cop/",
+                "title": "Kamala Harris is still a cop",
                 "date": "2020-08-13"
             },
             {
@@ -1390,7 +1375,7 @@
         ]
     },
     {
-        "url": "/posts/still-elephant/",
+        "url": "/posts/kamala-harris-is-still-a-cop/",
         "link_data": [
             {
                 "prev": "/posts/gains/",
@@ -1398,8 +1383,8 @@
                 "date": "2020-08-11"
             },
             {
-                "next": "/posts/kamala-harris-is-still-a-cop/",
-                "title": "Kamala Harris is still a cop",
+                "next": "/posts/still-elephant/",
+                "title": "Still Elephant",
                 "date": "2020-08-13"
             }
         ]
@@ -1413,8 +1398,8 @@
                 "date": "2020-08-10"
             },
             {
-                "next": "/posts/still-elephant/",
-                "title": "Still Elephant",
+                "next": "/posts/kamala-harris-is-still-a-cop/",
+                "title": "Kamala Harris is still a cop",
                 "date": "2020-08-13"
             }
         ]
@@ -2008,29 +1993,14 @@
         "url": "/posts/to-be-childlike-and-not-childish/",
         "link_data": [
             {
-                "prev": "/posts/last-name-jazz-first-name-hugh/",
-                "title": "Last Name Jazz, First Name Hugh [Playlist]",
-                "date": "2017-05-18"
-            },
-            {
-                "next": "/posts/my-new-obsession-is-sega/",
-                "title": "My New Obsession Is... Sega",
-                "date": "2017-06-07"
-            }
-        ]
-    },
-    {
-        "url": "/posts/last-name-jazz-first-name-hugh/",
-        "link_data": [
-            {
                 "prev": "/posts/my-idea-debt/",
                 "title": "My Idea Debt",
                 "date": "2017-02-01"
             },
             {
-                "next": "/posts/to-be-childlike-and-not-childish/",
-                "title": "To Be Childlike And Not Childish",
-                "date": "2017-06-04"
+                "next": "/posts/my-new-obsession-is-sega/",
+                "title": "My New Obsession Is... Sega",
+                "date": "2017-06-07"
             }
         ]
     },
@@ -2043,9 +2013,9 @@
                 "date": "2017-02-01"
             },
             {
-                "next": "/posts/last-name-jazz-first-name-hugh/",
-                "title": "Last Name Jazz, First Name Hugh [Playlist]",
-                "date": "2017-05-18"
+                "next": "/posts/to-be-childlike-and-not-childish/",
+                "title": "To Be Childlike And Not Childish",
+                "date": "2017-06-04"
             }
         ]
     },
