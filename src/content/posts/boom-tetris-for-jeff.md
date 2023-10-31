@@ -7,6 +7,6 @@ layout: ../../layouts/BlogPost.astro
 tags: ['gaming']
 ---
 
-This video gives me unbridled joy and Jeff Moore is arguably my favourite gamer ever. He's such a cool guy and an awesome Tetris player.
+This video of Jeff Moore at the Tetris World Championships in 2016 gives me unbridled joy and he is arguably my favourite gamer ever. He's such a cool guy and an awesome Tetris player, as shown in his 2nd place finish.
 
-<iframe width="100%" height="540" src="https://www.youtube.com/embed/RlnlDKznIaw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[[Watch it on YouTube](https://www.youtube.com/watch?v=RlnlDKznIaw)]

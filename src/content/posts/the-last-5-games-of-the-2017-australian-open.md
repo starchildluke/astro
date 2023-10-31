@@ -7,6 +7,8 @@ layout: ../../layouts/BlogPost.astro
 tags: ['Roger Federer', 'sport']
 ---
 
-Never gets old.
+Never gets old. The last 5 Games of the 2017 Australian Open Men's Final is probably my favourite of all-time (not including the whole match between Federer and Djokovic at the French Open in 2011).
 
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/Fva4l9j9QLk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+Rafa was so close but Roger just [had that dawg in him](https://knowyourmeme.com/memes/got-that-dog-in-him).
+
+[[Watch it on YouTube](https://www.youtube.com/watch?v=Fva4l9j9QLk)]
