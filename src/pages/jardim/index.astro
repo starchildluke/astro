@@ -26,6 +26,29 @@ let description = "A digital garden, or jardim, full of the things I love, with 
 
 ---
 <Layout {title} {description}>
+
+  <style>
+    .jardim-list a {
+      display:block;
+      border-bottom: 0.5px solid #295f2b;
+      padding: 1.4rem 1.4rem 0 1.4rem;
+      text-decoration: none;
+    }
+
+    .jardim-list a:hover {
+      background: #d8dfd7;
+    }
+
+    .jardim-list a p:first-child {
+      padding-bottom: 0;
+    }
+
+    .jardim-list a p:last-child {
+      color: black;
+      font-weight: normal;
+    }
+  </style>
+
       <main class="layout">
         <article class="content">
             <section class="intro">
@@ -36,14 +59,13 @@ let description = "A digital garden, or jardim, full of the things I love, with 
           <p>For individual notes, you can also read my mini notes or <span lang="pt"><a href="/recortes/">recortes</a></span> ("cuttings" in English&mdash;to go with the garden theme).</p>
         </section>
       <section>
-    <section>
-       <ul>
+    <section class="jardim-list">
             {jardim.branches.map((item) => (
-              <li>
-            <a href={item.url}>{item.name}</a>
-          </li>
+            <a href={item.url}>
+              <p>{item.name}</p>
+              <p>{item.desc}</p>
+            </a>
              ))}
-        </ul>
     </section>
     </section>
       </article>
