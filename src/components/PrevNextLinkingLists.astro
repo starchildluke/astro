@@ -1,0 +1,34 @@
+---
+import prevNextLists from '../data/next_prev_lists.json';
+
+function prevNextLinking() {
+
+  for(let i = 0; i < prevNextLists.length; i++)
+{
+  if(prevNextLists[0]["url"] == Astro.url.pathname)
+  {
+    let prevLink = prevNextLists[0]["link_data"][0]["prev"]
+    let prevTitle = prevNextLists[0]["link_data"][0]["title"]
+    let nextLink = "";
+    let nextTitle = "";
+    return "<a href=" + prevLink + " class='post-pagination-item post-pagination-prev' >" + prevTitle + "</a>";
+  } else if(prevNextLists[prevNextLists.length - 1]["url"] == Astro.url.pathname) {
+    let prevLink = "";
+    let prevTitle = "";
+    let nextLink = prevNextLists[prevNextLists.length - 1]["link_data"][0]["next"]
+    let nextTitle = prevNextLists[prevNextLists.length - 1]["link_data"][0]["title"]
+    return "<a href=" + nextLink + " class='post-pagination-item post-pagination-next' >" + nextTitle + "</a>";
+  } else if(prevNextLists[i]["url"] == Astro.url.pathname) {
+    let prevLink = prevNextLists[i]["link_data"][0]["prev"]
+    let prevTitle = prevNextLists[i]["link_data"][0]["title"]
+    let nextLink = prevNextLists[i]["link_data"][1]["next"]
+    let nextTitle = prevNextLists[i]["link_data"][1]["title"]
+    return "<a href=" + prevLink + " class='post-pagination-item post-pagination-prev'>" + prevTitle + "</a>"  + " " + "<a href=" + nextLink + " class='post-pagination-item post-pagination-next' >" + nextTitle + "</a>";
+  }
+}
+}
+---
+
+<div class="post-pagination">
+  <Fragment set:html={prevNextLinking()} />
+</div>
