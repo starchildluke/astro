@@ -44,7 +44,8 @@ const recortes = defineCollection({
 			month: 'short',
 			year: 'numeric',
 		})),
-		layout: z.string()
+		layout: z.string(),
+		tags: z.array(z.string()).optional()
 	}),
 });
 
@@ -83,7 +84,8 @@ const lists = defineCollection({
 			.string()
 			.or(z.date())
 			.transform((val) => new Date(val)),
-		layout: z.string()
+		layout: z.string(),
+		tags: z.array(z.string()).optional()
 	}),
 });
 

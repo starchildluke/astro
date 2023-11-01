@@ -7,7 +7,17 @@ const posts = await getCollection('posts', ({ data }) => {
   return data.tags.includes(tagName);
 });
 
-const sortedPosts = posts.sort((a, b) => a.data.title.localeCompare(b.data.title));
+const recortes = await getCollection('recortes', ({ data }) => {
+  return data.tags.includes(tagName);
+});
+
+const lists = await getCollection('lists', ({ data }) => {
+  return data.tags.includes(tagName);
+});
+
+const combinedPosts = posts.concat(recortes, lists);
+
+const sortedPosts = combinedPosts.sort((a, b) => a.data.title.localeCompare(b.data.title));
 
 ---
 

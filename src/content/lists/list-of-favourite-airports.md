@@ -3,6 +3,7 @@ title: 'List of favourite airports'
 published: true
 pubDate: '24 Nov 2022'
 layout: ../../layouts/Lists.astro
+tags: ['travel']
 ---
 
 1. Lisbon

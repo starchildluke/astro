@@ -3,6 +3,7 @@ title: 'List of short RPGs'
 published: true
 pubDate: '4 Sep 2023'
 layout: ../../layouts/Lists.astro
+tags: ['gaming']
 ---
 
 If you're looking for a quick RPG to get you through a weekend, look no further than this list. All of these RPGs should take less than 24 hours to complete in total.
