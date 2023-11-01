@@ -16,6 +16,21 @@ const posts = defineCollection({
 	})
 });
 
+const mlog = defineCollection({
+	type: 'content',
+	schema: z.object({
+		title: z.string(),
+		description: z.string().optional(),
+		image: z.string().optional(),
+		tags: z.array(z.string()).optional(),
+		pubDate: z
+			.string()
+			.or(z.date())
+			.transform((val) => new Date(val)),
+		layout: z.string()
+	})
+});
+
 const recortes = defineCollection({
 	type: 'content',
 	schema: z.object({
@@ -72,4 +87,4 @@ const lists = defineCollection({
 	}),
 });
 
-export const collections = { 'posts': posts, 'recortes': recortes, 'release-notes': releaseNotes, 'morsels': morsels, 'lists': lists };
+export const collections = { 'posts': posts, 'recortes': recortes, 'release-notes': releaseNotes, 'morsels': morsels, 'lists': lists, 'mlog': mlog };

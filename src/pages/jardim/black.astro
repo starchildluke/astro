@@ -29,6 +29,10 @@ let description = "A wiki page all about blackness.";
 
 ---
 <Layout {title} {description}>
+  <style>
+    .wiki-h2 ~ blockquote p {padding: 0 0 1rem;}
+    .wiki-h2 ~ blockquote cite {font-size: 0.75rem;}
+  </style>
     <main class="layout">
       <article class="content">
         <Breadcrumbs title={title}/>
@@ -61,9 +65,13 @@ let description = "A wiki page all about blackness.";
               ))}
             </ul>
             <h2 class="wiki-h2">Second opinions</h2>
-            <ul>
-              <li><a href="https://daily.jstor.org/the-history-of-black-owned-record-labels/">The History of Black-Owned Record Labels</a></li>
-            </ul>
+              <ul>
+                <li><a href="https://daily.jstor.org/the-history-of-black-owned-record-labels/">The History of Black-Owned Record Labels</a></li>
+              </ul>
+              <blockquote>
+              <p>Perhaps that’s what all human relationship boil down to: Would you save my life? or would you take it?</p>
+              <cite>A quote by Toni Morrison from ‘Song of Solomon’</cite>
+            </blockquote>
           </section>
         </section>
       </article>

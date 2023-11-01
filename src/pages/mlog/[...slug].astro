@@ -1,0 +1,36 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import StructuredData from '../../components/StructuredData.astro';
+import Header from '../../components/Header.astro';
+import Morsels from '../../layouts/Morsels.astro';
+import Layout from '../../layouts/Layout.astro';
+import Footer from '../../components/Footer.astro';
+import { CollectionEntry, getCollection } from 'astro:content';
+import FormattedDate from '../../components/FormattedDate.astro';
+import PrevNextLinkingMlog from '../../components/PrevNextLinkingMlog.astro';
+
+export async function getStaticPaths() {
+  const mlog = await getCollection('mlog');
+  return mlog.map((post) => ({
+    params: { slug: post.slug },
+    props: post,
+  }));
+}
+type Props = CollectionEntry<'mlog'>;
+
+const post = Astro.props;
+const { Content } = await post.render();
+
+---
+<Layout title={post.data.title} description={post.data.description}>
+<Morsels {...post.data}>
+  <main class="layout">
+    <article class="content">
+      <p class="publish-date"><FormattedDate date={post.data.pubDate} /></p>
+        <h1>{post.data.title}</h1>
+          <Content />
+            <PrevNextLinkingMlog />
+    </article>
+  </main>
+<Footer />
+</Morsels>
