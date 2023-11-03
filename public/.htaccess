@@ -14,8 +14,8 @@ RedirectMatch 301 /archive/jamiroquai-rock-dust-light-star/ /post/jamiroquai-roc
 RewriteRule ^/?post/(.\*)$ /posts/$1 [R,L]
 RewriteRule ^/?wiki/(.\*)$ /jardim/$1 [R,L]
 RewriteRule ^/?wikinotes/(.\*)$ /recortes/$1 [R,L]
-RewriteRule ^/?post/release-notes/(.\*)$ /release-notes/$1 [R,L]
-RewriteRule ^/?post/morsels/(.\*)$ /morsels/$1 [R,L]
+RewriteRule ^/?(.\*)/release-notes/(.\*)$ /release-notes/$1 [R,L]
+RewriteRule ^/?(.\*)/morsels/(.\*)$ /morsels/$1 [R,L]
 
 ErrorDocument 404 /404.html
 
