@@ -1,11 +1,26 @@
 [
     {
+        "url": "/posts/deleting-twitter/",
+        "link_data": [
+            {
+                "prev": "/posts/site-redesign/",
+                "title": "I redesigned my site a little",
+                "date": "2023-10-29"
+            }
+        ]
+    },
+    {
         "url": "/posts/site-redesign/",
         "link_data": [
             {
                 "prev": "/posts/i-also-love-my-website/",
                 "title": "I also love my website",
                 "date": "2023-10-23"
+            },
+            {
+                "next": "/posts/deleting-twitter/",
+                "title": "Deleting Twitter",
+                "date": "2023-11-03"
             }
         ]
     },
@@ -1213,29 +1228,14 @@
         "url": "/posts/saddam-hussein-bacon-number-3/",
         "link_data": [
             {
-                "prev": "/posts/kamala-harris-is-still-a-cop/",
-                "title": "Kamala Harris is still a cop",
+                "prev": "/posts/still-elephant/",
+                "title": "Still Elephant",
                 "date": "2020-08-13"
             },
             {
                 "next": "/posts/headless-chickens/",
                 "title": "Headless chickens",
                 "date": "2020-08-16"
-            }
-        ]
-    },
-    {
-        "url": "/posts/kamala-harris-is-still-a-cop/",
-        "link_data": [
-            {
-                "prev": "/posts/still-elephant/",
-                "title": "Still Elephant",
-                "date": "2020-08-13"
-            },
-            {
-                "next": "/posts/saddam-hussein-bacon-number-3/",
-                "title": "Saddam Hussein had a Bacon number of 3",
-                "date": "2020-08-14"
             }
         ]
     },
@@ -1248,9 +1248,9 @@
                 "date": "2020-08-13"
             },
             {
-                "next": "/posts/kamala-harris-is-still-a-cop/",
-                "title": "Kamala Harris is still a cop",
-                "date": "2020-08-13"
+                "next": "/posts/saddam-hussein-bacon-number-3/",
+                "title": "Saddam Hussein had a Bacon number of 3",
+                "date": "2020-08-14"
             }
         ]
     },
@@ -1258,13 +1258,28 @@
         "url": "/posts/talk-work-think-different-thanks-web/",
         "link_data": [
             {
+                "prev": "/posts/kamala-harris-is-still-a-cop/",
+                "title": "Kamala Harris is still a cop",
+                "date": "2020-08-13"
+            },
+            {
+                "next": "/posts/still-elephant/",
+                "title": "Still Elephant",
+                "date": "2020-08-13"
+            }
+        ]
+    },
+    {
+        "url": "/posts/kamala-harris-is-still-a-cop/",
+        "link_data": [
+            {
                 "prev": "/posts/gains/",
                 "title": "Gains",
                 "date": "2020-08-11"
             },
             {
-                "next": "/posts/still-elephant/",
-                "title": "Still Elephant",
+                "next": "/posts/talk-work-think-different-thanks-web/",
+                "title": "We talk, work, and think different thanks to the Web",
                 "date": "2020-08-13"
             }
         ]
@@ -1278,8 +1293,8 @@
                 "date": "2020-08-10"
             },
             {
-                "next": "/posts/talk-work-think-different-thanks-web/",
-                "title": "We talk, work, and think different thanks to the Web",
+                "next": "/posts/kamala-harris-is-still-a-cop/",
+                "title": "Kamala Harris is still a cop",
                 "date": "2020-08-13"
             }
         ]
