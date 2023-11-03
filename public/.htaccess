@@ -12,6 +12,7 @@ RewriteCond %{SERVER_PORT} 80
 RewriteRule ^(.*)$ https://lukealexdavis.co.uk/$1 [R,L]     
 RedirectMatch 301 /archive/jamiroquai-rock-dust-light-star/ /post/jamiroquai-rock-dust-light-star-review/
 RewriteRule ^/?post/(.\*)$ /posts/$1 [R,L]
+RewriteRule ^/?wiki/(.\*)$ /jardim/$1 [R,L]
 RewriteRule ^/?wikinotes/(.\*)$ /recortes/$1 [R,L]
 RewriteRule ^/?post/release-notes/(.\*)$ /release-notes/$1 [R,L]
 RewriteRule ^/?post/morsels/(.\*)$ /morsels/$1 [R,L]
