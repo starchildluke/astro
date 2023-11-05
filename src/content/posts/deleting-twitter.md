@@ -17,4 +17,4 @@ I feel for the people involved with grassroots organisations who had built netwo
 
 So I'm contemplating deleting my account. A big part of me wanted to write this to hold myself accountable rather than thinking anyone reading would care. Anyone close to me has contact with me elsewhere and anyone who'd "miss" me could have spoken to me at any point up to now. I'm reachable if you know where to look. As to when I might do this? I dunno. Soon? I'll have to think about that too.
 
-**Update (5/11/23)**: Today, I deactiveated my Twitter account deactivated and downloaded my archive. In 30 days, it'll be no more.
+**Update (5/11/23)**: Today, I deactivated my Twitter account deactivated and downloaded my archive. In 30 days, it'll be no more.
