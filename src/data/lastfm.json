@@ -2105,11 +2105,43 @@
                         "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"
                     }
                 ],
-                "mbid": "80b3cf5e-18fe-4c59-98c7-e5bb87210710",
-                "url": "https://www.last.fm/music/The+Roots",
-                "playcount": 299,
+                "mbid": "",
+                "url": "https://www.last.fm/music/James+Brown",
+                "playcount": 301,
                 "@attr": {
                     "rank": "66"
+                },
+                "name": "James Brown"
+            },
+            {
+                "streamable": "0",
+                "image": [
+                    {
+                        "size": "small",
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
+                    },
+                    {
+                        "size": "medium",
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
+                    },
+                    {
+                        "size": "large",
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
+                    },
+                    {
+                        "size": "extralarge",
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"
+                    },
+                    {
+                        "size": "mega",
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"
+                    }
+                ],
+                "mbid": "80b3cf5e-18fe-4c59-98c7-e5bb87210710",
+                "url": "https://www.last.fm/music/The+Roots",
+                "playcount": 300,
+                "@attr": {
+                    "rank": "67"
                 },
                 "name": "The Roots"
             },
@@ -2141,7 +2173,7 @@
                 "url": "https://www.last.fm/music/The+Foreign+Exchange",
                 "playcount": 297,
                 "@attr": {
-                    "rank": "67"
+                    "rank": "68"
                 },
                 "name": "The Foreign Exchange"
             },
@@ -2173,7 +2205,7 @@
                 "url": "https://www.last.fm/music/Alicia+Keys",
                 "playcount": 295,
                 "@attr": {
-                    "rank": "68"
+                    "rank": "69"
                 },
                 "name": "Alicia Keys"
             },
@@ -2205,41 +2237,9 @@
                 "url": "https://www.last.fm/music/Simply+Red",
                 "playcount": 295,
                 "@attr": {
-                    "rank": "69"
-                },
-                "name": "Simply Red"
-            },
-            {
-                "streamable": "0",
-                "image": [
-                    {
-                        "size": "small",
-                        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
-                    },
-                    {
-                        "size": "medium",
-                        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
-                    },
-                    {
-                        "size": "large",
-                        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
-                    },
-                    {
-                        "size": "extralarge",
-                        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"
-                    },
-                    {
-                        "size": "mega",
-                        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"
-                    }
-                ],
-                "mbid": "",
-                "url": "https://www.last.fm/music/James+Brown",
-                "playcount": 294,
-                "@attr": {
                     "rank": "70"
                 },
-                "name": "James Brown"
+                "name": "Simply Red"
             },
             {
                 "streamable": "0",
@@ -2683,7 +2683,7 @@
                 ],
                 "mbid": "96b1d906-0fda-406d-beb6-19c6758998df",
                 "url": "https://www.last.fm/music/Robert+Palmer",
-                "playcount": 229,
+                "playcount": 230,
                 "@attr": {
                     "rank": "84"
                 },
@@ -8123,7 +8123,7 @@
                 ],
                 "mbid": "d258b097-fd38-44be-9828-9481d0a989db",
                 "url": "https://www.last.fm/music/Elaquent",
-                "playcount": 61,
+                "playcount": 62,
                 "@attr": {
                     "rank": "254"
                 },
@@ -32010,5 +32010,5 @@
             "perPage": "1000"
         }
     },
-    "last updated": "04 November 2023"
+    "last updated": "05 November 2023"
 }
