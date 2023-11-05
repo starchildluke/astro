@@ -16,3 +16,5 @@ And then Elon Musk bought Twitter and it somehow got _worse_. Now, it's utterly 
 I feel for the people involved with grassroots organisations who had built networks to people fighting fascism now losing those connections and having to be subjected to it all with little-to-no means of combatting it on the platform.
 
 So I'm contemplating deleting my account. A big part of me wanted to write this to hold myself accountable rather than thinking anyone reading would care. Anyone close to me has contact with me elsewhere and anyone who'd "miss" me could have spoken to me at any point up to now. I'm reachable if you know where to look. As to when I might do this? I dunno. Soon? I'll have to think about that too.
+
+**Update (5/11/23)**: Today, I deactiveated my Twitter account deactivated and downloaded my archive. In 30 days, it'll be no more.
