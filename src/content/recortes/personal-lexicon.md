@@ -9,3 +9,7 @@ tags: ['writing']
 ## Fluff
 * **Context**: A replacement for the F-word
 * **Origin**: A YouTuber called [Drewby](https://www.youtube.com/channel/UC8UKtBMLj15fZU7BWIZS93w) (formerly Mr Talent and Nipps)
+
+## Frail baby
+* **Context**: When someone or something is weak, particularly when playing Pokémon and an attack does more damage than you want it to
+* **Origin**: Drewby again
