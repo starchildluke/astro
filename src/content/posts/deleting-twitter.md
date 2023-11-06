@@ -4,7 +4,7 @@ description: "I'm seriously considering doing it because I've had enough of the 
 published: true
 pubDate: '3 Nov 2023'
 layout: ../../layouts/BlogPost.astro
-tags: ["life"]
+tags: ["life", 'social media']
 ---
 
 You read the title, let's get to it.

@@ -4,14 +4,14 @@ description: "Here are 4 creative article ideas, inspired by The Read"
 published: true
 pubDate: "14 Apr 2018"
 layout: ../../layouts/BlogPost.astro
-tags: ['Black']
+tags: ['Black', 'social media']
 ---
 
 I was about 5 years late to the game but I finally got into [The Read](http://thisistheread.com) a few months ago and catapulted itself to the top of my All-Time Fave Podcasts list. The dynamic duo of Kid Fury and Crissle give me unadulterated life and joy. But other than their wit and advice, their presentation is an underrated element of the show. Episodes are broken up into sections much like any other podcast.
 
 Taken from Wikipedia:
 
-- **Black Excellence** where Kid Fury picks someone in the [Black community](/jardim/black/) to celebrate. One that has accomplished something that is worthy of high recognition.
+- **Black Excellence** where Kid Fury picks someone in the Black community to celebrate. One that has accomplished something that is worthy of high recognition.
 - **Hot Tops**, previously Sick Sad World, also selected by Kid Fury (the segment has undergone several other name changes, including Hot Topics, Shade In Full, and the fan favorite, "Bitch, You Guessed It!!")
 - **Listener Letters** as curated by Crissle (the segment is changed to Listener Questions when done during a live show)
 - **The Read** where Kid Fury and Crissle "read" (African American gay slang for giving one's harsh opinion) a person or topic.

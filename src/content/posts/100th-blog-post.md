@@ -10,7 +10,7 @@ tags: ['life']
 
 This is technically the 100th blog post on this iteration of my blog.
 
-I know people don't read this blog often and some of the older posts are were actually brought over from now-defunct versions of this site but whatever, I love milestones!
+I know people don't read this blog often and some of the older posts were actually brought over from now-defunct versions of this site but whatever, I love milestones!
 
 To celebrate, here's a list of American cereals I'd buy if someone gave me £100 to spend in an American candy store (because I've been watching [Shonduras's videos](https://www.youtube.com/user/Shonduras) all weekend with my son and he loves cereal):
 

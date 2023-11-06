@@ -59,7 +59,7 @@ tags: ['life', 'sport', 'architecture', 'Roger Federer', 'tech', 'Pokémon', 'Li
 * 050 – Madlib
 * 051 - A Tribe Called Quest
 * 052 - When my partner says something before I was about to think it
-* 053 - [Watching this](/posts/boom-tetris-for-jeff/)
+* 053 - Watching videos like [BOOM! Tetris for Jeff](/posts/boom-tetris-for-jeff/)
 * 054 - Halt and Catch Fire
 * 055 - Lee Pace
 * 056 - Colours

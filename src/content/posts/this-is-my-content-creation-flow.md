@@ -6,7 +6,7 @@ layout: ../../layouts/BlogPost.astro
 tags: ['blogging', 'the Internet']
 ---
 
-A few months ago, [I "revealed" my content creation flow](https://twitter.com/LukeDavisSEO/status/1233102657826566144?s=20) (as if it was a secret) and I said I'd write about it in more detail. So here it is.
+A few months ago, I "revealed" my content creation flow on Twitter (as if it was a secret) and I said I'd write about it in more detail. So here it is.
 
 ## Tools of the trade
 For the flow to work, I need tools to help me and streamline the process. I'm prone to getting ideas and forgetting them so structure is essential for me.

@@ -12,7 +12,7 @@ This year, I want to increase my creative output. I want to experiment, make mis
 
 ## 1. RKZ
 
-There's an element of bias in this selection but I don't really care. RKZ is a very good friend of mine and a staple follow on every social media platform. A fantastic photographer, musician and thought provoker, he has definitely made me consider my own creations. I still need to get a photoshoot done (when I'm not Grade A broke!)
+RKZ is a very good friend of mine and a staple follow on every social media platform. A fantastic photographer, musician and thought provoker, he has definitely made me consider my own creations. I still need to get a photoshoot done (when I'm not Grade A broke!)
 
 [Website](https://rkzuk.com) | [Instagram](https://instagram.com/rkzuk) | [Facebook](https://facebook.com/rkzuk) | [Twitter](https://twitter.com/rkzuk) | [Soundcloud](https://soundcloud.com/rkzuk)
 

@@ -4,7 +4,7 @@ description: "In a follow-up to my 2020 piece ‘Being Black in Digital Marketin
 published: true
 pubDate: '1 Oct 2023'
 layout: ../../layouts/BlogPost.astro
-tags: ['life', 'Black', 'SEO']
+tags: ['life', 'Black', 'SEO', 'social media']
 ---
 
 **In a follow-up to my 2020 piece ‘Being Black in Digital Marketing’, I asked the same Black marketers if anything has changed in the last 3 years.**

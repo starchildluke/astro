@@ -1,0 +1,67 @@
+---
+// COMPONENTS
+
+import BaseHead from '../../../components/BaseHead.astro';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+import Layout from '../../../layouts/Layout.astro';
+import Breadcrumbs from '../../../components/Breadcrumbs.astro';
+import site from '../../../data/site.json';
+import jardim from '../../../data/jardim.json'
+import { getCollection } from 'astro:content';
+import Tags from '../../../components/Tags.astro';
+
+// PROPS
+
+const { post } = Astro.props;
+
+// HOW FETCHING!
+
+const cfRemoteData = await fetch('https://cultrface.co.uk/wp-json/wp/v2/posts?tags=982&per_page=5').then(response => response.json());
+
+const lfRemoteData = await fetch('https://logicface.co.uk/wp-json/wp/v2/posts?tags=264&per_page=5').then(response => response.json());
+
+// METADATA VARIABLES
+
+let title = 'Social media';
+let description = 'A page all about social media.';
+
+---
+<Layout {title} {description}>
+    <div class="layout">
+      <article class="content">
+        <Breadcrumbs title={title}/>
+        <section class="intro">
+          <h1>{title}</h1>
+          <p class="desc">{description}</p>
+        </section>
+        <section>
+          <h2 class="wiki-h2">Inner voice</h2>
+          <Tags tagName="social media" />
+        </section>
+        
+        <section>
+          <h2 class="wiki-h2">Out loud</h2>
+          <ul>
+            {cfRemoteData.map((item) => (
+            <li>
+              <a href={item.link}><Fragment set:html={item.title.rendered}></a>
+            </li>
+            ))}
+            {lfRemoteData.map((item) => (
+            <li>
+              <a href={item.link}><Fragment set:html={item.title.rendered}></a>
+            </li>
+            ))}
+          </ul>
+          <h2 class="wiki-h2">Second opinions</h2>
+          
+          <ul><li>Coming soon...</li></ul>
+          
+        </section>
+      </article>
+      
+    </div>
+    <Footer/>
+  </body>
+</html>
