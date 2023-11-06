@@ -15,14 +15,30 @@ const lists = await getCollection('lists', ({ data }) => {
   return data.tags.includes(tagName);
 });
 
-const combinedPosts = posts.concat(recortes, lists);
+const sortedPosts = posts.sort((a, b) => a.data.title.localeCompare(b.data.title));
 
-const sortedPosts = combinedPosts.sort((a, b) => a.data.title.localeCompare(b.data.title));
+const sortedRecortes = recortes.sort((a, b) => a.data.title.localeCompare(b.data.title));
+
+const sortedLists = lists.sort((a, b) => a.data.title.localeCompare(b.data.title));
 
 ---
-
+<h3>Posts</h3>
 <ul>
   {sortedPosts.map(post =>
   <li><a href=`/posts/${post.slug}/`>{post.data.title}</a></li>
+  )}
+</ul>
+
+<h3>Recortes</h3>
+<ul>
+  {sortedRecortes.map(recorte =>
+  <li><a href=`/recortes/${recorte.slug}/`>{recorte.data.title}</a></li>
+  )}
+</ul>
+
+<h3>Lists</h3>
+<ul>
+  {sortedLists.map(list =>
+  <li><a href=`/lists/${list.slug}/`>{list.data.title}</a></li>
   )}
 </ul>
