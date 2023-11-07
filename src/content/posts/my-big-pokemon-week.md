@@ -60,7 +60,7 @@ I'll be updating this through my quest and will likely update my [Pokémon teams
 		</sup> Using the Old Sea Map on a Japanese copy of Emerald
 	</li>
 	<li>
-		<sup id="gen4_mythical">
+		<sup id="gen4_mythicals">
 			<a href="#gen4_mythical_ref"><strong>^</strong></a>
 		</sup> I either won't go for these or I will but won't trade them up to Home as they wouldn't be legal <em>You can't stop me, The Pokémon Company!</em>
 	</li>
