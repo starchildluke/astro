@@ -10,7 +10,7 @@ My first morsel is a Python script that extracts all the tags from my blogs and 
 ## Requirements
 
 * [Python 3](https://www.python.org/downloads/)
-* [requests](https://docs.python-requests.org/)
+* [requests](https://requests.readthedocs.io/en/latest/)
 * [streamlit](https://streamlit.io/)
 
 ## Links

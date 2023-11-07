@@ -9,7 +9,7 @@ tags: ['blogging']
 
 As I continue working on my microscopic media empire (stolen from [Jason Kottke](https://www.lifehacker.com.au/2018/09/im-jason-kottke-creator-of-kottkeorg-and-this-is-how-i-parent/) but also [other people](http://www.jimestill.com/2016/02/ceo-and-7-minute-workout.html?m=1)), I asked myself: whow much does it cost to run all [my blogs and various mini projects](/projects/). I decided to keep it easy and calculate all the outgoings in 2020 so far and income I get from Patreon to calculate the gross and net costs.
 
-**TL;DR – it costs me money so please consider [becoming a patreon](https://www.patreon.com/bePatron?u=4293137).**
+**TL;DR – it costs me money so please consider [becoming a patreon](https://www.patreon.com/join/lukealexdavis).**
 
 Note: unfortunately, as I'm not an accountant and don't have one, these figures won't be exact due to currency conversion (I get paid in dollars from Patreon so my final conversion will be after deductions)
 

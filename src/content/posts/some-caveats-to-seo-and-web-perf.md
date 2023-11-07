@@ -7,7 +7,7 @@ layout: ../../layouts/BlogPost.astro
 tags: ['SEO', 'tech', 'the Tnternet']
 ---
 
-As a technical SEO, I am very passionate about web performance. The speed and overall performance of a page can affect how well a search engine crawler can crawl and index a page (amongst many other factors). The usual way to define that is through metrics like Google's [Core Web Vitals](https://web.dev/vitals/), which form part of their [Page Experience ranking signal](https://developers.google.com/search/docs/appearance/page-experience)<sup><a href ="#sidenote">\*</a></sup>. But there's a problem I've noticed between both SEO and web performance communities: people are giving too much weight to Core Web Vitals from a ranking perspective.
+As a technical SEO, I am very passionate about web performance. The speed and overall performance of a page can affect how well a search engine crawler can crawl and index a page (amongst many other factors). The usual way to define that is through metrics like Google's [Core Web Vitals](https://web.dev/articles/vitals/), which form part of their [Page Experience ranking signal](https://developers.google.com/search/docs/appearance/page-experience)<sup><a href ="#sidenote">\*</a></sup>. But there's a problem I've noticed between both SEO and web performance communities: people are giving too much weight to Core Web Vitals from a ranking perspective.
 
 Now, I'm going to use an example from [Speedcurve](https://www.speedcurve.com/) to illustrate this. I don't think the information on their [SEO and Web Performance](https://support.speedcurve.com/docs/seo-and-web-performance) is terrible or incorrect but I feel like some caveats are important to avoid misunderstandings or heated debates between businesses and their in-house SEOs/agencies.
 
@@ -41,12 +41,12 @@ That's not to say I doubt that improving web performance makes a difference to c
 
 The section titled [Which performance metrics should you focus on for SEO?](https://support.speedcurve.com/docs/seo-and-web-performance#which-performance-metrics-should-you-focus-on-for-seo) examines metrics to look out for when measuring performance and where you can improve. There are four listed:
 
-* [Largest Contentful Paint (LCP)](https://web.dev/lcp/)
-* [First Input Delay (FID)](https://web.dev/fid/)
-* [Interaction to Next Paint (INP)](https://web.dev/inp/)
-* [Cumulative Layout Shift (CLS)](https://web.dev/cls/)
+* [Largest Contentful Paint (LCP)](https://web.dev/articles/lcp)
+* [First Input Delay (FID)](https://web.dev/articles/fid)
+* [Interaction to Next Paint (INP)](https://web.dev/articles/inp/)
+* [Cumulative Layout Shift (CLS)](https://web.dev/articles/cls)
 
-LCP, FID, and CLS are currently the Core Web Vitals metrics, while [INP will replace FID in March 2024](https://web.dev/inp-cwv/). As Google created these as best measures for web performance (in their eyes, and they know they aren't perfect), I agree these should be metrics to focus on. But my issue is with the title:
+LCP, FID, and CLS are currently the Core Web Vitals metrics, while [INP will replace FID in March 2024](https://web.dev/blog/inp-cwv). As Google created these as best measures for web performance (in their eyes, and they know they aren't perfect), I agree these should be metrics to focus on. But my issue is with the title:
 
 **Which performance metrics should you focus on for SEO?**
 

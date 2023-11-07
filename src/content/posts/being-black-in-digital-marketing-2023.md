@@ -23,7 +23,7 @@ So for this article, I spoke to some of the Black marketers who offered their th
 * [Trevor Price](https://www.tvtrevphotography.com/)  ([LinkedIn](https://www.linkedin.com/in/trevorprice89))
 * Zenia Johnson ([LinkedIn](https://www.linkedin.com/in/zeniajohnson))
 * [Melissa Reynolds-Lawrence](https://honeybeehome.co.uk/)  ([LinkedIn](https://uk.linkedin.com/in/melissa-reynolds-lawrence-232b1b32))
-* Clarissa Ankrah ([LinkedIn](https://www.impression.co.uk/about/our-team/clarissa-ankrah/))
+* Clarissa Ankrah
 
 ## What is office life like, 3 years later?
 

@@ -53,7 +53,7 @@ Before I dive into the code, I want to make something clear: I've only been codi
 
 I also want to give credit to Joe Davison whose data plot code I used from his zero shot demo. He wrote a great piece on [zero shot learning](https://joeddav.github.io/blog/2020/05/29/ZSL.html) which you should read if you're interested.
 
-[There's also a live zero shot classification demo you can try that shows the code I copied in action](https://huggingface.co/zero-shot/).
+[There's also a live zero shot classification demo you can try that shows the code I copied in action](https://huggingface.co/spaces/joeddav/zero-shot-demo).
 
 If I've taken anything that belongs to anyone whom I've forgotten to credit or if you'd prefer I remove it, please let me know and accept my sincerest apologies.
 
