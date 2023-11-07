@@ -1,6 +1,15 @@
 ---
 
-const { title, date, canonicalURL = Astro.url } = Astro.props;
+export async function getStaticPaths() {
+  const posts = await getCollection('posts');
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: post,
+  }));
+}
+type Props = CollectionEntry<'posts'>;
+
+const post = Astro.props;
 
 let sd = JSON.stringify({
   "@context": "https://schema.org",
@@ -17,8 +26,8 @@ let sd = JSON.stringify({
     },
     {
       "@type": "Article",
-      "headline": {title},
-      "datePublished": {date},
+      "headline": post.title,
+      "datePublished": post.pubDate,
       "author": {
         "@type": "Person",
         "name": "Luke Davis",
@@ -30,7 +39,7 @@ let sd = JSON.stringify({
         "@type": "Person",
         "name": "Luke Davis"
       },
-      "name": {title},
+      "name": post.title,
       "@id": Astro.url + "#richSnippet",
       "inLanguage": "en-GB",
       "mainEntityOfPage": {
