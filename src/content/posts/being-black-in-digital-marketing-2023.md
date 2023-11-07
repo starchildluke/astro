@@ -113,7 +113,7 @@ For me, I’ve seen shifts but plenty of stagnation. People are still asking Bla
 
 ## Racial biases in search—technically and personally
 
-In the paper “[Algorithms are not neutral](https://link.springer.com/article/10.1007/s43681-022-00136-w)”, Catherine Stinson examined the bias found in algorithms and how they undermine people from marginalised groups:
+In the paper “[Algorithms are not neutral [PDF]](https://www.catherinestinson.ca/Files/Papers/Algorithms_are_not_Neutral.pdf)”, Catherine Stinson examined the bias found in algorithms and how they undermine people from marginalised groups:
 
 > “People from minority communities have noted that recommender algorithms do not work well for them. Noble documents the ways that search algorithms fail to serve the needs of black women. One of her examples is a hair salon owner who struggled to get her business to show up as a recommendation on Yelp when you search for “‘African American’, ‘Black’, ‘relaxer’, ‘natural”’, as keywords. Complaints about culturally inappropriate recommendations, such as white hairdressers being recommended for those search terms, or Christmas movies being recommended to non-Christians, are common online. Popularity and homogenizing biases may be at fault in those examples. A related issue arises when the recommender system does figure out that a user belongs to a minority group, but overfits to an essentialized version of that identity. That you cannot escape ads for Rupaul’s Drag Race if your online presence reveals any interest in LGBTQ+ issues stems from over-specialization.”
 
