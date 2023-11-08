@@ -1,0 +1,24 @@
+---
+function convertToStarRating(number) {
+  let fullStars = Math.floor(number);
+  let halfStar = (number % 1 === 0.5) ? 1 : 0;
+
+  let starRating = '';
+
+  for (let i = 0; i < fullStars; i++) {
+    starRating += '★';
+  }
+
+   if(halfStar){
+     starRating += '½'
+   }
+
+ return starRating;
+}
+
+const { rating } = Astro.props;
+
+---
+
+<span aria-label=`Rating of this film is ${rating} out of 5.`>{convertToStarRating(rating)}</span>
+

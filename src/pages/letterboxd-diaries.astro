@@ -4,6 +4,7 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import StarRating from '../components/StarRating.astro';
 import boxd_2023 from '../data/2023_letterboxd_diary.json';
 import boxd_2022 from '../data/2022_letterboxd_diary.json';
 import boxd_2021 from '../data/2021_letterboxd_diary.json';
@@ -44,7 +45,7 @@ let canonicalURL = Astro.url;
             <td>{film.Name}</td>
             <td>{film.Genres.join(", ")}</td>
             <td>{film.Year}</td>
-            <td>{film.Rating}</td>
+            <td><StarRating rating={film.Rating} /></td>
             <td>{new Date(film['Watched Date']).toLocaleDateString('en-GB', { year:"numeric", month:"short", day:"numeric"})
             }</td>
           </tr>
@@ -68,7 +69,7 @@ let canonicalURL = Astro.url;
             <td>{film.Name}</td>
             <td>{film.Genres.join(", ")}</td>
             <td>{film.Year}</td>
-            <td>{film.Rating}</td>
+            <td><StarRating rating={film.Rating} /></td>
             <td>{new Date(film['Watched Date']).toLocaleDateString('en-GB', { year:"numeric", month:"short", day:"numeric"})
             }</td>
           </tr>
@@ -93,7 +94,7 @@ let canonicalURL = Astro.url;
             <td>{film.Name}</td>
             <td>{film.Genres.join(", ")}</td>
             <td>{film.Year}</td>
-            <td>{film.Rating}</td>
+            <td><StarRating rating={film.Rating} /></td>
             <td>{new Date(film['Watched Date']).toLocaleDateString('en-GB', { year:"numeric", month:"short", day:"numeric"})
             }</td>
           </tr>
@@ -118,7 +119,7 @@ let canonicalURL = Astro.url;
             <td>{film.Name}</td>
             <td>{film.Genres.join(", ")}</td>
             <td>{film.Year}</td>
-            <td>{film.Rating}</td>
+            <td><StarRating rating={film.Rating} /></td>
             <td>{new Date(film['Watched Date']).toLocaleDateString('en-GB', { year:"numeric", month:"short", day:"numeric"})
             }</td>
           </tr>
@@ -143,7 +144,7 @@ let canonicalURL = Astro.url;
             <td>{film.Name}</td>
             <td>{film.Genres.join(", ")}</td>
             <td>{film.Year}</td>
-            <td>{film.Rating}</td>
+            <td><StarRating rating={film.Rating} /></td>
             <td>{new Date(film['Watched Date']).toLocaleDateString('en-GB', { year:"numeric", month:"short", day:"numeric"})
             }</td>
           </tr>
@@ -168,7 +169,7 @@ let canonicalURL = Astro.url;
             <td>{film.Name}</td>
             <td>{film.Genres.join(", ")}</td>
             <td>{film.Year}</td>
-            <td>{film.Rating}</td>
+            <td><StarRating rating={film.Rating} /></td>
             <td>{new Date(film['Watched Date']).toLocaleDateString('en-GB', { year:"numeric", month:"short", day:"numeric"})
             }</td>
           </tr>
