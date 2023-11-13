@@ -1,11 +1,26 @@
 [
     {
+        "url": "/lists/animalympics-athletes/",
+        "link_data": [
+            {
+                "prev": "/lists/short-rpgs/",
+                "title": "List of short RPGs",
+                "date": "2023-09-04"
+            }
+        ]
+    },
+    {
         "url": "/lists/short-rpgs/",
         "link_data": [
             {
                 "prev": "/lists/list-of-ai-use-cases/",
                 "title": "List of AI use cases",
                 "date": "2023-08-10"
+            },
+            {
+                "next": "/lists/animalympics-athletes/",
+                "title": "Animalympics athletes",
+                "date": "2023-11-12"
             }
         ]
     },

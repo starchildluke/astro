@@ -1,11 +1,26 @@
 [
     {
+        "url": "/mlog/mlog-13-11-2023/",
+        "link_data": [
+            {
+                "prev": "/mlog/mlog-5-11-2023/",
+                "title": "Mlog #002",
+                "date": "2023-11-06"
+            }
+        ]
+    },
+    {
         "url": "/mlog/mlog-5-11-2023/",
         "link_data": [
             {
                 "prev": "/mlog/mlog-31-10-2023/",
                 "title": "Mlog #001",
                 "date": "2023-10-31"
+            },
+            {
+                "next": "/mlog/mlog-13-11-2023/",
+                "title": "Mlog #003",
+                "date": "2023-11-13"
             }
         ]
     },
