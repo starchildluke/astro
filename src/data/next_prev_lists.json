@@ -1,11 +1,26 @@
 [
     {
+        "url": "/lists/about-you-video-games/",
+        "link_data": [
+            {
+                "prev": "/lists/animalympics-athletes/",
+                "title": "Animalympics athletes",
+                "date": "2023-11-12"
+            }
+        ]
+    },
+    {
         "url": "/lists/animalympics-athletes/",
         "link_data": [
             {
                 "prev": "/lists/short-rpgs/",
                 "title": "List of short RPGs",
                 "date": "2023-09-04"
+            },
+            {
+                "next": "/lists/about-you-video-games/",
+                "title": "About You: Video Games",
+                "date": "2023-11-30"
             }
         ]
     },
