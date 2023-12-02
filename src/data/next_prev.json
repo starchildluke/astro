@@ -1,11 +1,26 @@
 [
     {
+        "url": "/posts/another-week-in-lisbon-2023/",
+        "link_data": [
+            {
+                "prev": "/posts/deleting-twitter/",
+                "title": "Deleting Twitter",
+                "date": "2023-11-03"
+            }
+        ]
+    },
+    {
         "url": "/posts/deleting-twitter/",
         "link_data": [
             {
                 "prev": "/posts/site-redesign/",
                 "title": "I redesigned my site a little",
                 "date": "2023-10-29"
+            },
+            {
+                "next": "/posts/another-week-in-lisbon-2023/",
+                "title": "Another week in Lisbon",
+                "date": "2023-12-03"
             }
         ]
     },
