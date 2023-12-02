@@ -1,5 +1,15 @@
 declare module 'astro:content' {
 	interface Render {
+		'.mdx': Promise<{
+			Content: import('astro').MarkdownInstance<{}>['Content'];
+			headings: import('astro').MarkdownHeading[];
+			remarkPluginFrontmatter: Record<string, any>;
+		}>;
+	}
+}
+
+declare module 'astro:content' {
+	interface Render {
 		'.md': Promise<{
 			Content: import('astro').MarkdownInstance<{}>['Content'];
 			headings: import('astro').MarkdownHeading[];
@@ -188,9 +198,23 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"lists": {
+"about-you-video-games.md": {
+	id: "about-you-video-games.md";
+  slug: "about-you-video-games";
+  body: string;
+  collection: "lists";
+  data: InferEntrySchema<"lists">
+} & { render(): Render[".md"] };
 "acceptable-volume-numbers.md": {
 	id: "acceptable-volume-numbers.md";
   slug: "acceptable-volume-numbers";
+  body: string;
+  collection: "lists";
+  data: InferEntrySchema<"lists">
+} & { render(): Render[".md"] };
+"animalympics-athletes.md": {
+	id: "animalympics-athletes.md";
+  slug: "animalympics-athletes";
   body: string;
   collection: "lists";
   data: InferEntrySchema<"lists">
@@ -267,6 +291,13 @@ declare module 'astro:content' {
 } & { render(): Render[".md"] };
 };
 "mlog": {
+"mlog-13-11-2023.md": {
+	id: "mlog-13-11-2023.md";
+  slug: "mlog-13-11-2023";
+  body: string;
+  collection: "mlog";
+  data: InferEntrySchema<"mlog">
+} & { render(): Render[".md"] };
 "mlog-31-10-2023.md": {
 	id: "mlog-31-10-2023.md";
   slug: "mlog-31-10-2023";
@@ -456,6 +487,13 @@ declare module 'astro:content' {
 "ai-should-be-a-last-resort.md": {
 	id: "ai-should-be-a-last-resort.md";
   slug: "ai-should-be-a-last-resort";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
+"another-week-in-lisbon-2023.md": {
+	id: "another-week-in-lisbon-2023.md";
+  slug: "another-week-in-lisbon-2023";
   body: string;
   collection: "posts";
   data: InferEntrySchema<"posts">
@@ -1400,6 +1438,13 @@ declare module 'astro:content' {
   collection: "recortes";
   data: InferEntrySchema<"recortes">
 } & { render(): Render[".md"] };
+"saver-store.md": {
+	id: "saver-store.md";
+  slug: "saver-store";
+  body: string;
+  collection: "recortes";
+  data: InferEntrySchema<"recortes">
+} & { render(): Render[".md"] };
 "so-cansado.md": {
 	id: "so-cansado.md";
   slug: "so-cansado";
@@ -1489,6 +1534,13 @@ declare module 'astro:content' {
 "release-notes-15.md": {
 	id: "release-notes-15.md";
   slug: "release-notes-15";
+  body: string;
+  collection: "release-notes";
+  data: InferEntrySchema<"release-notes">
+} & { render(): Render[".md"] };
+"release-notes-16.md": {
+	id: "release-notes-16.md";
+  slug: "release-notes-16";
   body: string;
   collection: "release-notes";
   data: InferEntrySchema<"release-notes">
