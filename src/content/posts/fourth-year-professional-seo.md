@@ -56,7 +56,7 @@ But I won't go back in my shell. When I'm not okay, people who need to know will
 
 ### 8. The industry still isn't great and AI is gonna make it worse
 
-Egos are still rampant in SEO but now that we have AI, I feel like it's going to get worse. [Prompt engineering](/posts/prompt-engineering/) is the latest craze that [I've previously tweeted about as a close analogue to Facebook's video pivot controversy](https://twitter.com/LukeDavisSEO/status/1630506643136937985). We still don't know why these prompts work in the way they do but damned if someone with an expert complex is gonna be honest about that!
+Egos are still rampant in SEO but now that we have AI, I feel like it's going to get worse. [Prompt engineering](/posts/prompt-engineering/) is the latest craze that [I'd previously tweeted about as a close analogue to Facebook's video pivot controversy. We still don't know why these prompts work in the way they do but damned if someone with an expert complex is gonna be honest about that!
 
 Lemme just say to be careful whose words you follow as gospel. And read papers by language tech pros and ask them questions instead.
 

@@ -16,7 +16,7 @@ The problem with this ideology is the implication that whatever you're doing now
 That's the situation we're in and will continue to be in while AI is seen as the first port of call to any kind of problem. By taking a step back, you can see the wider picture and realise that there are a multitude of options that come **before** opting for AI. Here are just a few:
 
 * Ask yourself truthfully if there's even a problem to solve
-* [Pay your damn people](https://twitter.com/LukeDavisSEO/status/1657093126471704583) and let them work if there is
+* Pay your damn people and let them work if there is
 * Consider a programmatic approach where applicable (this comes with similar caveats to AI use so don't fall down a similar trap)
 
 ## I object/subject!
