@@ -23,5 +23,3 @@ tags: ['art', 'gaming', 'music']
 * Upendo Taylor
 * Tay Butler
 * John Akomfrah
-
-(Updated: 2/8/2023)
