@@ -1,11 +1,41 @@
 [
     {
+        "url": "/lists/all-inspirations/",
+        "link_data": [
+            {
+                "prev": "/lists/sporting-inspirations/",
+                "title": "Sporting Inspirations",
+                "date": "2023-12-12"
+            }
+        ]
+    },
+    {
+        "url": "/lists/sporting-inspirations/",
+        "link_data": [
+            {
+                "prev": "/lists/about-you-video-games/",
+                "title": "About You: Video Games",
+                "date": "2023-11-30"
+            },
+            {
+                "next": "/lists/all-inspirations/",
+                "title": "All Inspirations",
+                "date": "2023-12-12"
+            }
+        ]
+    },
+    {
         "url": "/lists/about-you-video-games/",
         "link_data": [
             {
                 "prev": "/lists/animalympics-athletes/",
                 "title": "Animalympics athletes",
                 "date": "2023-11-12"
+            },
+            {
+                "next": "/lists/sporting-inspirations/",
+                "title": "Sporting Inspirations",
+                "date": "2023-12-12"
             }
         ]
     },
