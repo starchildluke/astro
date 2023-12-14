@@ -18,6 +18,7 @@ Much like Chase's, mine will be a work-in-progress and I will inevitably go agai
 * Oxford commas for now, forever, and always
 * Em dashes shouldn't have the space either side of them—okay?!
 * En Dashes are for numerical ranges such as dates or times and that's a rule I'll always keep from Day 1–365
+* Companies/brands are singular, not plural. "Google is a company" rather than "Google are a company"
 
 ## Hyperlinking
 
