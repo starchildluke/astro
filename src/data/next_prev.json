@@ -1,11 +1,26 @@
 [
     {
+        "url": "/posts/2024-patience-assertiveness/",
+        "link_data": [
+            {
+                "prev": "/posts/another-week-in-lisbon-2023/",
+                "title": "Another week in Lisbon",
+                "date": "2023-12-03"
+            }
+        ]
+    },
+    {
         "url": "/posts/another-week-in-lisbon-2023/",
         "link_data": [
             {
                 "prev": "/posts/deleting-twitter/",
                 "title": "Deleting Twitter",
                 "date": "2023-11-03"
+            },
+            {
+                "next": "/posts/2024-patience-assertiveness/",
+                "title": "2024 needs patience and assertiveness (for me)",
+                "date": "2023-12-30"
             }
         ]
     },
@@ -1108,8 +1123,8 @@
         "url": "/posts/black-panther-and-therapy/",
         "link_data": [
             {
-                "prev": "/posts/the-exclusive-website/",
-                "title": "The Exclusive Website",
+                "prev": "/posts/nyt-first-said-visualisation/",
+                "title": "Visualising @nyt_said_first",
                 "date": "2020-08-27"
             },
             {
@@ -1120,11 +1135,11 @@
         ]
     },
     {
-        "url": "/posts/the-exclusive-website/",
+        "url": "/posts/nyt-first-said-visualisation/",
         "link_data": [
             {
-                "prev": "/posts/nyt-first-said-visualisation/",
-                "title": "Visualising @nyt_said_first",
+                "prev": "/posts/the-exclusive-website/",
+                "title": "The Exclusive Website",
                 "date": "2020-08-27"
             },
             {
@@ -1135,26 +1150,11 @@
         ]
     },
     {
-        "url": "/posts/nyt-first-said-visualisation/",
+        "url": "/posts/the-exclusive-website/",
         "link_data": [
             {
-                "prev": "/posts/not-in-the-constitution/",
-                "title": "Things that aren&#39;t in the U.S. Constitution",
-                "date": "2020-08-24"
-            },
-            {
-                "next": "/posts/the-exclusive-website/",
-                "title": "The Exclusive Website",
-                "date": "2020-08-27"
-            }
-        ]
-    },
-    {
-        "url": "/posts/not-in-the-constitution/",
-        "link_data": [
-            {
-                "prev": "/posts/how-much-do-my-blogs-cost/",
-                "title": "How much do my blogs cost?",
+                "prev": "/posts/wander-in-porto/",
+                "title": "Wander in Porto",
                 "date": "2020-08-24"
             },
             {
@@ -1165,22 +1165,37 @@
         ]
     },
     {
-        "url": "/posts/how-much-do-my-blogs-cost/",
+        "url": "/posts/wander-in-porto/",
         "link_data": [
             {
-                "prev": "/posts/wander-in-porto/",
-                "title": "Wander in Porto",
+                "prev": "/posts/how-much-do-my-blogs-cost/",
+                "title": "How much do my blogs cost?",
                 "date": "2020-08-24"
             },
             {
-                "next": "/posts/not-in-the-constitution/",
+                "next": "/posts/the-exclusive-website/",
+                "title": "The Exclusive Website",
+                "date": "2020-08-27"
+            }
+        ]
+    },
+    {
+        "url": "/posts/how-much-do-my-blogs-cost/",
+        "link_data": [
+            {
+                "prev": "/posts/not-in-the-constitution/",
                 "title": "Things that aren&#39;t in the U.S. Constitution",
+                "date": "2020-08-24"
+            },
+            {
+                "next": "/posts/wander-in-porto/",
+                "title": "Wander in Porto",
                 "date": "2020-08-24"
             }
         ]
     },
     {
-        "url": "/posts/wander-in-porto/",
+        "url": "/posts/not-in-the-constitution/",
         "link_data": [
             {
                 "prev": "/posts/boom-tetris-for-jeff/",
@@ -1203,8 +1218,8 @@
                 "date": "2020-08-21"
             },
             {
-                "next": "/posts/wander-in-porto/",
-                "title": "Wander in Porto",
+                "next": "/posts/not-in-the-constitution/",
+                "title": "Things that aren&#39;t in the U.S. Constitution",
                 "date": "2020-08-24"
             }
         ]
@@ -1243,14 +1258,29 @@
         "url": "/posts/saddam-hussein-bacon-number-3/",
         "link_data": [
             {
-                "prev": "/posts/still-elephant/",
-                "title": "Still Elephant",
+                "prev": "/posts/kamala-harris-is-still-a-cop/",
+                "title": "Kamala Harris is still a cop",
                 "date": "2020-08-13"
             },
             {
                 "next": "/posts/headless-chickens/",
                 "title": "Headless chickens",
                 "date": "2020-08-16"
+            }
+        ]
+    },
+    {
+        "url": "/posts/kamala-harris-is-still-a-cop/",
+        "link_data": [
+            {
+                "prev": "/posts/still-elephant/",
+                "title": "Still Elephant",
+                "date": "2020-08-13"
+            },
+            {
+                "next": "/posts/saddam-hussein-bacon-number-3/",
+                "title": "Saddam Hussein had a Bacon number of 3",
+                "date": "2020-08-14"
             }
         ]
     },
@@ -1263,9 +1293,9 @@
                 "date": "2020-08-13"
             },
             {
-                "next": "/posts/saddam-hussein-bacon-number-3/",
-                "title": "Saddam Hussein had a Bacon number of 3",
-                "date": "2020-08-14"
+                "next": "/posts/kamala-harris-is-still-a-cop/",
+                "title": "Kamala Harris is still a cop",
+                "date": "2020-08-13"
             }
         ]
     },
@@ -1273,9 +1303,9 @@
         "url": "/posts/talk-work-think-different-thanks-web/",
         "link_data": [
             {
-                "prev": "/posts/kamala-harris-is-still-a-cop/",
-                "title": "Kamala Harris is still a cop",
-                "date": "2020-08-13"
+                "prev": "/posts/gains/",
+                "title": "Gains",
+                "date": "2020-08-11"
             },
             {
                 "next": "/posts/still-elephant/",
@@ -1285,12 +1315,12 @@
         ]
     },
     {
-        "url": "/posts/kamala-harris-is-still-a-cop/",
+        "url": "/posts/gains/",
         "link_data": [
             {
-                "prev": "/posts/gains/",
-                "title": "Gains",
-                "date": "2020-08-11"
+                "prev": "/posts/everyones-a-writer/",
+                "title": "Everyone's a writer",
+                "date": "2020-08-10"
             },
             {
                 "next": "/posts/talk-work-think-different-thanks-web/",
@@ -1300,26 +1330,11 @@
         ]
     },
     {
-        "url": "/posts/gains/",
+        "url": "/posts/everyones-a-writer/",
         "link_data": [
             {
                 "prev": "/posts/halt-and-make-fire/",
                 "title": "Halt and Make Fire",
-                "date": "2020-08-10"
-            },
-            {
-                "next": "/posts/kamala-harris-is-still-a-cop/",
-                "title": "Kamala Harris is still a cop",
-                "date": "2020-08-13"
-            }
-        ]
-    },
-    {
-        "url": "/posts/halt-and-make-fire/",
-        "link_data": [
-            {
-                "prev": "/posts/everyones-a-writer/",
-                "title": "Everyone's a writer",
                 "date": "2020-08-10"
             },
             {
@@ -1330,7 +1345,7 @@
         ]
     },
     {
-        "url": "/posts/everyones-a-writer/",
+        "url": "/posts/halt-and-make-fire/",
         "link_data": [
             {
                 "prev": "/posts/speeches-thanks/",
@@ -1338,8 +1353,8 @@
                 "date": "2020-08-09"
             },
             {
-                "next": "/posts/halt-and-make-fire/",
-                "title": "Halt and Make Fire",
+                "next": "/posts/everyones-a-writer/",
+                "title": "Everyone's a writer",
                 "date": "2020-08-10"
             }
         ]
@@ -1353,8 +1368,8 @@
                 "date": "2020-07-14"
             },
             {
-                "next": "/posts/everyones-a-writer/",
-                "title": "Everyone's a writer",
+                "next": "/posts/halt-and-make-fire/",
+                "title": "Halt and Make Fire",
                 "date": "2020-08-10"
             }
         ]
@@ -2113,8 +2128,8 @@
         "url": "/posts/jamiroquai-rock-dust-light-star-review/",
         "link_data": [
             {
-                "prev": "/posts/banana-rum-cake-recipe/",
-                "title": "Banana rum cake recipe",
+                "prev": "/posts/chocolate-fudge-cake-recipe/",
+                "title": "Chocolate fudge cake recipe",
                 "date": "2010-07-05"
             },
             {
@@ -2125,11 +2140,11 @@
         ]
     },
     {
-        "url": "/posts/banana-rum-cake-recipe/",
+        "url": "/posts/chocolate-fudge-cake-recipe/",
         "link_data": [
             {
-                "prev": "/posts/chocolate-fudge-cake-recipe/",
-                "title": "Chocolate fudge cake recipe",
+                "prev": "/posts/banana-rum-cake-recipe/",
+                "title": "Banana rum cake recipe",
                 "date": "2010-07-05"
             },
             {
@@ -2140,11 +2155,11 @@
         ]
     },
     {
-        "url": "/posts/chocolate-fudge-cake-recipe/",
+        "url": "/posts/banana-rum-cake-recipe/",
         "link_data": [
             {
-                "next": "/posts/banana-rum-cake-recipe/",
-                "title": "Banana rum cake recipe",
+                "next": "/posts/chocolate-fudge-cake-recipe/",
+                "title": "Chocolate fudge cake recipe",
                 "date": "2010-07-05"
             }
         ]
