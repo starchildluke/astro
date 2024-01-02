@@ -1,11 +1,26 @@
 [
     {
+        "url": "/posts/aoty-2023/",
+        "link_data": [
+            {
+                "prev": "/posts/2024-patience-assertiveness/",
+                "title": "2024 needs patience and assertiveness (for me)",
+                "date": "2023-12-30"
+            }
+        ]
+    },
+    {
         "url": "/posts/2024-patience-assertiveness/",
         "link_data": [
             {
                 "prev": "/posts/another-week-in-lisbon-2023/",
                 "title": "Another week in Lisbon",
                 "date": "2023-12-03"
+            },
+            {
+                "next": "/posts/aoty-2023/",
+                "title": "My Albums of the Year: 2023",
+                "date": "2024-01-02"
             }
         ]
     },
@@ -238,8 +253,8 @@
         "url": "/posts/things-that-ai-isnt/",
         "link_data": [
             {
-                "prev": "/posts/aoty-2022/",
-                "title": "My Albums Of The Year List: 2022",
+                "prev": "/posts/a-note-on-some-notes-on-writing/",
+                "title": "A note on some notes on writing",
                 "date": "2023-03-27"
             },
             {
@@ -250,11 +265,11 @@
         ]
     },
     {
-        "url": "/posts/aoty-2022/",
+        "url": "/posts/a-note-on-some-notes-on-writing/",
         "link_data": [
             {
-                "prev": "/posts/a-note-on-some-notes-on-writing/",
-                "title": "A note on some notes on writing",
+                "prev": "/posts/aoty-2022/",
+                "title": "My Albums Of The Year List: 2022",
                 "date": "2023-03-27"
             },
             {
@@ -265,7 +280,7 @@
         ]
     },
     {
-        "url": "/posts/a-note-on-some-notes-on-writing/",
+        "url": "/posts/aoty-2022/",
         "link_data": [
             {
                 "prev": "/posts/we-are-not-data-points/",
@@ -273,8 +288,8 @@
                 "date": "2023-03-25"
             },
             {
-                "next": "/posts/aoty-2022/",
-                "title": "My Albums Of The Year List: 2022",
+                "next": "/posts/a-note-on-some-notes-on-writing/",
+                "title": "A note on some notes on writing",
                 "date": "2023-03-27"
             }
         ]
@@ -288,8 +303,8 @@
                 "date": "2023-03-17"
             },
             {
-                "next": "/posts/a-note-on-some-notes-on-writing/",
-                "title": "A note on some notes on writing",
+                "next": "/posts/aoty-2022/",
+                "title": "My Albums Of The Year List: 2022",
                 "date": "2023-03-27"
             }
         ]
