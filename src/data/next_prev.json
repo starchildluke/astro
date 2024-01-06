@@ -1,11 +1,26 @@
 [
     {
+        "url": "/posts/letterboxd-year-review-2023/",
+        "link_data": [
+            {
+                "prev": "/posts/aoty-2023/",
+                "title": "My Albums of the Year: 2023",
+                "date": "2024-01-02"
+            }
+        ]
+    },
+    {
         "url": "/posts/aoty-2023/",
         "link_data": [
             {
                 "prev": "/posts/2024-patience-assertiveness/",
                 "title": "2024 needs patience and assertiveness (for me)",
                 "date": "2023-12-30"
+            },
+            {
+                "next": "/posts/letterboxd-year-review-2023/",
+                "title": "My Letterboxd Year In Review for 2023",
+                "date": "2024-01-06"
             }
         ]
     },
@@ -1168,8 +1183,8 @@
         "url": "/posts/the-exclusive-website/",
         "link_data": [
             {
-                "prev": "/posts/wander-in-porto/",
-                "title": "Wander in Porto",
+                "prev": "/posts/not-in-the-constitution/",
+                "title": "Things that aren&#39;t in the U.S. Constitution",
                 "date": "2020-08-24"
             },
             {
@@ -1180,7 +1195,7 @@
         ]
     },
     {
-        "url": "/posts/wander-in-porto/",
+        "url": "/posts/not-in-the-constitution/",
         "link_data": [
             {
                 "prev": "/posts/how-much-do-my-blogs-cost/",
@@ -1198,19 +1213,19 @@
         "url": "/posts/how-much-do-my-blogs-cost/",
         "link_data": [
             {
-                "prev": "/posts/not-in-the-constitution/",
-                "title": "Things that aren&#39;t in the U.S. Constitution",
+                "prev": "/posts/wander-in-porto/",
+                "title": "Wander in Porto",
                 "date": "2020-08-24"
             },
             {
-                "next": "/posts/wander-in-porto/",
-                "title": "Wander in Porto",
+                "next": "/posts/not-in-the-constitution/",
+                "title": "Things that aren&#39;t in the U.S. Constitution",
                 "date": "2020-08-24"
             }
         ]
     },
     {
-        "url": "/posts/not-in-the-constitution/",
+        "url": "/posts/wander-in-porto/",
         "link_data": [
             {
                 "prev": "/posts/boom-tetris-for-jeff/",
@@ -1233,8 +1248,8 @@
                 "date": "2020-08-21"
             },
             {
-                "next": "/posts/not-in-the-constitution/",
-                "title": "Things that aren&#39;t in the U.S. Constitution",
+                "next": "/posts/wander-in-porto/",
+                "title": "Wander in Porto",
                 "date": "2020-08-24"
             }
         ]
@@ -1273,8 +1288,8 @@
         "url": "/posts/saddam-hussein-bacon-number-3/",
         "link_data": [
             {
-                "prev": "/posts/kamala-harris-is-still-a-cop/",
-                "title": "Kamala Harris is still a cop",
+                "prev": "/posts/still-elephant/",
+                "title": "Still Elephant",
                 "date": "2020-08-13"
             },
             {
@@ -1285,11 +1300,11 @@
         ]
     },
     {
-        "url": "/posts/kamala-harris-is-still-a-cop/",
+        "url": "/posts/still-elephant/",
         "link_data": [
             {
-                "prev": "/posts/still-elephant/",
-                "title": "Still Elephant",
+                "prev": "/posts/kamala-harris-is-still-a-cop/",
+                "title": "Kamala Harris is still a cop",
                 "date": "2020-08-13"
             },
             {
@@ -1300,7 +1315,7 @@
         ]
     },
     {
-        "url": "/posts/still-elephant/",
+        "url": "/posts/kamala-harris-is-still-a-cop/",
         "link_data": [
             {
                 "prev": "/posts/talk-work-think-different-thanks-web/",
@@ -1308,8 +1323,8 @@
                 "date": "2020-08-13"
             },
             {
-                "next": "/posts/kamala-harris-is-still-a-cop/",
-                "title": "Kamala Harris is still a cop",
+                "next": "/posts/still-elephant/",
+                "title": "Still Elephant",
                 "date": "2020-08-13"
             }
         ]
@@ -1323,8 +1338,8 @@
                 "date": "2020-08-11"
             },
             {
-                "next": "/posts/still-elephant/",
-                "title": "Still Elephant",
+                "next": "/posts/kamala-harris-is-still-a-cop/",
+                "title": "Kamala Harris is still a cop",
                 "date": "2020-08-13"
             }
         ]
@@ -1333,8 +1348,8 @@
         "url": "/posts/gains/",
         "link_data": [
             {
-                "prev": "/posts/everyones-a-writer/",
-                "title": "Everyone's a writer",
+                "prev": "/posts/halt-and-make-fire/",
+                "title": "Halt and Make Fire",
                 "date": "2020-08-10"
             },
             {
@@ -1345,11 +1360,11 @@
         ]
     },
     {
-        "url": "/posts/everyones-a-writer/",
+        "url": "/posts/halt-and-make-fire/",
         "link_data": [
             {
-                "prev": "/posts/halt-and-make-fire/",
-                "title": "Halt and Make Fire",
+                "prev": "/posts/everyones-a-writer/",
+                "title": "Everyone's a writer",
                 "date": "2020-08-10"
             },
             {
@@ -1360,7 +1375,7 @@
         ]
     },
     {
-        "url": "/posts/halt-and-make-fire/",
+        "url": "/posts/everyones-a-writer/",
         "link_data": [
             {
                 "prev": "/posts/speeches-thanks/",
@@ -1368,8 +1383,8 @@
                 "date": "2020-08-09"
             },
             {
-                "next": "/posts/everyones-a-writer/",
-                "title": "Everyone's a writer",
+                "next": "/posts/halt-and-make-fire/",
+                "title": "Halt and Make Fire",
                 "date": "2020-08-10"
             }
         ]
@@ -1383,8 +1398,8 @@
                 "date": "2020-07-14"
             },
             {
-                "next": "/posts/halt-and-make-fire/",
-                "title": "Halt and Make Fire",
+                "next": "/posts/everyones-a-writer/",
+                "title": "Everyone's a writer",
                 "date": "2020-08-10"
             }
         ]
@@ -1903,8 +1918,8 @@
         "url": "/posts/to-be-childlike-and-not-childish/",
         "link_data": [
             {
-                "prev": "/posts/aoty-2016/",
-                "title": "My Albums Of The Year List: 2016",
+                "prev": "/posts/my-idea-debt/",
+                "title": "My Idea Debt",
                 "date": "2017-02-01"
             },
             {
@@ -1915,11 +1930,11 @@
         ]
     },
     {
-        "url": "/posts/aoty-2016/",
+        "url": "/posts/my-idea-debt/",
         "link_data": [
             {
-                "prev": "/posts/my-idea-debt/",
-                "title": "My Idea Debt",
+                "prev": "/posts/aoty-2016/",
+                "title": "My Albums Of The Year List: 2016",
                 "date": "2017-02-01"
             },
             {
@@ -1930,7 +1945,7 @@
         ]
     },
     {
-        "url": "/posts/my-idea-debt/",
+        "url": "/posts/aoty-2016/",
         "link_data": [
             {
                 "prev": "/posts/10-inspiring-creatives-2017/",
@@ -1938,8 +1953,8 @@
                 "date": "2017-01-04"
             },
             {
-                "next": "/posts/aoty-2016/",
-                "title": "My Albums Of The Year List: 2016",
+                "next": "/posts/my-idea-debt/",
+                "title": "My Idea Debt",
                 "date": "2017-02-01"
             }
         ]
@@ -1953,8 +1968,8 @@
                 "date": "2017-01-01"
             },
             {
-                "next": "/posts/my-idea-debt/",
-                "title": "My Idea Debt",
+                "next": "/posts/aoty-2016/",
+                "title": "My Albums Of The Year List: 2016",
                 "date": "2017-02-01"
             }
         ]
