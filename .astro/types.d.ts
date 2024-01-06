@@ -946,6 +946,13 @@ declare module 'astro:content' {
   collection: "posts";
   data: any
 } & { render(): Render[".md"] };
+"letterboxd-year-review-2023.md": {
+	id: "letterboxd-year-review-2023.md";
+  slug: "letterboxd-year-review-2023";
+  body: string;
+  collection: "posts";
+  data: any
+} & { render(): Render[".md"] };
 "link-dump-1.md": {
 	id: "link-dump-1.md";
   slug: "link-dump-1";
