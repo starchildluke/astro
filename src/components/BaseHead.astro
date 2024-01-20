@@ -16,16 +16,16 @@ let ogimage = 'https://lukealexdavis.co.uk/assets/ld-logo-og-image.jpg';
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-<link rel="icon" type="image/png" href="/favicon.png" />
 <title>{title}</title>
+<link rel="stylesheet" type="text/css" href="/style/blog.css">
+<link rel="preload" as="font" href="/fonts/Erode-Bold.woff2" type="font/woff2" crossorigin>
+<script defer data-domain="lukealexdavis.co.uk" src="https://plausible.io/js/plausible.js"></script>
+<link rel="icon" type="image/png" href="/favicon.png" />
 <meta name="title" content={title} />
 <meta name="description" content={description} />
 <meta property="og:image" content={image} />
 <meta name="generator" content={Astro.generator}>
 <link rel="canonical" href={canonicalURL} />
 <link rel="alternate" type="application/rss+xml" title={site.title} href={blogRssFeed} />
-<link rel="preload" as="font" href="/fonts/Erode-Bold.woff2" type="font/woff2" crossorigin>
-<link rel="preload" as="style" href="/style/blog.css" type="text/css">
-<link rel="stylesheet" type="text/css" href="/style/blog.css">
-<script defer data-domain="lukealexdavis.co.uk" src="https://plausible.io/js/plausible.js"></script>
+<!-- <link rel="preload" as="style" href="/style/blog.css" type="text/css"> -->
 </head>
