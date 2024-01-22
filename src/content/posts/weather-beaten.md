@@ -11,6 +11,6 @@ Burnout has been on the tip of our tongues for god knows how long. But today, I 
 
 If you burn anything, it leaves a scar or some visual reminder of its harm.
 
-And so I realised perhaps I was jsut... weather-beaten.
+And so I realised perhaps I was just... weather-beaten.
 
-After days, weeks, months, and years of "emotional, physical, and mental exhaustion caused by excessive and prolonged stress", I had my own emotional, physical, and mental scars. I've had to weather a lot of personal storms and those traumas have left me as the person I am today. I still have a lot of work to do and I need help with a lot of it too. How and when I'll get to those are up to me and that annoying thing called _money_ but I'm aware of them at least in principle. Falling in love has been both a regenerative force and a reminder of those weather-induced scars and how I need to combat them. But these days, the rain does bring me down so much.
+After days, weeks, months, and years of "emotional, physical, and mental exhaustion caused by excessive and prolonged stress", I had my own emotional, physical, and mental scars. I've had to weather a lot of personal storms and those traumas have left me as the person I am today. I still have a lot of work to do and I need help with a lot of it too. How and when I'll get to those are up to me and that annoying thing called _money_ but I'm aware of them at least in principle. Falling in love has been both a regenerative force and a reminder of those weather-induced scars and how I need to combat them. But these days, the rain doesn't bring me down so much.
