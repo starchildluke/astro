@@ -289,6 +289,13 @@ declare module 'astro:content' {
   collection: "lists";
   data: any
 } & { render(): Render[".md"] };
+"my-favourite-ducks.md": {
+	id: "my-favourite-ducks.md";
+  slug: "my-favourite-ducks";
+  body: string;
+  collection: "lists";
+  data: any
+} & { render(): Render[".md"] };
 "short-rpgs.md": {
 	id: "short-rpgs.md";
   slug: "short-rpgs";
