@@ -32,7 +32,7 @@ The death of George Floyd and the subsequent Black Lives Matter protests sparked
 
 It left a bitter taste in my mouth because I never asked for any of it. Nobody did. But it reminded me of something. You can't rely on others to make changes like that, especially when they won't face their internal situations.
 
-And that's partly why I started my [Marketers of Colour](https://marketersofcolour.com) project. I needed to take charge of the situation and promote those people and their resources. That's my sole focus right now.
+And that's partly why I started my Marketers of Colour project. I needed to take charge of the situation and promote those people and their resources. That's my sole focus right now.
 
 ### 4. John Mueller is even more awesome
 

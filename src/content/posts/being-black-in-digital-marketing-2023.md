@@ -19,7 +19,7 @@ So for this article, I spoke to some of the Black marketers who offered their th
 
 ## Participants
 
-* [Jamar Ramos](https://www.theramoscollective.com/) ([LinkedIn](https://www.linkedin.com/in/jamarramos))
+* Jamar Ramos ([LinkedIn](https://www.linkedin.com/in/jamarramos))
 * [Trevor Price](https://www.tvtrevphotography.com/)  ([LinkedIn](https://www.linkedin.com/in/trevorprice89))
 * Zenia Johnson ([LinkedIn](https://www.linkedin.com/in/zeniajohnson))
 * [Melissa Reynolds-Lawrence](https://honeybeehome.co.uk/)  ([LinkedIn](https://uk.linkedin.com/in/melissa-reynolds-lawrence-232b1b32))
