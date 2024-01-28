@@ -14,7 +14,7 @@ interface Props {
 const { title, description, pubDate, canonicalURL = Astro.url } = Astro.props;
 
 ---
-<html lang="en">
+<html lang="en-GB">
   <BaseHead {title} {description} {canonicalURL} />
   <StructuredData {title} {pubDate} />
   <body>

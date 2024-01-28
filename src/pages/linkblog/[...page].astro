@@ -1,0 +1,107 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import FormattedDate from '../../components/FormattedDate.astro';
+import linkblog from '../../data/linkblog.json';
+
+export async function getStaticPaths({ paginate }) {
+  return paginate(linkblog, { pageSize: 25 });
+}
+
+function domainName(url) {
+  let domain = (new URL(url));
+  return domain.hostname;
+}
+
+const { page, canonicalURL = Astro.url } = Astro.props
+
+let fullTitle = `Linkblog (Page ${page.currentPage})`
+let description = "The blog listings page. I write about all kinds of topics including SEO, AI, music, life, and the Web.";
+---
+<Layout title={fullTitle} description={description} canonicalURL={canonicalURL} />
+
+<style>
+    body {
+      color: #f7f7f7;
+      background: #181818;
+    }
+
+    ul {
+      padding: 0;
+      list-style: none;
+    }
+
+    a {
+      color: #c4e53c;
+      font-weight: 700;
+    }
+
+    :global(a) {
+      color: #c4e53c;
+    }
+
+    :global(footer) {
+      border-top-color: #f7f7f7;
+    }
+
+    .link-description {
+      margin: 0.2rem 0 0.4rem 0;
+      font-style: italic;
+      font-size: 14px;
+    }
+
+    .link-entry {
+      padding: 1rem 0;
+    }
+
+    .linkblog-meta, .domain {
+      font-size: 13px;
+    }
+
+    .tag {
+      background: rgba(196, 229, 60, 0.1);
+      border: 1px solid #c4e53c;
+      border-radius: 5px;
+      margin: 0.25rem 0.3rem 0.25rem 0.1rem;
+      padding: 0.1rem 0.4rem;
+    }
+
+    :
+
+  </style>
+
+    <div class="layout">
+      <article class="content">
+        <section class="intro">
+          <h1>{fullTitle}</h1>
+        </section>
+        <ul>
+    {page.data.map((post) => (
+      <li>
+        <div class="link-entry">
+        <a href={post.url}><Fragment set:html={post.title}></a> <span class="domain">({domainName(post.url)})</span>
+                <div class="link-description">"{post.description}"</div>
+                <div class="linkblog-meta">
+                  <FormattedDate date={new Date(post.date)} />
+                  <span>| Filed under: </span>
+                {post.tags.map((tag) => (
+                <span class="tag">{tag}</span>
+                ))}
+                </div>
+          </div>
+      </li>
+    ))}
+    </ul>
+    </section>
+        <div class="page-links">{page.url.prev && (
+          <a class='prev' href={page.url.prev || '#'}>&laquo; Prev</a>
+        )}
+        {page.url.prev && page.url.next && ""}
+        {page.url.next && (
+          <a class='Next' href={page.url.next || '#'}>Next &raquo;</a>
+        )}</div>
+      </article>
+    </div>
+    <Footer />
