@@ -1,11 +1,26 @@
 [
     {
+        "url": "/morsels/morsel-10/",
+        "link_data": [
+            {
+                "prev": "/morsels/morsel-9/",
+                "title": "Morsel #9: Oapy",
+                "date": "2023-03-23"
+            }
+        ]
+    },
+    {
         "url": "/morsels/morsel-9/",
         "link_data": [
             {
                 "prev": "/morsels/morsel-8/",
                 "title": "Morsel #8: Bandcamp Album Length Calculator",
                 "date": "2023-02-04"
+            },
+            {
+                "next": "/morsels/morsel-10/",
+                "title": "Morsel #10: Ticking all the boxes",
+                "date": "2024-01-23"
             }
         ]
     },

@@ -1,11 +1,26 @@
 [
     {
+        "url": "/lists/my-favourite-ducks/",
+        "link_data": [
+            {
+                "prev": "/lists/all-inspirations/",
+                "title": "All Inspirations",
+                "date": "2023-12-12"
+            }
+        ]
+    },
+    {
         "url": "/lists/all-inspirations/",
         "link_data": [
             {
                 "prev": "/lists/sporting-inspirations/",
                 "title": "Sporting Inspirations",
                 "date": "2023-12-12"
+            },
+            {
+                "next": "/lists/my-favourite-ducks/",
+                "title": "My favourite ducks",
+                "date": "2024-01-24"
             }
         ]
     },

@@ -1,11 +1,26 @@
 [
     {
+        "url": "/posts/i-started-a-linkblog/",
+        "link_data": [
+            {
+                "prev": "/posts/letterboxd-year-review-2023/",
+                "title": "My Letterboxd Year In Review for 2023",
+                "date": "2024-01-06"
+            }
+        ]
+    },
+    {
         "url": "/posts/letterboxd-year-review-2023/",
         "link_data": [
             {
                 "prev": "/posts/aoty-2023/",
                 "title": "My Albums of the Year: 2023",
                 "date": "2024-01-02"
+            },
+            {
+                "next": "/posts/i-started-a-linkblog/",
+                "title": "I've started a linkblog",
+                "date": "2024-01-29"
             }
         ]
     },
@@ -1918,8 +1933,8 @@
         "url": "/posts/to-be-childlike-and-not-childish/",
         "link_data": [
             {
-                "prev": "/posts/my-idea-debt/",
-                "title": "My Idea Debt",
+                "prev": "/posts/aoty-2016/",
+                "title": "My Albums Of The Year List: 2016",
                 "date": "2017-02-01"
             },
             {
@@ -1930,11 +1945,11 @@
         ]
     },
     {
-        "url": "/posts/my-idea-debt/",
+        "url": "/posts/aoty-2016/",
         "link_data": [
             {
-                "prev": "/posts/aoty-2016/",
-                "title": "My Albums Of The Year List: 2016",
+                "prev": "/posts/my-idea-debt/",
+                "title": "My Idea Debt",
                 "date": "2017-02-01"
             },
             {
@@ -1945,7 +1960,7 @@
         ]
     },
     {
-        "url": "/posts/aoty-2016/",
+        "url": "/posts/my-idea-debt/",
         "link_data": [
             {
                 "prev": "/posts/10-inspiring-creatives-2017/",
@@ -1953,8 +1968,8 @@
                 "date": "2017-01-04"
             },
             {
-                "next": "/posts/my-idea-debt/",
-                "title": "My Idea Debt",
+                "next": "/posts/aoty-2016/",
+                "title": "My Albums Of The Year List: 2016",
                 "date": "2017-02-01"
             }
         ]
@@ -1968,8 +1983,8 @@
                 "date": "2017-01-01"
             },
             {
-                "next": "/posts/aoty-2016/",
-                "title": "My Albums Of The Year List: 2016",
+                "next": "/posts/my-idea-debt/",
+                "title": "My Idea Debt",
                 "date": "2017-02-01"
             }
         ]
