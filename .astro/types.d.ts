@@ -1459,6 +1459,13 @@ declare module 'astro:content' {
   collection: "recortes";
   data: any
 } & { render(): Render[".md"] };
+"earworm-lyrics.md": {
+	id: "earworm-lyrics.md";
+  slug: "earworm-lyrics";
+  body: string;
+  collection: "recortes";
+  data: any
+} & { render(): Render[".md"] };
 "happy-accident-1.md": {
 	id: "happy-accident-1.md";
   slug: "happy-accident-1";
