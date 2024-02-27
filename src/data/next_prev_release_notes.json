@@ -1,11 +1,26 @@
 [
     {
+        "url": "/release-notes/release-notes-17/",
+        "link_data": [
+            {
+                "prev": "/release-notes/release-notes-16/",
+                "title": "Release Notes #16",
+                "date": "2023-11-26"
+            }
+        ]
+    },
+    {
         "url": "/release-notes/release-notes-16/",
         "link_data": [
             {
                 "prev": "/release-notes/release-notes-15/",
                 "title": "Release Notes #15",
                 "date": "2023-04-22"
+            },
+            {
+                "next": "/release-notes/release-notes-17/",
+                "title": "Release Notes #17",
+                "date": "2024-02-27"
             }
         ]
     },
