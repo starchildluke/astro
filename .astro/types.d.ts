@@ -240,6 +240,13 @@ declare module 'astro:content' {
   collection: "lists";
   data: InferEntrySchema<"lists">
 } & { render(): Render[".md"] };
+"favourite-animals.md": {
+	id: "favourite-animals.md";
+  slug: "favourite-animals";
+  body: string;
+  collection: "lists";
+  data: InferEntrySchema<"lists">
+} & { render(): Render[".md"] };
 "its-binary-time.md": {
 	id: "its-binary-time.md";
   slug: "its-binary-time";
