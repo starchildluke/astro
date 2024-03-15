@@ -38,7 +38,7 @@ function postsByYear(posts: Post[]) {
 const postGroups = postsByYear(page.data)
 
 let domain = 'https://lukealexdavis.co.uk';
-let fullTitle = `Posts (Page ${page.currentPage}/${page.lastPage})`
+let fullTitle = page.url.prev ? `Posts (Page ${page.currentPage}/${page.lastPage})` : 'Posts';
 let description = "The blog listings page. I write about all kinds of topics including SEO, AI, music, life, and the Web.";
 ---
 <Layout title={fullTitle} description={description} canonicalURL={canonicalURL} />
