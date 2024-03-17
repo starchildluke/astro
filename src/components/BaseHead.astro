@@ -27,5 +27,11 @@ let ogimage = 'https://lukealexdavis.co.uk/assets/ld-logo-og-image.jpg';
 <meta name="generator" content={Astro.generator}>
 <link rel="canonical" href={canonicalURL} />
 <link rel="alternate" type="application/rss+xml" title={site.title} href={blogRssFeed} />
+<script>document.querySelectorAll('.nav-links a').forEach(
+  link => {
+    if (link.href === window.location.href) {
+      link.setAttribute('aria-current', 'page')
+    }
+  })</script>
 <!-- <link rel="preload" as="style" href="/style/blog.css" type="text/css"> -->
 </head>
