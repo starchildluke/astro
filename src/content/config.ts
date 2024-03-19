@@ -35,6 +35,7 @@ const recortes = defineCollection({
 	type: 'content',
 	schema: z.object({
 		title: z.string(),
+		description: z.string().optional(),
 		published: z.boolean().optional(),
 		pubDate: z
 			.string()
@@ -53,6 +54,7 @@ const releaseNotes = defineCollection({
 	type: 'content',
 	schema: z.object({
 		title: z.string(),
+		description: z.string().optional(),
 		published: z.boolean().optional(),
 		pubDate: z
 			.string()
@@ -66,6 +68,7 @@ const morsels = defineCollection({
 	type: 'content',
 	schema: z.object({
 		title: z.string(),
+		description: z.string().optional(),
 		published: z.boolean().optional(),
 		pubDate: z
 			.string()
@@ -79,6 +82,7 @@ const lists = defineCollection({
 	type: 'content',
 	schema: z.object({
 		title: z.string(),
+		description: z.string().optional(),
 		published: z.boolean().optional(),
 		pubDate: z
 			.string()

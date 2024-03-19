@@ -4,6 +4,5 @@ import mdx from '@astrojs/mdx';
 
 export default defineConfig({
   integrations: [sitemap(), mdx()],
-  site: "https://lukealexdavis.co.uk",
-  trailingSlash: 'always'
+  site: "https://lukealexdavis.co.uk"
 });

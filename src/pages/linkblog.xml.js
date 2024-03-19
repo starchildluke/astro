@@ -2,7 +2,7 @@ import rss from '@astrojs/rss';
 import linkblog from '../data/linkblog.json';
 import site from '../data/site.json';
 
-export async function get(context) {
+export async function GET(context) {
   return rss({
     title: "Luke's Linkblog",
     description: "A linkblog about all kinds of topics including SEO, AI, music, life, and the Web.",

@@ -1,40 +1,28 @@
 {
-  "name": "@example/blog",
-  "version": "2.0.0",
-  "private": true,
+  "name": "astro",
+  "type": "module",
+  "version": "0.0.1",
   "scripts": {
+    "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build"
-  },
-  "devDependencies": {
-    "@babel/types": "^7.21.4",
-    "@snowpack/plugin-svelte": "^3.7.0",
-    "astro": "^2.3.0",
-    "prettier": "^2.8.7"
+    "check": "astro check",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/markdown-component": "^1.0.3",
-    "@astrojs/markdown-remark": "^2.1.2",
-    "@astrojs/mdx": "^0.19.7",
-    "@astrojs/renderer-svelte": "^0.5.2",
-    "@astrojs/rss": "^3.0.0",
-    "@astrojs/sitemap": "^1.2.1",
-    "@tinacms/cli": "^1.5.6",
-    "esbuild": "^0.17.14",
-    "got": "^12.6.0",
-    "init": "^0.1.2",
-    "jsdom": "^21.1.1",
-    "major": "^0.0.0",
-    "mime": "^3.0.0",
-    "minimist": "^1.2.8",
-    "react-dom": "^18.2.0",
-    "rollup-plugin-svelte": "^7.1.4",
-    "sanitize-html": "^2.10.0",
-    "sitemapper": "^3.2.6",
-    "ssr-utils": "^0.1.1-0",
-    "svelte": "^3.57.0",
-    "tinacms": "^1.4.6",
-    "version": "^0.1.2",
-    "vite": "^4.2.1"
+    "@astrojs/check": "^0.5.9",
+    "@astrojs/markdown-component": "^1.0.5",
+    "@astrojs/markdown-remark": "^4.3.0",
+    "@astrojs/mdx": "^2.2.0",
+    "@astrojs/rss": "^4.0.5",
+    "@astrojs/sitemap": "^3.1.1",
+    "astro": "^4.5.6",
+    "markdown-it": "^14.1.0",
+    "prettier": "^3.2.5",
+    "sanitize-html": "^2.12.1",
+    "sitemapper": "^3.1.8",
+    "typescript": "^5.4.2",
+    "vite": "^5.1.6"
   }
 }
