@@ -21,13 +21,9 @@ const sitemap = new Sitemapper();
 
 const sitemapURLs = await sitemap.fetch('https://lukealexdavis.co.uk/sitemap-0.xml');
 
-// PROPS
-
-const { post } = Astro.props;
 
 // METADATA VARIABLES
 
-let metaTitle = ' | Luke Davis';
 let title = 'HTML Sitemap';
 let description = 'This is a HTML sitemap for this site.';
 let canonicalURL = Astro.url;

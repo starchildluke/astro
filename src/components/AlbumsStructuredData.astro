@@ -4,14 +4,17 @@ import albums from '../data/albums.json'
 const artists = albums.albums.map((album) => (
                     album.artist));
 
-const thingJson = [{'name': ""}]
 
 
-
-const item = thingJson.forEach( (thing) => (
-  artists.map( (artist)  => 
-   thing.name = artist ) )
-   )
+const item = artists.map(
+    (artist)  => (
+        {"@type": "Thing", "name": artist}
+      )
+    )
 
 ---
-<script type="application/ld+json" set:html={JSON.stringify(thingJson)}></script>
+<script type="application/ld+json" set:html={JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "about": item
+  })}></script>

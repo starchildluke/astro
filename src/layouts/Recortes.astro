@@ -1,19 +1,4 @@
 ---
-import Markdown from '@astrojs/markdown-component';
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import BlogPost from '../components/BlogPost.astro';
-import Footer from '../components/Footer.astro';
-import StructuredData from '../components/StructuredData.astro';
-
-const { title, description, pubDate, canonicalURL = Astro.url } = Astro.props;
 
 ---
-    <section>
-      <slot />
-    </section>
-  </article>
-</div>
-</main>
-</body>
-</html>
+<slot />

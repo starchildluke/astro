@@ -10,21 +10,12 @@ import albums from '../data/albums.json'
 // EXPORT
 
 export interface Props {
-  post: any;
-  metaTitle: string;
   title: string;
-  slug: string;
   description: string;
-  domain: string;
 }
-
-// PROPS
-
-const { post } = Astro.props;
 
 // METADATA VARIABLES
 
-let metaTitle = ' | Luke Davis';
 let title = 'Important albums';
 let description = 'A list of my important albums in my life.';
 let canonicalURL = Astro.url;
@@ -60,6 +51,7 @@ let canonicalURL = Astro.url;
             </table>            
               </article>
             </main>
+            <AlbumsStructuredData />
       <Footer/>
   </body>
 </html>
