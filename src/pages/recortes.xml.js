@@ -5,7 +5,7 @@ import sanitizeHtml from 'sanitize-html';
 import MarkdownIt from 'markdown-it';
 const parser = new MarkdownIt();
 
-export async function get(context) {
+export async function GET(context) {
   const recortes = await getCollection('recortes');
   const allPosts = recortes.sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()

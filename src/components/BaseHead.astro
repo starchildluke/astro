@@ -4,11 +4,11 @@ import site from '../data/site.json';
 const {
   title,
   description,
-  image = 'https://lukealexdavis.co.uk/assets/ld-logo-og-image.jpg',
+  image = site.url + 'images/ld-logo-og-image.jpg',
   canonicalURL = Astro.url
 } = Astro.props;
 
-const blogRssFeed = `${site.url}feed/blog.xml`;
+const blogRssFeed = `${site.url}blog.xml`;
 
 ---
 <head>
