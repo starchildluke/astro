@@ -13,7 +13,7 @@ function domainName(url: string) {
   return domain.hostname;
 }
 
-const { page, canonicalURL = Astro.url } = Astro.props
+const { page, canonicalURL = Astro.url } = Astro.props;
 
 let fullTitle = `Linkblog (Page ${page.currentPage})`
 let description = "The blog listings page. I write about all kinds of topics including SEO, AI, music, life, and the Web.";

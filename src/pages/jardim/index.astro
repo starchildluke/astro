@@ -2,22 +2,8 @@
 // COMPONENTS
 
 import Layout from '../../layouts/Layout.astro';
-import BaseHead from '../../components/BaseHead.astro';
-import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
-import Breadcrumbs from '../../components/Breadcrumbs.astro';
-import site from '../../data/site.json';
 import jardim from '../../data/jardim.json'
-
-// EXPORT
-
-export interface Props {
-  post: any;
-}
-
-// PROPS
-
-const { post, canonicalURL = Astro.url } = Astro.props;
 
 // METADATA VARIABLES
 

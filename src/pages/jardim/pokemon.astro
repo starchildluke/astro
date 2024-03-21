@@ -1,23 +1,16 @@
 ---
 // COMPONENTS
 
-import BaseHead from '../../components/BaseHead.astro';
-import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import Layout from '../../layouts/Layout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
-import site from '../../data/site.json';
 import Tags from '../../components/Tags.astro';
-
-// PROPS
-
-const { post } = Astro.props;
 
 // HOW FETCHING!
 
-const cultrData = await fetch('https://cultrface.co.uk/wp-json/wp/v2/posts?tags=136&per_page=3').then(response => response.json());
-const logicData = await fetch('https://logicface.co.uk/wp-json/wp/v2/posts?tags=22&per_page=3').then(response => response.json());
-const daData = await fetch('https://distantarcade.co.uk/wp-json/wp/v2/posts?categories=137&per_page=4').then(response => response.json());
+const cultrData = await fetch('https://cultrface.co.uk/wp-json/wp/v2/posts?tags=136&per_page=1').then(response => response.json());
+const logicData = await fetch('https://logicface.co.uk/wp-json/wp/v2/posts?tags=22&per_page=1').then(response => response.json());
+const daData = await fetch('https://distantarcade.co.uk/wp-json/wp/v2/posts?categories=137&per_page=3').then(response => response.json());
 
 // METADATA VARIABLES
 

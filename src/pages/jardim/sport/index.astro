@@ -1,20 +1,12 @@
 ---
 // COMPONENTS
 
-import BaseHead from '../../../components/BaseHead.astro';
-import Header from '../../../components/Header.astro';
 import Footer from '../../../components/Footer.astro';
 import Layout from '../../../layouts/Layout.astro';
 import Breadcrumbs from '../../../components/Breadcrumbs.astro';
-import site from '../../../data/site.json';
-import jardim from '../../../data/jardim.json';
 import Tags from '../../../components/Tags.astro';
 
-// PROPS
-
-const { post } = Astro.props;
-
-const remoteData = await fetch('https://playrface.co.uk/wp-json/wp/v2/posts?per_page=10').then(response => response.json());
+const remoteData = await fetch('https://playrface.co.uk/wp-json/wp/v2/posts?per_page=5').then(response => response.json());
 
 let title = 'Sport';
 let description = "A page all about sport.";
@@ -23,6 +15,7 @@ let description = "A page all about sport.";
 <Layout {title} {description}>
     <main class="layout">
       <article class="content">
+      <Breadcrumbs title={title}/>
         <h1>{title}</h1>
         <p class="desc">{description}</p>
         <p>Sport has the ability to immerse you as if you're the one playing, and I love that. No matter how I feel about specific sports or matches now, every sporting discipline I've watched has had some kind of effect on me and shaped how I see other games and sometimes my own life.</p>

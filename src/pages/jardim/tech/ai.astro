@@ -1,27 +1,18 @@
 ---
 // COMPONENTS
 
-import BaseHead from '../../../components/BaseHead.astro';
-import Header from '../../../components/Header.astro';
 import Footer from '../../../components/Footer.astro';
 import Layout from '../../../layouts/Layout.astro';
 import Breadcrumbs from '../../../components/Breadcrumbs.astro';
-import site from '../../../data/site.json';
-import jardim from '../../../data/jardim.json'
-import { getCollection } from 'astro:content';
 import Tags from '../../../components/Tags.astro';
-
-// PROPS
-
-const { post } = Astro.props;
 
 // HOW FETCHING!
 
-const remoteData = await fetch('https://logicface.co.uk/wp-json/wp/v2/posts?categories=498&per_page=10').then(response => response.json());
+const remoteData = await fetch('https://logicface.co.uk/wp-json/wp/v2/posts?categories=498&per_page=3').then(response => response.json());
 
-const sfRemoteData = await fetch('https://sampleface.co.uk/wp-json/wp/v2/posts?tags=3110&per_page=10').then(response => response.json());
+const sfRemoteData = await fetch('https://sampleface.co.uk/wp-json/wp/v2/posts?tags=3110&per_page=1').then(response => response.json());
 
-const daRemoteData = await fetch('https://distantarcade.co.uk/wp-json/wp/v2/posts?tags=284&per_page=10').then(response => response.json());
+const daRemoteData = await fetch('https://distantarcade.co.uk/wp-json/wp/v2/posts?tags=284&per_page=1').then(response => response.json());
 
 // METADATA VARIABLES
 
