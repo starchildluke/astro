@@ -36,7 +36,7 @@ So this isn't necessarily sitewide, it only affects a small portion of queries, 
 ## Web performance doesn't always correlate with organic ranking
 
 <figure class="float-img-right">
-	<img src="/images/i-make-lots-of-graphs.jpg" loading="lazy" width="250" height="188" />
+	<img src="/images/i-make-lots-of-graphs.jpg" alt="Lisa Simpson holding up a graph with the caption 'I make a lot of graphs'" loading="lazy" width="250" height="188" />
 	<figcaption>Lisa is clearly an SEO.</figcaption>
 </figure>
 
@@ -70,7 +70,7 @@ If they do though, they navigate the site, may convert, may not, may abandon the
 ## The bottom line
 
 <figure>
-	<img src="/images/stone-cold.jpg" loading="lazy" width="640" height="500" />
+	<img src="/images/stone-cold.jpg" alt="A white male wrestler named Stone Cold, wearing some black briefs and boots talking into a mic with anger. He was famous for uttering the line 'and that's the bottom line cos Stone Cold said so'" loading="lazy" width="640" height="500" />
 	<figcaption>Me in a client meeting.</figcaption>
 </figure>
 
