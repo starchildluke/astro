@@ -1,0 +1,17 @@
+---
+const { tags } = Astro.props;
+import jardim from '../data/tags.json';
+
+function getJardimLink(tag) {
+  for (let i = 0; i < jardim.tagEntries.length; i++) {
+      if (jardim.tagEntries[i].tagName === tag) {
+          return jardim.tagEntries[i].jardimLink;
+   }
+ }
+  return tag;
+};
+
+---
+
+<p><strong>Filed under: {tags.map(
+	(tag) => <span><a href={"/jardim" + getJardimLink(tag)}>{tag}</a> </span>)}</strong></p>
