@@ -31,14 +31,14 @@ const sortedLists = lists.sort((a, b) => a.data.title.localeCompare(b.data.title
 
 <h3>Recortes</h3>
 <ul>
-  {sortedRecortes.map(recorte =>
+  {sortedRecortes.length > 0 ? sortedRecortes.map(recorte =>
   <li><a href=`/recortes/${recorte.slug}/`>{recorte.data.title}</a></li>
-  )}
+  ) : <li>Coming soon!</li>}
 </ul>
 
 <h3>Lists</h3>
 <ul>
-  {sortedLists.map(list =>
+  {sortedLists.length > 0 ? sortedLists.map(list =>
   <li><a href=`/lists/${list.slug}/`>{list.data.title}</a></li>
-  )}
+  ) : <li>Coming soon!</li>}
 </ul>
