@@ -8,11 +8,13 @@ import Tags from '../../components/Tags.astro';
 
 // HOW FETCHING!
 
-const remoteData = await fetch('https://cultrface.co.uk/wp-json/wp/v2/posts?categories=828&per_page=3').then(response => response.json());
+// const remoteData = await fetch('https://cultrface.co.uk/wp-json/wp/v2/posts?categories=828&per_page=3').then(response => response.json());
 
-const remoteData2 = await fetch('https://sampleface.co.uk/wp-json/wp/v2/posts?tags=2622&per_page=1').then(response => response.json());
+// const remoteData2 = await fetch('https://sampleface.co.uk/wp-json/wp/v2/posts?tags=2622&per_page=1').then(response => response.json());
 
-const remoteData3 = await fetch('https://logicface.co.uk/wp-json/wp/v2/posts?categories=236&per_page=1').then(response => response.json());
+// const remoteData3 = await fetch('https://logicface.co.uk/wp-json/wp/v2/posts?categories=236&per_page=1').then(response => response.json());
+
+
 
 // METADATA VARIABLES
 
@@ -40,21 +42,13 @@ let description = "A wiki page all about blackness.";
           <section>
             <h2 class="wiki-h2">Out loud</h2>
             <ul>
-              {remoteData.map((item) => (
-              <li>
-                <a href={item.link}><Fragment set:html={item.title.rendered}></a>
-              </li>
-              ))}
-              {remoteData2.map((item) => (
-              <li>
-                <a href={item.link}><Fragment set:html={item.title.rendered}></a>
-              </li>
-              ))}
-              {remoteData3.map((item) => (
-              <li>
-                <a href={item.link}><Fragment set:html={item.title.rendered}></a>
-              </li>
-              ))}
+              <li><a href="https://sampleface.co.uk/tag/black-culture/">Black culture on Sampleface</a></li>
+              <li><a href="https://cultrface.co.uk/category/culture/black-cultures/">Black cultures on Cultrface</a></li>
+              <li><a href="https://logicface.co.uk/category/black-in-stem/">Black in STEM on LOGiCFACE</a></li>
+              <li><a href="https://logicface.co.uk/category/tech/black-tech/">Black tech on LOGiCFACE</a></li>
+              <li><a href="https://playrface.co.uk/tag/black-athletes/">Black athletes on Playrface</a></li>
+              <li><a href="https://distantarcade.co.uk/tag/black-in-gaming/">Black in gaming on Distant Arcade</a></li>
+              <li><a href="https://distantarcade.co.uk/tag/black-names-in-video-games/">Black Names In Video Games on Distant Arcade</a></li>            
             </ul>
             <h2 class="wiki-h2">Second opinions</h2>
               <ul>
