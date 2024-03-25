@@ -8,9 +8,9 @@ import Tags from '../../components/Tags.astro';
 
 // HOW FETCHING!
 
-const remoteData = await fetch('https://logicface.co.uk/wp-json/wp/v2/posts?tags=268&per_page=3').then(response => response.json());
+// const remoteData = await fetch('https://logicface.co.uk/wp-json/wp/v2/posts?tags=268&per_page=3').then(response => response.json());
 
-const remoteData2 = await fetch('https://cultrface.co.uk/wp-json/wp/v2/posts?tags=563&per_page=2').then(response => response.json());
+// const remoteData2 = await fetch('https://cultrface.co.uk/wp-json/wp/v2/posts?tags=563&per_page=2').then(response => response.json());
 
 // METADATA VARIABLES
 
@@ -34,19 +34,14 @@ let description = 'A wiki page all about COVID-19.';
         <section>
           <h2 class="wiki-h2">Out loud</h2>
           <ul>
-            {remoteData.map((item) => (
             <li>
-              <a href={item.link}><Fragment set:html={item.title.rendered}></a>
+              <a href="https://logicface.co.uk/tag/covid-19/">COVID-19 on LOGiCFACE</a>
             </li>
-            ))}
-            {remoteData2.map((item) => (
             <li>
-              <a href={item.link}><Fragment set:html={item.title.rendered}></a>
+              <a href="https://cultrface.co.uk/tag/covid-19/">COVID-19 on Cultrface</a>
             </li>
-            ))}
           </ul>
           <h2 class="wiki-h2">Second opinions</h2>
-          
           <ul>
             <li><a href="https://www.sfchronicle.com/health/article/How-long-can-I-keep-using-the-same-N95-respirator-16765593.php">How long can I keep using the same N95 respirator mask? Here’s what Bay Area experts say</a></li>
             <li><a href="https://twitter.com/TRyanGregory/status/1522658781049626624">Here&#39;s a brief recap of some new publications, preprints, and reports related to COVID-19 that have come out recently</a></li>

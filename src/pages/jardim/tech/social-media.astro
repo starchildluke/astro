@@ -8,9 +8,8 @@ import Tags from '../../../components/Tags.astro';
 
 // HOW FETCHING!
 
-const cfRemoteData = await fetch('https://cultrface.co.uk/wp-json/wp/v2/posts?tags=982&per_page=3').then(response => response.json());
-
-const lfRemoteData = await fetch('https://logicface.co.uk/wp-json/wp/v2/posts?tags=264&per_page=2').then(response => response.json());
+// const cfRemoteData = await fetch('https://cultrface.co.uk/wp-json/wp/v2/posts?tags=982&per_page=3').then(response => response.json());
+// const lfRemoteData = await fetch('https://logicface.co.uk/wp-json/wp/v2/posts?tags=264&per_page=2').then(response => response.json());
 
 // METADATA VARIABLES
 
@@ -34,16 +33,12 @@ let description = 'A page all about social media.';
         <section>
           <h2 class="wiki-h2">Out loud</h2>
           <ul>
-            {cfRemoteData.map((item) => (
             <li>
-              <a href={item.link}><Fragment set:html={item.title.rendered}></a>
+              <a href="https://cultrface.co.uk/tag/social-media/">Social media on Cultrface</a>
             </li>
-            ))}
-            {lfRemoteData.map((item) => (
             <li>
-              <a href={item.link}><Fragment set:html={item.title.rendered}></a>
+              <a href="https://logicface.co.uk/tag/social-media/">Social media on LOGiCFACE</a>
             </li>
-            ))}
           </ul>
           <h2 class="wiki-h2">Second opinions</h2>
           

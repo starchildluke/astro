@@ -8,11 +8,9 @@ import Tags from '../../../components/Tags.astro';
 
 // HOW FETCHING!
 
-const remoteData = await fetch('https://logicface.co.uk/wp-json/wp/v2/posts?categories=498&per_page=3').then(response => response.json());
-
-const sfRemoteData = await fetch('https://sampleface.co.uk/wp-json/wp/v2/posts?tags=3110&per_page=1').then(response => response.json());
-
-const daRemoteData = await fetch('https://distantarcade.co.uk/wp-json/wp/v2/posts?tags=284&per_page=1').then(response => response.json());
+// const remoteData = await fetch('https://logicface.co.uk/wp-json/wp/v2/posts?categories=498&per_page=3').then(response => response.json());
+// const sfRemoteData = await fetch('https://sampleface.co.uk/wp-json/wp/v2/posts?tags=3110&per_page=1').then(response => response.json());
+// const daRemoteData = await fetch('https://distantarcade.co.uk/wp-json/wp/v2/posts?tags=284&per_page=1').then(response => response.json());
 
 // METADATA VARIABLES
 
@@ -39,21 +37,9 @@ let description = 'A page all about artificial intelligence (or AI).';
         <section>
           <h2 class="wiki-h2">Out loud</h2>
           <ul>
-            {remoteData.map((item) => (
-            <li>
-              <a href={item.link}><Fragment set:html={item.title.rendered}></a>
-            </li>
-            ))}
-            {sfRemoteData.map((item) => (
-            <li>
-              <a href={item.link}><Fragment set:html={item.title.rendered}></a>
-            </li>
-            ))}
-          {daRemoteData.map((item) => (
-            <li>
-              <a href={item.link}><Fragment set:html={item.title.rendered}></a>
-            </li>
-            ))}
+            <li><a href="https://logicface.co.uk/category/tech/computing/computer-science/ai/">AI on LOGiCFACE</a></li>
+            <li><a href="https://logicface.co.uk/tag/ai/">AI on Sampleface</a></li>
+            <li><a href="https://distantarcade.co.uk/tag/ai/">AI on Distant Arcade</a></li>
           </ul>
           <h2 class="wiki-h2">Second opinions</h2>
           

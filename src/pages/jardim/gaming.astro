@@ -8,7 +8,7 @@ import Tags from '../../components/Tags.astro';
 
 // HOW FETCHING!
 
-const remoteData = await fetch('https://distantarcade.co.uk/wp-json/wp/v2/posts?per_page=5').then(response => response.json());
+// const remoteData = await fetch('https://distantarcade.co.uk/wp-json/wp/v2/posts?per_page=5').then(response => response.json());
 
 // METADATA VARIABLES
 
@@ -33,11 +33,18 @@ let description = 'A wiki page all about gaming.';
         <section>
           <h2 class="wiki-h2">Out loud</h2>
           <ul>
-            {remoteData.map((item) => (
             <li>
-              <a href={item.link}><Fragment set:html={item.title.rendered}></a>
+              <a href="https://cultrface.co.uk/category/gaming/">Gaming on Cultrface</a>
             </li>
-            ))}
+            <li>
+              <a href="https://logicface.co.uk/category/video-games/">Video games on LOGiCFACE</a>
+            </li>
+            <li>
+              <a href="https://playrface.co.uk/tag/video-games/">Video games on Playrface</a>
+            </li>
+            <li>
+              <a href="https://distantarcade.co.uk/">Distant Arcade</a>
+            </li>
           </ul>
           <h2 class="wiki-h2">Second opinions</h2>
           

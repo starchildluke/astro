@@ -8,8 +8,8 @@ import Tags from '../../components/Tags.astro';
 
 // HOW FETCHING!
 
-const lisbonCultrface = await fetch('https://cultrface.co.uk/wp-json/wp/v2/posts?tags=968&per_page=3').then(response => response.json());
-const lisbonPlayrface = await fetch('https://playrface.co.uk/wp-json/wp/v2/posts?tags=304&per_page=2').then(response => response.json());
+// const lisbonCultrface = await fetch('https://cultrface.co.uk/wp-json/wp/v2/posts?tags=968&per_page=3').then(response => response.json());
+// const lisbonPlayrface = await fetch('https://playrface.co.uk/wp-json/wp/v2/posts?tags=304&per_page=2').then(response => response.json());
 
 // METADATA VARIABLES
 
@@ -41,16 +41,8 @@ let domain = "https://lukealexdavis.co.uk"
             <section>
               <h2 class="wiki-h2">Out loud</h2>
               <ul>
-                {lisbonCultrface.map(( post ) => (
-                  <li>
-                    <a href={post.link}><Fragment set:html={post.title.rendered}></a>
-                  </li>
-                ))}
-                {lisbonPlayrface.map((item) => (
-                <li>
-            <a href={item.link}><Fragment set:html={item.title.rendered}></a>
-          </li>
-             ))}
+                <li><a href="https://cultrface.co.uk/tag/lisbon/">Lisbon on Cultrface</a></li>
+                <li><a href="https://playrface.co.uk/tag/lisbon/">Lisbon on Playrface</a></li>
               </ul>
               <h2 class="wiki-h2">Second opinions</h2>
                 <ul>

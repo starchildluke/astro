@@ -6,7 +6,7 @@ import Layout from '../../../layouts/Layout.astro';
 import Breadcrumbs from '../../../components/Breadcrumbs.astro';
 import Tags from '../../../components/Tags.astro';
 
-const remoteData = await fetch('https://playrface.co.uk/wp-json/wp/v2/posts?per_page=5').then(response => response.json());
+// const remoteData = await fetch('https://playrface.co.uk/wp-json/wp/v2/posts?per_page=5').then(response => response.json());
 
 let title = 'Sport';
 let description = "A page all about sport.";
@@ -23,14 +23,6 @@ let description = "A page all about sport.";
         <h2 class="wiki-h2">Inner voice</h2>
         <Tags tagName="sport" />
         <h2 class="wiki-h2">Out loud</h2>
-        <h3>From Playrface</h3>
-        <ul>
-          {remoteData.map((item) => (
-          <li>
-            <a href={item.link}><Fragment set:html={item.title.rendered}></a>
-          </li>
-          ))}
-        </ul>
         <p><a href="https://playrface.co.uk/">Read more on Playrface</a></p>
         <h2 class="wiki-h2">Second opinions</h2>
         <ul>

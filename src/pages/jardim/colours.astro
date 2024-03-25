@@ -8,7 +8,7 @@ import Tags from '../../components/Tags.astro';
 
 // HOW FETCHING!
 
-const remoteData = await fetch('https://cultrface.co.uk/wp-json/wp/v2/posts?tags=532&per_page=5').then(response => response.json());
+// const remoteData = await fetch('https://cultrface.co.uk/wp-json/wp/v2/posts?tags=532&per_page=5').then(response => response.json());
 
 // METADATA VARIABLES
 
@@ -33,11 +33,7 @@ let description = 'A wiki page all about colours.';
             <section>
               <h2 class="wiki-h2">Out loud</h2>
               <ul>
-                {remoteData.map(( post ) => (
-                  <li>
-                    <a href={post.link}><Fragment set:html={post.title.rendered}></a>
-                  </li>
-                ))}
+                <li><a href="https://cultrface.co.uk/tag/colours/">Colours on Cultrface</li>
               </ul>
               <h2 class="wiki-h2">Second opinions</h2>
                 <ul>
