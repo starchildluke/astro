@@ -1,0 +1,27 @@
+---
+const { url } = Astro.props;
+---
+
+<script type="application/ld+json" set:html={JSON.stringify({
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@id": "https://lukealexdavis.co.uk/jardim/",
+        "name": "Parent"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@id": url,
+        "name": "Current"
+      }
+    }
+  ]
+})}>
+</script>
