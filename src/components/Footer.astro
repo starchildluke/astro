@@ -7,17 +7,17 @@ let year = new Date().getFullYear()
         display: flex;
         flex-wrap: wrap;
         list-style: none;
-        padding: 0;
+        padding: 0 0 1rem 0;
         justify-content: center;
     }
 
     .footer-nav-links li {
-        padding: 0 8px;
+        font-size: inherit;
     }
 </style>
 
 <footer>
-    <div class="footer-nav-links">
+    <nav class="footer-nav-links">
         <ul>
             <li><a href="#top">&ShortUpArrow; Back to top</a></li> 
             <li><a href="/blog.xml" style="color:#bf3f00;">RSS feed</a></li> 
@@ -31,7 +31,7 @@ let year = new Date().getFullYear()
             <li><a href="/lastfm-top-1000/">Last.fm Top 1000</a></li> 
             <li><a href="/letterboxd-diaries/">Letterboxd Diaries</a></li>
         </ul>
-    </div>
+    </nav>
     <p>- - - - -</p>
     <p><a href="https://astro.build/">Built with Astro</a>, HTML, CSS, and a <span lang="fr">soupçon</span> of JS. <a href="https://twitter.com/t3dotgg/status/1481344430921502720">Special tweet added for good luck.</a></p>
     <p><a href="/html-sitemap/">HTML Sitemap</a> | Member of the <a href="https://250kb.club/">250KB Club</a>, <a href="https://512kb.club/">512KB Club</a> and <a href="https://1mb.club/">1MB Club</a></p>
