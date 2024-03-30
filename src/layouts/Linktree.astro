@@ -1,0 +1,18 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  canonicalURL: string | URL;
+}
+
+const { title, description, canonicalURL = Astro.url } = Astro.props;
+
+---
+<html lang="en-GB">
+  <BaseHead {title} {description} {canonicalURL} />
+  <body>
+      <slot />
+  </body>
+</html>

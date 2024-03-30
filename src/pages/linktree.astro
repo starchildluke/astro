@@ -1,36 +1,94 @@
 ---
 // COMPONENTS
 
-import Layout from '../layouts/Layout.astro';
-import BaseHead from '../components/BaseHead.astro';
-import Footer from '../components/Footer.astro';
-
-// PROPS
-
-const { post } = Astro.props;
+import Linktree from '../layouts/Linktree.astro';
 
 // METADATA VARIABLES
 
 let title = 'Linktree';
-let description = "My personal linktree because there's not point in me using the actual Linktree.";
+let description = "this is my personal linktree featuring my support links, bandcamp, and newsletters.";
 ---
 
-<Layout {title} {description}>
-    <main class="layout">
-      <article class="content">
+<Linktree {title} {description}>
+
+  <style>
+
+  body {
+    background: linear-gradient(to right,rgba(64 , 138, 19,0.5), rgb(241, 176, 107, 0.5)), url("data:image/svg+xml;base64,PHN2ZwogIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZycKICB4bWxuczp4bGluaz0naHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluaycKICB3aWR0aD0nMzAwJyBoZWlnaHQ9JzMwMCc+CgogICAgPGZpbHRlciBpZD0nbicgeD0nMCcgeT0nMCc+CiAgICAgICAgICAgIDxmZVR1cmJ1bGVuY2UKICAgICAgICAgICAgICB0eXBlPSdmcmFjdGFsTm9pc2UnCiAgICAgICAgICAgICAgYmFzZUZyZXF1ZW5jeT0nMC43NScKICAgICAgICAgICAgICBzdGl0Y2hUaWxlcz0nc3RpdGNoJy8+CiAgICA8L2ZpbHRlcj4KCiAgICA8cmVjdCB3aWR0aD0nMzAwJyBoZWlnaHQ9JzMwMCcgZmlsbD0nI2ZmZicvPgogICAgPHJlY3Qgd2lkdGg9JzMwMCcgaGVpZ2h0PSczMDAnIGZpbHRlcj0idXJsKCNuKSIgb3BhY2l0eT0nMC44MCcvPgo8L3N2Zz4=");
+    color: #e7e8cf;
+  }
+
+    .linktree {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      margin: 2rem;
+    }
+
+    .linktree article {
+      border: 2px solid #222;
+      border-radius: 20px;
+      box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+      background: #222;
+      padding: 2rem;
+      width: 43rem;
+    }
+
+    .linktree h1 {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 2.5rem;
+      font-weight: 900;
+      border-bottom: 1px solid #f1b06b;
+      padding-bottom: 1rem;
+      width: 100%;
+    }
+
+    .linktree p {      
+      line-height: 1.4;
+    }
+
+    .linktree ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .linktree ul a {
+      width: 90%;
+      margin-bottom: 1rem;
+      border: 2px solid #f1b06b;
+      border-radius: 10px;
+      box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+      background: #e7e8cf;
+      padding: 1rem;
+    }
+
+    .linktree ul a:hover {
+      transition: box-shadow 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99), color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99), border-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99), transform 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99), background-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99);
+      background: transparent;
+      color: #e7e8cf;      
+    }
+
+  </style>
+
+    <main class="linktree">
+      <article>
           <h1>{title}</h1>
-          <p>No point in having a separate Linktree page when I can just use my own website so here are all the links where you can find me or support me financially.</p>
+          <p>{description}</p>
+          <p>when you're done, you can <a href="/" style="color:inherit;">head back home</a>.</p>
           <ul>
-            <li><a href="https://www.patreon.com/lukealexdavis">My Patreon</a></li>
-            <li><a href="https://strrchildluke.bandcamp.com/">My music</a></li>
-            <li><a href="https://www.linkedin.com/in/lukealexdavis/">My LinkedIn</a></li>
-            <li><a href="https://ko-fi.com/lklxdvs">My Ko-fi page</a></li>
-            <li><a href="https://www.paypal.com/paypalme/lukealexdavis">My PayPal</a></li>
-            <li><a href="https://impression.us14.list-manage.com/subscribe?u=c1cce409a55af945bf9e5d386&id=33ecdacb8c">My D&I newsletter</a></li>
-            <li><a href="https://buttondown.email/lukealexdavis?tag=from_my_website">My personal newsletter</a></li>
+            <a href="https://www.patreon.com/lukealexdavis"><li>my patreon</li></a>
+            <a href="https://strrchildluke.bandcamp.com/"><li>my bandcamp</li></a>
+            <a href="https://www.linkedin.com/in/lukealexdavis/"><li>my linkedin</li></a>
+            <a href="https://ko-fi.com/lklxdvs"><li>my ko-fi page</li></a>
+            <a href="https://www.paypal.com/paypalme/lukealexdavis"><li>my paypal</li></a>
+            <a href="https://impression.us14.list-manage.com/subscribe?u=c1cce409a55af945bf9e5d386&id=33ecdacb8c"><li>my D&I newsletter</li></a>
+            <a href="https://buttondown.email/lukealexdavis?tag=from_my_website"><li>my personal newsletter</li></a>
          </ul>          
               </article>
             </main>
-      <Footer/>
   </body>
 </html>
