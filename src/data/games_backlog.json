@@ -1,0 +1,69 @@
+{
+    "games": {
+        "completed": [
+        	{
+        		"name": "",
+        		"releaseDate": "",
+        		"console": "",
+        		"currentStatus": "",
+        		"previousStatuses": [
+        			""
+        		],
+        		"completionDate": ""
+        	}
+        ],
+        "currentlyPlaying": [
+        	{
+        		"name": "Dragon Quest Monsters: The Dark Prince",
+        		"releaseDate": "",
+        		"console": "Nintendo Switch",
+                "imageURL": "/images/gameslist/dqm-tdp.jpg",
+        		"currentStatus": "Beaten Class F",
+        		"previousStatuses": [
+        			""
+        		]
+        	},
+        	{
+        		"name": "Dragon Quest VIII",
+        		"releaseDate": "",
+        		"console": "Nintendo 3DS",
+                "imageURL": "/images/gameslist/dq-viii.jpg",
+        		"currentStatus": "",
+        		"previousStatuses": [
+        			""
+        		]
+        	},
+        	{
+        		"name": "Dragon Warrior Monsters 2",
+        		"releaseDate": "",
+        		"console": "Game Boy Color",
+                "imageURL": "/images/gameslist/dwm-2.jpg",
+        		"currentStatus": "",
+        		"previousStatuses": [
+        			""
+        		]
+        	},
+        	{
+        		"name": "Dragon Quest XI S",
+        		"releaseDate": "",
+        		"console": "PS4",
+                "imageURL": "/images/gameslist/10094578-dragon-quest-xi-s-echoes-of-an-elusive-age-definitive-edition-pl.jpg",
+                "currentStatus": "",
+        		"previousStatuses": [
+        			""
+        		]
+        	}
+        ],
+        "backlog": [
+        	{
+        		"name": "",
+        		"releaseDate": "",
+        		"console": "",
+        		"currentStatus": "",
+        		"previousStatuses": [
+        			""
+        		]
+        	}
+        ]
+    }
+}

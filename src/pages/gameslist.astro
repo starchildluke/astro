@@ -1,0 +1,75 @@
+---
+// COMPONENTS
+
+import Games from '../layouts/Gameslist.astro';
+import gamesBacklog from '../data/games_backlog.json';
+
+// METADATA VARIABLES
+
+let title = 'My Gameslist';
+let description = "A list of games I'm currently playing or have already completed.";
+let canonicalURL = Astro.url;
+---
+
+<style>
+	
+	body {
+		text-align: center;
+		background-image: radial-gradient(#130f40 0%, #000000 74%);
+		color: #f2f6f6;
+	}
+
+	.games-meta {
+		margin-bottom: 2rem;
+	}
+
+	.container {
+		margin-top: 2rem;
+	}
+
+	.games-grid {
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		flex-wrap: wrap;
+		margin: 4rem;
+	}
+
+	.game-block {
+		margin: 0 1rem;
+	}
+
+	.game-block img {
+		border: 1px solid #dcdcdc;
+		padding: 2px;
+	}
+
+	.game-block figcaption {
+		max-width: 250px;
+	}
+
+</style>
+
+<Games title={title} description={description} />
+	<div class="container">
+		<div class="games-meta">
+			<h1>{title}</h1>
+			<p>{description}</p>
+			<p>Please note: this is a work in progress so the design may change.</p>
+			<p><a href="/">Go back home</a></p>
+		</div>
+		<h2>Currently playing</h2>
+		<div class="games-grid">
+			{gamesBacklog.games.currentlyPlaying.map(
+					(game) => (
+						<div class="game-block">
+						<figure>
+							<img src={game?.imageURL} width="250px" loading="eager" fetchpriority="high" />
+							<figcaption>{game.name} ({game.console})</figcaption>
+						</figure>
+						</div>
+					)
+				)
+			}
+		</div>
+	</div>
