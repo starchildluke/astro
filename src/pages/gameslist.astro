@@ -42,6 +42,7 @@ let canonicalURL = Astro.url;
 	.game-block img {
 		border: 1px solid #dcdcdc;
 		padding: 2px;
+		row-gap: 1ch;
 	}
 
 	.game-block figcaption {
@@ -64,7 +65,7 @@ let canonicalURL = Astro.url;
 					(game) => (
 						<div class="game-block">
 						<figure>
-							<img src={game?.imageURL} width="250px" loading="eager" fetchpriority="high" />
+							<img src={game?.imageThumbnailURL} width={game?.thumbnailDimensions.width} height={game?.thumbnailDimensions.height} loading="eager" fetchpriority="high" alt=`cover art for ${game.name}` />
 							<figcaption>{game.name} ({game.console})</figcaption>
 						</figure>
 						</div>

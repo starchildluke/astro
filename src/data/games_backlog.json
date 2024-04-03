@@ -18,6 +18,11 @@
         		"releaseDate": "",
         		"console": "Nintendo Switch",
                 "imageURL": "/images/gameslist/dqm-tdp.jpg",
+                "imageThumbnailURL": "/images/gameslist/dqm-tdp-250px.jpeg",
+                "thumbnailDimensions": {
+                    "width": 250,
+                    "height": 404
+                },
         		"currentStatus": "Beaten Class F",
         		"previousStatuses": [
         			""
@@ -28,6 +33,11 @@
         		"releaseDate": "",
         		"console": "Nintendo 3DS",
                 "imageURL": "/images/gameslist/dq-viii.jpg",
+                "imageThumbnailURL": "/images/gameslist/dq-viii-250px.jpeg",
+                "thumbnailDimensions": {
+                    "width": 250,
+                    "height": 223
+                },
         		"currentStatus": "",
         		"previousStatuses": [
         			""
@@ -38,6 +48,11 @@
         		"releaseDate": "",
         		"console": "Game Boy Color",
                 "imageURL": "/images/gameslist/dwm-2.jpg",
+                "imageThumbnailURL": "/images/gameslist/dwm-2-250px.jpeg",
+                "thumbnailDimensions": {
+                    "width": 250,
+                    "height": 252
+                },
         		"currentStatus": "",
         		"previousStatuses": [
         			""
@@ -48,6 +63,11 @@
         		"releaseDate": "",
         		"console": "PS4",
                 "imageURL": "/images/gameslist/10094578-dragon-quest-xi-s-echoes-of-an-elusive-age-definitive-edition-pl.jpg",
+                "imageThumbnailURL": "/images/gameslist/dq-xi-s-250px.jpeg",
+                "thumbnailDimensions": {
+                    "width": 250,
+                    "height": 312
+                },
                 "currentStatus": "",
         		"previousStatuses": [
         			""
