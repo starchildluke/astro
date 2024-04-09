@@ -1171,6 +1171,13 @@ declare module 'astro:content' {
   collection: "posts";
   data: any
 } & { render(): Render[".md"] };
+"some-brief-thoughts-on-robots-txt.md": {
+	id: "some-brief-thoughts-on-robots-txt.md";
+  slug: "some-brief-thoughts-on-robots-txt";
+  body: string;
+  collection: "posts";
+  data: any
+} & { render(): Render[".md"] };
 "some-brief-thoughts-on-search.md": {
 	id: "some-brief-thoughts-on-search.md";
   slug: "some-brief-thoughts-on-search";
