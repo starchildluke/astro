@@ -178,6 +178,13 @@ declare module 'astro:content' {
   collection: "lists";
   data: any
 } & { render(): Render[".md"] };
+"favourite-words.md": {
+	id: "favourite-words.md";
+  slug: "favourite-words";
+  body: string;
+  collection: "lists";
+  data: any
+} & { render(): Render[".md"] };
 "its-binary-time.md": {
 	id: "its-binary-time.md";
   slug: "its-binary-time";
