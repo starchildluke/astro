@@ -4,7 +4,7 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import {Content as About} from '../data/about.mdx';
+import {Content as AboutPage} from '../data/about.mdx';
 
 // METADATA VARIABLES
 
@@ -23,7 +23,7 @@ let canonicalURL = Astro.url;
     <article class="content">
         <h1>{title}</h1>
       <p>Here are some facts about me and the site.</p>
-      <About />
+      <AboutPage />
   </article>
 </main>
 <Footer></Footer>
