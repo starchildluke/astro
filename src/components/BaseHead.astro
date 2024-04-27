@@ -29,11 +29,5 @@ const blogRssFeed = `${site.url}blog.xml`;
 <link href="https://bsky.app/profile/lukealexdavis.co.uk" rel="me">
 <link href="https://github.com/starchildluke" rel="me">
 <link rel="authorization_endpoint" href="https://indieauth.com/auth">
-<script>document.querySelectorAll('.nav-links a').forEach(
-  link => {
-    if (link.href === window.location.href) {
-      link.setAttribute('aria-current', 'page')
-    }
-  })</script>
-<!-- <link rel="preload" as="style" href="/style/blog.css" type="text/css"> -->
+<script>document.querySelectorAll(".nav-links a").forEach(e=>{e.href===window.location.href&&e.setAttribute("aria-current","page")});</script>
 </head>
