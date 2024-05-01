@@ -1,11 +1,26 @@
 [
     {
+        "url": "/lists/favourite-words/",
+        "link_data": [
+            {
+                "prev": "/lists/my-video-game-console-history/",
+                "title": "My video game console history",
+                "date": "2024-03-24"
+            }
+        ]
+    },
+    {
         "url": "/lists/my-video-game-console-history/",
         "link_data": [
             {
                 "prev": "/lists/favourite-animals/",
                 "title": "List of favourite animals",
                 "date": "2024-03-11"
+            },
+            {
+                "next": "/lists/favourite-words/",
+                "title": "Favourite words",
+                "date": "2024-04-16"
             }
         ]
     },
