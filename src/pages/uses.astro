@@ -4,12 +4,13 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import {Content as AboutPage} from '../data/about.mdx';
+import {Content as UsesPage} from '../data/uses.mdx';
+
 
 // METADATA VARIABLES
 
-let title = 'About';
-let description = 'My about page. Here are some facts about me and the site.';
+let title = 'Uses';
+let description = 'A page about the tech that I use.';
 let canonicalURL = Astro.url;
 
 ---
@@ -21,12 +22,11 @@ let canonicalURL = Astro.url;
   <Header />
   <main class="layout">
     <article class="content">
-        <h1>{title} me</h1>
-      <AboutPage />
-      <p>Page last updated: <time></time></p>
+        <h1>What I use</h1>
+      <p>Here is a detailed list of the tech that I use.</p>
+      <UsesPage />
   </article>
 </main>
 <Footer></Footer>
 </body>
-<script>const d=new Date(document.lastModified);document.querySelector("time").innerText=d.toLocaleDateString("en-gb",{day:"2-digit",month:"short",year:"numeric"}).replace("Sept","Sep");</script>
 </html>
