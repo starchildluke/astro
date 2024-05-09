@@ -1,0 +1,115 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Footer from '../../components/Footer.astro';
+import FormattedDate from '../../components/FormattedDate.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths({paginate}) {
+  const allPosts = await getCollection('music');
+  const sortedPosts = allPosts.sort((a, b) => new Date(b.data.pubDate) - new Date(a.data.pubDate));
+  return paginate(sortedPosts, { pageSize: 25 });
+}
+
+const { page, canonicalURL = Astro.url } = Astro.props
+
+function albumsByYear(albums: Album[]) {
+  interface AlbumsByYearData {
+    year: number
+    items: Album[]
+  }
+
+  const albumsByYearMap = albums.reduce(function(acc, album) {
+    const year = new Date(album.data.pubDate).getFullYear()
+    const existing = acc.get(year)?.items || []
+    acc.set(year, {
+      year,
+      items: existing.concat(album)
+    })
+    return acc;
+  }, new Map<number, AlbumsByYearData>())
+
+  return [...albumsByYearMap.values()]
+    .sort((a, b) => b.year - a.year);
+}
+
+const albumGroups = albumsByYear(page.data)
+
+let fullTitle = page.url.prev ? `Music (Page ${page.currentPage}/${page.lastPage})` : 'Music';
+let description = "A collection of my music, with liner notes and behind-the-scenes info on how I made everything.";
+
+const rgb = {
+  r: Math.floor(Math.random() * 255),
+  g: Math.floor(Math.random() * 255),
+  b: Math.floor(Math.random() * 255)
+}
+
+---
+
+<style>
+
+  h2 {
+    text-align: center;
+  }
+  
+  .album-listing {
+    display:flex;
+    justify-content: space-between;
+    padding-bottom:1rem;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1rem;
+    border: 2px solid #aaa;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.6);
+    padding: 1rem;
+  }
+
+  .album-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+</style>
+
+<Layout title={fullTitle} description={description} canonicalURL={canonicalURL} />
+    <div class="layout">
+      <article class="content">
+        <section class="intro">
+          <h1>{fullTitle}</h1>
+        </section>
+        <section>
+          <p>{description}</p>
+          <p>While I mainly upload my music to Bandcamp, I wanted somewhere to write more about the production process and what inspired me to make music.</p>
+        </section>
+    {albumGroups.map(({ year, items }) => (
+  <section>
+    <hr>
+    <h2>{year}</h2>
+    <ul class="album-list">
+    {items.map((album) => (
+      <li class="album-listing">
+        <img src={`/images/albums/smaller/${album?.data.image.replace('.jpg', '_100x100.webp')}`} alt={`cover art for ${album.data.title}`} width="64" height="64" />
+        <a href={`/music/${album.slug}/`}><Fragment set:html={album.data.title}></a>
+          <span class="publish-date"><FormattedDate date={album.data.pubDate} /></span>
+      </li>
+    ))}
+    </ul>
+    </section>
+      ))}    
+        <div class="page-links">{page.url.prev && (
+          <a class='prev' href={page.url.prev || '#'}>&laquo; Prev</a>
+        )}
+        {page.url.prev && page.url.next && ""}
+        {page.url.next && (
+          <a class='Next' href={page.url.next || '#'}>Next &raquo;</a>
+        )}</div>
+      </article>
+    </div>
+    <Footer />
+  <script>
+    const a=document.querySelectorAll("li.album-listing"),c={r:Math.floor(255*Math.random()),g:Math.floor(255*Math.random()),b:Math.floor(255*Math.random())},d={r:Math.floor(255*Math.random()),g:Math.floor(255*Math.random()),b:Math.floor(255*Math.random())},e={r:Math.floor(255*Math.random()),g:Math.floor(255*Math.random()),b:Math.floor(255*Math.random())};for(const i of a)i.style.background=`linear-gradient(45deg,rgba(${c.r},${c.g},${c.b},0.2)0%,rgba(${d.r},${d.g},${d.b},0.2)35%,rgba(${e.r},${e.g},${e.b},0.2)100%)`;
+  </script>

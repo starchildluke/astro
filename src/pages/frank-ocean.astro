@@ -25,7 +25,7 @@ let canonicalURL = Astro.url;
         <h1>{title}</h1>
         <p>This is my homage to Frank Ocean's movie list in <a href="https://www.reddit.com/r/criterion/comments/4z7mgy/frank_oceans_favorite_movies_from_boys_dont_cry/">his 2016 magazine, Boys Don't Cry</a>. But instead, I'm using the most used tags from my blogs as topics.</p>
         <hr />
-      <p class="frank">{frank.sort((a, b) => {a.toLowerCase().localeCompare(b.toLowerCase())}).map(
+      <p class="frank">{frank.sort().map(
         (f, i) => <span>{f}{i < frank.length-1 ? " / " : ""}</span>)}</p>
   </article>
 </main>

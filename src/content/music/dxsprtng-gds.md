@@ -1,0 +1,9 @@
+---
+title: 'DxSprtng_Gds'
+linerNotes: "Album #10 from my #Road2Switch series. DxSprtng_Gds has a sporty theme, as you might have guessed."
+pubDate: '01 Sep 2019'
+layout: '../../layouts/BlogPost.astro'
+image: 'dxsprtng-gds.jpg'
+---
+
+https://strrchildluke.bandcamp.com/album/dxsprtng-gds

@@ -1,23 +1,37 @@
 ---
-import BaseHead from '../../components/BaseHead.astro';
-import StructuredData from '../../components/StructuredData.astro';
-import Header from '../../components/Header.astro';
 import Recortes from '../../layouts/Recortes.astro';
 import Layout from '../../layouts/Layout.astro';
 import Footer from '../../components/Footer.astro';
-import { CollectionEntry, getCollection } from 'astro:content';
-import FormattedDate from '../../components/FormattedDate.astro';
+import { getCollection } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
+import PrevNextLinking from '../../components/PrevNextLinking.astro';
+
+export const sortByDate = (a, b) => {
+  return new Date(b.data.pubDate) - new Date(a.data.pubDate);
+}
 
 export async function getStaticPaths() {
   const posts = await getCollection('recortes');
-  return posts.map((post) => ({
+  const numberOfPosts = posts.length;
+  return posts.sort(sortByDate).map((post, i) => ({
     params: { slug: post.slug },
-    props: post,
+    props: {
+      post,
+      prevPost: // Previous post
+          i + 1 === numberOfPosts // If the current post is the oldest
+            ? { frontmatter: ""}
+            : posts[i + 1],
+      nextPost: // Next post
+        i === 0 // If the current post is the newest
+          ? { frontmatter: "" }
+          : posts[i - 1],
+        }
   }));
 }
+
 type Props = CollectionEntry<'recortes'>;
 
-const post = Astro.props;
+const { post, prevPost, nextPost, prevSlug, prevTitle, nextSlug, nextTitle, contentType } = Astro.props;
 const { Content } = await post.render();
 
 ---
@@ -28,6 +42,7 @@ const { Content } = await post.render();
       <p class="publish-date">{post.data.pubDate}</p>
         <h1>{post.data.title}</h1>
           <Content />
+            <PrevNextLinking contentType="recortes" prevPost={prevPost.data} nextPost={nextPost.data} prevSlug={prevPost?.slug} prevTitle={prevPost.data?.title} nextSlug={nextPost?.slug} nextTitle={nextPost.data?.title} />
     </article>
   </main>
 <Footer />

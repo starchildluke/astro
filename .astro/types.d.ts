@@ -365,6 +365,435 @@ declare module 'astro:content' {
   data: any
 } & { render(): Render[".md"] };
 };
+"music": {
+"1nstabeats.md": {
+	id: "1nstabeats.md";
+  slug: "1nstabeats";
+  body: string;
+  collection: "music";
+  data: any
+} & { render(): Render[".md"] };
+"31.md": {
+	id: "31.md";
+  slug: "31";
+  body: string;
+  collection: "music";
+  data: any
+} & { render(): Render[".md"] };
+"addicted.md": {
+	id: "addicted.md";
+  slug: "addicted";
+  body: string;
+  collection: "music";
+  data: any
+} & { render(): Render[".md"] };
+"alonetime.md": {
+	id: "alonetime.md";
+  slug: "alonetime";
+  body: string;
+  collection: "music";
+  data: any
+} & { render(): Render[".md"] };
+"astro-fox.md": {
+	id: "astro-fox.md";
+  slug: "astro-fox";
+  body: string;
+  collection: "music";
+  data: any
+} & { render(): Render[".md"] };
+"boas-festas-2.md": {
+	id: "boas-festas-2.md";
+  slug: "boas-festas-2";
+  body: string;
+  collection: "music";
+  data: any
+} & { render(): Render[".md"] };
+"boas-festas.md": {
+	id: "boas-festas.md";
+  slug: "boas-festas";
+  body: string;
+  collection: "music";
+  data: any
+} & { render(): Render[".md"] };
+"bowsertape.md": {
+	id: "bowsertape.md";
+  slug: "bowsertape";
+  body: string;
+  collection: "music";
+  data: any
+} & { render(): Render[".md"] };
+"bowsertape2.md": {
+	id: "bowsertape2.md";
+  slug: "bowsertape2";
+  body: string;
+  collection: "music";
+  data: any
+} & { render(): Render[".md"] };
+"bowsertape3.md": {
+	id: "bowsertape3.md";
+  slug: "bowsertape3";
+  body: string;
+  collection: "music";
+  data: any
+} & { render(): Render[".md"] };
+"bt4.md": {
+	id: "bt4.md";
+  slug: "bt4";
+  body: string;
+  collection: "music";
+  data: any
+} & { render(): Render[".md"] };
+"cast-members-only.md": {
+	id: "cast-members-only.md";
+  slug: "cast-members-only";
+  body: string;
+  collection: "music";
+  data: any
+} & { render(): Render[".md"] };
+"celestial-jackal.md": {
+	id: "celestial-jackal.md";
+  slug: "celestial-jackal";
+  body: string;
+  collection: "music";
+  data: any
+} & { render(): Render[".md"] };
+"chaos-wolf.md": {
+	id: "chaos-wolf.md";
+  slug: "chaos-wolf";
+  body: string;
+  collection: "music";
+  data: any
+} & { render(): Render[".md"] };
+"cold-turkey-leftovers-vol-2.md": {
+	id: "cold-turkey-leftovers-vol-2.md";
+  slug: "cold-turkey-leftovers-vol-2";
+  body: string;
+  collection: "music";
+  data: any
+} & { render(): Render[".md"] };
+"cold-turkey-leftovers.md": {
+	id: "cold-turkey-leftovers.md";
+  slug: "cold-turkey-leftovers";
+  body: string;
+  collection: "music";
+  data: any
+} & { render(): Render[".md"] };
+"corona-coyote.md": {
+	id: "corona-coyote.md";
+  slug: "corona-coyote";
+  body: string;
+  collection: "music";
+  data: any
+} & { render(): Render[".md"] };
+"daredevil.md": {
+	id: "daredevil.md";
+  slug: "daredevil";
+  body: string;
+  collection: "music";
+  data: any
+} & { render(): Render[".md"] };
+"desert-goose.md": {
+	id: "desert-goose.md";
+  slug: "desert-goose";
+  body: string;
+  collection: "music";
+  data: any
+} & { render(): Render[".md"] };
+"drfts.md": {
+	id: "drfts.md";
+  slug: "drfts";
+  body: string;
+  collection: "music";
+  data: any
+} & { render(): Render[".md"] };
+"dxsprtng-gds.md": {
+	id: "dxsprtng-gds.md";
+  slug: "dxsprtng-gds";
+  body: string;
+  collection: "music";
+  data: any
+} & { render(): Render[".md"] };
+"erebos.md": {
+	id: "erebos.md";
+  slug: "erebos";
+  body: string;
+  collection: "music";
+  data: any
+} & { render(): Render[".md"] };
+"felt-cute-wont-delete-later-x.md": {
+	id: "felt-cute-wont-delete-later-x.md";
+  slug: "felt-cute-wont-delete-later-x";
+  body: string;
+  collection: "music";
+  data: any
+} & { render(): Render[".md"] };
+"fl96.md": {
+	id: "fl96.md";
+  slug: "fl96";
+  body: string;
+  collection: "music";
+  data: any
+} & { render(): Render[".md"] };
+"gengartape.md": {
+	id: "gengartape.md";
+  slug: "gengartape";
+  body: string;
+  collection: "music";
+  data: any
+} & { render(): Render[".md"] };
+"gngr-iii.md": {
+	id: "gngr-iii.md";
+  slug: "gngr-iii";
+  body: string;
+  collection: "music";
+  data: any
+} & { render(): Render[".md"] };
+"gngr2.md": {
+	id: "gngr2.md";
+  slug: "gngr2";
+  body: string;
+  collection: "music";
+  data: any
+} & { render(): Render[".md"] };
+"justice-peace.md": {
+	id: "justice-peace.md";
+  slug: "justice-peace";
+  body: string;
+  collection: "music";
+  data: any
+} & { render(): Render[".md"] };
+"legacy-2.md": {
+	id: "legacy-2.md";
+  slug: "legacy-2";
+  body: string;
+  collection: "music";
+  data: any
+} & { render(): Render[".md"] };
+"lying-floaters.md": {
+	id: "lying-floaters.md";
+  slug: "lying-floaters";
+  body: string;
+  collection: "music";
+  data: any
+} & { render(): Render[".md"] };
+"madeira.md": {
+	id: "madeira.md";
+  slug: "madeira";
+  body: string;
+  collection: "music";
+  data: any
+} & { render(): Render[".md"] };
+"meridian-falcon.md": {
+	id: "meridian-falcon.md";
+  slug: "meridian-falcon";
+  body: string;
+  collection: "music";
+  data: any
+} & { render(): Render[".md"] };
+"microcosm-ii.md": {
+	id: "microcosm-ii.md";
+  slug: "microcosm-ii";
+  body: string;
+  collection: "music";
+  data: any
+} & { render(): Render[".md"] };
+"microcosm.md": {
+	id: "microcosm.md";
+  slug: "microcosm";
+  body: string;
+  collection: "music";
+  data: any
+} & { render(): Render[".md"] };
+"monolith.md": {
+	id: "monolith.md";
+  slug: "monolith";
+  body: string;
+  collection: "music";
+  data: any
+} & { render(): Render[".md"] };
+"mumbo-jumbo.md": {
+	id: "mumbo-jumbo.md";
+  slug: "mumbo-jumbo";
+  body: string;
+  collection: "music";
+  data: any
+} & { render(): Render[".md"] };
+"nighttime.md": {
+	id: "nighttime.md";
+  slug: "nighttime";
+  body: string;
+  collection: "music";
+  data: any
+} & { render(): Render[".md"] };
+"nomad.md": {
+	id: "nomad.md";
+  slug: "nomad";
+  body: string;
+  collection: "music";
+  data: any
+} & { render(): Render[".md"] };
+"noquest-ii.md": {
+	id: "noquest-ii.md";
+  slug: "noquest-ii";
+  body: string;
+  collection: "music";
+  data: any
+} & { render(): Render[".md"] };
+"noquest.md": {
+	id: "noquest.md";
+  slug: "noquest";
+  body: string;
+  collection: "music";
+  data: any
+} & { render(): Render[".md"] };
+"notime.md": {
+	id: "notime.md";
+  slug: "notime";
+  body: string;
+  collection: "music";
+  data: any
+} & { render(): Render[".md"] };
+"notime2.md": {
+	id: "notime2.md";
+  slug: "notime2";
+  body: string;
+  collection: "music";
+  data: any
+} & { render(): Render[".md"] };
+"notime25.md": {
+	id: "notime25.md";
+  slug: "notime25";
+  body: string;
+  collection: "music";
+  data: any
+} & { render(): Render[".md"] };
+"notime3.md": {
+	id: "notime3.md";
+  slug: "notime3";
+  body: string;
+  collection: "music";
+  data: any
+} & { render(): Render[".md"] };
+"nrth1-2.md": {
+	id: "nrth1-2.md";
+  slug: "nrth1-2";
+  body: string;
+  collection: "music";
+  data: any
+} & { render(): Render[".md"] };
+"ode-to-the-jumper-king.md": {
+	id: "ode-to-the-jumper-king.md";
+  slug: "ode-to-the-jumper-king";
+  body: string;
+  collection: "music";
+  data: any
+} & { render(): Render[".md"] };
+"old-beat-conceptions.md": {
+	id: "old-beat-conceptions.md";
+  slug: "old-beat-conceptions";
+  body: string;
+  collection: "music";
+  data: any
+} & { render(): Render[".md"] };
+"pulsar-penguin.md": {
+	id: "pulsar-penguin.md";
+  slug: "pulsar-penguin";
+  body: string;
+  collection: "music";
+  data: any
+} & { render(): Render[".md"] };
+"quarantine-sessions.md": {
+	id: "quarantine-sessions.md";
+  slug: "quarantine-sessions";
+  body: string;
+  collection: "music";
+  data: any
+} & { render(): Render[".md"] };
+"scammers.md": {
+	id: "scammers.md";
+  slug: "scammers";
+  body: string;
+  collection: "music";
+  data: any
+} & { render(): Render[".md"] };
+"slalom.md": {
+	id: "slalom.md";
+  slug: "slalom";
+  body: string;
+  collection: "music";
+  data: any
+} & { render(): Render[".md"] };
+"space-harrier.md": {
+	id: "space-harrier.md";
+  slug: "space-harrier";
+  body: string;
+  collection: "music";
+  data: any
+} & { render(): Render[".md"] };
+"sporting-goods-ii.md": {
+	id: "sporting-goods-ii.md";
+  slug: "sporting-goods-ii";
+  body: string;
+  collection: "music";
+  data: any
+} & { render(): Render[".md"] };
+"strrloops-1.md": {
+	id: "strrloops-1.md";
+  slug: "strrloops-1";
+  body: string;
+  collection: "music";
+  data: any
+} & { render(): Render[".md"] };
+"strrloops-2.md": {
+	id: "strrloops-2.md";
+  slug: "strrloops-2";
+  body: string;
+  collection: "music";
+  data: any
+} & { render(): Render[".md"] };
+"the-black-nerd-beat-tape.md": {
+	id: "the-black-nerd-beat-tape.md";
+  slug: "the-black-nerd-beat-tape";
+  body: string;
+  collection: "music";
+  data: any
+} & { render(): Render[".md"] };
+"venomtape.md": {
+	id: "venomtape.md";
+  slug: "venomtape";
+  body: string;
+  collection: "music";
+  data: any
+} & { render(): Render[".md"] };
+"venomtape2.md": {
+	id: "venomtape2.md";
+  slug: "venomtape2";
+  body: string;
+  collection: "music";
+  data: any
+} & { render(): Render[".md"] };
+"vnm-tayp-3.md": {
+	id: "vnm-tayp-3.md";
+  slug: "vnm-tayp-3";
+  body: string;
+  collection: "music";
+  data: any
+} & { render(): Render[".md"] };
+"were-talking-danger.md": {
+	id: "were-talking-danger.md";
+  slug: "were-talking-danger";
+  body: string;
+  collection: "music";
+  data: any
+} & { render(): Render[".md"] };
+"worlds.md": {
+	id: "worlds.md";
+  slug: "worlds";
+  body: string;
+  collection: "music";
+  data: any
+} & { render(): Render[".md"] };
+};
 "posts": {
 "1-vs-10-000.md": {
 	id: "1-vs-10-000.md";
