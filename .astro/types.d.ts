@@ -865,13 +865,6 @@ declare module 'astro:content' {
   collection: "posts";
   data: any
 } & { render(): Render[".md"] };
-"5-pounds.md": {
-	id: "5-pounds.md";
-  slug: "5-pounds";
-  body: string;
-  collection: "posts";
-  data: any
-} & { render(): Render[".md"] };
 "69-simple-pleasures.md": {
 	id: "69-simple-pleasures.md";
   slug: "69-simple-pleasures";
@@ -959,13 +952,6 @@ declare module 'astro:content' {
 "bad-boys-for-years.md": {
 	id: "bad-boys-for-years.md";
   slug: "bad-boys-for-years";
-  body: string;
-  collection: "posts";
-  data: any
-} & { render(): Render[".md"] };
-"banana-rum-cake-recipe.md": {
-	id: "banana-rum-cake-recipe.md";
-  slug: "banana-rum-cake-recipe";
   body: string;
   collection: "posts";
   data: any
@@ -1481,13 +1467,6 @@ declare module 'astro:content' {
   collection: "posts";
   data: any
 } & { render(): Render[".md"] };
-"not-in-the-constitution.md": {
-	id: "not-in-the-constitution.md";
-  slug: "not-in-the-constitution";
-  body: string;
-  collection: "posts";
-  data: any
-} & { render(): Render[".md"] };
 "nyt-first-said-visualisation.md": {
 	id: "nyt-first-said-visualisation.md";
   slug: "nyt-first-said-visualisation";
@@ -1561,13 +1540,6 @@ declare module 'astro:content' {
 "roger-federer-numbers-game.md": {
 	id: "roger-federer-numbers-game.md";
   slug: "roger-federer-numbers-game";
-  body: string;
-  collection: "posts";
-  data: any
-} & { render(): Render[".md"] };
-"saddam-hussein-bacon-number-3.md": {
-	id: "saddam-hussein-bacon-number-3.md";
-  slug: "saddam-hussein-bacon-number-3";
   body: string;
   collection: "posts";
   data: any
@@ -1789,13 +1761,6 @@ declare module 'astro:content' {
   collection: "posts";
   data: any
 } & { render(): Render[".md"] };
-"wander-in-porto.md": {
-	id: "wander-in-porto.md";
-  slug: "wander-in-porto";
-  body: string;
-  collection: "posts";
-  data: any
-} & { render(): Render[".md"] };
 "we-are-not-data-points.md": {
 	id: "we-are-not-data-points.md";
   slug: "we-are-not-data-points";
@@ -1854,6 +1819,20 @@ declare module 'astro:content' {
 } & { render(): Render[".md"] };
 };
 "recortes": {
+"5-pounds.md": {
+	id: "5-pounds.md";
+  slug: "5-pounds";
+  body: string;
+  collection: "recortes";
+  data: any
+} & { render(): Render[".md"] };
+"banana-rum-cake-recipe.md": {
+	id: "banana-rum-cake-recipe.md";
+  slug: "banana-rum-cake-recipe";
+  body: string;
+  collection: "recortes";
+  data: any
+} & { render(): Render[".md"] };
 "black-survival-is-black-excellence.md": {
 	id: "black-survival-is-black-excellence.md";
   slug: "black-survival-is-black-excellence";
@@ -1903,9 +1882,23 @@ declare module 'astro:content' {
   collection: "recortes";
   data: any
 } & { render(): Render[".md"] };
+"not-in-the-constitution.md": {
+	id: "not-in-the-constitution.md";
+  slug: "not-in-the-constitution";
+  body: string;
+  collection: "recortes";
+  data: any
+} & { render(): Render[".md"] };
 "personal-lexicon.md": {
 	id: "personal-lexicon.md";
   slug: "personal-lexicon";
+  body: string;
+  collection: "recortes";
+  data: any
+} & { render(): Render[".md"] };
+"saddam-hussein-bacon-number-3.md": {
+	id: "saddam-hussein-bacon-number-3.md";
+  slug: "saddam-hussein-bacon-number-3";
   body: string;
   collection: "recortes";
   data: any
@@ -1941,6 +1934,13 @@ declare module 'astro:content' {
 "visionary.md": {
 	id: "visionary.md";
   slug: "visionary";
+  body: string;
+  collection: "recortes";
+  data: any
+} & { render(): Render[".md"] };
+"wander-in-porto.md": {
+	id: "wander-in-porto.md";
+  slug: "wander-in-porto";
   body: string;
   collection: "recortes";
   data: any

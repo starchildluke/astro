@@ -34,7 +34,7 @@ function albumsByYear(albums: Album[]) {
 
 const albumGroups = albumsByYear(page.data)
 
-let fullTitle = page.url.prev ? `Music (Page ${page.currentPage}/${page.lastPage})` : 'Music';
+let fullTitle = page.url.prev ? `My Music (Page ${page.currentPage}/${page.lastPage})` : 'My Music';
 let description = "A collection of my music, with liner notes and behind-the-scenes info on how I made everything.";
 
 const rgb = {
@@ -101,11 +101,11 @@ const rgb = {
     </section>
       ))}    
         <div class="page-links">{page.url.prev && (
-          <a class='prev' href={page.url.prev || '#'}>&laquo; Prev</a>
+          <a class='prev' href={page.url.prev + '/' || '#'}>&laquo; Prev</a>
         )}
         {page.url.prev && page.url.next && ""}
         {page.url.next && (
-          <a class='Next' href={page.url.next || '#'}>Next &raquo;</a>
+          <a class='Next' href={page.url.next + '/' || '#'}>Next &raquo;</a>
         )}</div>
       </article>
     </div>
