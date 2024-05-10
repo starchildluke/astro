@@ -4,23 +4,23 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import { getCollection } from 'astro:content';
 import Sitemapper from 'sitemapper';
 
-// EXPORT
-
-export interface Props {
-  post: any;
-  metaTitle: string;
-  title: string;
-  slug: string;
-  description: string;
-  domain: string;
-}
 
 const sitemap = new Sitemapper();
 
 const sitemapURLs = await sitemap.fetch('https://lukealexdavis.co.uk/sitemap-0.xml');
 
+const allPosts = await getCollection("posts");
+const allLists = await getCollection("lists");
+const allMlogs = await getCollection("mlog");
+const allMorsels = await getCollection("morsels");
+const allAlbums = await getCollection("music");
+const allRecortes = await getCollection("recortes");
+const allReleaseNotes = await getCollection("release-notes");
+
+const collator = Intl.Collator([], {numeric: true});
 
 // METADATA VARIABLES
 
@@ -38,13 +38,58 @@ let canonicalURL = Astro.url;
    <main class="layout">
       <article class="content">
           <h1>{title}</h1>
+          <h2>Pages</h2>
           <ul>
-      {sitemapURLs.sites.map(( url ) => (
-                  <li class="post-preview wiki-listing post-list">
-                    <a href={url}>{url}</a>
-                  </li>
-                ))}
-    </ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/uses/">Uses</a></li>
+            <li><a href="/posts/">Posts</a></li>
+            <li><a href="/jardim/">Jardim</a></li>
+            <li><a href="/mlog/">Mlog</a></li>
+            <li><a href="/music/">Music</a></li>
+            <li><a href="/projects/">Projects</a></li>
+            <li><a href="/press/">Press</a></li>
+            <li><a href="/support/">Support</a></li>
+            <li><a href="/misc/">Misc</a></li>
+            <li><a href="/release-notes/">Release Notes</a></li> 
+            <li><a href="/morsels/">Morsels</a></li> 
+            <li><a href="/lists/">Lists</a></li> 
+            <li><a href="/recortes/">Recortes</a></li> 
+            <li><a href="/linkblog/">Linkblog</a></li> 
+            <li><a href="/fave-tweets/">Fave Tweets</a></li> 
+            <li><a href="/important-albums/">Important Albums</a></li> 
+            <li><a href="/lastfm-top-1000/">Last.fm Top 1000</a></li> 
+            <li><a href="/letterboxd-diaries/">Letterboxd Diaries</a></li>
+            <li><a href="/gameslist/">Gameslist</a></li>
+          </ul>
+          <h2>Posts</h2>
+          <ul>
+            {allPosts.map( (post) => <li><a href=`/posts/${post.slug}`>{post.data.title}</a></li>)}
+          </ul>
+          <h2>Lists</h2>
+              <ul>
+                {allLists.map( (post) => <li><a href=`/posts/${post.slug}`>{post.data.title}</a></li>)}
+              </ul>
+          <h2>Mlogs</h2>
+              <ul>
+                {allMlogs.sort((a, b) => collator.compare(a.data.title, b.data.title)).map( (post) => <li><a href=`/posts/${post.slug}`>{post.data.title}</a></li>)}
+              </ul>
+          <h2>Morsels</h2>
+              <ul>
+                {allMorsels.sort((a, b) => collator.compare(a.data.title, b.data.title)).map( (post) => <li><a href=`/posts/${post.slug}`>{post.data.title}</a></li>)}
+              </ul>
+          <h2>Music</h2>
+              <ul>
+                {allAlbums.map( (post) => <li><a href=`/posts/${post.slug}`>{post.data.title}</a></li>)}
+              </ul>
+          <h2>Recortes</h2>
+              <ul>
+                {allRecortes.map( (post) => <li><a href=`/posts/${post.slug}`>{post.data.title}</a></li>)}
+              </ul>
+          <h2>Release Notes</h2>
+              <ul>
+                {allReleaseNotes.sort((a, b) => collator.compare(a.data.title, b.data.title)).map( (post) => <li><a href=`/posts/${post.slug}`>{post.data.title}</a></li>)}
+              </ul>
       </article>
           </main>
            <Footer/>
