@@ -14,6 +14,8 @@ const allAlbums = await getCollection("music");
 const allRecortes = await getCollection("recortes");
 const allReleaseNotes = await getCollection("release-notes");
 
+const allJardim = await Astro.glob('./jardim/*.astro');
+
 const collator = Intl.Collator([], {numeric: true});
 
 // METADATA VARIABLES
@@ -21,6 +23,7 @@ const collator = Intl.Collator([], {numeric: true});
 let title = 'HTML Sitemap';
 let description = 'This is a HTML sitemap for this site.';
 let canonicalURL = Astro.url;
+
 ---
 
 <html lang="en-GB">
@@ -55,6 +58,10 @@ let canonicalURL = Astro.url;
             <li><a href="/lastfm-top-1000/">Last.fm Top 1000</a></li> 
             <li><a href="/letterboxd-diaries/">Letterboxd Diaries</a></li>
             <li><a href="/gameslist/">Gameslist</a></li>
+          </ul>
+          <h2>Jardim</h2>
+          <ul>
+            {allJardim.map( (jardim) => <li><a href=`${jardim.url}/`>{jardim.url}</a></li> )}
           </ul>
           <h2>Posts</h2>
           <ul>

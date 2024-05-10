@@ -4,7 +4,7 @@ description: "As long as you have intent, it doesn't matter whether your scribbl
 published: true
 pubDate: '10 Aug 2020'
 layout: ../../layouts/BlogPost.astro
-tags: ['blogging']
+tags: ['blogging', 'writing']
 ---
 
 As long as you have intent, it doesn't matter whether your scribbles are intelligible or not—you are a writer.

@@ -3,7 +3,7 @@ title: 'This is my content creation flow'
 description: "Here is how I create content"
 pubDate: '19 Mar 2020'
 layout: ../../layouts/BlogPost.astro
-tags: ['blogging', 'the Internet']
+tags: ['blogging', 'the Internet', 'writing']
 ---
 
 A few months ago, I "revealed" my content creation flow on Twitter (as if it was a secret) and I said I'd write about it in more detail. So here it is.

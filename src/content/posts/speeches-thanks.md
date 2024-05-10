@@ -4,7 +4,7 @@ description: "Some thoughts on the BLM protests and blogging and stuff."
 published: true
 pubDate: '9 Aug 2020'
 layout: ../../layouts/BlogPost.astro
-tags: ['blogging']
+tags: ['blogging', 'writing']
 ---
 
 <p><em>(This is a copy of my last newsletter edition.)</a></em></p>

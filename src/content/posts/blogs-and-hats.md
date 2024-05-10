@@ -4,7 +4,7 @@ description: "I've noticed something about how I approach blogging."
 published: true
 pubDate: '24 Feb 2020'
 layout: ../../layouts/BlogPost.astro
-tags: ['blogging']
+tags: ['blogging', 'writing']
 ---
 
 I've noticed something about how I approach [blogging](/jardim/blogging/). "Wearing many hats" is an idiom that means having different jobs or roles and running multiple blogs lends itself to that ideal. My head is never cold.

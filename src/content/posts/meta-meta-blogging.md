@@ -4,7 +4,7 @@ description: "Is there a word for soul searching but for blogs? Meta-meta-bloggi
 published: true
 pubDate: "23 Jan 2021"
 layout: ../../layouts/BlogPost.astro
-tags: ['blogging']
+tags: ['blogging', 'wroting']
 ---
 
 Is there a word for soul searching but for blogs? Meta-meta-blogging will have to do for now.

@@ -4,7 +4,7 @@ description: "For me, blogging is about self-expression (alongside self-experime
 published: true
 pubDate: "17 May 2021"
 layout: ../../layouts/BlogPost.astro
-tags: ['blogging']
+tags: ['blogging', 'writing']
 ---
 
 [Tyler Cowen wrote](https://marginalrevolution.com/marginalrevolution/2007/02/blogging_as_sel.html):

@@ -4,7 +4,7 @@ description: "I'm very protective over the art of blogging because, without it, 
 published: true
 pubDate: '8 Nov 2021'
 layout: ../../layouts/BlogPost.astro
-tags: ['blogging']
+tags: ['blogging', 'writing']
 ---
 
 I'm very protective over the art of [blogging](/jardim/blogging/) because, without it, I would absolutely not be where I am today. No way.

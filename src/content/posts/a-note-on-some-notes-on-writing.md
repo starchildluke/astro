@@ -4,7 +4,7 @@ description: "It's very meta but I like to write about writing."
 published: true
 pubDate: '27 Mar 2023'
 layout: ../../layouts/BlogPost.astro
-tags: ['blogging']
+tags: ['blogging', 'writing']
 ---
 
 I love this piece by Tom Critchlow on [Writing, Riffs & Relationships](https://tomcritchlow.com/2023/02/10/riffs/):

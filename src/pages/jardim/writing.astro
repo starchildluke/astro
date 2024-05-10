@@ -1,0 +1,45 @@
+---
+// COMPONENTS
+
+import Footer from '../../components/Footer.astro';
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import Tags from '../../components/Tags.astro';
+
+// METADATA VARIABLES
+
+let title = 'Writing';
+let description = 'A wiki page all about writing.';
+
+---
+<Layout {title} {description}>
+      <main class="layout">
+        <article class="content">
+          <Breadcrumbs title={title}/>
+            <section class="intro">
+
+              <h1>{title}</h1>
+              <p class="desc">{description}</p>
+
+            </section>
+            <section>
+             
+              <h2 class="wiki-h2">Inner voice</h2>
+                <Tags tagName="writing" />
+            </section>
+      
+            <section>
+              <h2 class="wiki-h2">Second opinions</h2>
+                <ul>
+                  <li>Coming soon...</li>
+                </ul>
+            </section>
+        </article>
+      
+      </main>
+    
+    <Footer/>
+  
+  </body>
+
+</html>
