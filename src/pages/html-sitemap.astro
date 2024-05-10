@@ -5,12 +5,6 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { getCollection } from 'astro:content';
-import Sitemapper from 'sitemapper';
-
-
-const sitemap = new Sitemapper();
-
-const sitemapURLs = await sitemap.fetch('https://lukealexdavis.co.uk/sitemap-0.xml');
 
 const allPosts = await getCollection("posts");
 const allLists = await getCollection("lists");
@@ -64,31 +58,31 @@ let canonicalURL = Astro.url;
           </ul>
           <h2>Posts</h2>
           <ul>
-            {allPosts.map( (post) => <li><a href=`/posts/${post.slug}`>{post.data.title}</a></li>)}
+            {allPosts.map( (post) => <li><a href=`/posts/${post.slug}/`>{post.data.title}</a></li>)}
           </ul>
           <h2>Lists</h2>
               <ul>
-                {allLists.map( (post) => <li><a href=`/posts/${post.slug}`>{post.data.title}</a></li>)}
+                {allLists.map( (post) => <li><a href=`/lists/${post.slug}/`>{post.data.title}</a></li>)}
               </ul>
           <h2>Mlogs</h2>
               <ul>
-                {allMlogs.sort((a, b) => collator.compare(a.data.title, b.data.title)).map( (post) => <li><a href=`/posts/${post.slug}`>{post.data.title}</a></li>)}
+                {allMlogs.sort((a, b) => collator.compare(a.data.title, b.data.title)).map( (post) => <li><a href=`/mlog/${post.slug}/`>{post.data.title}</a></li>)}
               </ul>
           <h2>Morsels</h2>
               <ul>
-                {allMorsels.sort((a, b) => collator.compare(a.data.title, b.data.title)).map( (post) => <li><a href=`/posts/${post.slug}`>{post.data.title}</a></li>)}
+                {allMorsels.sort((a, b) => collator.compare(a.data.title, b.data.title)).map( (post) => <li><a href=`/morsels/${post.slug}/`>{post.data.title}</a></li>)}
               </ul>
           <h2>Music</h2>
               <ul>
-                {allAlbums.map( (post) => <li><a href=`/posts/${post.slug}`>{post.data.title}</a></li>)}
+                {allAlbums.map( (post) => <li><a href=`/music/${post.slug}/`>{post.data.title}</a></li>)}
               </ul>
           <h2>Recortes</h2>
               <ul>
-                {allRecortes.map( (post) => <li><a href=`/posts/${post.slug}`>{post.data.title}</a></li>)}
+                {allRecortes.map( (post) => <li><a href=`/recortes/${post.slug}/`>{post.data.title}</a></li>)}
               </ul>
           <h2>Release Notes</h2>
               <ul>
-                {allReleaseNotes.sort((a, b) => collator.compare(a.data.title, b.data.title)).map( (post) => <li><a href=`/posts/${post.slug}`>{post.data.title}</a></li>)}
+                {allReleaseNotes.sort((a, b) => collator.compare(a.data.title, b.data.title)).map( (post) => <li><a href=`/release-notes/${post.slug}/`>{post.data.title}</a></li>)}
               </ul>
       </article>
           </main>
