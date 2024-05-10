@@ -4,7 +4,7 @@ published: true
 pubDate: "11 Dec 2020"
 layout: ../../layouts/BlogPost.astro
 description: "J Dilla was mean on the MPC but his live drumming had influences on a number of his peers who have since helped carry his legacy on."
-tags: ['music', 'writing']
+tags: ['music']
 ---
 
 James Dewitt Yancey has garnered all the posthumous acclaim you’d expect for a hip-hop visionary underappreciated outside of his circles. Whether it be for his impeccable choice of samples through a multitude of different styles, his uncanny knack of blowing your mind with his musicianship or his humility in a sea of egos and gold chains, he is revered as a legend beyond the realms of hip-hop music, and rightfully so. But perhaps something that he doesn’t get enough credit for, publicly at least, is his drumming techniques, both acoustic and digital. The Detroit producer was mean on the MPC but his live drumming had influences on a number of his peers, particularly Questlove and Kariem Riggins, who have since helped carry his legacy on.
