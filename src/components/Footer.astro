@@ -34,6 +34,8 @@ let year = new Date().getFullYear()
         </ul>
     </nav>
     <p>- - - - -</p>
+    <p class="clock"></p>
+    <p>- - - - -</p>
     <p><a href="https://astro.build/">Built with Astro</a>, HTML, CSS, and a <span lang="fr">soupçon</span> of JS. <a href="https://twitter.com/t3dotgg/status/1481344430921502720">Special tweet added for good luck.</a></p>
     <p><a href="/html-sitemap/">HTML Sitemap</a> | Member of the <a href="https://250kb.club/">250KB Club</a>, <a href="https://512kb.club/">512KB Club</a> and <a href="https://1mb.club/">1MB Club</a></p>
     <p>Listed @ <a href="https://linklane.net" target="_blank">LinkLane.Net</a></p>
@@ -64,4 +66,5 @@ let year = new Date().getFullYear()
     </a>
     <p>- - - - -</p>
     <p>Copyright {year} © Luke Davis</p>
+<script>function tm(){let t=new Date,e=t.getHours(),n=t.getMinutes(),r=t.getSeconds(),o=`${e.toString().padStart(2,"0")}:${n.toString().padStart(2,"0")}:${r.toString().padStart(2,"0")}`;document.querySelector(".clock").innerText=o}tm(),setInterval(tm,1000);</script>
 </footer>
