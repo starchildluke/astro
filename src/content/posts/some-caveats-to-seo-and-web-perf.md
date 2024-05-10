@@ -4,7 +4,7 @@ description: "As a technical SEO, I am very passionate about web performance. He
 published: true
 pubDate: '2 Jul 2023'
 layout: ../../layouts/BlogPost.astro
-tags: ['SEO', 'tech', 'the Tnternet']
+tags: ['SEO', 'tech', 'the Internet']
 ---
 
 As a technical SEO, I am very passionate about web performance. The speed and overall performance of a page can affect how well a search engine crawler can crawl and index a page (amongst many other factors). The usual way to define that is through metrics like Google's [Core Web Vitals](https://web.dev/articles/vitals/), which form part of their [Page Experience ranking signal](https://developers.google.com/search/docs/appearance/page-experience)<sup><a href ="#sidenote">\*</a></sup>. But there's a problem I've noticed between both SEO and web performance communities: people are giving too much weight to Core Web Vitals from a ranking perspective.
