@@ -1,0 +1,1 @@
+import"./hoisted.CDKK4OKL.js";function e(){let t=new Date,n=t.getHours(),r=t.getMinutes(),o=t.getSeconds(),a=`${n.toString().padStart(2,"0")}:${r.toString().padStart(2,"0")}:${o.toString().padStart(2,"0")}`;document.querySelector(".clock").innerText=a}e(),setInterval(e,1e3);
