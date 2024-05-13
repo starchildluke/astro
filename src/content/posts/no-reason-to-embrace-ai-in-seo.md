@@ -7,7 +7,7 @@ layout: ../../layouts/BlogPost.astro
 tags: ["AI", "tech", "SEO"]
 ---
 
-When you embrace a person, it indicates a sense of love, warmth, comfort, and trust. Now imagine associating those feelings with AI. And then for SEO. It starts sounding weird and unadvisable.
+When you embrace a person, it indicates a sense of love, warmth, comfort, and trust. Now imagine associating those feelings with AI. And then for SEO. It starts sounding weird and inadvisable.
 
 But that's exactly the kind of rhetoric I see on social media. The idea is that because AI is "here to stay" and it's all interesting and exciting and kinda problematic but we can ignore that because of the interest and excitement that we need to coddle this technology else we fall behind.
 
