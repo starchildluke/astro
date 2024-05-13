@@ -52,16 +52,32 @@ const rgb = {
   }
   
   .album-listing {
-    display:flex;
-    justify-content: space-between;
-    padding-bottom:1rem;
+    display: flex;
     align-items: center;
+    padding-bottom:1rem;
     width: 100%;
     margin-bottom: 1rem;
     border: 2px solid #aaa;
     border-radius: 10px;
     box-shadow: 3px 3px 10px rgba(0,0,0,0.6);
     padding: 1rem;
+  }
+
+  .album-listing > * {
+    flex: 1;
+    display: flex;
+  }
+
+  .album-listing .album-link {
+    justify-content: center;
+  }
+
+  .album-listing .album-img {
+    justify-content: flex-start;
+  }
+
+  .album-listing span {
+    justify-content: flex-end;
   }
 
   .album-list {
@@ -92,9 +108,9 @@ const rgb = {
     <ul class="album-list">
     {items.map((album) => (
       <li class="album-listing">
-        <img src={`/images/albums/smaller/${album?.data.image.replace('.jpg', '_100x100.webp')}`} alt={`cover art for ${album.data.title}`} width="64" height="64" />
-        <a href={`/music/${album.slug}/`}><Fragment set:html={album.data.title}></a>
-          <span class="publish-date"><FormattedDate date={album.data.pubDate} /></span>
+      <div class="album-img"><img src={`/images/albums/smaller/${album?.data.image.replace('.jpg', '_100x100.webp')}`} alt={`cover art for ${album.data.title}`} width="64" height="64" /></div>
+        <div class="album-link"><a href={`/music/${album.slug}/`}><Fragment set:html={album.data.title}></a></div>
+        <span class="publish-date"><FormattedDate date={album.data.pubDate} /></span>
       </li>
     ))}
     </ul>
