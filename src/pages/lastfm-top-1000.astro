@@ -4,14 +4,13 @@
 import Layout from '../layouts/Layout.astro';
 import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
-import env from '../../env.json'
 
 // METADATA VARIABLES
 
 let title = 'My Last.fm Top 1000 Artists';
 let description = 'This page lists my top 1000 artists on Last.fm, ordered by play count.';
 
-const lastFmData = await fetch(env['API_URL']).then(response => response.json());
+const lastFmData = await fetch(import.meta.env.PUBLIC_API_URL).then(response => response.json());
 
 ---
 <Layout title={title} description={description} />
