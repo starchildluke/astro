@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en-GB"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Introducing RALTS (Really Awesome Lexicon and Tag Suggester)</title><link rel="stylesheet" type="text/css" href="/style/blog.css"><link rel="preload" as="font" href="/fonts/Erode-Bold.woff2" type="font/woff2" crossorigin><script defer data-domain="lukealexdavis.co.uk" src="https://plausible.io/js/plausible.js"></script><link rel="icon" type="image/png" href="/favicon.png"><meta name="title" content="Introducing RALTS (Really Awesome Lexicon and Tag Suggester)"><meta name="description" content="I love NLP and taxonomies. Here's a script I wrote that marries the two concepts."><meta property="og:image" content="https://lukealexdavis.co.uk/images/ld-logo-og-image.jpg"><meta name="generator" content="Astro v4.5.13"><link rel="canonical" href="https://lukealexdavis.co.uk/posts/introducing-ralts/"><link rel="alternate" type="application/rss+xml" title="Luke Alex Davis" href="https://lukealexdavis.co.uk/blog.xml"><link href="https://uk.linkedin.com/in/lukealexdavis" rel="me"><link href="https://bsky.app/profile/lukealexdavis.co.uk" rel="me"><link href="https://github.com/starchildluke" rel="me"><link rel="authorization_endpoint" href="https://indieauth.com/auth"><style>.footer-nav-links[data-astro-cid-sz7xmlte] ul[data-astro-cid-sz7xmlte]{display:flex;flex-wrap:wrap;list-style:none;padding:0 0 1rem;justify-content:center}.footer-nav-links[data-astro-cid-sz7xmlte] li[data-astro-cid-sz7xmlte]{font-size:inherit}
+<!DOCTYPE html><html lang="en-GB"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Introducing RALTS (Really Awesome Lexicon and Tag Suggester)</title><link rel="stylesheet" type="text/css" href="/style/blog.css"><link rel="preload" as="font" href="/fonts/Erode-Bold.woff2" type="font/woff2" crossorigin><script defer data-domain="lukealexdavis.co.uk" src="https://plausible.io/js/plausible.js"></script><link rel="icon" type="image/png" href="/favicon.png"><meta name="title" content="Introducing RALTS (Really Awesome Lexicon and Tag Suggester)"><meta name="description" content="I love NLP and taxonomies. Here's a script I wrote that marries the two concepts."><meta property="og:image" content="https://lukealexdavis.co.uk/images/ld-logo-og-image.jpg"><meta name="generator" content="Astro v4.8.3"><link rel="canonical" href="https://lukealexdavis.co.uk/posts/introducing-ralts/"><link rel="alternate" type="application/rss+xml" title="Luke Alex Davis" href="https://lukealexdavis.co.uk/blog.xml"><link href="https://uk.linkedin.com/in/lukealexdavis" rel="me"><link href="https://bsky.app/profile/lukealexdavis.co.uk" rel="me"><link href="https://github.com/starchildluke" rel="me"><link rel="authorization_endpoint" href="https://indieauth.com/auth"><style>.footer-nav-links[data-astro-cid-sz7xmlte] ul[data-astro-cid-sz7xmlte]{display:flex;flex-wrap:wrap;list-style:none;padding:0 0 1rem;justify-content:center}.footer-nav-links[data-astro-cid-sz7xmlte] li[data-astro-cid-sz7xmlte]{font-size:inherit}
 </style><script type="module" src="/_astro/hoisted.D5azqS-1.js"></script></head><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://lukealexdavis.co.uk/#website","url":"https://lukealexdavis.co.uk","name":"Luke Davis","publisher":{"@id":"https://lukealexdavis.co.uk/#Person"},"inLanguage":"en-GB"},{"@type":"Article","headline":"Introducing RALTS (Really Awesome Lexicon and Tag Suggester)","datePublished":"2022-02-28T00:00:00.000Z","author":{"@type":"Person","name":"Luke Davis","@id":"https://lukealexdavis.co.uk/","url":"https://lukealexdavis.co.uk/"},"publisher":{"@id":"https://lukealexdavis.co.uk/#Person","@type":"Person","name":"Luke Davis"},"name":"Introducing RALTS (Really Awesome Lexicon and Tag Suggester)","@id":"https://lukealexdavis.co.uk/posts/introducing-ralts/#richSnippet","inLanguage":"en-GB","mainEntityOfPage":{"@id":"https://lukealexdavis.co.uk/posts/introducing-ralts/#webpage"}},{"@type":"Person","image":["https://lukealexdavis.co.uk/images/k5t2wVcf-Luke-Davis-640x600.png","https://lukealexdavis.co.uk/images/lukedavis_jpg.jpg"],"url":"https://lukealexdavis.co.uk","sameAs":["https://uk.linkedin.com/in/lukealexdavis","https://bsky.app/profile/lukealexdavis.co.uk","https://www.searchenginejournal.com/author/luke-davis/","https://www.semrush.com/user/147747585/","https://lukealexdavis.contently.com/"],"alternateName":["Luke Davis","Luke Alex Davis","starchildluke"],"name":"Luke Davis","jobTitle":"Technical SEO","gender":"Male"}]}</script><script type="application/ld+json">{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://lukealexdavis.co.uk/jardim/","name":"Parent"}},{"@type":"ListItem","position":2,"item":{"@id":"https://lukealexdavis.co.uk/posts/introducing-ralts/","name":"Current"}}]}</script><body> <header class="center" id="top"> <nav class="links"> <svg class="logo" xmlns="http://www.w3.org/2000/svg" version="1.2" viewBox="0 0 54 54" width="40px" height="40px"> <title>LD wordmark logo</title> <desc>A red rounded hexagon with the initials 'ld.' in lower case in the middle.</desc> <style>
     .s0 { fill: #fc1420;stroke: #fc1420;stroke-miterlimit:10 } 
     .s1 { fill: #ffffff } 
@@ -58,7 +58,7 @@
 </ul>
 <h2 id="tech_requirements">Tech requirements</h2>
 <p>These are the following Python packages used in the script:</p>
-<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span>streamlit>=1.0.0</span></span>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span>streamlit>=1.0.0</span></span>
 <span class="line"><span>pandas>=1.2.3</span></span>
 <span class="line"><span>transformers>=4.12.3</span></span>
 <span class="line"><span>requests>=2.25.1</span></span>
@@ -73,7 +73,7 @@
 <h2 id="the_code">The code</h2>
 <p>The code is split into different parts:</p>
 <h3 id="1-textrazor-api-key-and-client-details">1. TextRazor API key and client details</h3>
-<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color:#6A737D"># TextRazor details</span></span>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="python"><code><span class="line"><span style="color:#6A737D"># TextRazor details</span></span>
 <span class="line"><span style="color:#E1E4E8">textrazor.api_key </span><span style="color:#F97583">=</span><span style="color:#79B8FF"> API_KEY</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#E1E4E8">client </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> textrazor.TextRazor(</span><span style="color:#FFAB70">extractors</span><span style="color:#F97583">=</span><span style="color:#E1E4E8">[</span><span style="color:#9ECBFF">"entities"</span><span style="color:#E1E4E8">, </span><span style="color:#9ECBFF">"topics"</span><span style="color:#E1E4E8">])</span></span>
@@ -81,7 +81,7 @@
 <span class="line"></span></code></pre>
 <p>We set the API key (which you can generate with a free account on the TextRazor website) and tell the client to use the entities and topics extractors. We also set the classifiers to <code>textrazor_newscodes</code>. <a href="https://www.textrazor.com/classification">Find out more on TextRazor’s Classification page</a>.</p>
 <h3 id="2-function-for-loading-the-language-model-via-a-pipeline-using-zero-shot-classification-the-classification-process-plotting-the-results-and-web-scraping">2. Function for loading the language model via a pipeline using zero shot classification, the classification process, plotting the results, and web scraping</h3>
-<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color:#6A737D"># Load model</span></span>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="python"><code><span class="line"><span style="color:#6A737D"># Load model</span></span>
 <span class="line"><span style="color:#B392F0">@st.cache</span><span style="color:#E1E4E8">(</span><span style="color:#FFAB70">allow_output_mutation</span><span style="color:#F97583">=</span><span style="color:#79B8FF">True</span><span style="color:#E1E4E8">)</span></span>
 <span class="line"><span style="color:#F97583">def</span><span style="color:#B392F0"> load_model</span><span style="color:#E1E4E8">():</span></span>
 <span class="line"><span style="color:#F97583">  return</span><span style="color:#E1E4E8"> pipeline(</span><span style="color:#9ECBFF">"zero-shot-classification"</span><span style="color:#E1E4E8">, </span></span>
@@ -161,7 +161,7 @@
 <p>The fourth function is the URL scraper. It takes a URL, extracts the HTML, ignores any comments sections or text found in sidebars (<a href="https://twitter.com/jessthebp/status/1496153327779950604">thanks to Jess for the help with that</a>) and finally filters the remaining text down to just the H1 title and text found in p tags, ready for analysis.</p>
 <p>The fifth and final function brings everything together. It creates dataframes out of the found entities and topics and orders them by relevance score for ease.</p>
 <h3 id="3-dictionaries">3. Dictionaries</h3>
-<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color:#E1E4E8">kw_dict </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> {</span></span>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="python"><code><span class="line"><span style="color:#E1E4E8">kw_dict </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> {</span></span>
 <span class="line"><span style="color:#9ECBFF">  'Keyword'</span><span style="color:#E1E4E8">: []</span></span>
 <span class="line"><span style="color:#E1E4E8">}</span></span>
 <span class="line"></span>
@@ -190,7 +190,7 @@
 <span class="line"></span></code></pre>
 <p>Arguably the easiest part, just setting the dictionaries for our entity outputs as well as the tags for the additional part of our script which is up next.</p>
 <h3 id="4-establishing-the-blogs-to-cross-reference-my-entities-with-their-respective-tag-lists">4. Establishing the blogs to cross-reference my entities with their respective tag lists</h3>
-<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color:#6A737D"># Blog list</span></span>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="python"><code><span class="line"><span style="color:#6A737D"># Blog list</span></span>
 <span class="line"><span style="color:#E1E4E8">blogs </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> [</span><span style="color:#9ECBFF">'sampleface.co.uk'</span><span style="color:#E1E4E8">,</span></span>
 <span class="line"><span style="color:#9ECBFF">	'cultrface.co.uk'</span><span style="color:#E1E4E8">,</span></span>
 <span class="line"><span style="color:#9ECBFF">	'logicface.co.uk'</span><span style="color:#E1E4E8">,</span></span>
@@ -215,7 +215,7 @@
 <p>The tag data comes from WordPress’s REST API which lists various elements of a WordPress blog such as tags, categories, posts, and media. For the tags, I can pull data at 100 tags per page but when I need to run the for-loop to pull what I need, I need to set an upper limit (eg. if I have 350 tags, the range would be from 0 to 4).</p>
 <p>Also, I have to set this upper limit manually as I have no way of automating it (but if such a way exists, please let me know!)</p>
 <h3 id="5-the-streamlit-ui-stuff">5. The Streamlit UI stuff</h3>
-<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color:#6A737D"># Streamlit stuff</span></span>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="python"><code><span class="line"><span style="color:#6A737D"># Streamlit stuff</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#E1E4E8">st.sidebar.title(</span><span style="color:#9ECBFF">'Tag suggester'</span><span style="color:#E1E4E8">)</span></span>
 <span class="line"></span>
@@ -242,7 +242,7 @@
 <span class="line"></span></code></pre>
 <p>This displays all the inputs and radio buttons needed to pick the right functionality.</p>
 <h3 id="6-functions-for-updating-my-tag-lists-via-wordpresss-rest-api">6. Functions for updating my tag lists via WordPress’s REST API</h3>
-<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color:#F97583">def</span><span style="color:#B392F0"> update_all_tags</span><span style="color:#E1E4E8">():</span></span>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="python"><code><span class="line"><span style="color:#F97583">def</span><span style="color:#B392F0"> update_all_tags</span><span style="color:#E1E4E8">():</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#F97583">  with</span><span style="color:#E1E4E8"> st.spinner(</span><span style="color:#9ECBFF">'Reloading tags...'</span><span style="color:#E1E4E8">):</span></span>
 <span class="line"></span>
@@ -283,7 +283,7 @@
 <p>There are two functions linked to the tag data. First is a function that pulls the tag name, tag ID, and how many posts have been assigned to that tag and adds them to a dictionary. This is then saved to a JSON file for offline use. Doing this avoids making multiple API calls since, theoretically, the tag data won’t change that frequently. But when it does change, you can refresh the JSON files. These were formerly pickle files but due to the poor security, I spent a few hours switching this code out. I still love pickles though.</p>
 <p>From there, we can also read those files and add them to our existing_tags list ready for cross referencing against the extracted entities we find.</p>
 <h3 id="7-the-random-functions-for-content-ideas">7. The random functions for content ideas</h3>
-<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color:#6A737D"># Tag ideas functions</span></span>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="python"><code><span class="line"><span style="color:#6A737D"># Tag ideas functions</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#F97583">def</span><span style="color:#B392F0"> sf_words</span><span style="color:#E1E4E8">():</span></span>
 <span class="line"></span>
@@ -415,7 +415,7 @@
 <p>I’ll try to summarise this part as it is quite lengthy. Each JSON file is read and the relevant list is pulled containing all the respective blogs’ tags. To generate the Google Search URLs, a for-loop picks out the tags’ counts and generates a new list which can be used for weighting in the random.choices method. Then a series of 2-3 tags are chosen at random, weighted by least used tag = most likely chosen and appended to the Google Search URL.</p>
 <p>Finally, they’re all grouped together in a main function ready to be called at the click of a button.</p>
 <h3 id="8-the-entity-topic-and-category-functions-using-the-textrazor-api">8. The entity, topic, and category functions using the TextRazor API</h3>
-<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color:#6A737D"># Keyword extraction function to analyse with TextRazor</span></span>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="python"><code><span class="line"><span style="color:#6A737D"># Keyword extraction function to analyse with TextRazor</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#F97583">def</span><span style="color:#B392F0"> textrazor_extraction</span><span style="color:#E1E4E8">(input_type):</span></span>
 <span class="line"></span>
@@ -499,7 +499,7 @@
 <span class="line"></span></code></pre>
 <p>Depending on the input (text, URL, or multiple URLs), this function analyses the text, finds the topics, entities, and categories and adds them to a dictionary. I set a threshold for the relevance score to ignore anything that had a score of 0. I also added a check for matching tags, so if an entity is already in my tag list, it’ll give me a 1 or 0 if not. It’s worth noting that this is inconsistent despite my best efforts so if you see the code and can tell me how to do this better, let me know!</p>
 <h3 id="9-the-function-for-displaying-that-data-in-dataframe-form">9. The function for displaying that data in DataFrame form</h3>
-<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color:#6A737D"># DataFrames to present above data</span></span>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="python"><code><span class="line"><span style="color:#6A737D"># DataFrames to present above data</span></span>
 <span class="line"><span style="color:#F97583">def</span><span style="color:#B392F0"> data_viz</span><span style="color:#E1E4E8">():</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#F97583">	if</span><span style="color:#E1E4E8"> input_type </span><span style="color:#F97583">==</span><span style="color:#9ECBFF"> 'Text'</span><span style="color:#E1E4E8">:</span></span>
@@ -675,7 +675,7 @@
 
 <table><thead><tr><th>Category</th><th>Relevance Score</th></tr></thead><tbody><tr><td>economy, business and finance>computing and information technology</td><td>0.8100</td></tr><tr><td>economy, business and finance>computing and information technology>software</td><td>0.7330</td></tr><tr><td>arts, culture and entertainment>internet</td><td>0.6020</td></tr><tr><td>arts, culture and entertainment>language</td><td>0.5620</td></tr><tr><td>science and technology>engineering</td><td>0.5360</td></tr></tbody></table>
 <h3 id="10-execution-of-the-all-the-functions-to-make-it-work">10. Execution of the all the functions to make it work</h3>
-<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color:#6A737D"># Execute functions</span></span>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="python"><code><span class="line"><span style="color:#6A737D"># Execute functions</span></span>
 <span class="line"><span style="color:#F97583">if</span><span style="color:#E1E4E8"> tag_ideas:</span></span>
 <span class="line"><span style="color:#E1E4E8">	all_blogs()</span></span>
 <span class="line"><span style="color:#F97583">elif</span><span style="color:#E1E4E8"> submit </span><span style="color:#F97583">and</span><span style="color:#E1E4E8"> input_type </span><span style="color:#F97583">and</span><span style="color:#E1E4E8"> input_type </span><span style="color:#F97583">==</span><span style="color:#9ECBFF"> 'Text'</span><span style="color:#E1E4E8">:</span></span>
