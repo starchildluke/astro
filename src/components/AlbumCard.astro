@@ -1,0 +1,100 @@
+---
+
+import FormattedDate from "./FormattedDate.astro";
+
+const { title, linerNotes, pubDate, image, url } = Astro.props;
+
+---
+
+<style>
+
+	.album-name h1 {
+		margin-top: 2rem;
+	}
+
+	h2 {
+		font-size: 2rem;
+	}
+	
+	.album-card {
+		display: flex;
+		flex-direction: column;
+		border: 1px solid black;
+		border-radius: 10px;
+		padding: 0 2rem 1rem 2rem;
+	}
+
+	.album-cover {
+		display: flex;
+		justify-content: center;
+  		align-items: center;
+	}
+
+	.album-cover img {
+		object-fit: contain;
+	}
+
+	.album-name, .album-meta {
+		text-align: center;
+	}
+
+	.album-meta {
+		display: flex;
+		padding-top: 2rem;
+		padding-bottom: 1rem;
+	}
+
+	.album-liner-notes {
+		display: flex;
+		flex-direction: column;
+		flex: 1;
+		padding-right: 1rem;
+		border-right: 1px solid black;
+	}
+
+	.album-liner-notes p {
+		font-family: Georgia, serif;
+		font-style: italic;
+	}
+
+	.album-liner-notes p:before {
+		content: '\201C';
+	}
+
+	.album-liner-notes p:after {
+		content: '\201D';
+	}
+
+	.album-release-date {
+		flex: 1;
+		padding-left: 1rem;
+	}
+
+	.album-download {
+		margin-top: 1rem;
+	}
+
+</style>
+
+<div class="album-card">
+	<div class="album-name">
+		<h1>{title}</h1>
+	</div>
+	<div class="album-cover">
+		<figure>
+			<img src={`/images/albums/full/${image}`} alt={`cover art for ${title}`} width=600 height=600 loading="eager" fetchpriority="high" />
+		</figure>
+	</div>
+	<div class="album-meta">
+		<div class="album-liner-notes">
+			<h2>About {title}</h2>
+			<p>{linerNotes}</p>
+		</div>
+		<div class="album-release-date">
+			<h2>Released on:</h2>
+			<FormattedDate date={pubDate} />
+			<div class=album-download><h2>Download link</h2>
+						<p><a href={url}>Download {title} on Bandcamp</a>.</p></div>
+		</div>
+	</div>
+</div>
