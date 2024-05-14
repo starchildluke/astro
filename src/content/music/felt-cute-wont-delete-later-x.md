@@ -4,6 +4,7 @@ linerNotes: "On 2nd April 2022, I decided to take a trip and make this album in 
 pubDate: '03 Apr 2022'
 layout: '../../layouts/BlogPost.astro'
 image: 'felt-cute-wont-delete-later-x.jpg'
+url: 'https://strrchildluke.bandcamp.com/album/felt-cute-wont-delete-later-x'
 ---
 
-https://strrchildluke.bandcamp.com/album/felt-cute-wont-delete-later-x
+

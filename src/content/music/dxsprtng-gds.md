@@ -4,6 +4,7 @@ linerNotes: "Album #10 from my #Road2Switch series. DxSprtng_Gds has a sporty th
 pubDate: '01 Sep 2019'
 layout: '../../layouts/BlogPost.astro'
 image: 'dxsprtng-gds.jpg'
+url: 'https://strrchildluke.bandcamp.com/album/dxsprtng-gds'
 ---
 
-https://strrchildluke.bandcamp.com/album/dxsprtng-gds
+

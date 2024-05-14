@@ -4,6 +4,6 @@ linerNotes: "Merry Christmas to everyone! This is my alternative Christmas album
 pubDate: '24 Dec 2018'
 layout: '../../layouts/BlogPost.astro'
 image: 'boas-festas.jpg'
+url: 'https://strrchildluke.bandcamp.com/album/boas-festas'
 ---
 
-https://strrchildluke.bandcamp.com/album/boas-festas

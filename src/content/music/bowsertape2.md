@@ -4,6 +4,6 @@ linerNotes: "why do koopas fall in love?"
 pubDate: '30 Jun 2019'
 layout: '../../layouts/BlogPost.astro'
 image: 'bowsertape2.jpg'
+url: 'https://strrchildluke.bandcamp.com/album/bowsertape'
 ---
 
-https://strrchildluke.bandcamp.com/album/bowsertape2

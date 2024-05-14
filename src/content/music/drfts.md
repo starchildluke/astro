@@ -4,6 +4,7 @@ linerNotes: "clue's in the title. just some drafts i had lying around in the 'va
 pubDate: '12 Sep 2016'
 layout: '../../layouts/BlogPost.astro'
 image: 'drfts.jpg'
+url: 'https://strrchildluke.bandcamp.com/album/drfts'
 ---
 
-https://strrchildluke.bandcamp.com/album/drfts
+

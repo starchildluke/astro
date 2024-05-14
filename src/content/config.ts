@@ -26,7 +26,8 @@ const music = defineCollection({
 			.string()
 			.or(z.date())
 			.transform((val) => new Date(val)),
-		layout: z.string()
+		layout: z.string(),
+		url: z.string().url().optional()
 	})
 });
 

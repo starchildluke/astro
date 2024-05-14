@@ -9,6 +9,7 @@ b. The fur of one of these mammals. ----- This is beat tape 1 of 12 from my Cosm
 pubDate: '17 Jan 2013'
 layout: '../../layouts/BlogPost.astro'
 image: 'astro-fox.jpg'
+url: 'https://strrchildluke.bandcamp.com/album/astro-fox'
 ---
 
-https://strrchildluke.bandcamp.com/album/astro-fox
+

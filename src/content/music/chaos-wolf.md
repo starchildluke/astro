@@ -15,6 +15,7 @@ c. Any of various similar or related mammals, such as the hyena. -----  This is 
 pubDate: '30 Apr 2013'
 layout: '../../layouts/BlogPost.astro'
 image: 'chaos-wolf.jpg'
+url: 'https://strrchildluke.bandcamp.com/album/chaos-wolf'
 ---
 
-https://strrchildluke.bandcamp.com/album/chaos-wolf
+

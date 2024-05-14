@@ -15,11 +15,13 @@ const lists = await getCollection('lists', ({ data }) => {
   return data.tags.includes(tagName);
 });
 
-const sortedPosts = posts.sort((a, b) => a.data.title.localeCompare(b.data.title));
+const collator = Intl.Collator([], {numeric: true});
 
-const sortedRecortes = recortes.sort((a, b) => a.data.title.localeCompare(b.data.title));
+const sortedPosts = posts.sort((a, b) => collator.compare(a.data.title, b.data.title));
 
-const sortedLists = lists.sort((a, b) => a.data.title.localeCompare(b.data.title));
+const sortedRecortes = recortes.sort((a, b) => collator.compare(a.data.title, b.data.title));
+
+const sortedLists = lists.sort((a, b) => collator.compare(a.data.title, b.data.title));
 
 ---
 <h3>Posts</h3>

@@ -6,6 +6,7 @@ Black Trans Travel Fund Because All Black Lives Matter and that must include All
 pubDate: '16 Jun 2020'
 layout: '../../layouts/BlogPost.astro'
 image: 'justice-peace.jpg'
+url: 'https://strrchildluke.bandcamp.com/album/justice-peace'
 ---
 
-https://strrchildluke.bandcamp.com/album/justice-peace
+

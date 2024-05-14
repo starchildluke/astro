@@ -4,6 +4,6 @@ linerNotes: "i had some more beats leftover so i decided to make a second CTL vo
 pubDate: '26 Jun 2017'
 layout: '../../layouts/BlogPost.astro'
 image: 'cold-turkey-leftovers-vol-2.jpg'
+url: 'https://strrchildluke.bandcamp.com/album/cold-turkey-leftovers-vol-2'
 ---
 
-https://strrchildluke.bandcamp.com/album/cold-turkey-leftovers-vol-2

@@ -1460,6 +1460,13 @@ declare module 'astro:content' {
   collection: "posts";
   data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
+"no-reason-to-embrace-ai-in-seo.md": {
+	id: "no-reason-to-embrace-ai-in-seo.md";
+  slug: "no-reason-to-embrace-ai-in-seo";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
 "nyt-first-said-visualisation.md": {
 	id: "nyt-first-said-visualisation.md";
   slug: "nyt-first-said-visualisation";

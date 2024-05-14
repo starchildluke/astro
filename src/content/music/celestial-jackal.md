@@ -16,6 +16,5 @@ b. One who performs menial tasks for another."
 pubDate: '31 May 2013'
 layout: '../../layouts/BlogPost.astro'
 image: 'celestial-jackal.jpg'
+url: 'https://strrchildluke.bandcamp.com/album/celestial-jackal'
 ---
-
-https://strrchildluke.bandcamp.com/album/celestial-jackal

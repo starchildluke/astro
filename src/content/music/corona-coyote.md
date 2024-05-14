@@ -12,6 +12,7 @@ n.
 pubDate: '23 Feb 2014'
 layout: '../../layouts/BlogPost.astro'
 image: 'corona-coyote.jpg'
+url: 'https://strrchildluke.bandcamp.com/album/corona-coyote'
 ---
 
-https://strrchildluke.bandcamp.com/album/corona-coyote
+

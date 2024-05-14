@@ -26,6 +26,7 @@ tr.v. goosed, goos·ing, goos·es Slang
 pubDate: '21 Sep 2014'
 layout: '../../layouts/BlogPost.astro'
 image: 'desert-goose.jpg'
+url: 'https://strrchildluke.bandcamp.com/album/desert-goose'
 ---
 
-https://strrchildluke.bandcamp.com/album/desert-goose
+

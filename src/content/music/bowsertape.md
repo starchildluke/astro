@@ -4,6 +4,5 @@ linerNotes: "BOWSERTAPE is the brand new beat tape from UK producer Starchildluk
 pubDate: '28 Feb 2019'
 layout: '../../layouts/BlogPost.astro'
 image: 'bowsertape.jpg'
+url: https://strrchildluke.bandcamp.com/album/boas-festas
 ---
-
-https://strrchildluke.bandcamp.com/album/bowsertape

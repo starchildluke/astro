@@ -5,6 +5,5 @@ adjective: reckless and daring"
 pubDate: '04 May 2023'
 layout: '../../layouts/BlogPost.astro'
 image: 'daredevil.jpg'
+url: 'https://strrchildluke.bandcamp.com/album/daredevil'
 ---
-
-https://strrchildluke.bandcamp.com/album/daredevil

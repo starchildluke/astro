@@ -4,6 +4,6 @@ linerNotes: "Merry Christmas to everyone! This is my 2nd alternative Christmas a
 pubDate: '28 Dec 2023'
 layout: '../../layouts/BlogPost.astro'
 image: 'boas-festas-2.jpg'
+url: 'https://strrchildluke.bandcamp.com/album/boas-festas-2'
 ---
 
-https://strrchildluke.bandcamp.com/album/boas-festas-2

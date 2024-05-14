@@ -4,6 +4,5 @@ linerNotes: "NOQUEST II: Architects of the Champion Bloodline is the second albu
 pubDate: '03 May 2024'
 layout: '../../layouts/BlogPost.astro'
 image: 'noquest-ii.jpg'
+url: 'https://strrchildluke.bandcamp.com/album/noquest-ii'
 ---
-
-https://strrchildluke.bandcamp.com/album/noquest-ii

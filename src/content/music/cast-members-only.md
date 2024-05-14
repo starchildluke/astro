@@ -4,6 +4,7 @@ linerNotes: "I made this towards the end of 2016/beginning of 2017. It was a bit
 pubDate: '25 Jul 2018'
 layout: '../../layouts/BlogPost.astro'
 image: 'cast-members-only.jpg'
+url: 'https://strrchildluke.bandcamp.com/album/cast-members-only'
 ---
 
-https://strrchildluke.bandcamp.com/album/cast-members-only
+

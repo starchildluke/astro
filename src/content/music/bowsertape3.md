@@ -4,6 +4,7 @@ linerNotes: "BOWSERTAPE3 is the 12th album from Starchildluke's #Road2Switch ser
 pubDate: '01 Dec 2019'
 layout: '../../layouts/BlogPost.astro'
 image: 'bowsertape3.jpg'
+url: 'https://strrchildluke.bandcamp.com/album/bowsertape3'
 ---
 
-https://strrchildluke.bandcamp.com/album/bowsertape3
+

@@ -4,6 +4,5 @@ linerNotes: "GNGR2 is the 8th album from Starchildluke's #Road2Switch series. It
 pubDate: '31 Jul 2019'
 layout: '../../layouts/BlogPost.astro'
 image: 'gngr2.jpg'
+url: 'https://strrchildluke.bandcamp.com/album/gngr2'
 ---
-
-https://strrchildluke.bandcamp.com/album/gngr2

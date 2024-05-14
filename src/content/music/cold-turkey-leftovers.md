@@ -4,6 +4,7 @@ linerNotes: "Produced, mixed and mastered by Starchild using Logic and a SP-303 
 pubDate: '21 May 2012'
 layout: '../../layouts/BlogPost.astro'
 image: 'cold-turkey-leftovers.jpg'
+url: 'https://strrchildluke.bandcamp.com/album/cold-turkey-leftovers'
 ---
 
-https://strrchildluke.bandcamp.com/album/cold-turkey-leftovers
+

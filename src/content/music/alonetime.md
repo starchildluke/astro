@@ -4,6 +4,6 @@ linerNotes: "This weekend, I took some alone time, made music, and chilled the h
 pubDate: '16 Feb 2020'
 layout: '../../layouts/BlogPost.astro'
 image: 'alonetime.jpg'
+url: 'https://strrchildluke.bandcamp.com/album/alonetime'
 ---
 
-https://strrchildluke.bandcamp.com/album/alonetime
