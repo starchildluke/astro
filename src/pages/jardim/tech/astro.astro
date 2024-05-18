@@ -1,0 +1,38 @@
+---
+// COMPONENTS
+
+import Footer from '../../../components/Footer.astro';
+import Layout from '../../../layouts/Layout.astro';
+import Breadcrumbs from '../../../components/Breadcrumbs.astro';
+import Tags from '../../../components/Tags.astro';
+
+// METADATA VARIABLES
+
+let title = 'Astro';
+let description = 'A page all about Astro.';
+
+---
+<Layout {title} {description}>
+    <div class="layout">
+      <article class="content">
+        <Breadcrumbs title={title}/>
+        <section class="intro">
+          <h1>{title}</h1>
+        </section>
+        <section>
+          <h2 class="wiki-h2">Inner voice</h2>
+          <Tags tagName="Astro" />
+        </section>
+        
+        <section>
+          <h2 class="wiki-h2">Second opinions</h2>
+          
+          <ul><li>Coming soon...</li></ul>
+          
+        </section>
+      </article>
+      
+    </div>
+    <Footer/>
+  </body>
+</html>
