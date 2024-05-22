@@ -1,4 +1,32 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>The coding morsels of Luke Alex Davis</title><description>My RSS feed of coding snippets.</description><link>https://lukealexdavis.co.uk/</link><item><title>Morsel #10: Ticking all the boxes</title><link>https://lukealexdavis.co.uk/posts/morsel-10/</link><guid isPermaLink="true">https://lukealexdavis.co.uk/posts/morsel-10/</guid><pubDate>Tue, 23 Jan 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;I was trying to create a data report and needed to tick checkboxes to include certain information. Unfortunately, there were over 500 boxes and no option for selecting all of them so I Googled how to do it using JavaScript + the browser console.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>The coding morsels of Luke Alex Davis</title><description>My RSS feed of coding snippets.</description><link>https://lukealexdavis.co.uk/</link><item><title>Morsel #11: how to check if a DOM element is in the viewport</title><link>https://lukealexdavis.co.uk/posts/morsel-11/</link><guid isPermaLink="true">https://lukealexdavis.co.uk/posts/morsel-11/</guid><pubDate>Tue, 21 May 2024 23:00:00 GMT</pubDate><content:encoded>&lt;p&gt;In my line of work, I struggle with finding DOM elements that cause issues but are otherwise hidden—by &lt;code&gt;display:none&lt;/code&gt;—or obscured by above-the-fold menus. I came across the latter the other day and the issue was lazy-loading. I wasn&apos;t sure whether the element classed as &quot;in the viewport&quot; despite not being immediately seen by the user unless they unfolded the menu.&lt;/p&gt;
+&lt;p&gt;So I looked for a way to check and came across a JavaScript method called &lt;code&gt;getBoundingClientRect()&lt;/code&gt;. It returns a &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/API/DOMRect&quot;&gt;DOMRect object&lt;/a&gt; that shows the size (width and height) and position (x and y coordinates) of an element in relation to the viewport.&lt;/p&gt;
+&lt;p&gt;There are other ways to do it but this seemed the easiest for me (and coolest because I&apos;d never heard of it before). &lt;a href=&quot;https://www.geeksforgeeks.org/how-to-check-a-dom-element-is-visible-in-current-viewport/&quot;&gt;Here&apos;s an example taken from Geeks for Geeks&lt;/a&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;function myfunction(value) {
+    const item = value.getBoundingClientRect();
+    return (
+        item.top &amp;gt;= 0 &amp;amp;&amp;amp;
+        item.left &amp;gt;= 0 &amp;amp;&amp;amp;
+        item.bottom &amp;lt;= (
+            window.innerHeight ||
+            document.documentElement.clientHeight) &amp;amp;&amp;amp;
+        item.right &amp;lt;= (
+            window.innerWidth ||
+            document.documentElement.clientWidth)
+    );
+}
+
+const elementToCheck = document.getElementById(&apos;div1&apos;);
+
+window.addEventListener(&apos;scroll&apos;, () =&amp;gt; {
+    if (myfunction(elementToCheck)) {
+        console.log(&apos;Element is visible in viewport&apos;);
+    } else {
+        console.log(&apos;Element is not visible in viewport&apos;);
+    }
+});
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;After I put my element in as the value of &lt;code&gt;elementToCheck&lt;/code&gt;, it came up as &quot;in the viewport&quot; and therefore shouldn&apos;t be lazy-loaded. Easy fix!&lt;/p&gt;
+</content:encoded></item><item><title>Morsel #10: Ticking all the boxes</title><link>https://lukealexdavis.co.uk/posts/morsel-10/</link><guid isPermaLink="true">https://lukealexdavis.co.uk/posts/morsel-10/</guid><pubDate>Tue, 23 Jan 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;I was trying to create a data report and needed to tick checkboxes to include certain information. Unfortunately, there were over 500 boxes and no option for selecting all of them so I Googled how to do it using JavaScript + the browser console.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/questions/386281/how-to-implement-select-all-check-box-in-html&quot;&gt;Stack Overflow came through for me&lt;/a&gt; and I thought I&apos;d share the answer here (thanks to &lt;a href=&quot;https://stackoverflow.com/users/8112776/ashleedawg&quot;&gt;ashleedawg&lt;/a&gt;):&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;How to tick all checkboxes in your browser&lt;/strong&gt;:&lt;/p&gt;
 &lt;ol&gt;
