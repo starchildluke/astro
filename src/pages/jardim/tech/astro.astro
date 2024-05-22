@@ -13,26 +13,36 @@ let description = 'A page all about Astro.';
 
 ---
 <Layout {title} {description}>
-    <div class="layout">
-      <article class="content">
-        <Breadcrumbs title={title}/>
-        <section class="intro">
-          <h1>{title}</h1>
-        </section>
-        <section>
-          <h2 class="wiki-h2">Inner voice</h2>
-          <Tags tagName="Astro" />
-        </section>
-        
-        <section>
-          <h2 class="wiki-h2">Second opinions</h2>
-          
-          <ul><li>Coming soon...</li></ul>
-          
-        </section>
-      </article>
-      
-    </div>
-    <Footer/>
-  </body>
+<div class="layout">
+  <article class="content">
+    <Breadcrumbs title={title}/>
+
+    <section class="intro">
+      <h1>{title}</h1>
+    </section>
+
+    <section>
+      <h2 class="wiki-h2">Inner voice</h2>
+      <Tags tagName="Astro" />
+    </section>
+    
+    <section>
+      <h2 class="wiki-h2">Second opinions</h2>
+      <ul>
+        <li>
+          <a href="https://eva.town/">Eva Decker's site, possibly the best Astro site I've ever seen.</a>
+        </li>
+        <li>
+          <a href="https://techsquidtv.com/blog/astro-fetching-youtube-videos-with-rss/">Astro Component: Fetching Latest YouTube Videos with RSS</a>
+        </li>
+        <li>
+          <a href="https://thenewstack.io/how-to-build-site-search-with-astro-qwik-and-fuse-js/">How to Build Site Search with Astro, Qwik and Fuse.js </a>
+        </li>
+      </ul>
+  </section>
+
+</article>
+</div>
+<Footer/>
+</body>
 </html>
