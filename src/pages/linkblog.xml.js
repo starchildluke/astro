@@ -6,7 +6,7 @@ export async function GET(context) {
   return rss({
     title: "Luke's Linkblog",
     description: "A linkblog about all kinds of topics including SEO, AI, music, life, and the Web.",
-    site: site.url + 'linkblog',
+    site: site.url + 'linkblog/',
     stylesheet: './style/linkblog-pretty-feed-v3.xsl',
     items: linkblog.map((post) => ({
       title: post.title,
