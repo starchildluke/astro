@@ -57,7 +57,7 @@ let description = "The blog listings page. I write about all kinds of topics inc
     {items.map((post) => (
       <li class="post-listing">
         <a href={`/posts/${post.slug}/`}><Fragment set:html={post.data.title}></a>
-          <span class="publish-date"><FormattedDate date={post.data.pubDate} /></span>
+          <span class="publish-date"><FormattedDateSansYear date={post.data.pubDate} /></span>
       </li>
     ))}
     </ul>
