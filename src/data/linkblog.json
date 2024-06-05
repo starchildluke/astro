@@ -1,5 +1,16 @@
 [
     {
+        "url": "https://lab.skk.moe/zxcvbn",
+        "title": "Password Strength Estimator",
+        "description": "Password Strength Estimator estimates how strong your password is based on how long it'd take to crack by online and offline attacks (throttled and unthrottled)",
+        "quote": "no",
+        "date": "2024-06-05",
+        "tags": [
+            "tech",
+            "security"
+        ]
+    },
+    {
         "url": "https://frankforce.com/city-in-a-bottle-a-256-byte-raycasting-system/",
         "title": "City In A Bottle – A 256 Byte Raycasting System",
         "description": "This amazing program uses many different concepts in a very small space, understanding it is kind of like solving a puzzle. There are several main pieces including the html code, frame update loop, rendering system, raycasting engine, and the city itself.",
