@@ -9,12 +9,16 @@ tags: ["tech", "Python"]
 
 This is the 6th year that I've been using Python as my main programming language for pretty much anything. I've gained so much knowledge and built amazing scripts and apps, both for myself, work colleagues, and the public. But in that time, I've learnt something even more salient: Python isn't always the right answer for automation. And, no, that doesn't mean I've used other languages like Rust, Go, Java, or even JavaScript (although my heart is warming to it in general). Instead, I've learnt when copying and pasting data into an IDE and deleting what I don't need has been the quickest solution.
 
+## The task at hand
+
 Let me give you an example. I wanted to gather a list of artists to check for potential music samples as I'm working on a new project. I picked an producer on WhoSampled who I knew had impeccable taste in samples and my task was to get all the original artist names that they'd sampled from. Because there were 9 pages of samples, it wouldn't be as simple as writing down a few names so my options were:
 
 1. Scrape the pages using Screaming Frog and extract the text I needed
 2. Use Python to extract the text I needed
 3. Maybe even use JavaScript to do it in the console
 4. Open each page in 9 tabs and Select All, Cmd+C, Cmd+V, and use Regex to delete everything that didn't have the artist name in it
+
+## Which solution is best?
 
 Now the first three could have been quick solutions in theory:
 
@@ -29,6 +33,8 @@ That left the fourth one. It was rough but it was ready. The shortcut commands a
 I use Sublime Text so this was easy to do and it left me with a long list of artist names. I used Permute Lines > Unique which removed duplicates and I deleted lines that featured the producer's name and it was done in less than 30 seconds. Including the opening of 9 pages and swapping between tabs, maybe a minute, tops. I'm pretty fast with SF and Python but I know it would have taken more than double that time to get it all done.
 
 Now that might not be the case for someone more versed in any of the other techniques I listed. But the point was finding the quickest solution for a small task and writing code or engaging with technology that needed extra input didn't feel like the right thing.
+
+## Why automation isn't always the answer
 
 [xkcd has a great comic on this called Automation](https://xkcd.com/1319/) and it features two graphs—Theory and Reality—that demonstrate the time taken vs. work required to write a program that automates a task that you'd take a lot of time on. The theory suggests that you'd get more free time in the end once you've written the code and executed it. But the reality suggests writing code, debugging, rethinking, and ongoing development takes up so much time that you have no time for the original task in the end and you _lose_ time.
 
