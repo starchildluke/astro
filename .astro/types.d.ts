@@ -1628,6 +1628,13 @@ declare module 'astro:content' {
   collection: "posts";
   data: any
 } & { render(): Render[".md"] };
+"sometimes-automation-is-slower.md": {
+	id: "sometimes-automation-is-slower.md";
+  slug: "sometimes-automation-is-slower";
+  body: string;
+  collection: "posts";
+  data: any
+} & { render(): Render[".md"] };
 "speeches-thanks.md": {
 	id: "speeches-thanks.md";
   slug: "speeches-thanks";
