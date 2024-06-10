@@ -1,4 +1,105 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>The coding morsels of Luke Alex Davis</title><description>My RSS feed of coding snippets.</description><link>https://lukealexdavis.co.uk/</link><item><title>Morsel #11: how to check if a DOM element is in the viewport</title><link>https://lukealexdavis.co.uk/posts/morsel-11/</link><guid isPermaLink="true">https://lukealexdavis.co.uk/posts/morsel-11/</guid><pubDate>Tue, 21 May 2024 23:00:00 GMT</pubDate><content:encoded>&lt;p&gt;In my line of work, I struggle with finding DOM elements that cause issues but are otherwise hidden—by &lt;code&gt;display:none&lt;/code&gt;—or obscured by above-the-fold menus. I came across the latter the other day and the issue was lazy-loading. I wasn&apos;t sure whether the element classed as &quot;in the viewport&quot; despite not being immediately seen by the user unless they unfolded the menu.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>The coding morsels of Luke Alex Davis</title><description>My RSS feed of coding snippets.</description><link>https://lukealexdavis.co.uk/</link><item><title>Morsel #12: styling a WordPress post to look like a Bluesky post</title><link>https://lukealexdavis.co.uk/posts/morsel-12/</link><guid isPermaLink="true">https://lukealexdavis.co.uk/posts/morsel-12/</guid><pubDate>Wed, 22 May 2024 23:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Even though I&apos;ve deleted Twitter, I miss just throwing a thought out into the ether. WordPress has &lt;a href=&quot;https://developer.wordpress.org/advanced-administration/wordpress/post-formats/&quot;&gt;post formats&lt;/a&gt; that can facilitate that. They are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;aside: like a note&lt;/li&gt;
+&lt;li&gt;gallery: a gallery of images&lt;/li&gt;
+&lt;li&gt;link: a link to another site (great for &lt;a href=&quot;/linkblog/&quot;&gt;linkblogs&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;image: a single image&lt;/li&gt;
+&lt;li&gt;quote: a quote&lt;/li&gt;
+&lt;li&gt;status: a status update, similar to a tweet&lt;/li&gt;
+&lt;li&gt;video: a video or video playlist&lt;/li&gt;
+&lt;li&gt;audio: an audio file or playlist&lt;/li&gt;
+&lt;li&gt;chat: a chat transcript&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Most of these I probably wouldn&apos;t much if at all but status intrigued me. I already use asides on all of my blogs front page but I wanted something different for those quick quips or musings. Because a lot of modern WordPress themes don&apos;t come with post formats out of the box, you have to enable them so I added this to my theme&apos;s functions.php file:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;add_theme_support( &apos;post-formats&apos;, array( &apos;POST_FORMAT_NAME&apos; ) );
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then you have to create a template for your format(s) (unless your theme has them already) and that&apos;s where I had to get really creative. Here&apos;s what a Bluesky post looks like:&lt;/p&gt;
+&lt;p&gt;&amp;lt;img src=&quot;/images/bluesky-post.jpg&quot; alt=&quot;a bluesky post by me that says bleh&quot; loading=&quot;lazy&quot; /&amp;gt;&lt;/p&gt;
+&lt;p&gt;To get that working, I wrote a function in the template-tags.php file in my inc folder that retrieved my author name, my website (since it was also my Bluesky handle), and my avatar. All this info was accessible via the &lt;code&gt;get_the_author_meta()&lt;/code&gt; function:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;function status_author() {
+    $author_avatar = get_avatar( get_the_author_meta( &apos;ID&apos; ), 64 );
+    $author_name = get_the_author_meta(&apos;user_firstname&apos;) . &apos; &apos; . get_the_author_meta(&apos;user_lastname&apos;);
+    $url_cleanup = array(&quot;https://&quot; =&amp;gt; &quot;&quot;, &quot;/&quot; =&amp;gt; &quot;&quot;);
+    $author_url = strtr(get_the_author_meta(&apos;url&apos;), $url_cleanup);
+    echo &apos;&amp;lt;div class=&quot;status-author-meta&quot;&amp;gt;&apos; . &apos;&amp;lt;div class=&quot;status-author-meta-avatar&quot;&amp;gt;&apos; . $author_avatar . &apos;&amp;lt;/div&amp;gt;&apos; . &apos;&amp;lt;div class=&quot;status-author-meta-text&quot;&amp;gt;&apos; . &apos;&amp;lt;span&amp;gt;&apos; . $author_name. &apos;&amp;lt;/span&amp;gt;&apos; . &apos;&amp;lt;span&amp;gt;&apos; . &apos;@&apos; . $author_url . &apos;&amp;lt;/span&amp;gt;&apos; . &apos;&amp;lt;/div&amp;gt;&apos; . &apos;&amp;lt;/div&amp;gt;&apos;;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I also added a bit to get rid of the URL scheme and all the slashes. Nice and neat! Then, I added the status_author() function to my template file (content-status.php):&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;?php if ( is_single() ) : ?&amp;gt;
+        &amp;lt;h1 class=&quot;entry-title&quot;&amp;gt;
+            &amp;lt;?php print_post_title(); ?&amp;gt;
+        &amp;lt;/h1&amp;gt;
+&amp;lt;?php else : ?&amp;gt;
+    &amp;lt;?php status_author(); ?&amp;gt;
+    &amp;lt;div class=&quot;byline-text&quot; style=&quot;margin-bottom:1rem;&quot;&amp;gt;
+        &amp;lt;?php the_content(); ?&amp;gt;                 
+    &amp;lt;/div&amp;gt;
+    &amp;lt;?php status_posted_on(); ?&amp;gt;
+&amp;lt;?php endif; ?&amp;gt;
+
+&amp;lt;?php if ( is_single() ) : ?&amp;gt;
+    &amp;lt;br&amp;gt;
+&amp;lt;?php endif; ?&amp;gt;
+
+&amp;lt;?php 
+
+if ( &apos;post&apos; === get_post_type() ) : ?&amp;gt;
+
+&amp;lt;?php
+endif; ?&amp;gt;
+&amp;lt;/section&amp;gt;&amp;lt;!-- .entry-header --&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;What this says is to check if the page is a &quot;single&quot;—like a blog post—and if it is, add the title, otherwise add the status author info, the status text, and the date it was posted. I added some CSS to make mimic the Bluesky post design:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/* please don&apos;t roast my CSS, I&apos;m not a web dev!!! */
+
+.status-author-meta, .status-author-meta-text, .status-author-meta-avatar {
+    display: flex;
+}
+
+.status-author-meta {
+    margin-bottom: 1rem;
+}
+
+.status-author-meta-text {
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1rem;
+    letter-spacing: 0.25px;
+}
+
+.status-author-meta-text span:first-child {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.status-author-meta-text span:nth-child(2) {
+    font-size: 1rem;
+}
+
+.status-author-meta-avatar img {
+    border-radius: 50%;
+}
+
+.status-author-meta + .byline-text a {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.status-author-meta + .byline-text a:hover {
+    text-decoration: none;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And &amp;lt;span lang=&quot;fr&quot;&amp;gt;voilà&amp;lt;/span&amp;gt;!&lt;/p&gt;
+&lt;p&gt;&amp;lt;img src=&quot;/images/status-post.jpg&quot; alt=&quot;a wordpress status post that says &apos;imagining a world where SEGA still made hardware and they battled with Nintendo in the 2000s and 2010s for handheld dominance&apos;&quot; loading=&quot;lazy&quot; /&amp;gt;&lt;/p&gt;
+&lt;p&gt;Of course, how I put this together was specific to my setup and theme but the fundamental techniques are universal:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;add theme support for formats&lt;/li&gt;
+&lt;li&gt;write the functions to get the author data&lt;/li&gt;
+&lt;li&gt;output it in a template&lt;/li&gt;
+&lt;li&gt;style it with CSS&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Reclaim your status updates!&lt;/p&gt;
+</content:encoded></item><item><title>Morsel #11: how to check if a DOM element is in the viewport</title><link>https://lukealexdavis.co.uk/posts/morsel-11/</link><guid isPermaLink="true">https://lukealexdavis.co.uk/posts/morsel-11/</guid><pubDate>Tue, 21 May 2024 23:00:00 GMT</pubDate><content:encoded>&lt;p&gt;In my line of work, I struggle with finding DOM elements that cause issues but are otherwise hidden—by &lt;code&gt;display:none&lt;/code&gt;—or obscured by above-the-fold menus. I came across the latter the other day and the issue was lazy-loading. I wasn&apos;t sure whether the element classed as &quot;in the viewport&quot; despite not being immediately seen by the user unless they unfolded the menu.&lt;/p&gt;
 &lt;p&gt;So I looked for a way to check and came across a JavaScript method called &lt;code&gt;getBoundingClientRect()&lt;/code&gt;. It returns a &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/API/DOMRect&quot;&gt;DOMRect object&lt;/a&gt; that shows the size (width and height) and position (x and y coordinates) of an element in relation to the viewport.&lt;/p&gt;
 &lt;p&gt;There are other ways to do it but this seemed the easiest for me (and coolest because I&apos;d never heard of it before). &lt;a href=&quot;https://www.geeksforgeeks.org/how-to-check-a-dom-element-is-visible-in-current-viewport/&quot;&gt;Here&apos;s an example taken from Geeks for Geeks&lt;/a&gt;:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;function myfunction(value) {
