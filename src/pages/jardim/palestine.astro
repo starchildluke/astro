@@ -1,0 +1,64 @@
+---
+// COMPONENTS
+
+import Footer from '../../components/Footer.astro';
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import Tags from '../../components/Tags.astro';
+
+// METADATA VARIABLES
+
+let title = 'Palestine';
+let description = 'A wiki page all about Palestine.';
+
+---
+<Layout {title} {description}>
+      <main class="layout">
+        <article class="content">
+          <Breadcrumbs title={title}/>
+            <section class="intro">
+              <h1>{title}</h1>
+              <p class="desc">{description}</p>
+              <p>Palestine is a country in the southern Levant region of West Asia and it must be free, from genocide and colonialism. This page contains a variety of links to posts and resources about the nation and its rich culture.</p>
+            </section>
+            <section>
+              <h2 class="wiki-h2">Inner voice</h2>
+              <Tags tagName="palestine" />
+            </section>
+            <section>
+              <h2 class="wiki-h2">Out loud</h2>
+              <ul>
+                <li><a href="https://cultrface.co.uk/tag/palestine/">Palestine on Cultrface</a></li>
+                <li><a href="https://playrface.co.uk/tag/palestine/">Palestine on Playrface</a></li>
+              </ul>
+              <h2 class="wiki-h2">Second opinions</h2>
+                <ul>
+                  <li>
+                    <a href="https://palestinecampaign.org/resources/">Resources from the Palestine Solidarity Campaign</a>
+                  </li>
+                  <li>
+                    <a href="https://decolonizepalestine.com/">Decolonize Palestine</a>
+                  </li>
+                  <li>
+                    <a href="https://hyperallergic.com/648652/guide-to-palestinian-cinema-streaming/">A Beginner’s Guide to Palestinian Cinema</a>
+                  </li>
+                  <li>
+                    <a href="https://hypebeast.com/2022/11/rami-afifis-art-centers-arounds-palestine-and-pop-culture-nostalgia">Rami Afifi's Art Centers Around Palestine and Pop-Culture Nostalgia</a>
+                  </li>
+                  <li>
+                    <a href="https://www.gqmiddleeast.com/culture/five-palestinian-artists-you-need-to-know-about">Five Palestinian Artists You Need To Know About</a>
+                  </li>
+                  <li>
+                    <a href="https://www.plutobooks.com/9780745347479/greater-than-the-sum-of-our-parts/">Greater than the Sum of Our Parts [book]</a>
+                  </li>
+                </ul>
+            </section>
+        </article>
+      
+      </main>
+    
+    <Footer/>
+  
+  </body>
+
+</html>

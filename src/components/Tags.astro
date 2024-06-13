@@ -26,9 +26,9 @@ const sortedLists = lists.sort((a, b) => collator.compare(a.data.title, b.data.t
 ---
 <h3>Posts</h3>
 <ul>
-  {sortedPosts.map(post =>
+  {sortedPosts.length > 0 ? sortedPosts.map(post =>
   <li><a href=`/posts/${post.slug}/`>{post.data.title}</a></li>
-  )}
+  ) : <li>Coming soon!</li>}
 </ul>
 
 <h3>Recortes</h3>
