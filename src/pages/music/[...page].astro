@@ -108,8 +108,12 @@ const rgb = {
     <ul class="album-list">
     {items.map((album) => (
       <li class="album-listing">
-      <div class="album-img"><img src={`/images/albums/smaller/${album?.data.image.replace('.jpg', '_100x100.webp')}`} alt={`cover art for ${album.data.title}`} width="64" height="64" /></div>
-        <div class="album-link"><a href={`/music/${album.slug}/`}><Fragment set:html={album.data.title}></a></div>
+      <div class="album-img">
+        <img src={`/images/albums/smaller/${album?.data.image.replace('.jpg', '_100x100.webp').replace('.png', '_100x100.webp')}`} alt={`cover art for ${album.data.title}`} width="64" height="64" />
+      </div>
+        <div class="album-link">
+          <a href={`/music/${album.slug}/`}><Fragment set:html={album.data.title}></a>
+        </div>
         <span class="publish-date"><FormattedDate date={album.data.pubDate} /></span>
       </li>
     ))}
@@ -128,4 +132,5 @@ const rgb = {
     <Footer />
   <script>
     const a=document.querySelectorAll("li.album-listing"),c={r:Math.floor(255*Math.random()),g:Math.floor(255*Math.random()),b:Math.floor(255*Math.random())},d={r:Math.floor(255*Math.random()),g:Math.floor(255*Math.random()),b:Math.floor(255*Math.random())},e={r:Math.floor(255*Math.random()),g:Math.floor(255*Math.random()),b:Math.floor(255*Math.random())};for(const i of a)i.style.background=`linear-gradient(45deg,rgba(${c.r},${c.g},${c.b},0.2)0%,rgba(${d.r},${d.g},${d.b},0.2)35%,rgba(${e.r},${e.g},${e.b},0.2)100%)`;
+    const j=document.querySelectorAll("img");for(var i=0;i<3;i++)j[i].setAttribute("loading","eager");for(var i=3;i<j.length;i++)j[i].setAttribute("loading","lazy");
   </script>
