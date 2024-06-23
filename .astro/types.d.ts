@@ -185,6 +185,13 @@ declare module 'astro:content' {
   collection: "lists";
   data: any
 } & { render(): Render[".md"] };
+"horror-movies-that-ive-watched.md": {
+	id: "horror-movies-that-ive-watched.md";
+  slug: "horror-movies-that-ive-watched";
+  body: string;
+  collection: "lists";
+  data: any
+} & { render(): Render[".md"] };
 "its-binary-time.md": {
 	id: "its-binary-time.md";
   slug: "its-binary-time";
