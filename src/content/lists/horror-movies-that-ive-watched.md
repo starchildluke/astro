@@ -10,7 +10,6 @@ tags: ['film']
 Films in bold are my favourites:
 
 * 28 Days Later
-* Addiction
 * **Alien**
 * Aliens
 * Alien 3
@@ -31,6 +30,7 @@ Films in bold are my favourites:
 * Needful Things
 * Pet Semetary
 * Poltergeist
+* The Addiction
 * The Omen
 * The Omen II
 * The Omen III: The Final Conflict
