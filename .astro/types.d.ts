@@ -1222,6 +1222,13 @@ declare module 'astro:content' {
   collection: "posts";
   data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
+"gamesir-g8-galileo-peladn-wi-6-mini-pc.md": {
+	id: "gamesir-g8-galileo-peladn-wi-6-mini-pc.md";
+  slug: "gamesir-g8-galileo-peladn-wi-6-mini-pc";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
 "get-a-website.md": {
 	id: "get-a-website.md";
   slug: "get-a-website";

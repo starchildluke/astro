@@ -17,6 +17,7 @@ RewriteRule ^/?wikinotes/(.\*)$ /recortes/$1 [R,L]
 RewriteRule ^/?(.\*)/release-notes/(.\*)$ /release-notes/$1 [R,L]
 RewriteRule ^/?(.\*)/morsels/(.\*)$ /morsels/$1 [R,L]
 RewriteRule ^/?(.\*)/links/(.\*)$ /linkblog/ [R,L]
+RewriteRule ^/?(.\*)/posts/saddam-hussein-bacon-number-3/(.\*)$ /recortes/saddam-hussein-bacon-number-3/ [R,L]
 
 ErrorDocument 404 /404.html
 

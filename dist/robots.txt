@@ -4,7 +4,13 @@ Allow: /
 User-Agent: ChatGPT-User
 Disallow: /
 
+User-Agent: ChatGPT
+Disallow: /
+
 User-Agent: GPTBot
+Disallow: /
+
+User-agent: GPTBot-User
 Disallow: /
 
 User-agent: Google-Extended

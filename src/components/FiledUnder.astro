@@ -13,5 +13,5 @@ function getJardimLink(tag) {
 
 ---
 
-<p><strong>Filed under:</strong> {tags.map(
+<p class="filed-under"><strong>Filed under:</strong> {tags.map(
 	(tag, i) => <span><a href={"/jardim" + getJardimLink(tag)}>{tag}</a>{i < tags.length-1 ? " | " : ""}</span>)}</p>
