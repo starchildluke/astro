@@ -8,6 +8,15 @@ tags: ['writing']
 
 (Most definitions taken from Google)
 
+## abtruse
+/əbˈstruːs/
+
+_adj._
+
+<ol>
+<li>difficult to understand; obscure.</li>
+</ol>
+
 ## agnotology
 /aɡˈnɒtɒlədʒi/
 
