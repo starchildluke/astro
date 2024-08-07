@@ -2,20 +2,19 @@
 // COMPONENTS
 
 import Games from '../layouts/Gameslist.astro';
-import gamesBacklog from '../data/games_backlog.json';
+import gamelog from '../data/gamelog.json';
 
 // METADATA VARIABLES
 
 let title = 'My Gameslist';
 let description = "A list of games I'm currently playing or have already completed.";
-let canonicalURL = Astro.url;
 ---
 
 <style>
 	
 	body {
 		text-align: center;
-		background-image: radial-gradient(#130f40 0%, #000000 74%);
+		background: #100d37;
 		color: #f2f6f6;
 	}
 
@@ -23,31 +22,47 @@ let canonicalURL = Astro.url;
 		margin-bottom: 2rem;
 	}
 
-	.container {
-		margin-top: 2rem;
-	}
-
 	.games-grid {
-		display: flex;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+		grid-row-gap: 2rem;
+		grid-column-gap: 2rem;
 		justify-content: center;
-		align-items: flex-start;
+		justify-items: center;
+		margin-bottom: 4rem;
+	}
+
+	.games-img {
+		border-bottom: 5px double white;
+	}
+
+	.container {
+		display: grid;
+		margin: 2rem;
+	}
+
+	.data :is(img,.games-text) {
+		padding: 2rem;
+	}
+
+	.data {
+		display: flex;
 		flex-wrap: wrap;
-		margin: 4rem;
-	}
-
-	.game-block {
-		margin: 0 1rem;
-	}
-
-	.game-block img {
-		border: 1px solid #dcdcdc;
-		padding: 2px;
-		row-gap: 1ch;
-	}
-
-	.game-block figcaption {
+		align-content: flex-start;
 		max-width: 250px;
+		background: #575573;
+		border-radius: 10px;
+		box-shadow: 7px 7px 17px black;
 	}
+
+	.data :is(h3, p)  {
+		text-align: left;
+	}
+
+	.data p {
+		padding-bottom: 0;
+	}
+
 
 </style>
 
@@ -61,16 +76,37 @@ let canonicalURL = Astro.url;
 		</div>
 		<h2>Currently playing</h2>
 		<div class="games-grid">
-			{gamesBacklog.games.currentlyPlaying.map(
-					(game) => (
-						<div class="game-block">
-						<figure>
-							<img src={game?.imageThumbnailURL} width={game?.thumbnailDimensions.width} height={game?.thumbnailDimensions.height} loading="eager" fetchpriority="high" alt=`cover art for ${game.name}` />
-							<figcaption>{game.name} ({game.console})</figcaption>
-						</figure>
-						</div>
-					)
-				)
-			}
+          {gamelog.filter(game => game.completed === "No").map((game) => (
+          <div class="data">
+          	<div class="games-img">
+          		<img src={game.imageMetadata[0].imageThumbnailURL} width={game.imageMetadata[0].thumbnailDimensions.width} height={game.imageMetadata[0].thumbnailDimensions.height} loading={game.imageMetadata[0].loading}>
+          	</div>
+          	<div class="games-text">
+	          	<h3>{game.name}</h3>
+	          	<p><strong>Developer</strong>: {game.developer}</p>
+	          	<p><strong>Publisher</strong>: {game.publisher}</p>
+	          	<p><strong>Genre</strong>: {game.genre}</p>
+	          	<p><strong>Console</strong>: {game.console}</p>
+          	</div>
+          </div>
+          ))}
+          </div>
+          <h2>Completed it, mate!</h2>
+		<div class="games-grid">
+          {gamelog.filter(game => game.completed === "Yes").map((game) => (
+          <div class="data">
+          	<div class="games-img">
+          		<img src={game.imageMetadata[0].imageThumbnailURL} width={game.imageMetadata[0].thumbnailDimensions.width} height={game.imageMetadata[0].thumbnailDimensions.height} loading={game.imageMetadata[0].loading}>
+          	</div>
+          	<div class="games-text">
+	          	<h3>{game.name}</h3>
+	          	<p><strong>Developer</strong>: {game.developer}</p>
+	          	<p><strong>Publisher</strong>: {game.publisher}</p>
+	          	<p><strong>Genre</strong>: {game.genre}</p>
+	          	<p><strong>Console</strong>: {game.console}</p>
+          	</div>
+          </div>
+          ))}
+          </div>
 		</div>
-	</div>
+		</Games>
