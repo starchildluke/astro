@@ -1313,6 +1313,13 @@ declare module 'astro:content' {
   collection: "posts";
   data: any
 } & { render(): Render[".md"] };
+"i-dont-use-all-features-ableton-thats-okay.md": {
+	id: "i-dont-use-all-features-ableton-thats-okay.md";
+  slug: "i-dont-use-all-features-ableton-thats-okay";
+  body: string;
+  collection: "posts";
+  data: any
+} & { render(): Render[".md"] };
 "i-started-a-linkblog.md": {
 	id: "i-started-a-linkblog.md";
   slug: "i-started-a-linkblog";
@@ -2104,6 +2111,13 @@ declare module 'astro:content' {
 "release-notes-18.md": {
 	id: "release-notes-18.md";
   slug: "release-notes-18";
+  body: string;
+  collection: "release-notes";
+  data: any
+} & { render(): Render[".md"] };
+"release-notes-19.md": {
+	id: "release-notes-19.md";
+  slug: "release-notes-19";
   body: string;
   collection: "release-notes";
   data: any
