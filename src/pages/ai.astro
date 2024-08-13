@@ -1,0 +1,29 @@
+---
+// COMPONENTS
+
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+// METADATA VARIABLES
+
+let title = 'AI';
+let description = 'How I use AI on my site (or not)';
+
+---
+<html lang="en-GB">
+  <head>
+    <BaseHead title={title} description={description} canonicalURL=Astro.url />
+  </head>
+  <body>
+  <Header />
+  <main class="layout">
+    <article class="content">
+        <h1>{title}</h1>
+      <p>None of the pieces published on this site were written by an generative AI tool.</p>
+      <p>I do use my own custom NLP tool named <a href="/posts/introducing-ralts/">RALTS</a> and it has <a href="https://huggingface.co/valhalla/distilbart-mnli-12-9">a large language model</a> attached to it but this can be toggled on or off. It is only used for <a href="https://huggingface.co/tasks/text-classification">text classification</a>.</p>
+  </article>
+</main>
+<Footer />
+</body>
+</html>
