@@ -8,6 +8,9 @@ import NonProfitBlogger from './NonProfitBlogger.astro';
     footer {
         display: flex;
         justify-content: space-between;
+        gap: 5rem;
+        background: #181818;
+        color: #f7f7f7;
     }
 
     @media only screen and (max-width: 480px) {
@@ -20,9 +23,8 @@ import NonProfitBlogger from './NonProfitBlogger.astro';
         }
     }
 
-    .footer-nav-links ul {
+    .footer-nav-links ul, .colophon ul {
         display: flex;
-        text-align: left;
         flex-direction: column;
         list-style: none;
         padding: 0 0 1rem 0;
@@ -32,8 +34,24 @@ import NonProfitBlogger from './NonProfitBlogger.astro';
         font-size: inherit;
     }
 
+    .footer-nav-links {
+        text-align: left;
+    }
+
     .colophon {
         text-align: right;
+    }
+
+    .colophon ul {
+        margin-bottom: 0;
+    }
+
+    .footer-url {
+        font-weight: 700;
+    }
+
+    a {
+        color: #c4e53c;
     }
 
 
@@ -41,39 +59,50 @@ import NonProfitBlogger from './NonProfitBlogger.astro';
 
 <footer>
     <nav class="footer-nav-links">
+    <ul>
+        <li class="footer-url">lukealexdavis.co.uk</li>
+        <li>Copyright {year} © Luke Davis</li>
+        <li class="clock"></li>
+    </ul>
         <ul>
-            <li><a href="#top">&ShortUpArrow; Back to top</a></li> 
-            <li><a href="/omnifeed.xml" style="color:#bf3f00;">RSS feed</a></li> 
-            <li><a href="/release-notes/">Release Notes</a></li> 
-            <li><a href="/morsels/">Morsels</a></li> 
-            <li><a href="/lists/">Lists</a></li> 
-            <li><a href="/recortes/">Recortes</a></li> 
-            <li><a href="/linkblog/">Linkblog</a></li> 
-            <li><a href="/fave-tweets/">Fave Tweets</a></li> 
-            <li><a href="/important-albums/">Important Albums</a></li> 
-            <li><a href="/lastfm-top-1000/">Last.fm Top 1000</a></li> 
-            <li><a href="/letterboxd-diaries/">Letterboxd Diaries</a></li>
-            <li><a href="/gameslist/">Gameslist</a></li>
-            <li><a href="/ai/">AI (and how I use it)</a></li>
-            <li><a href="/humans.txt">humans.txt</a></li>
+            <li><a href="#top">&ShortUpArrow; Back to top</a></li>
+        </ul>
+        <ul>
+            <li><a href="/release-notes/">Release Notes</a> | <a href="/morsels/">Morsels</a> | <a href="/lists/">Lists</a> | <a href="/recortes/">Recortes</a> | <a href="/linkblog/">Linkblog</a></li>
+        </ul>
+        <ul>
+            <li><a href="/fave-tweets/">Fave Tweets</a> | <a href="/important-albums/">Important Albums</a> | <a href="/lastfm-top-1000/">Last.fm Top 1000</a> | <a href="/letterboxd-diaries/">Letterboxd Diaries</a> | <a href="/gameslist/">Gameslist</a></li>
+            </ul>
+            <ul>
+            <li><a href="/ai/">AI (and how I use it)</a> | <a href="/humans.txt">humans.txt</a> | 🇵🇸 Free Palestine!</li>
+            </ul>
+            <ul>
+            <li><a href="/omnifeed.xml" style="color:#bf3f00;">RSS feed</a> | <a href="/html-sitemap/">HTML Sitemap</a></li>
         </ul>
     </nav>
     <div class="colophon">
-        <p class="clock"></p>
-        <p>🇵🇸 Free Palestine!</p>
-        <p><a href="https://astro.build/">Built with Astro</a>, HTML, CSS, and a <span lang="fr">soupçon</span> of JS.</p>
-        <p><a href="https://twitter.com/t3dotgg/status/1481344430921502720">Special tweet added for good luck.</a></p>
-        <p><a href="/html-sitemap/">HTML Sitemap</a></p>
-        <p>Member of the <a href="https://250kb.club/">250KB Club</a>, <a href="https://512kb.club/">512KB Club</a> and <a href="https://1mb.club/">1MB Club</a></p>
-        <p>Listed @ <a href="https://linklane.net" target="_blank">LinkLane.Net</a></p>
-        <p><a href="https://hotlinewebring.club/lukealexdavis/previous">&#8604;</a> Member of the <a href="https://hotlinewebring.club/">Hotline Webring</a> <a href="https://hotlinewebring.club/lukealexdavis/next">&rarrw;</a></p>
-        <p><a href="https://xn--sr8hvo.ws/previous">←</a> An <a href="https://xn--sr8hvo.ws">IndieWeb Webring</a> 🕸💍 <a href="https://xn--sr8hvo.ws/next">→</a></p>
-        <p><a href="https://silly.city/prev?user=Luke%20Davis">←</a> A <a href="https://silly.city/">silly.city webring</a> <a href="https://silly.city/next?user=Luke%20Davis">→</a></p>
-        <p>And I'm not only a member of the Hair Club for Men&mdash;I'm also the president.</p>
+    <ul>
+        
+    </ul>
+    <ul>
+        <li><a href="https://astro.build/">Built with Astro</a>, HTML, CSS, and a <span lang="fr">soupçon</span> of JS.</li>
+        </ul>       
+        <ul>
+            <li>Member: <a href="https://250kb.club/">250KB Club</a> | <a href="https://512kb.club/">512KB Club</a> | <a href="https://1mb.club/">1MB Club</a></li>
+        </ul>
+        <details>
+        <summary>Webrings</summary>
+        <ul>
+            <li>Listed @ <a href="https://linklane.net" target="_blank">LinkLane.Net</a></li>
+                <li><a href="https://hotlinewebring.club/lukealexdavis/previous">&#8604;</a> Member of the <a href="https://hotlinewebring.club/">Hotline Webring</a> <a href="https://hotlinewebring.club/lukealexdavis/next">&rarrw;</a></li>
+                <li><a href="https://xn--sr8hvo.ws/previous">←</a> An <a href="https://xn--sr8hvo.ws">IndieWeb Webring</a> 🕸💍 <a href="https://xn--sr8hvo.ws/next">→</a></li>
+                <li><a href="https://silly.city/prev?user=Luke%20Davis">←</a> A <a href="https://silly.city/">silly.city webring</a> <a href="https://silly.city/next?user=Luke%20Davis">→</a></li>
+        </ul>
+        </details>
+        <ul><li style="font-family:Georgia,serif;font-style:italic;">And I'm not only a member of the Hair Club for Men<br>&mdash;I'm also the president.</li></ul>
         <a href="https://github.com/uxai/non-profit-bloggers/">
             <NonProfitBlogger />
-        </a>
-        <p>Copyright {year} © Luke Davis</p>
+        </a>        
     </div>
 <script>function tm(){let t=new Date,e=t.getHours(),n=t.getMinutes(),r=t.getSeconds(),o=`${e.toString().padStart(2,"0")}:${n.toString().padStart(2,"0")}:${r.toString().padStart(2,"0")}`;document.querySelector(".clock").innerText=o}tm(),setInterval(tm,1000);</script>
 </footer>
