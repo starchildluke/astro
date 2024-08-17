@@ -9,15 +9,21 @@ RewriteRule ^(.*)$ https://lukealexdavis.co.uk/$1 [L,R=301]
 
 RewriteEngine On
 RewriteCond %{SERVER_PORT} 80
-RewriteRule ^(.*)$ https://lukealexdavis.co.uk/$1 [R,L]     
-RedirectMatch 301 /archive/jamiroquai-rock-dust-light-star/ /post/jamiroquai-rock-dust-light-star-review/
-RewriteRule ^/?post/(.\*)$ /posts/$1 [R,L]
-RewriteRule ^/?wiki/(.\*)$ /jardim/$1 [R,L]
-RewriteRule ^/?wikinotes/(.\*)$ /recortes/$1 [R,L]
-RewriteRule ^/?(.\*)/release-notes/(.\*)$ /release-notes/$1 [R,L]
-RewriteRule ^/?(.\*)/morsels/(.\*)$ /morsels/$1 [R,L]
-RewriteRule ^/?(.\*)/links/(.\*)$ /linkblog/ [R,L]
-RewriteRule ^/?(.\*)/posts/saddam-hussein-bacon-number-3/(.\*)$ /recortes/saddam-hussein-bacon-number-3/ [R,L]
+RewriteRule ^(.*)$ https://lukealexdavis.co.uk/$1 [R=301,L]     
+RedirectMatch 301 /archive/jamiroquai-rock-dust-light-star/ /posts/jamiroquai-rock-dust-light-star-review/
+RewriteRule ^/?post/(.*)$ /posts/$1 [R=301,L]
+RewriteRule ^/?wiki/(.*)$ /jardim/$1 [R=301,L]
+RewriteRule ^/?wikinotes/(.*)$ /recortes/$1 [R=301,L]
+RewriteRule ^/?(.*)/release-notes/(.*)$ /release-notes/$1 [R=301,L]
+RewriteRule ^/?(.*)posts/morsel(.*)$ /morsels/morsel$2 [R=301,L]
+RewriteRule ^/?(.*)/links/(.*)$ /linkblog/ [R=301,L]
+RewriteRule ^/?(.*)/posts/saddam-hussein-bacon-number-3/(.*)$ /recortes/saddam-hussein-bacon-number-3/ [R=301,L]
+RewriteRule ^/?posts/release-notes-(.*)$ /release-notes/release-notes-$1 [R=301,L]
+RewriteRule ^/?(.*)archive/(.*)$ /posts/$1 [R=301,L]
+RewriteRule ^/?(.*)blog/(.*)$ /posts/$1 [R=301,L]
+RedirectMatch 301 /posts/support-me/ /support/
+RedirectMatch 301 /sitemap.xml /sitemap-0.xml
+RedirectMatch 301 /writing.html /jardim/writing/
 
 ErrorDocument 404 /404.html
 
