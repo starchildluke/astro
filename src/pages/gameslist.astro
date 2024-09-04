@@ -11,6 +11,10 @@ let description = "A list of games I'm currently playing or have already complet
 ---
 
 <style>
+
+	:root {
+		--shadow-color: 206deg 100% 11%;
+	}
 	
 	body {
 		text-align: center;
@@ -57,7 +61,7 @@ let description = "A list of games I'm currently playing or have already complet
 		max-width: 250px;
 		background: #1a659e;
 		border-radius: 10px;
-		box-shadow: 7px 7px 17px black;
+		box-shadow: 0.5px 0.5px 0.8px hsl(var(--shadow-color) / 0.36), 1.4px 1.4px 2.2px -0.6px hsl(var(--shadow-color) / 0.36), 2.7px 2.9px 4.5px -1.2px hsl(var(--shadow-color) / 0.36), 5.6px 5.8px 9.1px -1.9px hsl(var(--shadow-color) / 0.36), 10.8px 11.3px 17.6px -2.5px hsl(var(--shadow-color) / 0.36);
 	}
 
 	.data :is(h3, p)  {

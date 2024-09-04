@@ -46,8 +46,6 @@ AddOutputFilterByType DEFLATE font/woff2
   ExpiresActive on
   # Set the default expiry times.
   ExpiresDefault "access plus 3 months"
-  ExpiresByType text/html "access plus 1 day"
-  ExpiresByType text/css "access plus 1 day"
   ExpiresByType image/svg+xml "access plus 1 year"
   ExpiresByType image/gif "access plus 1 year"
   ExpiresByType image/jpeg "access plus 1 year"

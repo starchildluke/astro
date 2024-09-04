@@ -2,4 +2,25 @@
 
 ---
 
+<style>
+	aside {
+		display: inline;
+		float: right;
+		position: relative;
+		width: 20vw;
+		margin-right: -25vw;
+		font-size: 8pt;
+	}
+
+	@media (max-width: 768px) {
+		aside {
+			display: block;
+			float: none;
+			margin: 5% 10% 5% 10%;
+			width: 80%;
+			font-size: calc(1rem * 0.8);
+		}
+	}
+</style>
+
 <slot />
