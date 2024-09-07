@@ -292,6 +292,13 @@ declare module 'astro:content' {
   collection: "mlog";
   data: any
 } & { render(): Render[".md"] };
+"mlog-august-2024.md": {
+	id: "mlog-august-2024.md";
+  slug: "mlog-august-2024";
+  body: string;
+  collection: "mlog";
+  data: any
+} & { render(): Render[".md"] };
 "mlog-march-2024.md": {
 	id: "mlog-march-2024.md";
   slug: "mlog-march-2024";
@@ -1896,6 +1903,13 @@ declare module 'astro:content' {
   collection: "recortes";
   data: any
 } & { render(): Render[".md"] };
+"all-the-black-squares.md": {
+	id: "all-the-black-squares.md";
+  slug: "all-the-black-squares";
+  body: string;
+  collection: "recortes";
+  data: any
+} & { render(): Render[".md"] };
 "banana-rum-cake-recipe.md": {
 	id: "banana-rum-cake-recipe.md";
   slug: "banana-rum-cake-recipe";
@@ -1913,6 +1927,13 @@ declare module 'astro:content' {
 "cherish.md": {
 	id: "cherish.md";
   slug: "cherish";
+  body: string;
+  collection: "recortes";
+  data: any
+} & { render(): Render[".md"] };
+"childhood-fall.md": {
+	id: "childhood-fall.md";
+  slug: "childhood-fall";
   body: string;
   collection: "recortes";
   data: any
@@ -1976,6 +1997,13 @@ declare module 'astro:content' {
 "personal-lexicon.md": {
 	id: "personal-lexicon.md";
   slug: "personal-lexicon";
+  body: string;
+  collection: "recortes";
+  data: any
+} & { render(): Render[".md"] };
+"reasons-to-get-ableton-live-standard-edition.md": {
+	id: "reasons-to-get-ableton-live-standard-edition.md";
+  slug: "reasons-to-get-ableton-live-standard-edition";
   body: string;
   collection: "recortes";
   data: any
