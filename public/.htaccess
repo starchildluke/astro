@@ -20,7 +20,7 @@ RewriteRule ^/?(.*)/links/(.*)$ /linkblog/ [R=301,L]
 RewriteRule ^/?(.*)/posts/saddam-hussein-bacon-number-3/(.*)$ /recortes/saddam-hussein-bacon-number-3/ [R=301,L]
 RewriteRule ^/?posts/release-notes-(.*)$ /release-notes/release-notes-$1 [R=301,L]
 RewriteRule ^/?(.*)archive/(.*)$ /posts/$1 [R=301,L]
-RewriteRule ^/?(.*)blog/(.*)$ /posts/$1 [R=301,L]
+RewriteRule ^/blog/(.*)$ /posts/$1 [R=301,L]
 RedirectMatch 301 /posts/support-me/ /support/
 RedirectMatch 301 /sitemap.xml /sitemap-0.xml
 RedirectMatch 301 /writing.html /jardim/writing/
