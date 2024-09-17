@@ -1980,6 +1980,13 @@ declare module 'astro:content' {
   collection: "recortes";
   data: any
 } & { render(): Render[".md"] };
+"lh.md": {
+	id: "lh.md";
+  slug: "lh";
+  body: string;
+  collection: "recortes";
+  data: any
+} & { render(): Render[".md"] };
 "my-style-guide.md": {
 	id: "my-style-guide.md";
   slug: "my-style-guide";
