@@ -59,3 +59,4 @@ I like my peace and quiet a lot of the time. So when I'm in a shopping centre or
 ## Resources
 
 * [How I get shit done (or at least get started) while having executive dysfunction](https://www.autisticasfxxk.com/blog/get-shit-done/) - This is sound advice for any other neurodivergent folks reading this
+* [As an Autistic Psychologist, Here Are My Thoughts on Autism and Self-Diagnosis](https://www.verywellmind.com/self-diagnosis-according-to-an-autistic-psychologist-8650879) - This is so helpful!
