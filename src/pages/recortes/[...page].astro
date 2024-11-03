@@ -2,9 +2,7 @@
 // IMPORTS
 
 import Layout from '../../layouts/Layout.astro';
-import BaseHead from '../../components/BaseHead.astro';
 import Footer from '../../components/Footer.astro';
-import site from '../../data/site.json'
 import { getCollection } from 'astro:content';
 
 export interface Props {
@@ -12,11 +10,6 @@ export interface Props {
 }
 
 const { canonicalURL = Astro.url } = Astro.props;
-
-// METADATA
-
-let title = 'Recortes';
-let description = "Cuttings, notes and things. These are my 'recortes', or 'cuttings'. You know that scene in Bruce Almighty where he had all those Post-It notes everywhere? This is a neater looking version of that, minus the prayers. It's a rare glimpse into my mind and the many thoughts I have about things that matter to me.";
 
 export async function getStaticPaths({paginate}) {
   const allPosts = await getCollection('recortes');
@@ -27,6 +20,11 @@ export async function getStaticPaths({paginate}) {
 }
 
 const { page } = Astro.props;
+
+// METADATA
+
+let title = page.url.prev ? `Recortes (Page ${page.currentPage}/${page.lastPage})` : 'Recortes';
+let description = "Cuttings, notes and things. These are my 'recortes', or 'cuttings'. You know that scene in Bruce Almighty where he had all those Post-It notes everywhere? This is a neater looking version of that, minus the prayers. It's a rare glimpse into my mind and the many thoughts I have about things that matter to me.";
 ---
 <Layout {title} {description}/>
     <div class="layout">
