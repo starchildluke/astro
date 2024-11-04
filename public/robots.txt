@@ -13,6 +13,9 @@ Disallow: /
 User-agent: GPTBot-User
 Disallow: /
 
+User-agent: OAI-SearchBot
+Disallow: /
+
 User-agent: Google-Extended
 Disallow: /
 
