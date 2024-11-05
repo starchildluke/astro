@@ -306,6 +306,13 @@ declare module 'astro:content' {
   collection: "mlog";
   data: any
 } & { render(): Render[".md"] };
+"mlog-october-2024.md": {
+	id: "mlog-october-2024.md";
+  slug: "mlog-october-2024";
+  body: string;
+  collection: "mlog";
+  data: any
+} & { render(): Render[".md"] };
 };
 "morsels": {
 "morsel-1.md": {
