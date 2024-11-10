@@ -79,6 +79,11 @@ _v._
 <li>argue or discuss (a subject) in excessive detail.</li>
 </ol>
 
+## bibelot
+/ˈbɪbələʊ/
+
+_n._ a small, decorative ornament or trinket.
+
 ## cognizant
 /ˈkɒ(ɡ)nɪz(ə)nt/
 
