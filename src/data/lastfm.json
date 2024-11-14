@@ -2297,11 +2297,43 @@
                         "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"
                     }
                 ],
+                "mbid": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+                "url": "https://www.last.fm/music/Miles+Davis",
+                "playcount": 305,
+                "@attr": {
+                    "rank": "72"
+                },
+                "name": "Miles Davis"
+            },
+            {
+                "streamable": "0",
+                "image": [
+                    {
+                        "size": "small",
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
+                    },
+                    {
+                        "size": "medium",
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
+                    },
+                    {
+                        "size": "large",
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
+                    },
+                    {
+                        "size": "extralarge",
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"
+                    },
+                    {
+                        "size": "mega",
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"
+                    }
+                ],
                 "mbid": "967002b0-58ef-4b22-a58c-fbc631ff695c",
                 "url": "https://www.last.fm/music/Paul+Young",
                 "playcount": 305,
                 "@attr": {
-                    "rank": "72"
+                    "rank": "73"
                 },
                 "name": "Paul Young"
             },
@@ -2333,41 +2365,9 @@
                 "url": "https://www.last.fm/music/James+Brown",
                 "playcount": 303,
                 "@attr": {
-                    "rank": "73"
-                },
-                "name": "James Brown"
-            },
-            {
-                "streamable": "0",
-                "image": [
-                    {
-                        "size": "small",
-                        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
-                    },
-                    {
-                        "size": "medium",
-                        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
-                    },
-                    {
-                        "size": "large",
-                        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
-                    },
-                    {
-                        "size": "extralarge",
-                        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"
-                    },
-                    {
-                        "size": "mega",
-                        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"
-                    }
-                ],
-                "mbid": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
-                "url": "https://www.last.fm/music/Miles+Davis",
-                "playcount": 302,
-                "@attr": {
                     "rank": "74"
                 },
-                "name": "Miles Davis"
+                "name": "James Brown"
             },
             {
                 "streamable": "0",
@@ -32010,5 +32010,5 @@
             "perPage": "1000"
         }
     },
-    "last updated": "10 November 2024"
+    "last updated": "11 November 2024"
 }
