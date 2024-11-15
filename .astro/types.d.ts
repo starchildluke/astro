@@ -357,6 +357,13 @@ declare module 'astro:content' {
   collection: "morsels";
   data: any
 } & { render(): Render[".md"] };
+"morsel-15.md": {
+	id: "morsel-15.md";
+  slug: "morsel-15";
+  body: string;
+  collection: "morsels";
+  data: any
+} & { render(): Render[".md"] };
 "morsel-2.md": {
 	id: "morsel-2.md";
   slug: "morsel-2";
