@@ -194,3 +194,10 @@ _n_. a traditional theme or formula in literature
 /ˌəl-yə-ˈlā-shən,ˌyül-/
 
 _n._ a loud utterance, usually a protracted, high-pitched, rhythmical sound especially as an expression of sorrow, joy, celebration, or reverence.
+
+## victual
+/ˈvɪtl/
+
+_n._, _v._
+1. food or provisions.
+2. provide with food or other stores.
