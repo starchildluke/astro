@@ -128,6 +128,11 @@ _adj_.
 <li>(of a system, idea, or organization) in a rudimentary stage with potential for development.</li>
 </ol>
 
+## hippomaniacally
+/ˈhɪpəʊməˈnʌɪəkli/
+
+_adv._, _obsolete_ in a manner reminiscent of a mad horse; uncontrollably, wildly.
+
 ## ignominy
 /ˈɪɡnəmɪni/
 
