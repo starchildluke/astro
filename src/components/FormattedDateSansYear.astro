@@ -4,11 +4,13 @@ interface Props {
 }
 
 const { date } = Astro.props;
+
+const newDate = new Date(date)
 ---
 
-<time datetime={date.toISOString()}>
+<time datetime={newDate.toISOString()}>
         {
-                date.toLocaleDateString('en-gb', {
+                newDate.toLocaleDateString('en-gb', {
                         day: '2-digit',
                         month: 'short',
                 }).replace("Sept", "Sep")

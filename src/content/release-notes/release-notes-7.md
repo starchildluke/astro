@@ -1,5 +1,5 @@
 ---
-title: 'Release Notes #7'
+title: 'Gotta have faith'
 published: true
 pubDate: '30 Apr 2022'
 layout: ../../layouts/ReleaseNotes.astro

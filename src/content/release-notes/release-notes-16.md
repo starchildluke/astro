@@ -1,5 +1,5 @@
 ---
-title: 'Release Notes #16'
+title: 'New normals'
 published: true
 pubDate: '26 Nov 2023'
 layout: ../../layouts/ReleaseNotes.astro

@@ -1,5 +1,5 @@
 ---
-title: 'Release Notes #8'
+title: 'Hard work is overrated'
 published: true
 pubDate: '24 Jul 2022'
 layout: ../../layouts/ReleaseNotes.astro

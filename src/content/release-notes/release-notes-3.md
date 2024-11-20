@@ -1,5 +1,5 @@
 ---
-title: 'Release Notes #3'
+title: 'The infographic industrial complex'
 published: true
 pubDate: '30 Sep 2021'
 layout: ../../layouts/ReleaseNotes.astro

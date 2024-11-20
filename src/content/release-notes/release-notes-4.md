@@ -1,5 +1,5 @@
 ---
-title: 'Release Notes #4'
+title: 'Marketing research'
 published: true
 pubDate: '20 Mar 2022'
 layout: ../../layouts/ReleaseNotes.astro

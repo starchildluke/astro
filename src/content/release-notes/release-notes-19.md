@@ -1,5 +1,5 @@
 ---
-title: 'Release Notes #19'
+title: "Talkin' loud and sayin' nothin'"
 published: true
 pubDate: '11 Aug 2024'
 layout: ../../layouts/ReleaseNotes.astro

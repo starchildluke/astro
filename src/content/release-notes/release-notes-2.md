@@ -1,5 +1,5 @@
 ---
-title: 'Release Notes #2'
+title: 'Knowing thyself'
 published: true
 pubDate: '9 Aug 2021'
 layout: ../../layouts/ReleaseNotes.astro

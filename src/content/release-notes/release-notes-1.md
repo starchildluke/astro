@@ -1,5 +1,5 @@
 ---
-title: 'Release Notes #1'
+title: "I don't like Novak Djokovic"
 published: true
 pubDate: '11 Jul 2021'
 layout: ../../layouts/ReleaseNotes.astro

@@ -1,5 +1,5 @@
 ---
-title: 'Release Notes #17'
+title: 'Solitude advice'
 published: true
 pubDate: '27 Feb 2024'
 layout: ../../layouts/ReleaseNotes.astro

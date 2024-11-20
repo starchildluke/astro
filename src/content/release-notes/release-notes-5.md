@@ -1,5 +1,5 @@
 ---
-title: 'Release Notes #5'
+title: 'Pithy'
 published: true
 pubDate: '1 Apr 2022'
 layout: ../../layouts/ReleaseNotes.astro
