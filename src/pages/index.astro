@@ -3,6 +3,7 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import CurrentlyListening from '../components/CurrentlyListening.astro';
 import FormattedDate from '../components/FormattedDate.astro'
 import { getCollection } from 'astro:content';
 
@@ -52,6 +53,15 @@ let sortedWritings = allWritings.sort((a, b) => new Date(b.data.pubDate) - new D
     border-bottom: solid 1px #bababa;
   }
 
+  ul li:last-child {
+    color: orange;
+    border: none;
+  }
+
+  ul li:last-child a {
+    font-weight: 700;
+  }
+
   .tag {
       font-size: 0.8rem;
       border-radius: 5px;
@@ -98,6 +108,10 @@ let sortedWritings = allWritings.sort((a, b) => new Date(b.data.pubDate) - new D
             <p>I currently work for <a href="https://www.impressiondigital.com/">Impression</a> and I'm also the founder of <a href="https://pandog.media">Pandog Media</a>, the home of <a href="https://sampleface.co.uk">Sampleface</a>, <a href="https://cultrface.co.uk">Cultrface</a>, <a href="https://logicface.co.uk">LOGiCFACE</a>, <a href="https://playrface.co.uk">Playrface</a>, and <a href="https://distantarcade.co.uk">Distant Arcade</a>.</p>
           </section>
           <hr>
+          <section>
+            <CurrentlyListening />
+          </section>
+          <hr>
           <section id="latest">
             <h2>Latest posts & notes</h2>
               <ul class="post-list">
@@ -107,6 +121,7 @@ let sortedWritings = allWritings.sort((a, b) => new Date(b.data.pubDate) - new D
                     <span class="publish-date"><FormattedDate date={post.data.pubDate} /></span>
                 </li>
               ))}
+              <li class="post-listing"><a href="/all-posts-notes/">Read all posts & notes →</a></li>
               </ul>
           </section>
           <hr>

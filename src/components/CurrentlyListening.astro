@@ -1,0 +1,28 @@
+---
+import cl from '../data/cl.json'
+---
+
+<style>
+	h2, .cl {
+		text-align: center;
+	}
+	.cl {
+  		font-family: Georgia, 'Times New Roman', Times, serif;
+  		font-style: italic;
+	}
+
+	ul.cl {
+		list-style: none;
+		padding: 0;
+	}
+</style>
+
+<h2>My top songs right now</h2>
+<div>
+	<ul class="cl">
+		{cl.map((track) => (
+		<li>{track.artist['#text']} - <a href={track.url}>{track.name}</a></li>
+		))
+		}
+	</ul>
+</div>

@@ -1,0 +1,57 @@
+---
+// COMPONENTS
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import FormattedDate from '../components/FormattedDate.astro'
+import { getCollection } from 'astro:content';
+
+// METADATA VARIABLES
+let metaTitle = 'Luke Davis: technical SEO, music producer & creator';
+let title = 'Luke Davis';
+let description = 'The digital home of Luke Davis: a technical SEO, music producer, and content creator based in Nottingham, UK.';
+
+let allPosts = await getCollection('posts');
+let allNotes = await getCollection('release-notes');
+let allMorsels = await getCollection('morsels');
+let allLists = await getCollection('lists');
+let allRecortes = await getCollection('recortes');
+
+let allWritings = [].concat(allPosts, allNotes, allMorsels, allLists, allRecortes)
+let sortedWritings = allWritings.sort((a, b) => new Date(b.data.pubDate) - new Date(a.data.pubDate));
+---
+
+<style>
+	* {
+		padding: 0;
+	}
+	body {
+		font-family: Verdana;
+		font-size: 13px;
+		margin: 1rem;
+	}
+	h1 {
+		font-size: 24px;
+		margin-bottom: 1rem;
+	}
+	ul {
+		list-style: none;
+	}
+</style>
+
+<html lang="en-GB">
+  <head>
+    <BaseHead title={metaTitle} description={description} canonicalURL={Astro.url} />
+  </head>
+  <body>
+  	<h1>Posts & notes index</h1>
+  	<ul>
+              {sortedWritings.map((post) => (
+                <li>
+                <a href={`/${post.collection}/${post.slug}/`}><Fragment set:html={post.data.title}></a> / <span class="tag" data-tag={post.collection}>{post.collection}</span> / <span><FormattedDate date={post.data.pubDate} /></span>
+                </li>
+              ))}
+              </ul>
+  </body>
+  </html>
+
