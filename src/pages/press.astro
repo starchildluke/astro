@@ -2,7 +2,6 @@
 // COMPONENTS
 
 import Layout from '../layouts/Layout.astro';
-import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 
 // METADATA VARIABLES
@@ -12,48 +11,50 @@ let description = "A collection of articles that I've written and talks that I'v
 
 ---
 <Layout {title} {description}>
-            <main class="layout">
-                  <article class="content">
-                        <h1>{title}</h1>
-                        <h2>{description}</h2>
-                        <h3>Writing</h3>
-                        <ul>
-                              <li><a href="https://www.impressiondigital.com/blog/page-speed/">How to measure and improve page speed in 2023</a> - Impression, 2023</li>
-                              <li><a href="https://www.impressiondigital.com/blog/how-to-scale-seo-content-with-ai/">How to scale SEO content with AI</a> - Impression, 2023</li>
-                              <li><a href="https://www.adzooma.com/blog/being-black-in-digital-marketing/">Being Black in Digital Marketing</a> - Adzooma, 2020</li>
-                              <li><a href="https://www.searchenginejournal.com/what-is-ethical-ppc/350888/">What is Ethical PPC?</a> - Search Engine Journal, 2020</li>
-                              <li><a href="https://www.searchenginejournal.com/12-alternative-ppc-books-every-ppc-marketer-needs-to-own/345076/">12 Alternative PPC Books Every PPC Marketer Needs to Own</a> - Search Engine Journal, 2020</li>
-                              <li><a href="https://www.semrush.com/blog/python-content-briefs-seo/">How Python Can Create Better Content Briefs and Improve SEO</a> - How Python Can Create Better Content Briefs and Improve SEO - Semrush, 2020</li>
-                              <li><a href="https://www.ppchero.com/how-learning-python-can-improve-your-ppc-campaigns/">How Learning Python Can Improve Your PPC Campaigns</a> - PPC Hero, 2020</li>
-                              <li><a href="https://www.adzooma.com/blog/google-is-not-a-meritocracy/">Google Is Not A Meritocracy</a> - Adzooma, 2019</li>
-                              <li><a href="https://logicface.co.uk/my-new-favourite-blog-post-is-about-hypertext-from-1998/">My new favourite blog post is about hypertext from 1998</a> - LOG!CFACE, 2019</li>
-                              <li><a href="https://themovehubdotcom.wordpress.com/2018/11/21/my-footballing-magi/">My Footballing Magi</a> - The Move Hub, 2018</li>
-                              <li><a href="https://cultrface.co.uk/the-un-cultural-appropriation-illegal/">The UN want to combat cultural appropriation. But is that enough?</a> - Cultrface, 2017</li>
-                              <li><a href="https://web.archive.org/web/20140810163903/http://www.revive-music.com/2013/05/02/give-the-drummer-sum-j-dillas-influence-on-the-modern-drummer/">Give The Drummer Sum: J Dilla’s Influence on the Modern Drummer</a> - Revive Music, 2014</li>
-                              <li><a href="https://sampleface.co.uk/black-milk-no-poison-no-paradise/">Review: Black Milk - No Poison No Paradise</a> - Sampleface, 2013</li>
-                        </ul>
-                        <h3>Features</h3>
-                        <ul>
-                              <li><a href="https://www.thedrum.com/insight/2023/03/29/now-marketers-are-finally-sold-ai-can-ibm-watson-reclaim-its-crown">Now that marketers are finally sold on AI, can IBM Watson reclaim its crown?</a></li>
-                        </ul>
-                        <h3>Talks</h3>
-                        <ul>
-                              <li><a href="https://www.youtube.com/watch?v=HkcdT2xvlLM&amp;t=18718s">VirtuaCon 3.0 July 2020 | Virtual #SEO Conference</a> (Skip to about 5:11:00 to hear my talk)</li>
-                              <li><a href="https://www.youtube.com/watch?v=wk-rC6MBf5o">AI in SEO webinar for Impression</a></li>
-                        </ul>
-                        <h3>Guest appearances</h3>
-                        <ul>
-                              <li><a href="https://www.youtube.com/watch?v=kpVi10kJ1Do">How I learned to debug troubled titles with Martin Splitt from Google Search</a></li>
-                        </ul>
-                        <h3>Podcasts</h3>
-                        <ul>
-                              <li><a href="https://www.wix.com/seo/learn/podcast/episodes/learning-how-to-learn-seo">How to Learn SEO: SERP's Up SEO Podcast</a></li>
-                              <li>#45: Luke Davis - Page 2 Podcast (<a href="https://podcasts.apple.com/us/podcast/45-luke-davis/id1439467716?i=1000468677080">Apple Podcasts</a> | <a href="https://open.spotify.com/episode/4Ynte317NMoEbYh6yqOUIj?si=j4wO1JQVT4K58M7ju12WVg">Spotify</a> | <a href="https://tunein.com/podcasts/Technology-Podcasts/The-Page-2-Podcast-p1255776/?topicId=140080384">Tune In</a>)</li>
-                              <li><a href="https://bytraject.com/blog/experimenting-with-seo-luke-davis">Experimenting with SEO On the B Sides with Luke Davis</a></li>
-                              <li><a href="https://www.impressiondigital.com/resources/podcasts/technical-seo-automation-rankup-with-luke-davis/">Technical SEO & Automation – RankUp with Luke Davis</a></li>
-                        </ul>
-                  </article>
-            </main>
-            <Footer/>
-      </body>
+<main class="layout">
+      <article class="content">
+            <h1>{title}</h1>
+            <h2>{description}</h2>
+            <h3>Writing</h3>
+            <ul>
+                  <li><a href="https://www.impressiondigital.com/blog/page-speed/">How to measure and improve page speed in 2023</a> - Impression, 2023</li>
+                  <li><a href="https://www.impressiondigital.com/blog/how-to-scale-seo-content-with-ai/">How to scale SEO content with AI</a> - Impression, 2023</li>
+                  <li><a href="https://www.adzooma.com/blog/being-black-in-digital-marketing/">Being Black in Digital Marketing</a> - Adzooma, 2020</li>
+                  <li><a href="https://www.searchenginejournal.com/what-is-ethical-ppc/350888/">What is Ethical PPC?</a> - Search Engine Journal, 2020</li>
+                  <li><a href="https://www.searchenginejournal.com/12-alternative-ppc-books-every-ppc-marketer-needs-to-own/345076/">12 Alternative PPC Books Every PPC Marketer Needs to Own</a> - Search Engine Journal, 2020</li>
+                  <li><a href="https://www.semrush.com/blog/python-content-briefs-seo/">How Python Can Create Better Content Briefs and Improve SEO</a> - How Python Can Create Better Content Briefs and Improve SEO - Semrush, 2020</li>
+                  <li><a href="https://www.ppchero.com/how-learning-python-can-improve-your-ppc-campaigns/">How Learning Python Can Improve Your PPC Campaigns</a> - PPC Hero, 2020</li>
+                  <li><a href="https://www.adzooma.com/blog/google-is-not-a-meritocracy/">Google Is Not A Meritocracy</a> - Adzooma, 2019</li>
+                  <li><a href="https://logicface.co.uk/my-new-favourite-blog-post-is-about-hypertext-from-1998/">My new favourite blog post is about hypertext from 1998</a> - LOG!CFACE, 2019</li>
+                  <li><a href="https://themovehubdotcom.wordpress.com/2018/11/21/my-footballing-magi/">My Footballing Magi</a> - The Move Hub, 2018</li>
+                  <li><a href="https://cultrface.co.uk/the-un-cultural-appropriation-illegal/">The UN want to combat cultural appropriation. But is that enough?</a> - Cultrface, 2017</li>
+                  <li><a href="https://web.archive.org/web/20140810163903/http://www.revive-music.com/2013/05/02/give-the-drummer-sum-j-dillas-influence-on-the-modern-drummer/">Give The Drummer Sum: J Dilla’s Influence on the Modern Drummer</a> - Revive Music, 2014</li>
+                  <li><a href="https://sampleface.co.uk/black-milk-no-poison-no-paradise/">Review: Black Milk - No Poison No Paradise</a> - Sampleface, 2013</li>
+            </ul>
+            <h3>Features</h3>
+            <ul>
+                  <li><a href="https://www.thedrum.com/insight/2023/03/29/now-marketers-are-finally-sold-ai-can-ibm-watson-reclaim-its-crown">Now that marketers are finally sold on AI, can IBM Watson reclaim its crown?</a></li>
+                  <li><a href="https://moz.com/blog/2025-seo-trends-top-predictions-from-23-industry-experts">2025 SEO Trends: Top Predictions from 23 Industry Experts</a></li>
+                  <li><a href="https://www.searchenginejournal.com/seo/seo-experts/">198 Top SEO Experts You Should Be Following</a></li>
+            </ul>
+            <h3>Talks</h3>
+            <ul>
+                  <li><a href="https://www.youtube.com/watch?v=HkcdT2xvlLM&amp;t=18718s">VirtuaCon 3.0 July 2020 | Virtual #SEO Conference</a> (Skip to about 5:11:00 to hear my talk)</li>
+                  <li><a href="https://www.youtube.com/watch?v=wk-rC6MBf5o">AI in SEO webinar for Impression</a></li>
+            </ul>
+            <h3>Guest appearances</h3>
+            <ul>
+                  <li><a href="https://www.youtube.com/watch?v=kpVi10kJ1Do">How I learned to debug troubled titles with Martin Splitt from Google Search</a></li>
+            </ul>
+            <h3>Podcasts</h3>
+            <ul>
+                  <li><a href="https://www.wix.com/seo/learn/podcast/episodes/learning-how-to-learn-seo">How to Learn SEO: SERP's Up SEO Podcast</a></li>
+                  <li>#45: Luke Davis - Page 2 Podcast (<a href="https://podcasts.apple.com/us/podcast/45-luke-davis/id1439467716?i=1000468677080">Apple Podcasts</a> | <a href="https://open.spotify.com/episode/4Ynte317NMoEbYh6yqOUIj?si=j4wO1JQVT4K58M7ju12WVg">Spotify</a> | <a href="https://tunein.com/podcasts/Technology-Podcasts/The-Page-2-Podcast-p1255776/?topicId=140080384">Tune In</a>)</li>
+                  <li><a href="https://bytraject.com/blog/experimenting-with-seo-luke-davis">Experimenting with SEO On the B Sides with Luke Davis</a></li>
+                  <li><a href="https://www.impressiondigital.com/resources/podcasts/technical-seo-automation-rankup-with-luke-davis/">Technical SEO & Automation – RankUp with Luke Davis</a></li>
+            </ul>
+      </article>
+</main>
+<Footer/>
+</body>
 </html>

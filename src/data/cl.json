@@ -73,10 +73,37 @@
             }
         ],
         "mbid": "",
+        "url": "https://www.last.fm/music/Cal+Tjader/_/September+Song",
+        "name": "September Song",
+        "@attr": {
+            "rank": "3"
+        },
+        "playcount": "2"
+    },
+    {
+        "artist": {
+            "mbid": "1015b5e3-8e3d-4d78-806a-c530cf742e66",
+            "#text": "Cal Tjader"
+        },
+        "image": [
+            {
+                "size": "small",
+                "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
+            },
+            {
+                "size": "medium",
+                "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
+            },
+            {
+                "size": "large",
+                "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
+            }
+        ],
+        "mbid": "",
         "url": "https://www.last.fm/music/Cal+Tjader/_/Upside+Down+(Flor+de+Lis)",
         "name": "Upside Down (Flor de Lis)",
         "@attr": {
-            "rank": "3"
+            "rank": "4"
         },
         "playcount": "2"
     },
@@ -102,33 +129,6 @@
         "mbid": "",
         "url": "https://www.last.fm/music/Charlie+Rouse/_/Aconteceu+-+A+Bossa+Dos+Cariocas",
         "name": "Aconteceu - A Bossa Dos Cariocas",
-        "@attr": {
-            "rank": "4"
-        },
-        "playcount": "2"
-    },
-    {
-        "artist": {
-            "mbid": "d3b8fe27-fb57-4256-b8a9-df8586929103",
-            "#text": "Dave Pike"
-        },
-        "image": [
-            {
-                "size": "small",
-                "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
-            },
-            {
-                "size": "medium",
-                "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
-            },
-            {
-                "size": "large",
-                "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
-            }
-        ],
-        "mbid": "",
-        "url": "https://www.last.fm/music/Dave+Pike/_/Melvalita",
-        "name": "Melvalita",
         "@attr": {
             "rank": "5"
         },
