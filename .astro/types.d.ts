@@ -1530,6 +1530,13 @@ declare module 'astro:content' {
   collection: "posts";
   data: any
 } & { render(): Render[".md"] };
+"my-spotify-unwrapped-2024.md": {
+	id: "my-spotify-unwrapped-2024.md";
+  slug: "my-spotify-unwrapped-2024";
+  body: string;
+  collection: "posts";
+  data: any
+} & { render(): Render[".md"] };
 "my-week-in-lisbon.md": {
 	id: "my-week-in-lisbon.md";
   slug: "my-week-in-lisbon";
