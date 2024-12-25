@@ -1,10 +1,11 @@
 ---
-title: 'My Spotify Unwrapped: 2024'
-description: "I don't normally write a blog post for my Spotify Unwrapped but what the hell."
+title: "My Spotify Unwrapped: 2024"
+description: I don't normally write a blog post for my Spotify Wrapped but what the hell.
 published: true
-pubDate: '4 Dec 2024'
+pubDate: 4 Dec 2024
 layout: ../../layouts/BlogPost.astro
-tags: ["music"]
+tags:
+  - music
 ---
 
 <style>
@@ -20,7 +21,9 @@ tags: ["music"]
 	}
 </style>
 
-Today is Spotify Unwrapped day so, rather than just posting the images in a social media thread, I'd write a blog and not deal with the character limit.
+Today is Spotify Wrapped day so, rather than just posting the images in a social media thread, I'd write a blog and not deal with the character limit.
+
+(_Addendum: I'm also aware that I've called this Spotify Unwrapped across the whole post, forgetting that it's **Wrapped**. There is an actual thing called [Spotify Unwrapped](https://www.spotify-unwrapped.com/) that highlights how little artists get paid for Spotify streams and while I'm a hypocrite for saying this, I fully support the idea and Spotify should cough up._)
 
 ## Minutes listened
 
