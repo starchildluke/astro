@@ -248,6 +248,13 @@ declare module 'astro:content' {
   collection: "lists";
   data: any
 } & { render(): Render[".md"] };
+"my-top-christmas-movies.md": {
+	id: "my-top-christmas-movies.md";
+  slug: "my-top-christmas-movies";
+  body: string;
+  collection: "lists";
+  data: any
+} & { render(): Render[".md"] };
 "my-video-game-console-history.md": {
 	id: "my-video-game-console-history.md";
   slug: "my-video-game-console-history";
