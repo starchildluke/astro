@@ -1,15 +1,19 @@
 ---
-title: "My Phone History"
-description: "I've had 12 phones to date. Here they all are."
+title: My Phone History
+description: I've had 13 phones to date. Here they all are.
 published: true
-pubDate: "21 Jun 2018"
+pubDate: 21 Jun 2018
 layout: ../../layouts/BlogPost.astro
-tags: ['tech']
+tags:
+  - tech
 ---
 
-I've had 12 phones to date. The **HTC Wildfire** was the worst (or, rather, the handsets Vodafone gave me) while the **Pixel 3A XL** is my favourite so far.
+I've had 13 phones to date. The **HTC Wildfire** was the worst (or, rather, the handsets Vodafone gave me) while the **Pixel 3A XL** is my favourite so far.
 
-## Google Pixel 7 (2023–)\*
+## Google Pixel 9 Pro (2024–present)
+<img src="/images/google-pixel-9-pro.webp" loading="eager" width="584" height="584" alt="a front, back, and side view of the Google Pixel 9 Pro">
+
+## Google Pixel 7 (2023–2024)\*
 
 ![Google Pixel 7](/images/pixel-7.jpg)
 
@@ -33,7 +37,7 @@ I've had 12 phones to date. The **HTC Wildfire** was the worst (or, rather, the 
 
 ![Nexus 5](/images/nexus-5.jpg)
 
-## Lumia 800 (2012–2013)\*
+## Lumia 800 (2012–2013)
 
 ![Lumia 800](/images/lumia-800.jpg)
 
@@ -60,4 +64,4 @@ I've had 12 phones to date. The **HTC Wildfire** was the worst (or, rather, the 
 
 \* - Phones marked with an asterisks are ones I still own.
 
-(last updated: 16th March 2023)
+(last updated: 20th December 2024)
