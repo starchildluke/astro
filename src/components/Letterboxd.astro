@@ -1,0 +1,27 @@
+---
+import StarRating from '../components/StarRating.astro';
+
+const { boxdYear } = Astro.props;
+---
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Genre(s)</th>
+      <th>Year</th>
+      <th>Rating</th>
+      <th>Watched Date</th>
+    </tr>
+  </thead>
+  {boxdYear.map((film) => (
+  <tr>
+    <td>{film.Name}</td>
+    <td>{film.Genres.join(", ")}</td>
+    <td>{film.Year}</td>
+    <td><StarRating rating={film.Rating} /></td>
+    <td>{new Date(film['Watched Date']).toLocaleDateString('en-GB', { year:"numeric", month:"short", day:"numeric"})
+    }</td>
+  </tr>
+  ))}
+</table>
