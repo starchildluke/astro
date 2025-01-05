@@ -1,8 +1,35 @@
 [
     {
         "artist": {
+            "mbid": "776dbbce-25aa-411e-b344-ac9067d39f17",
+            "#text": "SiR"
+        },
+        "image": [
+            {
+                "size": "small",
+                "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
+            },
+            {
+                "size": "medium",
+                "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
+            },
+            {
+                "size": "large",
+                "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
+            }
+        ],
+        "mbid": "1ba0f836-c8df-4d7f-a389-77f60a857ff5",
+        "url": "https://www.last.fm/music/SiR/_/RICKY%27S+SONG",
+        "name": "RICKY'S SONG",
+        "@attr": {
+            "rank": "1"
+        },
+        "playcount": "3"
+    },
+    {
+        "artist": {
             "mbid": "",
-            "#text": "Black Milk"
+            "#text": "Sir"
         },
         "image": [
             {
@@ -19,35 +46,8 @@
             }
         ],
         "mbid": "",
-        "url": "https://www.last.fm/music/Black+Milk/_/Parallels",
-        "name": "Parallels",
-        "@attr": {
-            "rank": "1"
-        },
-        "playcount": "3"
-    },
-    {
-        "artist": {
-            "mbid": "",
-            "#text": "Black Milk"
-        },
-        "image": [
-            {
-                "size": "small",
-                "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
-            },
-            {
-                "size": "medium",
-                "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
-            },
-            {
-                "size": "large",
-                "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
-            }
-        ],
-        "mbid": "8270b79c-5298-4b83-a4d4-21709c8f7349",
-        "url": "https://www.last.fm/music/Black+Milk/_/10+Luv",
-        "name": "10 Luv",
+        "url": "https://www.last.fm/music/Sir/_/Life+Is+Good+(feat.+Scribz+Riley)",
+        "name": "Life Is Good (feat. Scribz Riley)",
         "@attr": {
             "rank": "2"
         },
@@ -56,7 +56,7 @@
     {
         "artist": {
             "mbid": "",
-            "#text": "Black Milk"
+            "#text": "Sir"
         },
         "image": [
             {
@@ -72,9 +72,9 @@
                 "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
             }
         ],
-        "mbid": "4c9aea82-493a-4899-8e6a-a269e026c169",
-        "url": "https://www.last.fm/music/Black+Milk/_/Black+Sabbath",
-        "name": "Black Sabbath",
+        "mbid": "757243ee-1635-4782-97fe-ab3298307aa5",
+        "url": "https://www.last.fm/music/Sir/_/Nothing+Even+Matters",
+        "name": "Nothing Even Matters",
         "@attr": {
             "rank": "3"
         },
@@ -82,8 +82,8 @@
     },
     {
         "artist": {
-            "mbid": "",
-            "#text": "Black Milk"
+            "mbid": "776dbbce-25aa-411e-b344-ac9067d39f17",
+            "#text": "SiR"
         },
         "image": [
             {
@@ -99,9 +99,9 @@
                 "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
             }
         ],
-        "mbid": "fc3019b9-147c-4c9e-be52-1d0cdb9b5efd",
-        "url": "https://www.last.fm/music/Black+Milk/_/Poison",
-        "name": "Poison",
+        "mbid": "74113a96-522e-4a60-91e2-f02d0c09d8f7",
+        "url": "https://www.last.fm/music/SiR/_/ONLY+HUMAN",
+        "name": "ONLY HUMAN",
         "@attr": {
             "rank": "4"
         },
@@ -110,7 +110,7 @@
     {
         "artist": {
             "mbid": "",
-            "#text": "Black Milk"
+            "#text": "Sir"
         },
         "image": [
             {
@@ -126,9 +126,9 @@
                 "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
             }
         ],
-        "mbid": "03786984-5750-46b9-9d30-f0ab1f9a980f",
-        "url": "https://www.last.fm/music/Black+Milk/_/Sunday%27s+Best",
-        "name": "Sunday's Best",
+        "mbid": "7616f12b-f89d-4cfa-a32f-820ebdef6bed",
+        "url": "https://www.last.fm/music/Sir/_/Satisfaction",
+        "name": "Satisfaction",
         "@attr": {
             "rank": "5"
         },
