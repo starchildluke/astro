@@ -1446,6 +1446,13 @@ declare module 'astro:content' {
   collection: "posts";
   data: any
 } & { render(): Render[".md"] };
+"letterboxd-year-review-2024.md": {
+	id: "letterboxd-year-review-2024.md";
+  slug: "letterboxd-year-review-2024";
+  body: string;
+  collection: "posts";
+  data: any
+} & { render(): Render[".md"] };
 "link-dump-1.md": {
 	id: "link-dump-1.md";
   slug: "link-dump-1";
@@ -1505,13 +1512,6 @@ declare module 'astro:content' {
 "my-idea-debt.md": {
 	id: "my-idea-debt.md";
   slug: "my-idea-debt";
-  body: string;
-  collection: "posts";
-  data: any
-} & { render(): Render[".md"] };
-"my-letterboxd-year-in-review-for-2024.md": {
-	id: "my-letterboxd-year-in-review-for-2024.md";
-  slug: "my-letterboxd-year-in-review-for-2024";
   body: string;
   collection: "posts";
   data: any
