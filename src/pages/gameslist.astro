@@ -83,12 +83,29 @@ let description = "A list of games I'm currently playing or have already complet
 			<p>Please note: this is a work in progress so the design may change.</p>
 			<p><a href="/">Go back home</a></p>
 		</div>
-		<h2>Currently playing</h2>
+		<h2>Actively playing</h2>
 		<div class="games-grid">
-          {gamelog.filter(game => game.completed === "No").map((game) => (
+          {gamelog.filter(game => game.status === "Actively playing").map((game) => (
           <div class="data">
           	<div class="games-img">
-          		<img src={game.imageMetadata[0].imageThumbnailURL} width={game.imageMetadata[0].thumbnailDimensions.width} height={game.imageMetadata[0].thumbnailDimensions.height} loading={game.imageMetadata[0].loading}>
+          		<img src={game.imageMetadata[0].imageThumbnailURL ? game.imageMetadata[0].imageThumbnailURL : '/images/coming-soon.webp'} width={game.imageMetadata[0].thumbnailDimensions.width} height={game.imageMetadata[0].thumbnailDimensions.height} loading={game.imageMetadata[0].loading}>
+          	</div>
+          	<div class="games-text">
+	          	<h3>{game.name}</h3>
+	          	<p><strong>Developer</strong>: {game.developer}</p>
+	          	<p><strong>Publisher</strong>: {game.publisher}</p>
+	          	<p><strong>Genre</strong>: {game.genre}</p>
+	          	<p><strong>Console</strong>: {game.console}</p>
+          	</div>
+          </div>
+          ))}
+          </div>
+         <h2>Passively playing</h2>
+         <div class="games-grid">
+          {gamelog.filter(game => game.status === "Passively playing").map((game) => (
+          <div class="data">
+          	<div class="games-img">
+          		<img src={game.imageMetadata[0].imageThumbnailURL ? game.imageMetadata[0].imageThumbnailURL : '/images/coming-soon.webp'} width={game.imageMetadata[0].thumbnailDimensions.width} height={game.imageMetadata[0].thumbnailDimensions.height} loading={game.imageMetadata[0].loading}>
           	</div>
           	<div class="games-text">
 	          	<h3>{game.name}</h3>
@@ -105,7 +122,7 @@ let description = "A list of games I'm currently playing or have already complet
           {gamelog.filter(game => game.completed === "Yes").map((game) => (
           <div class="data">
           	<div class="games-img">
-          		<img src={game.imageMetadata[0].imageThumbnailURL} width={game.imageMetadata[0].thumbnailDimensions.width} height={game.imageMetadata[0].thumbnailDimensions.height} loading={game.imageMetadata[0].loading}>
+          		<img src={game.imageMetadata[0].imageThumbnailURL ? game.imageMetadata[0].imageThumbnailURL : '/images/coming-soon.webp'} width={game.imageMetadata[0].thumbnailDimensions.width} height={game.imageMetadata[0].thumbnailDimensions.height} loading={game.imageMetadata[0].loading}>
           	</div>
           	<div class="games-text">
 	          	<h3>{game.name}</h3>

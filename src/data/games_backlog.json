@@ -2,15 +2,35 @@
     "games": {
         "completed": [
         	{
-        		"name": "",
+        		"name": "X-Men - Mutant Academy",
         		"releaseDate": "",
-        		"console": "",
-        		"currentStatus": "",
+        		"console": "Game Boy Color",
+        		"currentStatus": "Finished",
         		"previousStatuses": [
         			""
         		],
-        		"completionDate": ""
-        	}
+        		"completionDate": "5/1/2025"
+        	},
+            {
+                "name": "Mickey's Ultimate Challenge",
+                "releaseDate": "",
+                "console": "Game Boy",
+                "currentStatus": "Finished",
+                "previousStatuses": [
+                    ""
+                ],
+                "completionDate": "7/1/2025"
+            },
+            {
+                "name": "Kirby's Dream Land",
+                "releaseDate": "",
+                "console": "Game Boy",
+                "currentStatus": "Finished",
+                "previousStatuses": [
+                    ""
+                ],
+                "completionDate": "8/1/2025"
+            },
         ],
         "currentlyPlaying": [
         	{
@@ -72,7 +92,22 @@
         		"previousStatuses": [
         			""
         		]
-        	}
+        	},
+            {
+                "name": "Final Fantasy",
+                "releaseDate": "",
+                "console": "WonderSwan Color",
+                "imageURL": "/images/gameslist/ff1.jpg",
+                "imageThumbnailURL": "/images/gameslist/dq-xi-s-250px.jpeg",
+                "thumbnailDimensions": {
+                    "width": 250,
+                    "height": 312
+                },
+                "currentStatus": "",
+                "previousStatuses": [
+                    ""
+                ]
+            }
         ],
         "backlog": [
         	{

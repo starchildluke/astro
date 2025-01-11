@@ -15,12 +15,11 @@
 				"loading": "eager"
 			}
 		],		
-		"status": "Playing",
+		"status": "Passively playing",
 		"format": "Physical",
 		"console": "Switch",
 		"completed": "No",
-		"dateBeaten": "",
-		"timeToBeat": ""
+		"dateBeaten": ""
 	},
 	{
 		"name": "Dragon Quest VIII",
@@ -38,12 +37,11 @@
 				"loading": "eager"
 			}
 		],		
-		"status": "Playing",
+		"status": "Passively playing",
 		"format": "Physical",
 		"console": "3DS",
 		"completed": "No",
-		"dateBeaten": "",
-		"timeToBeat": ""
+		"dateBeaten": ""
 	},
 	{
 		"name": "Dragon Warrior Monsters 2",
@@ -61,12 +59,11 @@
 				"loading": "eager"
 			}
 		],		
-		"status": "Playing",
-		"format": "Digital",
+		"status": "Passively playing",
+		"format": "Emulation",
 		"console": "Game Boy Color",
 		"completed": "No",
-		"dateBeaten": "",
-		"timeToBeat": ""
+		"dateBeaten": ""
 	},
 	{
 		"name": "Dragon Quest XI S",
@@ -84,12 +81,11 @@
 				"loading": "lazy"
 			}
 		],		
-		"status": "Playing",
+		"status": "Passively playing",
 		"format": "Physical",
 		"console": "PS4",
 		"completed": "No",
-		"dateBeaten": "",
-		"timeToBeat": ""
+		"dateBeaten": ""
 	},
 	{
 		"name": "Street Fighter Alpha 3",
@@ -107,12 +103,11 @@
 				"loading": "lazy"
 			}
 		],		
-		"status": "Playing",
-		"format": "Digital",
+		"status": "Passively playing",
+		"format": "Emulation",
 		"console": "PS1",
 		"completed": "No",
-		"dateBeaten": "",
-		"timeToBeat": ""
+		"dateBeaten": ""
 	},
 	{
 		"name": "Breath of Fire IV",
@@ -130,22 +125,21 @@
 				"loading": "lazy"
 			}
 		],		
-		"status": "Playing",
-		"format": "Digital",
+		"status": "Actively playing",
+		"format": "Emulation",
 		"console": "PS1",
 		"completed": "No",
-		"dateBeaten": "",
-		"timeToBeat": ""
+		"dateBeaten": ""
 	},
 	{
-		"name": "Virtua Tennis 2",
-		"developer": "Hitmaker (formerly Sega AM3)",
-		"publisher": "SEGA",
-		"genre": ["Sports"],
+		"name": "X-Men - Mutant Academy",
+		"developer": "",
+		"publisher": "",
+		"genre": [""],
 		"imageMetadata": [
 			{
-				"imageURL": "/images/gameslist/virtua-tennis-2-dreamcast.jpg",
-				"imageThumbnailURL": "/images/gameslist/virtua-tennis-2-dreamcast-250px.jpg",
+				"imageURL": "",
+				"imageThumbnailURL": "/images/x-men-mutant-academy-gb.jpg",
 				"thumbnailDimensions": {
 					"width": 250,
 					"height": 250
@@ -153,11 +147,98 @@
 				"loading": "lazy"
 			}
 		],		
-		"status": "Playing",
-		"format": "Digital",
-		"console": "NAOMI",
+		"status": "Completed",
+		"format": "Emulation",
+		"console": "GBC",
 		"completed": "Yes",
-		"dateBeaten": "23-07-2024",
-		"timeToBeat": "Too long"
+		"dateBeaten": "05-01-2025"
+	},
+	{
+		"name": "Mickey's Ultimate Challenge",
+		"developer": "",
+		"publisher": "",
+		"genre": [""],
+		"imageMetadata": [
+			{
+				"imageURL": "",
+				"imageThumbnailURL": "/images/mickeys-ultimate-challenge-gb.webp",
+				"thumbnailDimensions": {
+					"width": 250,
+					"height": 250
+				},
+				"loading": "lazy"
+			}
+		],		
+		"status": "Completed",
+		"format": "Emulation",
+		"console": "GB",
+		"completed": "Yes",
+		"dateBeaten": "07-01-2025"
+	},
+	{
+		"name": "Kirby's Dream Land",
+		"developer": "Nintendo",
+		"publisher": "Nintendo",
+		"genre": ["Platformer"],
+		"imageMetadata": [
+			{
+				"imageURL": "",
+				"imageThumbnailURL": "/images/kirbys-dream-land.webp",
+				"thumbnailDimensions": {
+					"width": 250,
+					"height": 250
+				},
+				"loading": "lazy"
+			}
+		],		
+		"status": "Completed",
+		"format": "Emulation",
+		"console": "GB",
+		"completed": "Yes",
+		"dateBeaten": "08-01-2025"
+	},
+	{
+		"name": "Sonic 3",
+		"developer": "Sega Technical Institute",
+		"publisher": "Sega",
+		"genre": ["Platformer"],
+		"imageMetadata": [
+			{
+				"imageURL": "",
+				"imageThumbnailURL": "/images/sonic-3.webp",
+				"thumbnailDimensions": {
+					"width": 250,
+					"height": 250
+				},
+				"loading": "lazy"
+			}
+		],		
+		"status": "Actively playing",
+		"format": "Emulation",
+		"console": "Mega Drive",
+		"completed": "No",
+		"dateBeaten": ""
+	},
+	{
+		"name": "Final Fantasy",
+		"developer": "Square Enix (then Square)",
+		"publisher": "Square Enix (then Square)",
+		"genre": ["RPG"],
+		"imageMetadata": [
+			{
+				"imageURL": "",
+				"imageThumbnailURL": "/images/final-fantasy.webp",
+				"thumbnailDimensions": {
+					"width": 250,
+					"height": 250
+				},
+				"loading": "lazy"
+			}
+		],		
+		"status": "Actively playing",
+		"format": "Emulation",
+		"console": "WonderSwan Color",
+		"completed": "No",
+		"dateBeaten": ""
 	}
 ]
