@@ -39,6 +39,11 @@ let sortedWritings = allWritings.sort((a, b) => new Date(b.data.pubDate) - new D
     grid-template-columns: minmax(0.5rem,1fr) minmax(0.5rem,var(--max-width-home)) minmax(0.5rem,1fr);
   }
 
+  .layout > article {
+    grid-column: 1;
+    margin: 0 2rem;
+  }
+
   #welcome {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: italic;
