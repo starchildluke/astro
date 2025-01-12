@@ -984,6 +984,13 @@ declare module 'astro:content' {
   collection: "posts";
   data: any
 } & { render(): Render[".md"] };
+"am-i-helping-or-harming.md": {
+	id: "am-i-helping-or-harming.md";
+  slug: "am-i-helping-or-harming";
+  body: string;
+  collection: "posts";
+  data: any
+} & { render(): Render[".md"] };
 "another-week-in-lisbon-2023.md": {
 	id: "another-week-in-lisbon-2023.md";
   slug: "another-week-in-lisbon-2023";
