@@ -35,6 +35,10 @@ let sortedWritings = allWritings.sort((a, b) => new Date(b.data.pubDate) - new D
     margin-bottom: 0;
   }
 
+  .layout {
+    grid-template-columns: minmax(0.5rem,1fr) minmax(0.5rem,var(--max-width-home)) minmax(0.5rem,1fr);
+  }
+
   #welcome {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: italic;
@@ -44,7 +48,7 @@ let sortedWritings = allWritings.sort((a, b) => new Date(b.data.pubDate) - new D
     background: #dadada;
     border-radius: 10px;
     padding: 2rem;
-    margin-bottom: 2rem;
+    margin: 4rem 0;
   }
 
   .post-listing {
@@ -54,12 +58,7 @@ let sortedWritings = allWritings.sort((a, b) => new Date(b.data.pubDate) - new D
   }
 
   ul li:last-child {
-    color: orange;
     border: none;
-  }
-
-  ul li:last-child a {
-    font-weight: 700;
   }
 
   .tag {
@@ -112,11 +111,6 @@ let sortedWritings = allWritings.sort((a, b) => new Date(b.data.pubDate) - new D
             <p>I'm a senior technical SEO specialist, music producer, and blogger based in Nottingham, UK. I specialise in technical creativity and problem solving with a pragmatic approach.</p>
             <p>I currently work for <a href="https://www.impressiondigital.com/">Impression</a> and I'm also the founder of <a href="https://pandog.media">Pandog Media</a>, the home of <a href="https://sampleface.co.uk">Sampleface</a>, <a href="https://cultrface.co.uk">Cultrface</a>, <a href="https://logicface.co.uk">LOGiCFACE</a>, <a href="https://playrface.co.uk">Playrface</a>, and <a href="https://distantarcade.co.uk">Distant Arcade</a>.</p>
           </section>
-          <hr>
-          <section>
-            <CurrentlyListening />
-          </section>
-          <hr>
           <section id="latest">
             <h2>Latest posts & notes</h2>
               <ul class="post-list">
@@ -126,10 +120,10 @@ let sortedWritings = allWritings.sort((a, b) => new Date(b.data.pubDate) - new D
                     <span class="publish-date"><FormattedDate date={post.data.pubDate} /></span>
                 </li>
               ))}
-              <li class="post-listing"><a href="/all-posts-notes/">Read all posts & notes →</a></li>
+              <li class="post-listing"><a href="/all-posts-notes/">Read all of my posts & notes →</a></li>
               </ul>
           </section>
-          <hr>
+          <CurrentlyListening />
           <h2>Want to find out more?</h2>
           <p><a href="mailto:luke@lukealexdavis.co.uk">Send an email</a>, read <a href="/about/">my about page</a>, or find out how you can <a href="/support/">support me</a>.</p>
           <p>Smell ya later!</p>

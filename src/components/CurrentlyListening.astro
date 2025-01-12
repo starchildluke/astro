@@ -3,26 +3,23 @@ import cl from '../data/cl.json'
 ---
 
 <style>
-	h2, .cl {
-		text-align: center;
+	.cl-section {
+		margin: 4rem 0;
 	}
 	.cl {
-  		font-family: Georgia, 'Times New Roman', Times, serif;
   		font-style: italic;
-	}
-
-	ul.cl {
-		list-style: none;
-		padding: 0;
 	}
 </style>
 
-<h2>My top songs right now</h2>
-<div>
-	<ul class="cl">
-		{cl.map((track) => (
-		<li>{track.artist['#text']} - <a href={track.url}>{track.name}</a></li>
-		))
-		}
-	</ul>
-</div>
+<section class="cl-section">
+	<h2>My top songs right now</h2>
+	<div>
+		<ul class="cl">
+			{cl.map((track) => (
+			<li>{track.artist['#text']} - {track.name}</li>
+			))
+			}
+		</ul>
+	<a href="https://www.last.fm/user/alex_ferguson">More from my Last.fm</a> and <a href="/lastfm-top-1000/">my Last.fm top 1000</a>
+	</div>
+</section>
