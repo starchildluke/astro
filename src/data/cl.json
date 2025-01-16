@@ -24,34 +24,7 @@
         "@attr": {
             "rank": "1"
         },
-        "playcount": "5"
-    },
-    {
-        "artist": {
-            "mbid": "a78f1671-3ebf-4822-b2bd-70ccc3088c2d",
-            "#text": "Charlotte Day Wilson"
-        },
-        "image": [
-            {
-                "size": "small",
-                "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
-            },
-            {
-                "size": "medium",
-                "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
-            },
-            {
-                "size": "large",
-                "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
-            }
-        ],
-        "mbid": "7c2936ce-b2ae-479c-b02e-6dd63a28bbbb",
-        "url": "https://www.last.fm/music/Charlotte+Day+Wilson/_/Canopy",
-        "name": "Canopy",
-        "@attr": {
-            "rank": "2"
-        },
-        "playcount": "3"
+        "playcount": "4"
     },
     {
         "artist": {
@@ -76,7 +49,7 @@
         "url": "https://www.last.fm/music/Charlotte+Day+Wilson/_/Money",
         "name": "Money",
         "@attr": {
-            "rank": "3"
+            "rank": "2"
         },
         "playcount": "3"
     },
@@ -103,9 +76,36 @@
         "url": "https://www.last.fm/music/Charlotte+Day+Wilson/_/My+Way",
         "name": "My Way",
         "@attr": {
-            "rank": "4"
+            "rank": "3"
         },
         "playcount": "3"
+    },
+    {
+        "artist": {
+            "mbid": "a78f1671-3ebf-4822-b2bd-70ccc3088c2d",
+            "#text": "Charlotte Day Wilson"
+        },
+        "image": [
+            {
+                "size": "small",
+                "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
+            },
+            {
+                "size": "medium",
+                "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
+            },
+            {
+                "size": "large",
+                "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
+            }
+        ],
+        "mbid": "7c2936ce-b2ae-479c-b02e-6dd63a28bbbb",
+        "url": "https://www.last.fm/music/Charlotte+Day+Wilson/_/Canopy",
+        "name": "Canopy",
+        "@attr": {
+            "rank": "4"
+        },
+        "playcount": "2"
     },
     {
         "artist": {
