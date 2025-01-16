@@ -1,8 +1,9 @@
 ---
-title: 'The infographic industrial complex'
+title: The infographic industrial complex
 published: true
-pubDate: '30 Sep 2021'
+pubDate: 30 Sep 2021
 layout: ../../layouts/ReleaseNotes.astro
+tags: ["social media"]
 ---
 
 I spent too much time on Instagram. I don't post anything on my grid (in fact, I removed everything a while back) but I browse and post stories. The most common stories I see are infographics related to life and mental health. Some of them are tweets from people who may or may not have good intentions with what they say but, for me at least, I don't find them helpful at all and they reinforce the reasons why I don't talk to people.

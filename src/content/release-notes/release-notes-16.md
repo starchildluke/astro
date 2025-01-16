@@ -1,8 +1,10 @@
 ---
-title: 'New normals'
+title: New normals
 published: true
-pubDate: '26 Nov 2023'
+pubDate: 26 Nov 2023
 layout: ../../layouts/ReleaseNotes.astro
+tags:
+  - life
 ---
 
 There should be new normals for all of us that take into account the lives and needs of marginalised people and the various axes of power and privilege. We set boundaries and make accommodations for others so they feel safe to live and "be", whenever and if ever they want.

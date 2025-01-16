@@ -716,6 +716,20 @@ declare module 'astro:content' {
   collection: "music";
   data: any
 } & { render(): Render[".md"] };
+"noquest-v.md": {
+	id: "noquest-v.md";
+  slug: "noquest-v";
+  body: string;
+  collection: "music";
+  data: any
+} & { render(): Render[".md"] };
+"noquest-vi.md": {
+	id: "noquest-vi.md";
+  slug: "noquest-vi";
+  body: string;
+  collection: "music";
+  data: any
+} & { render(): Render[".md"] };
 "noquest.md": {
 	id: "noquest.md";
   slug: "noquest";

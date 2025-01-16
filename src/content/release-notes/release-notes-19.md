@@ -1,7 +1,7 @@
 ---
-title: "Talkin' loud and sayin' nothin'"
+title: Talkin' loud and sayin' nothin'
 published: true
-pubDate: '11 Aug 2024'
+pubDate: 11 Aug 2024
 layout: ../../layouts/ReleaseNotes.astro
 ---
 

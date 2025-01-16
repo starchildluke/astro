@@ -1,8 +1,10 @@
 ---
-title: 'Closed-off captions'
+title: Closed-off captions
 published: true
-pubDate: '27 Mar 2023'
+pubDate: 27 Mar 2023
 layout: ../../layouts/ReleaseNotes.astro
+tags:
+  - accessibility
 ---
 
 I'm tired of watching movies on Amazon Prime Video and there not being any subtitles available. And these aren't obscure movies - I'm talking films with famous actors in them.

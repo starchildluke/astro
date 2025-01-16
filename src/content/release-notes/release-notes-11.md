@@ -1,8 +1,11 @@
 ---
-title: "AI isn't a silver bullet"
+title: AI isn't a silver bullet
 published: true
-pubDate: '7 Jan 2023'
+pubDate: 7 Jan 2023
 layout: ../../layouts/ReleaseNotes.astro
+tags:
+  - AI
+  - tech
 ---
 
 I've read a fair number of articles promoting large language models and the claims are either unsubstantiated or promising a "better" future that can't be guaranteed. The technology and the models have been around for so long, why is there such an indefinite wait?

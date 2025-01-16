@@ -1,8 +1,10 @@
 ---
-title: 'Solitude advice'
+title: Solitude advice
 published: true
-pubDate: '27 Feb 2024'
+pubDate: 27 Feb 2024
 layout: ../../layouts/ReleaseNotes.astro
+tags:
+  - life
 ---
 
 Today, I read a [Bluesky thread by Cheryl Lynn Eaton](https://bsky.app/profile/cheryllynneaton.bsky.social/post/3kmeus2ikk22f) that said:

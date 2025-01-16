@@ -15,6 +15,10 @@ const lists = await getCollection('lists', ({ data }) => {
   return data.tags.includes(tagName);
 });
 
+const notes = await getCollection('release-notes', ({ data }) => {
+  return data.tags?.includes(tagName);
+});
+
 const collator = Intl.Collator([], {numeric: true});
 
 const sortedPosts = posts.sort((a, b) => collator.compare(a.data.title, b.data.title));
@@ -23,24 +27,33 @@ const sortedRecortes = recortes.sort((a, b) => collator.compare(a.data.title, b.
 
 const sortedLists = lists.sort((a, b) => collator.compare(a.data.title, b.data.title));
 
+const sortedReleaseNotes = notes.sort((a, b) => collator.compare(a.data.title, b.data.title));
+
 ---
-<h3>Posts</h3>
+{sortedPosts.length > 0 ? <h3>Posts</h3> : ""}
 <ul>
   {sortedPosts.length > 0 ? sortedPosts.map(post =>
   <li><a href=`/posts/${post.slug}/`>{post.data.title}</a></li>
-  ) : <li>Coming soon!</li>}
+  ) : ""}
 </ul>
 
-<h3>Recortes</h3>
+{sortedRecortes.length > 0 ? <h3>Recortes</h3> : ""}
 <ul>
   {sortedRecortes.length > 0 ? sortedRecortes.map(recorte =>
   <li><a href=`/recortes/${recorte.slug}/`>{recorte.data.title}</a></li>
-  ) : <li>Coming soon!</li>}
+  ) : ""}
 </ul>
 
-<h3>Lists</h3>
+{sortedLists.length > 0 ? <h3>Lists</h3> : ""}
 <ul>
   {sortedLists.length > 0 ? sortedLists.map(list =>
   <li><a href=`/lists/${list.slug}/`>{list.data.title}</a></li>
-  ) : <li>Coming soon!</li>}
+  ) : ""}
+</ul>
+
+{sortedReleaseNotes.length > 0 ? <h3>Release Notes</h3> : ""}
+<ul>
+  {sortedReleaseNotes.length > 0 ? sortedReleaseNotes.map(note =>
+  <li><a href=`/release-notes/${note.slug}/`>{note.data.title}</a></li>
+  ) : ""}
 </ul>

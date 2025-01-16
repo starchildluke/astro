@@ -1,8 +1,10 @@
 ---
-title: 'Hard work is overrated'
+title: Hard work is overrated
 published: true
-pubDate: '24 Jul 2022'
+pubDate: 24 Jul 2022
 layout: ../../layouts/ReleaseNotes.astro
+tags:
+  - life
 ---
 
 After 2 years of a horrific pandemic (still going btw), I'd hoped-but not necessarily expected- that we'd have learnt more about ourselves, how to be compassionate, and organise against oppressors.

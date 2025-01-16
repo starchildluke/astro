@@ -75,7 +75,8 @@ const releaseNotes = defineCollection({
 			.string()
 			.or(z.date())
 			.transform((val) => new Date(val)),
-		layout: z.string()
+		layout: z.string(),
+		tags: z.array(z.string()).optional()
 	}),
 });
 
