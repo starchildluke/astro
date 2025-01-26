@@ -139,7 +139,7 @@
 		"imageMetadata": [
 			{
 				"imageURL": "",
-				"imageThumbnailURL": "/images/x-men-mutant-academy-gb.jpg",
+				"imageThumbnailURL": "/images/gameslist/x-men-mutant-academy-gb.jpg",
 				"thumbnailDimensions": {
 					"width": 250,
 					"height": 250
@@ -151,7 +151,7 @@
 		"format": "Emulation",
 		"console": "GBC",
 		"completed": "Yes",
-		"dateBeaten": "05-01-2025"
+		"dateBeaten": "01/05/2025"
 	},
 	{
 		"name": "Mickey's Ultimate Challenge",
@@ -161,7 +161,7 @@
 		"imageMetadata": [
 			{
 				"imageURL": "",
-				"imageThumbnailURL": "/images/mickeys-ultimate-challenge-gb.webp",
+				"imageThumbnailURL": "/images/gameslist/mickeys-ultimate-challenge-gb.webp",
 				"thumbnailDimensions": {
 					"width": 250,
 					"height": 250
@@ -173,7 +173,7 @@
 		"format": "Emulation",
 		"console": "GB",
 		"completed": "Yes",
-		"dateBeaten": "07-01-2025"
+		"dateBeaten": "01/07/2025"
 	},
 	{
 		"name": "Kirby's Dream Land",
@@ -183,7 +183,7 @@
 		"imageMetadata": [
 			{
 				"imageURL": "",
-				"imageThumbnailURL": "/images/kirbys-dream-land.webp",
+				"imageThumbnailURL": "/images/gameslist/kirbys-dream-land.webp",
 				"thumbnailDimensions": {
 					"width": 250,
 					"height": 250
@@ -195,7 +195,7 @@
 		"format": "Emulation",
 		"console": "GB",
 		"completed": "Yes",
-		"dateBeaten": "08-01-2025"
+		"dateBeaten": "01/08/2025"
 	},
 	{
 		"name": "Sonic 3",
@@ -205,7 +205,7 @@
 		"imageMetadata": [
 			{
 				"imageURL": "",
-				"imageThumbnailURL": "/images/sonic-3.webp",
+				"imageThumbnailURL": "/images/gameslist/sonic-3.webp",
 				"thumbnailDimensions": {
 					"width": 250,
 					"height": 250
@@ -213,7 +213,7 @@
 				"loading": "eager"
 			}
 		],		
-		"status": "Actively playing",
+		"status": "Passively playing",
 		"format": "Emulation",
 		"console": "Mega Drive",
 		"completed": "No",
@@ -227,7 +227,51 @@
 		"imageMetadata": [
 			{
 				"imageURL": "",
-				"imageThumbnailURL": "/images/final-fantasy.webp",
+				"imageThumbnailURL": "/images/gameslist/final-fantasy.webp",
+				"thumbnailDimensions": {
+					"width": 250,
+					"height": 250
+				},
+				"loading": "lazy"
+			}
+		],		
+		"status": "Completed",
+		"format": "Emulation",
+		"console": "WonderSwan Color",
+		"completed": "Yes",
+		"dateBeaten": "01/15/2025"
+	},
+	{
+		"name": "Final Fantasy III",
+		"developer": "Square Enix (then Square)",
+		"publisher": "Square Enix (then Square)",
+		"genre": ["RPG"],
+		"imageMetadata": [
+			{
+				"imageURL": "",
+				"imageThumbnailURL": "/images/gameslist/final-fantasy-iii.webp",
+				"thumbnailDimensions": {
+					"width": 250,
+					"height": 250
+				},
+				"loading": "eager"
+			}
+		],		
+		"status": "Actively playing",
+		"format": "Emulation",
+		"console": "NES",
+		"completed": "No",
+		"dateBeaten": ""
+	},
+	{
+		"name": "Kirby's Dream Land 2",
+		"developer": "HAL Laboratory",
+		"publisher": "Nintendo",
+		"genre": ["Platformer"],
+		"imageMetadata": [
+			{
+				"imageURL": "",
+				"imageThumbnailURL": "/images/gameslist/kirbys-dream-land-2.webp",
 				"thumbnailDimensions": {
 					"width": 250,
 					"height": 250
@@ -237,8 +281,8 @@
 		],		
 		"status": "Completed",
 		"format": "Emulation",
-		"console": "WonderSwan Color",
+		"console": "GB",
 		"completed": "Yes",
-		"dateBeaten": "15-01-2025"
+		"dateBeaten": "01/26/2025"
 	}
 ]

@@ -130,6 +130,11 @@ let description = "A list of games I'm currently playing or have already complet
 	          	<p><strong>Publisher</strong>: {game.publisher}</p>
 	          	<p><strong>Genre</strong>: {game.genre}</p>
 	          	<p><strong>Console</strong>: {game.console}</p>
+	          	<p><strong>Date beaten</strong>: {new Date(game.dateBeaten).toLocaleDateString('en-gb', {
+						day: '2-digit',
+						month: '2-digit',
+						year: 'numeric',
+					})}</p>
           	</div>
           </div>
           ))}

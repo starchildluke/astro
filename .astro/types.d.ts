@@ -2241,6 +2241,13 @@ declare module 'astro:content' {
   collection: "release-notes";
   data: any
 } & { render(): Render[".md"] };
+"release-notes-21.md": {
+	id: "release-notes-21.md";
+  slug: "release-notes-21";
+  body: string;
+  collection: "release-notes";
+  data: any
+} & { render(): Render[".md"] };
 "release-notes-3.md": {
 	id: "release-notes-3.md";
   slug: "release-notes-3";
