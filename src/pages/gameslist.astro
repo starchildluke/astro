@@ -88,7 +88,7 @@ let description = "A list of games I'm currently playing or have already complet
           {gamelog.filter(game => game.status === "Actively playing").map((game) => (
           <div class="data">
           	<div class="games-img">
-          		<img src={game.imageMetadata[0].imageThumbnailURL ? game.imageMetadata[0].imageThumbnailURL : '/images/coming-soon.webp'} width={game.imageMetadata[0].thumbnailDimensions.width} height={game.imageMetadata[0].thumbnailDimensions.height} loading={game.imageMetadata[0].loading}>
+          		<img src={game.imageURL ? game.imageURL : '/images/coming-soon.webp'} width="250" height="250" loading="eager">
           	</div>
           	<div class="games-text">
 	          	<h3>{game.name}</h3>
@@ -105,7 +105,7 @@ let description = "A list of games I'm currently playing or have already complet
           {gamelog.filter(game => game.status === "Passively playing").map((game) => (
           <div class="data">
           	<div class="games-img">
-          		<img src={game.imageMetadata[0].imageThumbnailURL ? game.imageMetadata[0].imageThumbnailURL : '/images/coming-soon.webp'} width={game.imageMetadata[0].thumbnailDimensions.width} height={game.imageMetadata[0].thumbnailDimensions.height} loading={game.imageMetadata[0].loading}>
+          		<img src={game.imageURL ? game.imageURL : '/images/coming-soon.webp'} width="250" height="250" loading="lazy">
           	</div>
           	<div class="games-text">
 	          	<h3>{game.name}</h3>
@@ -119,10 +119,10 @@ let description = "A list of games I'm currently playing or have already complet
           </div>
           <h2>Completed it, mate!</h2>
 		<div class="games-grid">
-          {gamelog.filter(game => game.completed === "Yes").map((game) => (
+          {gamelog.filter(game => game.status === "Completed").map((game) => (
           <div class="data">
           	<div class="games-img">
-          		<img src={game.imageMetadata[0].imageThumbnailURL ? game.imageMetadata[0].imageThumbnailURL : '/images/coming-soon.webp'} width={game.imageMetadata[0].thumbnailDimensions.width} height={game.imageMetadata[0].thumbnailDimensions.height} loading={game.imageMetadata[0].loading}>
+          		<img src={game.imageURL ? game.imageURL : '/images/coming-soon.webp'} width="250" height="250" loading="lazy">
           	</div>
           	<div class="games-text">
 	          	<h3>{game.name}</h3>

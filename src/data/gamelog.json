@@ -4,21 +4,10 @@
 		"developer": "Tose",
 		"publisher": "Square Enix",
 		"genre": ["RPG"],
-		"imageMetadata": [
-			{
-				"imageURL": "/images/gameslist/dqm-tdp.jpg",
-				"imageThumbnailURL": "/images/gameslist/dqm-tdp-250px.jpg",
-				"thumbnailDimensions": {
-					"width": 250,
-					"height": 250
-				},
-				"loading": "lazy"
-			}
-		],		
+		"imageURL": "/images/gameslist/dqm-tdp-250px.jpg",	
 		"status": "Passively playing",
 		"format": "Physical",
 		"console": "Switch",
-		"completed": "No",
 		"dateBeaten": ""
 	},
 	{
@@ -26,21 +15,10 @@
 		"developer": "Level-5",
 		"publisher": "Square Enix",
 		"genre": ["RPG"],
-		"imageMetadata": [
-			{
-				"imageURL": "/images/gameslist/dq-viii.jpg",
-				"imageThumbnailURL": "/images/gameslist/dq-viii-250px.jpg",
-				"thumbnailDimensions": {
-					"width": 250,
-					"height": 250
-				},
-				"loading": "lazy"
-			}
-		],		
+		"imageURL": "/images/gameslist/dq-viii-250px.jpg",	
 		"status": "Passively playing",
 		"format": "Physical",
 		"console": "3DS",
-		"completed": "No",
 		"dateBeaten": ""
 	},
 	{
@@ -48,21 +26,10 @@
 		"developer": "Tose",
 		"publisher": "Square Enix (then Enix)",
 		"genre": ["RPG"],
-		"imageMetadata": [
-			{
-				"imageURL": "/images/gameslist/dwm-2.jpg",
-				"imageThumbnailURL": "/images/gameslist/dwm-2-250px.jpeg",
-				"thumbnailDimensions": {
-					"width": 250,
-					"height": 250
-				},
-				"loading": "lazy"
-			}
-		],		
+		"imageURL": "/images/gameslist/dwm-2-250px.jpeg",	
 		"status": "Passively playing",
 		"format": "Emulation",
 		"console": "Game Boy Color",
-		"completed": "No",
 		"dateBeaten": ""
 	},
 	{
@@ -70,21 +37,10 @@
 		"developer": "Square Enix",
 		"publisher": "Square Enix",
 		"genre": ["RPG"],
-		"imageMetadata": [
-			{
-				"imageURL": "/images/gameslist/dq-xi-s.jpg",
-				"imageThumbnailURL": "/images/gameslist/dq-xi-s-250px.jpg",
-				"thumbnailDimensions": {
-					"width": 250,
-					"height": 250
-				},
-				"loading": "lazy"
-			}
-		],		
+		"imageURL": "/images/gameslist/dq-xi-s-250px.jpg",	
 		"status": "Passively playing",
 		"format": "Physical",
 		"console": "PS4",
-		"completed": "No",
 		"dateBeaten": ""
 	},
 	{
@@ -92,21 +48,10 @@
 		"developer": "Capcom",
 		"publisher": "Capcom",
 		"genre": ["Fighting"],
-		"imageMetadata": [
-			{
-				"imageURL": "/images/gameslist/street-fighter-alpha-3-ps1.jpg",
-				"imageThumbnailURL": "/images/gameslist/street-fighter-alpha-3-ps1-250px.jpg",
-				"thumbnailDimensions": {
-					"width": 250,
-					"height": 250
-				},
-				"loading": "lazy"
-			}
-		],		
+		"imageURL": "/images/gameslist/street-fighter-alpha-3-ps1-250px.jpg",	
 		"status": "Passively playing",
 		"format": "Emulation",
 		"console": "PS1",
-		"completed": "No",
 		"dateBeaten": ""
 	},
 	{
@@ -114,21 +59,10 @@
 		"developer": "Capcom",
 		"publisher": "Capcom",
 		"genre": ["RPG"],
-		"imageMetadata": [
-			{
-				"imageURL": "/images/gameslist/breath-of-fire-iv-ps1.jpg",
-				"imageThumbnailURL": "/images/gameslist/breath-of-fire-iv-ps1-250px.jpg",
-				"thumbnailDimensions": {
-					"width": 250,
-					"height": 250
-				},
-				"loading": "eager"
-			}
-		],		
+		"imageURL": "/images/gameslist/breath-of-fire-iv-ps1-250px.jpg",	
 		"status": "Actively playing",
 		"format": "Emulation",
 		"console": "PS1",
-		"completed": "No",
 		"dateBeaten": ""
 	},
 	{
@@ -136,21 +70,10 @@
 		"developer": "Crawfish Interactive",
 		"publisher": "Activision",
 		"genre": ["Fighting"],
-		"imageMetadata": [
-			{
-				"imageURL": "",
-				"imageThumbnailURL": "/images/gameslist/x-men-mutant-academy-gb.jpg",
-				"thumbnailDimensions": {
-					"width": 250,
-					"height": 250
-				},
-				"loading": "lazy"
-			}
-		],		
+		"imageURL": "/images/gameslist/x-men-mutant-academy-gb.jpg",	
 		"status": "Completed",
 		"format": "Emulation",
 		"console": "GBC",
-		"completed": "Yes",
 		"dateBeaten": "01/05/2025"
 	},
 	{
@@ -158,21 +81,10 @@
 		"developer": "Designer Software",
 		"publisher": "Hi Tech Expressions",
 		"genre": ["Puzzle"],
-		"imageMetadata": [
-			{
-				"imageURL": "",
-				"imageThumbnailURL": "/images/gameslist/mickeys-ultimate-challenge-gb.webp",
-				"thumbnailDimensions": {
-					"width": 250,
-					"height": 250
-				},
-				"loading": "lazy"
-			}
-		],		
+		"imageURL": "/images/gameslist/mickeys-ultimate-challenge-gb.webp",	
 		"status": "Completed",
 		"format": "Emulation",
 		"console": "GB",
-		"completed": "Yes",
 		"dateBeaten": "01/07/2025"
 	},
 	{
@@ -180,21 +92,10 @@
 		"developer": "HAL Laboratory",
 		"publisher": "Nintendo",
 		"genre": ["Platformer"],
-		"imageMetadata": [
-			{
-				"imageURL": "",
-				"imageThumbnailURL": "/images/gameslist/kirbys-dream-land.webp",
-				"thumbnailDimensions": {
-					"width": 250,
-					"height": 250
-				},
-				"loading": "lazy"
-			}
-		],		
+		"imageURL": "/images/gameslist/kirbys-dream-land.webp",	
 		"status": "Completed",
 		"format": "Emulation",
 		"console": "GB",
-		"completed": "Yes",
 		"dateBeaten": "01/08/2025"
 	},
 	{
@@ -202,21 +103,10 @@
 		"developer": "Sega Technical Institute",
 		"publisher": "Sega",
 		"genre": ["Platformer"],
-		"imageMetadata": [
-			{
-				"imageURL": "",
-				"imageThumbnailURL": "/images/gameslist/sonic-3.webp",
-				"thumbnailDimensions": {
-					"width": 250,
-					"height": 250
-				},
-				"loading": "eager"
-			}
-		],		
+		"imageURL": "/images/gameslist/sonic-3.webp",	
 		"status": "Passively playing",
 		"format": "Emulation",
 		"console": "Mega Drive",
-		"completed": "No",
 		"dateBeaten": ""
 	},
 	{
@@ -224,21 +114,10 @@
 		"developer": "Square Enix (then Square)",
 		"publisher": "Square Enix (then Square)",
 		"genre": ["RPG"],
-		"imageMetadata": [
-			{
-				"imageURL": "",
-				"imageThumbnailURL": "/images/gameslist/final-fantasy.webp",
-				"thumbnailDimensions": {
-					"width": 250,
-					"height": 250
-				},
-				"loading": "lazy"
-			}
-		],		
+		"imageURL": "/images/gameslist/final-fantasy.webp",	
 		"status": "Completed",
 		"format": "Emulation",
 		"console": "WonderSwan Color",
-		"completed": "Yes",
 		"dateBeaten": "01/15/2025"
 	},
 	{
@@ -246,21 +125,10 @@
 		"developer": "Square Enix (then Square)",
 		"publisher": "Square Enix (then Square)",
 		"genre": ["RPG"],
-		"imageMetadata": [
-			{
-				"imageURL": "",
-				"imageThumbnailURL": "/images/gameslist/final-fantasy-iii.webp",
-				"thumbnailDimensions": {
-					"width": 250,
-					"height": 250
-				},
-				"loading": "eager"
-			}
-		],		
+		"imageURL": "/images/gameslist/final-fantasy-iii.webp",	
 		"status": "Actively playing",
 		"format": "Emulation",
 		"console": "NES",
-		"completed": "No",
 		"dateBeaten": ""
 	},
 	{
@@ -268,21 +136,10 @@
 		"developer": "HAL Laboratory",
 		"publisher": "Nintendo",
 		"genre": ["Platformer"],
-		"imageMetadata": [
-			{
-				"imageURL": "",
-				"imageThumbnailURL": "/images/gameslist/kirbys-dream-land-2.webp",
-				"thumbnailDimensions": {
-					"width": 250,
-					"height": 250
-				},
-				"loading": "eager"
-			}
-		],		
+		"imageURL": "/images/gameslist/kirbys-dream-land-2.webp",	
 		"status": "Completed",
 		"format": "Emulation",
 		"console": "GB",
-		"completed": "Yes",
 		"dateBeaten": "01/26/2025"
 	}
 ]
