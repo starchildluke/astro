@@ -4,7 +4,7 @@ description: "I can never settle."
 published: true
 pubDate: '01 Feb 2025'
 layout: ../../layouts/BlogPost.astro
-tags: ["design"]
+tags: ["the Internet"]
 ---
 
 You may or may not have noticed that I've updated the site design a little. The first thing that's changed is the header where I've switched the top-line nav for a centralised nav. I got bored of the top-line and reduce the number of nav links so it was smaller.
