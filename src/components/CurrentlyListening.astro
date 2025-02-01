@@ -4,22 +4,75 @@ import cl from '../data/cl.json'
 
 <style>
 	.cl-section {
-		margin: 6rem 0;
+		margin: 4rem auto;
+		padding: 2rem;
+		border-radius: 1.5rem;
+		max-width: 35rem;
+		background: rgba(198, 188, 181, 0.25);
+		backdrop-filter: blur(4px);
+		-webkit-backdrop-filter: blur(4px);
+		border: 1px solid rgba(255, 255, 255, 0.18);
+		box-shadow: 0.3px 0.5px 0.7px hsl(0deg 0% 63% / 0.34), 1.5px 2.9px 3.7px -0.4px hsl(0deg 0% 63% / 0.34), 2.7px 5.4px 6.8px -0.7px hsl(0deg 0% 63% / 0.34), 4.5px 8.9px 11.2px -1.1px hsl(0deg 0% 63% / 0.34), 7.1px 14.3px 18px -1.4px hsl(0deg 0% 63% / 0.34), 11.2px 22.3px 28.1px -1.8px hsl(0deg 0% 63% / 0.34), 17px 33.9px 42.7px -2.1px hsl(0deg 0% 63% / 0.34), 25px 50px 62.9px -2.5px hsl(0deg 0% 63% / 0.34);
 	}
-	.cl {
-  		font-style: italic;
+
+	.cl-section h2 {
+		text-align: center;
+	}
+
+	.cl-section h2, .cl strong {
+		color: #534a44;
+	}
+
+	.cl-songs {
+		display: flex;
+		align-items: center;
+		gap: 2rem;
+	}
+
+	.cl-songs #headphones {
+		font-size: 10rem;
+		padding: 0;
+	}
+
+	ul.cl {
+		padding: 0;
+		list-style: none;
+		margin: 0;
+	}
+
+	@media only screen and (max-width: 440px) {
+
+		h2 {
+			margin: 0;
+		}
+
+		.cl-songs {
+			flex-direction: column;
+			gap: 0;
+		}
+
+		.cl-songs #headphones {
+			font-size: 7.5rem;
+		}
+
+		ul.cl, .cl-section p {
+			text-align: center;
+			font-size: 0.85rem;
+			margin-bottom: 1rem;
+		}
 	}
 </style>
 
 <section class="cl-section">
 	<h2>My top songs right now</h2>
-	<div>
+	<div class="cl-songs">
+		<p id="headphones">🎧</p>
 		<ul class="cl">
 			{cl.map((track) => (
-			<li>{track.artist['#text']} - {track.name}</li>
+			<li><strong>{track.artist['#text']}</strong> - <em>{track.name}</em></li>
 			))
 			}
 		</ul>
-	<a href="https://www.last.fm/user/alex_ferguson">More from my Last.fm</a> and <a href="/lastfm-top-1000/">my Last.fm top 1000</a>
 	</div>
+	<p><a href="https://www.last.fm/user/alex_ferguson">More from my Last.fm</a> and <a href="/lastfm-top-1000/">my Last.fm top 1000</a></p>
 </section>

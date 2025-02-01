@@ -2,28 +2,67 @@
 // COMPONENTS
 
 import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
 
 // METADATA VARIABLES
 
-let title = '404';
-let description = 'Ruh roh. Looks like you hit a 404!';
+let title = 'Uh oh, looks like you hit a 404!';
+let description = "The page you are looking for is currently unavailable. Either the URL is wrong or I've messed up somewhere and the page isn't where it should be. Or I deleted it and it is the children who are wrong.";
 let canonicalURL = Astro.url;
 
 ---
+
+<style>
+
+  h1, body {
+    font-family: Verdana, sans-serif;
+  }
+
+  h1 {
+    font-size: 13pt;
+    font-weight: normal;
+  }
+  
+  body {
+    margin: 1rem;
+    max-width: 400px;
+    font-size: 8pt;
+  }
+
+  #flex-404 {
+    display: flex;
+    gap: 1rem;
+  }
+
+  hr {
+    margin-bottom: 1rem;
+    border: 1px solid #c0c0c0;    
+  }
+
+  p {
+    padding-bottom: 1rem;
+  }
+
+</style>
+
+
 <html lang="en-GB">
   <head>
     <BaseHead title={title} description={description} canonicalURL={canonicalURL} />
   </head>
   <body>
-  <Header />
-  <main class="layout">
-    <article class="content">
-        <h1>{title}</h1>
-      <p>Uh oh, looks like you hit a 404!</p>
-  </article>
-</main>
-<Footer />
+    <div id="flex-404">
+      <img src="/images/pagerror.gif" loading="eager" width="25" height="33" />
+      <h1>{title}</h1>
+    </div>
+      <p>{description}</p>
+      <hr>
+      <p>Please try the following:</p>
+          <ul>
+            <li>Click the Back button to try another link.</li>
+            <li>If you typed the page address in the Address bar, make sure that it is spelled correctly.</li>
+            <li>Take this as a chance to stop, get a drink, stretch (if you can), and take a deep breath.</li>
+            </ul>
+      <p>Cannot find server or DNS Error<br>Internet Explorer</p>
+
 </body>
 </html>

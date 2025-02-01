@@ -2,6 +2,7 @@
 // IMPORTS
 
 import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import { getCollection } from 'astro:content';
 
@@ -30,6 +31,7 @@ let description = "Cuttings, notes and things. These are my 'recortes', or 'cutt
     <div class="layout">
       <article class="content">
         <section class="intro">
+          <Header />
           <h1>{title}</h1>
         </section>
         <section>

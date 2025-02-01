@@ -1,6 +1,7 @@
 ---
 // COMPONENTS
 
+import Header from '../../../components/Header.astro';
 import Footer from '../../../components/Footer.astro';
 import Layout from '../../../layouts/Layout.astro';
 import Breadcrumbs from '../../../components/Breadcrumbs.astro';
@@ -19,6 +20,7 @@ let description = 'A wiki page all about Python.';
 <Layout {title} {description}>
     <main class="layout">
       <article class="content">
+        <Header />
         <Breadcrumbs title={title}/>
         <section class="intro">
           <h1>{title}</h1>

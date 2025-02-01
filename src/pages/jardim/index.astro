@@ -2,6 +2,7 @@
 // COMPONENTS
 
 import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import jardim from '../../data/jardim.json'
 
@@ -38,6 +39,7 @@ let description = "A digital garden, or jardim, full of the things I love, with 
       <main class="layout">
         <article class="content">
             <section class="intro">
+              <Header />
           <h1>{title}</h1>
         </section>
         <section>

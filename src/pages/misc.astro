@@ -1,0 +1,39 @@
+---
+// COMPONENTS
+
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+// METADATA VARIABLES
+
+let title = 'Misc';
+let description = 'Lots of miscellaneous pages on the site.';
+
+---
+<html lang="en-GB">
+  <head>
+    <BaseHead title={title} description={description} canonicalURL={Astro.url} />
+  </head>
+  <body>
+  <main class="layout">
+    <article class="content">
+      <Header />
+        <h1>{title}</h1>
+        <p>this is my miscellaneous page with links to pages that don't go anywhere else.</p>
+      <ul>
+        <li><a href="/uses/">uses</a> - the tech that i use</li>
+        <li><a href="/projects/">projects</a> - all the projects that i work on</li>
+        <li><a href="/press/">press</a> - various articles i've written and videos i've featured in</li>
+        <li><a href="/mlog/">mlog</a> - my media logs</li>
+        <li><a href="/music/">music</a> - all my music</li>
+          <li><a href="/fave-tweets/">fave tweets</a> - my favourite tweets</li>
+          <li><a href="/important-albums/">important albums</a> - albums that are important to me</li>
+          <li><a href="/letterboxd-diaries/">letterboxd diaries</a> - all the films i've logged on Letterboxd since 2018</li>
+          <li><a href="/gameslist/">gameslist</a> - all the games i've been playing lately</li>
+      </ul>
+  </article>
+</main>
+<Footer />
+</body>
+</html>

@@ -1,6 +1,5 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
 import StructuredData from '../components/StructuredData.astro';
 import BreadcrumbsSD from '../components/BreadcrumbsSD.astro';
 
@@ -20,7 +19,6 @@ const { title, description, pubDate, canonicalURL = Astro.url, url } = Astro.pro
   <StructuredData {title} {pubDate} />
   {canonicalURL.href.indexOf("jardim") ? <BreadcrumbsSD url={canonicalURL} /> : null}
   <body>
-    <Header />
       <slot />
   </body>
 </html>

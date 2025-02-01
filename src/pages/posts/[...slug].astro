@@ -1,6 +1,7 @@
 ---
 import BlogPost from '../../layouts/BlogPost.astro';
 import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import { getCollection } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
@@ -41,11 +42,14 @@ const { Content } = await post.render();
 <BlogPost {...post.data}>
   <main class="layout">
     <article class="content">
-      <p class="publish-date"><FormattedDate date={post.data.pubDate} /></p>
-        <h1>{post.data.title}</h1>
-        <FiledUnder tags={post.data.tags}/>
-          <Content />
-            <PrevNextLinking contentType="posts" prevPost={prevPost.data} nextPost={nextPost.data} prevSlug={prevPost?.slug} prevTitle={prevPost.data?.title} nextSlug={nextPost?.slug} nextTitle={nextPost.data?.title} />
+      <Header />
+      <div style="margin-top:4rem;">
+        <p class="publish-date"><FormattedDate date={post.data.pubDate} /></p>
+              <h1>{post.data.title}</h1>
+              <FiledUnder tags={post.data.tags}/>
+                <Content />
+                  <PrevNextLinking contentType="posts" prevPost={prevPost.data} nextPost={nextPost.data} prevSlug={prevPost?.slug} prevTitle={prevPost.data?.title} nextSlug={nextPost?.slug} nextTitle={nextPost.data?.title} />
+                </div>
     </article>
   </main>
 <Footer />

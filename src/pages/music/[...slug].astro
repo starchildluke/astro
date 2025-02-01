@@ -42,6 +42,7 @@ const { Content } = await album.render();
 <BlogPost {...album.data}>
   <main class="layout">
     <article class="content">
+      <p><a href="/music/">← Back</a></p>
       <p class="publish-date"><FormattedDate date={album.data.pubDate} /></p>
           <AlbumCard title={album.data.title}, linerNotes={album.data.linerNotes}, pubDate={album.data.pubDate}, image={album.data.image} url={album.data.url ? album.data.url : album.body}>
             <Content />

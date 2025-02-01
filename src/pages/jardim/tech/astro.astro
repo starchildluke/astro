@@ -1,6 +1,7 @@
 ---
 // COMPONENTS
 
+import Header from '../../../components/Header.astro';
 import Footer from '../../../components/Footer.astro';
 import Layout from '../../../layouts/Layout.astro';
 import Breadcrumbs from '../../../components/Breadcrumbs.astro';
@@ -15,6 +16,7 @@ let description = 'A page all about Astro.';
 <Layout {title} {description}>
 <div class="layout">
   <article class="content">
+    <Header />
     <Breadcrumbs title={title}/>
 
     <section class="intro">

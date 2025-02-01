@@ -32,17 +32,16 @@ const { page } = Astro.props;
   </head>
 
   <body>
-    <Header />
     <div class="layout">
       <article class="content">
         <section class="intro">
+          <Header />
           <h1>{title}</h1>
         </section>
-        <section>
+        <section class="bottom-gap">
           <p>This is a list of code snippets and scripts I've written. Not too big, not too small. They're like tasty morsels.</p>
           <p>You can also follow my morsels <a href="/morsels.xml">RSS feed</a>.</p>
         </section>
-        <hr>
     <section>
        <ul class="post-list">
       {page.data.map(morsel => (

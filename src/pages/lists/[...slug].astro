@@ -1,6 +1,7 @@
 ---
 import Lists from '../../layouts/Lists.astro';
 import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import { getCollection } from 'astro:content';
 import FormattedDate from '../../components/FormattedDate.astro';
@@ -37,6 +38,7 @@ const { Content } = await post.render();
 <Lists {...post.data}>
   <main class="layout">
     <article class="content">
+      <Header />
       <p class="publish-date"><FormattedDate date={post.data.pubDate} /></p>
         <h1>{post.data.title}</h1>
           <Content />

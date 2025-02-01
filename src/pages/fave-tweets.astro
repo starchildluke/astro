@@ -18,9 +18,9 @@ let canonicalURL = Astro.url;
     <BaseHead title={title} description={description} canonicalURL={canonicalURL} />
   </head>
   <body>
-    <Header />
     <main class="layout">
       <article class="content">
+        <Header />
         <h1>{title}</h1>
         <p>Here is a selection of my favourite tweets and Bluesky posts, with direct links and a screenshot in case they get deleted.</p>
         <h2>Tweets</h2>

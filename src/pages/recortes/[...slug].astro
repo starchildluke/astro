@@ -1,6 +1,7 @@
 ---
 import Recortes from '../../layouts/Recortes.astro';
 import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import { getCollection } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
@@ -39,6 +40,7 @@ const { Content } = await post.render();
 <Recortes {...post.data}>
   <main class="layout">
     <article class="content">
+      <Header />
       <p class="publish-date">{post.data.pubDate}</p>
         <h1>{post.data.title}</h1>
           <Content />

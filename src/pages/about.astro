@@ -18,9 +18,9 @@ let canonicalURL = Astro.url;
     <BaseHead title={title} description={description} canonicalURL={canonicalURL} />
   </head>
   <body>
-  <Header />
   <main class="layout">
     <article class="content">
+      <Header />
         <h1>{title} me</h1>
       <AboutPage />
       <p>Page last updated: <time></time></p>

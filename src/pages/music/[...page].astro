@@ -1,5 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import FormattedDate from '../../components/FormattedDate.astro';
 import { getCollection } from 'astro:content';
@@ -95,17 +96,17 @@ const rgb = {
     <div class="layout">
       <article class="content">
         <section class="intro">
+          <Header />
           <h1>{fullTitle}</h1>
         </section>
-        <section>
+        <section class="bottom-gap">
           <p>{description}</p>
           <p>While I mainly upload my music to Bandcamp, I wanted somewhere to write more about the production process and what inspired me to make music.</p>
         </section>
     {albumGroups.map(({ year, items }) => (
   <section>
-    <hr>
     <h2>{year}</h2>
-    <ul class="album-list">
+    <ul class="album-list bottom-gap">
     {items.map((album) => (
       <li class="album-listing">
       <div class="album-img">
