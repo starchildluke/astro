@@ -141,5 +141,27 @@
 		"format": "Emulation",
 		"console": "GB",
 		"dateBeaten": "01/26/2025"
+	},
+	{
+		"name": "Kirby's Dream Land 3",
+		"developer": "HAL Laboratory",
+		"publisher": "Nintendo",
+		"genre": ["Platformer"],
+		"imageURL": "/images/gameslist/kirbys-dream-land-3.webp",	
+		"status": "Actively playing",
+		"format": "Emulation",
+		"console": "SNES",
+		"dateBeaten": ""
+	},
+	{
+		"name": "Final Fantasy IV",
+		"developer": "Square Enix (then Square)",
+		"publisher": "Square Enix (then Square)",
+		"genre": ["RPG"],
+		"imageURL": "/images/gameslist/final-fantasy-iv.webp",	
+		"status": "Actively playing",
+		"format": "Emulation",
+		"console": "SNES",
+		"dateBeaten": ""
 	}
 ]
