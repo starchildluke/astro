@@ -22,13 +22,13 @@ a:visited {
     color: #9663C4;
 }
 
-// The Pantone PQ-7448C version
+/* The Pantone PQ-7448C version */
 
 a:visited {
     color: #4B384C;
 }
 
-// Or the CSS custom variables option
+/* Or the CSS custom variables option */
 
 :root {
     --princepurple: #9663C4;

@@ -11,13 +11,13 @@ It's tough out there (or should that be in here?) and because I don't watch TV, 
 
 ## 1. Jamie Foxx roasting Doug Williams
 
-[Watch on YouTube](https://www.youtube.com/watch?v=tq2ivETREGo)
+[Watch on YouTube](https://www.youtube.com/watch?v=YaZ2LcEYq3o)
 
 It's old but I found this again via another video and it's been good to revisit this hilarious meta-roast and get some laughs.
 
 ## 2. Prince's While My Guitar Gently weeps guitar solo, but with More Prince
 
-[Watch on YouTube](https://www.youtube.com/watch?v=dWRCooFKk3c)
+[Watch on YouTube](https://youtu.be/dWRCooFKk3c?si=svs_FJJlRyGxm1Rp&t=206)
 
 Another classic I regularly watch but this new version has more close ups of Prince and my goodness, it's even better. I actually welled up today watching it. Breathtaking.
 
