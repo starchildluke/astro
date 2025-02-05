@@ -1,0 +1,50 @@
+---
+// COMPONENTS
+
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import Tags from '../../components/Tags.astro';
+
+// METADATA VARIABLES
+
+let title = 'Jamaica';
+let description = 'A wiki page all about Jamaica.';
+
+---
+<Layout {title} {description}>
+      <main class="layout">
+        <article class="content">
+          <Header />
+          <Breadcrumbs title={title}/>
+            <section class="intro">
+              <h1>{title}</h1>
+              <p class="desc">{description}</p>
+              <p>Jamaica is an island country in the Caribbean Sea and my mum's birthplace. This page contains a variety of links to posts and resources about the nation, its rich culture, and heritage that means a lot to me.</p>
+            </section>
+            <section>
+              <h2 class="wiki-h2">Inner voice</h2>
+              <Tags tagName="Jamaica" />
+            </section>
+            <section>
+              <h2 class="wiki-h2">Out loud</h2>
+              <ul>
+                <li><a href="https://strrchildluke.bandcamp.com/album/desert-goose">Desert Goose, an album featuring Jamaican music samples</a></li>
+                <li><a href="https://sampleface.co.uk/tag/jamaica/">Jamaica on Sampleface</a></li>
+                <li><a href="https://cultrface.co.uk/tag/jamaica/">Jamaica on Cultrface</a></li>
+                <li><a href="https://logicface.co.uk/tag/jamaica/">Jamaica on LOGiCFACE</a></li>
+                <li><a href="https://playrface.co.uk/tag/jamaica/">Jamaica on Playrface</a></li>
+              </ul>
+              <h2 class="wiki-h2">Second opinions</h2>
+                <p>Coming soon...</p>
+            </section>
+        </article>
+      
+      </main>
+    
+    <Footer/>
+  
+  </body>
+
+</html>
