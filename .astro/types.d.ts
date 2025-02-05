@@ -1670,6 +1670,13 @@ declare module 'astro:content' {
   collection: "posts";
   data: any
 } & { render(): Render[".md"] };
+"questions-about-my-blog.md": {
+	id: "questions-about-my-blog.md";
+  slug: "questions-about-my-blog";
+  body: string;
+  collection: "posts";
+  data: any
+} & { render(): Render[".md"] };
 "rip-mj-8-years-on.md": {
 	id: "rip-mj-8-years-on.md";
   slug: "rip-mj-8-years-on";
