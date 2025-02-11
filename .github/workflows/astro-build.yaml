@@ -37,8 +37,8 @@ jobs:
           CI: true
           SITE_URL: ${{ inputs.site-url }}
         run: |
-          pnpm ci
-          pnpm run build
+          npm ci
+          npm run build
 
 # Please do not touch the following action
       - name: Store deployment content
