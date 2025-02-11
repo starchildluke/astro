@@ -5,8 +5,10 @@ pubDate: '22 Aug 2020'
 layout: ../../layouts/Recortes.astro
 tags: ['art']
 ---
-
-![Keith Haring - POP SHOP III (3), 1989 SCREENPRINT](/images/keith-haring.jpeg)
+<figure style="aspect-ratio: 1.15:1;">
+	<img src="/images/keith-haring.jpeg" alt="" loading="eager"/>
+	<figcaption>Keith Haring - POP SHOP III (3), 1989 SCREENPRINT</figcaption>
+</figure>
 
 [This Keith Haring piece is worth $39,500.](https://www.artsy.net/artwork/keith-haring-pop-shop-iii-3-2)
 

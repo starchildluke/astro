@@ -7,8 +7,8 @@ layout: ../../layouts/BlogPost.astro
 tags: ['poetry', 'writing']
 ---
 
-the cold clings to the inside of my lungs
-like a crisp winter coat
-maybe I should put one on
-after I score another goal
-and run around in a blaze of glory
+the cold clings to the inside of my lungs  
+like a crisp winter coat  
+maybe I should put one on  
+after I score another goal  
+and run around in a blaze of glory  

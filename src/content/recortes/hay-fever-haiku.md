@@ -6,4 +6,6 @@ layout: ../../layouts/Recortes.astro
 tags: ['writing']
 ---
 
-Blast this hay fever / My missed journeys through Nature / And unsmelled flowers
+Blast this hay fever  
+My missed journeys through Nature  
+And unsmelled flowers

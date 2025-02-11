@@ -6,6 +6,6 @@ layout: ../../layouts/Recortes.astro
 tags: ['writing', 'tech']
 ---
 
-Discount computers.
-Affordable components.
-It was deals galore.
+Discount computers.  
+Affordable components.  
+It was deals galore.  

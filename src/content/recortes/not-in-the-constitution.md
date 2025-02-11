@@ -1,6 +1,6 @@
 ---
-title: 'Things that aren&#39;t in the U.S. Constitution'
-description: "I get sick of hearing about 'freedom of speech'', especially in the UK who have, like a lot of things, adopted it from the US because they have no ideas of their own"
+title: "Things that aren't in the U.S. Constitution"
+description: "I get sick of hearing about 'freedom of speech', especially in the UK who have, like a lot of things, adopted it from the US because they have no ideas of their own"
 published: true
 pubDate: '24 Aug 2020'
 layout: ../../layouts/BlogPost.astro
