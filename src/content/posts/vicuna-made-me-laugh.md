@@ -7,7 +7,7 @@ layout: ../../layouts/BlogPost.astro
 tags: ["AI", 'tech']
 ---
 
-Two weeks ago, I found [Vicuna](https://chat.lmsys.org/), "an open-source chatbot impressing GPT-4 with 90%* ChatGPT quality". I knew to take that 90% stat with a pinch of salt, regarless of the asterisk, but wanted to try it.
+Two weeks ago, I found [Vicuna](https://lmsys.org/blog/2023-03-30-vicuna/), "an open-source chatbot impressing GPT-4 with 90%* ChatGPT quality". I knew to take that 90% stat with a pinch of salt, regarless of the asterisk, but wanted to try it.
 
 For my prompt, I tried something I've been using on GPT3.5:
 
