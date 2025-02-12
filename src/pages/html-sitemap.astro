@@ -26,82 +26,79 @@ let canonicalURL = Astro.url;
 
 ---
 
-<html lang="en-GB">
-  <head>
-    <BaseHead title={title} description={description} canonicalURL={canonicalURL} />
-  </head>
+<BaseHead title={title} description={description} canonicalURL={canonicalURL} />
 <body>
   <Header />
-   <main class="layout">
+    <main class="layout">
       <article class="content">
-          <h1>{title}</h1>
-          <p>A HTML sitemap is a page that usually contains links to every page on a site. This gives search engines easy access to your site for crawling as it takes just one step to get to everything. (Note that a HTML sitemap is different to an <a href="https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap">XML sitemap</a>.)</p>
-          <p>It's recommended to have a robust internal linking strategy instead but this is a decent accompaniment or workaround if that isn't possible.</p>
-          <p>HTML sitemaps were more popular in the 90s and early 00s but have since gone out of fashion. That doesn't mean they aren't useful, from a SEO perspective. It's also handy for me!</p>
-          <h2>Pages</h2>
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about/">About</a></li>
-            <li><a href="/uses/">Uses</a></li>
-            <li><a href="/posts/">Posts</a></li>
-            <li><a href="/jardim/">Jardim</a></li>
-            <li><a href="/mlog/">Mlog</a></li>
-            <li><a href="/music/">Music</a></li>
-            <li><a href="/projects/">Projects</a></li>
-            <li><a href="/projects/sampleface/">Sampleface project page</a>
-            <li><a href="/projects/cultrface/">Cultrface project page</a>
-            <li><a href="/projects/logicface/">LOGiCFACE project page</a>
-            <li><a href="/projects/playrface/">Playrface project page</a>
-            <li><a href="/projects/distantarcade/">Distant Arcade project page</a>
-            <li><a href="/projects/emptygold-blogger/">Emptygold Blogger project page</a>
-            <li><a href="/projects/pandog-media/">Pandog Media project page</a>
-            <li><a href="/press/">Press</a></li>
-            <li><a href="/support/">Support</a></li>
-            <li><a href="/release-notes/">Release Notes</a></li> 
-            <li><a href="/morsels/">Morsels</a></li> 
-            <li><a href="/lists/">Lists</a></li> 
-            <li><a href="/recortes/">Recortes</a></li> 
-            <li><a href="/linkblog/">Linkblog</a></li> 
-            <li><a href="/fave-tweets/">Fave Tweets</a></li> 
-            <li><a href="/important-albums/">Important Albums</a></li> 
-            <li><a href="/lastfm-top-1000/">Last.fm Top 1000</a></li> 
-            <li><a href="/letterboxd-diaries/">Letterboxd Diaries</a></li>
-            <li><a href="/gameslist/">Gameslist</a></li>
-          </ul>
-          <h2>Jardim</h2>
-          <ul>
-            {allJardim.map( (jardim) => <li><a href=`${jardim.url}/`>{jardim.url}</a></li> )}
-          </ul>
-          <h2>Posts</h2>
-          <ul>
-            {allPosts.map( (post) => <li><a href=`/posts/${post.slug}/`>{post.data.title}</a></li>)}
-          </ul>
-          <h2>Lists</h2>
-              <ul>
-                {allLists.map( (post) => <li><a href=`/lists/${post.slug}/`>{post.data.title}</a></li>)}
-              </ul>
-          <h2>Mlogs</h2>
-              <ul>
-                {allMlogs.sort((a, b) => collator.compare(a.data.title, b.data.title)).map( (post) => <li><a href=`/mlog/${post.slug}/`>{post.data.title}</a></li>)}
-              </ul>
-          <h2>Morsels</h2>
-              <ul>
-                {allMorsels.sort((a, b) => collator.compare(a.data.title, b.data.title)).map( (post) => <li><a href=`/morsels/${post.slug}/`>{post.data.title}</a></li>)}
-              </ul>
-          <h2>Music</h2>
-              <ul>
-                {allAlbums.map( (post) => <li><a href=`/music/${post.slug}/`>{post.data.title}</a></li>)}
-              </ul>
-          <h2>Recortes</h2>
-              <ul>
-                {allRecortes.map( (post) => <li><a href=`/recortes/${post.slug}/`>{post.data.title}</a></li>)}
-              </ul>
-          <h2>Release Notes</h2>
-              <ul>
-                {allReleaseNotes.sort((a, b) => collator.compare(a.data.title, b.data.title)).map( (post) => <li><a href=`/release-notes/${post.slug}/`>{post.data.title}</a></li>)}
-              </ul>
+        <h1>{title}</h1>
+        <p>A HTML sitemap is a page that usually contains links to every page on a site. This gives search engines easy access to your site for crawling as it takes just one step to get to everything. (Note that a HTML sitemap is different to an <a href="https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap">XML sitemap</a>.)</p>
+        <p>It's recommended to have a robust internal linking strategy instead but this is a decent accompaniment or workaround if that isn't possible.</p>
+        <p>HTML sitemaps were more popular in the 90s and early 00s but have since gone out of fashion. That doesn't mean they aren't useful, from a SEO perspective. It's also handy for me!</p>
+        <h2>Pages</h2>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/uses/">Uses</a></li>
+          <li><a href="/posts/">Posts</a></li>
+          <li><a href="/jardim/">Jardim</a></li>
+          <li><a href="/mlog/">Mlog</a></li>
+          <li><a href="/music/">Music</a></li>
+          <li><a href="/projects/">Projects</a></li>
+          <li><a href="/projects/sampleface/">Sampleface project page</a>
+          <li><a href="/projects/cultrface/">Cultrface project page</a>
+          <li><a href="/projects/logicface/">LOGiCFACE project page</a>
+          <li><a href="/projects/playrface/">Playrface project page</a>
+          <li><a href="/projects/distantarcade/">Distant Arcade project page</a>
+          <li><a href="/projects/emptygold-blogger/">Emptygold Blogger project page</a>
+          <li><a href="/projects/pandog-media/">Pandog Media project page</a>
+          <li><a href="/press/">Press</a></li>
+          <li><a href="/support/">Support</a></li>
+          <li><a href="/release-notes/">Release Notes</a></li>
+          <li><a href="/morsels/">Morsels</a></li>
+          <li><a href="/lists/">Lists</a></li>
+          <li><a href="/recortes/">Recortes</a></li>
+          <li><a href="/linkblog/">Linkblog</a></li>
+          <li><a href="/fave-tweets/">Fave Tweets</a></li>
+          <li><a href="/important-albums/">Important Albums</a></li>
+          <li><a href="/lastfm-top-1000/">Last.fm Top 1000</a></li>
+          <li><a href="/letterboxd-diaries/">Letterboxd Diaries</a></li>
+          <li><a href="/gameslist/">Gameslist</a></li>
+        </ul>
+        <h2>Jardim</h2>
+        <ul>
+          {allJardim.map( (jardim) => <li><a href=`${jardim.url}/`>{jardim.url}</a></li> )}
+        </ul>
+        <h2>Posts</h2>
+        <ul>
+          {allPosts.map( (post) => <li><a href=`/posts/${post.slug}/`>{post.data.title}</a></li>)}
+        </ul>
+        <h2>Lists</h2>
+        <ul>
+          {allLists.map( (post) => <li><a href=`/lists/${post.slug}/`>{post.data.title}</a></li>)}
+        </ul>
+        <h2>Mlogs</h2>
+        <ul>
+          {allMlogs.sort((a, b) => collator.compare(a.data.title, b.data.title)).map( (post) => <li><a href=`/mlog/${post.slug}/`>{post.data.title}</a></li>)}
+        </ul>
+        <h2>Morsels</h2>
+        <ul>
+          {allMorsels.sort((a, b) => collator.compare(a.data.title, b.data.title)).map( (post) => <li><a href=`/morsels/${post.slug}/`>{post.data.title}</a></li>)}
+        </ul>
+        <h2>Music</h2>
+        <ul>
+          {allAlbums.map( (post) => <li><a href=`/music/${post.slug}/`>{post.data.title}</a></li>)}
+        </ul>
+        <h2>Recortes</h2>
+        <ul>
+          {allRecortes.map( (post) => <li><a href=`/recortes/${post.slug}/`>{post.data.title}</a></li>)}
+        </ul>
+        <h2>Release Notes</h2>
+        <ul>
+          {allReleaseNotes.sort((a, b) => collator.compare(a.data.title, b.data.title)).map( (post) => <li><a href=`/release-notes/${post.slug}/`>{post.data.title}</a></li>)}
+        </ul>
       </article>
-          </main>
-           <Footer/>
-  </body>
-</html>
+    </main>
+    <Footer/>
+    </body>
+  </html>

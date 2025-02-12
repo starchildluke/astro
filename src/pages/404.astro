@@ -45,24 +45,20 @@ let canonicalURL = Astro.url;
 </style>
 
 
-<html lang="en-GB">
-  <head>
-    <BaseHead title={title} description={description} canonicalURL={canonicalURL} />
-  </head>
-  <body>
-    <div id="flex-404">
-      <img src="/images/pagerror.gif" loading="eager" width="25" height="33" />
-      <h1>{title}</h1>
-    </div>
-      <p>{description}</p>
-      <hr>
-      <p>Please try the following:</p>
-          <ul>
-            <li>Click the Back button to try another link.</li>
-            <li>If you typed the page address in the Address bar, make sure that it is spelled correctly.</li>
-            <li>Take this as a chance to stop, get a drink, stretch (if you can), and take a deep breath.</li>
-            </ul>
-      <p>Cannot find server or DNS Error<br>Internet Explorer</p>
-
+<BaseHead title={title} description={description} canonicalURL={canonicalURL} />
+<body>
+<div id="flex-404">
+  <img src="/images/pagerror.gif" loading="eager" width="25" height="33" />
+  <h1>{title}</h1>
+</div>
+<p>{description}</p>
+<hr>
+<p>Please try the following:</p>
+<ul>
+  <li>Click the Back button to try another link.</li>
+  <li>If you typed the page address in the Address bar, make sure that it is spelled correctly.</li>
+  <li>Take this as a chance to stop, get a drink, stretch (if you can), and take a deep breath.</li>
+</ul>
+<p>Cannot find server or DNS Error<br>Internet Explorer</p>
 </body>
 </html>

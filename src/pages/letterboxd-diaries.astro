@@ -21,12 +21,9 @@ let description = 'All the movies I\'ve watched and logged since my Letterboxd a
 let canonicalURL = Astro.url;
 
 ---
-<html lang="en">
-  <head>
-    <BaseHead title={title} description={description} canonicalURL={canonicalURL} />
-  </head>
-  <body>
-    <Header />
+<BaseHead title={title} description={description} canonicalURL={canonicalURL} />
+<body>
+  <Header />
     <main class="layout">
       <article class="content">
         <h1>{title}</h1>
@@ -36,40 +33,40 @@ let canonicalURL = Astro.url;
         <h2 id="2024">2024</h2>
         <details>
         <summary>Reveal 2024 table</summary>
-          <Letterboxd boxdYear={boxd_2024} />
+        <Letterboxd boxdYear={boxd_2024} />
         </details>
         <h2 id="2023">2023</h2>
         <details>
         <summary>Reveal 2023 table</summary>
-          <Letterboxd boxdYear={boxd_2023} />
+        <Letterboxd boxdYear={boxd_2023} />
         </details>
         <h2 id="2022">2022</h2>
         <details>
         <summary>Reveal 2022 table</summary>
-          <Letterboxd boxdYear={boxd_2022} />
+        <Letterboxd boxdYear={boxd_2022} />
         </details>
         <h2 id="2021">2021</h2>
         <details>
         <summary>Reveal 2021 table</summary>
-          <Letterboxd boxdYear={boxd_2021} />
+        <Letterboxd boxdYear={boxd_2021} />
         </details>
         <h2 id="2020">2020</h2>
         <details>
         <summary>Reveal 2020 table</summary>
-          <Letterboxd boxdYear={boxd_2020} />
+        <Letterboxd boxdYear={boxd_2020} />
         </details>
         <h2 id="2019">2019</h2>
         <details>
         <summary>Reveal 2019 table</summary>
-          <Letterboxd boxdYear={boxd_2019} />
+        <Letterboxd boxdYear={boxd_2019} />
         </details>
         <h2 id="2018">2018</h2>
         <details>
         <summary>Reveal 2018 table</summary>
-          <Letterboxd boxdYear={boxd_2018} />
+        <Letterboxd boxdYear={boxd_2018} />
         </details>
       </article>
     </main>
     <Footer/>
-  </body>
-</html>
+    </body>
+  </html>

@@ -13,38 +13,36 @@ let description = 'A list of my favourite tweets and Bluesky posts.';
 let slug = '/fave-tweets/';
 let canonicalURL = Astro.url;
 ---
-<html lang="en-GB">
-  <head>
-    <BaseHead title={title} description={description} canonicalURL={canonicalURL} />
-  </head>
-  <body>
-    <main class="layout">
-      <article class="content">
-        <Header />
+
+<BaseHead title={title} description={description} canonicalURL={canonicalURL} />
+<body>
+  <main class="layout">
+    <article class="content">
+      <Header />
         <h1>{title}</h1>
         <p>Here is a selection of my favourite tweets and Bluesky posts, with direct links and a screenshot in case they get deleted.</p>
         <h2>Tweets</h2>
         <ol>
-        {tweetsAndPosts.tweets.map(
+          {tweetsAndPosts.tweets.map(
           (tweet) => (
-            <li>
-              <a href={tweet.link}>{tweet.author} on Twitter</a>{tweet.screenshotUrl ? <span> (<a href={tweet.screenshotUrl}>{tweet.type}</a>)</span> : ""}
-            </li>
-            )
-        )}
-      </ol>
-          <h2>Bluesky posts</h2>
-          <ol>
-        {tweetsAndPosts.posts.map(
+          <li>
+            <a href={tweet.link}>{tweet.author} on Twitter</a>{tweet.screenshotUrl ? <span> (<a href={tweet.screenshotUrl}>{tweet.type}</a>)</span> : ""}
+          </li>
+          )
+          )}
+        </ol>
+        <h2>Bluesky posts</h2>
+        <ol>
+          {tweetsAndPosts.posts.map(
           (post) => (
-            <li>
-              <a href={post.link}>{post.author} on Twitter</a>{post.screenshotUrl ? <span> (<a href={post.screenshotUrl}>{post.type}</a>)</span> : ""}
-            </li>
-            )
-        )}
-      </ol>
-        </article>
-      </main>
-      <Footer/>
+          <li>
+            <a href={post.link}>{post.author} on Twitter</a>{post.screenshotUrl ? <span> (<a href={post.screenshotUrl}>{post.type}</a>)</span> : ""}
+          </li>
+          )
+          )}
+        </ol>
+      </article>
+    </main>
+    <Footer/>
     </body>
   </html>

@@ -36,19 +36,17 @@ let sortedWritings = allWritings.sort((a, b) => new Date(b.data.pubDate) - new D
 	}
 </style>
 
-<html lang="en-GB">
-  <head>
-    <BaseHead title={metaTitle} description={description} canonicalURL={Astro.url} />
-  </head>
-  <body>
-  	<h1>Posts & notes index</h1>
-  	<ul>
-              {sortedWritings.map((post) => (
-                <li>
-                <a href={`/${post.collection}/${post.slug}/`}><Fragment set:html={post.data.title}></a> / <span class="tag" data-tag={post.collection}>{post.collection}</span> / <span><FormattedDate date={post.data.pubDate} /></span>
-                </li>
-              ))}
-              </ul>
-  </body>
-  </html>
+
+<BaseHead title={metaTitle} description={description} canonicalURL={Astro.url} />
+<body>
+	<h1>Posts & notes index</h1>
+	<ul>
+		{sortedWritings.map((post) => (
+		<li>
+			<a href={`/${post.collection}/${post.slug}/`}><Fragment set:html={post.data.title}></a> / <span class="tag" data-tag={post.collection}>{post.collection}</span> / <span><FormattedDate date={post.data.pubDate} /></span>
+		</li>
+		))}
+	</ul>
+</body>
+</html>
 

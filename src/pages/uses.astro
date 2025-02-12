@@ -14,19 +14,17 @@ let description = 'A page about the tech that I use.';
 let canonicalURL = Astro.url;
 
 ---
-<html lang="en-GB">
-  <head>
-    <BaseHead title={title} description={description} canonicalURL={canonicalURL} />
-  </head>
-  <body>
+
+<BaseHead title={title} description={description} canonicalURL={canonicalURL} />
+<body>
   <main class="layout">
     <article class="content">
       <Header />
         <h1>What I use</h1>
-      <p>Here is a detailed list of the tech that I use.</p>
-      <UsesPage />
-  </article>
-</main>
-<Footer></Footer>
+        <p>Here is a detailed list of the tech that I use.</p>
+        <UsesPage />
+      </article>
+    </main>
+  <Footer></Footer>
 </body>
 </html>

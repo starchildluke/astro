@@ -21,37 +21,34 @@ let description = 'A list of my important albums in my life.';
 let canonicalURL = Astro.url;
 ---
 
-<html lang="en-GB">
-  <head>
-    <BaseHead title={title} description={description} canonicalURL={canonicalURL} />
-  </head>
+<BaseHead title={title} description={description} canonicalURL={canonicalURL} />
 <body>
   <Header />
     <main class="layout">
       <article class="content">
-          <h1>{title}</h1>
-          <p>This is a list of all the important albums I've listened to in my life. They've saved me, inspired me, given me life, made me think, laugh, smile, cry, and everything in between.</p>
-            <table>
-              <thead>
-                <tr>
-                  <th>Artist</th>
-                  <th>Album</th>
-                  <th>Release Date</th>
-                  <th>Why it's important</th>
-                </tr>
-              </thead>
-              {albums.albums.map((item) => ( 
-              <tr>
-                  <td>{item.artist}</td>
-                  <td>{item.album}</td>
-                  <td>{item.release_date}</td>
-                  <td>{item.importance}</td>
-                </tr>
-              ))}
-            </table>            
-              </article>
-            </main>
-            <AlbumsStructuredData />
+        <h1>{title}</h1>
+        <p>This is a list of all the important albums I've listened to in my life. They've saved me, inspired me, given me life, made me think, laugh, smile, cry, and everything in between.</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Artist</th>
+              <th>Album</th>
+              <th>Release Date</th>
+              <th>Why it's important</th>
+            </tr>
+          </thead>
+          {albums.albums.map((item) => (
+          <tr>
+            <td>{item.artist}</td>
+            <td>{item.album}</td>
+            <td>{item.release_date}</td>
+            <td>{item.importance}</td>
+          </tr>
+          ))}
+        </table>
+      </article>
+    </main>
+    <AlbumsStructuredData />
       <Footer/>
-  </body>
-</html>
+      </body>
+    </html>
