@@ -3,7 +3,6 @@ title: "I've updated my website again"
 description: "I can never settle."
 published: true
 pubDate: '01 Feb 2025'
-layout: ../../layouts/BlogPost.astro
 tags: ["the Internet"]
 ---
 

@@ -2,7 +2,6 @@
 title: "RIP MJ - 8 Years On"
 description: "I can't believe it's been 9 years since Michael Jackson died."
 pubDate: "25 Jun 2017"
-layout: ../../layouts/BlogPost.astro
 tags: ['music', 'Black']
 ---
 

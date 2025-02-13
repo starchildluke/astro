@@ -2,7 +2,6 @@
 title: 'Halt and Make Fire'
 description: "Over the past week, I've been studying early internet culture (inspired by Halt and Catch Fire) and it's really made me think about how SEO is structured now compared to back then."
 pubDate: '10 Aug 2020'
-layout: ../../layouts/BlogPost.astro
 tags: ['the Internet', 'tech']
 ---
 

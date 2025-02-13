@@ -2,7 +2,6 @@
 title: "Trolls and pills"
 description: "Taken from a 2006 NYT article called How to Be a Curmudgeon on the Internet"
 published: true
-layout: ../../layouts/BlogPost.astro
 pubDate: "8 Sep 2020"
 tags: ['the Internet']
 ---

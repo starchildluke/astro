@@ -3,7 +3,6 @@ title: 'I bought a GameSir G8 Galileo and a Peladn WI-6 mini PC'
 description: "Or, why I didn't spend £300 on a Switch OLED"
 published: true
 pubDate: 17 Jul 2024
-layout: ../../layouts/BlogPost.astro
 tags: ['gaming', 'tech']
 ---
 

@@ -3,7 +3,6 @@ title: 'Visualising @nyt_said_first'
 description: "The people behind @nyt_first_said created a visual 'machine' of how they find the unique words they tweet."
 published: true
 pubDate: '27 Aug 2020'
-layout: ../../layouts/BlogPost.astro
 tags: ['writing', 'social media']
 ---
 

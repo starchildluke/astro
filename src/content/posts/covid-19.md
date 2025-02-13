@@ -3,7 +3,6 @@ title: Eff COVID-19
 description: "Some angry thoughts on COVID-19."
 published: true
 pubDate: '14 Mar 2020'
-layout: ../../layouts/BlogPost.astro
 tags: ['COVID-19', 'social media']
 ---
 

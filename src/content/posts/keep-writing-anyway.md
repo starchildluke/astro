@@ -3,7 +3,6 @@ title: 'Keep writing anyway'
 description: "Writing is a marathon, not a sprint, or a less tired analogy."
 published: true
 pubDate: '3 Feb 2022'
-layout: ../../layouts/BlogPost.astro
 tags: ['blogging', 'writing']
 ---
 

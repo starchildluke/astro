@@ -2,7 +2,6 @@
 title: 'Headless chickens'
 description: "Some thoughts on people's alarming responses to the COVID-19 pandemic"
 pubDate: '16 Aug 2020'
-layout: ../../layouts/BlogPost.astro
 tags: ['COVID-19']
 ---
 

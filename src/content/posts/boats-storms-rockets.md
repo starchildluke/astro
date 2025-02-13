@@ -3,7 +3,6 @@ title: 'Boats, storms, and rockets'
 description: "Are we really 'in this together'?"
 published: true
 pubDate: '21 Jul 2021'
-layout: ../../layouts/BlogPost.astro
 tags: ['COVID-19', 'life']
 ---
 

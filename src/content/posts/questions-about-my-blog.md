@@ -3,7 +3,6 @@ title: 'Questions about my blog'
 description: "A Q&A about my blog that nobody asked for."
 published: true
 pubDate: '5 Feb 2025'
-layout: ../../layouts/BlogPost.astro
 tags: ["blogging", "writing"]
 ---
 

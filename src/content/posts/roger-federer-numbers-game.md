@@ -3,7 +3,6 @@ title: 'The Numbers Game: Roger Federer'
 description: "My vote for the male GOAT and the numbers that make him so."
 published: true
 pubDate: '7 Jul 2022'
-layout: ../../layouts/BlogPost.astro
 tags: ['Roger Federer', 'sport']
 ---
 

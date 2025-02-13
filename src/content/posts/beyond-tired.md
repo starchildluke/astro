@@ -3,7 +3,6 @@ title: 'Beyond tired'
 description: "Some thoughts on being mentally and physically tired."
 published: true
 pubDate: '30 Aug 2020'
-layout: ../../layouts/BlogPost.astro
 tags: ['life']
 ---
 

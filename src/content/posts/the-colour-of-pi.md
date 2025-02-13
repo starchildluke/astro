@@ -3,7 +3,6 @@ title: 'The Colour Of Pi'
 description: "Thanks to a professor from San Diego University, we now have the colour of pi and other mathematical constants."
 published: true
 pubDate: '3 Nov 2014'
-layout: ../../layouts/BlogPost.astro
 tags: ['colours']
 ---
 

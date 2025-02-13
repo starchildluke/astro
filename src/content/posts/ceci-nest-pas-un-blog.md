@@ -3,7 +3,6 @@ title: 'Ceci n’est pas une blog'
 description: "The title says “This is not a blog” and plays on Rene Magritte's The Treachery of Images. It is also true."
 published: true
 pubDate: '7 Jun 2011'
-layout: ../../layouts/BlogPost.astro
 tags: ['blogging', 'writing']
 ---
 

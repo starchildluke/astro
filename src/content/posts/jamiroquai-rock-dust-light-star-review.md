@@ -3,7 +3,6 @@ title: 'Review: Jamiroquai – Rock Dust Light Star'
 description: "What I really like about this album is that it fills in any gaps made from the other Jamiroquai releases."
 published: true
 pubDate: '11 Nov 2010'
-layout: ../../layouts/BlogPost.astro
 tags: ['music', 'writing']
 ---
 

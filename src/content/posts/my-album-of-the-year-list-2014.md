@@ -3,7 +3,6 @@ title: 'My Album of the Year List: 2014'
 description: "A list of my fave albums from 2014"
 published: true
 pubDate: '9 Feb 2015'
-layout: ../../layouts/BlogPost.astro
 tags: ['AOTY', 'music', 'Prince']
 ---
 

@@ -2,7 +2,6 @@
 title: "12 Things I Learnt In My 3rd Year As A Professional SEO"
 pubDate: "4 Mar 2022"
 description: "I've been a SEO for 3 years now. But what more have I learnt? I wrote a list of 12 things I've picked up over that period."
-layout: ../../layouts/BlogPost.astro
 tags: ['SEO']
 ---
 

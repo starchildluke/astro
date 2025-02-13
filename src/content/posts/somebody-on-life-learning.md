@@ -3,7 +3,6 @@ title: 'Somebody* on life learning'
 description: "But what is Maya Angelou?"
 published: true
 pubDate: '14 Jul 2020'
-layout: ../../layouts/BlogPost.astro
 tags: ['life']
 ---
 

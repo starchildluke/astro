@@ -3,7 +3,6 @@ title: 'SEOicism'
 description: "If you're overwhelmed by all the SEO tips, future trends, Python scripts, automation ideas, folks convinced tech SEO is a waste of time and it's all about CONTENT and LINKS, or the folks obsessed with talking about dinosaurs for some reason... so am I."
 published: true
 pubDate: '18 Jul 2022'
-layout: ../../layouts/BlogPost.astro
 tags: ['SEO']
 ---
 

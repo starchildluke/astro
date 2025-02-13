@@ -3,7 +3,6 @@ title: 'Why do rich people make poor decisions?'
 description: "Rich people get away with murder and get praised for it."
 published: true
 pubDate: '5 Mar 2020'
-layout: ../../layouts/BlogPost.astro
 tags: ["life"]
 ---
 

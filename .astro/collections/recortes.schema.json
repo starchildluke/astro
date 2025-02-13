@@ -1,0 +1,57 @@
+{
+  "$ref": "#/definitions/recortes",
+  "definitions": {
+    "recortes": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "published": {
+          "type": "boolean"
+        },
+        "pubDate": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                {
+                  "type": "string",
+                  "format": "date"
+                },
+                {
+                  "type": "integer",
+                  "format": "unix-time"
+                }
+              ]
+            }
+          ]
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "$schema": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "title",
+        "pubDate"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

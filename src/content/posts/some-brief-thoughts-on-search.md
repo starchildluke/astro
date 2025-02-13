@@ -3,7 +3,6 @@ title: 'Some thoughts on search engines'
 description: "I wrote some thoughts about search and why we can't build a better search engine than Google without eclipsing its power and magnitude."
 published: true
 pubDate: '10 Feb 2024'
-layout: ../../layouts/BlogPost.astro
 tags: ['AI', 'SEO', 'the Internet', 'tech']
 ---
 

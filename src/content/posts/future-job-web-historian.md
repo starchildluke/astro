@@ -3,7 +3,6 @@ title: 'Future job: Web historian'
 description: "If money was no object, I'd love to become a Web history expert for the period between 1989-2003(ish)."
 published: true
 pubDate: '20 Feb 2020'
-layout: ../../layouts/BlogPost.astro
 tags: ['the Internet']
 ---
 

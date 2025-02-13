@@ -3,7 +3,6 @@ title: 'You rocked my world, you know you did…'
 description: "My relationship with rock music has been… well, rocky, for lack of a better word."
 published: true
 pubDate: '31 May 2011'
-layout: ../../layouts/BlogPost.astro
 tags: ['writing', 'music']
 ---
 

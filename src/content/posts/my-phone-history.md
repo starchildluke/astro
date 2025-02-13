@@ -3,7 +3,6 @@ title: My Phone History
 description: I've had 13 phones to date. Here they all are.
 published: true
 pubDate: 21 Jun 2018
-layout: ../../layouts/BlogPost.astro
 tags:
   - tech
 ---

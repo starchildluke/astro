@@ -3,7 +3,6 @@ title: Failure
 description: "Some thoughts on failure and why it means different things for different people."
 published: true
 pubDate: "21 Dec 2020"
-layout: ../../layouts/BlogPost.astro
 tags: []
 ---
 

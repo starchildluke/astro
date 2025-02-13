@@ -3,7 +3,6 @@ title: 'I''m not really one for speeches so I''ll just say ''thanks'''
 description: "Some thoughts on the BLM protests and blogging and stuff."
 published: true
 pubDate: '9 Aug 2020'
-layout: ../../layouts/BlogPost.astro
 tags: ['blogging', 'writing']
 ---
 

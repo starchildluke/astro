@@ -3,7 +3,6 @@ title: 'Introducing RALTS (Really Awesome Lexicon and Tag Suggester)'
 description: "I love NLP and taxonomies. Here's a script I wrote that marries the two concepts."
 published: true
 pubDate: '28 Feb 2022'
-layout: ../../layouts/BlogPost.astro
 tags: ['Python', 'SEO', 'AI']
 ---
 

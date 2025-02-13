@@ -3,7 +3,6 @@ title: 'We Need To Use The Lang Attribute More'
 description: "Why I love different languages and I admire polyglots."
 published: true
 pubDate: '14 Jun 2018'
-layout: ../../layouts/BlogPost.astro
 tags: ['the Internet']
 ---
 

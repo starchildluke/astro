@@ -3,7 +3,6 @@ title: 'Sometimes, automation is slower'
 description: "For when copy and paste, Regex, and fast fingers are quicker than Python"
 published: true
 pubDate: '10 Jun 2024'
-layout: ../../layouts/BlogPost.astro
 tags: ["tech", "Python"]
 ---
 

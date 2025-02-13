@@ -3,7 +3,6 @@ title: 'Prompt engineering'
 description: "I still feel weird about how prompt engineering is promoted as a new concept."
 published: true
 pubDate: '22 Feb 2023'
-layout: ../../layouts/BlogPost.astro
 tags: ['tech', 'AI']
 ---
 

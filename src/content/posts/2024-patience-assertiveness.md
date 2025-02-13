@@ -3,7 +3,6 @@ title: "2024 needs patience and assertiveness (for me)"
 published: true
 description: "This post has been on my mind for a while and seeing as the new year is approaching, I thought I'd write my thoughts down."
 pubDate: "30 Dec 2023"
-layout: ../../layouts/BlogPost.astro
 tags: ['life']
 ---
 

@@ -3,7 +3,6 @@ title: "My Spotify Unwrapped: 2024"
 description: I don't normally write a blog post for my Spotify Wrapped but what the hell.
 published: true
 pubDate: 4 Dec 2024
-layout: ../../layouts/BlogPost.astro
 tags:
   - music
 ---

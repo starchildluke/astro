@@ -3,7 +3,6 @@ title: 'Get a website'
 description: "The title says it all: get yourself a website."
 published: true
 pubDate: '4 Sep 2021'
-layout: ../../layouts/BlogPost.astro
 tags: ['the Internet', 'social media']
 ---
 

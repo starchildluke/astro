@@ -2,7 +2,6 @@
 title: "Inspiring Creatives For 2017"
 description: "The following creatives have helped me in the past and they're worth keeping an eye out for in 2017."
 pubDate: "4 Jan 2017"
-layout: ../../layouts/BlogPost.astro
 tags: ['Roger Federer', 'sport', 'art', 'music', 'writing']
 ---
 

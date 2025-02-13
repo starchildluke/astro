@@ -3,7 +3,6 @@ title: Am I helping or harming?
 description: Every day, tech makes the world a little—or a lot—worse. And I wonder how much I'm contributing to that.
 published: true
 pubDate: 12 Jan 2025
-layout: ../../layouts/BlogPost.astro
 tags:
   - tech
 ---

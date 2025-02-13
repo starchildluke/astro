@@ -3,7 +3,6 @@ title: 'A note on some notes on writing'
 description: "It's very meta but I like to write about writing."
 published: true
 pubDate: '27 Mar 2023'
-layout: ../../layouts/BlogPost.astro
 tags: ['blogging', 'writing']
 ---
 

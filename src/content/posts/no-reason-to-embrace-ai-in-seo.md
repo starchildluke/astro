@@ -3,7 +3,6 @@ title: "There's no reason to 'embrace' AI in SEO"
 description: "Artificial intelligence? Yeah, that sounds about right."
 published: true
 pubDate: '13 May 2024'
-layout: ../../layouts/BlogPost.astro
 tags: ["AI", "tech", "SEO"]
 ---
 

@@ -3,7 +3,6 @@ title: My Letterboxd Year In Review for 2024
 description: "Clue's in the title: this is my basic Letterboxd year in review for 2024"
 published: true
 pubDate: 8 Jan 2025
-layout: ../../layouts/BlogPost.astro
 tags:
   - film
 ---

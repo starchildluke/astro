@@ -3,7 +3,6 @@ title: '1001 Movies You Must See Before You Die (2008 edition)'
 description: "I decided to see how many films I'd seen from the 2008 edition of 1001 Movies You Must See Before You Die"
 published: true
 pubDate: '21 Aug 2020'
-layout: ../../layouts/BlogPost.astro
 tags: ['film']
 ---
 

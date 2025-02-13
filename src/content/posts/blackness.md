@@ -3,7 +3,6 @@ title: 'What is blackness?'
 description: 'Is it a closed question? Can it be worn like a winter coat or a pair of cool sunglasses? Does it give owners freedom of their cities?'
 published: true
 pubDate: '18 Feb 2019'
-layout: ../../layouts/BlogPost.astro
 tags: ['Black']
 ---
 

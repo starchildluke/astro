@@ -3,7 +3,6 @@ title: 'Back on Twitter'
 description: "I'm back on Twitter. For now."
 published: true
 pubDate: '28 Aug 2021'
-layout: ../../layouts/BlogPost.astro
 tags: ['life', 'social media']
 ---
 

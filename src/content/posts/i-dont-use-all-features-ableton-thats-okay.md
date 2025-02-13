@@ -3,7 +3,6 @@ title: "I don't use all the features in Ableton and that's okay"
 description: "To whomsthever needs to hear it, you're doing great sweetie x"
 published: true
 pubDate: '10 Aug 2024'
-layout: ../../layouts/BlogPost.astro
 tags: ["music"]
 ---
 

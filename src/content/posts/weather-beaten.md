@@ -3,7 +3,6 @@ title: 'Weather-beaten'
 description: "Burnout has been on the tip of our tongues for god knows how long. But today, I wondered if that was the right word to describe how I've been feeling lately and for a while."
 published: true
 pubDate: '22 Oct 2022'
-layout: ../../layouts/BlogPost.astro
 tags: ['life']
 ---
 

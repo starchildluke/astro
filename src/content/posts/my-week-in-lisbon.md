@@ -3,7 +3,6 @@ title: 'My Week In Lisbon'
 description: "From 20th - 27th November, I spent a week in Lisbon. It was a life changing experience."
 published: true
 pubDate: '3 Dec 2017'
-layout: ../../layouts/BlogPost.astro
 tags: ['life', 'Lisbon', 'architecture']
 ---
 

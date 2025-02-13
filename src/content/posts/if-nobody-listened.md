@@ -2,7 +2,6 @@
 title: 'If Nobody Listened, Would I Still Make Music?'
 description: "Or: why I make music?"
 pubDate: '18 Dec 2016'
-layout: ../../layouts/BlogPost.astro
 tags: ['music']
 ---
 

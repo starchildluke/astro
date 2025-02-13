@@ -3,7 +3,6 @@ title: "Some links on tech"
 description: "I keep accumulating links to send to work so I thought I'd put them here instead of clogging up online chats."
 published: true
 pubDate: "24 Mar 2021"
-layout: ../../layouts/BlogPost.astro
 tags: ["tech"]
 ---
 

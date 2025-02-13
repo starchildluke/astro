@@ -3,7 +3,6 @@ title: 'Some brief thoughts on robots.txt'
 description: "I wrote some thoughts about robots.txt and how you should use it."
 published: true
 pubDate: '9 Apr 2024'
-layout: ../../layouts/BlogPost.astro
 tags: ["SEO", "tech", "the Internet"]
 ---
 

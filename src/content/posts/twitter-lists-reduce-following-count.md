@@ -3,7 +3,6 @@ title: "How To Use Twitter Lists To Reduce Your Following Count"
 description: "Whether you use Twitter for work, personal branding, or escapism, who you follow plays an integral part."
 published: true
 pubDate: "25 Nov 2018"
-layout: ../../layouts/BlogPost.astro
 tags: ['the Internet', 'social media']
 ---
 

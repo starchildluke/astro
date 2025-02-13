@@ -3,7 +3,6 @@ title: 'How I display my Last.fm top 1000 artists'
 description: "A lengthy post on how I create my list of Last.fm top 1000 artists"
 published: true
 pubDate: '28 Apr 2023'
-layout: ../../layouts/BlogPost.astro
 tags: ['music', 'Python']
 ---
 

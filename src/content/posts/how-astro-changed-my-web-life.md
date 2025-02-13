@@ -3,7 +3,6 @@ title: 'How Astro changed my life on the Web'
 description: "Or: How I Learned to Stop Worrying and Love JavaScript."
 published: true
 pubDate: '18 May 2024'
-layout: ../../layouts/BlogPost.astro
 tags: ["Astro", "the Internet"]
 ---
 

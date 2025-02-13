@@ -3,7 +3,6 @@ title: 'Another week in Lisbon'
 description: "From 18th–23rd November, I spent another week in Lisbon with my partner. Here's how it went."
 published: true
 pubDate: '3 Dec 2023'
-layout: ../../layouts/BlogPost.astro
 tags: ['life', 'Lisbon', 'architecture']
 ---
 

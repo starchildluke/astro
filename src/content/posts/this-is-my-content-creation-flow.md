@@ -2,7 +2,6 @@
 title: 'This is my content creation flow'
 description: "Here is how I create content"
 pubDate: '19 Mar 2020'
-layout: ../../layouts/BlogPost.astro
 tags: ['blogging', 'the Internet', 'writing']
 ---
 

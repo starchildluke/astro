@@ -3,7 +3,6 @@ title: '24 Hour Virus'
 description: "For the first time in a year, I got sick."
 published: true
 pubDate: '19 Jan 2020'
-layout: ../../layouts/BlogPost.astro
 tags: ['life']
 ---
 

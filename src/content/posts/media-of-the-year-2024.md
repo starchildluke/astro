@@ -3,7 +3,6 @@ title: "My media of the year: 2024"
 description: Since everyone is doing end of year lists, I thought I'd do one too but for movies, games, books, and music.
 published: true
 pubDate: 03 Jan 2025
-layout: ../../layouts/BlogPost.astro
 tags:
   - music
   - film

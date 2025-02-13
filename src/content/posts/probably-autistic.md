@@ -3,7 +3,6 @@ title: 'Probably Autistic'
 description: "My name is Luke and I'm Probably Autistic."
 published: true
 pubDate: '10 May 2023'
-layout: ../../layouts/BlogPost.astro
 tags: ['life']
 ---
 

@@ -3,7 +3,6 @@ title: 'Brief LinkedIn thoughts on AI'
 description: "I wrote a comment on a LinkedIn post about AI and what it means in SEO."
 published: true
 pubDate: '17 Mar 2023'
-layout: ../../layouts/BlogPost.astro
 tags: ['AI']
 ---
 

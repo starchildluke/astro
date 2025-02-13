@@ -2,7 +2,6 @@
 title: "Beyond tired: Part 4"
 description: "Some thoughts on racism in football and in general"
 pubDate: "12 Jul 2021"
-layout: ../../layouts/BlogPost.astro
 tags: ['Black', 'life', 'social media']
 ---
 

@@ -3,7 +3,6 @@ title: 'AI as a tool to lower the inertia of getting started'
 description: "AI isn't the thing. It's the thing that gets you to the thing."
 published: true
 pubDate: '17 Jul 2023'
-layout: ../../layouts/BlogPost.astro
 tags: ['AI', 'tech']
 ---
 

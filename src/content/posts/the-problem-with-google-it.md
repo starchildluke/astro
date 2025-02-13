@@ -3,7 +3,6 @@ title: "The Problem With Google It"
 description: "You never know, by answering the question, you could learn something yourself - I know I have"
 published: true
 pubDate: "9 Jan 2016"
-layout: ../../layouts/BlogPost.astro
 tags: ['tech']
 ---
 

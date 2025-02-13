@@ -3,7 +3,6 @@ title: "I've started a linkblog"
 description: "Sometimes, you want to have a place to have lots of cool links without it being hosted by a third party. That's what a linkblog is all about."
 published: true
 pubDate: '29 Jan 2024'
-layout: ../../layouts/BlogPost.astro
 tags: ["blogging"]
 ---
 

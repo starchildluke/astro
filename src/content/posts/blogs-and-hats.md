@@ -3,7 +3,6 @@ title: 'Blogs and hats'
 description: "I've noticed something about how I approach blogging."
 published: true
 pubDate: '24 Feb 2020'
-layout: ../../layouts/BlogPost.astro
 tags: ['blogging', 'writing']
 ---
 

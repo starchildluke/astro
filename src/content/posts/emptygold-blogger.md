@@ -3,7 +3,6 @@ title: "I'm an Emptygold Blogger"
 description: "I started yet another blog."
 published: true
 pubDate: '10 Jan 2023'
-layout: ../../layouts/BlogPost.astro
 tags: ["blogging"]
 ---
 

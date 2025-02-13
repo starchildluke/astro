@@ -3,7 +3,6 @@ title: 'My Review of 2017'
 description: "This was going to be a lot more dreary and I wasn't going to publish anything."
 published: true
 pubDate: '30 Dec 2017'
-layout: ../../layouts/BlogPost.astro
 tags: ['life', 'social media']
 ---
 

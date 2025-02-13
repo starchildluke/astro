@@ -3,7 +3,6 @@ title: "Videos I've been watching to keep me going"
 description: "Videos that makes me laugh and give me needed serotonin"
 published: true
 pubDate: "5 May 2021"
-layout: ../../layouts/BlogPost.astro
 tags: ['music', 'Pokémon', 'Prince', 'happiness']
 ---
 

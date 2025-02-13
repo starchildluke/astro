@@ -3,7 +3,6 @@ title: 'I''m Racially Tired'
 description: "Some thoughts on my racial tiredness."
 published: true
 pubDate: '28 Apr 2018'
-layout: ../../layouts/BlogPost.astro
 tags: ['Black']
 ---
 

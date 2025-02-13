@@ -3,7 +3,6 @@ title: 'My 49 Favourite Albums of 2012'
 description: "A list of my 49 favourite albums of 2012"
 published: true
 pubDate: '2 Jan 2013'
-layout: ../../layouts/BlogPost.astro
 tags: ['AOTY', 'music']
 ---
 

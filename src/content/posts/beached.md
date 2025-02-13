@@ -3,7 +3,6 @@ title: 'Beached'
 description: "A really cool tilt-shift video featuring people on the beach."
 published: true
 pubDate: '21 Jul 2021'
-layout: ../../layouts/BlogPost.astro
 tags: ['art']
 ---
 

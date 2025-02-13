@@ -11,8 +11,7 @@ const posts = defineCollection({
 		pubDate: z
 			.string()
 			.or(z.date())
-			.transform((val) => new Date(val)),
-		layout: z.string()
+			.transform((val) => new Date(val))
 	})
 });
 
@@ -26,7 +25,6 @@ const music = defineCollection({
 			.string()
 			.or(z.date())
 			.transform((val) => new Date(val)),
-		layout: z.string(),
 		url: z.string().url().optional()
 	})
 });
@@ -60,7 +58,6 @@ const recortes = defineCollection({
 			month: 'short',
 			year: 'numeric',
 		})),
-		layout: z.string(),
 		tags: z.array(z.string()).optional()
 	}),
 });
@@ -75,7 +72,6 @@ const releaseNotes = defineCollection({
 			.string()
 			.or(z.date())
 			.transform((val) => new Date(val)),
-		layout: z.string(),
 		tags: z.array(z.string()).optional()
 	}),
 });
@@ -104,7 +100,6 @@ const lists = defineCollection({
 			.string()
 			.or(z.date())
 			.transform((val) => new Date(val)),
-		layout: z.string(),
 		tags: z.array(z.string()).optional()
 	}),
 });

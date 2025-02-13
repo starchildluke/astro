@@ -3,7 +3,6 @@ title: 'Khruangbin & Federer'
 description: "Two of my favourite things in the world: a great band and a great athlete."
 published: true
 pubDate: '12 Jun 2018'
-layout: ../../layouts/BlogPost.astro
 tags: ['Roger Federer', 'music', 'sport']
 ---
 

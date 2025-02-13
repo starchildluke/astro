@@ -2,7 +2,6 @@
 title: 'Bad Boys For Years'
 description: "A short list of films called 'Bad Boys' that don't feature Will Smith or Martin Lawrence."
 pubDate: '22 Jan 2020'
-layout: ../../layouts/BlogPost.astro
 tags: ['film']
 ---
 

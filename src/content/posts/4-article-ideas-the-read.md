@@ -3,7 +3,6 @@ title: '4 Creative Article Ideas - Inspired By "The Read"'
 description: "Here are 4 creative article ideas, inspired by The Read"
 published: true
 pubDate: "14 Apr 2018"
-layout: ../../layouts/BlogPost.astro
 tags: ['Black', 'social media', 'writing']
 ---
 
