@@ -1,0 +1,23 @@
+---
+import gamelog from '../data/gamelog.json';
+
+let mentions = gamelog.map((game) => (
+  {
+    "@type": "VideoGame",
+    "name": game.name,
+    "image": Astro.url + game.imageURL.replace(/^\/+/g, ''),
+    "publisher": game.publisher,
+    "gamePlatform": game.console,
+    "genre": game.genre
+  }
+  )
+);
+
+let sd = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "mentions": mentions
+})
+
+---
+<script type="application/ld+json" set:html={sd}></script>

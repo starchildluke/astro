@@ -3,6 +3,7 @@
 
 import Games from '../layouts/Gameslist.astro';
 import gamelog from '../data/gamelog.json';
+import GameSD from '../components/GameSD.astro';
 
 // METADATA VARIABLES
 
@@ -140,4 +141,5 @@ let description = "A list of games I'm currently playing or have already complet
           ))}
           </div>
 		</div>
+		<GameSD />
 		</Games>
