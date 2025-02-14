@@ -5,7 +5,7 @@ let mentions = gamelog.map((game) => (
   {
     "@type": "VideoGame",
     "name": game.name,
-    "image": Astro.url + game.imageURL.replace(/^\/+/g, ''),
+    "image": "https://lukealexdavis.co.uk" + game.imageURL,
     "publisher": game.publisher,
     "gamePlatform": game.console,
     "genre": game.genre
