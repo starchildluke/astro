@@ -36,3 +36,5 @@ I thought I'd compile a list of all the consoles I've owned over the years. Maki
 | Nintendo DSi         | 2023 | 2008					   | Metallic Blue					      | Yes			  |
 | PS4 Pro    		   | 2024 | 2016					   | Black 							      | Yes			  |
 | Anbernic RG35XX Plus | 2024 | 2023					   | White 							      | Yes			  |
+| Anbernic RG40XX V    | 2024 | 2024					   | White 							      | Yes			  |
+| TrimUI Smart Pro     | 2025 | 2023					   | White 							      | Yes			  |
