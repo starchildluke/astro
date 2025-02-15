@@ -111,7 +111,7 @@ And the 80s to 90s?
 9. Coca-Cola: A Timeless Classic
 10. Experience the Flavor of Coca-Cola
 
-Interestingly, the years weren't used in this, possibly because 2023 was a large jump from 1993. Either way... it didn't make much difference. I'm not prompt engineer so maybe someone else can get better results based on this example of few-shot learning?
+Interestingly, the years weren't used in this, possibly because 2023 was a large jump from 1993. Either way... it didn't make much difference. I'm not a prompt engineer so maybe someone else can get better results based on this example of few-shot learning?
 
 But we must remember that unrefined language models outputs are not production-ready. If you're using them for generative tasks, you iterate and refine until you get what you need. If I remove the mentions of Coca-Cola from the last version, we get:
 
