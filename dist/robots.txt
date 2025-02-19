@@ -13,10 +13,13 @@ Disallow: /
 User-agent: GPTBot-User
 Disallow: /
 
+User-agent: OAI-SearchBot
+Disallow: /
+
 User-agent: Google-Extended
 Disallow: /
 
-Sitemap: https://lukealexdavis.co.uk/sitemap.xml
+Sitemap: https://lukealexdavis.co.uk/sitemap-index.xml
 
 #                              ,AAAAAAAAAAAAAAAAA                               
 #                              AAAAAAAAAAAAAAAAAAA                              
