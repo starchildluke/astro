@@ -3,7 +3,6 @@ title: 'Acceptable volume numbers'
 description: "I like numbers."
 published: true
 pubDate: '23 Oct 2022'
-layout: ../../layouts/Lists.astro
 tags: ['mathematics']
 ---
 

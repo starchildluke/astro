@@ -2,7 +2,6 @@
 title: 'List of short RPGs'
 published: true
 pubDate: '4 Sep 2023'
-layout: ../../layouts/Lists.astro
 tags: ['gaming']
 ---
 

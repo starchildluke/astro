@@ -3,7 +3,6 @@ title: "Horror movies that I've watched even though I don't like horror movies b
 description: "Blame my morbid curiosity on this one."
 publshed: true
 pubDate: '23 Jun 2024'
-layout: ../../layouts/Lists.astro
 tags: ['film']
 ---
 

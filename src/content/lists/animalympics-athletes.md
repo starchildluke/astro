@@ -3,7 +3,6 @@ title: 'Animalympics athletes'
 description: "A list of the funniest punny names from the 1980 film, Animalympics."
 publshed: true
 pubDate: '12 Nov 2023'
-layout: ../../layouts/Lists.astro
 tags: ['film', 'sport']
 ---
 

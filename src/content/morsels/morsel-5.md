@@ -2,7 +2,6 @@
 title: 'Morsel #5: Black fabric'
 published: true
 pubDate: '8 Jul 2022'
-layout: ../../layouts/Morsels.astro
 ---
 
 My fifth morsel is called Black Fabric and it's a Python script that generates five randomised names that incorporate:

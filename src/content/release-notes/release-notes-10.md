@@ -2,7 +2,6 @@
 title: All that growth
 published: true
 pubDate: 4 Aug 2022
-layout: ../../layouts/ReleaseNotes.astro
 tags:
   - life
 ---

@@ -2,7 +2,6 @@
 title: 'Morsel #8: Bandcamp Album Length Calculator'
 published: true
 pubDate: '4 Feb 2023'
-layout: ../../layouts/Morsels.astro
 ---
 
 My eighth morsel is a [Python](/jardim/tech/python/) script that returns the running time of an album from Bandcamp in your CLI of choice. I previously used a JS plugin/applet in my browser but it stopped working and couldn't find a replacement (there probably is one but I also don't like installing add-ons unless I have to because Chromium browsers already hog enough memory!)

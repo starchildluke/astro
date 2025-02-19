@@ -24,7 +24,6 @@ tr.v. goosed, goos·ing, goos·es Slang
 2. To move to action; spur: goosed the governor to sign the tax bill.
 3. To give a spurt of fuel to (a car, for example); cause to accelerate quickly. 'The pilot goosed his craft, powering away' (Nicholas Proffitt). -----  Long overdue but here it is. The 7th installment of my Cosmic Creatures series. Desert Goose features 12 tracks inspired the music of Jamaica. Nuff reggae, dub and everything in between. Show your love by donating or just listen and let me know what you think. JAMDOWN!"
 pubDate: '21 Sep 2014'
-layout: '../../layouts/BlogPost.astro'
 image: 'desert-goose.jpg'
 url: 'https://strrchildluke.bandcamp.com/album/desert-goose'
 ---

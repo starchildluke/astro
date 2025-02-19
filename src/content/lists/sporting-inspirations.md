@@ -1,7 +1,6 @@
 ---
 title: 'Sporting Inspirations'
 pubDate: '12 Dec 2023'
-layout: ../../layouts/Lists.astro
 tags: ['sport']
 ---
 

@@ -2,7 +2,6 @@
 title: 'Favourite words'
 published: true
 pubDate: '16 Apr 2024'
-layout: ../../layouts/Lists.astro
 tags: ['writing']
 ---
 

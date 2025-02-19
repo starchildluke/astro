@@ -42,17 +42,13 @@
             }
           ]
         },
-        "layout": {
-          "type": "string"
-        },
         "$schema": {
           "type": "string"
         }
       },
       "required": [
         "title",
-        "pubDate",
-        "layout"
+        "pubDate"
       ],
       "additionalProperties": false
     }

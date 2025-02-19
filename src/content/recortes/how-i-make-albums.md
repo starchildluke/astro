@@ -3,7 +3,6 @@ title: 'How I make albums'
 description: "A mini step-by-step process of how I produce music"
 published: true
 pubDate: '6 June 2024'
-layout: ../../layouts/BlogPost.astro
 tags: ['music']
 ---
 

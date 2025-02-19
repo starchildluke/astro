@@ -3,7 +3,6 @@ title: My top Christmas movies (2018–present)
 description: I made a list of all the Christmas movies I've logged on Letterboxd since 2018 with a rating over 3.0 and more than 2 watch throughs
 publshed: true
 pubDate: 27 Dec 2024
-layout: ../../layouts/Lists.astro
 tags:
   - film
 ---

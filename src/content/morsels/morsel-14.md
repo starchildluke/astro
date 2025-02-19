@@ -2,7 +2,6 @@
 title: 'Morsel #14: Textlist to array'
 published: true
 pubDate: '07 Oct 2024'
-layout: ../../layouts/Morsels.astro
 ---
 
 I have to change text lists into Python lists a lot and I always do it in Sublime Text with some regex. But I'd rather have a quicker way to do it by pasting and clicking a button.

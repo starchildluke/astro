@@ -2,7 +2,6 @@
 title: 'Morsel #13: YouTube max thumbnail grabber'
 published: true
 pubDate: '07 Aug 2024'
-layout: ../../layouts/Morsels.astro
 ---
 
 <form id="youtube-form">

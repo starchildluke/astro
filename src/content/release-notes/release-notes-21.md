@@ -2,7 +2,6 @@
 title: Don't trust Elon Musk
 published: true
 pubDate: 21 Jan 2025
-layout: ../../layouts/ReleaseNotes.astro
 tags:
   - politics
 ---

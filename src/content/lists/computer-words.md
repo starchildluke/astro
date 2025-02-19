@@ -2,7 +2,6 @@
 title: 'Computer words'
 published: true
 pubDate: '18 Feb 2019'
-layout: ../../layouts/Lists.astro
 tags: ['tech']
 ---
 

@@ -2,7 +2,6 @@
 title: Do as I do because I said so
 published: true
 pubDate: 26 Mar 2023
-layout: ../../layouts/ReleaseNotes.astro
 tags: []
 ---
 

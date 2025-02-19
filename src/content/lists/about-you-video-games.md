@@ -3,7 +3,6 @@ title: 'About You: Video Games'
 description: "Another video games list, but more about me this time."
 publshed: true
 pubDate: '30 Nov 2023'
-layout: ../../layouts/Lists.astro
 tags: ['gaming']
 ---
 

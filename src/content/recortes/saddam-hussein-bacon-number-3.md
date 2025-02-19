@@ -2,7 +2,6 @@
 title: 'Saddam Hussein had a Bacon number of 3'
 description: "Saddam Hussein was CONNECTED"
 pubDate: '14 Aug 2020'
-layout: ../../layouts/BlogPost.astro
 tags: ['mathematics', 'film']
 ---
 

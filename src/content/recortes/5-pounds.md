@@ -3,7 +3,6 @@ title: '£5'
 description: "A poem about my childhood."
 published: true
 pubDate: '3 Sep 2022'
-layout: ../../layouts/BlogPost.astro
 tags: ['writing']
 ---
 

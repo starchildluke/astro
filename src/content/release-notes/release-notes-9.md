@@ -2,7 +2,6 @@
 title: What if...
 published: true
 pubDate: 3 Aug 2022
-layout: ../../layouts/ReleaseNotes.astro
 tags:
   - life
 ---

@@ -2,7 +2,6 @@
 title: PSA for white people
 published: true
 pubDate: 30 Apr 2024
-layout: ../../layouts/ReleaseNotes.astro
 tags:
   - Black
 ---

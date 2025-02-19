@@ -14,7 +14,6 @@ n.
 a. An accomplice or a lackey who aids in the commission of base or disreputable acts.
 b. One who performs menial tasks for another."
 pubDate: '31 May 2013'
-layout: '../../layouts/BlogPost.astro'
 image: 'celestial-jackal.jpg'
 url: 'https://strrchildluke.bandcamp.com/album/celestial-jackal'
 ---

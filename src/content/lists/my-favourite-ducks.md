@@ -3,7 +3,6 @@ title: 'My favourite ducks'
 description: "This is a list of my favourite ducks from popular culture."
 publshed: true
 pubDate: '24 Jan 2024'
-layout: ../../layouts/Lists.astro
 tags: ['animals']
 ---
 

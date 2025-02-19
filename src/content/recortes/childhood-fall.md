@@ -3,7 +3,6 @@ title: 'childhood fall'
 description: "a poem by me about autumn days as a kid"
 published: true
 pubDate: '07 Sep 2024'
-layout: ../../layouts/BlogPost.astro
 tags: ['poetry', 'writing']
 ---
 

@@ -2,7 +2,6 @@
 title: 'Morsel #9: Oapy'
 published: true
 pubDate: '23 Mar 2023'
-layout: ../../layouts/Morsels.astro
 ---
 
 My ninth morsel is a work one.

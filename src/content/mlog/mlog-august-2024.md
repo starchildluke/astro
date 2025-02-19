@@ -3,7 +3,6 @@ title: 'Mlog #005'
 description: "My mlog for August 2024."
 published: true
 pubDate: '01 Sep 2024'
-layout: ../../layouts/BlogPost.astro
 tags: ["music", "gaming", "film"]
 ---
 

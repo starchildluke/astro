@@ -2,7 +2,6 @@
 title: Pause Elon Musk
 published: true
 pubDate: 11 Apr 2023
-layout: ../../layouts/ReleaseNotes.astro
 tags:
   - AI
   - tech

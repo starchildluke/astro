@@ -10,7 +10,6 @@ n.
 2. A firefighter who is sent to battle remote, usually very severe forest fires, often for days at a time.
 3. Slang A person who smuggles illegal immigrants into the United States, especially across the Mexican border. ----- Been sitting on this for a while. Not as many beats but I hope you still like it."
 pubDate: '23 Feb 2014'
-layout: '../../layouts/BlogPost.astro'
 image: 'corona-coyote.jpg'
 url: 'https://strrchildluke.bandcamp.com/album/corona-coyote'
 ---

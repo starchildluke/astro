@@ -1,7 +1,6 @@
 ---
 title: 'Musical Inspirations'
 pubDate: '1 Mar 2017'
-layout: ../../layouts/Lists.astro
 tags: ['music']
 ---
 

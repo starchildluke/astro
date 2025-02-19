@@ -2,7 +2,6 @@
 title: AI isn't a silver bullet
 published: true
 pubDate: 7 Jan 2023
-layout: ../../layouts/ReleaseNotes.astro
 tags:
   - AI
   - tech

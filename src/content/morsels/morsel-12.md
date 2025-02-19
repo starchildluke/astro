@@ -2,7 +2,6 @@
 title: 'Morsel #12: styling a WordPress post to look like a Bluesky post'
 published: true
 pubDate: '23 May 2024'
-layout: ../../layouts/Morsels.astro
 ---
 
 Even though I've deleted Twitter, I miss just throwing a thought out into the ether. WordPress has [post formats](https://developer.wordpress.org/advanced-administration/wordpress/post-formats/) that can facilitate that. They are:

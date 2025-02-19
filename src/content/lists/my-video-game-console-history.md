@@ -3,7 +3,6 @@ title: 'My video game console history'
 description: "Another video games list, but this is a history of the video game consoles I've owned."
 publshed: true
 pubDate: '24 Mar 2024'
-layout: ../../layouts/Lists.astro
 tags: ['gaming']
 ---
 

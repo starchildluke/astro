@@ -2,7 +2,6 @@
 title: Talkin' loud and sayin' nothin'
 published: true
 pubDate: 11 Aug 2024
-layout: ../../layouts/ReleaseNotes.astro
 ---
 
 In the face of fascism, we need to do all we can to break those systems and build peace and unity for the oppressed to live their lives without fear or death and dehumanisation. But so often, it feels like the focus is on the anti-fascism work itself. I wonder if the definition of virtue signalling has been lost (much like "woke") but I guess this is the best way to describe it.

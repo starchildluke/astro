@@ -3,7 +3,6 @@ title: 'all the black squares'
 description: "a poem by me"
 published: true
 pubDate: '21 Aug 2024'
-layout: ../../layouts/BlogPost.astro
 tags: ['poetry', 'writing', 'Black', 'life']
 ---
 

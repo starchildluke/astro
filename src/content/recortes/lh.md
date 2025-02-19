@@ -3,7 +3,6 @@ title: '-lh-'
 description: "Portuguese words -lh- in the middle."
 published: true
 pubDate: '17 Sep 2024'
-layout: ../../layouts/BlogPost.astro
 tags: ['writing']
 ---
 

@@ -3,7 +3,6 @@ title: I want this digital radio
 description: Yes, the Revo SuperSystem is sold out on the offical website but it looks so good.
 published: true
 pubDate: 12 Feb 2025
-layout: ../../layouts/BlogPost.astro
 tags:
   - tech
   - music

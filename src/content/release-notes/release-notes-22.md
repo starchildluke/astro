@@ -2,7 +2,6 @@
 title: For Others By Others
 published: true
 pubDate: 11 Feb 2025
-layout: ../../layouts/ReleaseNotes.astro
 tags:
   - accessibility
 ---

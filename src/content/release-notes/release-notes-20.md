@@ -2,7 +2,6 @@
 title: How my Christmas break went
 published: true
 pubDate: 06 Jan 2025
-layout: ../../layouts/ReleaseNotes.astro
 tags:
   - life
 ---

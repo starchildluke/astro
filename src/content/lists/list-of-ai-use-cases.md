@@ -2,7 +2,6 @@
 title: 'List of AI use cases'
 published: true
 pubDate: '10 Aug 2023'
-layout: ../../layouts/Lists.astro
 tags: ['AI', 'tech']
 ---
 

@@ -13,7 +13,6 @@ a. Either of two carnivorous mammals of the family Canidae, especially the gray 
 b. The fur of such an animal.
 c. Any of various similar or related mammals, such as the hyena. -----  This is beat tape 4 of 12 from my Cosmic Creatures beat series. All the tracks are sampled from George Duke's Faces In Reflection. Hit me up at luke[at]starcrazy[dot]org if you're interested in rhyming over any of these beats."
 pubDate: '30 Apr 2013'
-layout: '../../layouts/BlogPost.astro'
 image: 'chaos-wolf.jpg'
 url: 'https://strrchildluke.bandcamp.com/album/chaos-wolf'
 ---

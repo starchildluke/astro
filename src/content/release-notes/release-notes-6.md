@@ -2,7 +2,6 @@
 title: Dots in the universe
 published: true
 pubDate: 27 Apr 2022
-layout: ../../layouts/ReleaseNotes.astro
 tags:
   - life
 ---

@@ -2,7 +2,6 @@
 title: 'Morsel #10: Ticking all the boxes'
 published: true
 pubDate: '23 Jan 2024'
-layout: ../../layouts/Morsels.astro
 ---
 
 I was trying to create a data report and needed to tick checkboxes to include certain information. Unfortunately, there were over 500 boxes and no option for selecting all of them so I Googled how to do it using JavaScript + the browser console.

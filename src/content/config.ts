@@ -39,8 +39,7 @@ const mlog = defineCollection({
 		pubDate: z
 			.string()
 			.or(z.date())
-			.transform((val) => new Date(val)),
-		layout: z.string()
+			.transform((val) => new Date(val))
 	})
 });
 
@@ -85,8 +84,7 @@ const morsels = defineCollection({
 		pubDate: z
 			.string()
 			.or(z.date())
-			.transform((val) => new Date(val)),
-		layout: z.string()
+			.transform((val) => new Date(val))
 	}),
 });
 

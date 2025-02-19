@@ -2,7 +2,6 @@
 title: 'Morsel #3: a custom font preload fix in WordPress'
 published: true
 pubDate: '25 May 2022'
-layout: ../../layouts/Morsels.astro
 ---
 
 My third morsel is actually a WordPress fix.

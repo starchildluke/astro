@@ -2,7 +2,6 @@
 title: 'Morsel #2: The YouTube Thumbnail Extractor'
 published: true
 pubDate: '01 May 2022'
-layout: ../../layouts/Morsels.astro
 ---
 
 My second morsel is a Python script that extracts thumbnails from YouTube videos.
