@@ -5,7 +5,7 @@ description: "I've been a SEO for 5 years now. But what more have I learnt? I wr
 tags: ['SEO', 'AI', 'tech']
 ---
 
-Today marks the fifth anniversary of me becoming a digital marketer (you can [read about my first year](/posts/first-year-professional-seo/), [second year](/posts/second-year-professional-seo/)), [third year](/posts/third-year-professional-seo/)), and [fourth year](/posts/fourth-year-professional-seo/) to follow my journey).
+Today marks the fifth anniversary of me becoming a digital marketer (you can [read about my first year](/posts/first-year-professional-seo/), [second year](/posts/second-year-professional-seo/), [third year](/posts/third-year-professional-seo/), and [fourth year](/posts/fourth-year-professional-seo/) to follow my journey).
 
 It's been an amazing journey so far and I like to share what I've learnt every year so here are some of my lessons from my fifth year as a professional.
 
@@ -57,4 +57,4 @@ I once said that I liked SEO academically but disliked the industry. That still 
 
 ## Shout outs
 
-Thank you to anyone I've spoken to personally in the last year or have shouted out publically or in a work setting (you'll know who you are). I've decided not to list people this time as not to forget anyone.
+Thank you to anyone I've spoken to personally in the last year or have shouted out publicly or in a work setting (you'll know who you are). I've decided not to list people this time as not to forget anyone.
