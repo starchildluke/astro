@@ -24,6 +24,8 @@ _**Please note**: I have looked through the code, tested it, and rewritten some 
 
 _**Update: 21st Dec 2024**: it looks like YouTube has killed the maxresdefault image so I've replaced it with hqdefault. If it comes back, I'll change it back._
 
+_**Update: 27th Feb 2025**: maxresdefault is baaaaaack!_
+
 ## How the code works
 
 I have a standard form with a text input and a submit button. When I enter a valid YouTube URL and click submit, the script checks for validity (and ensures no attempts at [XSS attacks](https://owasp.org/www-community/attacks/xss/) get through), extracts the video ID and creates the thumbnail URL to display.
@@ -53,9 +55,10 @@ The reason I used AI for this is because I was trying to recreate code that I'd 
         }
 
         function generateThumbnail(videoId) {
-            const thumbnailUrl = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
+            const thumbnailUrl = `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
 
             const img = document.createElement('img');
+
             img.src = thumbnailUrl;
 
             thumbnailContainer.innerHTML = '';
