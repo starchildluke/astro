@@ -21,3 +21,7 @@ tags: ['writing']
 ## he'll yeag!
 * **Context**: a corruption of "hell yeah" based on mistyping and autocorrect
 * **Origin**: all credit goes to [seacreature](https://www.twitch.tv/xseacreature), a shiny hunter who made it up
+
+## next level!
+* **Context**: when something is above or beyond your expectations
+* **Origin**: I feel like this has come from Black British culture as me and my sister say it and my Black friends at school did too
