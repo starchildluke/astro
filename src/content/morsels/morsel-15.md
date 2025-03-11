@@ -2,6 +2,9 @@
 title: 'Morsel #15: en-150'
 published: true
 pubDate: '15 Nov 2024'
+tags:
+  - the Internet
+  - tech
 ---
 
 While snooping through a website's <code>hreflang</code>, I noticed a unique ISO code: <code>en-150</code>.

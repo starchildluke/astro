@@ -16,7 +16,7 @@ I've loved the internet since I first accessed it in the late 90s and I've been 
 
 ## What platform are you using to manage your blog and why did you choose it? Have you blogged on other platforms before?
 
-I use WordPress for most of my blogs and [Astro](https://lukealexdavis.co.uk/posts/how-astro-changed-my-web-life/) for this one. WordPress is easier for larger sites and Astro is the latest static site generator I've used for my personal site. Previously, I've used [Grav](https://getgrav.org/), WordPress, and I handcoded the site in the early days. I chose Astro because it was easy to use, intuitive, and meant I could use as much or as little JavaScript as I needed without learning any other languages.
+I use [WordPress](/jardim/tech/wordpress/) for most of my blogs and [Astro](https://lukealexdavis.co.uk/posts/how-astro-changed-my-web-life/) for this one. WordPress is easier for larger sites and Astro is the latest static site generator I've used for my personal site. Previously, I've used [Grav](https://getgrav.org/), WordPress, and I handcoded the site in the early days. I chose Astro because it was easy to use, intuitive, and meant I could use as much or as little JavaScript as I needed without learning any other languages.
 
 ## How do you write your posts? For example, in a local editing tool, or in a panel/dashboard that’s part of your blog?
 

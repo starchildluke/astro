@@ -2,6 +2,10 @@
 title: 'Morsel #13: YouTube max thumbnail grabber'
 published: true
 pubDate: '07 Aug 2024'
+tags:
+  - Javascript
+  - the Internet
+  - tech
 ---
 
 <form id="youtube-form">

@@ -2,6 +2,10 @@
 title: 'Morsel #9: Oapy'
 published: true
 pubDate: '23 Mar 2023'
+tags:
+  - Python
+  - AI
+  - tech
 ---
 
 My ninth morsel is a work one.

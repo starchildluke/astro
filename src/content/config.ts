@@ -81,6 +81,7 @@ const morsels = defineCollection({
 		title: z.string(),
 		description: z.string().optional(),
 		published: z.boolean().optional(),
+		tags: z.array(z.string()).optional(),
 		pubDate: z
 			.string()
 			.or(z.date())

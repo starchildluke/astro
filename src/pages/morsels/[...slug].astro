@@ -7,6 +7,7 @@ import { getCollection } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
 import FormattedDate from '../../components/FormattedDate.astro';
 import PrevNextLinking from '../../components/PrevNextLinking.astro';
+import FiledUnder from '../../components/FiledUnder.astro';
 
 export const sortByDate = (a, b) => {
   return new Date(b.data.pubDate) - new Date(a.data.pubDate);
@@ -44,6 +45,7 @@ const { Content } = await post.render();
       <Header />
       <p class="publish-date"><FormattedDate date={post.data.pubDate} /></p>
         <h1>{post.data.title}</h1>
+        <FiledUnder tags={post.data.tags}/>
           <Content />
             <PrevNextLinking contentType="morsels" prevPost={prevPost.data} nextPost={nextPost.data} prevSlug={prevPost?.slug} prevTitle={prevPost.data?.title} nextSlug={nextPost?.slug} nextTitle={nextPost.data?.title} />
     </article>

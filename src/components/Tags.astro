@@ -19,6 +19,10 @@ const notes = await getCollection('release-notes', ({ data }) => {
   return data.tags?.includes(tagName);
 });
 
+const morsels = await getCollection('morsels', ({ data }) => {
+  return data.tags?.includes(tagName);
+});
+
 const collator = Intl.Collator([], {numeric: true});
 
 const sortedPosts = posts.sort((a, b) => collator.compare(a.data.title, b.data.title));
@@ -28,6 +32,8 @@ const sortedRecortes = recortes.sort((a, b) => collator.compare(a.data.title, b.
 const sortedLists = lists.sort((a, b) => collator.compare(a.data.title, b.data.title));
 
 const sortedReleaseNotes = notes.sort((a, b) => collator.compare(a.data.title, b.data.title));
+
+const sortedMorsels = morsels.sort((a, b) => collator.compare(a.data.title, b.data.title));
 
 ---
 {sortedPosts.length > 0 ? <h3>Posts</h3> : ""}
@@ -55,5 +61,12 @@ const sortedReleaseNotes = notes.sort((a, b) => collator.compare(a.data.title, b
 <ul>
   {sortedReleaseNotes.length > 0 ? sortedReleaseNotes.map(note =>
   <li><a href=`/release-notes/${note.slug}/`>{note.data.title}</a></li>
+  ) : ""}
+</ul>
+
+{sortedMorsels.length > 0 ? <h3>Morsels</h3> : ""}
+<ul>
+  {sortedMorsels.length > 0 ? sortedMorsels.map(morsel =>
+  <li><a href=`/morsels/${morsel.slug}/`>{morsel.data.title}</a></li>
   ) : ""}
 </ul>

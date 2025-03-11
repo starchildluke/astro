@@ -2,6 +2,10 @@
 title: 'Morsel #3: a custom font preload fix in WordPress'
 published: true
 pubDate: '25 May 2022'
+tags:
+  - WordPress
+  - the Internet
+  - tech
 ---
 
 My third morsel is actually a WordPress fix.

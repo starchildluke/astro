@@ -2,6 +2,10 @@
 title: 'Morsel #4: bulk upload to Internet Archive with waybackpy'
 published: true
 pubDate: '26 May 2022'
+tags:
+  - Python
+  - the Internet
+  - tech
 ---
 
 My fourth morsel is a way to backup your site to the Internet Archive.
