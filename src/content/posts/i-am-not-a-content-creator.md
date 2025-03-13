@@ -19,3 +19,5 @@ And that's why I say I'm not a content creator. No matter who engages with my wo
 So to the people who make "good content", I say no—you don't make content at all. Name your creations and be content with what you've done. As I will of what I've done.
 
 💐
+
+**Addendum**: Christian Heilmann wrote an article called ‘[Nobody should be a “content creator”](https://christianheilmann.com/2025/03/12/nobody-should-be-a-content-creator/)’ and I echo his sentiments about not wanting to be a content creator and what that entails.
