@@ -205,3 +205,8 @@ _n._ a loud utterance, usually a protracted, high-pitched, rhythmical sound espe
 _n._, _v._
 1. food or provisions.
 2. provide with food or other stores.
+
+## voltaic
+/vɒlˈteɪɪk/
+
+_adj._ of, relating to, or producing direct electric current by chemical action (as in a battery); galvanic

@@ -1,8 +1,8 @@
 [
     {
         "artist": {
-            "mbid": "f053ae01-dae6-4aae-9883-e8c279fdbef4",
-            "#text": "Seal"
+            "mbid": "",
+            "#text": "Rob Araujo"
         },
         "image": [
             {
@@ -19,17 +19,71 @@
             }
         ],
         "mbid": "",
-        "url": "https://www.last.fm/music/Seal/_/Just+Like+You+Said+-+Live+In+Paris",
-        "name": "Just Like You Said - Live In Paris",
+        "url": "https://www.last.fm/music/Rob+Araujo/_/Jumbled",
+        "name": "Jumbled",
         "@attr": {
             "rank": "1"
+        },
+        "playcount": "6"
+    },
+    {
+        "artist": {
+            "mbid": "",
+            "#text": "Rob Araujo"
+        },
+        "image": [
+            {
+                "size": "small",
+                "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
+            },
+            {
+                "size": "medium",
+                "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
+            },
+            {
+                "size": "large",
+                "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
+            }
+        ],
+        "mbid": "",
+        "url": "https://www.last.fm/music/Rob+Araujo/_/no,+regrets",
+        "name": "no, regrets",
+        "@attr": {
+            "rank": "2"
+        },
+        "playcount": "5"
+    },
+    {
+        "artist": {
+            "mbid": "",
+            "#text": "Rob Araujo"
+        },
+        "image": [
+            {
+                "size": "small",
+                "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
+            },
+            {
+                "size": "medium",
+                "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
+            },
+            {
+                "size": "large",
+                "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
+            }
+        ],
+        "mbid": "",
+        "url": "https://www.last.fm/music/Rob+Araujo/_/Moonrock",
+        "name": "Moonrock",
+        "@attr": {
+            "rank": "3"
         },
         "playcount": "3"
     },
     {
         "artist": {
             "mbid": "",
-            "#text": "Air"
+            "#text": "Ahwlee"
         },
         "image": [
             {
@@ -45,63 +99,9 @@
                 "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
             }
         ],
-        "mbid": "1713384c-ba4c-30fd-8f3a-ecc22270dda6",
-        "url": "https://www.last.fm/music/Air/_/Modular+Mix",
-        "name": "Modular Mix",
-        "@attr": {
-            "rank": "2"
-        },
-        "playcount": "2"
-    },
-    {
-        "artist": {
-            "mbid": "b46e298d-d3a5-4695-a03e-63e8c523b23e",
-            "#text": "Daniel Caesar"
-        },
-        "image": [
-            {
-                "size": "small",
-                "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
-            },
-            {
-                "size": "medium",
-                "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
-            },
-            {
-                "size": "large",
-                "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
-            }
-        ],
-        "mbid": "912d1b00-01fa-4f7d-9578-7ac4d81a44a6",
-        "url": "https://www.last.fm/music/Daniel+Caesar/_/Freudian",
-        "name": "Freudian",
-        "@attr": {
-            "rank": "3"
-        },
-        "playcount": "2"
-    },
-    {
-        "artist": {
-            "mbid": "b5a6ea29-3065-4869-ac66-a44002e55d4d",
-            "#text": "Jazzanova"
-        },
-        "image": [
-            {
-                "size": "small",
-                "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
-            },
-            {
-                "size": "medium",
-                "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
-            },
-            {
-                "size": "large",
-                "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
-            }
-        ],
-        "mbid": "",
-        "url": "https://www.last.fm/music/Jazzanova/_/No+Use+Feat.+Clara+Hill",
-        "name": "No Use Feat. Clara Hill",
+        "mbid": "cbc8121e-167a-41a2-aa0b-2cb9d64439e1",
+        "url": "https://www.last.fm/music/Ahwlee/_/callyourmom+%7C+cloud(smile;often)",
+        "name": "callyourmom | cloud(smile;often)",
         "@attr": {
             "rank": "4"
         },
@@ -109,8 +109,8 @@
     },
     {
         "artist": {
-            "mbid": "38d64df7-5b7f-42ca-9d98-9541640ca84f",
-            "#text": "John Holt"
+            "mbid": "",
+            "#text": "Ahwlee"
         },
         "image": [
             {
@@ -126,9 +126,9 @@
                 "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
             }
         ],
-        "mbid": "",
-        "url": "https://www.last.fm/music/John+Holt/_/Baby+I%27m+a+Want+You",
-        "name": "Baby I'm a Want You",
+        "mbid": "6adeb729-767e-45ba-9b9a-4d1021edb588",
+        "url": "https://www.last.fm/music/Ahwlee/_/evenmoreslumshit",
+        "name": "evenmoreslumshit",
         "@attr": {
             "rank": "5"
         },
