@@ -28,3 +28,5 @@ And now for some silly sentences that nobody would ever say:
 <span lang="pt">Minha bilha do molho milho da filha</span> - My daughter's corn sauce jug
 
 <span lang="pt">Minha solha do filho engoliu uma rolha e uma folha</span> - My son's flatfish swallowed a cork and a leaf
+
+**Language related**: [We Need To Use The Lang Attribute More](/posts/we-need-to-use-the-lang-attribute-more/) and [my personal lexicon](/recortes/personal-lexicon/)
