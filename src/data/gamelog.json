@@ -159,10 +159,10 @@
 		"publisher": "Square Enix (then Square)",
 		"genre": ["RPG"],
 		"imageURL": "/images/gameslist/final-fantasy-iv.webp",	
-		"status": "Actively playing",
+		"status": "Completed",
 		"format": "Emulation",
 		"console": "SNES",
-		"dateBeaten": ""
+		"dateBeaten": "03/31/2025"
 	},
 	{
 		"name": "Pokémon Legends: Arceus",
@@ -174,5 +174,16 @@
 		"format": "Physical",
 		"console": "SNES",
 		"dateBeaten": "02/18/2025"
+	},
+	{
+		"name": "Final Fantasy V",
+		"developer": "Square Enix (then Square)",
+		"publisher": "Square Enix (then Square)",
+		"genre": ["RPG"],
+		"imageURL": "/images/gameslist/final-fantasy-v.webp",	
+		"status": "Actively playing",
+		"format": "Emulation",
+		"console": "GBA",
+		"dateBeaten": ""
 	}
 ]
