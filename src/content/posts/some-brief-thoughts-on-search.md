@@ -41,3 +41,5 @@ Suddenly, you find yourself in the 90s where SEO involved [keyword stuffing](htt
 I haven't used [Kagi](https://kagi.com/) but I've heard good things. The only downside is the subscription which I think is a good idea but it's a new commitment for people who've spent decades using Google for free and that'll be a barrier for entry (which again, I don't disagree with!)
 
 I've written all of this down because a lot of people come with the notion that "if you don't like Google, you should simply use a different search engine" without understanding the trade-offs and making those compromises.
+
+**Related**: [a poem about how search engines can't interpret poems](/posts/a-poem-about-how-search-engines-cant-interpret-poems/)

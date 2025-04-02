@@ -11,3 +11,5 @@ tags: ['AI']
 * Any kind of magic or mystical power we will never find out about
 * Something that can—and will—revolutionise anything and everything you can think of by sheer force and will
 * Something to ignore the effects of
+
+([something that AI is like: an orange](/posts/ai-is-a-lot-like-an-orange/))

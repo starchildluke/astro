@@ -35,3 +35,5 @@ Here are some examples of AI subtopics:
 Feel free to let me know if any of those need rearranging but they all make up what AI is.
 
 As for computer science, those would be... orange tree grove I guess? The jury's still out on that one.
+
+But if you're looking for things that AI *isn't*, [I have a list for that too](/posts/things-that-ai-isnt/).

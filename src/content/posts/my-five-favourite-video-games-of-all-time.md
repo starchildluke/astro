@@ -29,3 +29,5 @@ Another fond childhood game. I only ever played this at my friend's house as he 
 Christmas 1993. My cousins got this for their Sega Genesis. I got to play it and enjoyed every moment. I got to know Sonic before Mario (who I've played more of in my lifetime). It's an instant classic and includes good old Myles Prower.
 
 <em>Honorable mentions: Mario Tennis (N64), Pokémon Puzzle League (N64), Tetris (GB), Ronaldo V Football (GBC), System Shock 2 (PC), Kingdom Under Fire: A War of Heroes (PC), Super RC Pro-Am (GB)</em>
+
+I also have [a list of video games that describe me as a gamer](/lists/about-you-video-games/) if you're interested to know more.
