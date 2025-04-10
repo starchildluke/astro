@@ -37,6 +37,5 @@ I thought I'd compile a list of all the consoles I've owned over the years. Maki
 | Anbernic RG35XX Plus | 2024 | 2023					   | Vertical; handheld | White 							      | Yes			  |
 | Anbernic RG40XX V    | 2024 | 2024					   | Vertical; handheld | White 							      | Yes			  |
 | TrimUI Smart Pro     | 2025 | 2023					   | Horizontal; handheld | White 							      | Yes			  |
-| Lenovo Legion Go*    | 2025 | 2023					   | Horizontal; handheld | Black 							      | Yes			  |
-
-<small>\*It's really marketed as a handheld gaming PC as opposed to a video games console but whatever</small>
+| Lenovo Legion Go    | 2025 | 2023					   | Horizontal; handheld | Black 							      | Yes			  |
+| TrimUI Brick       | 2025 | 2024					   | Vertical; handheld | Purple 							      | Yes			  |
