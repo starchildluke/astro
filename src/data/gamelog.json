@@ -181,9 +181,20 @@
 		"publisher": "Square Enix (then Square)",
 		"genre": ["RPG"],
 		"imageURL": "/images/gameslist/final-fantasy-v.webp",	
-		"status": "Actively playing",
+		"status": "Completed",
 		"format": "Emulation",
 		"console": "GBA",
+		"dateBeaten": "04/14/2025"
+	},
+	{
+		"name": "Final Fantasy VI",
+		"developer": "Square Enix (then Square)",
+		"publisher": "Square Enix (then Square)",
+		"genre": ["RPG"],
+		"imageURL": "/images/gameslist/final-fantasy-vi.webp",	
+		"status": "Actively playing",
+		"format": "Emulation",
+		"console": "TBC",
 		"dateBeaten": ""
 	}
 ]
