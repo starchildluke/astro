@@ -13,11 +13,11 @@ Vibe coding. It's a phrase that started out as a way to describe a form of codin
 It might sound daunting to some and maybe even a little dangerous. You're laughing? You're trusting a large language model to code and debug and you're laughing? Then Simon Willson write about [what vibe coding is and isn't](https://simonwillison.net/2025/Mar/19/vibe-coding/) and [a subsequent Bluesky thread on his frustration at the term losing its intended meaning](https://bsky.app/profile/simonwillison.net/post/3lkqracn2yk2m):
 
 > Feels like I'm losing the battle on this one, I keep seeing people use "vibe coding" to mean any time an LLM is used to write code
-<br><br>
+<br/><br/>
 I'm particularly frustrated because for a few glorious moments we had the chance at having ONE piece of AI-related terminology with a clear, widely accepted definition!
 
 <figure style="text-align: center;">
-	<img src="/images/vibe-coding.jpg" alt="a man sitting on a sofa, talking to a woman (out of shot) with the caption 'vibe coding'" loading="lazy" width="200" height="166" > <img src="/images/vibe-coding-2.jpg" alt="a man sitting on a sofa, talking to a woman (out of shot) with the caption 'the word has lost all meaning'" loading="lazy" width="200" height="166" >
+	<img src="/images/vibe-coding.jpg" alt="a man sitting on a sofa, talking to a woman (out of shot) with the caption 'vibe coding'" loading="lazy" width="200" height="166" /> <img src="/images/vibe-coding-2.jpg" alt="a man sitting on a sofa, talking to a woman (out of shot) with the caption 'the word has lost all meaning'" loading="lazy" width="200" height="166" />
 	<figcaption>Jon Lovitz: the right man to distill this discourse</figcaption>
 </figure>
 
