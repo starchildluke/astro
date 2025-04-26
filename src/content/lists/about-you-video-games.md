@@ -1,7 +1,7 @@
 ---
 title: 'About You: Video Games'
 description: "Another video games list, but more about me this time."
-publshed: true
+published: true
 pubDate: '30 Nov 2023'
 tags: ['gaming']
 ---

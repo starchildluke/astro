@@ -172,7 +172,7 @@
 		"imageURL": "/images/gameslist/pokemon-legends-arceus.webp",	
 		"status": "Completed",
 		"format": "Physical",
-		"console": "SNES",
+		"console": "Nintendo Switch",
 		"dateBeaten": "02/18/2025"
 	},
 	{
@@ -192,9 +192,20 @@
 		"publisher": "Square Enix (then Square)",
 		"genre": ["RPG"],
 		"imageURL": "/images/gameslist/final-fantasy-vi.webp",	
-		"status": "Actively playing",
+		"status": "Completed",
 		"format": "Emulation",
-		"console": "TBC",
+		"console": "SNES",
+		"dateBeaten": "04/26/2025"
+	},
+	{
+		"name": "Clair Obscur: Expedition 33",
+		"developer": "Sandfall Interactive",
+		"publisher": "Kepler Interactive",
+		"genre": ["RPG"],
+		"imageURL": "/images/gameslist/clair-obscur-expedition-33.webp",	
+		"status": "Actively playing",
+		"format": "Digital",
+		"console": "Steam",
 		"dateBeaten": ""
 	}
 ]

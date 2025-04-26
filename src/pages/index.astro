@@ -12,7 +12,7 @@ import { getCollection } from 'astro:content';
 let metaTitle = 'Luke Davis: technical SEO, music producer & creator';
 let title = 'Luke Davis';
 let description = 'The digital home of Luke Davis: a senior technical SEO, music producer, and blogger based in Nottingham, UK.';
-let greetings = ['bom dia!', 'boa tarde!', 'boa noite!', '¡buenos dias!', '¡buenos tardes!', '¡buenos noches!', 'hola!', 'ola!', 'good morning!', 'good afternoon!', 'good evening!', 'bonjour!', 'bonsoir!'];
+let greetings = ['<span lang="pt">bom dia!</span>', '<span lang="pt">boa tarde!</span>', '<span lang="pt">boa noite!</span>', '<span lang="es">¡buenos dias!</span>', '<span lang="es">¡buenos tardes!</span>', '<span lang="es">¡buenos noches!</span>', '<span lang="es">hola!</span>', '<span lang="pt">ola!</span>', 'good morning!</span>', 'good afternoon!</span>', 'good evening!</span>', '<span lang="fr">bonjour!</span>', '<span lang="fr">bonsoir!</span>'];
 let sayHello = greetings[Math.floor(Math.random()*greetings.length)];
 let canonicalURL = Astro.url;
 
@@ -115,7 +115,7 @@ let sortedWritings = allWritings.sort((a, b) => new Date(b.data.pubDate) - new D
       <Header title={title} />
       <section class="home-middle">
         <p id="welcome">
-          <span id="hello">{sayHello}</span> and welcome to my corner of the world wide web.
+          <span id="hello"><Fragment set:html={sayHello}></span> and welcome to my corner of the world wide web.
         </p>
         <p>I'm a senior technical SEO specialist, music producer, and blogger based in Nottingham, UK. <br>I currently work for <a href="https://www.impressiondigital.com/">Impression</a> and I'm also the founder of <a href="https://nitedre.am/">NiTEDREAM</a> (formerly Pandog Media), <a href="https://sampleface.co.uk">Sampleface</a>, <a href="https://cultrface.co.uk">Cultrface</a>, <a href="https://logicface.co.uk">LOGiCFACE</a>, <a href="https://playrface.co.uk">Playrface</a>, and <a href="https://distantarcade.co.uk">Distant Arcade</a>.</p>
       </section>

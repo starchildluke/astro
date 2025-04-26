@@ -1,0 +1,55 @@
+---
+// COMPONENTS
+
+import BaseHead from '../components/BaseHead.astro';
+import {Content as Tiwtl} from '../data/tiwtl.mdx';
+
+// METADATA VARIABLES
+
+let title = 'Things I want to learn';
+let description = `Instead of a TIL (Things I Learnt) page, I thought I'd make a TIWTL page (${title}).`;
+
+---
+
+<style>
+
+  @font-face {
+    font-family: "Chicago";
+    src:
+      url("fonts/chicago-12.otf.woff2") format("woff2");
+    font-weight: normal;
+    font-display: swap;
+}
+
+  body, h1 {
+    background: #e0dbd2;
+    font-family: "Chicago", sans-serif;
+  }
+
+  body {
+    margin: 6rem;
+    max-width: 500px;
+  }
+
+  .tiwtl_section {
+    border: 5px solid white;
+    border-radius: 10px;
+    background: #01013B;
+    background: linear-gradient(180deg, rgba(1, 1, 59, 1) 0%, rgba(80, 87, 177, 1) 95%);
+    color: white;
+    padding: 1rem;
+    font-size: 1.5rem;
+  }
+
+</style>
+
+
+<BaseHead title={title} description={description} />
+<body>
+  <h1>Things I want to learn</h1>
+  <section class="tiwtl_section">
+    <p>{description}</p>
+    <Tiwtl />
+  </section>
+</body>
+</html>
