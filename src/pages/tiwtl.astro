@@ -31,6 +31,10 @@ let description = `Instead of a TIL (Things I Learnt) page, I thought I'd make a
     max-width: 500px;
   }
 
+  .tiwtl_section, #tiwtl-home-link {
+    font-size: 1.5rem;
+  }
+
   .tiwtl_section {
     border: 5px solid white;
     border-radius: 10px;
@@ -38,7 +42,28 @@ let description = `Instead of a TIL (Things I Learnt) page, I thought I'd make a
     background: linear-gradient(180deg, rgba(1, 1, 59, 1) 0%, rgba(80, 87, 177, 1) 95%);
     color: white;
     padding: 1rem;
-    font-size: 1.5rem;
+  }
+
+  #tiwtl-home-link {
+    margin-top: 2rem;
+  }
+
+  #tiwtl-home-link a {
+    color: black;
+  }
+
+  #tiwtl-home-link a:hover {
+    text-decoration: none;
+  }
+
+  @media screen and (max-width: 400px) {
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    body {
+      margin: 3rem;
+    }
   }
 
 </style>
@@ -51,5 +76,8 @@ let description = `Instead of a TIL (Things I Learnt) page, I thought I'd make a
     <p>{description}</p>
     <Tiwtl />
   </section>
+  <div id="tiwtl-home-link">
+    <a href="/">< Back home</a>
+  </div>
 </body>
 </html>
