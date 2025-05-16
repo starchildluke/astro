@@ -14,3 +14,7 @@ tags: ['music']
 ## Seal – Whirlpool
 
 > Life is hard in a circle / Especially when you think you're going insane / And all you get for love is lots of pain / I should have known better
+
+## SiR – D'Evils
+
+> Tell me who that nigga if it ain't me / If it ain't a party then it's finna be / Never had a problem that I could solve / It must be official if I get involved
