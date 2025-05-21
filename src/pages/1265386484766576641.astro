@@ -1,0 +1,29 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+
+let title = 'tweet by @Steph_I_Will';
+let description = 'when you feel the coolness of a gold chain graze the crack of your ass';
+---
+
+<style>
+	body {
+		background: black;
+		color: #e7e9ea;
+		font-size: 0.9rem;
+		margin: 1rem;
+	}
+
+	video {
+		width: 480px;
+	}
+</style>
+
+<BaseHead title={title} description={description} canonicalURL={Astro.url} />
+	<body>
+
+	<p>when you feel the coolness of a gold chain graze the crack of your ass</p>
+	<video>
+		<source controls src="/video/ssstwitter.com_1747855148577.mp4" type="video/mp4" />
+	</video>
+
+	</body>

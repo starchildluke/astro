@@ -36,7 +36,6 @@ With a more ordered following list, you can receive more necessary content and m
 
 ## Resources and further reading
 
-- [How to use Twitter lists](https://help.twitter.com/en/using-twitter/twitter-lists)
 - [3 Reasons Your Twitter Follower Ratio Is More Important Than You Know](https://www.inc.com/hillel-fuld/3-reasons-your-twitter-follower-ratio-is-more-important-than-you-know.html)
 - [Social networks have trained us to think in follower counts](https://www.theverge.com/2018/5/1/17302508/instagram-twitter-follow-ratio-why-unfollow)
 - [23 Seldom-Used Ideas for How to Use Twitter Lists](https://blog.bufferapp.com/twitter-lists)
