@@ -1,6 +1,6 @@
 ---
 title: 'Good faith responses to AI? You go first.'
-description: "Today, I realised that I'm trying to compete with teams of writers."
+description: "Outrage in, outrage out."
 published: true
 pubDate: '26 May 2025'
 tags: ["AI", "tech"]
