@@ -1,6 +1,6 @@
 ---
-title: 'Good faith responses to AI? You go first.'
-description: "Outrage in, outrage out."
+title: '"Bad faith" AI critiques need better understanding'
+description: "The negativity makes sense. But maybe we should unpick it and learn why it's there in the first place."
 published: true
 pubDate: '26 May 2025'
 tags: ["AI", "tech"]
