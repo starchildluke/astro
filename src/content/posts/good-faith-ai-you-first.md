@@ -1,0 +1,31 @@
+---
+title: 'Good faith responses to AI? You go first.'
+description: "Today, I realised that I'm trying to compete with teams of writers."
+published: true
+pubDate: '26 May 2025'
+tags: ["AI", "tech"]
+---
+
+I just read a Bluesky post about a Veo 3 demo. If you don't know, Veo 3 is a new generative AI model by Google that produces audiovisual content. The demo in question showed a improv comedian making a joke about going to a zoo and they only had one dog which was a shih tzu, followed by audience laughter. Although I loathe and despite AI-generative videos for many reasons, it looked objectively better than anything I'd seen before. Go them I guess?
+
+The comments were a mixed bag—as you'd expect. People were astounded by the quality, frightened by the quality, angry at yet another model and the implications of it, and not getting the joke. I'm not here to explain the joke (mainly because I don't care) but to discuss the _meta_-criticism of these reactions.
+
+## Gotta have faith
+
+[One quote post](https://bsky.app/profile/minimaxir.bsky.social/post/3lpnkccs2cc2d) that I saw came from someone whose work I respect and use quite a lot when I do use large language models. But his response reminded me of a sense of frustration from AI/ML practitioners that reduces commentary down to good faith vs. bad faith. Basically, he said that commenters assumed the demo was posted as "AI slop" rather than a neutral demonstration of the technology and that appears to be the common reaction.
+
+This is a fair assessment. But the question is why are people so virulent and cold towards AI demos? Is it because of [the environmental impacts](https://www.unep.org/news-and-stories/story/ai-has-environmental-problem-heres-what-world-can-do-about) which [some have downplayed](https://www.nature.com/articles/s41598-024-54271-x) or have claimed are misinterpreted? Or the moral implications given how [the technology uses copyrighted material for training without permission](https://hbr.org/2023/04/generative-ai-has-an-intellectual-property-problem), not to mention [inherent human biases and forms of discrimination](https://www.nature.com/articles/s41586-024-07856-5)? There's a lot to criticise and big tech companies keep getting funded, keep polluting the planet to gain power and fuel the models, and turn a blind eye to the growing spread of mis/disinformation thanks to this tech. [And where's the accountability from Big Tech](https://europeandemocracyhub.epd.eu/big-tech-is-avoiding-responsibility/)?
+
+## Maybe AI is cancelling culture...
+
+So many people are being impacted by AI technology so I think the negative feedback is justified. You can blame moral panic or """cancel culture""" as a broad reason but that's too easy and might not even be true. Nobody _has_ to give a lengthy, detailed explanation as to why they're mad at this stuff. If the companies are acting in bad faith so often, why shouldn't we act in kind?
+
+And let's be real here: do we need Veo 3? Who's really going to be using it and for what purposes? Did we not just see the film industry grind to a halt due to strikes related to misuse of AI tech at the expense of workers? Are people not getting laid off and replaced for this tech? Maybe that default good faith is allowing nefarious entities to keep doing nefarious things. Instead, we should look at track records, expect nothing _or_ bad at best, and be stringent on what should and shouldn't be done. I think that's called regulation but I could be wrong. There's so little of it in this space, I forget.
+
+## Must be something in the air
+
+The Veo 3 demo of the improv comedian was meant to showcase its capabilities. It did that. It looked better than a lot of crap we've seen. But focusing on the critiques rather than why people are critiquing it in the way that they are isn't helpful either.
+
+And this isn't to focus on one post and embellish it beyond its confines. I referenced a Nature article saying "well actually humans pollute more than AI and AI could actually help reduce it" which looks remarkable given the issues in Memphis where xAI has used a number of portable methane gas turbines without air permits to help power its supercomputer ([source](https://www.selc.org/news/resistance-against-elon-musks-xai-facility-in-south-memphis-gets-stronger/)). This has negatively impacted air quality in the area. Of course, this is also being downplayed but that's where we're at. Companies doing things they shouldn't, impacting people, people complaining, and then being told to stop complaining and that they're wrong. Aren't we tired of this? Many of us don't have the energy to go down the middle with this and "hear them out".
+
+Usually these kinds of morally panicked responses come from conservatives—and they still do—but those same people are the ones funding the tech and using it for political gain so perhaps we need to look away from generalisation and pinpoint the issues and meet people where they are. That's my definition of good faith.
