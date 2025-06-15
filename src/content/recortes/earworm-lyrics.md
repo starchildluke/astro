@@ -3,7 +3,6 @@ title: 'Earworm lyrics'
 description: "A list of lyrics I love."
 publshed: true
 pubDate: '29 Jan 2024'
-layout: ../../layouts/Recortes.astro
 tags: ['music']
 ---
 

@@ -2,7 +2,6 @@
 title: 'Web copy style'
 published: true
 pubDate: '13 May 2023'
-layout: ../../layouts/Recortes.astro
 tags: ['the Internet', 'writing']
 ---
 

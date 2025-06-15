@@ -3,7 +3,6 @@ title: I am not a content creator
 description: It's funny what comes into your head while you're washing up.
 published: true
 pubDate: 19 Feb 2025
-layout: ../../layouts/BlogPost.astro
 tags: ["life", "art", "music"]
 ---
 While I was washing up last night, I realised something:

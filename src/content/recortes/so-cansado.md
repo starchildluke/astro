@@ -2,7 +2,6 @@
 title: 'Só cansado'
 description: "Nobody's gonna read it."
 pubDate: '17 Feb 2020'
-layout: ../../layouts/Recortes.astro
 tags: ['writing']
 ---
 

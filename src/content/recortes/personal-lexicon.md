@@ -2,7 +2,6 @@
 title: 'Personal lexicon'
 description: "A list of words I use in my life that are unique to me."
 pubDate: '1 Nov 2023'
-layout: ../../layouts/Recortes.astro
 tags: ['writing']
 ---
 

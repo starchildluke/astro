@@ -2,7 +2,6 @@
 title: 'If I were a rich man #1'
 description: "Things I'd want if I was rich."
 pubDate: '22 Aug 2020'
-layout: ../../layouts/Recortes.astro
 tags: ['art']
 ---
 <figure style="aspect-ratio: 1.15:1;">

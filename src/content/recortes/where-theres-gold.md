@@ -2,7 +2,6 @@
 title: "Where there's gold"
 description: "I'd forgotten just how great this song by Seal was."
 pubDate: "15 Apr 2021"
-layout: ../../layouts/Recortes.astro
 tags: ['music']
 ---
 

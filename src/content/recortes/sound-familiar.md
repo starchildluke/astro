@@ -3,7 +3,6 @@ title: "Sound familiar?"
 description: "Some thoughts on people's cookie cutter conversations."
 published: true
 pubDate: "19 Jan 2021"
-layout: ../../layouts/Recortes.astro
 tags: ['life']
 ---
 

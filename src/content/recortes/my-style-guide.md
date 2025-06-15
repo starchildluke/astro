@@ -3,7 +3,6 @@ title: 'My style guide'
 description: 'This is my WIP style guide for all sites that I own.'
 published: true
 pubDate: '06 Nov 2023'
-layout: ../../layouts/Recortes.astro
 tags: ['the Internet', 'writing']
 ---
 

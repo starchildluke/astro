@@ -3,7 +3,6 @@ import site from '../data/site.json';
 import sanitizeHtml from 'sanitize-html';
 import MarkdownIt from 'markdown-it';
 import { getCollection } from 'astro:content';
-import pages from './pages.json.js';
 
 const parser = new MarkdownIt();
 
