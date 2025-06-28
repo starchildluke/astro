@@ -1,4 +1,7 @@
 import { getCollection } from 'astro:content';
+import sanitizeHtml from 'sanitize-html';
+import MarkdownIt from 'markdown-it';
+const parser = new MarkdownIt();
 
 export async function GET({params, request}) {
   const blogPosts = await getCollection('posts');
@@ -10,47 +13,51 @@ export async function GET({params, request}) {
   const releaseNotes = await getCollection("release-notes");
   
   const posts = blogPosts.map((data) => {
-      const { slug, data: { title, pubDate, description } } = data;
+      const { slug, body, data: { title, pubDate, description } } = data;
       return {
+        url: `https://lukealexdavis.co.uk/posts/${slug}/`,
         title: title,
         date: pubDate,
         description: description,
-        url: `https://lukealexdavis.co.uk/posts/${slug}/`
+        body: sanitizeHtml(parser.render(body))
       };
     });
 
   const allLists = lists.map((data) => {
-      const { slug, data: { title, pubDate, description } } = data;
+      const { slug, body, data: { title, pubDate, description } } = data;
       return {
+        url: `https://lukealexdavis.co.uk/lists/${slug}/`,
         title: title,
         date: pubDate,
         description: description,
-        url: `https://lukealexdavis.co.uk/lists/${slug}/`
+        body: sanitizeHtml(parser.render(body))
       };
     });
 
   const allMlogs = mlogs.map((data) => {
-        const { slug, data: { title, pubDate, description } } = data;
+        const { slug, body, data: { title, pubDate, description } } = data;
         return {
+          url: `https://lukealexdavis.co.uk/mlog/${slug}/`,
           title: title,
           date: pubDate,
           description: description,
-          url: `https://lukealexdavis.co.uk/mlog/${slug}/`
+          body: sanitizeHtml(parser.render(body))
         };
       });
 
   const allMorsels = morsels.map((data) => {
-        const { slug, data: { title, pubDate, description } } = data;
+        const { slug, body, data: { title, pubDate, description } } = data;
         return {
+          url: `https://lukealexdavis.co.uk/morsels/${slug}/`,
           title: title,
           date: pubDate,
           description: description,
-          url: `https://lukealexdavis.co.uk/morsels/${slug}/`
+          body: sanitizeHtml(parser.render(body))
         };
       });
 
   const allAlbums = albums.map((data) => {
-        const { slug, data: { title, pubDate, description } } = data;
+        const { slug, body, data: { title, pubDate, description } } = data;
         return {
           title: title,
           date: pubDate,
@@ -60,22 +67,24 @@ export async function GET({params, request}) {
       });
   
   const allRecortes = recortes.map((data) => {
-          const { slug, data: { title, pubDate, description } } = data;
+          const { slug, body, data: { title, pubDate, description } } = data;
           return {
+            url: `https://lukealexdavis.co.uk/recortes/${slug}/`,
             title: title,
             date: pubDate,
             description: description,
-            url: `https://lukealexdavis.co.uk/recortes/${slug}/`
+            body: sanitizeHtml(parser.render(body))
           };
         });
 
   const allReleaseNotes = releaseNotes.map((data) => {
-        const { slug, data: { title, pubDate, description } } = data;
+        const { slug, body, data: { title, pubDate, description } } = data;
         return {
+          url: `https://lukealexdavis.co.uk/release-notes/${slug}/`,
           title: title,
           date: pubDate,
           description: description,
-          url: `https://lukealexdavis.co.uk/release-notes/${slug}/`
+          body: sanitizeHtml(parser.render(body))
         };
       });
 
