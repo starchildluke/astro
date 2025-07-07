@@ -1,0 +1,64 @@
+---
+import lastFmData from '../data/lastfm.json';
+---
+
+<p><strong>1,000 Klub</strong>: <em>{lastFmData.topartists.artist.filter((item: any) => (
+	item.playcount > 999
+	)).map(
+		(artist) => artist.name
+	).join(', ')}</em></p>
+
+<p><strong>900 Klub</strong>: <em>{lastFmData.topartists.artist.filter((item: any) => (
+	item.playcount > 899 && item.playcount < 999
+	)).map(
+		(artist) => artist.name
+	).join(', ')}</em></p>
+
+
+<p><strong>800 Klub</strong>: <em>{lastFmData.topartists.artist.filter((item: any) => (
+	item.playcount > 799 && item.playcount < 899
+	)).map(
+		(artist) => artist.name
+	).join(', ')}</em></p>
+
+<p><strong>700 Klub</strong>: <em>{lastFmData.topartists.artist.filter((item: any) => (
+	item.playcount > 699 && item.playcount < 799
+	)).map(
+		(artist) => artist.name
+	).join(', ')}</em></p>
+
+<p><strong>600 Klub</strong>: <em>{lastFmData.topartists.artist.filter((item: any) => (
+	item.playcount > 599 && item.playcount < 699
+	)).map(
+		(artist) => artist.name
+	).join(', ')}</em></p>
+
+<p><strong>500 Klub</strong>: <em>{lastFmData.topartists.artist.filter((item: any) => (
+	item.playcount > 499 && item.playcount < 599
+	)).map(
+		(artist) => artist.name
+	).join(', ')}</em></p>
+
+<p><strong>400 Klub</strong>: <em>{lastFmData.topartists.artist.filter((item: any) => (
+	item.playcount > 399 && item.playcount < 499
+	)).map(
+		(artist) => artist.name
+).join(', ')}</em></p>
+
+<p><strong>300 Klub</strong>: <em>{lastFmData.topartists.artist.filter((item: any) => (
+	item.playcount > 299 && item.playcount < 399
+	)).map(
+		(artist) => artist.name
+).join(', ')}</em></p>
+
+<p><strong>200 Klub</strong>: <em>{lastFmData.topartists.artist.filter((item: any) => (
+	item.playcount > 199 && item.playcount < 299
+	)).map(
+		(artist) => artist.name
+).join(', ')}</em></p>
+
+<p><strong>100 Klub</strong>: <em>{lastFmData.topartists.artist.filter((item: any) => (
+	item.playcount > 99 && item.playcount < 199
+	)).map(
+		(artist) => artist.name
+).join(', ')}</em></p>
