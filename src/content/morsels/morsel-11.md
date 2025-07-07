@@ -6,6 +6,7 @@ tags:
   - Javascript
   - the Internet
   - tech
+  - Web performance
 ---
 
 In my line of work, I struggle with finding DOM elements that cause issues but are otherwise hidden—by `display:none`—or obscured by above-the-fold menus. I came across the latter the other day and the issue was lazy-loading. I wasn't sure whether the element classed as "in the viewport" despite not being immediately seen by the user unless they unfolded the menu.

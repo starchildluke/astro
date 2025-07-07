@@ -6,6 +6,7 @@ tags:
   - WordPress
   - the Internet
   - tech
+  - Web performance
 ---
 
 My third morsel is actually a WordPress fix.

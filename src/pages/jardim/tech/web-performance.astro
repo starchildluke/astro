@@ -1,0 +1,54 @@
+---
+// COMPONENTS
+
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+import Layout from '../../../layouts/Layout.astro';
+import Breadcrumbs from '../../../components/Breadcrumbs.astro';
+import Tags from '../../../components/Tags.astro';
+
+// METADATA VARIABLES
+
+let title = 'Web performance';
+let description = 'A page all about Web performance.';
+
+---
+<Layout {title} {description}>
+    <div class="layout">
+      <article class="content">
+        <Header />
+        <Breadcrumbs title={title}/>
+        <section class="intro">
+          <h1>{title}</h1>
+          <p class="desc">{description}</p>
+          <p>Web performance is about measuring how well websites serve their users in terms of speed and user experience (UX).</p>
+          <p>The faster a site loads, the better. But it goes much deeper than that and there are a myriad of moving parts that contribute towards better performance and sometimes speed isn't everything.</p>
+          <p>This page covers topics such as Core Web Vitals, testing, relationships with UX and SEO, and little tips and tricks that can help improve Web performance.</p>
+        </section>
+        <section>
+          <h2 class="wiki-h2">Inner voice</h2>
+          <Tags tagName="Web performance" />
+        </section>
+        
+        <section>
+          <h2 class="wiki-h2">Second opinions</h2>
+          
+          <ul>
+            <li><a href="https://macwright.com/2016/05/03/the-featherweight-website">This page weighs 15kb</a></li>
+            <li><a href="https://calibreapp.com/tools/core-web-vitals-test">Calibre's Core Web Vitals Test tool</a></li>
+            <li><a href="https://csswizardry.com/2024/09/optimising-for-high-latency-environments/">Optimising for High Latency Environments</a></li>
+            <li><a href="https://cruxvis.withgoogle.com/#/">CrUX Vis - Visualize time series of real-world web performance data</a></li>
+            <li><a href="https://www.phpied.com/web-font-sizes-a-more-complete-data-set/">Web font sizes: a more complete data set</a></li>
+            <li><a href="https://www.speedcurve.com/blog/core-web-vitals-inp-mobile/">Mobile INP performance: The elephant in the room</a></li>
+            <li><a href="https://www.debugbear.com/blog/inp-misconceptions">Debunking 5 Myths About Interaction to Next Paint (INP)</a></li>
+          </ul>
+
+          <p><a href="https://pinboard.in/u:lukealexdavis/t:webperf/">My Pinboard links tagged as "webperf"</a></p>
+          
+        </section>
+      </article>
+      
+    </div>
+    <Footer/>
+  </body>
+</html>
