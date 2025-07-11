@@ -41,7 +41,7 @@ And none of this is to discredit anyone I've mentioned (although I worry that I 
 
 Sadly with vibe coding, it might have started out as a tongue-in-cheek thing, and almost throwaway but now it has taken on a life of its own and we're halfway between taking it seriously and poking fun. I'm not sure which side I stand on but my legs keep widening and I just remembered that I can't do the splits!
 
-**Related**: I just found this article called [There is no Vibe Engineering](https://serce.me/posts/2025-31-03-there-is-no-vibe-engineering):
+**Related**: I just found this article called [There is no Vibe Engineering](https://serce.me/posts/2025-03-31-there-is-no-vibe-engineering):
 
 > The key difference between vibe coding and normal coding is that the engineer doesn’t interact with the codebase directly, and instead converses with the agent and inspects the final outcome.
 

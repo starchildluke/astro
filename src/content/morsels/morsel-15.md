@@ -9,7 +9,7 @@ tags:
 
 While snooping through a website's <code>hreflang</code>, I noticed a unique ISO code: <code>en-150</code>.
 
-According to a number of source, en-150 is the [language subtag](https://www.w3.org/International/articles/language-tags/#region) for English spoken in Europe, which comes in handy as a catch-all. While it is valid, I'm not 100% that Google uses it as a hreflang value although on their [Think With Google page](https://www.thinkwithgoogle.com/intl/en-emea/) they use it as a data-* value (via [Stack Overflow](https://stackoverflow.com/questions/35989478/hreflang-tags-for-europe)). Here's one example:
+According to a number of source, en-150 is the [language subtag](https://www.w3.org/International/articles/language-tags/#region) for English spoken in Europe, which comes in handy as a catch-all. While it is valid, I'm not 100% that Google uses it as a hreflang value although on their old [Think With Google page](https://web.archive.org/web/20250627152147/https://www.thinkwithgoogle.com/intl/en-emea/) they use it as a data-* value (via [Stack Overflow](https://stackoverflow.com/questions/35989478/hreflang-tags-for-europe)). Here's one example:
 
 ```html
 <link rel="alternate" href="https://www.thinkwithgoogle.com/intl/en-emea/" hreflang="en-dz" data-code="en-emea">

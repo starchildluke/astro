@@ -22,7 +22,7 @@ It's taken Google decades to get to this level of power. You're not going to get
 
 **Update - 23rd Dec 2024**: I had some more thoughts!
 
-As people flock to other search engines and extol their virtues, it's important to understand the trade-offs. There's no doubt that Google Search has fallen off. You get your viewport filled with ads, [knowledge panels](https://support.google.com/knowledgepanel/answer/9163198?hl=en), and [AI Overviews](https://developers.google.com/search/docs/appearance/ai-overviews). And when you find the organic links, the quality is questionable. Is it AI, is it an "ultimate" guide masquerading as a list of sponsored ads (written by AI), or is it Reddit? Either way, you probably won't find what you're looking for or you think you've found it and discover that the information is incorrect.
+As people flock to other search engines and extol their virtues, it's important to understand the trade-offs. There's no doubt that Google Search has fallen off. You get your viewport filled with ads, [knowledge panels](https://support.google.com/knowledgepanel/answer/9163198?hl=en), and [AI Overviews](https://developers.google.com/search/docs/appearance/ai-features). And when you find the organic links, the quality is questionable. Is it AI, is it an "ultimate" guide masquerading as a list of sponsored ads (written by AI), or is it Reddit? Either way, you probably won't find what you're looking for or you think you've found it and discover that the information is incorrect.
 
 There's a lot of minsinformation out there and I think it's less that Google doesn't know how to deal with it and more that they're not _that_ bothered about dealing with it as long as people keep using their platform and the ad revenue keeps flowing in.
 

@@ -81,7 +81,7 @@ Headings split up blocks of texts and describe what each section is about. They 
 
 ### The inverted pyramid model is a good idea
 
-[The inverted pyramid model](https://study.com/academy/lesson/the-inverted-pyramid-in-journalistic-writing.html) is not ideal in every situation but sometimes you just want to know what a long read is about. And if it interests you enough, you'll read more. I've heard naysayers claim TL;DR's kill dwell time but I disagree. Considering Google uses the first page of SERPs to add their own version of TL;DRs (better known as [featured snippets](https://www.sistrix.com/ask-sistrix/onpage-optimisation/what-are-featured-snippets/)), if they dodge those and actually click your link, they're ready to read. And the inverted pyramid model can help with outlining content and then explaining it all in more detail.
+[The inverted pyramid model](https://study.com/learn/lesson/inverted-pyramid-style-journalism.html) is not ideal in every situation but sometimes you just want to know what a long read is about. And if it interests you enough, you'll read more. I've heard naysayers claim TL;DR's kill dwell time but I disagree. Considering Google uses the first page of SERPs to add their own version of TL;DRs (better known as [featured snippets](https://www.sistrix.com/ask-sistrix/onpage-optimisation/what-are-featured-snippets/)), if they dodge those and actually click your link, they're ready to read. And the inverted pyramid model can help with outlining content and then explaining it all in more detail.
 
 ### There's a lot of the same content out there
 
@@ -102,7 +102,7 @@ Something else I didn't pay enough attention to in the past. I have a blog that 
 ## Google
 ### Google is not a meritocracy
 
-[I wrote a piece on this](https://www.adzooma.com/blog/google-is-not-a-meritocracy/)] so I won't repeat it. But for all the good things Google does, there are some grey areas and red flags.
+[I wrote a piece on this](https://adzooma.com/blog/google-is-not-a-meritocracy/)] so I won't repeat it. But for all the good things Google does, there are some grey areas and red flags.
 
 ### But John Mueller is awesome
 

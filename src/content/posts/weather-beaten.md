@@ -6,7 +6,7 @@ pubDate: '22 Oct 2022'
 tags: ['life']
 ---
 
-Burnout has been on the tip of our tongues for god knows how long. But today, I wondered if that was the right word to describe how I've been feeling lately and for a while. Burnout is a "state of emotional, physical, and mental exhaustion caused by excessive and prolonged stress" according to [HelpGuide](https://www.helpguide.org/articles/stress/burnout-prevention-and-recovery.htm) and probably any qualified professional. The goal is to address it and regain a balance. But what about the long-term effects of that burnout?
+Burnout has been on the tip of our tongues for god knows how long. But today, I wondered if that was the right word to describe how I've been feeling lately and for a while. Burnout is a "state of emotional, physical, and mental exhaustion caused by excessive and prolonged stress" according to [HelpGuide](https://www.helpguide.org/mental-health/stress/burnout-prevention-and-recovery) and probably any qualified professional. The goal is to address it and regain a balance. But what about the long-term effects of that burnout?
 
 If you burn anything, it leaves a scar or some visual reminder of its harm.
 

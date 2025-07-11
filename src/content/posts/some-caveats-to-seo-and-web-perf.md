@@ -8,9 +8,9 @@ tags: ['SEO', 'tech', 'the Internet', 'Web performance']
 
 As a technical SEO, I am very passionate about web performance. The speed and overall performance of a page can affect how well a search engine crawler can crawl and index a page (amongst many other factors). The usual way to define that is through metrics like Google's [Core Web Vitals](https://web.dev/articles/vitals/), which form part of their [Page Experience ranking signal](https://developers.google.com/search/docs/appearance/page-experience)<sup><a href ="#sidenote">\*</a></sup>. But there's a problem I've noticed between both SEO and web performance communities: people are giving too much weight to Core Web Vitals from a ranking perspective.
 
-Now, I'm going to use an example from [Speedcurve](https://www.speedcurve.com/) to illustrate this. I don't think the information on their [SEO and Web Performance](https://support.speedcurve.com/docs/seo-and-web-performance) is terrible or incorrect but I feel like some caveats are important to avoid misunderstandings or heated debates between businesses and their in-house SEOs/agencies.
+Now, I'm going to use an example from [Speedcurve](https://www.speedcurve.com/) to illustrate this. I don't think the information on their [SEO and Web Performance](https://www.speedcurve.com/web-performance-guide/seo-web-performance/) is terrible or incorrect but I feel like some caveats are important to avoid misunderstandings or heated debates between businesses and their in-house SEOs/agencies.
 
-In the section titled [How much does web performance matter when it comes to SEO?](https://support.speedcurve.com/docs/seo-and-web-performance#how-much-does-web-performance-matter-when-it-comes-to-seo), they say the following:
+In the section titled “How much does web performance matter when it comes to SEO?”, they say the following:
 
 >Since Web Vitals were announced, they've shot to the top of many people's list of things to care about. But Google's prioritization of page speed in search ranking isn't new, even for mobile. As far back as 2013, Google announced that pages that load slowly on mobile devices would be penalized in mobile search.
 <br><br>
@@ -47,7 +47,7 @@ That's not to say I doubt that improving web performance makes a difference to c
 
 ## Who Core Web Vitals is really for
 
-The section titled [Which performance metrics should you focus on for SEO?](https://support.speedcurve.com/docs/seo-and-web-performance#which-performance-metrics-should-you-focus-on-for-seo) examines metrics to look out for when measuring performance and where you can improve. There are four listed:
+The section titled “Which performance metrics should you focus on for SEO?” examines metrics to look out for when measuring performance and where you can improve. There are four listed:
 
 * [Largest Contentful Paint (LCP)](https://web.dev/articles/lcp)
 * [First Input Delay (FID)](https://web.dev/articles/fid)

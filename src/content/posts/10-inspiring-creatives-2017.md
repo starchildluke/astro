@@ -25,7 +25,7 @@ I'm simply in awe every time I see a new project from Arkotype, the "passion pro
 
 I went through a rough period in the middle of 2015 and during that time, I took to writing to take my mind off things. I remember reading Alex Stewart's Moneyball series on The Set Pieces where he took Bristol City on Football Manager and rode them to glory in Europe with a sustainable financial strategy based on the books [Moneyball](https://uk.bookshop.org/a/3710/9780393324815), Soccernomics and The Numbers Game. I nicked his idea for Championship Manager and he retweeted the articles and that's how I started using my current Twitter account. Aside form that, Alex is a brilliant writer and television broadcaster, following in the footsteps of his father Alastair Stewart.
 
-[Twitter](https://twitter.com/AFHStewart) | [Facebook](https://facebook.com/afhstewart)
+[Twitter](https://twitter.com/AFHStewart)
 
 ## 4. Liam Wong
 
@@ -48,8 +48,6 @@ I have to thank my good friend Stephanie Vaughn for the conection. It's no secre
 ## 7. KUMA GOLD
 
 I can't speak highly enough of KUMA, particularly for the fact he has made trap music audible for me. His production style is close to my own in some ways and I think that's where I feel the kinship so strongly. Of course, he is much better than me which helps when I want to be improve myself and while I think he deserves a lot more recognition or even a deal, you know what? A deal might taint the output - not because I think he would falter (NEVER that) but I've seen major-ish deals sour free creativity. He is embarking on a world trip and that will only further his creativity and produce even better music. I can't wait.
-
-[Website](https://kuma.gold) | [Spotify](https://open.spotify.com/artist/1oJv5fqPPUvH240dU5GZ9P?si=DUiijsvmSOelIfK1zg-SKg)
 
 ## 8. The Music Snobs
 

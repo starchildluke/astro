@@ -8,7 +8,7 @@ tags: ['life', 'Black', 'SEO', 'social media']
 
 **In a follow-up to my 2020 piece ‘Being Black in Digital Marketing’, I asked the same Black marketers if anything has changed in the last 3 years.**
 
-A lot has happened to me since I wrote [Being Black in Digital Marketing](https://www.adzooma.com/blog/being-black-in-digital-marketing/).
+A lot has happened to me since I wrote [Being Black in Digital Marketing](https://adzooma.com/blog/being-black-in-digital-marketing/).
 
 I changed jobs, changed roles, and have built something of a reputation in the industry. But alongside that, many of the issues I raised in the original article remain the same.
 

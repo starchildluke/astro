@@ -10,7 +10,7 @@ When you embrace a person, it indicates a sense of love, warmth, comfort, and tr
 
 But that's exactly the kind of rhetoric I see on social media. The idea is that because AI is "here to stay" and it's all interesting and exciting and kinda problematic but we can ignore that because of the interest and excitement that we need to coddle this technology else we fall behind.
 
-But I disagree. I think adoption of AI tech is completely optional, even if Google is going ahead with things like [Search Generative Experience (SGE)](https://static.googleusercontent.com/media/www.google.com/en//search/howsearchworks/google-about-SGE.pdf)<sup><strong>[PDF]</strong></sup>. I keep seeing SEOs clambering to test it out in its flawed infancy and trying to gain knowledge that isn't there (and I'm not even referring to the AI itself!)
+But I disagree. I think adoption of AI tech is completely optional, even if Google is going ahead with things like Search Generative Experience (SGE). I keep seeing SEOs clambering to test it out in its flawed infancy and trying to gain knowledge that isn't there (and I'm not even referring to the AI itself!)
 
 By all means satiate your curiosity but don't assume any findings are immediately significant because Google holds all the cards and can change the rules at any minute.
 

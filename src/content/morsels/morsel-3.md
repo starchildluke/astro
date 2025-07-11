@@ -39,6 +39,6 @@ In terms of the preload code, I recommend the following:
 
 ```<link rel="preload" href="PATH" type="font/woff2" as="font" crossorigin="">```
 
-I've gone with woff2 only as it's widely supported and smaller in file size, which compounds the benefits of preloading for page speed. Just be careful of [FOUT](https://fonts.google.com/knowledge/glossary/fout) and set your [Cache-Control headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control)!
+I've gone with woff2 only as it's widely supported and smaller in file size, which compounds the benefits of preloading for page speed. Just be careful of [FOUT](https://fonts.google.com/knowledge/glossary/fout) and set your [Cache-Control headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cache-Control)!
 
 And make sure to put that ahead of the ```wp_head()``` in your header.php file so it can preload before the CSS (I believe that's how it works lol).

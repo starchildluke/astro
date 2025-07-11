@@ -8,7 +8,7 @@ tags: ['politics']
 
 I get sick of hearing about "freedom of speech", especially in the UK who have, like a lot of things, adopted it from the US because they have no ideas of their own (see also, ironically: the British Empire). So I found this and thought it was interesting:
 
-**[Things That Are Not In the U.S. Constitution](https://www.usconstitution.net/constnot.html)**
+**[Things That Are Not In the U.S. Constitution](https://www.usconstitution.net/constnot-html/)**
 
 > Have you ever heard someone say, "That's unconstitutional!" or "That's my constitutional right!" and wondered if they were right? You might be surprised how often people get it wrong. You might also be surprised how often people get it right. Your best defense against misconception is reading and knowing your Constitution.    <br><br>
 > A lot of people presume a lot of things about the Constitution. Some are true, some are not. This page will detail some of the things that people think are in the Constitution, but are not. <br><br>

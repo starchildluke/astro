@@ -36,7 +36,6 @@ Places like Twitter, Instagram, et al should be extensions of your marketing and
 ## Web hosts
 
 * [IONOS](https://www.ionos.co.uk/)
-* [Krystal](https://krystal.uk/)
 * [Bluehost](https://www.bluehost.uk/)
 * [HostGator](https://www.hostgator.com/)
 * [Hostinger](https://www.hostinger.com/uk)

@@ -16,7 +16,7 @@ _What do you mean I've lost you and that I should get to the point???_
 
 Right, linkblogs! I wanted one because I don't always feel comfortable just throwing a Cool Link on my blogs and that taking up the main feed. I looked through a variety of examples for inspiration and realised there were so many that I was getting choice paralysis.
 
-In the end, I calmed myself down, [ignored a naysayer I found](https://meiert.com/en/blog/the-problem-with-link-blogs-plus-five-link-blogs-that-rock/), and created an ongoing linkblog right here:
+In the end, I calmed myself down, [ignored a naysayer I found](https://meiert.com/blog/the-problem-with-link-blogs-plus-five-link-blogs-that-rock/), and created an ongoing linkblog right here:
 
 [https://lukealexdavis.co.uk/linkblog/](/linkblog/)
 

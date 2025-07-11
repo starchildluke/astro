@@ -13,7 +13,7 @@ For the flow to work, I need tools to help me and streamline the process. I'm pr
 The things I use are:
 
 * [Feedly](https://feedly.com/)
-* [Pocket](https://getpocket.com/en/)
+* Pocket (RIP 2007–2025)
 * [Raindrop](https://raindrop.io/)
 * [Pinboard](https://pinboard.in/)
 * [Python](https://www.python.org/)

@@ -6,7 +6,7 @@ pubDate: 17 Jul 2024
 tags: ['gaming', 'tech']
 ---
 
-A few weeks ago, my son got a new [Nintendo Switch — OLED Model Pokémon Scarlet & Violet Edition](https://store.nintendo.co.uk/en/nintendo-switch-oled-model-pokemon-scarlet-and-violet-edition-000000000010009863). While it looked amazing and incredibly enticing, I realised that getting an OLED model wasn't the best idea. For my son, his old one was on the way out. I just wanted it because it was a shiny cool thing and I knew that the "Switch 2" was just around the corner.
+A few weeks ago, my son got a new Nintendo Switch — OLED Model Pokémon Scarlet & Violet Edition. While it looked amazing and incredibly enticing, I realised that getting an OLED model wasn't the best idea. For my son, his old one was on the way out. I just wanted it because it was a shiny cool thing and I knew that the "Switch 2" was just around the corner.
 
 So I decided to make two different purchases for less than the cost of the OLED Switch:
 

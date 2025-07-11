@@ -13,7 +13,7 @@ In my line of work, I struggle with finding DOM elements that cause issues but a
 
 So I looked for a way to check and came across a JavaScript method called `getBoundingClientRect()`. It returns a [DOMRect object](https://developer.mozilla.org/en-US/docs/Web/API/DOMRect) that shows the size (width and height) and position (x and y coordinates) of an element in relation to the viewport.
 
-There are other ways to do it but this seemed the easiest for me (and coolest because I'd never heard of it before). [Here's an example taken from Geeks for Geeks](https://www.geeksforgeeks.org/how-to-check-a-dom-element-is-visible-in-current-viewport/):
+There are other ways to do it but this seemed the easiest for me (and coolest because I'd never heard of it before). [Here's an example taken from Geeks for Geeks](https://www.geeksforgeeks.org/javascript/how-to-check-a-dom-element-is-visible-in-current-viewport/):
 
 ```javascript
 function myfunction(value) {
