@@ -1,0 +1,38 @@
+---
+title: "API vs. chatbots? They're singing from the same hymn sheet"
+description: "They have their pros and cons but they're not directly opposed. The key difference is manual fine-tuning."
+published: true
+pubDate: '14 Jul 2025'
+tags: ["AI", "tech"]
+---
+
+import IcebergNotes from '../../components/IcebergNotes.astro';
+
+A while back, I read [Max Woolf's article on how he uses LLMs](https://minimaxir.com/2025/05/llm-use/). In it, he explained how he prefers to use the API directly vs. a customer-facing chatbot (e.g. Gemini.com, ChatGPT, et al):
+
+> [...] I never use ChatGPT.com or other normal-person frontends for accessing LLMs because they are harder to control. Instead, I typically access the backend UIs provided by each LLM service, which serve as a light wrapper over the API functionality which also makes it easy to port to code if necessary. Accessing LLM APIs like the ChatGPT API directly allow you to set system prompts which control the “rules” for the generation that can be very nuanced. Specifying specific constraints for the generated text such as “keep it to no more than 30 words” or “never use the word ‘delve’” tends to be more effective in the system prompt than putting them in the user prompt as you would with ChatGPT.com. Any modern LLM interface that does not let you explicitly set a system prompt is most likely using their own system prompt which you can’t control: for example, when ChatGPT.com had an issue where it was too sycophantic to its users, OpenAI changed the system prompt to command ChatGPT to “avoid ungrounded or sycophantic flattery.” I tend to use Anthropic Claude’s API — Claude Sonnet in particular — more than any ChatGPT variant because Claude anecdotally is less “robotic” and also handles coding questions much more accurately.
+
+I'm not a huge fan of prompt engineering as a concept or how it has been made to be a scientific skill and then refashioned/evolved to become context engineering but unfortunately, it's a requirement while much of the technology's inner workings are obscured.
+
+## A rebuttal
+
+Today, I read a counterargument by Morgan alias SansGuidon who [prefers chat interfaces and conversational interactions over API access](https://morgan.zoemp.be/conversation/):
+
+> For me, chat interfaces aren't just convenient—they’re an essential part of understanding [...] Max argues APIs allow for more fine-tuning—system prompts, temperature control, constraints. Sure. But in a chat session, you can iterate, switch topics, revisit past decisions, and even post-mortem the entire conversation, as a way to learn from it and log your decisions.
+
+Most of the piece makes chatbots seem like portals to broadened humanism vs. the cold inaccessible reality of APIs which, in his words, are <q>fine for deterministic output</q>.
+
+I agree with Max Woolf's advocation for API access vs. chatbot access in that I have the means of fully testing how the LLM works in certain conditions. I can change the [temperature](https://www.ibm.com/think/topics/llm-temperature) whether I need deterministic _or_ probabilistic outputs. The temperature is often warmer by default on a chatbot and that's a commercial thing: LLM providers want people to feel like they're talking to a machine that almost seems human and creative. But then people try to use chatbots for one of the most deterministic actions on the internet: search.
+
+## Hot takes, cold facts, and human-regulated temperatures
+
+If I want to a factual answer and I ask ChatGPT for the answer, it may get it right because the training data had the answer the the probabilities were aligned to give me that answer. And yes, we have grounding now to help, but for more obscure information, it'll give me a wrong answer or completely confabulate<sup><a href="#in1">1</a></sup> it. Temperature might not help there but at least I won't get a response that sounds like a try-hard who keeps apologising for getting the wrong answer. What use is that?
+
+A lot of the thinkpieces that advocate for the _humanish_<sup><a href="#in2">2</a></sup> qualities of chatbots are devs who aren't necessarily knee-deep in machine learning work. Vibe coding has messed with a lot of heads, making people think that the perfect prompts will make the perfect apps in less time than without them. But the truth is that LLMs can't teach you anything more about the world and your craft than real humans who are already in it and have been doing this stuff for years. We're replacing what we have for an abstraction of what we have and if speed isn't the focus, as SansGuidon mentioned in his article, we're replacing the journey of discovery via human-to-human interaction—the very thing that gives life meanings—with a faulty proxy of that and pretending it's the same or somehow better. And that's very dangerous.
+
+Ultimately, neither approach can replace just asking a human how to do a lot of things. I use the API and still get crap and either give up and look at Stack Overflow or put something rough together. But chatbots and APIs aren't polar opposites—they're all singing from the same hymn sheet. You just don't get to change the font size on one vs. the other.
+
+<IcebergNotes>
+	<p><sup id="in1">1</sup> I prefer to use confabulate instead of hallucinate to dehumanise AI actions. There's plenty of debate about doing this and what the right word is and honestly nobody's gonna agree and amongst all the posturing, I'm going with my word.</p>
+	<p><sup id="in2">2</sup> That's a play on humanism—I'm not implying that LLMs are human-ish!</p>
+</IcebergNotes>
