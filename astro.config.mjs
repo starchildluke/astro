@@ -10,6 +10,6 @@ export default defineConfig({
     "/post/": "/posts/",
     "/wiki/": "/jardim/",
     "/wikinotes/": "/recortes/",
-    "/post/[...slug]/": "/posts/[...slug]/"
+    "/post/[...slug]": "/posts/[...slug]"
   }
 });
