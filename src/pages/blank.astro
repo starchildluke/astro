@@ -1,0 +1,22 @@
+---
+// COMPONENTS
+
+import BaseHead from '../components/BaseHead.astro';
+
+// METADATA VARIABLES
+
+let title = 'Blank page';
+let description = 'This page has intentionally been left blank.';
+
+---
+<BaseHead title={title} description={description} canonicalURL />
+<body>
+<main class="layout">
+  <article class="content">
+      <p>{description}</p>
+      <p>Besides these flowers: 🌷🌹🪻🌸🌺🌻🌼💐🥀🪷</p>
+      <p>(<a href="https://web.archive.org/web/20180224075941/http://this-page-intentionally-left-blank.org/whythat.html">why?</a> | <a href="/">back home</a>)</p>
+      </article>
+    </main>
+</body>
+</html>
