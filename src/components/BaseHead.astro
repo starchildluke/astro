@@ -4,10 +4,10 @@ import site from '../data/site.json';
 const {
   title,
   description,
-  image = site.url + 'images/ld-logo-og-image.jpg',
-  canonicalURL = Astro.url
+  image = site.url + 'images/ld-logo-og-image.jpg'
 } = Astro.props;
 
+const canonicalURL = Astro.url;
 const blogRssFeed = `${site.url}blog.xml`;
 
 ---
