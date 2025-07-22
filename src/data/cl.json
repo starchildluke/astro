@@ -24,6 +24,87 @@
         "@attr": {
             "rank": "1"
         },
+        "playcount": "4"
+    },
+    {
+        "artist": {
+            "mbid": "80088c76-727d-4cbd-88d5-acf176de7502",
+            "#text": "Quadron"
+        },
+        "image": [
+            {
+                "size": "small",
+                "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
+            },
+            {
+                "size": "medium",
+                "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
+            },
+            {
+                "size": "large",
+                "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
+            }
+        ],
+        "mbid": "25453f8d-fd2c-495b-92ef-f37f9d159cbb",
+        "url": "https://www.last.fm/music/Quadron/_/Sea+Salt",
+        "name": "Sea Salt",
+        "@attr": {
+            "rank": "2"
+        },
+        "playcount": "4"
+    },
+    {
+        "artist": {
+            "mbid": "",
+            "#text": "Quadron, Kendrick Lamar"
+        },
+        "image": [
+            {
+                "size": "small",
+                "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
+            },
+            {
+                "size": "medium",
+                "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
+            },
+            {
+                "size": "large",
+                "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
+            }
+        ],
+        "mbid": "",
+        "url": "https://www.last.fm/music/Quadron,+Kendrick+Lamar/_/Better+Off+(feat.+Kendrick+Lamar)",
+        "name": "Better Off (feat. Kendrick Lamar)",
+        "@attr": {
+            "rank": "3"
+        },
+        "playcount": "4"
+    },
+    {
+        "artist": {
+            "mbid": "80088c76-727d-4cbd-88d5-acf176de7502",
+            "#text": "Quadron"
+        },
+        "image": [
+            {
+                "size": "small",
+                "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
+            },
+            {
+                "size": "medium",
+                "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
+            },
+            {
+                "size": "large",
+                "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
+            }
+        ],
+        "mbid": "81d0429e-78c4-33ad-8ceb-c4e30919a001",
+        "url": "https://www.last.fm/music/Quadron/_/Crush",
+        "name": "Crush",
+        "@attr": {
+            "rank": "4"
+        },
         "playcount": "3"
     },
     {
@@ -49,89 +130,8 @@
         "url": "https://www.last.fm/music/Quadron/_/It%27s+Gonna+Get+You",
         "name": "It's Gonna Get You",
         "@attr": {
-            "rank": "2"
-        },
-        "playcount": "3"
-    },
-    {
-        "artist": {
-            "mbid": "80088c76-727d-4cbd-88d5-acf176de7502",
-            "#text": "Quadron"
-        },
-        "image": [
-            {
-                "size": "small",
-                "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
-            },
-            {
-                "size": "medium",
-                "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
-            },
-            {
-                "size": "large",
-                "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
-            }
-        ],
-        "mbid": "25453f8d-fd2c-495b-92ef-f37f9d159cbb",
-        "url": "https://www.last.fm/music/Quadron/_/Sea+Salt",
-        "name": "Sea Salt",
-        "@attr": {
-            "rank": "3"
-        },
-        "playcount": "3"
-    },
-    {
-        "artist": {
-            "mbid": "",
-            "#text": "Quadron"
-        },
-        "image": [
-            {
-                "size": "small",
-                "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
-            },
-            {
-                "size": "medium",
-                "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
-            },
-            {
-                "size": "large",
-                "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
-            }
-        ],
-        "mbid": "",
-        "url": "https://www.last.fm/music/Quadron,+Kendrick+Lamar/_/Better+Off+(feat.+Kendrick+Lamar)",
-        "name": "Better Off (feat. Kendrick Lamar)",
-        "@attr": {
-            "rank": "4"
-        },
-        "playcount": "3"
-    },
-    {
-        "artist": {
-            "mbid": "1b7de629-8e8a-4748-b402-bd58de30e5f1",
-            "#text": "Emily King"
-        },
-        "image": [
-            {
-                "size": "small",
-                "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
-            },
-            {
-                "size": "medium",
-                "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
-            },
-            {
-                "size": "large",
-                "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
-            }
-        ],
-        "mbid": "100a5911-9c00-4c94-9a88-d7f12e356ea9",
-        "url": "https://www.last.fm/music/Emily+King/_/Distance",
-        "name": "Distance",
-        "@attr": {
             "rank": "5"
         },
-        "playcount": "2"
+        "playcount": "3"
     }
 ]
