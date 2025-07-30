@@ -1,8 +1,8 @@
 [
     {
         "artist": {
-            "mbid": "80088c76-727d-4cbd-88d5-acf176de7502",
-            "#text": "Quadron"
+            "mbid": "f75150f0-d80d-4c34-903b-6acfb47b63ee",
+            "#text": "Lambchop"
         },
         "image": [
             {
@@ -18,45 +18,18 @@
                 "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
             }
         ],
-        "mbid": "235ee65d-cdd7-3917-990b-95b5b070d04c",
-        "url": "https://www.last.fm/music/Quadron/_/Avalanche",
-        "name": "Avalanche",
+        "mbid": "0f78ff4d-1ce2-4872-9280-4a4762e6ebd7",
+        "url": "https://www.last.fm/music/Lambchop/_/Up+With+People",
+        "name": "Up With People",
         "@attr": {
             "rank": "1"
         },
-        "playcount": "4"
-    },
-    {
-        "artist": {
-            "mbid": "80088c76-727d-4cbd-88d5-acf176de7502",
-            "#text": "Quadron"
-        },
-        "image": [
-            {
-                "size": "small",
-                "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
-            },
-            {
-                "size": "medium",
-                "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
-            },
-            {
-                "size": "large",
-                "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
-            }
-        ],
-        "mbid": "25453f8d-fd2c-495b-92ef-f37f9d159cbb",
-        "url": "https://www.last.fm/music/Quadron/_/Sea+Salt",
-        "name": "Sea Salt",
-        "@attr": {
-            "rank": "2"
-        },
-        "playcount": "4"
+        "playcount": "2"
     },
     {
         "artist": {
             "mbid": "",
-            "#text": "Quadron, Kendrick Lamar"
+            "#text": "Ahwlee"
         },
         "image": [
             {
@@ -73,17 +46,44 @@
             }
         ],
         "mbid": "",
-        "url": "https://www.last.fm/music/Quadron,+Kendrick+Lamar/_/Better+Off+(feat.+Kendrick+Lamar)",
-        "name": "Better Off (feat. Kendrick Lamar)",
+        "url": "https://www.last.fm/music/Ahwlee/_/2.cody&zak",
+        "name": "2.cody&zak",
+        "@attr": {
+            "rank": "2"
+        },
+        "playcount": "1"
+    },
+    {
+        "artist": {
+            "mbid": "",
+            "#text": "Ahwlee"
+        },
+        "image": [
+            {
+                "size": "small",
+                "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
+            },
+            {
+                "size": "medium",
+                "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
+            },
+            {
+                "size": "large",
+                "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
+            }
+        ],
+        "mbid": "",
+        "url": "https://www.last.fm/music/Ahwlee/_/8.nothinlong",
+        "name": "8.nothinlong",
         "@attr": {
             "rank": "3"
         },
-        "playcount": "4"
+        "playcount": "1"
     },
     {
         "artist": {
-            "mbid": "80088c76-727d-4cbd-88d5-acf176de7502",
-            "#text": "Quadron"
+            "mbid": "",
+            "#text": "Ahwlee"
         },
         "image": [
             {
@@ -99,18 +99,18 @@
                 "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
             }
         ],
-        "mbid": "81d0429e-78c4-33ad-8ceb-c4e30919a001",
-        "url": "https://www.last.fm/music/Quadron/_/Crush",
-        "name": "Crush",
+        "mbid": "",
+        "url": "https://www.last.fm/music/Ahwlee/_/clutchinn",
+        "name": "clutchinn",
         "@attr": {
             "rank": "4"
         },
-        "playcount": "3"
+        "playcount": "1"
     },
     {
         "artist": {
-            "mbid": "80088c76-727d-4cbd-88d5-acf176de7502",
-            "#text": "Quadron"
+            "mbid": "",
+            "#text": "Ahwlee"
         },
         "image": [
             {
@@ -126,12 +126,12 @@
                 "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
             }
         ],
-        "mbid": "8f2d3dab-4aba-3ddc-9628-c22346cad556",
-        "url": "https://www.last.fm/music/Quadron/_/It%27s+Gonna+Get+You",
-        "name": "It's Gonna Get You",
+        "mbid": "",
+        "url": "https://www.last.fm/music/Ahwlee/_/link",
+        "name": "link",
         "@attr": {
             "rank": "5"
         },
-        "playcount": "3"
+        "playcount": "1"
     }
 ]
