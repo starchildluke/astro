@@ -148,7 +148,7 @@
 		"publisher": "Nintendo",
 		"genre": ["Platformer"],
 		"imageURL": "/images/gameslist/kirbys-dream-land-3.webp",	
-		"status": "Actively playing",
+		"status": "Passively playing",
 		"format": "Emulation",
 		"console": "SNES",
 		"dateBeaten": ""
@@ -203,7 +203,7 @@
 		"publisher": "Kepler Interactive",
 		"genre": ["RPG"],
 		"imageURL": "/images/gameslist/clair-obscur-expedition-33.webp",	
-		"status": "Actively playing",
+		"status": "Passively playing",
 		"format": "Digital",
 		"console": "Steam",
 		"dateBeaten": ""
@@ -214,6 +214,17 @@
 		"publisher": "Square Enix (then Square)",
 		"genre": ["RPG"],
 		"imageURL": "/images/gameslist/final-fantasy-vii.webp",	
+		"status": "Completed",
+		"format": "Emulation",
+		"console": "PS1",
+		"dateBeaten": "08/03/2025"
+	},
+	{
+		"name": "Final Fantasy IX",
+		"developer": "Square Enix (then Square)",
+		"publisher": "Square Enix (then Square)",
+		"genre": ["RPG"],
+		"imageURL": "/images/gameslist/final-fantasy-ix.webp",	
 		"status": "Actively playing",
 		"format": "Emulation",
 		"console": "PS1",
