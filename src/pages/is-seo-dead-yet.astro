@@ -1,0 +1,39 @@
+---
+// COMPONENTS
+
+import BaseHead from '../components/BaseHead.astro';
+
+// METADATA VARIABLES
+
+let title = 'Is SEO Dead Yet?';
+let description = 'The answer will not shock you.';
+let canonicalURL = Astro.url;
+
+---
+
+<style>
+	.seo-dead-text {
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+  		justify-content: center;
+	}
+	.go-home-text {
+		text-align: center;
+		font-size: 0.9rem;
+	}
+</style>
+
+<BaseHead title={title} description={description} canonicalURL={canonicalURL} />
+<body>
+	<main>
+		<section class="seo-dead-text">
+			<p>Nope!</p>
+			<p>(But the discourse is.)</p>
+		</section>
+		<section class="go-home-text">
+			<p><a href="/">Go back home</a></p>
+		</section>
+	</main>
+</body>

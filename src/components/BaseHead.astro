@@ -4,7 +4,8 @@ import site from '../data/site.json';
 const {
   title,
   description,
-  image = site.url + 'images/ld-logo-og-image.jpg'
+  image = site.url + 'images/ld-logo-og-image.jpg',
+  robotsTag
 } = Astro.props;
 
 const canonicalURL = Astro.url;
@@ -22,6 +23,7 @@ const blogRssFeed = `${site.url}blog.xml`;
 <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <link rel="icon" type="image/png" href="/favicon.png" />
+<meta name="robots" content={robotsTag ? robotsTag : "index, follow"} />
 <meta name="title" content={title} />
 <meta name="description" content={description} />
 <meta property="og:image" content={image} />
