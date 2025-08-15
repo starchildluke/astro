@@ -24,6 +24,8 @@ RewriteRule ^/blog/(.*)$ /posts/$1 [R=301,L]
 RedirectMatch 301 /posts/support-me/ /support/
 RedirectMatch 301 /sitemap.xml /sitemap-0.xml
 RedirectMatch 301 /writing.html /jardim/writing/
+RedirectMatch 301 /jardim/pokemon/ /jardim/gaming/pokemon/
+RedirectMatch 301 /jardim/sonic-the-hedgehog/ /jardim/gaming/sonic-the-hedgehog/
 
 ErrorDocument 404 /404.html
 

@@ -1,0 +1,49 @@
+---
+// COMPONENTS
+
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+import Layout from '../../../layouts/Layout.astro';
+import Breadcrumbs from '../../../components/Breadcrumbs.astro';
+import Tags from '../../../components/Tags.astro';
+
+// METADATA VARIABLES
+
+let title = 'RPGs';
+let description = 'A wiki page all about role-playing games.';
+
+---
+<Layout {title} {description}>
+      <main class="layout">
+        <article class="content">
+          <Header />
+          <Breadcrumbs title={title}/>
+            <section class="intro">
+
+              <h1>{title}</h1>
+              <p class="desc">{description}</p>
+              <p>Role-playing games (commonly known as <strong>RPGs</strong>) are a video game genre focused on story telling, character development, and elements of combat. The most traditional type of RPG is the turn-based RPG where your character and your enemies take turns to attack. However, a lot of modern RPGs have a real-time combat system where you can both attack at the same time.</p>
+              <p>There is plenty of nuance within the genre, with a lot of games breaking out of the tropes originally set by their predecessors (it's not all swords and medieval times).</p>
+              <p><strong>Related terms</strong>: <a href="/jardim/gaming/">gaming</a> | <a href="/jardim/japan/">Japan</a> | <a href="/jardim/gaming/pokemon/">Pokémon</a></p>
+            </section>
+            <section>
+             
+              <h2 class="wiki-h2">Inner voice</h2>
+                <Tags tagName="RPGs" />
+            </section>
+      
+            <section>
+              <h2 class="wiki-h2">Out loud</h2>
+              <ul>
+                <li><a href="https://distantarcade.co.uk/tag/rpgs/">RPGs on Distant Arcade</a></li>
+              </ul>
+            </section>
+        </article>
+      
+      </main>
+    
+   <Footer/>
+  
+  </body>
+
+</html>
