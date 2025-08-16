@@ -51,7 +51,7 @@ let description = "Cuttings, notes and things. These are my 'recortes', or 'cutt
         <div class="page-links">{page.url.prev && (
           <a
             class='prev'
-            href={page.url.prev + '/' || '#'}
+            href={page.url.prev || '#'}
           >
             &laquo; Prev
           </a>
@@ -60,7 +60,7 @@ let description = "Cuttings, notes and things. These are my 'recortes', or 'cutt
         {page.url.next && (
           <a
             class='Next'
-            href={page.url.next + '/' || '#'}
+            href={page.url.next || '#'}
           >
             Next &raquo;
           </a>

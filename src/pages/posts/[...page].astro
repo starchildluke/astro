@@ -66,11 +66,11 @@ let description = "The blog listings page. I write about all kinds of topics inc
     </section>
       ))}    
         <div class="page-links">{page.url.prev && (
-          <a class='prev' href={page.url.prev + '/' || '#'}>&laquo; Prev</a>
+          <a class='prev' href={page.url.prev || '#'}>&laquo; Prev</a>
         )}
         {page.url.prev && page.url.next && ""}
         {page.url.next && (
-          <a class='Next' href={page.url.next  + '/'|| '#'}>Next &raquo;</a>
+          <a class='Next' href={page.url.next || '#'}>Next &raquo;</a>
         )}</div>
       </article>
     </div>

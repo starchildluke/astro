@@ -14,7 +14,7 @@ const allAlbums = await getCollection("music");
 const allRecortes = await getCollection("recortes");
 const allReleaseNotes = await getCollection("release-notes");
 
-const allJardim = await Astro.glob('./jardim/*.astro');
+const allJardim = await Astro.glob('./jardim/*/*.astro');
 
 const collator = Intl.Collator([], {numeric: true});
 
@@ -46,13 +46,6 @@ let canonicalURL = Astro.url;
           <li><a href="/mlog/">Mlog</a></li>
           <li><a href="/music/">Music</a></li>
           <li><a href="/projects/">Projects</a></li>
-          <li><a href="/projects/sampleface/">Sampleface project page</a>
-          <li><a href="/projects/cultrface/">Cultrface project page</a>
-          <li><a href="/projects/logicface/">LOGiCFACE project page</a>
-          <li><a href="/projects/playrface/">Playrface project page</a>
-          <li><a href="/projects/distantarcade/">Distant Arcade project page</a>
-          <li><a href="/projects/emptygold-blogger/">Emptygold Blogger project page</a>
-          <li><a href="/projects/nitedream/">NiTEDREAM project page</a></li>
           <li><a href="/press/">Press</a></li>
           <li><a href="/support/">Support</a></li>
           <li><a href="/release-notes/">Release Notes</a></li>
@@ -69,7 +62,7 @@ let canonicalURL = Astro.url;
         </ul>
         <h2>Jardim</h2>
         <ul>
-          {allJardim.map( (jardim) => <li><a href=`${jardim.url}/`>{jardim.url}</a></li> )}
+          {allJardim.map( (jardim) => <li><a href=`${jardim.url}`>{jardim.url}</a></li> )}
         </ul>
         <h2>Posts</h2>
         <ul>

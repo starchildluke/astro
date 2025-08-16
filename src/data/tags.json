@@ -98,11 +98,11 @@
 		},
 		{
 			"tagName": "Pokémon",
-			"jardimLink": "/pokemon/"
+			"jardimLink": "/gaming/pokemon/"
 		},
 		{
 			"tagName": "Sonic the Hedgehog",
-			"jardimLink": "/sonic-the-hedgehog/"
+			"jardimLink": "/gaming/sonic-the-hedgehog/"
 		},
 		{
 			"tagName": "writing",
@@ -131,6 +131,10 @@
 		{
 			"tagName": "Web performance",
 			"jardimLink": "/tech/web-performance/"
+		},
+		{
+			"tagName": "RPGs",
+			"jardimLink": "/gaming/rpgs/"
 		}
 	]
 }
