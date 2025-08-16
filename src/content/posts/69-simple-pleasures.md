@@ -20,7 +20,7 @@ tags: ['life', 'sport', 'architecture', 'Roger Federer', 'tech', 'Pokémon', 'Li
 * 012 – TV from the 90s
 * 013 – Watching We Bare Bears
 * 014 – American commercials
-* 015 – Playing [Pokémon](/jardim/pokemon/) (but not VGC)
+* 015 – Playing [Pokémon](/jardim/gaming/pokemon/) (but not VGC)
 * 016 – Being loved and loving someone back
 * 017 – A good cup of tea
 * 018 – A hug from my son for no reason
