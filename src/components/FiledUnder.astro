@@ -8,10 +8,15 @@ function getJardimLink(tag) {
           return jardim.tagEntries[i].jardimLink;
    }
  }
-  return tag;
 };
 
+const collator = new Intl.Collator('en');
 ---
 
-<p class="filed-under"><strong>Filed under:</strong> {tags.map(
-	(tag, i) => <span><a href={"/jardim" + getJardimLink(tag)}>{tag}</a>{i < tags.length-1 ? " | " : ""}</span>)}</p>
+<p class="filed-under"><strong>Filed under:</strong> {tags.sort(collator.compare).map(
+	(tag, i) =>
+  getJardimLink(tag) !== undefined ? <span><a href={"/jardim" + getJardimLink(tag)}>{tag}</a>{i < tags.length-1 ? " | " : ""}</span> :
+  <span>{tag}</a>{i < tags.length-1 ? " | " : ""}</span>
+  )
+}
+</p>

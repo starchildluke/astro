@@ -1,0 +1,30 @@
+---
+title: 'GitHub as a CMS?'
+description: 'Sometimes, the second best solution is right in front of you.'
+published: true
+pubDate: '17 Aug 2025'
+layout: ../../layouts/BlogPost.astro
+tags:
+  - GitHub
+  - CMS
+  - tech
+  - Astro
+  - blogging
+  - creativity
+---
+
+import IcebergNotes from '../../components/IcebergNotes.astro';
+
+I've been interested in heuristics lately and I think this counts as one. This site and a few other [projects](/projects/), are built with Astro and they're all hosted on GitHub with Netlify handling deployment<sup>[<a href="#in-1">1</a>]</sup>. Whenever I make changes to the site, I'll push it to GitHub, it builds the site, and finally deployed. I normally do this from my laptop using Sublime Text and GitHub Desktop but if I'm away from my laptop and I want to make a change immediately, what can I do?
+
+The answer lies with GitHub itself.
+
+GitHub has a smartphone app on Android and iOS where you can access your repositories just like on the website and you can edit files from it (a relatively recent addition, surprisingly). That means I can create, edit, and delete posts as I see fit and all the changes get pushed and deployed as normal.
+
+It's not super intuitive and if you make a mistake with a file name, for example, you can't change it so you have to be careful. But managing your blogs and pages and jotting things down is possible and you can push as you go. I enjoy not having to wait until I get home to transfer my Google Keep notes to my local site repo or having ideas live and die in my head.
+
+Adding an element of spontaneity also helps with continued creativity and I think you can do this with other static site generator with a similar setup. All you need is the repo, GitHub Actions that run the build, and a means of deployment. I recommend trying it to see how it feels for you.
+
+<IcebergNotes>
+	<sup id="in-1">1</sup>Two builds actually take place here. GitHub does the initial build and then Netlify does one before deploying lol
+</IcebergNotes>
