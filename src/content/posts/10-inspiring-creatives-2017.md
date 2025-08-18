@@ -43,7 +43,7 @@ I have to thank my good friend Stephanie Vaughn for the conection. It's no secre
 
 [Roger Federer](/jardim/sport/roger-federer/) fans unite! I stumbled upon Nguyen Le while browsing on Dribbble and I was immediately drawn to a personal project dedicated to my favourite tennis player. His attention to detail and minimalist style spoke to me and I've been following his work ever since. He runs a design course which I would happily join (again, if I wasn't poor.) In terms of art/design direction, Le is the man you should be paying attention to in 2017.
 
-[Website](https://www.verse-co.com) | [Dribbble](https://dribbble.com/newincreative)
+[Dribbble](https://dribbble.com/newincreative)
 
 ## 7. KUMA GOLD
 

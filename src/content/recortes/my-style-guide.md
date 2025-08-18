@@ -6,7 +6,7 @@ pubDate: '06 Nov 2023'
 tags: ['the Internet', 'writing']
 ---
 
-A few months ago, I republished a [web copy style guide](/recortes/web-copy-style/) by Matt Pfeffer and enjoyed it. Then, a few days ago, I found [a style guide by Chase McCoy](https://chsmc.org/notes/style-guide/) which I also liked. So I decided to write my own.
+A few months ago, I republished a [web copy style guide](/recortes/web-copy-style/) by Matt Pfeffer and enjoyed it. Then, a few days ago, I found [a style guide by Chase McCoy (archived)](https://web.archive.org/web/20240901123934/https://chsmc.org/notes/style-guide/) which I also liked. So I decided to write my own.
 
 Much like Chase's, mine will be a work-in-progress and I will inevitably go against my rules. But it's the thought that counts, right?
 
