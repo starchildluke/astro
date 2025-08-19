@@ -16,7 +16,7 @@
         const amendedTextArray = textArray.flatMap((text) => (
             prefixes.map((alpha) => (
                 text[0] == text[0].toUpperCase()
-                ? text.replace(text[0], alpha.toUpperCase())
+                ? text.replace(text[0], alpha.replace(alpha[0], alpha[0].toUpperCase()))
                 : text.replace(text[0], alpha)
             )
         )));
