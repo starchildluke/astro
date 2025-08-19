@@ -15,7 +15,7 @@ I've been thinking about the prevalent "adapt or die" ideology within SEO, focus
 * Adapt and grow with it by becoming multi-talented professionals 
 * Stay still and perish as the industry moves on
 
-One of my biggest concerns is that why we're using evolution-speak to discuss peoples' careers. There'll always be technological advancements and new techniques to know about but we're using evolutionary language to describe what it all. AI use is a human choice; evolution and how species adapt to changing ecosystems isn't.
+One of my biggest concerns is that why we're using evolution-speak to discuss peoples' careers. There'll always be technological advancements and new techniques to know about but we’re using evolutionary language to describe it all. AI use is a choice (and specifically a human one); evolution and how species adapt to changing ecosystems aren’t.
 
 I hate the "survival of the fittest" mantra so much. It's as artificial as the intelligence that we're supposedly living and dying by. I don't think complete ignorance is much of an option as so much of this tech is shoved in our faces but total acceptance and adoption of every new technique isn't the flip side of the coin either. So what do we do? Scrutinise everything that comes up, analyse every claim, and weigh up the pros and cons against ROI. Businesses should not be making a net loss from AI and offsetting it with layoffs. These AI models should be "earning their keep" so to speak.
 

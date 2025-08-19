@@ -2,18 +2,52 @@
 import lastFmData from '../data/lastfm.json';
 ---
 
-<p><strong>1,000 Klub</strong>: <em>{lastFmData.topartists.artist.filter((item: any) => (
-	item.playcount > 999
-	)).map(
-		(artist) => artist.name
-	).join(', ')}</em></p>
+<style>
+	.klub {
+		padding: 2rem 2rem 0.6rem 2rem;
+		margin-bottom: 2rem;
+		border-radius: 1rem;
+	}
+	.two-k, .one-k, .nine-hundred {
+		color: #fff;
+	}
+	.two-k {
+		background: #6A5720;
+	}
+	.one-k {
+		background: #696969;
+	}
+	.nine-hundred {
+		background: #915b27;
+	}
+</style>
 
-<p><strong>900 Klub</strong>: <em>{lastFmData.topartists.artist.filter((item: any) => (
-	item.playcount > 899 && item.playcount < 999
-	)).map(
-		(artist) => artist.name
-	).join(', ')}</em></p>
+<section class="klub two-k">
+	<h2>2K+ Klub 🥇</h2>
+		<p><em>{lastFmData.topartists.artist.filter((item: any) => (
+			item.playcount > 1999)).map(
+				(artist) => artist.name
+			).join(', ')}</em></p>
+</section>
 
+<section class="klub one-k">
+	<h2>1K Klub 🥈</h2>
+		<p><em>{lastFmData.topartists.artist.filter((item: any) => (
+			item.playcount > 999 && item.playcount < 1999)).map(
+				(artist) => artist.name
+		).join(', ')}</em></p>
+</section>
+
+<section class="klub nine-hundred">
+	<h2>900 Klub 🥉</h2>
+		<p><em>{lastFmData.topartists.artist.filter((item: any) => (
+		item.playcount > 899 && item.playcount < 999
+		)).map(
+			(artist) => artist.name
+		).join(', ')}</em></p>
+</section>
+
+<hr />
 
 <p><strong>800 Klub</strong>: <em>{lastFmData.topartists.artist.filter((item: any) => (
 	item.playcount > 799 && item.playcount < 899
