@@ -1,0 +1,33 @@
+<script>
+    const form = document.querySelector("#swap-first-letter-form");
+    const results = document.querySelector("#swapped-result");
+    const prefixes = ["a", "b", "c", "d", "e", "f", "g",
+        "h", "i", "j", "k", "l", "m", "n", "o", "p", "q",
+        "r", "s", "t", "u", "v", "w", "x", "y", "z", "bl", "br", "ch", "cl", "cr", "dr", "fl", "fr", "gl", "gr", "pl", "pr", "sc", "sch", "scr", "sh", "shr", "sk", "sl", "sm", "sn", "sp", "sph", "spl", "spr", "squ", "st", "str", "sw", "th", "thr", "tr", "tw", "wh", "wr"];
+    form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const textToSwap = document.querySelector("#text-to-swap").value;
+        const swappedLetters = swapLetters(textToSwap);
+        results.innerHTML = `<ul>${generateResults(swappedLetters)}</ul>`;
+    });
+
+    function swapLetters(text) {
+        const textArray = text.split("\n");
+        const amendedTextArray = textArray.flatMap((text) => (
+            prefixes.map((alpha) => (
+                text[0] == text[0].toUpperCase()
+                ? text.replace(text[0], alpha.toUpperCase())
+                : text.replace(text[0], alpha)
+            )
+        )));
+        return amendedTextArray;
+    }
+
+    function generateResults(textArray) {
+
+        const results = textArray.map((text) => (
+            `<li>${text}</li>`
+          )).join("");
+        return results;
+    }
+</script>

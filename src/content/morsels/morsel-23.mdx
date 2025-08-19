@@ -1,0 +1,53 @@
+---
+title: 'Morsel #23: Letter swapper'
+published: true
+pubDate: '19 Aug 2025'
+tags:
+  - Javascript
+  - the Internet
+  - tech
+---
+
+import IcebergNotes from '../../components/IcebergNotes.astro';
+import Swapped from '../../utils/Swapped.astro';
+
+<section style="margin-bottom:2rem;font-size:1.5rem;font-weight: 700;">
+    <form id="swap-first-letter-form">
+        <label for="text-to-swap">Enter your strings, one per line: </label>
+        <input type="text" id="text-to-swap" name="text-to-swap" required="">
+        </input>
+        <button type="submit">Swap those letters!</button>
+    </form>
+</section>
+
+<section id="swapped-result" style="margin:1rem 0;font-size:1.5rem;font-weight: 700;"></section>
+
+---
+
+## What is this?
+
+This is a HTML form that takes an input (a string) and returns a list of that string with the first letter replaced with every letter of the alphabet and a selection of English [digraphs](https://en.wikipedia.org/wiki/Digraph_(orthography)) and [trigraphs](https://en.wikipedia.org/wiki/Trigraph_(orthography)). For example, if I put my name in (Luke Davis), it would return an HTML list saying "Auke Davis", "Cuke Davis", "Duke Davis" etc. But I'd also get names like "Fluke Davis" and "Spuke Davis".
+
+## Why did you make this?
+
+I saw a friend's Bluesky name was a variation of "bell hooks" which led me to think of something for Tony Hawk. I ended up with "Phony Hawk" and realised it'd make a funny nickname for a Pokémon called Gholdengo which uses a golden surfboard to travel around. Then I wondered, what if you could generate a list of names with the first part replaced for meme purposes.
+
+Ideological rabbit holes are fun!
+
+## How the code works
+
+I used the base of the [Thumbnail Grabber](/morsels/morsel-13/) so when you submit a string, the script checks if anything is there and replaces the first letter the string with each letter of the alphabet. It also matches the casing, whether that's upper or lower case. Finally, it outputs it in a neat HTML list.
+
+In terms of JavaScript, there are ```querySelector```'s to grab the value of the input and add it to the output element and two functions for swapping the first letters (including a nested ```flatMap``` with a regular ```map``` inside).
+
+I did use AI for the nested ```flatMap``` as I couldn't figure out how to replace the first letter which suggested I need to learn that pattern better but everything else was a mix of reworking what I made before and using StackOverflow lol<sup>[<a href="in-1">1</a>]</sup>
+
+## How this could be improved
+
+I'm sure something will come up but feel free to [raise an issue on GitHub](https://github.com/starchildluke/astro/issues) if you have any suggestions!
+
+<IcebergNotes>
+    <sup id="in-1">1</sup>This is <strong>NOT</strong> <a href="/posts/some-genuine-thoughts-vibe-coding/">vibe coding</a>, mainly because AI use was for one function because I couldn't figure it out but also because I was very conscious about what I was coding.)
+</IcebergNotes>
+
+<Swapped />
