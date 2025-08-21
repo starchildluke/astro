@@ -20,19 +20,15 @@ let description = 'A page all about Prince.';
     background: #421a51;
   }
 
-  .pink-cashmere, :global(a), .desc {
-    color: #ebb7c8;
-  }
-
-  :global(.wiki-h2::after, .content hr) {
+  .wiki-h2::after, .content hr {
     background: #8174A0;
   }
 
-  :global(h2 ~ ul li:nth-child(n)::marker) {
+  h2 ~ ul li:nth-child(n)::marker {
     content: '♀ ';
   }
 
-  :global(h2 ~ ul li:nth-child(2n)::marker) {
+  h2 ~ ul li:nth-child(2n)::marker {
     content: '♂ ';
   }
 
@@ -43,17 +39,17 @@ let description = 'A page all about Prince.';
   <body class="purple-rain pink-cashmere">
     <main class="layout">
       <article class="content">
-        <Header />
-        <Breadcrumbs title={title}/>
+        <Header className="pink-cashmere" hrColor="pink-cashmere_bg" />
+        <Breadcrumbs title={title} className="pink-cashmere"/>
         <h1>{title}</h1>
-        <p class="desc">{description}</p>
+        <p class="desc pink-cashmere">{description}</p>
         <p>Prince Rogers Nelson, better known as Prince, was an Black American singer-songwriter, musician, actor, and record producer. He's also one of the greatest musicians the world has ever known. This page features articles from myself and others about Prince's genius.</p>
         <h2 class="wiki-h2">Inner voice</h2>
-        <Tags tagName="Prince" />
+        <Tags tagName="Prince" className="pink-cashmere" />
         <h2 class="wiki-h2">Out loud</h2>
         <ul>
-          <li><a href="https://sampleface.co.uk/tag/prince/">Prince on Sampleface</a></li>
-          <li><a href="https://cultrface.co.uk/tag/prince/">Prince on Cultrface</a></li>
+          <li><a href="https://sampleface.co.uk/tag/prince/" class="pink-cashmere">Prince on Sampleface</a></li>
+          <li><a href="https://cultrface.co.uk/tag/prince/" class="pink-cashmere">Prince on Cultrface</a></li>
         </ul>
         <h2 class="wiki-h2">Second opinions</h2>
         <p>Coming soon...</p>

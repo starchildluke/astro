@@ -3,7 +3,6 @@ title: 'Adapt or die? Why only two options?'
 description: "Yes, I'm back again with an AI Opinion. I wish I didn't have so many but people keep saying nonsense things."
 published: true
 pubDate: '17 Aug 2025 15:23'
-layout: ../../layouts/BlogPost.astro
 tags:
   - AI
   - tech

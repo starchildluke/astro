@@ -30,10 +30,9 @@ let canonicalURL = Astro.url;
 
 <BaseHead title={title} description={description} canonicalURL={canonicalURL} />
 <body>
-  <Header />
-  {JSON.stringify(allJardim)}
     <main class="layout">
       <article class="content">
+          <Header />
         <h1>{title}</h1>
         <p>A HTML sitemap is a page that usually contains links to every page on a site. This gives search engines easy access to your site for crawling as it takes just one step to get to everything. (Note that a HTML sitemap is different to an <a href="https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap">XML sitemap</a>.)</p>
         <p>It's recommended to have a robust internal linking strategy instead but this is a decent accompaniment or workaround if that isn't possible.</p>

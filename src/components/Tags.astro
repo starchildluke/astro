@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 
-const { tagName } = Astro.props;
+const { tagName, className } = Astro.props;
 
 const posts = await getCollection('posts', ({ data }) => {
   return data.tags.includes(tagName);
@@ -39,34 +39,34 @@ const sortedMorsels = morsels.sort((a, b) => collator.compare(a.data.title, b.da
 {sortedPosts.length > 0 ? <h3>Posts</h3> : ""}
 <ul>
   {sortedPosts.length > 0 ? sortedPosts.map(post =>
-  <li><a href=`/posts/${post.slug}/`>{post.data.title}</a></li>
+  <li><a class={className} href=`/posts/${post.slug}/`>{post.data.title}</a></li>
   ) : ""}
 </ul>
 
 {sortedRecortes.length > 0 ? <h3>Recortes</h3> : ""}
 <ul>
   {sortedRecortes.length > 0 ? sortedRecortes.map(recorte =>
-  <li><a href=`/recortes/${recorte.slug}/`>{recorte.data.title}</a></li>
+  <li><a class={className} href=`/recortes/${recorte.slug}/`>{recorte.data.title}</a></li>
   ) : ""}
 </ul>
 
 {sortedLists.length > 0 ? <h3>Lists</h3> : ""}
 <ul>
   {sortedLists.length > 0 ? sortedLists.map(list =>
-  <li><a href=`/lists/${list.slug}/`>{list.data.title}</a></li>
+  <li><a class={className} href=`/lists/${list.slug}/`>{list.data.title}</a></li>
   ) : ""}
 </ul>
 
 {sortedReleaseNotes.length > 0 ? <h3>Release Notes</h3> : ""}
 <ul>
   {sortedReleaseNotes.length > 0 ? sortedReleaseNotes.map(note =>
-  <li><a href=`/release-notes/${note.slug}/`>{note.data.title}</a></li>
+  <li><a class={className} href=`/release-notes/${note.slug}/`>{note.data.title}</a></li>
   ) : ""}
 </ul>
 
 {sortedMorsels.length > 0 ? <h3>Morsels</h3> : ""}
 <ul>
   {sortedMorsels.length > 0 ? sortedMorsels.map(morsel =>
-  <li><a href=`/morsels/${morsel.slug}/`>{morsel.data.title}</a></li>
+  <li><a class={className} href=`/morsels/${morsel.slug}/`>{morsel.data.title}</a></li>
   ) : ""}
 </ul>
