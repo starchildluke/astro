@@ -1,5 +1,5 @@
 ---
-title: 'Morsel #19: a Marimo notebook as a blog post editor?'
+title: 'Morsel #19: a marimo notebook as a blog post editor?'
 published: true
 pubDate: '18 Apr 2025'
 tags:
@@ -25,7 +25,7 @@ tags:
 
 > For when an IDE or Markdown editor doesn't quite cut it.
 
-This is a [Marimo notebook](https://marimo.io/) that functions as a blog post editor.
+This is a [marimo notebook](https://marimo.io/) that functions as a blog post editor.
 
 It works best in app mode with a grid layout to mimic the UI of a minimalist post editor but you can follow the usual flow in edit mode too. I use [Astro](https://astro.build/) for my website so I built this to make blog editing more visual. It comes with a section to add my metadata and the body text, view a preview (which renders the Markdown), and when I click the "Post" button, it generates an MD file with all the correct Markdown (so far)
 

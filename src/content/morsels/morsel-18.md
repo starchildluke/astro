@@ -8,7 +8,7 @@ tags:
   - music
 ---
 
-I made a Marimo notebook that pulls 3 random drum samples and lets you play them along with a random song from a Spotify playlist(s).
+I made a marimo notebook that pulls 3 random drum samples and lets you play them along with a random song from a Spotify playlist(s).
 
 <figure style="aspect-ratio: 2 / 1;">
   <img src="/images/drumples.webp" alt="the UI for my drumples app" loading="eager">
