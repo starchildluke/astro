@@ -12,9 +12,11 @@ But before I go into that, let me take you back to the early 00s. The year 2000 
 
 ## Web 1.0
 
-I was living in Atlanta at the time as my dad had got a teaching job out there. While we only lasted 6 months out there, it was the start of my obsession with the Web. My mum worked at my school library a few times a week and every Wednesday, I'd stay after school for a couple of hours and spend my time in the library. Amongst the shelves of books were a few rows of computers and I'd basically fall down Web-bit holes, exploring everything the Internet had to offer. When we moved back to the UK, I got myself a Yahoo! email address and consolidated my preferences for their search engine over Google (even Ask Jeeves took precedence!). I also discovered that you could make your own website, thrusting me into the world of web development.
+I lived in the US for 6 months. My mum worked at my school library a few times a week and every Wednesday, I'd stay after school for a couple of hours and spend my time in the library. Amongst the shelves of books were a few rows of computers and I'd basically fall down Web-bit holes, exploring everything the Internet had to offer.
 
-It was all about Tripod and Homestead for Web hosting, Geocities, FrontPage Express (the free version of Microsoft Frontpage), and lots of HTML. I'd use my dad's work laptop to code my site after spending 20 minutes plucking up the courage to ask. I never finished a site but it was so fun that I didn't care.
+When we moved back to the UK, I got myself a Yahoo! email address and favoured them over Google as my search engine of choice (even Ask Jeeves took precedence over Google). I also discovered web design and coding which thrusted me into the world of web development.
+
+I used Tripod and Homestead for Web hosting, Geocities, Microsoft FrontPage Express, and lots of HTML. I'd use my dad's work laptop to code my site after spending 20 minutes plucking up the courage to ask. I never finished a site but it was so fun that I didn't care.
 
 Eventually, I matured and moved onto Dreamweaver, more sustainable Web hosting, and then a myriad of different frameworks and environments. It was mostly HTML and, now, CSS. Building stuff from scratch. There was no "responsiveness" back then. I avoided Flash like the plague but thought "[slicing](https://en.wikipedia.org/wiki/Slicing_(interface_design))" was the most amazing thing that I just couldn't pull off. And absolutely no JavaScript, yuck!
 
