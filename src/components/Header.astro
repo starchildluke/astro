@@ -13,8 +13,8 @@ const {title, className, hrColor} = Astro.props;
     <SVG height="25px" width="25px" />
   </div>
   <header class="center" id="top">
-    <nav class="nav-bar">
-      <ul class="center nav-links">
+    <nav class="nav-bar" aria-label="site navigation">
+      <ul class="center nav-links" role="list">
         <li><a class={className} href="/">home</a></li>
         <li><a class={className} href="/about/">about</a></li>
         <li><a class={className} href="/posts/">posts</a></li>
