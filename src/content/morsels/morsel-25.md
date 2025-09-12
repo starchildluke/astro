@@ -1,5 +1,6 @@
 ---
 title: "Morsel #25: templates are meant to be flexible"
+description: "The more you explore, the more you'll discover in presenting your findings"
 published: true
 pubDate: '12 Sep 2025'
 tags:
