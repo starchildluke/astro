@@ -1,0 +1,102 @@
+{
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "mainEntityOfPage": "https://lukealexdavis.co.uk",
+    "description": "I'm a senior technical SEO specialist, music producer, and blogger based in Nottingham, UK. I specialise in technical creativity and problem solving with a pragmatic approach.",
+    "email": "luke@lukealexdavis.co.uk",
+    "image": ["https://lukealexdavis.co.uk/images/k5t2wVcf-Luke-Davis-640x600.png", "https://lukealexdavis.co.uk/images/lukedavis_jpg.jpg"],
+    "url": "https://lukealexdavis.co.uk",
+    "sameAs": ["https://uk.linkedin.com/in/lukealexdavis", "https://bsky.app/profile/lukealexdavis.co.uk", "https://www.instagram.com/lukealexdavis/", "https://www.impressiondigital.com/about/our-team/luke-davis/", "https://www.searchenginejournal.com/author/luke-davis/", "https://www.semrush.com/user/147747585/", "https://www.adzooma.com/blog/author/lukedavis/", "https://www.patreon.com/lukealexdavis", "https://lukealexdavis.contently.com/", "https://ko-fi.com/lklxdvs"],
+    "subjectOf": ["https://ccnworldtech.com/seo-interview-luke-davis/", "https://bytraject.com/blog/experimenting-with-seo-luke-davis/", "https://page2podcast.fm/episodes/45-luke-davis", "https://www.impressiondigital.com/resources/podcasts/technical-seo-automation-rankup-with-luke-davis/", "https://marketersofcolour.com/experimenting-with-seo-on-the-b-sides-with-luke-davis/", "https://www.cmdncmds.com/authors/luke-alex-davis/", "https://www.youtube.com/watch?v=kpVi10kJ1Do"],
+    "alternateName": ["Luke Alex Davis", "Starchildluke"],
+    "name": "Luke Davis",
+    "familyName": "Davis",
+    "givenName": "Luke",
+    "knows": {
+        "@type": "Person",
+        "name": "John Mueller",
+        "alternateName": "JohnMu"
+    },
+    "knowsLanguage": [{
+        "@type": "Language",
+        "name": "English",
+        "alternateName": "en"
+    }, {
+        "@type": "Language",
+        "name": "Portuguese",
+        "alternateName": "pt"
+    }],
+    "hasOccupation": {
+        "@type": "Occupation",
+        "name": "Senior Technical SEO Specialist",
+        "occupationLocation": {
+            "@type": "Country",
+            "name": "United Kingdom"
+        },
+        "responsibilities": "Managing the technical health of client websites, ensuring crawling and indexation are as efficient as possible.",
+        "skills": ["Web development", "Keyword research", "Critical thinking", "Page speed optimization", "Technical SEO", "Analytic reasoning"]
+    },
+    "gender": "Male",
+    "birthPlace": {
+        "@type": "City",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Bradford",
+            "addressCountry": "United Kingdom"
+        }
+    },
+    "nationality": {
+        "@type": "Country",
+        "name": "United Kingdom"
+    },
+    "height": {
+        "@type": "QuantitativeValue",
+        "value": "188",
+        "unitCode": "CMT"
+    },
+    "worksFor": {
+        "@type": "Organization",
+        "name": "Impression",
+        "url": "https://www.impressiondigital.com/"
+    },
+    "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "University of Bedfordshire",
+        "sameAs": [
+            "https://www.beds.ac.uk/",
+            "https://en.wikipedia.org/wiki/University_of_Bedfordshire",
+            "https://www.facebook.com/unibeds/",
+            "https://www.ucas.com/explore/unis/3261960f/university-of-bedfordshire"
+        ]
+    },
+    "knowsAbout": [{
+        "type": "Thing",
+        "name": "SEO",
+        "sameAs": "https://www.wikidata.org/wiki/Q180711",
+        "description": "The practice of increasing online visibility on search engine results pages.",
+        "alternateName": "Search Engine Optimization"
+    }, {
+        "type": "VideoGameSeries",
+        "name": "Pokémon",
+        "sameAs": ["https://www.wikidata.org/wiki/Q864", "https://www.pokemon.com", "https://en.wikipedia.org/wiki/Pok%C3%A9mon"],
+        "description": "Pokémon is a Japanese media franchise managed by The Pokémon Company, founded by Nintendo, Game Freak, and Creatures. The franchise was created by Satoshi Tajiri in 1996, and is centered around fictional creatures called 'Pokémon'.",
+        "alternateName": ["Pokemon", "Pocket Monsters"]
+    }, {
+        "type": "ComputerLanguage",
+        "name": "Python",
+        "sameAs": ["https://www.wikidata.org/wiki/Q28865", "https://www.python.org/"],
+        "description": "Python is a programming language that lets you work quickly and integrate systems more effectively.",
+        "disambiguatingDescription": "A programming language and not a species of snake."
+    }, {
+        "type": "VideoGameSeries",
+        "name": "Dragon Quest",
+        "sameAs": ["https://www.wikidata.org/wiki/Q615908", "https://en.wikipedia.org/wiki/Dragon_Quest", "https://dragonquest.square-enix-games.com/", "http://www.dragonquest.jp/"],
+        "alternateName": "Dragon Warrior",
+        "description": "Dragon Quest is a series of role-playing games created by Japanese game designer Yuji Horii, character designer Akira Toriyama, and composer Koichi Sugiyama, and published by Square Enix."
+    }, {
+        "type": "VideoGameSeries",
+        "name": "Final Fantasy",
+        "sameAs": ["http://www.wikidata.org/entity/Q12391356", "https://en.wikipedia.org/wiki/Final_Fantasy", "https://www.finalfantasy.com/"],
+        "description": "Final Fantasy is a Japanese fantasy anthology media franchise created by Hironobu Sakaguchi which is owned, developed, and published by Square Enix (formerly Square). The franchise centers on a series of fantasy role-playing video games."
+    }]
+}

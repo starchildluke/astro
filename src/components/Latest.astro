@@ -1,0 +1,76 @@
+---
+import FormattedDate from '../components/FormattedDate.astro';
+import { getCollection } from 'astro:content';
+
+let allPosts = await getCollection('posts');
+let allNotes = await getCollection('release-notes');
+let allMorsels = await getCollection('morsels');
+let allLists = await getCollection('lists');
+let allRecortes = await getCollection('recortes');
+
+let allWritings = [].concat(allPosts, allNotes, allMorsels, allLists, allRecortes)
+let sortedWritings = allWritings.sort((a, b) => new Date(b.data.pubDate) - new Date(a.data.pubDate));
+---
+
+<style>
+	#latest {
+	    border-radius: 10px;
+	    margin: 4rem 0;
+	}
+
+	.post-listing {
+		gap: 0.4rem;
+		padding: 0.8rem 0;
+		border-bottom: solid 1px #bababa;
+	}
+
+	ul li:last-child {
+		border: none;
+	}
+
+	.tag {
+	    font-size: 0.8rem;
+	    border-radius: 5px;
+	    margin: 0.25rem 0.3rem 0.25rem 0.1rem;
+	    padding: 0.1rem 0.4rem;
+	    display: ruby;
+	  }
+
+	.tag[data-tag="morsels"] {
+	  background: rgba(96, 117, 16, 0.1);
+	  border: 1px solid #607510;
+	}
+
+	.tag[data-tag="posts"] {
+	  background: rgba(229, 93, 60, 0.1);
+	  border: 1px solid rgb(229, 93, 60);
+	}
+
+	.tag[data-tag="release-notes"] {
+	  background: rgba(93, 60, 229, 0.1);
+	  border: 1px solid rgb(93, 60, 229);
+	}
+
+	.tag[data-tag="recortes"] {
+	  background: rgba(86, 86, 86, 0.1);
+	  border: 1px solid #565656;
+	}
+
+	.tag[data-tag="lists"] {
+	  background: rgba(242, 17, 86, 0.1);
+	  border: 1px solid rgb(242, 17, 86);
+	}
+</style>
+
+<section id="latest">
+	<h2>Latest posts & notes</h2>
+	<ul class="post-list">
+		{sortedWritings.slice(0,7).map((post) => (
+		<li class="post-listing">
+			<div><a href={`/${post.collection}/${post.slug}/`}><Fragment set:html={post.data.title}></a> <span class="tag" data-tag={post.collection}>{post.collection}</span></div>
+			<span class="publish-date"><FormattedDate date={post.data.pubDate} /></span>
+		</li>
+		))}
+		<li class="post-listing"><a href="/all-posts-notes/">Read all of my posts & notes →</a></li>
+	</ul>
+</section>

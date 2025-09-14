@@ -4,9 +4,9 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import CurrentlyListening from '../components/CurrentlyListening.astro';
-import FormattedDate from '../components/FormattedDate.astro';
 import Pokeballs from '../components/Pokeballs.astro';
-import { getCollection } from 'astro:content';
+import Latest from '../components/Latest.astro';
+import sd from '../data/sd.json';
 
 // METADATA VARIABLES
 let metaTitle = 'Luke Davis: technical SEO, music producer & creator';
@@ -14,16 +14,6 @@ let title = 'Luke Davis';
 let description = 'The digital home of Luke Davis: a senior technical SEO, music producer, and blogger based in Nottingham, UK.';
 let greetings = ['<span lang="pt">bom dia!</span>', '<span lang="pt">boa tarde!</span>', '<span lang="pt">boa noite!</span>', '<span lang="es">¡buenos dias!</span>', '<span lang="es">¡buenos tardes!</span>', '<span lang="es">¡buenos noches!</span>', '<span lang="es">hola!</span>', '<span lang="pt">ola!</span>', 'good morning!</span>', 'good afternoon!</span>', 'good evening!</span>', '<span lang="fr">bonjour!</span>', '<span lang="fr">bonsoir!</span>'];
 let sayHello = greetings[Math.floor(Math.random()*greetings.length)];
-let canonicalURL = Astro.url;
-
-let allPosts = await getCollection('posts');
-let allNotes = await getCollection('release-notes');
-let allMorsels = await getCollection('morsels');
-let allLists = await getCollection('lists');
-let allRecortes = await getCollection('recortes');
-
-let allWritings = [].concat(allPosts, allNotes, allMorsels, allLists, allRecortes)
-let sortedWritings = allWritings.sort((a, b) => new Date(b.data.pubDate) - new Date(a.data.pubDate));
 ---
 
 <style>
@@ -54,61 +44,13 @@ let sortedWritings = allWritings.sort((a, b) => new Date(b.data.pubDate) - new D
     font-size: 1.25rem;
   }
 
-  #latest {
-    border-radius: 10px;
-    margin: 4rem 0;
-  }
-
-  .post-listing {
-    gap: 0.4rem;
-    padding: 0.8rem 0;
-    border-bottom: solid 1px #bababa;
-  }
-
-  ul li:last-child {
-    border: none;
-  }
-
-  .tag {
-      font-size: 0.8rem;
-      border-radius: 5px;
-      margin: 0.25rem 0.3rem 0.25rem 0.1rem;
-      padding: 0.1rem 0.4rem;
-      display: ruby;
-    }
-
-  .tag[data-tag="morsels"] {
-    background: rgba(96, 117, 16, 0.1);
-    border: 1px solid #607510;
-  }
-
-  .tag[data-tag="posts"] {
-    background: rgba(229, 93, 60, 0.1);
-    border: 1px solid rgb(229, 93, 60);
-  }
-
-  .tag[data-tag="release-notes"] {
-    background: rgba(93, 60, 229, 0.1);
-    border: 1px solid rgb(93, 60, 229);
-  }
-
-  .tag[data-tag="recortes"] {
-    background: rgba(86, 86, 86, 0.1);
-    border: 1px solid #565656;
-  }
-
-  .tag[data-tag="lists"] {
-    background: rgba(242, 17, 86, 0.1);
-    border: 1px solid rgb(242, 17, 86);
-  }
-
   .home-middle {
     text-align: center;
   }
 
 </style>
 
-<BaseHead title={metaTitle} description={description} canonicalURL={canonicalURL} />
+<BaseHead title={metaTitle} description={description} />
 <body>
   <main class="layout">
     <article class="content">
@@ -120,124 +62,12 @@ let sortedWritings = allWritings.sort((a, b) => new Date(b.data.pubDate) - new D
         <p>I'm a senior technical SEO specialist, music producer, and blogger based in Nottingham, UK. <br>I currently work for <a href="https://www.impressiondigital.com/">Impression</a> and I'm also the founder of <a href="https://nitedre.am/">NiTEDREAM</a> (formerly Pandog Media), <a href="https://sampleface.co.uk">Sampleface</a>, <a href="https://cultrface.co.uk">Cultrface</a>, <a href="https://logicface.co.uk">LOGiCFACE</a>, <a href="https://playrface.co.uk">Playrface</a>, and <a href="https://distantarcade.co.uk">Distant Arcade</a>.</p>
       </section>
       <Pokeballs />
-      <section id="latest">
-        <h2>Latest posts & notes</h2>
-          <ul class="post-list">
-          {sortedWritings.slice(0,7).map((post) => (
-            <li class="post-listing">
-              <div><a href={`/${post.collection}/${post.slug}/`}><Fragment set:html={post.data.title}></a> <span class="tag" data-tag={post.collection}>{post.collection}</span></div>
-                <span class="publish-date"><FormattedDate date={post.data.pubDate} /></span>
-            </li>
-          ))}
-          <li class="post-listing"><a href="/all-posts-notes/">Read all of my posts & notes →</a></li>
-          </ul>
-      </section>
+      <Latest />
       <Pokeballs />
       <CurrentlyListening />
     </article>
   </main>
   <Footer/>
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "mainEntityOfPage": "https://lukealexdavis.co.uk",
-        "description": "I'm a senior technical SEO specialist, music producer, and blogger based in Nottingham, UK. I specialise in technical creativity and problem solving with a pragmatic approach.",
-        "email": "luke@lukealexdavis.co.uk",
-        "image": ["https://lukealexdavis.co.uk/images/k5t2wVcf-Luke-Davis-640x600.png", "https://lukealexdavis.co.uk/images/lukedavis_jpg.jpg"],
-        "url": "https://lukealexdavis.co.uk",
-        "sameAs": ["https://uk.linkedin.com/in/lukealexdavis", "https://bsky.app/profile/lukealexdavis.co.uk", "https://www.instagram.com/lukealexdavis/", "https://www.impressiondigital.com/about/our-team/luke-davis/", "https://www.searchenginejournal.com/author/luke-davis/", "https://www.semrush.com/user/147747585/", "https://www.adzooma.com/blog/author/lukedavis/", "https://www.patreon.com/lukealexdavis", "https://lukealexdavis.contently.com/", "https://ko-fi.com/lklxdvs"],
-        "subjectOf": ["https://ccnworldtech.com/seo-interview-luke-davis/", "https://bytraject.com/blog/experimenting-with-seo-luke-davis/", "https://page2podcast.fm/episodes/45-luke-davis", "https://www.impressiondigital.com/resources/podcasts/technical-seo-automation-rankup-with-luke-davis/", "https://marketersofcolour.com/experimenting-with-seo-on-the-b-sides-with-luke-davis/", "https://www.cmdncmds.com/authors/luke-alex-davis/", "https://www.youtube.com/watch?v=kpVi10kJ1Do"],
-        "alternateName": ["Luke Alex Davis", "Starchildluke"],
-        "name": "Luke Davis",
-        "familyName": "Davis",
-        "givenName": "Luke",
-        "knows": {
-          "@type": "Person",
-          "name": "John Mueller",
-          "alternateName": "JohnMu"
-        },
-        "knowsLanguage": [
-          {
-            "@type": "Language",
-            "name": "English",
-            "alternateName": "en"
-          },
-          {
-            "@type": "Language",
-            "name": "Portuguese",
-            "alternateName": "pt"
-          }
-        ],
-        "hasOccupation": {
-          "@type": "Occupation",
-          "name": "Senior Technical SEO Specialist",
-          "occupationLocation": {
-            "@type": "Country",
-            "name": "United Kingdom"
-            },
-          "responsibilities": "Managing the technical health of client websites, ensuring crawling and indexation are as efficient as possible.",
-          "skills": ["Web development", "Keyword research", "Critical thinking", "Page speed optimization", "Technical SEO", "Analytic reasoning"]
-        },
-        "gender": "Male",
-        "birthPlace": {
-            "@type": "City",
-            "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "Bradford",
-                "addressCountry": "United Kingdom"
-            }
-        },
-        "nationality": {
-            "@type": "Country",
-            "name": "United Kingdom"
-        },
-        "height": {
-          "@type": "QuantitativeValue",
-          "value": "188",
-          "unitCode": "CMT"
-        },
-        "worksFor": {
-            "@type": "Organization",
-            "name": "Impression",
-            "url": "https://www.impressiondigital.com/"
-        },
-        "alumniOf": {
-          "@type": "EducationalOrganization",
-          "name": "University of Bedfordshire",
-          "sameAs": [
-            "https://www.beds.ac.uk/",
-            "https://en.wikipedia.org/wiki/University_of_Bedfordshire",
-            "https://www.facebook.com/unibeds/",
-            "https://www.ucas.com/explore/unis/3261960f/university-of-bedfordshire"
-          ]
-        },
-        "knowsAbout": [{
-            "type": "Thing",
-            "name": "SEO",
-            "sameAs": "https://www.wikidata.org/wiki/Q180711",
-            "description": "The practice of increasing online visibility on search engine results pages.",
-            "alternateName": "Search Engine Optimization"
-        }, {
-            "type": "VideoGameSeries",
-            "name": "Pokémon",
-            "sameAs": ["https://www.wikidata.org/wiki/Q864", "https://www.pokemon.com", "https://en.wikipedia.org/wiki/Pok%C3%A9mon"],
-            "description": "Pokémon is a Japanese media franchise managed by The Pokémon Company, founded by Nintendo, Game Freak, and Creatures. The franchise was created by Satoshi Tajiri in 1996, and is centered around fictional creatures called 'Pokémon'.",
-            "alternateName": ["Pokemon", "Pocket Monsters"]
-        }, {
-            "type": "ComputerLanguage",
-            "name": "Python",
-            "sameAs": ["https://www.wikidata.org/wiki/Q28865", "https://www.python.org/"],
-            "description": "Python is a programming language that lets you work quickly and integrate systems more effectively.",
-            "disambiguatingDescription": "A programming language and not a species of snake."
-        }, {
-            "type": "VideoGameSeries",
-            "name": "Dragon Quest",
-            "sameAs": ["https://www.wikidata.org/wiki/Q615908", "https://en.wikipedia.org/wiki/Dragon_Quest", "https://dragonquest.square-enix-games.com/", "http://www.dragonquest.jp/"],
-            "alternateName": "Dragon Warrior",
-            "description": "Dragon Quest is a series of role-playing games created by Japanese game designer Yuji Horii, character designer Akira Toriyama, and composer Koichi Sugiyama, and published by Square Enix."
-        }]
-    }
-    </script>
+    <script type="application/ld+json" set:html={JSON.stringify(sd)}></script>
   </body>
 </html>

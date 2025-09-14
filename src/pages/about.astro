@@ -10,20 +10,17 @@ import {Content as AboutPage} from '../data/about.mdx';
 
 let title = 'About';
 let description = 'My about page. Here are some facts about me and the site.';
-let canonicalURL = Astro.url;
 
 ---
-<BaseHead title={title} description={description} canonicalURL={canonicalURL} />
+<BaseHead title={title} description={description} />
 <body>
 <main class="layout">
   <article class="content">
     <Header />
       <h1>{title} me</h1>
       <AboutPage />
-        <p>Page last updated: <time></time></p>
       </article>
     </main>
   <Footer></Footer>
 </body>
-<script>const d=new Date(document.lastModified);document.querySelector("time").innerText=d.toLocaleDateString("en-gb",{day:"2-digit",month:"short",year:"numeric"}).replace("Sept","Sep");</script>
 </html>

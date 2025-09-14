@@ -7,7 +7,6 @@ import BaseHead from '../components/BaseHead.astro';
 
 let title = 'Uh oh, looks like you hit a 404!';
 let description = "The page you are looking for is currently unavailable. Either the URL is wrong or I've messed up somewhere and the page isn't where it should be. Or I deleted it and it is the children who are wrong.";
-let canonicalURL = Astro.url;
 
 ---
 
@@ -45,10 +44,10 @@ let canonicalURL = Astro.url;
 </style>
 
 
-<BaseHead title={title} description={description} canonicalURL={canonicalURL} />
+<BaseHead title={title} description={description} />
 <body>
 <div id="flex-404">
-  <img src="/images/pagerror.gif" loading="eager" width="25" height="33" />
+  <img src="/images/pagerror.gif" fetchpriority="high" width="25" height="33" />
   <h1>{title}</h1>
 </div>
 <p>{description}</p>
