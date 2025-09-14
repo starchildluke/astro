@@ -3,7 +3,7 @@ title: 'Vibe coping'
 description: "Just how I like to get through the day."
 published: true
 pubDate: '27 Mar 2025'
-tags: ["life"]
+tags: ["life", "vibes"]
 ---
 
 There’s a new kind of coping I call “vibe coping”, where you fully give in to the vibes, embrace existential crises, and forget that the world even exists. It’s possible because the LLMs are getting too powerful. Also I just talk to myself so I barely even touch grass.

@@ -3,7 +3,7 @@ title: 'Some (genuine) thoughts on vibe coding'
 description: "Why does this new terminology make me cringe and yet I've felt compelled to use it?"
 published: true
 pubDate: '2 Apr 2025'
-tags: ["tech", "the Internet", "AI"]
+tags: ["tech", "the Internet", "AI", "vibes"]
 ---
 
 Vibe coding. It's a phrase that started out as a way to describe a form of coding without thought, per [Andrej Karpathy's original tweet](https://twitter.com/karpathy/status/1886192184808149383), which I'll quote here:
