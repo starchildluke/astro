@@ -1,0 +1,31 @@
+---
+const { leftLink, rightLink, backgroundColor, linkColor } = Astro.props;
+---
+
+<style define:vars={{ backgroundColor, linkColor }}>
+
+	.webring-container ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.webring-container ul li {
+		display: flex;
+		justify-content: space-between;
+		border: 1px solid black;
+		border-radius: 5px;
+		padding: 1rem;
+		background: var(--backgroundColor);
+		margin: 1rem;
+	}
+
+</style>
+
+<div class="webring-container">
+	<ul>
+		<li>
+			<a href={leftLink}>←</a> <span class="webring-home"><slot /></span> <a href={rightLink}>→</a>
+		</li>
+	</ul>
+</div>

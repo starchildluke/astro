@@ -1,0 +1,36 @@
+---
+// COMPONENTS
+
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Webrings from '../components/Webrings.astro';
+
+// METADATA VARIABLES
+
+let title = 'My webrings';
+let description = "A page where all the webrings I'm in go.";
+
+---
+
+<BaseHead title={title} description={description} />
+<body>
+<main class="layout">
+  <article class="content">
+    <Header />
+      <h1>{title}</h1>
+      <p>{description}</p>
+      <section>
+        <Webrings leftLink="https://xn--sr8hvo.ws/previous" rightLink="https://xn--sr8hvo.ws/next">An <a href="https://xn--sr8hvo.ws">IndieWeb Webring</a> 🕸💍</Webrings>
+        <Webrings leftLink="https://hotlinewebring.club/lukealexdavis/previous" rightLink="https://hotlinewebring.club/lukealexdavis/next">Member of the <a href="https://hotlinewebring.club/">Hotline Webring</a></Webrings>
+        <Webrings leftLink="https://silly.city/prev?user=Luke%20Davis" rightLink="https://silly.city/next?user=Luke%20Davis">A <a href="https://silly.city/">silly.city webring</a></Webrings>
+        <Webrings leftLink="https://1.44mb.club/prev" rightLink="https://1.44mb.club/next"><a href="https://1.44mb.club/">💾</a></Webrings>
+        <Webrings leftLink="https://webmasterwebring.netlify.app?lukealexdavis-previous" rightLink="https://webmasterwebring.netlify.app?lukealexdavis-next"><a href="https://webmasterwebring.netlify.app">Webmaster Webring</a> <a href="https://webmasterwebring.netlify.app?lukealexdavis-random">?</a></Webrings>
+        <Webrings leftLink="https://webri.ng/webring/cssjoy/previous?via=https://lukealexdavis.co.uk/" rightLink="https://webri.ng/webring/cssjoy/next?via=https://lukealexdavis.co.uk/"><a href="https://cs.sjoy.lol/">CSS Joy Webring</a> (<a href="https://webri.ng/webring/cssjoy/random?via=https://lukealexdavis.co.uk/">Random</a>)</Webrings>
+        <Webrings leftLink="https://teethinvitro.neocities.org/webring/linuxring/redirect/lukeprev.html" rightLink="https://teethinvitro.neocities.org/webring/linuxring/redirect/lukenext.html"><a href="https://teethinvitro.neocities.org/webring/linuxring">*nixRing <img style="height: 25px;" src="https://teethinvitro.neocities.org/webring/linuxring/icon/tux.png"></a></Webrings>
+      </section>
+      </article>
+    </main>
+  <Footer />
+</body>
+</html>
