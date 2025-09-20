@@ -1,5 +1,5 @@
 ---
-title: 'Mlog #005'
+title: 'Mlog #005: August 2024'
 description: "My mlog for August 2024."
 published: true
 pubDate: '01 Sep 2024'
