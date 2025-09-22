@@ -1,0 +1,56 @@
+---
+// COMPONENTS
+
+import BaseHead from '../components/BaseHead.astro';
+
+// METADATA VARIABLES
+
+let title = 'Autumnal altar';
+let description = 'This is my digital autumnal altar for autumn 2025.';
+
+---
+
+<style>
+
+  :root {
+    --fulvous: #DF880F;
+    --tigers-eye: #A76309;
+    --hunyadi-yellow: #F0B757;
+    --licorice: #100207;
+    --deeper-hunyadi-yellow: #F1AC3B;
+  }
+
+  body, a {
+    color: var(--licorice);
+  }
+  
+  body {
+    background: var(--deeper-hunyadi-yellow);
+    display: grid;
+    text-align: center;
+  }
+
+  img[src*="gif"] {
+    image-rendering: pixelated;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+</style>
+
+<BaseHead title={title} description={description} />
+<body>
+<main class="layout">
+  <article class="content">
+    <h1>{description}</h1>
+      <p>🍁 🍂 🥮 🍂 🍁</p>
+      <p>The autumn equinox occurred on <time>Monday, 22 September 2025, 7:19pm</time>, marking the start of autumn.</p>
+      <p>This year's autumn will last 89 days, 14 hours, 44 minutes.</p>
+      <img src="/images/pumpkins.gif" alt="a bunch of low res pumpkins" width="500" height="333" fetchpriority="high" />
+      </article>
+    </main>
+</body>
+</html>
