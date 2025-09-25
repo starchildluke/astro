@@ -6,6 +6,7 @@ tags:
   - Python
   - tech
   - music
+  - marimo
 ---
 
 I made a marimo notebook that pulls 3 random drum samples and lets you play them along with a random song from a Spotify playlist(s).

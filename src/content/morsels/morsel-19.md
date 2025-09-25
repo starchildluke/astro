@@ -6,6 +6,7 @@ tags:
   - Python
   - tech
   - blogging
+  - marimo
 ---
 
 <style>
