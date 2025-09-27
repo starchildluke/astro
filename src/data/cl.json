@@ -24,7 +24,7 @@
         "@attr": {
             "rank": "1"
         },
-        "playcount": "3"
+        "playcount": "2"
     },
     {
         "artist": {
@@ -51,34 +51,7 @@
         "@attr": {
             "rank": "2"
         },
-        "playcount": "3"
-    },
-    {
-        "artist": {
-            "mbid": "bb9cf82b-ddea-4188-bc4c-2d0f56d6474d",
-            "#text": "Robert Palmer"
-        },
-        "image": [
-            {
-                "size": "small",
-                "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
-            },
-            {
-                "size": "medium",
-                "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
-            },
-            {
-                "size": "large",
-                "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
-            }
-        ],
-        "mbid": "061cff64-e678-493f-acf5-c95f548aa7d7",
-        "url": "https://www.last.fm/music/Robert+Palmer/_/You%27re+Mine",
-        "name": "You're Mine",
-        "@attr": {
-            "rank": "3"
-        },
-        "playcount": "3"
+        "playcount": "2"
     },
     {
         "artist": {
@@ -99,9 +72,36 @@
                 "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
             }
         ],
-        "mbid": "cbc8121e-167a-41a2-aa0b-2cb9d64439e1",
-        "url": "https://www.last.fm/music/Ahwlee/_/callyourmom+%7C+cloud(smile;often)",
-        "name": "callyourmom | cloud(smile;often)",
+        "mbid": "5f7e3e94-2f96-447d-be07-e1ab2aa67928",
+        "url": "https://www.last.fm/music/Ahwlee/_/LOVELESS(lowkeycetra)",
+        "name": "LOVELESS(lowkeycetra)",
+        "@attr": {
+            "rank": "3"
+        },
+        "playcount": "2"
+    },
+    {
+        "artist": {
+            "mbid": "",
+            "#text": "Ahwlee"
+        },
+        "image": [
+            {
+                "size": "small",
+                "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
+            },
+            {
+                "size": "medium",
+                "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
+            },
+            {
+                "size": "large",
+                "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
+            }
+        ],
+        "mbid": "d07592cc-054f-44e7-a257-a463b5992a82",
+        "url": "https://www.last.fm/music/Ahwlee/_/nite(viii..)",
+        "name": "nite(viii..)",
         "@attr": {
             "rank": "4"
         },
@@ -126,9 +126,9 @@
                 "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
             }
         ],
-        "mbid": "6adeb729-767e-45ba-9b9a-4d1021edb588",
-        "url": "https://www.last.fm/music/Ahwlee/_/evenmoreslumshit",
-        "name": "evenmoreslumshit",
+        "mbid": "98fbbc60-f42a-470d-8b1c-236b3d0a204f",
+        "url": "https://www.last.fm/music/Ahwlee/_/no+doubt",
+        "name": "no doubt",
         "@attr": {
             "rank": "5"
         },
