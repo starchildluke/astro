@@ -1,0 +1,29 @@
+---
+title: "Slow connection speeds are an everybody problem"
+description: "No matter where you are in the world, you could end up with dial-up-like speeds and it be out of your control."
+published: true
+pubDate: '28 Sep 2025'
+tags: ["tech", "the Internet"]
+---
+
+import IcebergNotes from '../../components/IcebergNotes.astro';
+
+I've had relatively fast home internet speeds over the years for my average use. That includes general <span style="font-family:serif;">web surfing</span>, minimal PC gaming, streaming video (both downloading and uploading), and way too many Fortnite updates for my son.
+
+But lately, I've hit a variety of "dead spots" in terms of connections when I've been out of my house. For example, where my son lives there are some notable places where you can't even get 3G and he doesn't live out in the fields or anything. I also live near two notable sports stadiums and when they have events or matches on, forget about getting functional Wi-Fi or mobile internet.
+
+## Rural in the streets, urban in the sheets
+
+There's a lot to be said about rural areas still living in the 90s/early 00s in terms of internet connection speeds thanks to poor infrastructure and governments that have been very behind in terms of digital innovation outside of London or Manchester. But I live in a city that, near the centre, shouldn't have those issues generally and yet that is where we are.
+
+Now, if you know anything about how network communications work, you'll probably have a plethora of reasons in your head as to why this might happen<sup>[<a href="#in-1">1</a>]</sup> but it's not about how or why but more a reminder that it _can_ happen wherever you are. Using the example of proximity to a sporting event, that's classic [throttling](https://en.wikipedia.org/wiki/Bandwidth_throttling). Thousands of people accessing the same network at once causes a [bandwidth bottleneck](https://en.wikipedia.org/wiki/Internet_bottleneck) which is ironic considering you could be out in the middle of nowhere and suffer the same fate.
+
+## A load of your mind
+
+No matter where you are in the world, you could end up with [dial-up](https://en.wikipedia.org/wiki/Dial-up_Internet_access)-like speeds and it be out of your control. And that brings me to the whole point I decided to write this: if it can happen anywhere you are, it's important to have a website that you can access in those conditions. It might be too idealistic to expect all websites to just load immediately on 3G or slow 4G but it's our duty to make sure the important parts do.
+
+With an ever-growing reliance on [JS libraries and frameworks](https://web.dev/articles/js-libraries-vs-frameworks), unhealthy mixes of [server-side](https://developer.mozilla.org/en-US/docs/Glossary/SSR) (better) and [client-side](https://developer.mozilla.org/en-US/docs/Glossary/CSR) (ugh) rendering, single-page apps (SPAs), and unoptimised multimedia-heavy homepages, we've really got to do better for people we want to view these websites. Network throttling is out of your control as a site owner but building a faster-loading website is. So prioritise that and the benefits will be huge for all involved.
+
+<IcebergNotes>
+	<sup id="in-1">1</sup>And yes, I'm aware that no matter how fast your website is, if the server takes so long to respond to the initial request that it times out, it just won't load.
+</IcebergNotes>
