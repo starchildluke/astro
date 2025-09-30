@@ -3,7 +3,7 @@ title: 'Morsel #11: how to check if a DOM element is in the viewport'
 published: true
 pubDate: '22 May 2024'
 tags:
-  - Javascript
+  - JavaScript
   - the Internet
   - tech
   - Web performance

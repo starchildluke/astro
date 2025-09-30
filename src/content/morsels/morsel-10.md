@@ -3,7 +3,7 @@ title: 'Morsel #10: Ticking all the boxes'
 published: true
 pubDate: '23 Jan 2024'
 tags:
-  - Javascript
+  - JavaScript
   - the Internet
   - tech
 ---

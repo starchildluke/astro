@@ -3,7 +3,7 @@ title: 'Morsel #14: Textlist to array'
 published: true
 pubDate: '07 Oct 2024'
 tags:
-  - Javascript
+  - JavaScript
   - the Internet
   - tech
 ---

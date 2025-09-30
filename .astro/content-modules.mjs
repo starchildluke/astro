@@ -10,5 +10,8 @@ export default new Map([
 ["src/content/posts/short-form-blogs-subversive.mdx", () => import("astro:content-layer-deferred-module?astro%3Acontent-layer-deferred-module=&fileName=src%2Fcontent%2Fposts%2Fshort-form-blogs-subversive.mdx&astroContentModuleFlag=true")],
 ["src/content/posts/slow-connection-speeds-everybody-problem.mdx", () => import("astro:content-layer-deferred-module?astro%3Acontent-layer-deferred-module=&fileName=src%2Fcontent%2Fposts%2Fslow-connection-speeds-everybody-problem.mdx&astroContentModuleFlag=true")],
 ["src/content/posts/some-brief-thoughts-on web-dev-and-web-performance.mdx", () => import("astro:content-layer-deferred-module?astro%3Acontent-layer-deferred-module=&fileName=src%2Fcontent%2Fposts%2Fsome-brief-thoughts-on+web-dev-and-web-performance.mdx&astroContentModuleFlag=true")],
-["src/content/posts/vicuna-made-me-laugh.mdx", () => import("astro:content-layer-deferred-module?astro%3Acontent-layer-deferred-module=&fileName=src%2Fcontent%2Fposts%2Fvicuna-made-me-laugh.mdx&astroContentModuleFlag=true")]]);
+["src/content/posts/vicuna-made-me-laugh.mdx", () => import("astro:content-layer-deferred-module?astro%3Acontent-layer-deferred-module=&fileName=src%2Fcontent%2Fposts%2Fvicuna-made-me-laugh.mdx&astroContentModuleFlag=true")],
+["src/content/posts/image-lazy-loading-astro.mdx", () => import("astro:content-layer-deferred-module?astro%3Acontent-layer-deferred-module=&fileName=src%2Fcontent%2Fposts%2Fimage-lazy-loading-astro.mdx&astroContentModuleFlag=true")],
+["src/content/morsels/image-lazy-loading-astro.mdx", () => import("astro:content-layer-deferred-module?astro%3Acontent-layer-deferred-module=&fileName=src%2Fcontent%2Fmorsels%2Fimage-lazy-loading-astro.mdx&astroContentModuleFlag=true")],
+["src/content/morsels/morsel-28.mdx", () => import("astro:content-layer-deferred-module?astro%3Acontent-layer-deferred-module=&fileName=src%2Fcontent%2Fmorsels%2Fmorsel-28.mdx&astroContentModuleFlag=true")]]);
 		

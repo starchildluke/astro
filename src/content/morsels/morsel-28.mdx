@@ -1,0 +1,84 @@
+---
+title: 'How I implement lazy loading on my Astro image sites'
+description: 'For when you want to keep things static and not use client-side JS.'
+published: true
+pubDate: '30 Sep 2025'
+tags: ["Astro", "JavaScript", "the Internet", "Web performance"]
+---
+
+import IcebergNotes from '../../components/IcebergNotes.astro';
+
+I have an image site called [Coleçcao](https://coleccao.club/) where I post pictures that I think are cool or inspirational (like a cross between Tumblr, Are.na, and Pinterest). As you might have noticed on this site, I try to avoid images as I rarely need them to illustrate my points.<sup>[<a href="#in-1">1</a>]</sup>
+
+But with a website that is 99% images, I need a solution that keeps page load as short as possible and that's where lazy loading comes in! 
+
+## Lazy loading
+
+If you're unaware, lazy loading is a way to delay fully loading an element until it becomes visible in the viewport (the visible part of your window). If it's not seen, it's not completely loaded.<sup>[<a href="#in-2">2</a>]</sup>.
+
+This is mainly used on images but you can lazy load iframes too (good for YouTube embeds).
+
+There are a few ways you can implement lazy loading but the main ones are:
+
+1. Using the [Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API)
+2. Using scroll, resize, or orientationchange event handlers
+3. Using a <code>loading</code> attribute
+
+The first two need JavaScript. The last one is just a HTML attribute like so:
+
+```html
+<img src="example.jpg" alt="" width="500" height="500" loading="lazy" />
+```
+
+The idea is to load everything a user immediately sees and defer everything else until they bring it into view. It's a good thing and more people who use images and iframes should add it to their code ([properly](https://calendar.perfplanet.com/2022/lazy-loading-lcp-images-why-does-this-anti-pattern-happen/))
+
+## Adding this without JavaScript... _kinda_
+
+Here's a brief overview of how Coleçcao works in terms of image display.
+
+<figure style="text-align:center;">
+	<img src="/images/coleccao-screenshot.jpg" width="600" height="292" alt="a screenshot of the Coleçcao website" loading="lazy" />
+	<figcaption>This is lazy loaded too!</figcaption>
+</figure>
+
+You get a main paginated feed on the homepage which has about 10 images arranged in rows—2 to 3 per row depending on their dimensions. But because of that dependency, I can't be sure how many images will be in the viewport at any time which means I won't know which images need to be preloaded and have a higher fetchpriority and which need to be lazy loaded.
+
+In the end, I figured 4 images would be fine to preload and the rest could be lazy loaded and I coded the homepage as follows:
+
+```html
+<Layout title="Colecçao">
+	<section>
+    <div class="atom-list">
+    {page.data.map((atom: any) => (
+      <figure class="atom-listing">
+        <a href={`/atom/${atom.id}/`}>
+        	{ page.data.indexOf(atom) < 4 ?
+        		<img src={atom.data.image} alt={atom.data.description} width={atom.data.dimensions[0]} height={atom.data.dimensions[1]} fetchpriority="high" /> :
+        		<img src={atom.data.image} alt={atom.data.description} width={atom.data.dimensions[0]} height={atom.data.dimensions[1]} loading="lazy" />
+        	}
+        </a>
+        <figcaption>{atom.data.title}</figcaption>
+      </figure>
+    ))}
+<!--Rest of code goes here -->
+```
+
+I use [Astro's pagination functionality](https://docs.astro.build/en/guides/routing/#pagination) to route all my images and then I map them using the page prop. But the key element is the JavaScript in the `a` tag. It uses a ternary operator to say if the index of the mapped item is less than 4, then an `img` tag should be displayed with `fetchpriority="high"`. Any item index of 4 or more should use the `loading="lazy"` attribute.
+
+So, yes, I still use JavaScript to make this happen but it's all in the pre-built code. When it comes time to build, all you get are static HTML tags with the correct attributes (🤞).
+
+This isn't the best implementation but it's a heuristic that works for me and at worst, maybe one image isn't lazy loaded when it should be. I best not tell the web performance church elders!
+
+## Why not use client-side JS?
+
+Truth be told, the Intersection Observer API is perfectly cromulent for this and many people use it to great effect (I actually used it on a WordPress site when they messed up lazy loading a while back). But I don't want to rely on API code that could potentially break or that I have to maintain on the frontend. A simple ternary operator and some variables is quick and not that dirty. If anything breaks, it should be easier to fix and totally in my control.
+
+## Where to find the code
+
+If you're interested to see the full implementation, [the code is on GitHub](https://github.com/starchildluke/coleccao). As always, if you spot anything that I could improve, feel free to raise an issue and I will look at it but understand that I'm not a web developer so be kind with your critiques.
+
+<IcebergNotes>
+	<p><sup id="in-1">1</sup>I am considering some SVGs on some pages to give them a bit of decoration but they'll be super lightweight to keep things well-optimised.</p>
+	<p><sup id="in-2">2</sup>There is a threshold for this and it actually goes a little outside of the window so some of it is loaded but not the full thing. <a href="https://web.dev/articles/browser-level-image-lazy-loading#distance-from-viewport">You can find out more in Google's documentation</a>.</p>
+</IcebergNotes>
+
