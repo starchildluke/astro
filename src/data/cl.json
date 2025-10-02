@@ -1,8 +1,8 @@
 [
     {
         "artist": {
-            "mbid": "2e5fa0a4-55fb-4781-aae1-59522e677981",
-            "#text": "Wun Two"
+            "mbid": "a78f1671-3ebf-4822-b2bd-70ccc3088c2d",
+            "#text": "Charlotte Day Wilson"
         },
         "image": [
             {
@@ -18,9 +18,9 @@
                 "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
             }
         ],
-        "mbid": "5e4ab846-cd66-4a56-b2eb-3b22c1814033",
-        "url": "https://www.last.fm/music/Wun+Two/_/seeso+rio",
-        "name": "seeso rio",
+        "mbid": "dc9c8f94-512b-4127-aee6-1c39cb838335",
+        "url": "https://www.last.fm/music/Charlotte+Day+Wilson/_/Dovetail",
+        "name": "Dovetail",
         "@attr": {
             "rank": "1"
         },
@@ -45,40 +45,13 @@
                 "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
             }
         ],
-        "mbid": "dc9c8f94-512b-4127-aee6-1c39cb838335",
-        "url": "https://www.last.fm/music/Charlotte+Day+Wilson/_/Dovetail",
-        "name": "Dovetail",
-        "@attr": {
-            "rank": "2"
-        },
-        "playcount": "2"
-    },
-    {
-        "artist": {
-            "mbid": "a78f1671-3ebf-4822-b2bd-70ccc3088c2d",
-            "#text": "Charlotte Day Wilson"
-        },
-        "image": [
-            {
-                "size": "small",
-                "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
-            },
-            {
-                "size": "medium",
-                "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
-            },
-            {
-                "size": "large",
-                "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
-            }
-        ],
         "mbid": "1667d703-c089-485d-8db7-3bb29fdc6d92",
         "url": "https://www.last.fm/music/Charlotte+Day+Wilson/_/Money",
         "name": "Money",
         "@attr": {
-            "rank": "3"
+            "rank": "2"
         },
-        "playcount": "2"
+        "playcount": "3"
     },
     {
         "artist": {
@@ -103,9 +76,36 @@
         "url": "https://www.last.fm/music/Charlotte+Day+Wilson/_/My+Way",
         "name": "My Way",
         "@attr": {
+            "rank": "3"
+        },
+        "playcount": "3"
+    },
+    {
+        "artist": {
+            "mbid": "2e5fa0a4-55fb-4781-aae1-59522e677981",
+            "#text": "Wun Two"
+        },
+        "image": [
+            {
+                "size": "small",
+                "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
+            },
+            {
+                "size": "medium",
+                "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
+            },
+            {
+                "size": "large",
+                "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
+            }
+        ],
+        "mbid": "5e4ab846-cd66-4a56-b2eb-3b22c1814033",
+        "url": "https://www.last.fm/music/Wun+Two/_/seeso+rio",
+        "name": "seeso rio",
+        "@attr": {
             "rank": "4"
         },
-        "playcount": "2"
+        "playcount": "3"
     },
     {
         "artist": {

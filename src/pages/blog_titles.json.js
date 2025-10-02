@@ -10,7 +10,11 @@ export async function GET({params, request}) {
       };
     });
   
-  return new Response(JSON.stringify({ posts })
+  return new Response(JSON.stringify({ posts }, {
+    headers: {
+      "Content-Type": "application/json",
+    }
+  })
   )
 }
 
