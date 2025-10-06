@@ -28,60 +28,6 @@
     },
     {
         "artist": {
-            "mbid": "a78f1671-3ebf-4822-b2bd-70ccc3088c2d",
-            "#text": "Charlotte Day Wilson"
-        },
-        "image": [
-            {
-                "size": "small",
-                "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
-            },
-            {
-                "size": "medium",
-                "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
-            },
-            {
-                "size": "large",
-                "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
-            }
-        ],
-        "mbid": "1667d703-c089-485d-8db7-3bb29fdc6d92",
-        "url": "https://www.last.fm/music/Charlotte+Day+Wilson/_/Money",
-        "name": "Money",
-        "@attr": {
-            "rank": "2"
-        },
-        "playcount": "3"
-    },
-    {
-        "artist": {
-            "mbid": "a78f1671-3ebf-4822-b2bd-70ccc3088c2d",
-            "#text": "Charlotte Day Wilson"
-        },
-        "image": [
-            {
-                "size": "small",
-                "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
-            },
-            {
-                "size": "medium",
-                "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
-            },
-            {
-                "size": "large",
-                "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
-            }
-        ],
-        "mbid": "75e82505-6f51-46d3-9c7e-bfc6e5495a43",
-        "url": "https://www.last.fm/music/Charlotte+Day+Wilson/_/My+Way",
-        "name": "My Way",
-        "@attr": {
-            "rank": "3"
-        },
-        "playcount": "3"
-    },
-    {
-        "artist": {
             "mbid": "2e5fa0a4-55fb-4781-aae1-59522e677981",
             "#text": "Wun Two"
         },
@@ -103,14 +49,14 @@
         "url": "https://www.last.fm/music/Wun+Two/_/seeso+rio",
         "name": "seeso rio",
         "@attr": {
-            "rank": "4"
+            "rank": "2"
         },
         "playcount": "3"
     },
     {
         "artist": {
-            "mbid": "5fa419d2-0381-40cd-b56b-26364fc13375",
-            "#text": "Fragile State"
+            "mbid": "",
+            "#text": "\u03a3tella, Redinho"
         },
         "image": [
             {
@@ -126,9 +72,63 @@
                 "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
             }
         ],
-        "mbid": "9661a438-a9b3-3dd9-9535-ec8141c63d08",
-        "url": "https://www.last.fm/music/Fragile+State/_/Four-Four-Four",
-        "name": "Four-Four-Four",
+        "mbid": "",
+        "url": "https://www.last.fm/music/%CE%A3tella,+Redinho/_/Is+It+Over",
+        "name": "Is It Over",
+        "@attr": {
+            "rank": "3"
+        },
+        "playcount": "3"
+    },
+    {
+        "artist": {
+            "mbid": "",
+            "#text": "\u03a3tella, Redinho"
+        },
+        "image": [
+            {
+                "size": "small",
+                "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
+            },
+            {
+                "size": "medium",
+                "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
+            },
+            {
+                "size": "large",
+                "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
+            }
+        ],
+        "mbid": "",
+        "url": "https://www.last.fm/music/%CE%A3tella,+Redinho/_/The+Truth+Is",
+        "name": "The Truth Is",
+        "@attr": {
+            "rank": "4"
+        },
+        "playcount": "3"
+    },
+    {
+        "artist": {
+            "mbid": "a78f1671-3ebf-4822-b2bd-70ccc3088c2d",
+            "#text": "Charlotte Day Wilson"
+        },
+        "image": [
+            {
+                "size": "small",
+                "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
+            },
+            {
+                "size": "medium",
+                "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
+            },
+            {
+                "size": "large",
+                "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
+            }
+        ],
+        "mbid": "1667d703-c089-485d-8db7-3bb29fdc6d92",
+        "url": "https://www.last.fm/music/Charlotte+Day+Wilson/_/Money",
+        "name": "Money",
         "@attr": {
             "rank": "5"
         },
