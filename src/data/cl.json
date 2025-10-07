@@ -1,60 +1,6 @@
 [
     {
         "artist": {
-            "mbid": "a78f1671-3ebf-4822-b2bd-70ccc3088c2d",
-            "#text": "Charlotte Day Wilson"
-        },
-        "image": [
-            {
-                "size": "small",
-                "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
-            },
-            {
-                "size": "medium",
-                "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
-            },
-            {
-                "size": "large",
-                "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
-            }
-        ],
-        "mbid": "dc9c8f94-512b-4127-aee6-1c39cb838335",
-        "url": "https://www.last.fm/music/Charlotte+Day+Wilson/_/Dovetail",
-        "name": "Dovetail",
-        "@attr": {
-            "rank": "1"
-        },
-        "playcount": "3"
-    },
-    {
-        "artist": {
-            "mbid": "2e5fa0a4-55fb-4781-aae1-59522e677981",
-            "#text": "Wun Two"
-        },
-        "image": [
-            {
-                "size": "small",
-                "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
-            },
-            {
-                "size": "medium",
-                "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
-            },
-            {
-                "size": "large",
-                "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
-            }
-        ],
-        "mbid": "5e4ab846-cd66-4a56-b2eb-3b22c1814033",
-        "url": "https://www.last.fm/music/Wun+Two/_/seeso+rio",
-        "name": "seeso rio",
-        "@attr": {
-            "rank": "2"
-        },
-        "playcount": "3"
-    },
-    {
-        "artist": {
             "mbid": "",
             "#text": "\u03a3tella, Redinho"
         },
@@ -76,7 +22,7 @@
         "url": "https://www.last.fm/music/%CE%A3tella,+Redinho/_/Is+It+Over",
         "name": "Is It Over",
         "@attr": {
-            "rank": "3"
+            "rank": "1"
         },
         "playcount": "3"
     },
@@ -103,7 +49,7 @@
         "url": "https://www.last.fm/music/%CE%A3tella,+Redinho/_/The+Truth+Is",
         "name": "The Truth Is",
         "@attr": {
-            "rank": "4"
+            "rank": "2"
         },
         "playcount": "3"
     },
@@ -126,12 +72,66 @@
                 "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
             }
         ],
-        "mbid": "1667d703-c089-485d-8db7-3bb29fdc6d92",
-        "url": "https://www.last.fm/music/Charlotte+Day+Wilson/_/Money",
-        "name": "Money",
+        "mbid": "dc9c8f94-512b-4127-aee6-1c39cb838335",
+        "url": "https://www.last.fm/music/Charlotte+Day+Wilson/_/Dovetail",
+        "name": "Dovetail",
+        "@attr": {
+            "rank": "3"
+        },
+        "playcount": "2"
+    },
+    {
+        "artist": {
+            "mbid": "",
+            "#text": "Prince, The New Power Generation"
+        },
+        "image": [
+            {
+                "size": "small",
+                "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
+            },
+            {
+                "size": "medium",
+                "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
+            },
+            {
+                "size": "large",
+                "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
+            }
+        ],
+        "mbid": "",
+        "url": "https://www.last.fm/music/Prince,+The+New+Power+Generation/_/Love+2+the+9%27s",
+        "name": "Love 2 the 9's",
+        "@attr": {
+            "rank": "4"
+        },
+        "playcount": "2"
+    },
+    {
+        "artist": {
+            "mbid": "",
+            "#text": "4 Hero"
+        },
+        "image": [
+            {
+                "size": "small",
+                "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
+            },
+            {
+                "size": "medium",
+                "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
+            },
+            {
+                "size": "large",
+                "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
+            }
+        ],
+        "mbid": "0eb6688c-59ed-3ac3-aa11-01b9916da117",
+        "url": "https://www.last.fm/music/+noredirect/4+Hero/_/Wishful+Thinking",
+        "name": "Wishful Thinking",
         "@attr": {
             "rank": "5"
         },
-        "playcount": "2"
+        "playcount": "1"
     }
 ]
