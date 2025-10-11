@@ -2,6 +2,33 @@
     {
         "artist": {
             "mbid": "",
+            "#text": "Black Milk, Mick Jenkins"
+        },
+        "image": [
+            {
+                "size": "small",
+                "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
+            },
+            {
+                "size": "medium",
+                "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
+            },
+            {
+                "size": "large",
+                "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
+            }
+        ],
+        "mbid": "",
+        "url": "https://www.last.fm/music/Black+Milk,+Mick+Jenkins/_/Feelings+Don%27t+Feel+(feat.+Mick+Jenkins)",
+        "name": "Feelings Don't Feel (feat. Mick Jenkins)",
+        "@attr": {
+            "rank": "1"
+        },
+        "playcount": "5"
+    },
+    {
+        "artist": {
+            "mbid": "",
             "#text": "\u03a3tella, Redinho"
         },
         "image": [
@@ -22,7 +49,7 @@
         "url": "https://www.last.fm/music/%CE%A3tella,+Redinho/_/Is+It+Over",
         "name": "Is It Over",
         "@attr": {
-            "rank": "1"
+            "rank": "2"
         },
         "playcount": "4"
     },
@@ -49,7 +76,7 @@
         "url": "https://www.last.fm/music/%CE%A3tella,+Redinho/_/The+Truth+Is",
         "name": "The Truth Is",
         "@attr": {
-            "rank": "2"
+            "rank": "3"
         },
         "playcount": "4"
     },
@@ -76,41 +103,14 @@
         "url": "https://www.last.fm/music/Black+Milk/_/Downs+Got+Up",
         "name": "Downs Got Up",
         "@attr": {
-            "rank": "3"
-        },
-        "playcount": "2"
-    },
-    {
-        "artist": {
-            "mbid": "",
-            "#text": "Black Milk, AB"
-        },
-        "image": [
-            {
-                "size": "small",
-                "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
-            },
-            {
-                "size": "medium",
-                "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
-            },
-            {
-                "size": "large",
-                "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
-            }
-        ],
-        "mbid": "",
-        "url": "https://www.last.fm/music/+noredirect/Black+Milk,+AB/_/Parallels",
-        "name": "Parallels",
-        "@attr": {
             "rank": "4"
         },
-        "playcount": "2"
+        "playcount": "3"
     },
     {
         "artist": {
             "mbid": "",
-            "#text": "Black Milk, Mick Jenkins"
+            "#text": "Black Milk, Phil Swish"
         },
         "image": [
             {
@@ -127,11 +127,11 @@
             }
         ],
         "mbid": "",
-        "url": "https://www.last.fm/music/Black+Milk,+Mick+Jenkins/_/Feelings+Don%27t+Feel+(feat.+Mick+Jenkins)",
-        "name": "Feelings Don't Feel (feat. Mick Jenkins)",
+        "url": "https://www.last.fm/music/Black+Milk,+Phil+Swish/_/Swimm",
+        "name": "Swimm",
         "@attr": {
             "rank": "5"
         },
-        "playcount": "2"
+        "playcount": "3"
     }
 ]
