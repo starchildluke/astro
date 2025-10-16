@@ -60,10 +60,10 @@
 		"publisher": "Capcom",
 		"genre": ["RPG"],
 		"imageURL": "/images/gameslist/breath-of-fire-iv-ps1-250px.jpg",	
-		"status": "Actively playing",
+		"status": "Completed",
 		"format": "Emulation",
 		"console": "PS1",
-		"dateBeaten": ""
+		"dateBeaten": "10/16/2025"
 	},
 	{
 		"name": "X-Men - Mutant Academy",
@@ -229,5 +229,16 @@
 		"format": "Emulation",
 		"console": "PS1",
 		"dateBeaten": "09/30/2025"
+	},
+	{
+		"name": "Final Fantasy X",
+		"developer": "Square Enix (then Square)",
+		"publisher": "Square Enix (then Square)",
+		"genre": ["RPG"],
+		"imageURL": "/images/gameslist/final-fantasy-x.webp",	
+		"status": "Actively playing",
+		"format": "Emulation",
+		"console": "PS2",
+		"dateBeaten": ""
 	}
 ]
