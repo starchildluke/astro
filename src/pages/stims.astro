@@ -1,0 +1,25 @@
+---
+// COMPONENTS
+
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import {Content as Stims} from '../data/stims.mdx';
+
+// METADATA VARIABLES
+
+let title = 'Stims';
+let description = "A collection of my various stims.";
+
+---
+<Layout {title} {description}>
+<main class="layout">
+      <article class="content">
+            <Header />
+            <h1>{title}</h1>
+            <Stims />
+      </article>
+</main>
+<Footer/>
+</body>
+</html>

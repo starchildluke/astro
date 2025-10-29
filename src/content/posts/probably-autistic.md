@@ -53,9 +53,18 @@ I love learning, especially if I find something cool. But that can lead to hyper
 
 I like my peace and quiet a lot of the time. So when I'm in a shopping centre or at work or even at home where my son watches TV at a loud volume and then plays on his Switch at near full volume, it gets too much. It's why I often have headphones in as a way to regulate the sounds I hear. Sensory overload often turns into irritability so if you catch me in that funk, give me a second.
 
+## 8. I'm not "faffing", I'm struggling to make a decision
+
+Optimisation is literally in my job title. But when it comes to life, I struggle to make the "best" decisions for relatively simple tasks. I'll need to go to the bathroom but I'll also want a cup of tea and oh, I need to take this dish into the sink and perhaps I should wash them up but crap which do I do first and in what order?
+
+This might seem ridiculous to anyone else but I do it a lot and to anyone watching, it'll look like weird and people have called it out (which isn't helpful!) What I need is some patience and time to drop everything and focus on one thing at a time. Unless it is critical, I don't need to do everything in the most optimal order. If it is critical, the most important thing in that moment comes first. In the case of my example, I need to go to the bathroom because I've been unnecessarily holding it in for too long.
+
+So if you see me "faffing" or experiencing choice paralysis, give me some time to calm my brain and do the right thing first.
+
 **Sidenote**: _if you have any comments about this, for yourself, and we know each other, feel free to talk to me. If you have any criticisms, keep them to yourself. If you have any advice, ask me whether I'm open to this first. I don't like unsolicited advice as it often comes from a different life experience to mine and the rapport is almost never established beforehand so it sounds like someone offering a smile, a biscuit, and a cup of tea for mental health issues. I've been accused of being standoffish and aloof many times before when I've actually been struggling and nobody thought to check in first. Don't be that person._
 
 ## Resources
 
 * [How I get shit done (or at least get started) while having executive dysfunction](https://www.autisticasfxxk.com/blog/get-shit-done/) - This is sound advice for any other neurodivergent folks reading this
 * [As an Autistic Psychologist, Here Are My Thoughts on Autism and Self-Diagnosis](https://www.verywellmind.com/self-diagnosis-according-to-an-autistic-psychologist-8650879) - This is so helpful!
+* [My stims page](/stims/)
