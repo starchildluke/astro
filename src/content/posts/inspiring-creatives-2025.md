@@ -39,6 +39,6 @@ Jacky is a software engineer and a vital person in the tech sphere because of hi
 
 ## 6. jamie aka seafare
 
-When I started making [centiskor.ch](centiskor.ch), I looked for inspiration and found most of it with a site called seafare. It's run by jamie whose aesthetic is honestly 😙👌 and I love checking the site every so often for updates and see the new things they've done. I know I've used the word vibes a few times in this post already but seriously... such good vibes. Relaxing and enjoyable, it's gets me excited to play Pokémon or take on a new challenge.
+When I started making [centiskor.ch](https://centiskor.ch/), I looked for inspiration and found most of it with a site called seafare. It's run by jamie whose aesthetic is honestly 😙👌 and I love checking the site every so often for updates and see the new things they've done. I know I've used the word vibes a few times in this post already but seriously... such good vibes. Relaxing and enjoyable, it's gets me excited to play Pokémon or take on a new challenge.
 
 [seafare](https://seafare.neocities.org/) | [Bluesky](https://bsky.app/profile/glaceir.bsky.social) | [Tumblr](https://totodile.tumblr.com/)

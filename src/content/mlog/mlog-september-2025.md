@@ -63,7 +63,7 @@ Remember the lawyer show? Well, I loved it when it was on air and so did my mum.
 
 ### Hyprland rice demos
 
-“What?” I hear you ask. Hyprland is a “tiling Wayland compositor” (in layperson's terms, it manages how windows tile on the screen and it looks super fancy). Rices are like on-screen desktop setup and from the videos I've seen, they all look so cool. I managed to get Arch Linux + Hyprland on my [mini PC](/posts/gamesir-g8-galileo-peladn-wi-6-mini-pc) and it's been good so far. Just need to figure out the controls.
+“What?” I hear you ask. Hyprland is a “tiling Wayland compositor” (in layperson's terms, it manages how windows tile on the screen and it looks super fancy). Rices are like on-screen desktop setup and from the videos I've seen, they all look so cool. I managed to get Arch Linux + Hyprland on my [mini PC](/posts/gamesir-g8-galileo-peladn-wi-6-mini-pc/) and it's been good so far. Just need to figure out the controls.
 
 ### Dexter YouTube Poops
 
