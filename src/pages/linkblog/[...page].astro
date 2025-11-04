@@ -11,7 +11,7 @@ export async function getStaticPaths({ paginate }) {
 const { page, canonicalURL = Astro.url } = Astro.props;
 
 let fullTitle = page.url.prev ? `Linkblog (Page ${page.currentPage}/${page.lastPage})` : 'Linkblog';
-let description = "The blog listings page. I write about all kinds of topics including SEO, AI, music, life, and the Web.";
+let description = "I exclusively post links in this blog. Everything from tech to SEO to life. But mostly tech.";
 ---
 <Layout title={fullTitle} description={description} canonicalURL={canonicalURL} />
 
