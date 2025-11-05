@@ -18,14 +18,13 @@ import boxd_2018 from '../data/2018_letterboxd_diary.json';
 
 let title = 'My Letterboxd Diaries';
 let description = 'All the movies I\'ve watched and logged since my Letterboxd account started (excluding historic logs)';
-let canonicalURL = Astro.url;
 
 ---
-<BaseHead title={title} description={description} canonicalURL={canonicalURL} />
+<BaseHead title={title} description={description} />
 <body>
-  <Header />
-    <main class="layout">
-      <article class="content">
+  <main class="layout">
+  <article class="content">
+    <Header />
         <h1>{title}</h1>
         <p>This page is dedicated to all the films I've watched since 2018. It shows their genres, their year of release, my rating, and when I watched them. I thought it'd be cool to display this data on the site for readers to see and get an idea of my taste in movies. Plus, it's a fun way for me to look back on all the films I've enjoyed (and not enjoyed) over the years.</p>
         <h2 id="2025">2025</h2>
