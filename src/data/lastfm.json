@@ -27,7 +27,7 @@
                 ],
                 "mbid": "c23b637b-97c6-41eb-8ef6-6c724efc80a8",
                 "url": "https://www.last.fm/music/Zero+7",
-                "playcount": 8690,
+                "playcount": 8695,
                 "@attr": {
                     "rank": "1"
                 },
@@ -59,7 +59,7 @@
                 ],
                 "mbid": "f4857fb9-e255-4dc6-bd01-e4ca7cc68544",
                 "url": "https://www.last.fm/music/Jamiroquai",
-                "playcount": 7144,
+                "playcount": 7146,
                 "@attr": {
                     "rank": "2"
                 },
@@ -187,7 +187,7 @@
                 ],
                 "mbid": "",
                 "url": "https://www.last.fm/music/Black+Milk",
-                "playcount": 3892,
+                "playcount": 3902,
                 "@attr": {
                     "rank": "6"
                 },
@@ -315,7 +315,7 @@
                 ],
                 "mbid": "e56aee57-d90e-40cf-a70d-beb70f6f3c69",
                 "url": "https://www.last.fm/music/KAYTRANADA",
-                "playcount": 2671,
+                "playcount": 2687,
                 "@attr": {
                     "rank": "10"
                 },
@@ -443,7 +443,7 @@
                 ],
                 "mbid": "6ed40778-8d03-4a5c-ad35-93cf814627c9",
                 "url": "https://www.last.fm/music/Jessie+Ware",
-                "playcount": 1956,
+                "playcount": 1957,
                 "@attr": {
                     "rank": "14"
                 },
@@ -1051,7 +1051,7 @@
                 ],
                 "mbid": "96c5c9a3-6c9b-41a7-90cc-e7375afbfde1",
                 "url": "https://www.last.fm/music/NxWorries",
-                "playcount": 734,
+                "playcount": 735,
                 "@attr": {
                     "rank": "33"
                 },
@@ -1915,7 +1915,7 @@
                 ],
                 "mbid": "b66771cc-45fa-4a32-b14f-5337d7223d7a",
                 "url": "https://www.last.fm/music/D%27Angelo",
-                "playcount": 391,
+                "playcount": 393,
                 "@attr": {
                     "rank": "60"
                 },
@@ -3801,13 +3801,13 @@
                         "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"
                     }
                 ],
-                "mbid": "",
-                "url": "https://www.last.fm/music/+noredirect/Jorge+Ben+Jor",
-                "playcount": 166,
+                "mbid": "c4a1d94a-b37b-4d1a-8449-e3f8c65beecb",
+                "url": "https://www.last.fm/music/Neil+Frances",
+                "playcount": 167,
                 "@attr": {
                     "rank": "119"
                 },
-                "name": "Jorge Ben Jor"
+                "name": "Neil Frances"
             },
             {
                 "streamable": "0",
@@ -3833,13 +3833,13 @@
                         "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"
                     }
                 ],
-                "mbid": "c4a1d94a-b37b-4d1a-8449-e3f8c65beecb",
-                "url": "https://www.last.fm/music/Neil+Frances",
+                "mbid": "",
+                "url": "https://www.last.fm/music/+noredirect/Jorge+Ben+Jor",
                 "playcount": 166,
                 "@attr": {
                     "rank": "120"
                 },
-                "name": "Neil Frances"
+                "name": "Jorge Ben Jor"
             },
             {
                 "streamable": "0",
@@ -5209,11 +5209,43 @@
                         "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"
                     }
                 ],
+                "mbid": "04bac789-bf59-4383-8ad7-799d20d969f7",
+                "url": "https://www.last.fm/music/Modjo",
+                "playcount": 115,
+                "@attr": {
+                    "rank": "163"
+                },
+                "name": "Modjo"
+            },
+            {
+                "streamable": "0",
+                "image": [
+                    {
+                        "size": "small",
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
+                    },
+                    {
+                        "size": "medium",
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
+                    },
+                    {
+                        "size": "large",
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
+                    },
+                    {
+                        "size": "extralarge",
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"
+                    },
+                    {
+                        "size": "mega",
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"
+                    }
+                ],
                 "mbid": "4543030c-19d5-4d0e-be34-c971fd27009a",
                 "url": "https://www.last.fm/music/Somi",
                 "playcount": 115,
                 "@attr": {
-                    "rank": "163"
+                    "rank": "164"
                 },
                 "name": "Somi"
             },
@@ -5245,7 +5277,7 @@
                 "url": "https://www.last.fm/music/Stan+Getz",
                 "playcount": 115,
                 "@attr": {
-                    "rank": "164"
+                    "rank": "165"
                 },
                 "name": "Stan Getz"
             },
@@ -5277,41 +5309,9 @@
                 "url": "https://www.last.fm/music/Joe+Pass",
                 "playcount": 114,
                 "@attr": {
-                    "rank": "165"
-                },
-                "name": "Joe Pass"
-            },
-            {
-                "streamable": "0",
-                "image": [
-                    {
-                        "size": "small",
-                        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
-                    },
-                    {
-                        "size": "medium",
-                        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
-                    },
-                    {
-                        "size": "large",
-                        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
-                    },
-                    {
-                        "size": "extralarge",
-                        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"
-                    },
-                    {
-                        "size": "mega",
-                        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"
-                    }
-                ],
-                "mbid": "04bac789-bf59-4383-8ad7-799d20d969f7",
-                "url": "https://www.last.fm/music/Modjo",
-                "playcount": 114,
-                "@attr": {
                     "rank": "166"
                 },
-                "name": "Modjo"
+                "name": "Joe Pass"
             },
             {
                 "streamable": "0",
@@ -6649,11 +6649,43 @@
                         "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"
                     }
                 ],
+                "mbid": "73e5e69d-3554-40d8-8516-00cb38737a1c",
+                "url": "https://www.last.fm/music/Rihanna",
+                "playcount": 87,
+                "@attr": {
+                    "rank": "208"
+                },
+                "name": "Rihanna"
+            },
+            {
+                "streamable": "0",
+                "image": [
+                    {
+                        "size": "small",
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
+                    },
+                    {
+                        "size": "medium",
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
+                    },
+                    {
+                        "size": "large",
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
+                    },
+                    {
+                        "size": "extralarge",
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"
+                    },
+                    {
+                        "size": "mega",
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"
+                    }
+                ],
                 "mbid": "e2305342-0bde-4a2c-aed0-4b88694834de",
                 "url": "https://www.last.fm/music/Unknown+Mortal+Orchestra",
                 "playcount": 87,
                 "@attr": {
-                    "rank": "208"
+                    "rank": "209"
                 },
                 "name": "Unknown Mortal Orchestra"
             },
@@ -6685,7 +6717,7 @@
                 "url": "https://www.last.fm/music/Jordan+Rakei",
                 "playcount": 86,
                 "@attr": {
-                    "rank": "209"
+                    "rank": "210"
                 },
                 "name": "Jordan Rakei"
             },
@@ -6717,41 +6749,9 @@
                 "url": "https://www.last.fm/music/Hubert+Daviz",
                 "playcount": 84,
                 "@attr": {
-                    "rank": "210"
-                },
-                "name": "Hubert Daviz"
-            },
-            {
-                "streamable": "0",
-                "image": [
-                    {
-                        "size": "small",
-                        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
-                    },
-                    {
-                        "size": "medium",
-                        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
-                    },
-                    {
-                        "size": "large",
-                        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
-                    },
-                    {
-                        "size": "extralarge",
-                        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"
-                    },
-                    {
-                        "size": "mega",
-                        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"
-                    }
-                ],
-                "mbid": "73e5e69d-3554-40d8-8516-00cb38737a1c",
-                "url": "https://www.last.fm/music/Rihanna",
-                "playcount": 84,
-                "@attr": {
                     "rank": "211"
                 },
-                "name": "Rihanna"
+                "name": "Hubert Daviz"
             },
             {
                 "streamable": "0",
@@ -32010,5 +32010,5 @@
             "perPage": "1000"
         }
     },
-    "last updated": "20 November 2025"
+    "last updated": "22 November 2025"
 }
