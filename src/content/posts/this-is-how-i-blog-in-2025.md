@@ -2,6 +2,7 @@
 title: 'This is how I blog in 2025'
 description: "Content creation flow? That's so 2020."
 pubDate: '7 Sep 2025'
+published: true
 tags: ['blogging', 'the Internet', 'writing', 'WordPress']
 ---
 

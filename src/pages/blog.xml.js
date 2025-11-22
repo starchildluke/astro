@@ -6,7 +6,9 @@ import MarkdownIt from 'markdown-it';
 const parser = new MarkdownIt();
 
 export async function GET(context) {
-  const posts = await getCollection('posts');
+  const posts = await getCollection('posts', ({ data }) => {
+    return import.meta.env.PROD ? data.published !== true : true;
+  });
   const allPosts = posts.sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );

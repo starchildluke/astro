@@ -2,6 +2,7 @@
 title: 'This is my content creation flow'
 description: "Here is how I create content"
 pubDate: '19 Mar 2020'
+published: true
 tags: ['blogging', 'the Internet', 'writing', 'WordPress']
 ---
 

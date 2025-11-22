@@ -2,6 +2,7 @@
 title: 'What''s the obsession with folding phone?'
 description: "I don't get the obsession with folding phones. At all."
 pubDate: '25 May 2020'
+published: true
 tags: ['tech']
 ---
 

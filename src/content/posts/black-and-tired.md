@@ -1,6 +1,7 @@
 ---
 title: 'Black and Tired'
 description: "How many times are non-Black people gonna derail the Black Lives Matter hashtag and in how many different ways?"
+published: true
 pubDate: '21 Jun 2020'
 tags: ['life', 'Black']
 ---

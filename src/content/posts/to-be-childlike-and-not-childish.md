@@ -2,6 +2,7 @@
 title: "To Be Childlike And Not Childish"
 description: "Some thoughts in response to overzealousness."
 pubDate: "4 Jun 2017"
+published: true
 tags: ['life', 'happiness']
 ---
 

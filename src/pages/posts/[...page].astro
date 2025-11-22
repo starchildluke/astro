@@ -6,7 +6,9 @@ import FormattedDateSansYear from '../../components/FormattedDateSansYear.astro'
 import { getCollection } from 'astro:content';
 
 export async function getStaticPaths({paginate}) {
-  const allPosts = await getCollection('posts');
+  const allPosts = await getCollection('posts', ({ data }) => {
+    return import.meta.env.PROD ? data.published !== true : true;
+  });
   const sortedPosts = allPosts.sort((a, b) => new Date(b.data.pubDate) - new Date(a.data.pubDate));
   return paginate(sortedPosts, { pageSize: 25 });
 }

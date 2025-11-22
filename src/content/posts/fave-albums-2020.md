@@ -1,6 +1,7 @@
 ---
 title: "My Favourite Albums of 2020"
 description: "A list of my favourite albums from 2020."
+published: true
 pubDate: 31 Dec 2020
 tags: ['AOTY']
 ---

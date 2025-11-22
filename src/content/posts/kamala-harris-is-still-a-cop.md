@@ -2,6 +2,7 @@
 title: 'Kamala Harris is still a cop'
 description: "Why are people acting like she's the first Black person to be part of an election campaign or run for office or whatever?"
 pubDate: '13 Aug 2020'
+published: true
 tags: ['Black']
 ---
 

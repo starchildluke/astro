@@ -1,6 +1,7 @@
 ---
 title: "Inspiring creatives for 2025"
 description: "The following creatives have helped me in the past and they're worth keeping an eye out for in 2017."
+published: true
 pubDate: "08 Oct 2025"
 tags: ['tech', 'sport', 'art', 'music', 'writing']
 ---

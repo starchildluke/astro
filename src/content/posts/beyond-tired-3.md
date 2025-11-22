@@ -2,6 +2,7 @@
 title: "Beyond tired: Part 3"
 description: "Some thoughts on my mental health during the pandemic."
 pubDate: "6 Jan 2021"
+published: true
 tags: ['COVID-19', 'life', 'social media']
 ---
 

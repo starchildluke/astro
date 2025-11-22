@@ -1,6 +1,7 @@
 ---
 title: 5 things I learnt in my 6th year as a professional SEO
 pubDate: 4 Mar 2025
+published: true
 description: I've been a SEO for 6 years now. But what more have I learnt? I wrote a list of 5 things I've picked up over that period.
 tags:
   - SEO
