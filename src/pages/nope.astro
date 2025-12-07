@@ -1,0 +1,70 @@
+---
+// COMPONENTS
+
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+// METADATA VARIABLES
+
+let title = 'Nope';
+let description = 'A list of things I don’t want/need in my life or the world, inspired by Jack Baty.';
+
+---
+<Layout {title} {description}>
+    <main class="layout">
+      <article class="content">
+        <Header />
+          <h1>{title}</h1>
+          <p>{description} <a href="https://baty.net/nope/">You can find Jack's nope page on Baty.net</a>.</p>
+          <h2>I don’t want:</h2>
+          <h3>Ideals</h3>
+          <ul>
+            <li>cookie banners</li>
+            <li>browser notifications</li>
+            <li>so many charging cables</li>
+            <li>to pay to remove ads</li>
+            <li>friction when I unsubscribe from your newsletter (especially if I didn't knowingly signup to it)</li>
+            <li>AI features in every Web experience</li>
+            <li>to engage with most people on LinkedIn</li>
+            <li>more governments that ruin the lives of marginalised people</li>
+            <li>genocidal nation states</li>
+            <li>war crimes to go unpunished in any way</li>
+            <li>lip service to socialism rather than direct action to combat fascism</li>
+            <li>brussel sprouts at Christmas</li>
+            <li>Tailwind</li>
+            <li>an overreliance on JavaScript libraries and frameworks instead of HTML, CSS, and minimal "vanilla" JS</li>
+            <li>the British royal family</li>
+            <li>MrBeast</li>
+            <li>Novak Djokovic to win more singles titles than Roger Federer</li>
+            <li>business cases for "DEI"</li>
+          </ul>
+          <h3>Words</h3>
+          <p>Please note I've censored some words because I want to avoid getting any unwanted traffic on the site. Hopefully you can work out what the words are.</p>
+            <ul>
+              <li>slop</li>
+              <li>agentic</li>
+              <li>Tr*mp or anything/anyone related to him and his administration</li>
+              <li>Geoff Keighley</li>
+              <li>peaceful protests</li>
+              <li>Sora</li>
+              <li>JK R*wling/Harry P*tter</li>
+              <li>enshittification</li>
+              <li>woke (because white people have ruined the original concept)</li>
+              <li>anything related to the Labour party</li>
+              <li>doomscrolling</li>
+              <li>Paul Graham</li>
+              <li>Tailwind</li>
+              <li>React</li>
+              <li>El*n Musk</li>
+              <li>Gavin Newsom</li>
+              <li>anything The Guardian prints</li>
+              <li>Epst*in files</li>
+              <li>healthy conversations</li>
+              <li>vibe coding</li>
+          </ul>
+      </article>
+    </main>
+    <Footer/>
+  </body>
+</html>

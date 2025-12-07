@@ -1,0 +1,58 @@
+---
+// COMPONENTS
+
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+// METADATA VARIABLES
+
+let title = 'Yep';
+let description = 'A list of things I want/need in my life or the world and agree with, inspired by Matt who was inspired by Jack Baty.';
+
+---
+<Layout {title} {description}>
+    <main class="layout">
+      <article class="content">
+        <Header />
+          <h1>{title}</h1>
+          <p>{description} <a href="https://fyr.io/yep">You can find Matt's yep page on fyr.io</a>. You can also read <a href="https://olu.online/yep/">olu's yep page</a> which inspired this one too.</p>
+          <h2>I want:</h2>
+          <h3>Ideals</h3>
+          <ul>
+            <li>a welcoming indie web community for all without cliques and silos</li>
+            <li><q cite="https://olu.online/yep/">yearning. dreaming new worlds and technologies and ways to reform the online.</q> (copied from olu)</li>
+            <li>chocolate chip cookies</li>
+            <li>browsers without AI (slowing them down)</li>
+            <li>faster Web experience</li>
+            <li>socialism</li>
+            <li>a free Palestine</li>
+            <li>After Eights at Christmas</li>
+            <li>a better understanding of JavaScript</li>
+            <li>information that is important to the public to be free and accessible (ie. no paywalls)</li>
+            <li>a universal basic wage that is more than any current liveable/minimum wage</li>
+            <li>marginalised people to feel safe at work and have the freedom to go in whatever direction they want in their career without implicit or explicit barriers</li>
+            <li>free global healthcare for all (including trans people, as part of proper rights, because they fucking matter)</li>
+            <li>better understanding and language around mental health and neurodivergence</li>
+            <li>better community-based distribution of media so creatives get more money and Big Tech gets less</li>
+            <li>better social media moderation that doesn't pander to white supremacy</li>
+          </ul>
+          <h3>Words/phrases</h3>
+            <ul>
+              <li>free Palestine</li>
+              <li>he's dead</li>
+              <li>clean water</li>
+              <li>a word meaning the opposite of climate change/crisis</li>
+              <li>the boycott worked!</li>
+              <li>community</li>
+              <li>compassion</li>
+              <li>I'm sorry</li>
+              <li>thank you</li>
+              <li>I appreciate you</li>
+              <li>I love you</li>
+          </ul>
+      </article>
+    </main>
+    <Footer/>
+  </body>
+</html>
