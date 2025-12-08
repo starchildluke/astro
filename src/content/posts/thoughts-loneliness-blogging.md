@@ -48,6 +48,12 @@ I'm a Black personal blogger. Where are all the others? I know you're out there 
 
 I'm particularly interested in finding more Black queer folk in blogging spaces because that represents me a lot more. I will continue to look but for people who showcase bloggers, please consider diversifying your lists! We're out here!
 
+Special shout out to Olu who is a good friend who is Black and non-binary and write awesome blogs. Their piece on [xenial](https://olu.online/xenial/) discusses similar themes to my article:
+
+> i do try tons of other online spaces, seeking more community and collaborators and fellow conspirators for projects, but i think any group that isn't pretty immediately welcoming or at least instrumentally useful i give up on pretty quickly. there are a handful of places i've stuck around to try to crack what i don't “get” about the culture, or out of a desire to see if i can find a home there, but it's rare for me.
+<br><br>
+> a lack of xenial grace is hard to avoid online. you only have so much emotional and time-based bandwidth before a disagreement becomes an actual grievance. on social media platforms, and most big group chats, there aren't more graceful ways to de-escalate arguments before it comes to ideally blocking or, less ideally, a huge spat.
+
 ## Not finding your people online
 
 Individualism is killing our people.
