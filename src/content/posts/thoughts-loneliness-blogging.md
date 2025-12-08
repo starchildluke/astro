@@ -90,7 +90,9 @@ I still don't think I've necessarily "found my online people" yet. I've found in
 
 ## How webrings foster connection
 
-![American children playing 'Ring-a-round-a roses', illustrated by Jessie Willcox Smith in The Little Mother Goose (1912)](https://upload.wikimedia.org/wikipedia/commons/d/d3/Ring-a-round-a_rosesSmith.jpg)
+<figure>
+	<img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Ring-a-round-a_rosesSmith.jpg" alt="American children playing 'Ring-a-round-a roses', illustrated by Jessie Willcox Smith in The Little Mother Goose (1912)" loading="lazy" width="637" height="400" />
+</figure>
 
 Webrings are collection of sites that form a chain or "ring" by linking to one another in a circular format (similar to the above image). They tend to follow a theme and they're often very welcoming as they're only as good as their live links. I'm on quite a few webrings and I've had a few emails and linkbacks to articles having been part of them which has been awesome.
 
