@@ -38,7 +38,7 @@ I love the concept of the IndieWeb and what it stands for and I will always cham
 
 I've also noticed a lot of talk about how "blogs are back" (reader: they never left), how "you should get a blog" followed by a million recommendations on where to build one (there are arguably _too_ many options) and what blogs are/aren't and why you should/shouldn't write things. For anyone on the outside looking in, these are unnecessary barriers to entry. It's one thing to say that _you_ don't do certain things but to put them out as suggestions for others does more harm than good. I don't know if this reflects a wider blogosphere ideology but it makes me uncomfortable and I've been doing this stuff for nearly 2 decades!
 
-We should be welcoming and offer everyone the space and grace to write what they want without harming people or punching down and engage with writers whether they're first-timers or veterans. If people own their own containt on their own domains, it should be uniquely there's and not coloured by arbitrary unwritten rules. I honestly don't care if you call it a blog or a digital garden as long as you're writing what you want and enjoy it. Why should anyone care?
+We should be welcoming and offer everyone the space and grace to write what they want without harming people or punching down and engage with writers whether they're first-timers or veterans. If people own their own content on their own domains, it should be uniquely there's and not coloured by arbitrary unwritten rules. I honestly don't care if you call it a blog or a digital garden as long as you're writing what you want and enjoy it. Why should anyone care?
 
 ## Where are the Black personal bloggers?
 
