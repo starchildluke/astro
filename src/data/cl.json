@@ -29,6 +29,33 @@
     {
         "artist": {
             "mbid": "",
+            "#text": "Ahwlee"
+        },
+        "image": [
+            {
+                "size": "small",
+                "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
+            },
+            {
+                "size": "medium",
+                "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
+            },
+            {
+                "size": "large",
+                "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
+            }
+        ],
+        "mbid": "9ba3e9d5-4470-4189-bb7a-d68e080a0208",
+        "url": "https://www.last.fm/music/Ahwlee/_/outheslums",
+        "name": "outheslums",
+        "@attr": {
+            "rank": "2"
+        },
+        "playcount": "3"
+    },
+    {
+        "artist": {
+            "mbid": "",
             "#text": "Black Milk"
         },
         "image": [
@@ -49,7 +76,7 @@
         "url": "https://www.last.fm/music/Black+Milk/_/Downs+Got+Up",
         "name": "Downs Got Up",
         "@attr": {
-            "rank": "2"
+            "rank": "3"
         },
         "playcount": "3"
     },
@@ -76,7 +103,7 @@
         "url": "https://www.last.fm/music/Black+Milk/_/God+Willing",
         "name": "God Willing",
         "@attr": {
-            "rank": "3"
+            "rank": "4"
         },
         "playcount": "3"
     },
@@ -102,33 +129,6 @@
         "mbid": "",
         "url": "https://www.last.fm/music/Black+Milk/_/Parallels",
         "name": "Parallels",
-        "@attr": {
-            "rank": "4"
-        },
-        "playcount": "3"
-    },
-    {
-        "artist": {
-            "mbid": "",
-            "#text": "The B-52's"
-        },
-        "image": [
-            {
-                "size": "small",
-                "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
-            },
-            {
-                "size": "medium",
-                "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
-            },
-            {
-                "size": "large",
-                "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
-            }
-        ],
-        "mbid": "",
-        "url": "https://www.last.fm/music/The+B-52%27s/_/Follow+Your+Bliss",
-        "name": "Follow Your Bliss",
         "@attr": {
             "rank": "5"
         },
