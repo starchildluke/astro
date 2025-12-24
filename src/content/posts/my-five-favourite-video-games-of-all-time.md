@@ -10,7 +10,7 @@ Taken this from a [viral tweet](https://twitter.com/epicgeezr/status/89178169054
 
 ## Pokémon Gold/Silver (GBC, 2000)
 
-I didn't think anything could surpass Red/Blue/Yellow and then this came along. I was living in Atlanta when it came out but the buildup was amazing. They had display Gameboy Colors in Target and Walmart and I spent so much time on them. The series introduced some important features that still hold true today: new regions, separation of Special into Special Attack and Special Defence, day and night, breeding, but most importantly, 100 new Pokémon. It has since been remade for the DS and will be re-released via the Nintendo 3DS Virtual Console on 22nd September.
+I didn't think anything could surpass Red/Blue/Yellow and then this came along. I was living in Atlanta when it came out but the buildup was amazing. They had display Game Boy Colors in Target and Walmart and I spent so much time on them. The series introduced some important features that still hold true today: new regions, separation of Special into Special Attack and Special Defence, day and night, breeding, but most importantly, 100 new Pokémon. It has since been remade for the DS and will be re-released via the Nintendo 3DS Virtual Console on 22nd September.
 
 ## Championship Manager 01/02 (PC, 2001)
 
@@ -24,7 +24,13 @@ One of my favourite early childhood memories (see F-Zero and Sonic 2 below). I w
 
 Another fond childhood game. I only ever played this at my friend's house as he had a SNES and I wasn't allowed one. It's easily my favourite driving game. Incredible soundtrack, super addictive gameplay and then-state of the art graphics.
 
-## Sonic 2 (Sega Genesis, 1992)
+## Final Fantasy IX (PS1, 2000)
+
+What a game. If this was an ordered list, it'd be in second place. The gameplay had the perfect use of ATB, the story was immersive, the ending was so beautiful even the thought of it makes me cry. No notes. No crumbs. They really did that.
+
+## Honourable mention
+
+### Sonic 2 (Sega Genesis, 1992)
 
 Christmas 1993. My cousins got this for their Sega Genesis. I got to play it and enjoyed every moment. I got to know Sonic before Mario (who I've played more of in my lifetime). It's an instant classic and includes good old Myles Prower.
 

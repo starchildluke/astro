@@ -1,0 +1,56 @@
+---
+// COMPONENTS
+
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import Tags from '../../components/Tags.astro';
+
+// METADATA VARIABLES
+
+let title = 'Christmas';
+let description = 'A wiki page all about Christmas.';
+
+---
+<Layout {title} {description}>
+<main class="layout">
+  <article class="content">
+    <Header />
+    <Breadcrumbs title={title}/>
+    <section class="intro">
+      <h1>{title} 🎄</h1>
+      <p class="desc">{description}</p>
+      <p>Christmas is the annual celebration of the birth of Jesus Christ, celebrated mainly on 25th December 25 although some countries celebrate on 24th December. Advent is celebrated from the fourth Sunday before Christmas Day to 24th December, which is then followed by Christmastide celebrated for 12 nights, ending on 5th/6th January known as the Twelfth Night.</p>
+      <p>It's my favourite time of year and I love everything about it: the bright colourful lights, the music, the togetherness, the movies, the food, all of it.</p>
+    </section>
+    <section>
+      <h2 class="wiki-h2">Inner voice</h2>
+      <Tags tagName="Christmas" />
+    </section>
+    <section>
+      <h2 class="wiki-h2">Out loud</h2>
+      <ul>
+        <li><a href="https://sampleface.co.uk/tag/christmas/">Christmas on Sampleface</a></li>
+        <li><a href="https://cultrface.co.uk/tag/christmas/">Christmas on Cultrface</a></li>
+        <li><a href="https://logicface.co.uk/tag/christmas/">Christmas on LOGiCFACE</a></li>
+        <li><a href="https://playrface.co.uk/tag/christmas/">Christmas on Playrface</a></li>
+        <li><a href="https://distantarcade.co.uk/tag/christmas/">Christmas on Distant Arcade</a></li>
+      </ul>
+      <h3>Albums</h3>
+      <ul>
+        <li><a href="https://strrchildluke.bandcamp.com/album/boas-festas">Boas Festas</a></li>
+        <li><a href="https://strrchildluke.bandcamp.com/album/boas-festas-2">Boas Festas 2</a></li>
+        <li><a href="https://strrchildluke.bandcamp.com/album/boas-festas-3">Boas Festas 3</a></li>
+      </ul>
+      <h2 class="wiki-h2">Second opinions</h2>
+      <p>Coming soon</p>
+    </section>
+  </article>
+  
+</main>
+
+<Footer/>
+  
+</body>
+</html>
