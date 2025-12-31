@@ -1,6 +1,7 @@
 ---
 title: "8 things I learnt in my 5th year as a professional SEO"
 pubDate: "4 Mar 2024"
+published: true
 description: "I've been a SEO for 5 years now. But what more have I learnt? I wrote a list of 7 things I've picked up over that period."
 tags: ['SEO', 'AI', 'tech']
 ---

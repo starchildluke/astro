@@ -1,6 +1,7 @@
 ---
 title: '19 Things I Learnt In My 1st Year As A Professional SEO'
 pubDate: '11 Feb 2020'
+published: true
 description: "I've been a SEO for a year now. But what have I learnt? I wrote a list of 19 things I''ve picked up over that period."
 tags: ['SEO']
 ---
