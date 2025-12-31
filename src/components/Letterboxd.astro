@@ -14,7 +14,7 @@ const { boxdYear } = Astro.props;
       <th>Watched Date</th>
     </tr>
   </thead>
-  {boxdYear.map((film) => (
+  {boxdYear ? boxdYear.map((film) => (
   <tr>
     <td>{film.Name}</td>
     <td>{film.Genres.join(", ")}</td>
@@ -23,5 +23,5 @@ const { boxdYear } = Astro.props;
     <td>{new Date(film['Watched Date']).toLocaleDateString('en-GB', { year:"numeric", month:"short", day:"numeric"})
     }</td>
   </tr>
-  ))}
+  )) : ""}
 </table>
