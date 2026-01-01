@@ -141,3 +141,13 @@ I tried playing VI two other times: once in 2021/2022 [citation needed] and once
 </figure>
 
 What a game. I skipped VIII and went straight to IX after VII and it didn't take me long before I got hooked, especially because I played it via emulation and with improved graphics so everything looked so detailed and smooth. But aside from the beautiful graphics, the story drew me in from the get-go, the dialogue was mature and whimsical—just what I needed after the seriousness of VII—and gameplay was the peak of pre-3D FF combat with the ATB system. Even the side quests and fetch quests were fun to do (even though I cheated to get them all in numberical order, so sue me). And the music... \*chef's kiss\*. The ending made me cry and I still get emotional thinking about it. I love this game so much and it is my vote for best game of 2025 and of all time.
+
+### Sidenote
+
+I got a RetroAchievements 2025 Year in Review email earlier today so I thought I'd show you:
+
+* In 2025, I played 24 games on retroachievements.org and unlocked 350 achievements, earning me 2179 softcore points
+* I spent 211 hours playing games across 10 systems. 93 hours of that were playing PlayStation games
+* I beat 8 games on softcore
+* My most played game was Final Fantasy IX at 43 hours and 34 minutes
+* My rarest achievement earned was Low-Level Game Enthusiast from Final Fantasy VI, which has only been earned by 3.08% of players
