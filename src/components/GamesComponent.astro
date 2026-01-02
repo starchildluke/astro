@@ -1,0 +1,61 @@
+---
+import Games from '../layouts/Gameslist.astro';
+import gamelog from '../data/gamelog.json';
+
+interface Props {
+	year: String;
+}
+
+const { year } = Astro.props;
+---
+
+<style>
+
+	.games-img {
+		border-bottom: 5px double white;
+	}
+
+	.data :is(img,.games-text) {
+		padding: 2rem;
+	}
+
+	.data {
+		display: flex;
+		flex-wrap: wrap;
+		align-content: flex-start;
+		max-width: 250px;
+		background: #1a659e;
+		border-radius: 10px;
+		box-shadow: 0.5px 0.5px 0.8px hsl(var(--shadow-color) / 0.36), 1.4px 1.4px 2.2px -0.6px hsl(var(--shadow-color) / 0.36), 2.7px 2.9px 4.5px -1.2px hsl(var(--shadow-color) / 0.36), 5.6px 5.8px 9.1px -1.9px hsl(var(--shadow-color) / 0.36), 10.8px 11.3px 17.6px -2.5px hsl(var(--shadow-color) / 0.36);
+	}
+
+	.data :is(h3, p)  {
+		text-align: left;
+	}
+
+	.data p {
+		padding-bottom: 0;
+	}
+
+
+</style>
+
+{gamelog.filter(game => game.status === "Completed" && game.dateBeaten.includes(year)).sort((a, b) => new Date(a.dateBeaten) - new Date(b.dateBeaten)).map((game) => (
+<div class="data">
+	<div class="games-img">
+		<img src={game.imageURL ? game.imageURL : '/images/coming-soon.webp'} width="250" height="250" loading="lazy">
+	</div>
+	<div class="games-text">
+		<h3>{game.name}</h3>
+		<p><strong>Developer</strong>: {game.developer}</p>
+		<p><strong>Publisher</strong>: {game.publisher}</p>
+		<p><strong>Genre</strong>: {game.genre}</p>
+		<p><strong>Console</strong>: {game.console}</p>
+		<p><strong>Date beaten</strong>: {new Date(game.dateBeaten).toLocaleDateString('en-gb', {
+			day: '2-digit',
+			month: '2-digit',
+			year: 'numeric',
+		})}</p>
+	</div>
+</div>
+))}

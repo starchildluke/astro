@@ -4,6 +4,7 @@
 import Games from '../layouts/Gameslist.astro';
 import gamelog from '../data/gamelog.json';
 import GameSD from '../components/GameSD.astro';
+import GamesComponent from '../components/GamesComponent.astro';
 
 // METADATA VARIABLES
 
@@ -119,27 +120,17 @@ let description = "A list of games I'm currently playing or have already complet
           ))}
           </div>
           <h2>Completed it, mate!</h2>
+          <div class="games-grid">
+          	<GamesComponent year="2026"/>
+          </div>
+          <h3>2025</h3>
+          <details>
+          	<summary>Reveal the secrets!</summary>
+          	<br />
 		<div class="games-grid">
-          {gamelog.filter(game => game.status === "Completed").sort((a, b) => new Date(a.dateBeaten) - new Date(b.dateBeaten)).map((game) => (
-          <div class="data">
-          	<div class="games-img">
-          		<img src={game.imageURL ? game.imageURL : '/images/coming-soon.webp'} width="250" height="250" loading="lazy">
-          	</div>
-          	<div class="games-text">
-	          	<h3>{game.name}</h3>
-	          	<p><strong>Developer</strong>: {game.developer}</p>
-	          	<p><strong>Publisher</strong>: {game.publisher}</p>
-	          	<p><strong>Genre</strong>: {game.genre}</p>
-	          	<p><strong>Console</strong>: {game.console}</p>
-	          	<p><strong>Date beaten</strong>: {new Date(game.dateBeaten).toLocaleDateString('en-gb', {
-						day: '2-digit',
-						month: '2-digit',
-						year: 'numeric',
-					})}</p>
-          	</div>
+          <GamesComponent year="2025"/>
           </div>
-          ))}
-          </div>
+      </details>
 		</div>
 		<GameSD />
 		</Games>
