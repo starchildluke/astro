@@ -1,7 +1,7 @@
 ---
 title: 'Carl Jung on self love'
 description: "The title says it all."
-pubDate: '1 Jun 2020'
+pubDate: '1 Jan 2026'
 tags: ['life']
 ---
 
