@@ -10,6 +10,7 @@ import GamesComponent from '../components/GamesComponent.astro';
 
 let title = 'My Gameslist';
 let description = "A list of games I'm currently playing or have already completed.";
+let currentYear = new Date().getFullYear().toString();
 ---
 
 <style>
@@ -33,26 +34,18 @@ let description = "A list of games I'm currently playing or have already complet
 		color: #efefd0;
 	}
 
-	.game-text p {
-		font-size: 10rem;
-	}
-
 	.games-meta {
 		margin-bottom: 2rem;
 	}
 
 	.games-grid {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+		grid-template-columns: repeat(auto-fit, minmax(200px, auto));
 		grid-row-gap: 2rem;
-		grid-column-gap: 2rem;
+		grid-column-gap: 1rem;
 		justify-content: center;
 		justify-items: center;
 		margin-bottom: 4rem;
-	}
-
-	.games-img {
-		border-bottom: 5px double white;
 	}
 
 	.container {
@@ -60,29 +53,73 @@ let description = "A list of games I'm currently playing or have already complet
 		margin: 2rem;
 	}
 
-	.data :is(img,.games-text) {
-		padding: 2rem;
+	.games-img {
+		height: 200px;
+		padding-block-start: 1rem;
+		padding-inline: 1rem 1rem;
+	}
+
+	img {
+		object-fit: contain;
 	}
 
 	.data {
 		display: flex;
 		flex-wrap: wrap;
 		align-content: flex-start;
-		max-width: 250px;
+		justify-content: center;
+		max-width: 200px;
 		background: #1a659e;
 		border-radius: 10px;
 		box-shadow: 0.5px 0.5px 0.8px hsl(var(--shadow-color) / 0.36), 1.4px 1.4px 2.2px -0.6px hsl(var(--shadow-color) / 0.36), 2.7px 2.9px 4.5px -1.2px hsl(var(--shadow-color) / 0.36), 5.6px 5.8px 9.1px -1.9px hsl(var(--shadow-color) / 0.36), 10.8px 11.3px 17.6px -2.5px hsl(var(--shadow-color) / 0.36);
-	}
-
-	.data :is(h3, p)  {
-		text-align: left;
-		color: #efefd0;
 	}
 
 	.data p {
 		padding-bottom: 0;
 	}
 
+	.game-name {
+		font-family: 'DM Serif Display', "Arial Black", sans-serif;
+		font-size: 1.5rem;
+  		line-height: 1;
+	}
+
+	.games-text {
+		padding: 0.5rem 1rem 1rem 1rem;
+	}
+
+	.games-below {
+		display: flex;
+		flex-direction: column;
+		padding: 0 1rem 1rem;
+	}
+
+	hr {
+		border: none;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		padding-top: 1rem;
+	}
+
+	#completed::before {
+		content: '✓';
+		font-weight: 900;
+		font-size: 2rem;
+		color: gold;
+	}
+
+	#sunsetted::before {
+		content: '⏾';
+		color: #fff;
+		font-size: 2rem;
+	}
+
+	#actively-playing::before, #actually-playing::before {
+		content: '🎮';
+		color: #fff;
+		font-size: 2rem;
+	}
 
 </style>
 
@@ -91,46 +128,26 @@ let description = "A list of games I'm currently playing or have already complet
 		<div class="games-meta">
 			<h1>{title}</h1>
 			<p>{description}</p>
+			<p>🎮 means I'm currently playing it. ⏾ means I haven't played it for a while. <span style="font-weight: 900;color: gold;">✓</span> means I completed.</p>
 			<p>Please note: this is a work in progress so the design may change.</p>
 			<p><a href="/">Go back home</a></p>
 		</div>
-		<h2>Actively playing</h2>
 		<div class="games-grid">
-          {gamelog.filter(game => game.status === "Actively playing").map((game) => (
+          {gamelog.filter(
+          	game => game.status !== "Completed" || game.dateBeaten.includes(currentYear)
+          	).sort((a, b) => a.name.localeCompare(b.name)).map((game) => (
           <div class="data">
           	<div class="games-img">
-          		<img src={game.imageURL ? game.imageURL : '/images/coming-soon.webp'} width="250" height="250" loading="eager" alt=`cover art for ${game.name} for the ${game.console}`>
+          		<img src={game.imageURL ? game.imageURL : '/images/coming-soon.webp'} width="200" height="200" loading="eager" alt=`cover art for ${game.name} for the ${game.console}`>
           	</div>
+          	<div class="games-below">
+          	<hr id={game.status.replace(' ', '-').toLowerCase()}>
           	<div class="games-text">
-	          	<h3>{game.name}</h3>
-	          	<p><strong>Developer</strong>: {game.developer}</p>
-	          	<p><strong>Publisher</strong>: {game.publisher}</p>
-	          	<p><strong>Genre</strong>: {game.genre}</p>
-	          	<p><strong>Console</strong>: {game.console}</p>
+	          	<span class="game-name">{game.name}</span>
           	</div>
+          </div>
           </div>
           ))}
-          </div>
-         <h2>Passively playing</h2>
-         <div class="games-grid">
-          {gamelog.filter(game => game.status === "Passively playing").map((game) => (
-          <div class="data">
-          	<div class="games-img">
-          		<img src={game.imageURL ? game.imageURL : '/images/coming-soon.webp'} width="250" height="250" loading="lazy" alt=`cover art for ${game.name} for the ${game.console}`>
-          	</div>
-          	<div class="games-text">
-	          	<h3>{game.name}</h3>
-	          	<p><strong>Developer</strong>: {game.developer}</p>
-	          	<p><strong>Publisher</strong>: {game.publisher}</p>
-	          	<p><strong>Genre</strong>: {game.genre}</p>
-	          	<p><strong>Console</strong>: {game.console}</p>
-          	</div>
-          </div>
-          ))}
-          </div>
-          <h2>Completed it, mate!</h2>
-          <div class="games-grid">
-          	<GamesComponent year="2026"/>
           </div>
           <h3>2025</h3>
           <details>
