@@ -29,6 +29,14 @@ let description = "A list of games I'm currently playing or have already complet
 		font-weight: 700;
 	}
 
+	h2, h3 {
+		color: #efefd0;
+	}
+
+	.game-text p {
+		font-size: 10rem;
+	}
+
 	.games-meta {
 		margin-bottom: 2rem;
 	}
@@ -68,6 +76,7 @@ let description = "A list of games I'm currently playing or have already complet
 
 	.data :is(h3, p)  {
 		text-align: left;
+		color: #efefd0;
 	}
 
 	.data p {
@@ -90,7 +99,7 @@ let description = "A list of games I'm currently playing or have already complet
           {gamelog.filter(game => game.status === "Actively playing").map((game) => (
           <div class="data">
           	<div class="games-img">
-          		<img src={game.imageURL ? game.imageURL : '/images/coming-soon.webp'} width="250" height="250" loading="eager">
+          		<img src={game.imageURL ? game.imageURL : '/images/coming-soon.webp'} width="250" height="250" loading="eager" alt=`cover art for ${game.name} for the ${game.console}`>
           	</div>
           	<div class="games-text">
 	          	<h3>{game.name}</h3>
@@ -107,7 +116,7 @@ let description = "A list of games I'm currently playing or have already complet
           {gamelog.filter(game => game.status === "Passively playing").map((game) => (
           <div class="data">
           	<div class="games-img">
-          		<img src={game.imageURL ? game.imageURL : '/images/coming-soon.webp'} width="250" height="250" loading="lazy">
+          		<img src={game.imageURL ? game.imageURL : '/images/coming-soon.webp'} width="250" height="250" loading="lazy" alt=`cover art for ${game.name} for the ${game.console}`>
           	</div>
           	<div class="games-text">
 	          	<h3>{game.name}</h3>

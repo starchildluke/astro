@@ -1,5 +1,4 @@
 ---
-import Games from '../layouts/Gameslist.astro';
 import gamelog from '../data/gamelog.json';
 
 interface Props {
@@ -31,6 +30,7 @@ const { year } = Astro.props;
 
 	.data :is(h3, p)  {
 		text-align: left;
+		color: #efefd0;
 	}
 
 	.data p {
@@ -43,7 +43,7 @@ const { year } = Astro.props;
 {gamelog.filter(game => game.status === "Completed" && game.dateBeaten.includes(year)).sort((a, b) => new Date(a.dateBeaten) - new Date(b.dateBeaten)).map((game) => (
 <div class="data">
 	<div class="games-img">
-		<img src={game.imageURL ? game.imageURL : '/images/coming-soon.webp'} width="250" height="250" loading="lazy">
+		<img src={game.imageURL ? game.imageURL : '/images/coming-soon.webp'} width="250" height="250" loading="lazy" alt=`cover art for ${game.name} for the ${game.console}`>
 	</div>
 	<div class="games-text">
 		<h3>{game.name}</h3>
