@@ -60,6 +60,14 @@ let sortedWritings = allWritings.sort((a, b) => new Date(b.data.pubDate) - new D
 	  background: rgba(242, 17, 86, 0.1);
 	  border: 1px solid rgb(242, 17, 86);
 	}
+
+	@media only screen and (max-width:480px) {
+
+	    #latest {
+	      margin: 2rem 0;
+	    }
+	}
+	
 </style>
 
 <section id="latest">
