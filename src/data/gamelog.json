@@ -148,7 +148,7 @@
 		"publisher": "Nintendo",
 		"genre": ["Platformer"],
 		"imageURL": "/images/gameslist/kirbys-dream-land-3.webp",	
-		"status": "Actually playing",
+		"status": "Playing",
 		"format": "Emulation",
 		"console": "SNES",
 		"dateBeaten": ""
@@ -236,7 +236,7 @@
 		"publisher": "Square Enix (then Square)",
 		"genre": ["RPG"],
 		"imageURL": "/images/gameslist/final-fantasy-x.webp",	
-		"status": "Actively playing",
+		"status": "Playing",
 		"format": "Emulation",
 		"console": "PS2",
 		"dateBeaten": ""
@@ -295,5 +295,27 @@
 		"format": "Emulation",
 		"console": "PSP",
 		"dateBeaten": "1/4/2026"
+	},
+	{
+		"name": "Super R.C. Pro-Am",
+		"developer": "Rare",
+		"publisher": "Nintendo",
+		"genre": ["Racing"],
+		"imageURL": "/images/gameslist/super-rc-pro-am-250x250.webp",
+		"status": "Completed",
+		"format": "Emulation",
+		"console": "GB",
+		"dateBeaten": "1/5/2026"
+	},
+	{
+		"name": "Yoshi",
+		"developer": "Game Freak",
+		"publisher": "Nintendo",
+		"genre": ["Puzzle"],
+		"imageURL": "/images/gameslist/yoshi.webp",
+		"status": "Playing",
+		"format": "Emulation",
+		"console": "GB",
+		"dateBeaten": ""
 	}
 ]

@@ -34,6 +34,23 @@ let currentYear = new Date().getFullYear().toString();
 		color: #efefd0;
 	}
 
+	.filter-list {
+		display: flex;
+		flex-wrap: wrap;
+		padding: 0;
+		justify-content: center;
+		align-items: center;
+		list-style: none;
+		gap: 2rem;
+	}
+
+	.filter-list button {
+		font-size: 1.25rem;
+		padding: 1rem;
+		border-radius: 0.5rem;
+		width: 10rem;
+	}
+
 	.games-meta {
 		margin-bottom: 2rem;
 	}
@@ -102,20 +119,20 @@ let currentYear = new Date().getFullYear().toString();
 		padding-top: 1rem;
 	}
 
-	#completed::before {
+	hr#completed::before {
 		content: '✓';
 		font-weight: 900;
 		font-size: 2rem;
 		color: gold;
 	}
 
-	#sunsetted::before {
+	hr#sunsetted::before {
 		content: '⏾';
 		color: #fff;
 		font-size: 2rem;
 	}
 
-	#actively-playing::before, #actually-playing::before {
+	hr#playing::before, hr#actually-playing::before {
 		content: '🎮';
 		color: #fff;
 		font-size: 2rem;
@@ -132,16 +149,26 @@ let currentYear = new Date().getFullYear().toString();
 			<p>Please note: this is a work in progress so the design may change.</p>
 			<p><a href="/">Go back home</a></p>
 		</div>
+		<div class="games-meta">
+			<p>Filter:</p>
+			<div class="filter-list">
+				<button class="games-filter" data-filter="show-all">Show all</li>
+				<button class="games-filter" data-filter="playing" >🎮</li>
+				<button class="games-filter" data-filter="sunsetted">⏾</li>
+				<button class="games-filter" data-filter="completed"><strong>✓</strong></li>
+			</div>
+		</div>
+		<h2>2026</h3>
 		<div class="games-grid">
           {gamelog.filter(
           	game => game.status !== "Completed" || game.dateBeaten.includes(currentYear)
           	).sort((a, b) => a.name.localeCompare(b.name)).map((game) => (
-          <div class="data">
+          <div class="data" id={game.status.replace(' ', '-').toLowerCase()}>
           	<div class="games-img">
           		<img src={game.imageURL ? game.imageURL : '/images/coming-soon.webp'} width="200" height="200" loading="eager" alt=`cover art for ${game.name} for the ${game.console}`>
           	</div>
           	<div class="games-below">
-          	<hr id={game.status.replace(' ', '-').toLowerCase()}>
+          	<hr id={game.status.replace(' ', '-').toLowerCase()} >
           	<div class="games-text">
 	          	<span class="game-name">{game.name}</span>
           	</div>
@@ -149,7 +176,7 @@ let currentYear = new Date().getFullYear().toString();
           </div>
           ))}
           </div>
-          <h3>2025</h3>
+          <h2>2025</h2>
           <details>
           	<summary>Reveal the secrets!</summary>
           	<br />
@@ -159,4 +186,24 @@ let currentYear = new Date().getFullYear().toString();
       </details>
 		</div>
 		<GameSD />
+		<script>
+			const buttons = document.querySelectorAll('.games-filter');
+			const games = document.querySelectorAll('#playing, #actually-playing, #sunsetted, #completed');
+
+			buttons.forEach(button => {
+			  button.addEventListener('click', () => {
+			    const filter = button.getAttribute('data-filter');
+
+			    games.forEach(game => {
+			      const category = game.getAttribute('id');
+
+			      if (filter === "show-all" || filter === category) {
+			        game.style.display = 'block';
+			      } else {
+			        game.style.display = 'none';
+			      }
+			    });
+			  });
+			});
+		</script>
 		</Games>
