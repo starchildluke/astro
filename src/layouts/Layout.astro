@@ -9,13 +9,14 @@ interface Props {
   pubDate: string;
   canonicalURL: string | URL;
   url: string | URL;
+  robotsTag: string;
 }
 
-const { title, description, pubDate, canonicalURL = Astro.url, url } = Astro.props;
+const { title, description, pubDate, robotsTag, canonicalURL = Astro.url, url } = Astro.props;
 
 ---
 <html lang="en-GB">
-  <BaseHead {title} {description} {canonicalURL} />
+  <BaseHead {title} {description} {canonicalURL} {robotsTag}/>
   <StructuredData {title} {pubDate} />
   {canonicalURL.href.indexOf("jardim") ? <BreadcrumbsSD url={canonicalURL} /> : null}
   <body>

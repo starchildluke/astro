@@ -1,0 +1,204 @@
+---
+// COMPONENTS
+
+import Layout from '../layouts/Layout.astro';
+import cl from '../data/cl.json'
+
+// METADATA VARIABLES
+
+let title = 'Card';
+let description = 'A card';
+
+---
+<style>
+
+  :root {
+    --height: 300px;
+    --width: 25rem;
+    --font: Verdana, Geneva, Tahoma, sans-serif;;
+  }
+
+  body {
+    font-family: var(--font);
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h1, h2, h3, h4 {
+    font-size: 1rem;
+    font-family: var(--font);
+    margin-bottom: 0;
+  }
+  
+  .card-container {
+    background: #dadada;
+    border-radius: 6px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0.5rem;
+    align-items: center;
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+    justify-content: center;
+    position: relative;
+  }
+
+  .card {
+    border: 2px solid #777;
+    width: var(--width);
+  }
+
+  @media screen and (max-width: 430px) {
+    body, h2, h3, .card-body p {
+      font-size: calc(1rem / 1.5);
+    }
+
+    .card-body p {
+      font-size: calc(1rem / 1.5);
+    }
+
+    .card {
+      width: calc(var(--width) / 1.5);
+    }
+  }
+
+  .card * {
+    display: flex;
+    padding: 0.125rem;
+  }
+
+  .card-header {
+    border-bottom: 2px solid #777;
+  }
+
+  .card-header nav ul li {
+    font-size: 13px;
+  }
+
+  .card-header nav ul {
+    gap: 0;
+  }
+
+  .card-body h2 {
+    line-height: 1.4;
+  }
+
+  .card-body * {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-body ul li {
+    display: list-item;
+  }
+
+  .card-body p {
+    line-height: 1.3;
+  }
+
+  .card-body-box-left {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+  }
+
+  .card-body-box-left img {
+    border-radius: 10%;
+  }
+
+  .card-body-box-middle {
+    border-left: 2px solid #777;
+    width: 34%;
+  }
+
+  .card-body-box-right {
+    border-left: 2px solid #777;
+    width: 36%;
+    line-height: 1;
+  }
+
+  .card-footer {
+    border-top: 2px solid #777;
+    padding-block: 8px;
+    overflow: hidden;
+    user-select: none;
+    gap: 1rem;
+  }
+
+  .card-footer ul {
+    list-style: none;
+    flex-shrink: 0;
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    animation: scroll 20s linear infinite;
+    margin-bottom: 0;
+  }
+
+  .card-footer:hover ul {
+    animation-play-state: paused;
+  }
+
+  .card-body-box-bottom {
+    border-top: 2px solid #777;
+    justify-content: center;
+    padding: 10rem;
+  }
+
+  @keyframes scroll {
+    to {
+      transform: translateX(calc(-100% - 1rem));
+    }
+  }
+
+
+</style>
+
+<Layout {title} {description} robotsTag="noindex, follow">
+  <div class="card-container">
+    <div class="card">
+      <div class="card-header">
+        <nav>
+          <ul>
+              <li>home</li>
+              <li>link</li>
+              <li>link</li>
+              <li>link</li>
+            </ul>
+            </nav>
+        </div>
+        <div class="card-body">
+          <div class="card-body-box-left">
+            <img src="/images/profile.jpg" width="110" height="110" />
+          </div>
+          <div class="card-body-box-middle">
+            <h2>about me</h2>
+            <p>hello, my name is Luke (he/him) i work in seo, i blog, and i make music.</p>
+          </div>
+          <div class="card-body-box-right">
+            <h2>accounts</h2>
+            <ul>
+              <li>youtube</li>
+              <li>pinterest</li>
+            </ul>
+          </div>
+        </div>
+          <div class="card-body-box-bottom">
+            <p><strong>top tracks</strong></p>
+          </div>
+        <div class="card-footer">
+         <ul>{cl.map(
+          track => <li>{track.artist['#text']} - {track.name}</li>
+       )}</ul> <ul aria-hidden="true">{cl.map(
+          track => <li>{track.artist['#text']} - {track.name}</li>
+       )}</ul>
+        </div>
+    </div>
+  </div>
+</Layout>
+</html>
