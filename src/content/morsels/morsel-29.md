@@ -14,7 +14,7 @@ And this is what I came up with. It's barebones and may or may not break but it'
 
 I've used a handful of words so if you have anymore suggestions, let me know!
 
-**Press R to generate a new name below:**
+**Press the letter 'R' on your keyboard to generate a new name below:**
 
 <div class="rom-name"></div>
 
