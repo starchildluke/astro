@@ -11,12 +11,6 @@ import GamesComponent from '../components/GamesComponent.astro';
 let title = 'My Gameslist';
 let description = "A list of games I'm currently playing or have already completed.";
 let currentYear = new Date().getFullYear().toString();
-
-let symbols = {
-	'Completed': '⏏︎',
-	'Sunsetted': '⏸︎',
-	'Playing': '▶︎'
-}
 ---
 
 <style>
@@ -76,11 +70,18 @@ let symbols = {
 		linear-gradient(180deg, hsl(0,0%,78%) 0%, hsl(0,0%,90%) 47%, hsl(0,0%,78%) 53%,	hsl(0,0%,70%)100%);
 	}
 
+	button[data-filter="clear"] {
+		color: #efefef;
+		padding: calc(0.5rem + 2px);
+		background: none;
+		border: none;
+	}
+
 	button:hover {
 		cursor: pointer;
 	}
 
-	button:focus {
+	button[id*="symbol"]:focus {
 		border: 2px solid white;
 		box-shadow: 0 0 4px 2px #48abe0;
 	}
@@ -169,9 +170,6 @@ let symbols = {
 		<div class="games-meta">
 			<p id="filter-text">Filter by</p>
 			<div class="filter-list">
-				<button class="games-filter" data-filter="show-all">
-					<span>Show all</span>
-				</button>
 				<button class="games-filter" data-filter="playing">
 					<span id="play-symbol">▶︎</span>
 					<span>Playing</span>
@@ -183,6 +181,9 @@ let symbols = {
 				<button class="games-filter" data-filter="completed">
 					<span id="eject-symbol">⏏︎</span>
 					<span>Completed</span>
+				</button>
+				<button class="games-filter" data-filter="clear">
+					<span id="clear">Clear filter</span>
 				</button>
 			</div>
 		</div>
@@ -224,7 +225,7 @@ let symbols = {
 			    games.forEach(game => {
 			      const category = game.getAttribute('id');
 
-			      if (filter === "show-all" || filter === category) {
+			      if (filter === "clear" || filter === category) {
 			        game.style.display = 'block';
 			      } else {
 			        game.style.display = 'none';
