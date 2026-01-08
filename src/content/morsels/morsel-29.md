@@ -1,6 +1,6 @@
 ---
 title: 'Morsel #29: ROM website name generator'
-description: 'Press R for pay respects'
+description: 'Click R to pay respects'
 published: true
 pubDate: '07 Jan 2026'
 tags: ["JavaScript", "gaming"]
@@ -14,7 +14,7 @@ And this is what I came up with. It's barebones and may or may not break but it'
 
 I've used a handful of words so if you have anymore suggestions, let me know!
 
-**Press the letter 'R' on your keyboard to generate a new name below:**
+**Click the R button to generate a new name below:** <button id="r-button" aria-label="R button">R</button>
 
 <div class="rom-name"></div>
 
@@ -22,21 +22,24 @@ I've used a handful of words so if you have anymore suggestions, let me know!
 
 let format = ["CD", "ROM", "Emu", "Software", "BIOS", "ISO", "Disc", "Disk", "Floppy", "HDD", "SSD", "SD"];
 let vibe = ["Paradise", "Utopia", "Oasis", "Bliss", "Exotica", "Island", "Garden", "Sanctuary", "Romance", "Passion", "Devotion", "Heaven", "Divine", "Angel", "Sacred", "Spirit"];
-let fonts = ["Arial", "Verdana", "Tahoma", "Trebuchet MS", "Times New Roman", "Georgia", "Garamond", "Courier New", "Brush Script MT"];
+let fonts = ["Arial", "Verdana", "Tahoma", "Trebuchet MS", "Times New Roman", "Georgia", "Courier New", "Brush Script MT"];
 
 let romClass = document.querySelector('.rom-name');
 
+const element = document.querySelector("#myButton");
 
-document.addEventListener("keydown", (event) => {
-        if (event.code === "KeyR" && !event.ctrlKey) {
-            const formatRand = Math.floor(Math.random() * format.length);
-            const vibeRand = Math.floor(Math.random() * vibe.length);
-            const fontsRand = Math.floor(Math.random() * fonts.length);
-            let romName = `${format[formatRand]}${vibe[vibeRand]}`;
-            romClass.style.fontFamily = fonts[fontsRand];
-            romClass.textContent = romName;
-        }
-    }
-)
+function generateName() {
+    const formatRand = Math.floor(Math.random() * format.length);
+    const vibeRand = Math.floor(Math.random() * vibe.length);
+    const fontsRand = Math.floor(Math.random() * fonts.length);
+    let romName = `${format[formatRand]}${vibe[vibeRand]}`;
+    romClass.style.fontFamily = fonts[fontsRand];
+    romClass.textContent = romName;
+}
+
+let button = document.querySelector('#r-button');
+button.addEventListener("click", function() {
+    generateName();
+})
 
 </script>
