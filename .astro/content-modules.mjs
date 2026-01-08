@@ -13,5 +13,6 @@ export default new Map([
 ["src/content/posts/slow-connection-speeds-everybody-problem.mdx", () => import("astro:content-layer-deferred-module?astro%3Acontent-layer-deferred-module=&fileName=src%2Fcontent%2Fposts%2Fslow-connection-speeds-everybody-problem.mdx&astroContentModuleFlag=true")],
 ["src/content/posts/some-brief-thoughts-on web-dev-and-web-performance.mdx", () => import("astro:content-layer-deferred-module?astro%3Acontent-layer-deferred-module=&fileName=src%2Fcontent%2Fposts%2Fsome-brief-thoughts-on+web-dev-and-web-performance.mdx&astroContentModuleFlag=true")],
 ["src/content/posts/vicuna-made-me-laugh.mdx", () => import("astro:content-layer-deferred-module?astro%3Acontent-layer-deferred-module=&fileName=src%2Fcontent%2Fposts%2Fvicuna-made-me-laugh.mdx&astroContentModuleFlag=true")],
-["src/content/morsels/morsel-29.mdx", () => import("astro:content-layer-deferred-module?astro%3Acontent-layer-deferred-module=&fileName=src%2Fcontent%2Fmorsels%2Fmorsel-29.mdx&astroContentModuleFlag=true")]]);
+["src/content/morsels/morsel-29.mdx", () => import("astro:content-layer-deferred-module?astro%3Acontent-layer-deferred-module=&fileName=src%2Fcontent%2Fmorsels%2Fmorsel-29.mdx&astroContentModuleFlag=true")],
+["src/content/recortes/websites-like-service-stations.mdx", () => import("astro:content-layer-deferred-module?astro%3Acontent-layer-deferred-module=&fileName=src%2Fcontent%2Frecortes%2Fwebsites-like-service-stations.mdx&astroContentModuleFlag=true")]]);
 		
