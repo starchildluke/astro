@@ -21,24 +21,20 @@ const { page } = Astro.props;
 
 // METADATA VARIABLES
 
-let title = 'Media log (mlog)';
-let description = "A log of all the media I am currently consuming, be it movies, games, videos, or books. A 'mlog' for short.";
-
-// first update: 31/10/2023
+let title = 'Mlog';
+let description = "A mlog (media log) of all the media I consume."
 
 ---
 <Layout {title} {description}>
 <main class="layout">
   <article class="content">
-    <section class="intro">
+    <section>
       <Header />
-      <h1 style="margin-bottom:0.5rem;">{title}</h1>
-      <p class="desc">{description}</p>
-      <p>I love media in all its various forms and I felt it was time to add a section on the site dedicated to everything I read, watch, and absorb in my leisure.</p>
-      <p>Like everything on this site, it'll change in appearance over time but for now, I will just log the media that I'm <strong>currently consuming</strong> or have <strong>recently consumed</strong>. Eventually, I'll put together a JSON archive file for the old stuff.</p>
-      <p>You can also follow my mlogs <a href="/mlog.xml">RSS feed</a>.</p>
+      <div class="title-meta">
+        <h1>{title}</h1>
+      <p>{description}</p>
+    </div>
     </section>
-    <hr>
     <section>
       <ul class="post-list">
         {page.data.map(mlog => (

@@ -1,10 +1,8 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import BaseHead from '../../components/BaseHead.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import FormattedDate from '../../components/FormattedDate.astro';
-import site from '../../data/site.json';
 import { getCollection } from 'astro:content';
 
 export async function getStaticPaths({paginate}) {
@@ -12,13 +10,8 @@ export async function getStaticPaths({paginate}) {
   const sortedPosts = allPosts.sort((a, b) => new Date(b.data.pubDate) - new Date(a.data.pubDate));
   return paginate(sortedPosts, { pageSize: 25 });
 }
-
 const { posts, post, canonicalURL = Astro.url } = Astro.props;
 
-// Component Script:
-// You can write any JavaScript/TypeScript that you'd like here.
-// It will run during the build, but never in the browser.
-// All variables are available to use in the HTML template below.
 let title = 'Release Notes';
 let slug = '/release-notes';
 let description = "Inspired by Alice Bartlett's and Monica Dinculescu's 'weaknotes', I decided to do my own spin on the concept. My release notes are a place where I just rant and let things out.";
@@ -29,13 +22,13 @@ const { page } = Astro.props;
 <Layout title={title} description={description} canonicalURL={canonicalURL} />
     <div class="layout">
       <article class="content">
-        <section class="intro">
+        <section>
           <Header />
-          <h1>{title}</h1>
-        </section>
-        <section class="bottom-gap">
-          <p>Inspired by Alice Bartlett's and Monica Dinculescu's <a href="https://meowni.ca/weaknotes/">"weaknotes"</a>, I decided to do my own spin on the concept. My "release notes" are a place where I just rant and let things out, hence the name <em>release</em> notes.</p>
-          <p>You can also follow my release notes <a href="/release-notes.xml">RSS feed</a>.</p>
+          <div class="title-meta">
+            <h1>{title}</h1>
+            <section style="margin-bottom:var(--space-xl);">
+          <p>A place where I get things off my chest, inspired by Alice Bartlett's and Monica Dinculescu's <a href="https://meowni.ca/weaknotes/">"weaknotes"</a>.</p>
+        </div>
         </section>
     <section>
        <ul class="post-list">
