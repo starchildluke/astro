@@ -6,6 +6,7 @@ tags:
   - Python
   - AI
   - tech
+  - utils
 ---
 
 My ninth morsel is a work one.

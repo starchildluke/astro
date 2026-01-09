@@ -1,0 +1,42 @@
+---
+// COMPONENTS
+
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import Tags from '../../components/Tags.astro';
+
+// METADATA VARIABLES
+
+let title = 'Utils';
+let description = 'A wiki page of utilities.';
+
+---
+<Layout {title} {description}>
+<main class="layout">
+  <article class="content">
+    <Header />
+    <Breadcrumbs title={title}/>
+    <section class="intro">
+      <h1>{title}</h1>
+      <p class="desc">{description}</p>
+    </section>
+    <section>
+      <h2 class="wiki-h2">Inner voice</h2>
+      <Tags tagName="utils" />
+    </section>
+    <section>
+      <h2 class="wiki-h2">Out loud</h2>
+      <p>Coming soon</p>
+      <h2 class="wiki-h2">Second opinions</h2>
+      <p>Coming soon</p>
+    </section>
+  </article>
+  
+</main>
+
+<Footer/>
+  
+</body>
+</html>

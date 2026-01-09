@@ -27,7 +27,7 @@ let sayHello = greetings[Math.floor(Math.random()*greetings.length)];
   }
 
   .layout {
-    grid-template-columns: minmax(0.5rem,1fr) minmax(0.5rem,var(--max-width-home)) minmax(0.5rem,1fr);
+    grid-template-columns: minmax(var(--space-xs), 1fr) minmax(var(--space-xs), var(--max-width-home)) minmax(var(--space-xs), 1fr);
   }
 
   @media only screen and (max-width:800px) {
@@ -39,11 +39,11 @@ let sayHello = greetings[Math.floor(Math.random()*greetings.length)];
 
   #welcome {
     font-family: DM Serif Display, Times New Roman, serif;
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 
   .tagline {
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight: 450;
     line-height: 1.4;
   }

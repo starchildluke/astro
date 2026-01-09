@@ -6,6 +6,7 @@ tags:
   - music
   - Python
   - tech
+  - utils
 ---
 
 My eighth morsel is a Python script that returns the running time of an album from Bandcamp in your CLI of choice. I previously used a JS plugin/applet in my browser but it stopped working and couldn't find a replacement (there probably is one but I also don't like installing add-ons unless I have to because Chromium browsers already hog enough memory!)

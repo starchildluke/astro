@@ -5,6 +5,7 @@ pubDate: '01 May 2022'
 tags:
   - Python
   - tech
+  - utils
 ---
 
 My second morsel is a Python script that extracts thumbnails from YouTube videos.

@@ -13,10 +13,27 @@ function getJardimLink(tag) {
 const collator = new Intl.Collator('en');
 ---
 
-<p class="filed-under"><strong>Filed under:</strong> {tags.sort(collator.compare).map(
+<style>
+  
+  .filed-under {
+    font-variant-caps: all-small-caps;
+    border: 1px solid black;
+    margin-bottom: 1.4rem;
+    width: fit-content;
+  }
+
+  .filed-under__intro {
+    font-weight: 700;
+    color: var(--grey-nice);
+  }
+
+</style>
+
+<div class="filed-under">
+  <span class="filed-under__intro">Filed under:</span class=""> {tags.sort(collator.compare).map(
 	(tag, i) =>
   getJardimLink(tag) !== undefined ? <span><a href={"/jardim" + getJardimLink(tag)}>{tag}</a>{i < tags.length-1 ? " | " : ""}</span> :
   <span>{tag}</a>{i < tags.length-1 ? " | " : ""}</span>
   )
 }
-</p>
+</div>

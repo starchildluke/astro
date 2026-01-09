@@ -6,6 +6,7 @@ tags:
   - JavaScript
   - the Internet
   - tech
+  - utils
 ---
 
 I have to change text lists into Python lists a lot and I always do it in Sublime Text with some regex. But I'd rather have a quicker way to do it by pasting and clicking a button.

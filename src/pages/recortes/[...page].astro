@@ -25,20 +25,22 @@ const { page } = Astro.props;
 // METADATA
 
 let title = page.url.prev ? `Recortes (Page ${page.currentPage}/${page.lastPage})` : 'Recortes';
-let description = "Cuttings, notes and things. These are my 'recortes', or 'cuttings'. You know that scene in Bruce Almighty where he had all those Post-It notes everywhere? This is a neater looking version of that, minus the prayers. It's a rare glimpse into my mind and the many thoughts I have about things that matter to me.";
+let description = "Cuttings, notes and things.";
 ---
 <Layout {title} {description}/>
     <div class="layout">
       <article class="content">
-        <section class="intro">
-          <Header />
-          <h1>{title}</h1>
-        </section>
         <section>
-          <p>These are my <span lang="pt">recortes</span>, or "cuttings". You know that scene in Bruce Almighty where he had all those Post-It notes everywhere? This is a neater looking version of that, minus the prayers. It's a rare glimpse into my mind and the many thoughts I have about things that matter to me.</p>
-          <p>You can also follow my recortes <a href="/recortes.xml">RSS feed</a>.</p>
+          <Header />
+          <div class="title-meta">
+            <h1>{title}</h1>
+            <section>
+          <p class="title-desc">Random notes and stuff. <span lang="pt">Recortes</span> is Portuguese for "cuttings".</p>
         </section>
-    <section>
+          </div>
+        </section>
+        
+    <section style="margin-top:var(--space-lg);">
        <ul class="post-list">
       {page.data.map(post => (
             <li class="post-listing">
