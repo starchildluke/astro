@@ -48,8 +48,8 @@ const { Content } = await post.render();
         <p class="publish-date"><FormattedDate date={post.data.pubDate} /></p>
               <h1>{post.data.title}</h1>
             </div>
-              <FiledUnder tags={post.data.tags}/>
                 <Content />
+                <FiledUnder tags={post.data.tags}/>
                   <PrevNextLinking contentType="posts" prevPost={prevPost.data} nextPost={nextPost.data} prevSlug={prevPost?.slug} prevTitle={prevPost.data?.title} nextSlug={nextPost?.slug} nextTitle={nextPost.data?.title} />
                 </div>
     </article>
