@@ -7,7 +7,13 @@ import playformCompress from "@playform/compress";
 export default defineConfig({
   server: { port: 4321 },
   integrations: [sitemap(), mdx(), playformCompress(
-    {css: true}
+    {
+      css: true,
+      html: false,
+      Image: true,
+      JavaScript: false,
+      SVG: false
+    }
   )],
   trailingSlash: 'always',
   site: "https://lukealexdavis.co.uk",

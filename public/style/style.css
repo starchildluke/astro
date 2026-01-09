@@ -102,9 +102,7 @@
 }
 
 :root {
-	--font-body: -apple-system, BlinkMacSystemFont,
-		Segoe UI, Helvetica, Arial,	Apple Color Emoji,
-		Segoe UI Emoji, sans-serif;
+	--font-body: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,	Apple Color Emoji, Segoe UI Emoji, sans-serif;
 	--font-heading: DM Serif Display, Georgia, sans-serif;
 	--font-code: monospace;
 
@@ -226,8 +224,8 @@ ul li ul {
 	grid-auto-flow: column;
 	grid-template-columns: minmax(.5rem, 1fr)
 		minmax(.5rem, var(--max-width)) minmax(.5rem, 1fr);
-	gap: 1em;
-	margin-top: 4em;
+	margin-inline: 1rem;
+	margin-top: 4rem;
 }
 
 .nav-bar, .page-links, .post-listing, .post-pagination, body, header, nav ul {
