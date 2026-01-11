@@ -15,19 +15,19 @@
 @counter-style ul-main {
   system: cyclic;
   symbols: '❧';
-  suffix: ' ';
+  suffix: '  ';
 }
 
 @counter-style ul-prince-m {
   system: cyclic;
   symbols: '♀';
-  suffix: ' ';
+  suffix: '  ';
 }
 
 @counter-style ul-prince-f {
   system: cyclic;
   symbols: '♂';
-  suffix: ' ';
+  suffix: '  ';
 }
 
 /* =============================================

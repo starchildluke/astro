@@ -1,0 +1,31 @@
+---
+title: 'I refactored my website and I hated doing it'
+description: "Web design is my passion but only when it works the first time."
+published: true
+pubDate: '11 Jan 2026'
+tags: ["the Internet"]
+---
+
+import Lede from '../../components/Lede.astro';
+
+<Lede>I had a goal not to redesign my website.</Lede> That lasted all of a few days.
+
+That's because I got design envy and then decided to center my main headings as you can see above. But then after I did that, some things broke and I had to refactor those. And then I [looked up some HTML elements](https://developer.mozilla.org/en-US/docs/Web/HTML) and realised the whole site was semantically incorrect.
+
+By that I mean, I had everything wrapped in <code>&lt;article&gt;</code> tags which is fine for actual articles or blog posts but not for general pages. It was basically like this:
+
+```html
+<main>
+  ...
+  <header>
+    ...
+    <article>
+      ...
+
+```
+
+But visually, the header was at the top and part of the main tag which made it hard to make changes without messing up the header as well. I also had my templates set up in a way that meant I had to change the templates and then **manually update every page on the site**.
+
+So I spent hours yesterday and today sorting all of that out. The result shouldn't appear groundbreaking but I guess it's done and I won't need to do it again. I hope. Please don't let me get envious again!
+
+I know I'm not alone in wanting to make lots of changes because I've seen other people do it. I'm not a web dev and my code is atrocious but I make it work (just about). Just be glad I care so much about [web performance](/jardim/tech/web-performance/) that I didn't get a new heading font. They're beautiful but too "big" in file size for what I want.
