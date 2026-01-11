@@ -49,6 +49,7 @@
 
 	/* Main colour variables */
 	--red: #fc1420;
+	--red-rust: #af3500;
 
 	--green: #094739;
 	--green-lighter: #295f2b;
@@ -73,6 +74,7 @@
 
 	--blue: #004e89;
 	--blue-highlight: #253ca0;
+	--blue-sapphire: #0028c7;
 	--aquamarine: #7fffd4;
 
 	--orange: #ff5704;
@@ -223,6 +225,14 @@ h1 {
 	margin-bottom: var(--space-lg);
 }
 
+h1 {
+	color: var(--green);
+}
+
+.h1__home, .h2__home {
+	color: var(--grey);
+}
+
 h1, .h2__home {
 	letter-spacing: -1px;
 }
@@ -286,7 +296,7 @@ nav ul li {
 	gap: 20rem;
 }
 
-h1, h2, h3 {
+h1, h2 {
 	font-family: var(--font-heading);
 	line-height: 1;
 }
@@ -297,7 +307,7 @@ h1, h2, h3 {
 
 h2 {
 	font-size: var(--font-size-h2);
-	color: var(--grey);
+	color: var(--blue-sapphire);
 }
 
 #hello {
@@ -305,7 +315,11 @@ h2 {
 }
 
 h3 {
+	font-family: -apple-system;
 	font-size: var(--font-size-h3);
+  font-weight: 900;
+  letter-spacing: -0.5px;
+  color: var(--red-rust);
 }
 
 .breadcrumbs, details, p {
