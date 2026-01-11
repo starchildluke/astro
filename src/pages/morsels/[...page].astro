@@ -1,20 +1,16 @@
 ---
-import BaseHead from '../../components/BaseHead.astro';
-import Header from '../../components/Header.astro';
-import Footer from '../../components/Footer.astro';
+import Layout from '../../layouts/Layout.astro';
 import FormattedDate from '../../components/FormattedDate.astro';
 import { getCollection } from 'astro:content';
 
 export interface Props {
-  post: any;
+  canonicalURL: any;
 }
 
-const { posts, post, canonicalURL = Astro.url } = Astro.props;
+const { canonicalURL = Astro.url } = Astro.props;
 
 let title = 'Morsels';
-let slug = '/morsels';
 let description = "A list of code snippets and scripts I've written. Not too big, not too small. They're like tasty morsels.";
-let domain = "https://lukealexdavis.co.uk"
 
 export async function getStaticPaths({paginate}) {
   const allPosts = await getCollection('morsels');
@@ -24,51 +20,38 @@ export async function getStaticPaths({paginate}) {
 
 const { page } = Astro.props;
 ---
-<html lang="en">
-  <head>
-    <BaseHead title={title} description={description} canonicalURL={canonicalURL} />
-  </head>
-
-  <body>
-    <div class="layout">
-      <article class="content">
-        <section class="intro">
-          <Header />
-          <div class="title-meta">
-            <h1>{title}</h1>
-            <section style="margin-bottom:var(--space-xl);">
-          <p>Code snippets, scripts, and musings on niche tech stuff.</p>
-        </section>
-          </div>          
-    <section style="margin-top:var(--space-lg);">
-       <ul class="post-list">
-      {page.data.map(morsel => (
-            <li class="post-listing">
-              <a href={`/morsels/${morsel.slug}/`}>{morsel.data.title}</a>
-              <span class="publish-date"><FormattedDate date={morsel.data.pubDate}/></span>
-            </li>
-          ))}
-        </ul>
-    </section>
-        <div class="page-links">{page.url.prev && (
-          <a
-            class='prev'
-            href={page.url.prev || '#'}
-          >
-            &laquo; Prev
-          </a>
-        )}
-        {page.url.prev && page.url.next && ""}
-        {page.url.next && (
-          <a
-            class='Next'
-            href={page.url.next || '#'}
-          >
-            Next &raquo;
-          </a>
-        )}</div>
-      </article>      
-    </div>
-    <Footer/>
-  </body>
-</html>
+<Layout title={title} description={description}>
+<div class="title-meta">
+  <h1>{title}</h1>
+  <section class="space-xl">
+    <p>Code snippets, scripts, and musings on niche tech stuff.</p>
+  </section>
+</div>
+<section class="space-xl">
+  <ul class="post-list">
+    {page.data.map(morsel => (
+    <li class="post-listing">
+      <a href={`/morsels/${morsel.slug}/`}>{morsel.data.title}</a>
+      <span class="publish-date"><FormattedDate date={morsel.data.pubDate}/></span>
+    </li>
+    ))}
+  </ul>
+</section>
+<div class="page-links space-xl">{page.url.prev && (
+  <a
+    class='prev'
+    href={page.url.prev || '#'}
+    >
+    &laquo; Prev
+  </a>
+  )}
+  {page.url.prev && page.url.next && ""}
+  {page.url.next && (
+  <a
+    class='Next'
+    href={page.url.next || '#'}
+    >
+    Next &raquo;
+  </a>
+)}</div>
+</Layout>

@@ -19,11 +19,7 @@ let domain = "https://lukealexdavis.co.uk"
 
 const { page } = Astro.props;
 ---
-<Layout title={title} description={description} canonicalURL={canonicalURL} />
-    <div class="layout">
-      <article class="content">
-        <section>
-          <Header />
+<Layout title={title} description={description} canonicalURL={canonicalURL}>
           <div class="title-meta">
             <h1>{title}</h1>
             <section style="margin-bottom:var(--space-xl);">
@@ -57,8 +53,4 @@ const { page } = Astro.props;
             Next &raquo;
           </a>
         )}</div>
-      </article>      
-    </div>
-    <Footer/>
-  </body>
-</html>
+</Layout>

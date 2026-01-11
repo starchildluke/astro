@@ -1,16 +1,9 @@
 ---
 // COMPONENTS
 
-import Header from '../../../components/Header.astro';
-import Footer from '../../../components/Footer.astro';
 import Layout from '../../../layouts/Layout.astro';
 import Breadcrumbs from '../../../components/Breadcrumbs.astro';
 import Tags from '../../../components/Tags.astro';
-
-// HOW FETCHING!
-
-// const remoteData = await fetch('https://cultrface.co.uk/wp-json/wp/v2/posts?tags=951&per_page=2').then(response => response.json());
-// const daRemoteData = await fetch('https://distantarcade.co.uk/wp-json/wp/v2/posts?tags=138&per_page=3').then(response => response.json());
 
 // METADATA VARIABLES
 
@@ -19,41 +12,28 @@ let description = 'A wiki page all about Sonic.';
 
 ---
 <Layout {title} {description}>
-      <main class="layout">
-        <article class="content">
-          <Header />
-          <Breadcrumbs title={title}/>
-            <section class="intro">
-
-              <h1>{title}</h1>
-              <p class="desc">{description}</p>
-
-            </section>
-            <section>
-             
-              <h2 class="wiki-h2">Inner voice</h2>
-                <Tags tagName="Sonic the Hedgehog" />
-            </section>
-      
-            <section>
-              <h2 class="wiki-h2">Out loud</h2>
-              <h3>From Cultrface</h3>
-              <ul>
-                <li><a href="https://cultrface.co.uk/tag/sonic-the-hedgehog/">Sonic on Cultrface</a></li>
-                <li><a href="https://distantarcade.co.uk/tag/sonic-the-hedgehog/">Sonic on Distant Arcade</a></li>
-              </ul>
-              <p><a href="https://distantarcade.co.uk/tag/sonic-the-hedgehog/">More on Distant Arcade</a></p>
-              <h2 class="wiki-h2">Second opinions</h2>
-                <ul>
-                  <li>Coming soon...</li>
-                </ul>
-            </section>
-        </article>
-      
-      </main>
-    
-    <Footer/>
+<Breadcrumbs title={title}/>
+<section class="intro">
+  <h1>{title}</h1>
+  <p class="desc">{description}</p>
+</section>
+<section>
   
-  </body>
+  <h2 class="wiki-h2">Inner voice</h2>
+  <Tags tagName="Sonic the Hedgehog" />
+</section>
 
-</html>
+<section class="space-xl">
+  <h2 class="wiki-h2">Out loud</h2>
+  <h3>From Cultrface</h3>
+  <ul>
+    <li><a href="https://cultrface.co.uk/tag/sonic-the-hedgehog/">Sonic on Cultrface</a></li>
+    <li><a href="https://distantarcade.co.uk/tag/sonic-the-hedgehog/">Sonic on Distant Arcade</a></li>
+  </ul>
+  <p><a href="https://distantarcade.co.uk/tag/sonic-the-hedgehog/">More on Distant Arcade</a></p>
+  <h2 class="wiki-h2">Second opinions</h2>
+  <ul>
+    <li>Coming soon...</li>
+  </ul>
+</section>
+</Layout>

@@ -1,7 +1,7 @@
 ---
 // COMPONENTS
 
-import Layout from '../layouts/Layout.astro';
+import BaseHead from '../components/BaseHead.astro';
 import cl from '../data/cl.json'
 
 // METADATA VARIABLES
@@ -159,7 +159,7 @@ let description = 'A card';
 
 </style>
 
-<Layout {title} {description} robotsTag="noindex, follow">
+<BaseHead {title} {description} robotsTag="noindex, follow" />
   <div class="card-container">
     <div class="card">
       <div class="card-header">
@@ -200,5 +200,3 @@ let description = 'A card';
         </div>
     </div>
   </div>
-</Layout>
-</html>

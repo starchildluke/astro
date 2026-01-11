@@ -1,9 +1,7 @@
 ---
 // COMPONENTS
 
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
+import Layout from '../layouts/Layout.astro';
 import ButtonsComponent from '../components/ButtonsComponent.astro';
 
 // METADATA VARIABLES
@@ -37,15 +35,10 @@ let canonicalURL = Astro.url;
 
 </style>
 
-<BaseHead title={title} description={description} canonicalURL={canonicalURL} />
-<body>
-<main class="layout">
-  <article class="content">
-    <Header />
+<Layout title={title} description={description}>
       <h1>{title}</h1>
       <p>{description} 88×31 buttons from <a href="https://yesterweb.org/graphics/buttons">yesterweb.org</a>, <a href="https://lmnt.me/badges/">lmnt.me</a>, <a href="https://capstasher.neocities.org/88x31collection-page1">capstasher.neocities.org</a> and various Tumblrs.</p>
       <p>Feel free to link back using the button below but please download and host it on your own server :)</p>
-      <hr>
       <section class="link-back">
       <figure>
         <img src="/images/buttons/ld-badge-88x31.gif" alt="Luke Alex Davis button" width="88" height="31" fetchpriority="high">
@@ -56,7 +49,6 @@ let canonicalURL = Astro.url;
 &lt;a href="https://lukealexdavis.co.uk/"&gt;&lt;img src="https://YOURDOMAIN.com/ld-badge-88x31.gif" alt="Luke Alex Davis button" width="88" height="31"&gt;&lt;/a&gt;</textarea>
         </div>
     </section>
-    <hr>
       <section class="buttons">
         <ButtonsComponent />
       </section>
@@ -66,8 +58,4 @@ let canonicalURL = Astro.url;
         <a href="https://myblinkie.holidaycomments.com/view/pre-made-blinkies/youve-got-mail.gif.php"><img src="/images/youve-got-mail.gif" alt="a yellow figure as a postman holding a letter with a blinking text next to him that says you've got mail" style="image-rendering: pixelated" width="223" height="93"></a>
       </section>
       </section>
-      </article>
-    </main>
-  <Footer />
-</body>
-</html>
+</Layout>

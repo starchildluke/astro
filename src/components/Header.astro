@@ -2,8 +2,7 @@
 import SVG from '../components/SVG.astro';
 const {title, className, hrColor} = Astro.props;
 ---
-
-<section class="home-intro">
+<header class="center" id="top">
   <div class="h1__block">
     { Astro.url.pathname == '/' ?
       <h1 class="h1__home">{title}</h1>
@@ -12,7 +11,6 @@ const {title, className, hrColor} = Astro.props;
     }
     <SVG height="25px" width="25px" />
   </div>
-  <header class="center" id="top">
     <nav class="nav-bar" aria-label="site navigation">
       <ul class="center nav-links" role="list">
         <li><a class={className} href="/">home</a></li>
@@ -26,5 +24,3 @@ const {title, className, hrColor} = Astro.props;
       </ul>
     </nav>
   </header>
-  <hr class={hrColor}/>
-</section>

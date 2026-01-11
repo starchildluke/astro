@@ -1,7 +1,5 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import Header from '../../components/Header.astro';
-import Footer from '../../components/Footer.astro';
 import FormattedDateSansYear from '../../components/FormattedDateSansYear.astro';
 import { getCollection } from 'astro:content';
 
@@ -40,19 +38,16 @@ const postGroups = postsByYear(page.data)
 let fullTitle = page.url.prev ? `Posts (Page ${page.currentPage}/${page.lastPage})` : 'Posts';
 let description = "The blog listings page. I write about all kinds of topics including SEO, AI, music, life, and the Web.";
 ---
-<Layout title={fullTitle} description={description} canonicalURL={canonicalURL} />
-    <div class="layout">
-      <article class="content">
-        <section class="intro">
-          <Header />
+
+<Layout title={fullTitle} description={description} canonicalURL={canonicalURL}>
           <div class="title-meta">
             <h1>{fullTitle}</h1>
-            <section style="margin-bottom:var(--space-xl);">
+            <section class="space-xl">
           <p>I write about everything including SEO, AI, music, life, and the Web.</p>
         </div>
         </section>
     {postGroups.map(({ year, items }) => (
-  <section>
+  <section class="space-xl">
     <h2>{year}</h2>
     <ul class="post-list">
     {items.map((post) => (
@@ -64,13 +59,11 @@ let description = "The blog listings page. I write about all kinds of topics inc
     </ul>
     </section>
       ))}    
-        <div class="page-links">{page.url.prev && (
+        <div class="page-links space-xl">{page.url.prev && (
           <a class='prev' href={page.url.prev || '#'}>&laquo; Prev</a>
         )}
         {page.url.prev && page.url.next && ""}
         {page.url.next && (
           <a class='Next' href={page.url.next || '#'}>Next &raquo;</a>
         )}</div>
-      </article>
-    </div>
-    <Footer />
+  </Layout>

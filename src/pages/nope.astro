@@ -2,8 +2,6 @@
 // COMPONENTS
 
 import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
 
 // METADATA VARIABLES
 
@@ -12,9 +10,6 @@ let description = 'A list of things I don’t want/need in my life or the world,
 
 ---
 <Layout {title} {description}>
-    <main class="layout">
-      <article class="content">
-        <Header />
           <h1>{title}</h1>
           <p>{description} <a href="https://baty.net/nope/">You can find Jack's nope page on Baty.net</a>.</p>
           <h2>I don’t want:</h2>
@@ -63,8 +58,4 @@ let description = 'A list of things I don’t want/need in my life or the world,
               <li>healthy conversations</li>
               <li>vibe coding</li>
           </ul>
-      </article>
-    </main>
-    <Footer/>
-  </body>
-</html>
+</Layout>

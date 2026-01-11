@@ -2,6 +2,8 @@
 import BaseHead from '../components/BaseHead.astro';
 import StructuredData from '../components/StructuredData.astro';
 import BreadcrumbsSD from '../components/BreadcrumbsSD.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 
 interface Props {
   title: string;
@@ -12,7 +14,7 @@ interface Props {
   robotsTag: string;
 }
 
-const { title, description, pubDate, robotsTag, canonicalURL = Astro.url, url } = Astro.props;
+const { title, description, pubDate, robotsTag, canonicalURL = Astro.url } = Astro.props;
 
 ---
 <html lang="en-GB">
@@ -20,6 +22,10 @@ const { title, description, pubDate, robotsTag, canonicalURL = Astro.url, url } 
   <StructuredData {title} {pubDate} />
   {canonicalURL.href.indexOf("jardim") ? <BreadcrumbsSD url={canonicalURL} /> : null}
   <body>
+    <Header title={title} />
+    <main class="layout">
       <slot />
+  </main>
+  <Footer/>
   </body>
 </html>

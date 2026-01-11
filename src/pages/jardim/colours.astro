@@ -1,15 +1,9 @@
 ---
 // COMPONENTS
 
-import Header from '../../components/Header.astro';
-import Footer from '../../components/Footer.astro';
 import Layout from '../../layouts/Layout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import Tags from '../../components/Tags.astro';
-
-// HOW FETCHING!
-
-// const remoteData = await fetch('https://cultrface.co.uk/wp-json/wp/v2/posts?tags=532&per_page=5').then(response => response.json());
 
 // METADATA VARIABLES
 
@@ -18,9 +12,6 @@ let description = 'A wiki page all about colours.';
 
 ---
 <Layout {title} {description}>
-      <main class="layout">
-        <article class="content">
-          <Header />
           <Breadcrumbs title={title}/>
             <section class="intro">
 
@@ -42,9 +33,4 @@ let description = 'A wiki page all about colours.';
                   <li><a href="https://www.impressiondigital.com/blog/the-real-psychology-of-colour/">The Real Psychology of Colour</a></li>
                 </ul>
             </section>
-        </article>
-      
-    </main>
-    <Footer/>
-  </body>
-</html>
+</Layout>

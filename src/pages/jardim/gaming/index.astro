@@ -1,15 +1,9 @@
 ---
 // COMPONENTS
 
-import Header from '../../../components/Header.astro';
-import Footer from '../../../components/Footer.astro';
 import Layout from '../../../layouts/Layout.astro';
 import Breadcrumbs from '../../../components/Breadcrumbs.astro';
 import Tags from '../../../components/Tags.astro';
-
-// HOW FETCHING!
-
-// const remoteData = await fetch('https://distantarcade.co.uk/wp-json/wp/v2/posts?per_page=5').then(response => response.json());
 
 // METADATA VARIABLES
 
@@ -18,9 +12,6 @@ let description = 'A wiki page all about gaming.';
 
 ---
 <Layout {title} {description}>
-    <main class="layout">
-      <article class="content">
-        <Header />
         <Breadcrumbs title={title}/>
         <section class="intro">
           <h1>{title}</h1>
@@ -55,9 +46,4 @@ let description = 'A wiki page all about gaming.';
             <li><a href="https://tellthemidied.blog/2025/05/08/clair-obscur-expedition-33s-gommage-is-the-perfect-example-of-passive-violence/">clair obscur: expedition 33’s gommage is the perfect example of passive violence</a></li>
           </ul>
         </section>
-      </article>
-      
-    </main>
-    <Footer/>
-  </body>
-</html>
+</Layout>

@@ -1,8 +1,6 @@
 ---
 import Recortes from '../../layouts/Recortes.astro';
 import Layout from '../../layouts/Layout.astro';
-import Header from '../../components/Header.astro';
-import Footer from '../../components/Footer.astro';
 import { getCollection } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
 import PrevNextLinking from '../../components/PrevNextLinking.astro';
@@ -38,16 +36,11 @@ const { Content } = await post.render();
 ---
 <Layout title={post.data.title} description={post.data.description}>
 <Recortes {...post.data}>
-  <main class="layout">
-    <article class="content">
-      <Header />
       <div class="post-meta">
       <p class="publish-date">{post.data.pubDate}</p>
         <h1>{post.data.title}</h1>
       </div>
           <Content />
             <PrevNextLinking contentType="recortes" prevPost={prevPost.data} nextPost={nextPost.data} prevSlug={prevPost?.slug} prevTitle={prevPost.data?.title} nextSlug={nextPost?.slug} nextTitle={nextPost.data?.title} />
-    </article>
-  </main>
-<Footer />
 </Recortes>
+</Layout>

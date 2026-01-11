@@ -1,17 +1,9 @@
 ---
 // COMPONENTS
 
-import Header from '../../../components/Header.astro';
-import Footer from '../../../components/Footer.astro';
 import Layout from '../../../layouts/Layout.astro';
 import Breadcrumbs from '../../../components/Breadcrumbs.astro';
 import Tags from '../../../components/Tags.astro';
-
-// HOW FETCHING!
-
-// const remoteData = await fetch('https://cultrface.co.uk/wp-json/wp/v2/posts?categories=17&per_page=1').then(response => response.json());
-// const remoteData2 = await fetch('https://sampleface.co.uk/wp-json/wp/v2/posts?categories=1705&per_page=1').then(response => response.json());
-// const remoteData3 = await fetch('https://logicface.co.uk/wp-json/wp/v2/posts?categories=255&per_page=3').then(response => response.json());
 
 // METADATA VARIABLES
 
@@ -20,9 +12,6 @@ let description = 'A wiki page all about tech.';
 
 ---
 <Layout {title} {description}>
-<main class="layout">
-  <article class="content">
-    <Header />
     <Breadcrumbs title={title}/>
     <section class="intro">
       <h1>{title}</h1>
@@ -52,7 +41,5 @@ let description = 'A wiki page all about tech.';
     </section>
   </article>
   
-</main>
-<Footer/>
-</body>
-</html>
+
+</Layout>

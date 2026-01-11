@@ -2,8 +2,6 @@
 // COMPONENTS
 
 import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
 import {Content as Blogroll} from '../data/blogroll.mdx';
 
 // METADATA VARIABLES
@@ -13,14 +11,7 @@ let description = 'This is my blogroll showcasing some of my favourite blogs on 
 
 ---
 <Layout {title} {description}>
-    <main class="layout">
-      <article class="content">
-        <Header />
           <h1>{title}</h1>
           <p>{description}</p>
           <Blogroll />
-      </article>
-    </main>
-    <Footer/>
-  </body>
-</html>
+      </Layout>

@@ -1,9 +1,7 @@
 ---
 // COMPONENTS
 
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
+import Layout from '../layouts/Layout.astro';
 
 // METADATA VARIABLES
 
@@ -11,11 +9,7 @@ let title = 'Misc';
 let description = 'Lots of miscellaneous pages on the site.';
 
 ---
-<BaseHead title={title} description={description} canonicalURL={Astro.url} />
-<body>
-  <main class="layout">
-    <article class="content">
-      <Header />
+<Layout title={title} description={description}>
         <h1>{title}</h1>
         <p>this is my miscellaneous page with links to pages that don't go anywhere else.</p>
         <ul>
@@ -37,8 +31,4 @@ let description = 'Lots of miscellaneous pages on the site.';
           <li><a href="/is-seo-dead-yet/">is SEO dead yet?</a> the answer will not shock you</li>
           <li><a href="https://pinboard.in/u:lukealexdavis">my pinboard</a> - where i keep most of my bookmarks that i don't need in my browser</li>
         </ul>
-      </article>
-    </main>
-    <Footer />
-    </body>
-  </html>
+</Layout>

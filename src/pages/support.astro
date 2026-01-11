@@ -2,8 +2,6 @@
 // COMPONENTS
 
 import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
 
 // METADATA VARIABLES
 
@@ -12,9 +10,6 @@ let description = 'This is my support page where you can find ways to support my
 
 ---
 <Layout {title} {description}>
-    <main class="layout">
-      <article class="content">
-        <Header />
           <h1>How To {title} Me</h1>
           <p>There are various ways you can support me and my work.</p>
           <h2>With money</h2>
@@ -41,14 +36,9 @@ let description = 'This is my support page where you can find ways to support my
               <li><a href="https://thepenguinpatrol.co.uk/">Sophie</a></li>
               <li><a href="https://ko-fi.com/josefien">Josefien</a></li>
               <li><a href="https://medium.com/@kiddotrue">Ariel</a></li>
-              <li><a href="https://blackanimepodcasts.com/">Ash</a></li>
             </ul>
             <h2>Road To 2K</h2>
             <label for="savings">Savings progress</label>
           <progress id="savings" value="0" max="2000"> 0% </progress>
           <p>£0/£2,000 (0%)</p>
-      </article>
-    </main>
-    <Footer/>
-  </body>
-</html>
+</Layout>

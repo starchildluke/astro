@@ -40,16 +40,11 @@ const { Content } = await album.render();
 ---
 <Layout title={album.data.title} description={album.data.linerNotes} pubDate={album.data.pubDate}>
 <BlogPost {...album.data}>
-  <main class="layout">
-    <article class="content">
-      <p><a href="/music/">← Back</a></p>
+      <div><a href="/music/">← Back</a></div>
       <p class="publish-date"><FormattedDate date={album.data.pubDate} /></p>
           <AlbumCard title={album.data.title}, linerNotes={album.data.linerNotes}, pubDate={album.data.pubDate}, image={album.data.image} url={album.data.url ? album.data.url : album.body}>
             <Content />
           </AlbumCard>
 
             <PrevNextLinking contentType="music" prevPost={prevPost.data} nextPost={nextPost.data} prevSlug={prevPost?.slug} prevTitle={prevPost.data?.title} nextSlug={nextPost?.slug} nextTitle={nextPost.data?.title} />
-    </article>
-  </main>
-<Footer />
 </BlogPost>

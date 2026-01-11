@@ -2,8 +2,6 @@
 // COMPONENTS
 
 import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
 
 // METADATA VARIABLES
 
@@ -12,9 +10,6 @@ let description = 'A list of things I want/need in my life or the world and agre
 
 ---
 <Layout {title} {description}>
-    <main class="layout">
-      <article class="content">
-        <Header />
           <h1>{title}</h1>
           <p>{description} <a href="https://fyr.io/yep">You can find Matt's yep page on fyr.io</a>. You can also read <a href="https://olu.online/yep/">olu's yep page</a> which inspired this one too.</p>
           <h2>I want:</h2>
@@ -51,8 +46,4 @@ let description = 'A list of things I want/need in my life or the world and agre
               <li>I appreciate you</li>
               <li>I love you</li>
           </ul>
-      </article>
-    </main>
-    <Footer/>
-  </body>
-</html>
+</Layout>

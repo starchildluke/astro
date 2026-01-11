@@ -1,30 +1,17 @@
 ---
 // COMPONENTS
 
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
+import Layout from '../layouts/Layout.astro';
 import {Content as UsesPage} from '../data/uses.mdx';
-
 
 // METADATA VARIABLES
 
 let title = 'Uses';
 let description = 'A page about the tech that I use.';
-let canonicalURL = Astro.url;
-
 ---
 
-<BaseHead title={title} description={description} canonicalURL={canonicalURL} />
-<body>
-  <main class="layout">
-    <article class="content">
-      <Header />
-        <h1>What I use</h1>
-        <p>Here is a detailed list of the tech that I use.</p>
-        <UsesPage />
-      </article>
-    </main>
-  <Footer></Footer>
-</body>
-</html>
+<Layout title={title} description={description}>
+  <h1>What I use</h1>
+    <p>Here is a detailed list of the tech that I use.</p>
+    <UsesPage />
+</Layout>

@@ -2,7 +2,6 @@
 // COMPONENTS
 
 import Layout from '../layouts/Layout.astro';
-import Footer from '../components/Footer.astro';
 import Klub from '../components/Klub.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import lastFmData from '../data/lastfm.json';
@@ -13,9 +12,7 @@ let title = 'My Last.fm Top 1000 Artists';
 let description = 'This page lists my top 1000 artists on Last.fm, ordered by play count.';
 
 ---
-<Layout title={title} description={description} />
-  <main class="layout">
-    <article class="content">
+<Layout title={title} description={description}>
         <h1>{title}</h1>
         <p>This page lists my top 1000 artists on Last.fm by play count. <a href="/posts/how-i-display-my-last-fm-top-1000-artists/">Read my blog post</a> for more info on how I turned the data into a page.</p>
 
@@ -43,8 +40,4 @@ let description = 'This page lists my top 1000 artists on Last.fm, ordered by pl
                 </tr>
               ))}
             </table>
-  </article>
-</main>
-<Footer/>
-</body>
-</html>
+</Layout>

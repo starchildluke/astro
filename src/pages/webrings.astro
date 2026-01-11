@@ -1,9 +1,7 @@
 ---
 // COMPONENTS
 
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
+import Layout from '../layouts/Layout.astro';
 import Webrings from '../components/Webrings.astro';
 
 // METADATA VARIABLES
@@ -13,11 +11,7 @@ let description = "A page where all the webrings I'm in go.";
 
 ---
 
-<BaseHead title={title} description={description} />
-<body>
-<main class="layout">
-  <article class="content">
-    <Header />
+<Layout title={title} description={description}>
       <h1>{title}</h1>
       <p>{description}</p>
       <p>Inspired by <a href="https://baccyflap.com/rsp/">Baccyflap</a></p>
@@ -33,8 +27,4 @@ let description = "A page where all the webrings I'm in go.";
         <Webrings backgroundColor="#363a40" linkColor="white" leftLink="https://meta-ring.hedy.dev/previous" rightLink="https://meta-ring.hedy.dev/next"><span style="color:white;"><a style="color:white;" href="https://meta-ring.hedy.dev/">Meta Ring</a> (<a style="color:white;" href="https://meta-ring.hedy.dev/random">random</a>)</span></Webrings>
         <Webrings backgroundColor="linear-gradient(90deg, rgba(255,0,0,0.4) 0%, rgba(255,154,0,0.4) 10%, rgba(208,222,33,0.4) 20%, rgba(79,220,74,0.4) 30%, rgba(63,218,216,0.4) 40%, rgba(47,201,226,0.4) 50%, rgba(28,127,238,0.4) 60%, rgba(95,21,242,0.4) 70%, rgba(186,12,248,0.4) 80%, rgba(251,7,217,0.4) 90%, rgba(255,0,0,0.4) 100%);" leftLink="https://qtpoc-ring.netlify.app/previous" rightLink="https://qtpoc-ring.netlify.app/next"><a href="https://qtpoc-ring.netlify.app">QTPOC Webring</a> (<a href="https://qtpoc-ring.netlify.app/random">random</a>)</Webrings>
       </section>
-      </article>
-    </main>
-  <Footer />
-</body>
-</html>
+</Layout>

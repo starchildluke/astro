@@ -1,13 +1,9 @@
 ---
 // COMPONENTS
 
-import Header from '../../components/Header.astro';
-import Footer from '../../components/Footer.astro';
 import Layout from '../../layouts/Layout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import Tags from '../../components/Tags.astro';
-
-// HOW FETCHING!
 
 // METADATA VARIABLES
 
@@ -16,9 +12,6 @@ let description = 'A wiki page all about life.';
 
 ---
 <Layout {title} {description}>
-      <main class="layout">
-        <article class="content">
-          <Header />
           <Breadcrumbs title={title}/>
             <section class="intro">
               <h1>{title}</h1>
@@ -28,12 +21,5 @@ let description = 'A wiki page all about life.';
               <h2 class="wiki-h2">Inner voice</h2>
                 <Tags tagName="life" />
             </section>
-        </article>
-      
-      </main>
-    
-    <Footer/>
-  
-  </body>
 
-</html>
+</Layout>

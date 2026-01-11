@@ -2,8 +2,6 @@
 // COMPONENTS
 
 import Layout from '../../layouts/Layout.astro';
-import Header from '../../components/Header.astro';
-import Footer from '../../components/Footer.astro';
 
 // METADATA VARIABLES
 
@@ -12,24 +10,19 @@ let description = 'A list of projects I have or am currently working on.';
 
 ---
 <Layout {title} {description}>
-    <main class="layout">
-      <article class="content">
-        <Header />
+  <section class="title-meta">
         <h1>{title}</h1>
-        <p>I like projects. They give me something to do and focus on. At the moment, I have 9 on the go which cover a variety of topics.</p>
-        <ul>
-          <li><a href="https://nitedre.am/">NiTEDREAM</a> - a new creative media for Black digital cultures.</li>
-          <li><a href="https://sampleface.co.uk/">Sampleface</a> - a music blog</li>
-          <li><a href="https://cultrface.co.uk/">Cultrface</a> - a culture blog</li>
-          <li><a href="https://logicface.co.uk/">LOG!CFACE</a> - a STEM blog</li>
-          <li><a href="https://playrface.co.uk/">Playrface</a> - a sports blog</li>
-          <li><a href="https://distantarcade.co.uk/">Distant Arcade</a> - a gaming blog</li>
-          <li><a href="https://emptygold.blog/">Emptygold Blogger</a> - a nocial media blog</li>
-          <li><a href="https://coleccao.club/">colecçao.club</a> - a knockoff Are.na/Tumblr/Pinterest blog</li>
-          <li><a href="https://www.tumblr.com/itseffingraw">my kitchen nightmares tumblr</a> - it's f**king raw!</li>
-        </ul>
-      </article>
-    </main>
-    <Footer/>
-  </body>
-</html>
+        <section><p>I like projects. They give me something to do and focus on. At the moment, I have 9 on the go which cover a variety of topics.</p></section>
+      </section>
+        <section class="space-xl"><ul>
+                  <li><a href="https://nitedre.am/">NiTEDREAM</a> - a new creative media for Black digital cultures.</li>
+                  <li><a href="https://sampleface.co.uk/">Sampleface</a> - a music blog</li>
+                  <li><a href="https://cultrface.co.uk/">Cultrface</a> - a culture blog</li>
+                  <li><a href="https://logicface.co.uk/">LOG!CFACE</a> - a STEM blog</li>
+                  <li><a href="https://playrface.co.uk/">Playrface</a> - a sports blog</li>
+                  <li><a href="https://distantarcade.co.uk/">Distant Arcade</a> - a gaming blog</li>
+                  <li><a href="https://emptygold.blog/">Emptygold Blogger</a> - a nocial media blog</li>
+                  <li><a href="https://coleccao.club/">colecçao.club</a> - a knockoff Are.na/Tumblr/Pinterest blog</li>
+                  <li><a href="https://www.tumblr.com/itseffingraw">my kitchen nightmares tumblr</a> - it's f**king raw!</li>
+                </ul></section>
+</Layout>

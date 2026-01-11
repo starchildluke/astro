@@ -13,10 +13,6 @@ let sortedWritings = allWritings.sort((a, b) => new Date(b.data.pubDate) - new D
 ---
 
 <style>
-	#latest {
-	    border-radius: 10px;
-	    margin: 4rem 0;
-	}
 
 	.post-listing {
 		gap: 0.4rem;
@@ -64,8 +60,16 @@ let sortedWritings = allWritings.sort((a, b) => new Date(b.data.pubDate) - new D
 	@media only screen and (max-width:480px) {
 
 	    #latest {
-	      margin: 2rem 0;
+	      margin-top: var(--space-lg);
 	    }
+
+	    .tag {
+			font-size: var(--font-size-xs);
+			border-radius: 5px;
+			margin: 0.25rem 0.3rem 0.25rem 0.1rem;
+			padding: 0.1rem 0.4rem;
+			display: ruby;
+		}
 	}
 	
 </style>

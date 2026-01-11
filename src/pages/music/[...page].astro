@@ -1,7 +1,5 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import Header from '../../components/Header.astro';
-import Footer from '../../components/Footer.astro';
 import FormattedDate from '../../components/FormattedDate.astro';
 import { getCollection } from 'astro:content';
 
@@ -46,7 +44,8 @@ const rgb = {
 
 ---
 
-<style>
+<Layout title={fullTitle} description={description}>
+  <style>
 
   h2 {
     text-align: center;
@@ -91,18 +90,14 @@ const rgb = {
   }
 
 </style>
-
-<Layout title={fullTitle} description={description} canonicalURL={canonicalURL} />
-    <div class="layout">
-      <article class="content">
+        <section class="title-meta">
         <section class="intro">
-          <Header />
           <h1>{fullTitle}</h1>
         </section>
-        <section class="bottom-gap">
+        <section>
           <p>{description}</p>
-          <p>While I mainly upload my music to Bandcamp, I wanted somewhere to write more about the production process and what inspired me to make music.</p>
         </section>
+      </section>
     {albumGroups.map(({ year, items }) => (
   <section>
     <h2>{year}</h2>
@@ -128,6 +123,4 @@ const rgb = {
         {page.url.next && (
           <a class='Next' href={page.url.next || '#'}>Next &raquo;</a>
         )}</div>
-      </article>
-    </div>
-    <Footer />
+      </Layout>

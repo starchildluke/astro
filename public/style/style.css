@@ -12,6 +12,24 @@
 	background: var(--blue-highlight);
 }
 
+@counter-style ul-main {
+  system: cyclic;
+  symbols: '❧';
+  suffix: ' ';
+}
+
+@counter-style ul-prince-m {
+  system: cyclic;
+  symbols: '♀';
+  suffix: ' ';
+}
+
+@counter-style ul-prince-f {
+  system: cyclic;
+  symbols: '♂';
+  suffix: ' ';
+}
+
 /* =============================================
  Fonts
  =============================================== */
@@ -49,6 +67,8 @@
 	--pink: #f7d7ff;
 	--pink-cashmere: #ebb7c8;
 
+	--purple-prince: #421a51;
+
 	--peach: #f7c59f;
 
 	--blue: #004e89;
@@ -84,7 +104,7 @@
 
 @media (min-width: 50em) {
 	:root {
-		--max-width: 43.75rem;
+		--max-width: 45rem;
 		--max-width-home: 50rem;
 	}
 
@@ -93,13 +113,6 @@
 /* =============================================
  Fonts
  =============================================== */
-
- @font-face {
-	font-family: DM Serif Display;
-	src: url("/fonts/DMSerifDisplay-Regular-subset.woff2") format("woff2");
-	font-weight: 600;
-	font-display: swap;
-}
 
 :root {
 	--font-body: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,	Apple Color Emoji, Segoe UI Emoji, sans-serif;
@@ -117,7 +130,7 @@
 	--font-body-size: clamp(.875rem, 1.1rem, 1.25rem);
 	
 	--font-size-h1: clamp(1rem, var(--font-size-xl) + 1.9692vw, 4rem);
-	--font-size-h2: clamp(1.5rem, var(--font-size-xl), 3rem);
+	--font-size-h2: clamp(1.5rem, calc(var(--font-size-xl) * 0.8), 3rem);
 	--font-size-h3: clamp(0.5rem, 1.5rem, 2rem);
 }
 
@@ -141,7 +154,10 @@ nav ul {
 }
 
 header {
+	flex-direction: column;
+	justify-content: center;
 	padding: var(--space-xs);
+	margin-block: var(--space-xl);
 }
 
 .publish-date {
@@ -152,12 +168,12 @@ header {
 }
 
 .post-meta {
-	margin-block: calc(var(--space-xl) + var(--space-lg));
+	margin-block: calc(var(--space-xl)) calc(var(--space-xl) + var(--space-lg));
 }
 
 .title-meta {
 	text-align: center;
-	margin-block: var(--space-xl);
+	margin-block: var(--space-lg);
 }
 
 .title-meta h1 {
@@ -193,7 +209,7 @@ body {
 
 @media (min-width: 50em) {
 	:root {
-		--max-width: 43.75rem;
+		--max-width: 45rem;
 		--max-width-home: 50rem;
 	}
 
@@ -207,12 +223,13 @@ ul.center:first-child {
 	margin-bottom: 1.4rem;
 }
 
-h1, header {
+h1 {
+	font-size: var(--font-size-h1);
 	margin-bottom: var(--space-lg);
 }
 
-h1 {
-	font-size: var(--font-size-h1);
+h1, .h2__home {
+	letter-spacing: -1px;
 }
 
 ul li ul {
@@ -221,11 +238,15 @@ ul li ul {
 
 .layout {
 	display: grid;
-	grid-auto-flow: column;
-	grid-template-columns: minmax(.5rem, 1fr)
-		minmax(.5rem, var(--max-width)) minmax(.5rem, 1fr);
-	margin-inline: 1rem;
-	margin-top: 4rem;
+	grid-template-columns: 1fr;
+	margin-inline: auto;
+	width: min(80vw, var(--max-width));
+}
+
+.pokeballs {
+	text-align: center;
+	height: 24px;
+	margin-block: var(--space-xl);
 }
 
 .nav-bar, .page-links, .post-listing, .post-pagination, body, header, nav ul {
@@ -247,6 +268,10 @@ nav ul {
 	grid-column: 2;
 }
 
+article ul {
+	list-style-type: ul-main;
+}
+
 nav ul li {
 	margin: 0 .75rem;
 	font-size: 1rem;
@@ -258,8 +283,7 @@ nav ul li {
 }
 
 h1, h2, h3 {
-	font-family: DM Serif Display,
-	"Arial Black", sans-serif;
+	font-family: var(--font-heading);
 	line-height: 1;
 }
 
@@ -278,12 +302,9 @@ h2 {
 
 h3 {
 	font-size: var(--font-size-h3);
-	color: var(--blue-highlight);
 }
 
-.breadcrumbs,
-details,
-p {
+.breadcrumbs, details, p {
 	padding-bottom: 1.4rem;
 	line-height: 1.6;
 	letter-spacing: .2px;
@@ -367,21 +388,13 @@ pre {
 	position: relative;
 	color: #f3f4f6;
 	padding: var(--space-md);
-	margin-left: calc(50vw - .33rem);
+	margin-inline: auto;
 	margin-bottom: 1.38rem;
-	transform: translateX(-50vw);
-	width: calc(100vw + .66rem);
-	max-width: calc(100% + .66rem);
+	width: 100%;
 	overflow-y: hidden;
 	white-space: break-spaces;
-}
-
-@media (min-width: 37.75em) {
-	pre {
-		--padding-inline: 1.25rem;
-		border-radius: 8px;
-	}
-	
+	--padding-inline: 1.25rem;
+	border-radius: 8px;
 }
 
 img {
@@ -507,16 +520,6 @@ p.publish-date {
 	color: var(--grey-nice);
 }
 
-.wiki-h2:after {
-	background: var(--green);
-	bottom: -.5rem;
-	content: "";
-	display: block;
-	height: .6rem;
-	position: relative;
-	width: var(--space-lgr);
-}
-
 .tags {
 	display: inline-block;
 	line-height: 1.5rem;
@@ -536,18 +539,48 @@ p.publish-date {
 	padding-right: var(--space-md);
 }
 
+.space-xl {
+	margin-bottom: var(--space-xl);
+}
+
 @media only screen and (max-width: 480px) {
 
+	.layout {
+		gap: var(--space-lg);
+	}
+	
+	.content {
+		margin: 0 var(--space-xl) var(--space-xl);
+	}
+	
+	.publish-date {
+		font-size: calc(var(--font-size-def) * 0.8);
+	}
+
+	header {
+		margin-top: calc(var(--space-lg) + var(--space-md));
+	}
+
+	.pokeballs {
+		margin-block: var(--space-md);
+	}
+
 	.post-meta {
-		margin-block: calc(var(--space-xl));
+		margin-block: calc(var(--space-md));
 }
 	
 	ul.post-list {
 		padding: 0 var(--space-md);
+		margin-bottom: 0;
 	}
-	
-	.post-listing a {
-		width: 65%;
+
+	.post-listing {
+		flex-direction: column;
+	}
+
+	span.publish-date {
+		text-align: left;
+		font-size: var(--font-size-sm);
 	}
 	
 	footer {
@@ -595,10 +628,6 @@ p.publish-date {
 		display: flex;
 		gap: var(--space-lg);
 		justify-content: inherit;
-	}
-	
-	.layout {
-		margin-top: var(--space-lg);
 	}
 	
 }
@@ -675,15 +704,11 @@ sup {
 
 ul.post-list {
 	padding-left: 0;
+	margin-bottom: 0;
 }
 
 .home-intro :is(h1, p) {
 	padding: 0;
-}
-
-.bottom-gap,
-.home-middle {
-	margin-bottom: var(--space-xl);
 }
 
 .home-intro p {
@@ -692,16 +717,6 @@ ul.post-list {
 
 .home-middle p:last-child {
 	padding: 0;
-}
-
-.content hr {
-	background-color: var(--green);
-	border: 0;
-	margin: calc(2rem - 1.4rem) auto 2rem;
-	width: 50%;
-	height: 5px;
-	border-radius: 5px;
-	max-width: 50%;
 }
 
 :lang(pt, es, fr) {
@@ -736,30 +751,16 @@ figure + p {
 	text-underline-offset: var(--space-xs);
 }
 
-@media only screen and(max-width:480px) {
-
-	.layout {
-		display: block;
+@media only screen and (max-width:800px) {
+	body {
+		margin-inline: var(--space-lg);
 	}
-	
-	* {
-		font-size: 98%;
-	}
-	
-	.content {
-		margin: 0 var(--space-xl) var(--space-xl);
-	}
-	
-	.publish-date {
-		font-size: calc(var(--font-size-def) * 0.8);
-	}
-	
 }
 
 .pink-cashmere {
 	color: var(--pink-cashmere);
 }
 
-.pink-cashmere_bg {
-	background: var(--pink-cashmere);
+.prince-purple {
+	color: var(--prince-purple);
 }

@@ -1,15 +1,9 @@
 ---
 // COMPONENTS
 
-import Header from '../../../components/Header.astro';
-import Footer from '../../../components/Footer.astro';
 import Layout from '../../../layouts/Layout.astro';
 import Breadcrumbs from '../../../components/Breadcrumbs.astro';
 import Tags from '../../../components/Tags.astro';
-
-// HOW FETCHING!
-
-// const remoteData = await fetch('https://playrface.co.uk/wp-json/wp/v2/posts?tags=62&per_page=5').then(response => response.json());
 
 // METADATA VARIABLES
 
@@ -17,9 +11,6 @@ let title = 'Roger Federer';
 let description = "A wiki page all about Roger Federer.";
 ---
 <Layout {title} {description}>
-<main class="layout">
-  <article class="content">
-    <Header />
     <Breadcrumbs title={title}/>
     <h1>{title}</h1>
     <p class="desc">{description}</p>
@@ -176,8 +167,4 @@ let description = "A wiki page all about Roger Federer.";
       <li><a href="https://olympics.com/en/news/how-many-wimbledon-titles-roger-federer-won-tennis-career-grand-slam-record">Roger Federer at Wimbledon: When ‘King Roger' ruled</a>
     </li>
   </ul>
-</article>
-</main>
-<Footer/>
-</body>
-</html>
+</Layout>

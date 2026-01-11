@@ -1,8 +1,6 @@
 ---
 // COMPONENTS
 
-import Header from '../../../components/Header.astro';
-import Footer from '../../../components/Footer.astro';
 import Layout from '../../../layouts/Layout.astro';
 import Breadcrumbs from '../../../components/Breadcrumbs.astro';
 import Tags from '../../../components/Tags.astro';
@@ -14,23 +12,21 @@ let description = 'A page all about albums of the year.';
 
 ---
 <Layout {title} {description}>
-    <main class="layout">
-      <article class="content">
-        <Header />
         <Breadcrumbs title={title}/>
+        <section class="intro">
         <h1>{title}</h1>
         <p class="desc">{description}</p>
         <p>This page features links to all of my album of the year lists as well as some of my favourites from other people.</p>
-        
+      </section>
+        <section>
         <h2 class="wiki-h2">Inner voice</h2>
         <Tags tagName="AOTY" />
+      </section>
+      <section class="space-xl">
         <h2 class="wiki-h2">Out loud</h2>
         <ul>
           <li><a href="https://sampleface.co.uk/samplefaces-favourite-albums-of-2012/">Sampleface’s Favourite Albums Of 2012</a></li>
           <li><a href="https://web.archive.org/web/20121223154010/http://potholesinmyblog.com/the-50-best-albums-of-2012/">Potholes' Best Albums of 2012</a></li>
         </ul>
-      </article>
-    </main>
-    <Footer/>
-  </body>
-</html>
+      </section>
+</Layout>

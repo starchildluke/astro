@@ -15,6 +15,10 @@ let description = "A digital garden, or jardim, full of the things I love, with 
 <Layout {title} {description}>
 
   <style>
+    .jardim-list {
+      margin-bottom: calc(var(--space-xl) * 2);
+    }
+
     .jardim-list a {
       display:block;
       border-bottom: 0.5px solid #295f2b;
@@ -35,16 +39,9 @@ let description = "A digital garden, or jardim, full of the things I love, with 
       font-weight: normal;
     }
   </style>
-
-      <main class="layout">
-        <article class="content">
-            <section class="intro">
-              <Header />
+  <section class="title-meta">
           <h1>{title}</h1>
-        </section>
-        <section>
-          <p>Inspired by <a href="https://tomcritchlow.com/wiki/">Tom Critchlow's Wiki</a>, this is my digital garden, affectionally known as <span lang="pt">meu jardim</span>, or "my garden" in English. I collect blog posts (both my own and stuff I've found online), ideas, rough drafts, and things like that.</p>
-          <p>For individual notes, you can also read my mini notes or <span lang="pt"><a href="/recortes/">recortes</a></span> ("cuttings" in English&mdash;to go with the garden theme).</p>
+          <p>Inspired by <a href="https://tomcritchlow.com/wiki/">Tom Critchlow's Wiki</a>, this is my digital garden.</p>
         </section>
       <section>
     <section class="jardim-list">
@@ -56,9 +53,4 @@ let description = "A digital garden, or jardim, full of the things I love, with 
              ))}
     </section>
     </section>
-      </article>
-      
-    </main>
-    <Footer/>
-  </body>
-</html>
+  </Layout>

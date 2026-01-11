@@ -36,37 +36,37 @@ const sortedReleaseNotes = notes.sort((a, b) => collator.compare(a.data.title, b
 const sortedMorsels = morsels.sort((a, b) => collator.compare(a.data.title, b.data.title));
 
 ---
-{sortedPosts.length > 0 ? <h3>Posts</h3> : ""}
-<ul>
+{sortedPosts.length > 0 ? <h3 class={className}>Posts</h3>
+<ul class={className}>
   {sortedPosts.length > 0 ? sortedPosts.map(post =>
-  <li><a class={className} href=`/posts/${post.slug}/`>{post.data.title}</a></li>
+  <li class={className}><a class={className} href=`/posts/${post.slug}/`>{post.data.title}</a></li>
   ) : ""}
-</ul>
+</ul> : ""}
 
-{sortedRecortes.length > 0 ? <h3>Recortes</h3> : ""}
-<ul>
+{sortedRecortes.length > 0 ? <h3 class={className}>Recortes</h3>
+<ul class={className}>
   {sortedRecortes.length > 0 ? sortedRecortes.map(recorte =>
   <li><a class={className} href=`/recortes/${recorte.slug}/`>{recorte.data.title}</a></li>
   ) : ""}
-</ul>
+</ul> : ""}
 
-{sortedLists.length > 0 ? <h3>Lists</h3> : ""}
-<ul>
+{sortedLists.length > 0 ? <h3 class={className}>Lists</h3>
+<ul class={className}>
   {sortedLists.length > 0 ? sortedLists.map(list =>
   <li><a class={className} href=`/lists/${list.slug}/`>{list.data.title}</a></li>
   ) : ""}
-</ul>
+</ul> : ""}
 
-{sortedReleaseNotes.length > 0 ? <h3>Release Notes</h3> : ""}
-<ul>
+{sortedReleaseNotes.length > 0 ? <h3 class={className}>Release Notes</h3>
+<ul class={className}>
   {sortedReleaseNotes.length > 0 ? sortedReleaseNotes.map(note =>
   <li><a class={className} href=`/release-notes/${note.slug}/`>{note.data.title}</a></li>
   ) : ""}
-</ul>
+</ul> : ""}
 
-{sortedMorsels.length > 0 ? <h3>Morsels</h3> : ""}
-<ul>
+{sortedMorsels.length > 0 ? <h3 class={className}>Morsels</h3>
+<ul class={className}>
   {sortedMorsels.length > 0 ? sortedMorsels.map(morsel =>
   <li><a class={className} href=`/morsels/${morsel.slug}/`>{morsel.data.title}</a></li>
   ) : ""}
-</ul>
+</ul> : ""}

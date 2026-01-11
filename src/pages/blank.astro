@@ -9,10 +9,19 @@ let title = 'Blank page';
 let description = 'This page has intentionally been left blank.';
 
 ---
+
+<style>
+
+  main {
+    margin: calc(var(--space-xl) * 1.5  );
+  }
+
+</style>
+
 <BaseHead title={title} description={description} />
 <body>
-<main class="layout">
-  <article class="content">
+<main>
+  <article>
       <p>{description}</p>
       <p>Besides these flowers: 🌷🌹🪻🌸🌺🌻🌼💐🥀🪷</p>
       <p>(<a href="https://web.archive.org/web/20180224075941/http://this-page-intentionally-left-blank.org/whythat.html">why?</a> | <a href="/">back home</a>)</p>

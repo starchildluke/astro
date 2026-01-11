@@ -1,28 +1,17 @@
 ---
 // COMPONENTS
 
-import Header from '../../components/Header.astro';
-import Footer from '../../components/Footer.astro';
 import Layout from '../../layouts/Layout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import Tags from '../../components/Tags.astro';
-
-// HOW FETCHING!
-
-// const lisbonCultrface = await fetch('https://cultrface.co.uk/wp-json/wp/v2/posts?tags=968&per_page=3').then(response => response.json());
-// const lisbonPlayrface = await fetch('https://playrface.co.uk/wp-json/wp/v2/posts?tags=304&per_page=2').then(response => response.json());
 
 // METADATA VARIABLES
 
 let title = 'Lisbon';
 let description = 'A page all about Lisbon in Portugal.';
-let domain = "https://lukealexdavis.co.uk"
 
 ---
 <Layout {title} {description}>
-      <main class="layout">
-        <article class="content">
-          <Header />
           <Breadcrumbs title={title}/>
             <section class="intro">
 
@@ -55,11 +44,5 @@ let domain = "https://lukealexdavis.co.uk"
                 </ul>
             </section>
         </article>
-      
-      </main>
-    
-    <Footer/>
-  
-  </body>
 
-</html>
+</Layout>

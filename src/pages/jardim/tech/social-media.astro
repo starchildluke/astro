@@ -1,16 +1,9 @@
 ---
 // COMPONENTS
 
-import Header from '../../../components/Header.astro';
-import Footer from '../../../components/Footer.astro';
 import Layout from '../../../layouts/Layout.astro';
 import Breadcrumbs from '../../../components/Breadcrumbs.astro';
 import Tags from '../../../components/Tags.astro';
-
-// HOW FETCHING!
-
-// const cfRemoteData = await fetch('https://cultrface.co.uk/wp-json/wp/v2/posts?tags=982&per_page=3').then(response => response.json());
-// const lfRemoteData = await fetch('https://logicface.co.uk/wp-json/wp/v2/posts?tags=264&per_page=2').then(response => response.json());
 
 // METADATA VARIABLES
 
@@ -19,9 +12,6 @@ let description = 'A page all about social media.';
 
 ---
 <Layout {title} {description}>
-    <div class="layout">
-      <article class="content">
-        <Header />
         <Breadcrumbs title={title}/>
         <section class="intro">
           <h1>{title}</h1>
@@ -52,4 +42,4 @@ let description = 'A page all about social media.';
     </div>
     <Footer/>
   </body>
-</html>
+</Layout>

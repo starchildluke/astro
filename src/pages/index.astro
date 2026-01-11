@@ -1,8 +1,6 @@
 ---
 // COMPONENTS
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
+import Layout from '../layouts/Layout.astro';
 import CurrentlyListening from '../components/CurrentlyListening.astro';
 import Pokeballs from '../components/Pokeballs.astro';
 import Latest from '../components/Latest.astro';
@@ -12,8 +10,17 @@ import sd from '../data/sd.json';
 let metaTitle = 'Luke Davis: technical SEO, music producer & creator';
 let title = 'Luke Davis';
 let description = 'The digital home of Luke Davis: a senior technical SEO, music producer, and blogger based in the UK.';
-let greetings = ['<span lang="pt">bom dia!</span>', '<span lang="pt">boa tarde!</span>', '<span lang="pt">boa noite!</span>', '<span lang="es">¡buenos dias!</span>', '<span lang="es">¡buenos tardes!</span>', '<span lang="es">¡buenos noches!</span>', '<span lang="es">hola!</span>', '<span lang="pt">ola!</span>', 'good morning!</span>', 'good afternoon!</span>', 'good evening!</span>', '<span lang="fr">bonjour!</span>', '<span lang="fr">bonsoir!</span>'];
-let sayHello = greetings[Math.floor(Math.random()*greetings.length)];
+
+let greetings = {
+  'pt': ['bom dia!', 'boa tarde!', 'boa noite!', 'ola!'],
+  'es': ['¡buenos dias!', '¡buenos tardes!', '¡buenos noches!', '¡hola!'],
+  'en': ['good morning!', 'good afternoon!', 'good evening!', 'hello!'],
+  'fr': ['bonjour!', 'bonsoir!']
+};
+
+let langs = Object.keys(greetings);
+let randLangs = langs[Math.floor(Math.random()*langs.length)]
+let sayHello = greetings[randLangs][Math.floor(Math.random()*greetings[randLangs].length)];
 ---
 
 <style>
@@ -24,10 +31,6 @@ let sayHello = greetings[Math.floor(Math.random()*greetings.length)];
 
   ul {
     margin-bottom: 0;
-  }
-
-  .layout {
-    grid-template-columns: minmax(var(--space-xs), 1fr) minmax(var(--space-xs), var(--max-width-home)) minmax(var(--space-xs), 1fr);
   }
 
   @media only screen and (max-width:800px) {
@@ -48,22 +51,16 @@ let sayHello = greetings[Math.floor(Math.random()*greetings.length)];
     line-height: 1.4;
   }
 
+  #hello:lang(pt, es, fr) {
+    font-style: normal;
+  }
+
   @media only screen and (max-width:480px) {
 
     #welcome {
       font-size: 2.5rem;
-    }
-
-    p#welcome {
       line-height: 1;
-    }
-
-    .home-middle {
-      margin-bottom: 2rem;
-    }
-
-    #latest {
-      margin: 2rem 0;
+      margin-bottom: var(--space-md);
     }
 
     .tagline {
@@ -79,24 +76,20 @@ let sayHello = greetings[Math.floor(Math.random()*greetings.length)];
 
 </style>
 
-<BaseHead title={metaTitle} description={description} />
-<body>
-  <main class="layout">
-    <article class="content">
-      <Header title={title} />
-      <section class="home-middle">
-        <p id="welcome">
-          <span id="hello"><Fragment set:html={sayHello}></span>
-        </p>
-        <p class="tagline">I'm a senior technical SEO specialist, music producer, and blogger based in Nottingham, UK.</p>
-      </section>
-      <Pokeballs />
-      <Latest />
-      <Pokeballs />
-      <CurrentlyListening />
-    </article>
-  </main>
-  <Footer/>
-    <script type="application/ld+json" set:html={JSON.stringify(sd)}></script>
-  </body>
-</html>
+<Layout title={title} description={description}>
+  <section class="home-middle">
+    <div id="welcome">
+      {greetings[randLangs] !== "en" ?
+        <span id="hello" lang=randLangs>
+          {sayHello}
+        </span>
+        : <span id="hello">sayHello</span>}
+    </div>
+    <p class="tagline">I'm a senior technical SEO specialist, music producer, and blogger based in Nottingham, UK.</p>
+  </section>
+  <Pokeballs />
+  <Latest />
+  <Pokeballs />
+  <CurrentlyListening />
+<script type="application/ld+json" set:html={JSON.stringify(sd)}></script>
+</Layout>

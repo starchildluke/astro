@@ -1,7 +1,7 @@
 ---
 // COMPONENTS
 
-import BaseHead from '../components/BaseHead.astro';
+import Layout from '../layouts/Layout.astro';
 
 // METADATA VARIABLES
 
@@ -31,26 +31,16 @@ let description = 'This is my digital autumnal altar for autumn 2025.';
   }
 
   img[src*="gif"] {
+    margin-inline: auto;
     image-rendering: pixelated;
-  }
-
-  img {
-    max-width: 100%;
-    height: auto;
   }
 
 </style>
 
-<BaseHead title={title} description={description} />
-<body>
-<main class="layout">
-  <article class="content">
+<Layout title={title} description={description}>
     <h1>{description}</h1>
       <p>🍁 🍂 🥮 🍂 🍁</p>
-      <p>The autumn equinox occurred on <time>Monday, 22 September 2025, 7:19pm</time>, marking the start of autumn.</p>
-      <p>This year's autumn will last 89 days, 14 hours, 44 minutes.</p>
-      <img src="/images/pumpkins.gif" alt="a bunch of low res pumpkins" width="500" height="333" fetchpriority="high" />
-      </article>
-    </main>
-</body>
-</html>
+      <section class="space-xl"><p>The autumn equinox occurred on <time>Monday, 22 September 2025, 7:19pm</time>, marking the start of autumn.</p>
+            <p>This year's autumn will last 89 days, 14 hours, 44 minutes.</p>
+            <img src="/images/pumpkins.gif" alt="a bunch of low res pumpkins" width="500" height="333" fetchpriority="high" /></section>
+</Layout>

@@ -1,8 +1,6 @@
 ---
 // COMPONENTS
 
-import Header from '../../../components/Header.astro';
-import Footer from '../../../components/Footer.astro';
 import Layout from '../../../layouts/Layout.astro';
 import Breadcrumbs from '../../../components/Breadcrumbs.astro';
 import Tags from '../../../components/Tags.astro';
@@ -16,45 +14,39 @@ let description = 'A page all about Prince.';
 
 <style>
 
-  .purple-rain {
-    background: #421a51;
+  * {
+    color: #421a51;
   }
 
-  .wiki-h2::after, .content hr {
-    background: #8174A0;
+  body {
+    background: var(--pink-cashmere);
   }
 
-  h2 ~ ul li:nth-child(n)::marker {
-    content: '♀ ';
+  .wiki-h2 ~ ul li:nth-child(n) {
+    list-style-type: ul-prince-f;
   }
 
-  h2 ~ ul li:nth-child(2n)::marker {
-    content: '♂ ';
+  .wiki-h2 ~ ul li:nth-child(2n) {
+    list-style-type: ul-prince-m;
   }
 
 </style>
 
 
 <Layout {title} {description}>
-  <body class="purple-rain pink-cashmere">
-    <main class="layout">
-      <article class="content">
-        <Header className="pink-cashmere" hrColor="pink-cashmere_bg" />
-        <Breadcrumbs title={title} className="pink-cashmere"/>
+  <section>
+        <Breadcrumbs title={title}/>
         <h1>{title}</h1>
-        <p class="desc pink-cashmere">{description}</p>
+        <p class="description">{description}</p>
         <p>Prince Rogers Nelson, better known as Prince, was an Black American singer-songwriter, musician, actor, and record producer. He's also one of the greatest musicians the world has ever known. This page features articles from myself and others about Prince's genius.</p>
         <h2 class="wiki-h2">Inner voice</h2>
-        <Tags tagName="Prince" className="pink-cashmere" />
+        <Tags tagName="Prince" className="prince-purple"/>
         <h2 class="wiki-h2">Out loud</h2>
         <ul>
-          <li><a href="https://sampleface.co.uk/tag/prince/" class="pink-cashmere">Prince on Sampleface</a></li>
-          <li><a href="https://cultrface.co.uk/tag/prince/" class="pink-cashmere">Prince on Cultrface</a></li>
+          <li><a href="https://sampleface.co.uk/tag/prince/">Prince on Sampleface</a></li>
+          <li><a href="https://cultrface.co.uk/tag/prince/">Prince on Cultrface</a></li>
         </ul>
         <h2 class="wiki-h2">Second opinions</h2>
         <p>Coming soon...</p>
-      </article>
-    </main>
-    <Footer/>
-  </body>
-</html>
+  </section>
+</Layout>

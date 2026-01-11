@@ -1,17 +1,9 @@
 ---
 // COMPONENTS
 
-import Header from '../../components/Header.astro';
-import Footer from '../../components/Footer.astro';
 import Layout from '../../layouts/Layout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import Tags from '../../components/Tags.astro';
-
-// HOW FETCHING!
-
-// const remoteData = await fetch('https://logicface.co.uk/wp-json/wp/v2/posts?tags=268&per_page=3').then(response => response.json());
-
-// const remoteData2 = await fetch('https://cultrface.co.uk/wp-json/wp/v2/posts?tags=563&per_page=2').then(response => response.json());
 
 // METADATA VARIABLES
 
@@ -20,9 +12,6 @@ let description = 'A wiki page all about COVID-19.';
 
 ---
 <Layout {title} {description}>
-    <main class="layout">
-      <article class="content">
-        <Header />
         <Breadcrumbs title={title}/>
         <section class="intro">
           <h1>{title}</h1>
@@ -49,9 +38,4 @@ let description = 'A wiki page all about COVID-19.';
             <li><a href="https://twitter.com/TRyanGregory/status/1522658781049626624">Here&#39;s a brief recap of some new publications, preprints, and reports related to COVID-19 that have come out recently</a></li>
           </ul>
         </section>
-      </article>
-      
-    </main>
-    <Footer/>
-  </body>
-</html>
+</Layout>

@@ -1,8 +1,6 @@
 ---
 // COMPONENTS
 
-import Header from '../../../components/Header.astro';
-import Footer from '../../../components/Footer.astro';
 import Layout from '../../../layouts/Layout.astro';
 import Breadcrumbs from '../../../components/Breadcrumbs.astro';
 import Tags from '../../../components/Tags.astro';
@@ -14,9 +12,6 @@ let description = 'A wiki page all about role-playing games.';
 
 ---
 <Layout {title} {description}>
-      <main class="layout">
-        <article class="content">
-          <Header />
           <Breadcrumbs title={title}/>
             <section class="intro">
 
@@ -38,12 +33,5 @@ let description = 'A wiki page all about role-playing games.';
                 <li><a href="https://distantarcade.co.uk/tag/rpgs/">RPGs on Distant Arcade</a></li>
               </ul>
             </section>
-        </article>
-      
-      </main>
-    
-   <Footer/>
-  
-  </body>
 
-</html>
+</Layout>

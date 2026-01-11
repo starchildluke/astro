@@ -36,14 +36,8 @@ const { Content } = await post.render();
 ---
 <Layout title={post.data.title} description={post.data.description}>
 <Lists {...post.data}>
-  <main class="layout">
-    <article class="content">
-      <Header />
       <div class="post-meta"><p class="publish-date"><FormattedDate date={post.data.pubDate} /></p>
               <h1>{post.data.title}</h1></div>
           <Content />
             <PrevNextLinking contentType="lists" prevPost={prevPost.data} nextPost={nextPost.data} prevSlug={prevPost?.slug} prevTitle={prevPost.data?.title} nextSlug={nextPost?.slug} nextTitle={nextPost.data?.title} />
-    </article>
-  </main>
-<Footer />
 </Lists>

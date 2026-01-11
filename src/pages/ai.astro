@@ -1,9 +1,7 @@
 ---
 // COMPONENTS
 
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
+import Layout from '../layouts/Layout.astro';
 
 // METADATA VARIABLES
 
@@ -11,11 +9,7 @@ let title = 'How I use AI';
 let description = 'How I use AI on my site (or not)';
 ---
 
-<BaseHead title={title} description={description} />
-<body>
-  <main class="layout">
-    <article class="content">
-      <Header />
+<Layout title={title} description={description}>
         <h1>{title}</h1>
         <h2>Fundamental thoughts on AI</h2>
         <ul>
@@ -40,8 +34,4 @@ let description = 'How I use AI on my site (or not)';
         <p>I have a custom NLP tool called <a href="/posts/introducing-ralts/">RALTS</a> which uses an LLM called <a href="https://huggingface.co/valhalla/distilbart-mnli-12-9">distilbart-mnli-12-9</a>. It is stored locally on my laptop and is only used for <a href="https://huggingface.co/tasks/text-classification">text classification</a>.</p>
         <p>There is a post on the site called <a href="/posts/future-coca-cola-slogans-ai/">Future Coca-Cola slogans with GPT-3.5</a> where I used GPT-3.5 to generate Coca-Cola slogans. While this isn't the same as using AI to generate post text, it is still a use of the technology for the subject of the post so I'm noting it down here.</p>
         <p>I have other local LLMs which I have used for idea generation, provided with <a href="https://ollama.com/">Ollama</a>. (See <a href="/posts/ai-lower-inertia-getting-started/">“AI as a tool to lower the inertia of getting started”</a> for more on this kind of use)</p>
-      </article>
-    </main>
-    <Footer />
-    </body>
-  </html>
+  </Layout>

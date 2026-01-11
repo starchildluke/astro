@@ -1,9 +1,7 @@
 ---
 // COMPONENTS
 
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
+import Layout from '../layouts/Layout.astro';
 import frank from '../data/frank_ocean.json';
 
 // METADATA VARIABLES
@@ -14,19 +12,10 @@ let canonicalURL = Astro.url;
 
 ---
 
-<BaseHead title={title} description={description} canonicalURL={canonicalURL} />
-<style>.frank {text-align: center; font-family: Courier, fixed-width;}</style>
-<body>
-  <Header />
-    <main class="layout">
-      <article class="content">
+<Layout title={title} description={description} canonicalURL={canonicalURL}>
+<style>.frank {text-align: center; font-family: Courier, fixed-width; color: var(--grey-nice); font-size: var(--font-size-sm); margin-block: var(--space-lg);}</style>
         <h1>{title}</h1>
         <p>This is my homage to Frank Ocean's movie list in <a href="https://www.reddit.com/r/criterion/comments/4z7mgy/frank_oceans_favorite_movies_from_boys_dont_cry/">his 2016 magazine, Boys Don't Cry</a>. But instead, I'm using the most used tags from my blogs as topics.</p>
-        <hr />
         <p class="frank">{frank.sort().map(
           (f, i) => <span>{f}{i < frank.length-1 ? " / " : ""}</span>)}</p>
-        </article>
-      </main>
-      <Footer />
-      </body>
-    </html>
+</Layout>

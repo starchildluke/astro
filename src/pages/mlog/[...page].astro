@@ -2,8 +2,6 @@
 // COMPONENTS
 
 import Layout from '../../layouts/Layout.astro';
-import Header from '../../components/Header.astro';
-import Footer from '../../components/Footer.astro';
 import FormattedDate from '../../components/FormattedDate.astro';
 import { getCollection } from 'astro:content';
 
@@ -26,11 +24,7 @@ let description = "A mlog (media log) of all the media I consume."
 
 ---
 <Layout {title} {description}>
-<main class="layout">
-  <article class="content">
-    <section>
-      <Header />
-      <div class="title-meta">
+      <div class="intro title-meta">
         <h1>{title}</h1>
       <p>{description}</p>
     </div>
@@ -45,8 +39,4 @@ let description = "A mlog (media log) of all the media I consume."
         ))}
       </ul>
     </section>
-  </article>
-</main>
-<Footer/>
-</body>
-</html>
+  </Layout>

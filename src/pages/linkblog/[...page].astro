@@ -1,6 +1,5 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import Footer from '../../components/Footer.astro';
 import FormattedDate from '../../components/FormattedDate.astro';
 import linkblog from '../../data/linkblog.json';
 
@@ -13,7 +12,7 @@ const { page, canonicalURL = Astro.url } = Astro.props;
 let fullTitle = page.url.prev ? `Linkblog (Page ${page.currentPage}/${page.lastPage})` : 'Linkblog';
 let description = "I exclusively post links in this blog. Everything from tech to SEO to life. But mostly tech.";
 ---
-<Layout title={fullTitle} description={description} canonicalURL={canonicalURL} />
+<Layout title={fullTitle} description={description} canonicalURL={canonicalURL}>
 
 <style>
     body {
@@ -29,6 +28,11 @@ let description = "I exclusively post links in this blog. Everything from tech t
     a {
       color: #c4e53c;
       font-weight: 700;
+    }
+
+
+    :global(.h2__home) {
+      color: #f7f7f7;
     }
 
     :global(a) {
@@ -83,9 +87,6 @@ let description = "I exclusively post links in this blog. Everything from tech t
     }
 
   </style>
-
-<div class="layout">
-  <article class="content">
     <section class="intro">
       <h1>{fullTitle}</h1>
     </section>
@@ -94,7 +95,6 @@ let description = "I exclusively post links in this blog. Everything from tech t
       <p>I post all kinds of links about topics including SEO, AI, music, life, and the Web. You can also follow the linkblog via an <a href="/linkblog.xml">RSS feed</a> wherever you get your RSS feeds... read?</p>
       <p>Feel free to email me if you have any interesting links to share and I might add them in.</p>
     </section>
-    <hr>
     <ul>
       {page.data.map((post) => (
       <li>
@@ -115,13 +115,11 @@ let description = "I exclusively post links in this blog. Everything from tech t
         ))}
       </ul>
     </section>
-    <div class="page-links">{page.url.prev && (
+    <div class="page-links space-xl">{page.url.prev && (
       <a class='prev' href={page.url.prev || '#'}>&laquo; Prev</a>
       )}
       {page.url.prev && page.url.next && ""}
       {page.url.next && (
       <a class='Next' href={page.url.next || '#'}>Next &raquo;</a>
     )}</div>
-  </article>
 </div>
-<Footer />

@@ -1,9 +1,7 @@
 ---
 // COMPONENTS
 
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
+import Layout from '../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
 
 const allPosts = await getCollection("posts");
@@ -24,15 +22,14 @@ const collator = Intl.Collator([], {numeric: true});
 
 let title = 'HTML Sitemap';
 let description = 'This is a HTML sitemap for this site.';
-let canonicalURL = Astro.url;
 
 ---
 
-<BaseHead title={title} description={description} canonicalURL={canonicalURL} />
-<body>
-    <main class="layout">
-      <article class="content">
-          <Header />
+<style>
+  body { background: var(--bg-main); }
+</style>
+
+<Layout title={title} description={description}>
         <h1>{title}</h1>
         <p>A HTML sitemap is a page that usually contains links to every page on a site. This gives search engines easy access to your site for crawling as it takes just one step to get to everything. (Note that a HTML sitemap is different to an <a href="https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap">XML sitemap</a>.)</p>
         <p>It's recommended to have a robust internal linking strategy instead but this is a decent accompaniment or workaround if that isn't possible.</p>
@@ -103,8 +100,4 @@ let canonicalURL = Astro.url;
         <ul>
           {allReleaseNotes.sort((a, b) => collator.compare(a.data.title, b.data.title)).map( (post) => <li><a href=`/release-notes/${post.slug}/`>{post.data.title}</a></li>)}
         </ul>
-      </article>
-    </main>
-    <Footer/>
-    </body>
-  </html>
+      </Layout>
