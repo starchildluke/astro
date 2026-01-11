@@ -239,7 +239,7 @@ ul li ul {
 .layout {
 	display: grid;
 	grid-template-columns: 1fr;
-	margin-inline: auto;
+	margin-inline: var(--space-lg);
 	width: min(80vw, var(--max-width));
 }
 
@@ -251,6 +251,10 @@ ul li ul {
 
 .nav-bar, .page-links, .post-listing, .post-pagination, body, header, nav ul {
 	display: flex;
+}
+
+body {
+	align-items: center;
 }
 
 nav ul {
@@ -489,6 +493,7 @@ footer {
 	padding: var(--space-lg);
 	text-align: center;
 	font-size: smaller;
+	width: 100%;
 }
 
 .post-listing {
@@ -544,14 +549,6 @@ p.publish-date {
 }
 
 @media only screen and (max-width: 480px) {
-
-	.layout {
-		gap: var(--space-lg);
-	}
-	
-	.content {
-		margin: 0 var(--space-xl) var(--space-xl);
-	}
 	
 	.publish-date {
 		font-size: calc(var(--font-size-def) * 0.8);
@@ -752,7 +749,7 @@ figure + p {
 }
 
 @media only screen and (max-width:800px) {
-	body {
+	main {
 		margin-inline: var(--space-lg);
 	}
 }
