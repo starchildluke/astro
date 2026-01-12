@@ -4,183 +4,40 @@
 import Games from '../layouts/Gameslist.astro';
 import gamelog from '../data/gamelog.json';
 import GameSD from '../components/GameSD.astro';
-import GamesComponent from '../components/GamesComponent.astro';
 
 // METADATA VARIABLES
 
-let title = 'My Gameslist';
-let description = "A list of games I'm currently playing or have already completed.";
+let title = 'Gameslist';
+let description = "A log of all the games I've been playing.";
 let currentYear = new Date().getFullYear().toString();
 ---
 
-<style>
-
-	/* Brushed metal button courtesy of simurai: https://codepen.io/simurai/pen/kvyEeg */
-
-	* {
-		position: relative;
-	}
-
-	:root {
-		--shadow-color: 206deg 100% 11%;
-	}
-	
-	body {
-		text-align: center;
-		background: #004e89;
-		color: #efefd0;
-		line-height: 1.2;
-		align-items: inherit;
-	}
-
-	a {
-		color: #F7C59F;
-		font-weight: 700;
-	}
-
-	h2, h3 {
-		margin-bottom: 2rem;
-		color: #efefd0;
-	}
-
-	#filter-text {
-		font-weight: 700;
-		letter-spacing: 2px;
-		text-transform: uppercase;
-		color: aquamarine;
-	}
-
-	.filter-list {
-		display: flex;
-		flex-wrap: wrap;
-		padding: 0;
-		justify-content: center;
-		align-items: center;
-		list-style: none;
-		gap: 1rem;
-		margin-bottom: 2rem;
-	}
-
-	button {
-		padding: 0.5rem;
-		font-size: 1.25rem;
-		border-radius: .5em;
-		background-image: -webkit-repeating-linear-gradient(left, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0) 6%, hsla(0,0%,100%, .1) 7.5%),
-		-webkit-repeating-linear-gradient(left, hsla(0,0%,  0%,0) 0%, hsla(0,0%,  0%,0) 4%, hsla(0,0%,  0%,.03) 4.5%),
-		-webkit-repeating-linear-gradient(left, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0) 1.2%, hsla(0,0%,100%,.15) 2.2%),
-		linear-gradient(180deg, hsl(0,0%,78%) 0%, hsl(0,0%,90%) 47%, hsl(0,0%,78%) 53%,	hsl(0,0%,70%)100%);
-	}
-
-	button[data-filter="clear"] {
-		color: #efefef;
-		padding: calc(0.5rem + 2px);
-		background: none;
-		border: none;
-	}
-
-	button:hover {
-		cursor: pointer;
-	}
-
-	button[id*="symbol"]:focus {
-		border: 2px solid white;
-		box-shadow: 0 0 4px 2px #48abe0;
-	}
-
-	button:active #play-symbol {
-		color: #8f8;
-	}	
-
-	button:active #pause-symbol {
-		color: orange;
-	}
-
-	button:active #eject-symbol {
-		color: red;
-	}
-
-	.games-meta {
-		margin-bottom: 3rem;
-	}
-
-	.games-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(300px, auto));
-		/*grid-row-gap: 2rem;*/
-		grid-row-gap: clamp(1rem, 3rem, 4rem);
-		grid-column-gap: clamp(0.5rem, 1rem, 2rem);
-		justify-content: center;
-		justify-items: center;
-		margin-bottom: 4rem;
-	}
-
-	.container {
-		display: grid;
-		margin: 3rem;
-	}
-
-	.games-img {
-		height: 250px;
-		margin-bottom: 1rem;
-		box-shadow: 0.5px 0.5px 0.8px hsl(var(--shadow-color) / 0.36), 1.4px 1.4px 2.2px -0.6px hsl(var(--shadow-color) / 0.36), 2.7px 2.9px 4.5px -1.2px hsl(var(--shadow-color) / 0.36), 5.6px 5.8px 9.1px -1.9px hsl(var(--shadow-color) / 0.36), 10.8px 11.3px 17.6px -2.5px hsl(var(--shadow-color) / 0.36);
-		border-radius: 10px;
-	}
-
-	img {
-		object-fit: contain;
-		border-radius: 10px;
-	}
-
-	.data {
-		display: flex;
-		flex-wrap: wrap;
-		align-content: flex-start;
-		justify-content: center;
-		max-width: 250px;
-		height: 300px;
-	}
-
-	.data p {
-		padding-bottom: 0;
-	}
-
-	.game-name {
-		font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-		font-size: 1rem;
-		font-weight: 700;
-	}
-
-	.games-img__section {
-		transition: .2s ease-in-out;
-	}
-
-	.games-img__section:hover {
-		transform: scale(0.95);
-	}
-
-</style>
-
-<Games title={title} description={description} />
+<Games title={title} description={description} stylesheetURL="games.css">
 	<div class="container">
+		<nav class="games__nav">
+				<ul class="games__nav-links">
+					<li><a href="/">← Back</a></li>
+					<li><a href="https://github.com/starchildluke/astro/blob/a89f0d9e323183dd7ac4c893aeaff735cc9618fd/src/data/gamelog.json">JSON data on GitHub</a></li>
+				</ul>
+		</nav>
 		<div class="games-meta">
 			<h1>{title}</h1>
 			<p>{description}</p>
-			<p>Please note: this is a work in progress so the design may change.</p>
-			<p><a href="/">Go back home</a></p>
+			<p>Here's my list from <a href="/posts/16-games-completed-2025/">2025</a></p>
 		</div>
 		<div class="games-meta">
 			<p id="filter-text">Filter by</p>
 			<div class="filter-list">
 				<button class="games-filter" data-filter="playing">
-					<span id="play-symbol">▶︎</span>
+					<span id="play-symbol">▶︎ </span>
 					<span>Playing</span>
 				</button>
 				<button class="games-filter" data-filter="sunsetted">
-					<span id="pause-symbol">⏸︎</span>
+					<span id="pause-symbol">⏸︎ </span>
 					<span>Paused</span>
 				</button>
 				<button class="games-filter" data-filter="completed">
-					<span id="eject-symbol">⏏︎</span>
+					<span id="eject-symbol">⏏︎ </span>
 					<span>Completed</span>
 				</button>
 				<button class="games-filter" data-filter="clear">
@@ -205,15 +62,6 @@ let currentYear = new Date().getFullYear().toString();
           </div>
           ))}
           </div>
-          <h2>2025</h2>
-          <details>
-          	<summary>Reveal the secrets!</summary>
-          	<br />
-		<div class="games-grid">
-          <GamesComponent year="2025"/>
-          </div>
-      </details>
-		</div>
 		<GameSD />
 		<script>
 			const buttons = document.querySelectorAll('.games-filter');

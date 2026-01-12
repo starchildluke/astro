@@ -1,21 +1,20 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
 import StructuredData from '../components/StructuredData.astro';
-import BreadcrumbsSD from '../components/BreadcrumbsSD.astro';
 
 interface Props {
   title: string;
   description: string;
   pubDate: string;
   canonicalURL: string | URL;
+  stylesheetURL: string | URL;
 }
 
-const { title, description, pubDate, canonicalURL = Astro.url, url } = Astro.props;
+const { title, description, pubDate, canonicalURL, stylesheetURL } = Astro.props;
 
 ---
 <html lang="en-GB">
-  <BaseHead {title} {description} {canonicalURL} />
+  <BaseHead {title} {description} {canonicalURL} {stylesheetURL} />
   <StructuredData {title} {pubDate} />
   <body>
       <slot />

@@ -5,7 +5,8 @@ const {
   title,
   description,
   image = site.url + 'images/ld-logo-og-image.jpg',
-  robotsTag
+  robotsTag,
+  stylesheetURL
 } = Astro.props;
 
 const canonicalURL = Astro.url;
@@ -17,7 +18,7 @@ const blogRssFeed = `${site.url}blog.xml`;
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <title>{title}</title>
-<link rel="stylesheet" type="text/css" href="/style/style.css">
+<link rel="stylesheet" type="text/css" href={stylesheetURL ? `/style/${stylesheetURL}` : "/style/style.css"}>
 <link rel="preload" as="font" href="/fonts/DMSerifDisplay-Regular-subset.woff2" type="font/woff2" crossorigin>
 <script defer data-domain="lukealexdavis.co.uk" src="https://plausible.io/js/script.outbound-links.js"></script>
 <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
