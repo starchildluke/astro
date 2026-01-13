@@ -1,0 +1,32 @@
+---
+title: 'the near infinity of pixels'
+description: 'the vastness of the universe is right in front of us in tiny square form'
+published: true
+pubDate: '13 Jan 2026'
+latex: true
+tags:
+  - maths
+  - design
+  - art
+---
+
+import Lede from '../../components/Lede.astro';
+import '../../../public/style/katex.min.css';
+
+<Lede>While I was down an internet rabbit hole</Lede>, I saw a display of tiny monochrome pixel sprites. They looked so cute and I marvelled at their diversity given the small surface area. And that got me thinking:
+
+> if you had a 32x32 pixel square, how many different icons could you make, provided you had to use a minimum of 1 pixel and a maximum of all 1,024?
+
+Sadly my maths isn't as good at it used to be so I had to look it up and [someone had a similar question](https://medium.com/design-science/the-realm-of-finite-possibilities-7491e3b11d65).
+
+In an article called "The Realm of Finite Possibilities", A.G. started with a 4x4 square and managed to get 16 different combinations, or $2^4$, where 2 is the number of options (having a black or white square) and 4 are the total number of squares you can fill.
+
+So when you branch out to 32, that'd give you $2^{1024}-1$ (because we don't want a blank square) which equals... a very large number with 309 digits. Here's one of the possible icons:
+
+<figure>
+	<img style="image-rendering: pixelated;" src="/images/bw-pattern-32x32.gif" alt="a 32x32 grid featuring a black and white chequered pattern" loading="lazy" />
+</figure>
+
+That blew my mind and that was before I considered a colour palette beyond black and white. Of course, most of those combinations would be "noisy" but the fact that you can create so many from a small 32x32 pixel grid is incredible.
+
+Really puts our existence into perspective.

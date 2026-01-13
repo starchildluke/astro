@@ -57,6 +57,7 @@ const recortes = defineCollection({
 			month: 'short',
 			year: 'numeric',
 		})),
+		latex: z.boolean().optional(),
 		tags: z.array(z.string()).optional()
 	}),
 });

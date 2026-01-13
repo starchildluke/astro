@@ -36,6 +36,9 @@
             }
           ]
         },
+        "latex": {
+          "type": "boolean"
+        },
         "tags": {
           "type": "array",
           "items": {
