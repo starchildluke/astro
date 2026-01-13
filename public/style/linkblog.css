@@ -1,0 +1,232 @@
+/* =============================================
+ Default styles + resets
+ =============================================== */
+
+* {
+	box-sizing: border-box;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+::selection {	
+	background: #ffdea0;
+}
+
+/* =============================================
+ Fonts
+ =============================================== */
+
+@font-face {
+	font-family: DM Serif Display;
+	src: url("/fonts/DMSerifDisplay-Regular-subset.woff2") format("woff2");
+	font-weight: 600;
+	font-display: swap;
+}
+
+/* =============================================
+ Colours
+ =============================================== */
+
+:root {
+
+	/* Main colour variables */
+	--red: #fc1420;
+	--red-rust: #af3500;
+	--red-rust-light: #FFCDB8;
+
+	--brown: #663605;
+
+	--creme: #f3e8da;
+	--off-white: #f7f7f7;
+
+	--pink: #f7d7ff;
+	--pink-cashmere: #ebb7c8;
+
+	--peach: #f7c59f;
+
+	/* Layout colour variables */
+	--shadow-color: 206deg 100% 11%;
+}
+
+/* =============================================
+ Layout
+ =============================================== */
+
+:root {
+	--space-xs: .5rem;
+	--space-sm: .75rem;
+	--space-md: 1rem;
+	--space-lg: 2rem;
+	--space-lgr: 2.5rem;
+	--space-xl: 4rem;
+	--space-xxl: 8rem;
+}
+
+/* =============================================
+ Fonts
+ =============================================== */
+
+:root {
+	--font-body: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,	Apple Color Emoji, Segoe UI Emoji, sans-serif;
+	--font-heading: DM Serif Display, Georgia, sans-serif;
+	--font-code: monospace;
+
+	--font-size-xl: 2.5rem;
+	--font-size-lg: 1.5rem;
+	--font-size-def: 1rem;
+	--font-size-sm: .85rem;
+	--font-size-xs: .75rem;
+
+	--font-body-size: clamp(.875rem, 1.1rem, 1.25rem);
+	
+	--font-size-h1: clamp(1rem, var(--font-size-xl) + 1.9692vw, 4rem);
+	--font-size-h2: clamp(1.5rem, calc(var(--font-size-xl) * 0.8), 3rem);
+	--font-size-h3: clamp(0.5rem, 1.5rem, 2rem);
+}
+
+/* =============================================
+The rest
+=============================================== */
+
+body {
+	border: clamp(.5rem, 4vw, 1rem)	solid #E5CEB0;
+	background: var(--creme);
+	color: var(--brown);
+	font-family: Georgia, serif;
+	font-weight: normal;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.container {
+	margin-inline: auto;
+	padding-bottom: var(--space-xl);
+}
+
+.linkblog__header {
+	padding: calc(var(--space-xl) * 1.5);
+}
+
+h1 {
+	font-size: var(--font-size-h1);
+	letter-spacing: -1px;
+}
+
+h1, h2 {
+	font-family: var(--font-heading);
+	line-height: 1.425;
+}
+
+p {
+	line-height: 1.425;
+}
+
+h2 {
+	font-size: var(--font-size-h2);
+}
+
+h3 {
+	font-family: -apple-system;
+	font-size: var(--font-size-h3);
+	font-weight: 900;
+	letter-spacing: -0.5px;
+	color: var(--red-rust);
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	object-fit: contain;
+	border-radius: 10px;
+}
+
+q {
+	font-style: italic;
+}
+
+/* Brushed metal button courtesy of simurai: https://codepen.io/simurai/pen/kvyEeg */
+
+a {
+	color: var(--red-rust);
+	font-weight: 700;
+	text-underline-offset: .1em;
+	text-decoration-thickness: 1px;
+}
+
+a:active {
+	outline: 0;
+	border: none;
+}
+
+a:focus, a:hover {
+	text-decoration: none;
+}
+
+a:focus {
+	outline: currentColor dotted 2px;
+}
+
+h2, h3 {
+	margin-bottom: 2rem;
+	color: #efefd0;
+}
+
+img {
+	object-fit: contain;
+	border-radius: 10px;
+}
+
+ul {
+	padding: 0;
+	list-style: none;
+}
+
+.link-table {
+	width: 95%;
+	margin-inline: auto;
+	border-collapse: collapse;
+	font-variant-numeric: oldstyle-nums;
+}
+
+.link-table thead {
+	border-top: 2px solid var(--brown);
+	border-bottom: 2px solid var(--brown);
+	font-variant-caps: all-small-caps;
+	text-align: left;
+	font-size: calc(var(--font-size-def) * 1.25);
+	letter-spacing: 1px;
+}
+
+.link-table :is(td, th, tr) {
+	padding: calc(var(--space-md) * 1.5);
+}
+
+.link-table__item {
+	font-size: 110%;
+	border-bottom: 1px solid var(--brown);
+}
+
+.link-table__title a {
+	font-family: var(--font-body);
+	font-weight: 900;
+	line-height: 1.15;
+	letter-spacing: -0.5px;
+}
+
+.page-nav-links {
+	padding: var(--space-lg);
+}
+
+@media screen and (max-width: 480px) {
+	.container {
+		width: 80%;
+		margin-inline: auto;
+		padding-bottom: var(--space-xl);
+	}
+
+	.linkblog__header {
+		padding-block: var(--space-xl);
+	}
+}

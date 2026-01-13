@@ -1,5 +1,5 @@
 ---
-import Layout from '../../layouts/Layout.astro';
+import BaseHead from '../../components/BaseHead.astro';
 import FormattedDate from '../../components/FormattedDate.astro';
 import linkblog from '../../data/linkblog.json';
 
@@ -7,119 +7,49 @@ export async function getStaticPaths({ paginate }) {
   return paginate(linkblog, { pageSize: 25 });
 }
 
-const { page, canonicalURL = Astro.url } = Astro.props;
+const { page } = Astro.props;
 
 let fullTitle = page.url.prev ? `Linkblog (Page ${page.currentPage}/${page.lastPage})` : 'Linkblog';
 let description = "I exclusively post links in this blog. Everything from tech to SEO to life. But mostly tech.";
 ---
-<Layout title={fullTitle} description={description} canonicalURL={canonicalURL}>
-
-<style>
-    body {
-      color: #f7f7f7;
-      background: #181818;
-    }
-
-    ul {
-      padding: 0;
-      list-style: none;
-    }
-
-    a {
-      color: #c4e53c;
-      font-weight: 700;
-    }
-
-
-    :global(.h2__home) {
-      color: #f7f7f7;
-    }
-
-    :global(a) {
-      color: #c4e53c;
-    }
-
-    :global(.content hr) {
-      background-color: #c4e53c;
-      margin: 1rem auto;
-    }
-
-    :global(footer) {
-      border-top-color: #f7f7f7;
-    }
-
-    .link-description {
-      margin: 0.75rem 0;
-      font-size: 1rem;
-      font-weight: 300;
-    }
-
-    .link-entry {
-      margin: 3rem 0;
-      padding: 2rem;
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      background: rgba(255, 255, 255, .015);
-      border-radius: 10px;
-      box-shadow: 3px 8px 15px rgba(0, 0, 0, 0.25);
-    }
-
-    .link-entry a {
-      font-size:1.5rem;
-      line-height:1.15;
-      letter-spacing:0.25px;
-    }
-
-    .linkblog-meta {
-      font-size: 13px;
-    }
-
-    .tag {
-      background: rgba(196, 229, 60, 0.1);
-      border: 1px solid #c4e53c;
-      border-radius: 5px;
-      margin: 0.25rem 0.3rem 0.25rem 0.1rem;
-      padding: 0.1rem 0.4rem;
-    }
-
-    @media screen and (min-width: 411px) {
-      .tag {
-        white-space: nowrap;
-    }
-
-  </style>
-    <section class="intro">
+<BaseHead title={fullTitle} description={description} stylesheetURL="linkblog.css"/>
+  <main class="container">
+    <header class="linkblog__header">
       <h1>{fullTitle}</h1>
+      <p>Interesting links go here. If you have any suggestions, hit me up!</p>
+      <p><a href="/posts/i-started-a-linkblog/">Read more about the link blog.</a></p>
+    </header>
+    <table class="link-table">
+      <thead>
+      <tr>
+        <th class="link-table__date">Date</th>
+        <th class="link-table__title">Title</th>
+        <th class="link-table__desc">Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      {page.data.map(
+        (post) => (
+
+      <tr class="link-table__item">
+        <td class="link-table__date"><FormattedDate date={new Date(post.date)} /></td>
+          <td class="link-table__title">
+            <a href={post.url}>{post.title}</a>
+            </td>
+          <td class="link-table__desc">
+            {post.quote == "yes" ? <q cite={post.url}>{post.description}</q> : post.description}</td>
+        </tr>
+        )
+      )
+    }
+    </tbody>
+      </table>
     </section>
-    <section>
-      <p>Welcome to my linkblog.</p>
-      <p>I post all kinds of links about topics including SEO, AI, music, life, and the Web. You can also follow the linkblog via an <a href="/linkblog.xml">RSS feed</a> wherever you get your RSS feeds... read?</p>
-      <p>Feel free to email me if you have any interesting links to share and I might add them in.</p>
-    </section>
-    <ul>
-      {page.data.map((post) => (
-      <li>
-        <div class="link-entry">
-          <a href={post.url}><Fragment set:html={post.title}></a>
-          <div class="link-description">{
-            post.quote == "yes" ? <q cite={post.url}>{post.description}</q> : post.description
-          }</div>
-          <div class="linkblog-meta">
-            <FormattedDate date={new Date(post.date)} />
-              <span>| Filed under: </span>
-              {post.tags.map((tag) => (
-              <span class="tag">{tag}</span>
-              ))}
-            </div>
-          </div>
-        </li>
-        ))}
-      </ul>
-    </section>
-    <div class="page-links space-xl">{page.url.prev && (
-      <a class='prev' href={page.url.prev || '#'}>&laquo; Prev</a>
-      )}
+    <div class="page-nav-links">{page.url.prev && (
+      <a class='prev' href={page.url.prev || '#'}>&laquo; Prev</a>)}
       {page.url.prev && page.url.next && ""}
       {page.url.next && (
       <a class='Next' href={page.url.next || '#'}>Next &raquo;</a>
     )}</div>
 </div>
+</main>
