@@ -187,7 +187,6 @@ ul {
 	width: 95%;
 	margin-inline: auto;
 	border-collapse: collapse;
-	font-variant-numeric: oldstyle-nums;
 }
 
 .link-table thead {
@@ -221,12 +220,21 @@ ul {
 
 @media screen and (max-width: 480px) {
 	.container {
-		width: 80%;
+		width: 100%;
 		margin-inline: auto;
 		padding-bottom: var(--space-xl);
 	}
 
 	.linkblog__header {
-		padding-block: var(--space-xl);
+		padding: var(--space-lg);
+	}
+
+	.link-table {
+		width: 100%;
+		font-size: var(--font-size-xs);
+	}
+
+	.link-table :is(td, th, tr) {
+		padding: calc(var(--space-xs));
 	}
 }
