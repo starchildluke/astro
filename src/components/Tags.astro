@@ -25,48 +25,13 @@ const morsels = await getCollection('morsels', ({ data }) => {
 
 const collator = Intl.Collator([], {numeric: true});
 
-const sortedPosts = posts.sort((a, b) => collator.compare(a.data.title, b.data.title));
+const allPosts = [...posts, ...recortes, ...lists, ...notes, ...morsels];
 
-const sortedRecortes = recortes.sort((a, b) => collator.compare(a.data.title, b.data.title));
-
-const sortedLists = lists.sort((a, b) => collator.compare(a.data.title, b.data.title));
-
-const sortedReleaseNotes = notes.sort((a, b) => collator.compare(a.data.title, b.data.title));
-
-const sortedMorsels = morsels.sort((a, b) => collator.compare(a.data.title, b.data.title));
+const allSortedPosts = allPosts.sort((a, b) => collator.compare(a.data.title, b.data.title));
 
 ---
-{sortedPosts.length > 0 ? <h3 class={className}>Posts</h3>
-<ul class={className}>
-  {sortedPosts.length > 0 ? sortedPosts.map(post =>
+{allSortedPosts.length > 0 ? <ul class={className}>
+  {allSortedPosts.length > 0 ? allSortedPosts.map(post =>
   <li class={className}><a class={className} href=`/posts/${post.slug}/`>{post.data.title}</a></li>
-  ) : ""}
-</ul> : ""}
-
-{sortedRecortes.length > 0 ? <h3 class={className}>Recortes</h3>
-<ul class={className}>
-  {sortedRecortes.length > 0 ? sortedRecortes.map(recorte =>
-  <li><a class={className} href=`/recortes/${recorte.slug}/`>{recorte.data.title}</a></li>
-  ) : ""}
-</ul> : ""}
-
-{sortedLists.length > 0 ? <h3 class={className}>Lists</h3>
-<ul class={className}>
-  {sortedLists.length > 0 ? sortedLists.map(list =>
-  <li><a class={className} href=`/lists/${list.slug}/`>{list.data.title}</a></li>
-  ) : ""}
-</ul> : ""}
-
-{sortedReleaseNotes.length > 0 ? <h3 class={className}>Release Notes</h3>
-<ul class={className}>
-  {sortedReleaseNotes.length > 0 ? sortedReleaseNotes.map(note =>
-  <li><a class={className} href=`/release-notes/${note.slug}/`>{note.data.title}</a></li>
-  ) : ""}
-</ul> : ""}
-
-{sortedMorsels.length > 0 ? <h3 class={className}>Morsels</h3>
-<ul class={className}>
-  {sortedMorsels.length > 0 ? sortedMorsels.map(morsel =>
-  <li><a class={className} href=`/morsels/${morsel.slug}/`>{morsel.data.title}</a></li>
   ) : ""}
 </ul> : ""}

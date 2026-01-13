@@ -7,6 +7,7 @@ import Footer from '../components/Footer.astro';
 
 interface Props {
   title: string;
+  metaTitle: string;
   description: string;
   pubDate: string;
   canonicalURL: string | URL;
@@ -14,11 +15,11 @@ interface Props {
   robotsTag: string;
 }
 
-const { title, description, pubDate, robotsTag, canonicalURL = Astro.url } = Astro.props;
+const { title, metaTitle, description, pubDate, robotsTag, canonicalURL = Astro.url } = Astro.props;
 
 ---
 <html lang="en-GB">
-  <BaseHead {title} {description} {canonicalURL} {robotsTag}/>
+  <BaseHead {title} {metaTitle} {description} {canonicalURL} {robotsTag}/>
   <StructuredData {title} {pubDate} />
   {canonicalURL.href.indexOf("jardim") ? <BreadcrumbsSD url={canonicalURL} /> : null}
   <body>
