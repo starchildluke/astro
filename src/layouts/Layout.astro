@@ -10,8 +10,7 @@ interface Props {
   metaTitle: string;
   description: string;
   pubDate: string;
-  canonicalURL: string | URL;
-  url: string | URL;
+  canonicalURL: string | any;
   robotsTag: string;
 }
 
@@ -21,7 +20,7 @@ const { title, metaTitle, description, pubDate, robotsTag, canonicalURL = Astro.
 <html lang="en-GB">
   <BaseHead {title} {metaTitle} {description} {canonicalURL} {robotsTag}/>
   <StructuredData {title} {pubDate} />
-  {canonicalURL.href.indexOf("jardim") ? <BreadcrumbsSD url={canonicalURL} /> : null}
+  {canonicalURL.href.includes("jardim") ? <BreadcrumbsSD url={canonicalURL} /> : null}
   <body>
     <Header title={title} />
     <main class="layout">
