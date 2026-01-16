@@ -127,7 +127,8 @@
 	--font-body: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,	Apple Color Emoji, Segoe UI Emoji, sans-serif;
 	--font-heading-h1: Nyght Serif Light, DM Serif Display, Georgia, sans-serif;
 	--font-heading-h2: DM Serif Display, Georgia, sans-serif;
-	--font-code: monospace;
+	--font-code: "Fira Code", "SF Mono", "Roboto Mono", monospace;
+	--font-code-date: monospace;
 
 	--font-bold: 700;
 
@@ -172,7 +173,7 @@ header {
 
 .publish-date {
 	text-align: center;
-	font-family: monospace;
+	font-family: var(--font-code-date);
 	font-size: 1rem;
 	text-transform: uppercase;
 }
@@ -394,7 +395,7 @@ a:focus {
 }
 
 code:not([class*="language"]) {
-	font-family: monospace;
+	font-family: var(--font-code);
 	color: #e1e4e8;
 	background: var(--grey-code);
 	margin: -.2rem .05rem -.2rem -.125em;
@@ -417,13 +418,11 @@ pre {
 	position: relative;
 	color: #f3f4f6;
 	padding: var(--space-md);
-	margin-inline: auto;
 	margin-bottom: 1.38rem;
-	width: 100%;
+	width: fit-content;
 	overflow-y: hidden;
 	white-space: break-spaces;
 	--padding-inline: 1.25rem;
-	border-radius: 8px;
 }
 
 img {
@@ -652,7 +651,7 @@ p.publish-date {
 	padding: var(--space-md);
 	border-radius: 5px;
 	border: 1px solid var(--green);
-	font-family: monospace;
+	font-family: var(--font-code);
 	margin-bottom: var(--space-md);
 	color: var(--off-white);
 }

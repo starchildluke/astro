@@ -3,7 +3,7 @@ title: 'How much do my blogs cost?'
 description: "Blogging costs money to maintain. Here's how much."
 published: true
 pubDate: '24 Aug 2020'
-tags: ['blogging']
+tags: ['blogging', 'questions']
 ---
 
 As I continue working on my microscopic media empire (stolen from Jason Kottke), I asked myself: whow much does it cost to run all [my blogs and various mini projects](/projects/). I decided to keep it easy and calculate all the outgoings in 2020 so far and income I get from Patreon to calculate the gross and net costs.

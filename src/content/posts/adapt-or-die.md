@@ -7,6 +7,7 @@ tags:
   - AI
   - tech
   - SEO
+  - questions
 ---
 
 I've been thinking about the prevalent "adapt or die" ideology within SEO, focused on AI adoption. Linkedin is rife with these takes. Because AI is here and ever-growing, we have only two choices:

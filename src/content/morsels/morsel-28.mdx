@@ -26,7 +26,7 @@ There are a few ways you can implement lazy loading but the main ones are:
 
 The first two need JavaScript. The last one is just a HTML attribute like so:
 
-```html
+```
 <img src="example.jpg" alt="" width="500" height="500" loading="lazy" />
 ```
 
@@ -47,19 +47,19 @@ In the end, I figured 4 images would be fine to preload and the rest could be la
 
 ```html
 <Layout title="Colecçao">
-	<section>
+  <section>
     <div class="atom-list">
-    {page.data.map((atom: any) => (
+      {page.data.map((atom: any) => (
       <figure class="atom-listing">
         <a href={`/atom/${atom.id}/`}>
-        	{ page.data.indexOf(atom) < 4 ?
-        		<img src={atom.data.image} alt={atom.data.description} width={atom.data.dimensions[0]} height={atom.data.dimensions[1]} fetchpriority="high" /> :
+          {page.data.indexOf(atom) < 4 ?
+          <img src={atom.data.image} alt={atom.data.description} width={atom.data.dimensions[0]} height={atom.data.dimensions[1]} fetchpriority="high" /> :
         		<img src={atom.data.image} alt={atom.data.description} width={atom.data.dimensions[0]} height={atom.data.dimensions[1]} loading="lazy" />
-        	}
+          }
         </a>
         <figcaption>{atom.data.title}</figcaption>
       </figure>
-    ))}
+      ))}
 <!--Rest of code goes here -->
 ```
 

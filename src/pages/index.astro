@@ -1,5 +1,4 @@
 ---
-// COMPONENTS
 import Layout from '../layouts/Layout.astro';
 import CurrentlyListening from '../components/CurrentlyListening.astro';
 import Pokeballs from '../components/Pokeballs.astro';
@@ -7,20 +6,20 @@ import Latest from '../components/Latest.astro';
 import sd from '../data/sd.json';
 
 // METADATA VARIABLES
-let metaTitle = 'Luke Davis: technical SEO, music producer & creator';
-let title = 'Luke Davis';
-let description = 'The digital home of Luke Davis: a senior technical SEO, music producer, and blogger based in the UK.';
+const metaTitle = 'Luke Davis: technical SEO, music producer & creator';
+const title = 'Luke Davis';
+const description = 'The digital home of Luke Davis: a senior technical SEO, music producer, and blogger based in the UK.';
 
-let greetings = {
+const greetings = {
   'pt': ['bom dia!', 'boa tarde!', 'boa noite!', 'ola!'],
   'es': ['¡buenos dias!', '¡buenos tardes!', '¡buenos noches!', '¡hola!'],
   'en': ['good morning!', 'good afternoon!', 'good evening!', 'hello!'],
   'fr': ['bonjour!', 'bonsoir!']
 };
 
-let langs = Object.keys(greetings);
-let randLangs = langs[Math.floor(Math.random()*langs.length)]
-let sayHello = greetings[randLangs][Math.floor(Math.random()*greetings[randLangs].length)];
+const langs = Object.keys(greetings);
+const randLangs = langs[Math.floor(Math.random()*langs.length)]
+const sayHello = greetings[randLangs][Math.floor(Math.random()*greetings[randLangs].length)];
 ---
 
 <style>

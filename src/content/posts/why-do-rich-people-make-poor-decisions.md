@@ -3,7 +3,7 @@ title: 'Why do rich people make poor decisions?'
 description: "Rich people get away with murder and get praised for it."
 published: true
 pubDate: '5 Mar 2020'
-tags: ["life"]
+tags: ["life", 'questions']
 ---
 
 [kottke.org](https://kottke.org/20/03/why-do-poor-people-make-bad-decisions) published an article called "Why Do Poor People Make Bad Decisions?", referencing an article by Rutger Bregman about "why poor people make low-quality decisions".

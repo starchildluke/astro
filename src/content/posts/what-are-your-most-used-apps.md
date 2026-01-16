@@ -3,7 +3,7 @@ title: 'What are your most used apps?'
 description: "My most used apps in 2021"
 published: true
 pubDate: '18 Dec 2021'
-tags: ['tech']
+tags: ['tech', 'questions']
 ---
 
 As of December 2021:

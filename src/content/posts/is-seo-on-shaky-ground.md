@@ -3,7 +3,7 @@ title: 'Is SEO on shaky ground?'
 description: "The more that things change, the more that they become disruptive (not a compliment)."
 published: true
 pubDate: '1 Jun 2025'
-tags: ["SEO", "tech", "AI"]
+tags: ["SEO", "tech", "AI", 'questions']
 ---
 
 I was reading an article this morning that used the line “but does SEO matter anymore anyway?” and thought “wow, that sentiment never dies, does it?” but it triggered something in my head. You may have heard about AI Mode, a new way of searching with Google:

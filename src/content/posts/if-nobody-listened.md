@@ -3,7 +3,7 @@ title: 'If Nobody Listened, Would I Still Make Music?'
 description: "Or: why I make music?"
 pubDate: '18 Dec 2016'
 published: true
-tags: ['music']
+tags: ['music', 'questions']
 ---
 
 Going through my blog feed, I noticed an article from DIY Photography entitled ["If nobody cared, would you still take pictures?"](https://www.diyphotography.net/nobody-cared-still-take-pictures/). That's a pertinent question and something I've often asked myself from a musical perspective.     

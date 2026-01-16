@@ -39,19 +39,19 @@ let description = 'A page all about Prince.';
 </style>
 
 <Layout {title} {description}>
-  <section>
-        <Breadcrumbs title={title}/>
-        <h1>{title}</h1>
-        <p class="description">{description}</p>
-        <p>Prince Rogers Nelson, better known as Prince, was an Black American singer-songwriter, musician, actor, and record producer. He's also one of the greatest musicians the world has ever known. This page features articles from myself and others about Prince's genius.</p>
-        <h2 class="wiki-h2">Inner voice</h2>
-        <Tags tagName="Prince" className="prince-purple"/>
-        <h2 class="wiki-h2">Out loud</h2>
-        <ul>
-          <li><a href="https://sampleface.co.uk/tag/prince/">Prince on Sampleface</a></li>
-          <li><a href="https://cultrface.co.uk/tag/prince/">Prince on Cultrface</a></li>
-        </ul>
-        <h2 class="wiki-h2">Second opinions</h2>
-        <p>Coming soon...</p>
-  </section>
+<section>
+  <Breadcrumbs title={title}/>
+  <hgroup><h1>{title}</h1>
+  <p class="description">{description}</p>
+  <p>Prince Rogers Nelson, better known as Prince, was an Black American singer-songwriter, musician, actor, and record producer. He's also one of the greatest musicians the world has ever known. This page features articles from myself and others about Prince's genius.</p></hgroup>
+  <h2 class="wiki-h2">Inner voice</h2>
+  <Tags tagName="Prince" className="prince-purple"/>
+  <h2 class="wiki-h2">Out loud</h2>
+  <ul>
+    <li><a href="https://sampleface.co.uk/tag/prince/">Prince on Sampleface</a></li>
+    <li><a href="https://cultrface.co.uk/tag/prince/">Prince on Cultrface</a></li>
+  </ul>
+  <h2 class="wiki-h2">Second opinions</h2>
+  <p>Coming soon...</p>
+</section>
 </Layout>

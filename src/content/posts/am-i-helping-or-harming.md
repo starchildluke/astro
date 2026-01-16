@@ -5,6 +5,7 @@ published: true
 pubDate: 12 Jan 2025
 tags:
   - tech
+  - questions
 ---
 A few minutes ago, I found this article about World's Worst Guy #3 and how [he gave Meta’s Llama team the OK to train on copyrighted works](https://techcrunch.com/2025/01/09/mark-zuckerberg-gave-metas-llama-team-the-ok-to-train-on-copyrighted-works-filing-claims/). If that wasn't bad enough, the Most Popular section on the right was a charcuterie board of the most heinous things in tech:
 

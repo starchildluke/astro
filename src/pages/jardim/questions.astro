@@ -7,14 +7,13 @@ import Tags from '../../components/Tags.astro';
 
 // METADATA VARIABLES
 
-let title = 'Utils';
-let description = 'A wiki page of utilities.';
+let title = 'Questions';
+let description = 'A wiki page all about questions.';
 
 ---
-<style>h1::after{content:" ⚒️";}</style>
+<style>h1::after{content:"❓";}</style>
 
 <Layout {title} {description}>
-
     <Breadcrumbs title={title}/>
     <hgroup class="intro">
       <h1>{title}</h1>
@@ -22,7 +21,7 @@ let description = 'A wiki page of utilities.';
     </hgroup>
     <section>
       <h2 class="wiki-h2">Inner voice</h2>
-      <Tags tagName="utils" />
+      <Tags tagName="questions" />
     </section>
     <section>
       <h2 class="wiki-h2">Out loud</h2>
