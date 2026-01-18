@@ -3,7 +3,7 @@ title: 'Introducing RALTS (Really Awesome Lexicon and Tag Suggester)'
 description: "I love NLP and taxonomies. Here's a script I wrote that marries the two concepts."
 published: true
 pubDate: '28 Feb 2022'
-tags: ['Python', 'SEO', 'AI']
+tags: ['Python', 'SEO', 'AI', 'language']
 ---
 
 I've been learning Python since October 2019 and exploring NLP since the end of last year and they've changed my life for the better. As I learn by doing, I've decided to show off arguably my greatest creation to do date. I wasn't sure whether to do it as it's very niche to me but I've taken a step out of my comfort zone.

@@ -3,7 +3,7 @@ title: 'Have you heard of codeswitching?'
 description: "Still reading through kottke.org's archives and found a 2003 post on 'bilingual conversations'"
 pubDate: '15 Feb 2020'
 published: true
-tags: ['life', 'Jamaica', 'questions']
+tags: ['life', 'Jamaica', 'questions', 'language']
 ---
 
 Still reading through kottke.org's archives and found this [2003 post on "bilingual conversations"](https://kottke.org/03/09/bilingual-conversations)

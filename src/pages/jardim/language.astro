@@ -1,0 +1,33 @@
+---
+// COMPONENTS
+
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import Tags from '../../components/Tags.astro';
+
+// METADATA VARIABLES
+
+let title = 'Language';
+let description = 'A wiki page about language.';
+
+---
+<style>h1::after{content:" 🔠";}</style>
+
+<Layout {title} {description}>
+
+    <Breadcrumbs title={title}/>
+    <hgroup class="intro">
+      <h1>{title}</h1>
+      <p class="desc">{description}</p>
+    </hgroup>
+    <section>
+      <h2 class="wiki-h2">Inner voice</h2>
+      <Tags tagName="language" />
+    </section>
+    <section>
+      <h2 class="wiki-h2">Out loud</h2>
+      <p>Coming soon</p>
+      <h2 class="wiki-h2">Second opinions</h2>
+      <p>Coming soon</p>
+    </section>
+</Layout>

@@ -82,6 +82,7 @@
 	--blue: #004e89;
 	--blue-highlight: #253ca0;
 	--blue-sapphire: #0028c7;
+	--blue-hydra :#016895;
 	--aquamarine: #7fffd4;
 
 	--orange: #ff5704;
@@ -141,7 +142,7 @@
 	--font-body-size: clamp(.875rem, 1.1rem, 1.25rem);
 	
 	--font-size-h1: clamp(1rem, var(--font-size-xl) + 1.9692vw, 4rem);
-	--font-size-h2: clamp(1.5rem, calc(var(--font-size-xl) * 0.8), 3rem);
+	--font-size-h2: clamp(1.5rem, calc(var(--font-size-xl)), 3rem);
 	--font-size-h3: clamp(0.5rem, 1.5rem, 2rem);
 }
 
@@ -318,7 +319,7 @@ h1 {
 h2 {
 	font-family: var(--font-heading-h2);
 	font-size: var(--font-size-h2);
-	color: var(--blue-sapphire);
+	color: var(--blue-hydra);
 	line-height: 1;
 }
 
@@ -332,6 +333,7 @@ h3 {
   font-weight: 900;
   letter-spacing: -0.5px;
   color: var(--red-rust);
+  line-height: 1.1;
 }
 
 .breadcrumbs, details, p {
@@ -568,6 +570,14 @@ p.publish-date {
 	margin-bottom: var(--space-xl);
 }
 
+.space-lg {
+	margin-bottom: var(--space-lg);
+}
+
+.space-md {
+	margin-bottom: var(--space-md);
+}
+
 @media only screen and (max-width: 480px) {
 	
 	.publish-date {
@@ -734,6 +744,8 @@ figure + p {
 	margin-top: var(--space-md);
 }
 
+
+
 .h1__block {
 	display: flex;
 	align-items: flex-end;
@@ -770,4 +782,8 @@ figure + p {
 
 .prince-purple {
 	color: var(--prince-purple);
+}
+
+.pxl {
+	image-rendering: pixelated;
 }

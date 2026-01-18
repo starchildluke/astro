@@ -6,7 +6,7 @@ pubDate: '8 Nov 2021'
 tags: ['blogging', 'writing']
 ---
 
-I'm very protective over the art of [blogging](/jardim/blogging/) because, without it, I would absolutely not be where I am today. No way.
+I'm very protective over the art of blogging because, without it, I would absolutely not be where I am today. No way.
 
 And that's despite (6) years of doubt over the purpose of it all. But I made significant connections that got me into a line of work that met my needs and I've been able to flourish on my own terms, which I'm immensely grateful for.
 
