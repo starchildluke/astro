@@ -12,6 +12,7 @@ Here is my mlog for January 2026 (so far).
 
 ## Movies
 
+* The Rip (2026)
 * Street Fighter Alpha: The Movie (2000)
 * Jingle All the Way (1996)
 * The Firm (1993)
@@ -30,10 +31,15 @@ Here is my mlog for January 2026 (so far).
 * Super R.C. Pro-Am (GB)
 * X-Men: Wolverine's Rage (GBC)
 * Yoshi (GB)
+* Soccer (GB)
+
+## Series
+
+* Monster Rancher
+* Blazblue Alter Memory
 
 ## Videos
 
-* Monster Rancher
 * Pokémon streams (Chazingdra)
 * Dragon Quest streams (Possum Oakwood)
 * With Farts!
@@ -58,4 +64,4 @@ Here is my mlog for January 2026 (so far).
 
 ## Books
 
-lol, lmao, sob
+* lol, lmao, sob
