@@ -1,0 +1,73 @@
+---
+import gamelog from '../../data/gamelog.json';
+import Games from '../../layouts/Games.astro';
+import SoloGameSD from '../../components/SoloGameSD.astro';
+import { getCollection } from 'astro:content';
+import FormattedDate from '../../components/FormattedDate.astro';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('games');
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: { post }
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await post.render();
+
+---
+
+<style>
+
+  body {
+    margin: 1rem;
+    text-align: inherit;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+  
+  dl {
+    display: grid;
+    grid-gap: 0.25rem 1rem;
+    grid-template-columns: max-content;
+    margin-bottom: 1rem;
+  }
+
+  dt {
+    font-weight: 700;
+  }
+
+  dd {
+    margin: 0;
+    grid-column-start: 2;
+  }
+
+  img {
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+</style>
+
+<Games stylesheetURL="games.css" title={post.data.name} description=`My thoughts on ${post.data.name}`>
+  {gamelog.filter(game => game.name == post.data.name).map(game => (
+    <h1>{game.name}</h1>
+    <img src={game.imageURL} width="250" height="250" alt=`cover art for ${game.name} for the ${game.console}`>
+      <dl>
+        <dt>Developer:</dt> <dd>{game.developer}</dd>
+        <dt>Publisher:</dt> <dd>{game.publisher}</dd>
+        <dt>Genre:</dt> <dd>{game.genre}</dd>
+        <dt>Status:</dt> <dd>{game.status}</dd>
+        <dt>Format:</dt> <dd>{game.format}</dd>
+        <dt>Console:</dt> <dd>{game.console}</dd>
+        {game.dateBeaten ? <dt>Date Beaten:</dt> <dd><FormattedDate date={game.dateBeaten}/></dd> : null}
+      </dl>
+
+      <SoloGameSD name={game.name}, imageURL={game.imageURL}, publisher={game.publisher}, consoleName={game.console}, genre={game.genre} />
+  )
+  )}
+  <Content />
+</Games>

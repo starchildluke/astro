@@ -4,12 +4,16 @@
 import Games from '../layouts/Gameslist.astro';
 import gamelog from '../data/gamelog.json';
 import GameSD from '../components/GameSD.astro';
-
+import { getCollection } from 'astro:content';
+	
 // METADATA VARIABLES
 
 let title = 'Gameslist';
 let description = "A log of all the games I've been playing.";
 let currentYear = new Date().getFullYear().toString();
+
+const posts = await getCollection('games');
+
 ---
 
 <Games title={title} description={description} stylesheetURL="games.css">
@@ -33,7 +37,7 @@ let currentYear = new Date().getFullYear().toString();
 					<span id="play-symbol">▶︎ </span>
 					<span>Playing</span>
 				</button>
-				<button class="games-filter" data-filter="sunsetted">
+				<button class="games-filter" data-filter="shelved">
 					<span id="pause-symbol">⏸︎ </span>
 					<span>Paused</span>
 				</button>
@@ -54,7 +58,11 @@ let currentYear = new Date().getFullYear().toString();
           <div class="data" id={game.status.replace(' ', '-').toLowerCase()}>
           	<div class="games-img__section">
           	<div class="games-img">
-          		<img src={game.imageURL ? game.imageURL : '/images/coming-soon.webp'} width="250" height="250" loading="eager" alt=`cover art for ${game.name} for the ${game.console}`>
+          		{posts.filter(
+          			(post) => post.data.name == game.name).map(
+          			(post) => <a href=`/games/${post.slug}/`><img src={game.imageURL ? game.imageURL : '/images/coming-soon.webp'} width="250" height="250" alt=`cover art for ${game.name} for the ${game.console}`></a>
+          			)
+          		}
           	</div>
           </div>
           	<div class="games-text">
@@ -66,7 +74,7 @@ let currentYear = new Date().getFullYear().toString();
 		<GameSD />
 		<script>
 			const buttons = document.querySelectorAll('.games-filter');
-			const games = document.querySelectorAll('#playing, #actually-playing, #sunsetted, #completed');
+			const games = document.querySelectorAll('#playing, #actually-playing, #shelved, #completed');
 
 			buttons.forEach(button => {
 			  button.addEventListener('click', () => {

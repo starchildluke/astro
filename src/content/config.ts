@@ -104,4 +104,20 @@ const lists = defineCollection({
 	}),
 });
 
-export const collections = { 'posts': posts, 'recortes': recortes, 'release-notes': releaseNotes, 'morsels': morsels, 'lists': lists, 'mlog': mlog, 'music': music };
+const games = defineCollection({
+	type: 'content',
+	schema: z.object({
+		name: z.string().optional(),
+		developer: z.string().optional(),
+		publisher: z.string().optional(),
+		genre: z.string().optional(),
+		imageURL: z.string().optional(),
+		status: z.string().optional(),
+		format: z.string().optional(),
+		console: z.string().optional(),
+		dateBeaten: z.string().or(z.date())
+			.transform((val) => new Date(val)).optional()
+	}),
+});
+
+export const collections = { 'posts': posts, 'recortes': recortes, 'release-notes': releaseNotes, 'morsels': morsels, 'lists': lists, 'mlog': mlog, 'music': music, 'games': games };

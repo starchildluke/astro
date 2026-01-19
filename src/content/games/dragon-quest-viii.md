@@ -1,0 +1,3 @@
+---
+name: Dragon Quest VIII
+---
