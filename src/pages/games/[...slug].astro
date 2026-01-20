@@ -21,19 +21,17 @@ const { Content } = await post.render();
 <style>
 
   body {
-    margin: 1rem;
-    text-align: inherit;
+    margin-block: 4rem
   }
 
   h1 {
-    font-size: 2rem;
+    text-align: center;
   }
   
   dl {
     display: grid;
     grid-gap: 0.25rem 1rem;
     grid-template-columns: max-content;
-    margin-bottom: 1rem;
   }
 
   dt {
@@ -47,14 +45,29 @@ const { Content } = await post.render();
 
   img {
     display: block;
-    margin-bottom: 1rem;
+  } 
+
+  .game-meta {
+    display: flex;
+    gap: 4rem;
+    margin-block: 2rem 4rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (max-width: 700px) { 
+
+    body {
+      margin-inline: 1rem;
+    }  
   }
 
 </style>
 
-<Games stylesheetURL="games.css" title={post.data.name} description=`My thoughts on ${post.data.name}`>
+<Games title={post.data.name} description=`My thoughts on ${post.data.name}`>
   {gamelog.filter(game => game.name == post.data.name).map(game => (
     <h1>{game.name}</h1>
+    <section class="game-meta">
     <img src={game.imageURL} width="250" height="250" alt=`cover art for ${game.name} for the ${game.console}`>
       <dl>
         <dt>Developer:</dt> <dd>{game.developer}</dd>
@@ -65,9 +78,12 @@ const { Content } = await post.render();
         <dt>Console:</dt> <dd>{game.console}</dd>
         {game.dateBeaten ? <dt>Date Beaten:</dt> <dd><FormattedDate date={game.dateBeaten}/></dd> : null}
       </dl>
+    </section>
 
       <SoloGameSD name={game.name}, imageURL={game.imageURL}, publisher={game.publisher}, consoleName={game.console}, genre={game.genre} />
   )
   )}
-  <Content />
+  <main class="layout">
+    <Content />
+  </main>
 </Games>
