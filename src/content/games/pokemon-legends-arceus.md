@@ -1,3 +1,3 @@
 ---
-name: Pokémon Legends: Arceus
+name: "Pokémon Legends: Arceus"
 ---
