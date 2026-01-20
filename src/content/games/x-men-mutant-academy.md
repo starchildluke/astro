@@ -1,3 +1,3 @@
 ---
-name: X-Men - Mutant Academy
+name: "X-Men - Mutant Academy"
 ---

@@ -1,3 +1,3 @@
 ---
-name: Pokémon Legends: Z-A
+name: "Pokémon Legends: Z-A"
 ---

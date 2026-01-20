@@ -1,3 +1,3 @@
 ---
-name: Super R.C. Pro-Am
+name: "Super R.C. Pro-Am"
 ---
