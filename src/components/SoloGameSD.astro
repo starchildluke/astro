@@ -1,20 +1,21 @@
 ---
-const {name, imageURL, publisher, consoleName, genre} = Astro.props;
+const {name, imageURL, publisher, consoleName, genre, developer} = Astro.props;
 
-const mentions = {
+const sd = JSON.stringify({
+    "@context": "https://schema.org",
     "@type": "VideoGame",
     "name": name,
     "image": "https://lukealexdavis.co.uk" + imageURL,
     "publisher": publisher,
     "gamePlatform": consoleName,
-    "genre": genre
-};
+    "genre": genre,
+    "inLanguage": ["English", "Japanese"],
+    "author": {
+      "@type": "Organization",
+      "name": developer
+    }
 
-const sd = JSON.stringify({
-  "@context": "https://schema.org",
-  "@type": "WebPage",
-  "mentions": mentions
-})
+});
 
 ---
 <script type="application/ld+json" set:html={sd}></script>
