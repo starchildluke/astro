@@ -401,7 +401,7 @@ code:not([class*="language"]) {
 	color: #e1e4e8;
 	background: var(--grey-code);
 	margin: -.2rem .05rem -.2rem -.125em;
-	word-wrap: nowrap;
+	word-wrap: anywhere;
 	padding-inline: clamp(.31rem, calc(.31rem + 0vw), .31rem);
 	padding-top: calc(var(--space-md) * 0.1);
 	padding-bottom: calc(var(--space-md) * 0.1);
@@ -422,8 +422,11 @@ pre {
 	padding: var(--space-md);
 	margin-bottom: 1.38rem;
 	width: fit-content;
+	max-width: 100%;
+	overflow-x: scroll;
 	overflow-y: hidden;
 	white-space: break-spaces;
+	overflow-wrap: break-word;
 	--padding-inline: 1.25rem;
 }
 
@@ -644,6 +647,10 @@ p.publish-date {
 		display: flex;
 		gap: var(--space-lg);
 		justify-content: inherit;
+	}
+
+	pre {
+		font-size: var(--font-size-sm);
 	}
 	
 }
