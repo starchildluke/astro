@@ -25,13 +25,19 @@ const morsels = await getCollection('morsels', ({ data }) => {
 
 const collator = Intl.Collator([], {numeric: true});
 
-const allPosts = [...posts, ...recortes, ...lists, ...notes, ...morsels];
+const allPosts = [
+  ...posts.map(item => ({ ...item, type: 'posts' })),
+  ...recortes.map(item => ({ ...item, type: 'recortes' })),
+  ...lists.map(item => ({ ...item, type: 'lists' })),
+  ...notes.map(item => ({ ...item, type: 'notes' })),
+  ...morsels.map(item => ({ ...item, type: 'morsels' })),
+];
 
 const allSortedPosts = allPosts.sort((a, b) => collator.compare(a.data.title, b.data.title));
 
 ---
 {allSortedPosts.length > 0 ? <ul class={className}>
   {allSortedPosts.length > 0 ? allSortedPosts.map(post =>
-  <li class={className}><a class={className} href=`/posts/${post.slug}/`>{post.data.title}</a></li>
+  <li class={className}><a class={className} href=`/${post.type}/${post.slug}/`>{post.data.title}</a></li>
   ) : ""}
 </ul> : ""}
