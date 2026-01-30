@@ -6,7 +6,7 @@ pubDate: '26 Nov 2025'
 tags: ['life', 'Lisbon', 'architecture']
 ---
 
-I spent 5 days in Lisbon from 21st–26th November 2025. This is my fifth trip to the Portuguese capital (and I've written about two of those trips in [2017](/posts/my-week-in-lisbon/) and [2023](/posts/another-week-in-lisbon/)).
+I spent 5 days in Lisbon from 21st–26th November 2025. This is my fifth trip to the Portuguese capital (and I've written about two of those trips in [2017](/posts/my-week-in-lisbon/) and [2023](/posts/another-week-in-lisbon-2023/)).
 
 This was my first time back on my own since 2018 and I wanted it to be as chill as possible whilst visiting some of my favourte places and maybe some new ones.
 
