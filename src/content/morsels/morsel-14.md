@@ -13,6 +13,8 @@ I have to change text lists into Python lists a lot and I always do it in Sublim
 
 So I made this, using the structure of the thumbnail grabber I made a few weeks ago. It takes a text list of strings and converts it into an array and then displays the array in a <code>pre</code> tag.
 
+_**Update - 7th Feb 2026**: so I realised today that this was susceptible to an XSS attack so I added a HTML sanitiser called [JS Html Sanitizer](https://github.com/jitbit/HtmlSanitizer)._
+
 <form id="string-form">
     <label for="strings">Enter your text strings, one per line:</label>
     <div>
@@ -25,8 +27,6 @@ So I made this, using the structure of the thumbnail grabber I made a few weeks 
     <pre></pre>
 </div>
 
----
-
 <script>
         const form = document.querySelector('#string-form');
         const arrayContainer = document.querySelector('#array-container pre');
@@ -36,14 +36,24 @@ So I made this, using the structure of the thumbnail grabber I made a few weeks 
             generateArrayText(stringVals);
         });
 
+        // taken from https://stackoverflow.com/questions/23187013/is-there-a-better-way-to-sanitize-input-with-javascript
+        function sanitiseString(str){
+            str = str.replace(/[^a-z0-9áéíóúñü \.,_-]/gim,"");
+            return str.trim();
+        }
+
         function generateArrayText(stringVals) {
-            const arrayText = JSON.stringify(stringVals.split('\n'));
+            const stringsToArray = stringVals.split('\n')
+            const sanitisedArray = stringsToArray.map(string => HtmlSanitizer.SanitizeHtml(string))
+            const arrayText = JSON.stringify(sanitisedArray);
             const displayText = document.createElement('displayed-text');
             arrayContainer.style.background = "#111";
             arrayContainer.innerHTML = arrayText;
             arrayContainer.appendChild(displayText);
         }
     </script>
+
+<script src="https://cdn.jsdelivr.net/npm/@jitbit/htmlsanitizer@latest/HtmlSanitizer.min.js"></script>
 
 <style>
     #array-container {

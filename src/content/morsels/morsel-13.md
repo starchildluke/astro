@@ -17,15 +17,13 @@ tags:
 
 <div id="thumbnail-container"></div>
 
----
-
 A while back, I made a YouTube thumbnail grabber for my Terminal using Python. Here's a command example:
 
 `py yt.py -u "https://www.youtube.com/watch?v=dQw4w9WgXcQ"`
 
 But I'm lazy and wanted something I could just access online. [Boing Boing](https://boingboing.net/features/getthumbs) already has a thumbnail grabber but it displays all thumbnail sizes. I just need the biggest (as I used them for featured images on my blogs) so rather than copy, I decided to use Google's [Gemini](https://gemini.google.com/) to generate the code.
 
-_**Please note**: I have looked through the code, tested it, and rewritten some of it as not to just copy and paste AI-generated content. However, if you see any non-stylistic issues with the code, please let me know._
+_**Please note**: I looked through the code, tested it, and rewrote some of it to be more efficient (e.g. removing unnecessary code and changing values the structure).
 
 _**Update: 21st Dec 2024**: it looks like YouTube has killed the maxresdefault image so I've replaced it with hqdefault. If it comes back, I'll change it back._
 
@@ -40,6 +38,20 @@ If an invalid YouTube URL is submitted, you get an error message (try it and see
 The reason I used AI for this is because I was trying to recreate code that I'd written elsewhere and it wasn't working and I could foresee losing hours and hours of my life when I could just get a large language model to do it and check the work.
 
 <script>
+
+        function generateThumbnail(videoId) {
+            const thumbnailUrl = `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
+            const img = document.createElement('img');
+            img.src = thumbnailUrl;
+            thumbnailContainer.appendChild(img);
+        }
+
+        function extractVideoId(url) {
+            const regex = /^(?:https?:\/\/)?(?:www\.)?(?:youtube\.com\/(?:watch\?v=|embed\/)|youtu\.be\/)([a-zA-Z0-9_-]{11})/;
+            const match = url.match(regex);
+            return match ? match[1] : null;
+        }
+
         const form = document.querySelector('#youtube-form');
         const thumbnailContainer = document.querySelector('#thumbnail-container');
         form.addEventListener('submit', (e) => {
@@ -52,23 +64,6 @@ The reason I used AI for this is because I was trying to recreate code that I'd 
                 document.querySelector('#thumbnail-container').innerHTML = 'Invalid URL, try again! :(';
             }
         });
-
-        function extractVideoId(url) {
-            const regex = /^(?:https?:\/\/)?(?:www\.)?(?:youtube\.com\/(?:watch\?v=|embed\/)|youtu\.be\/)([a-zA-Z0-9_-]{11})/;
-            const match = url.match(regex);
-            return match ? match[1] : null;
-        }
-
-        function generateThumbnail(videoId) {
-            const thumbnailUrl = `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
-
-            const img = document.createElement('img');
-
-            img.src = thumbnailUrl;
-
-            thumbnailContainer.innerHTML = '';
-            thumbnailContainer.appendChild(img);
-        }
     </script>
 
 <style>

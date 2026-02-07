@@ -6,12 +6,11 @@ pubDate: '17 Jan 2026'
 tags: ["music", "gaming", "film"]
 ---
 
-(I've started this halfway through January to jot down the media I've consumed as I do it else I'll forget. So this will be updated until the end of the month and I'll "delete" this.)
-
-Here is my mlog for January 2026 (so far).
+Here is my mlog for January 2026.
 
 ## Movies
 
+* An Evening with Tim Heidecker (2020)
 * The Rip (2026)
 * Street Fighter Alpha: The Movie (2000)
 * Jingle All the Way (1996)
@@ -23,15 +22,22 @@ Here is my mlog for January 2026 (so far).
 
 ## Games
 
-* Attack of the Killer Tomatoes (GB)
-* Blazblue: Continuum Shift II (PSP)
-* Color a Dinosaur (NES)
-* Marvel Super Heroes vs Street Fighter (PS1)
-* Super Mario Land DX (GB)
-* Super R.C. Pro-Am (GB)
-* X-Men: Wolverine's Rage (GBC)
-* Yoshi (GB)
+(games with an asterisk were completed)
+
+* Attack of the Killer Tomatoes (GB)\*
+* Blazblue: Continuum Shift II (PSP)\*
+* Color a Dinosaur (NES)\*
+* James Bond 007 (GB)\*
+* Marvel Super Heroes vs Street Fighter (PS1)\*
+* Super Mario Land DX (GB)\*
+* Super R.C. Pro-Am (GB)\*
+* X-Men: Wolverine's Rage (GBC)\*
+* Yoshi (GB)\*
 * Soccer (GB)
+* Neo Turf Masters (Neo Geo)
+* Cruis'n World (N64)
+* Bravely Default (3DS)
+* Pokémon Lazarus (GBA)
 
 ## Series
 
@@ -46,6 +52,8 @@ Here is my mlog for January 2026 (so far).
 * CSS Grid videos (Kevin Powell)
 * Bravely Default videos
 * Kaytranada (DJ Set) - Elevator Music
+* Drum & bass and rally house mixes
+* Pokémon Rival Locke (Shadypenguinn & Drewby [fka Nipps])
 
 ## Music
 
@@ -61,6 +69,11 @@ Here is my mlog for January 2026 (so far).
 * The Jacksons
 * Yesterdays New Quintet
 * Seal
+* Jessie Ware
+* Robert Palmer
+* Zero 7
+
+[See all of the artists that I've listened to in January on Last.fm](https://www.last.fm/user/alex_ferguson/library/artists?page=1&from=2026-01-01&to=2026-01-31)
 
 ## Books
 
