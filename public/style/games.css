@@ -257,7 +257,7 @@ button:hover {
 	cursor: pointer;
 }
 
-button[id*="symbol"]:focus {
+button:focus:not([data-filter*="clear"]) {
 	border: 2px solid white;
 	box-shadow: 0 0 4px 2px #48abe0;
 }
