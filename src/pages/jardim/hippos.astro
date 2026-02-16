@@ -1,0 +1,36 @@
+---
+// COMPONENTS
+
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import Tags from '../../components/Tags.astro';
+
+// METADATA VARIABLES
+
+let title = 'Hippos';
+let description = "A wiki page all about hippos.";
+
+---
+<style>h1::after{content:" 🦛";}</style>
+
+<Layout {title} {description}>
+        <Breadcrumbs title={title}/>
+        <hgroup class="intro">
+          <h1>{title}</h1>
+        </hgroup>
+        <section>
+          <h2 class="wiki-h2">Inner voice</h2>
+            <Tags tagName="hippos" />
+        </section>
+        <section>
+          <section>
+            <h2 class="wiki-h2">Out loud</h2>
+            <ul>
+              <li><a href="https://logicface.co.uk/tag/hippos/">Hippo posts on LOGiCFACE</a></li>
+              <li><a href="https://cultrface.co.uk/tag/hippos/">Hippo posts on Cultrface</a></li>
+            </ul>
+            <h2 class="wiki-h2">Second opinions</h2>
+            <p>Coming soon...</p>
+          </section>
+        </section>
+</Layout>
