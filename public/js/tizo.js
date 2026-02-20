@@ -18,12 +18,12 @@ const targetTimezones = [{
         zone: 'Europe/London'
     },
     {
-        label: 'S&#227;o Paulo',
-        zone: 'America/Sao_Paulo'
-    },
-    {
         label: 'New York',
         zone: 'America/New_York'
+    },
+    {
+        label: 'S&#227;o Paulo',
+        zone: 'America/Sao_Paulo'
     },
     {
         label: 'Lisbon',
@@ -34,17 +34,17 @@ const targetTimezones = [{
         zone: 'Asia/Gaza'
     },
     {
+        label: 'Dubai',
+        zone: 'Asia/Dubai'
+    },
+    {
         label: 'Tokyo',
         zone: 'Asia/Tokyo'
     },
     {
         label: 'Sydney',
         zone: 'Australia/Sydney'
-    },
-    {
-        label: 'Dubai',
-        zone: 'Asia/Dubai'
-}];
+    }];
 
 targetTimezones.forEach(({label, zone}) => {
     const formatter = new Intl.DateTimeFormat('en-GB', {
