@@ -324,7 +324,7 @@
 		"publisher": "Nintendo",
 		"genre": ["Puzzle"],
 		"imageURL": "/images/gameslist/yoshis-cookie-250x250.webp",
-		"status": "Playing",
+		"status": "Shelved",
 		"format": "Emulation",
 		"console": "SNES",
 		"dateBeaten": ""
@@ -390,7 +390,7 @@
 		"publisher": "GameTek/Coconuts Japan/Elite Systems",
 		"genre": ["Sports"],
 		"imageURL": "/images/gameslist/soccer-250x250.webp",
-		"status": "Playing",
+		"status": "Shelved",
 		"format": "Emulation",
 		"console": "GB",
 		"dateBeaten": ""
@@ -412,9 +412,9 @@
 		"publisher": "Nintendo",
 		"genre": ["RPG"],
 		"imageURL": "/images/gameslist/bravely-second-250x250.webp",
-		"status": "Playing",
+		"status": "Completed",
 		"format": "Emulation",
 		"console": "Nintendo 3DS",
-		"dateBeaten": ""
+		"dateBeaten": "02/18/2026"
 	}	
 ]
