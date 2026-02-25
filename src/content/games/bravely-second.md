@@ -1,3 +1,3 @@
 ---
-name: Bravely Second
+name: "Bravely Second: End Layer"
 ---

@@ -407,7 +407,7 @@
 		"dateBeaten": "01/27/2026"
 	},
 	{
-		"name": "Bravely Second",
+		"name": "Bravely Second: End Layer",
 		"developer": "Silicon Studio",
 		"publisher": "Nintendo",
 		"genre": ["RPG"],
@@ -416,5 +416,16 @@
 		"format": "Emulation",
 		"console": "Nintendo 3DS",
 		"dateBeaten": "02/18/2026"
-	}	
+	},
+	{
+		"name": "Golden Sun: Dark Dawn",
+		"developer": "Camelot Software Planning",
+		"publisher": "Nintendo",
+		"genre": ["RPG"],
+		"imageURL": "/images/gameslist/golden-sun-dark-dawn-250x250.webp",
+		"status": "Playing",
+		"format": "Emulation (dumped ROM)",
+		"console": "Nintendo DS",
+		"dateBeaten": ""
+	}
 ]
