@@ -22,5 +22,6 @@ export default new Map([
 ["src/content/posts/slow-connection-speeds-everybody-problem.mdx", () => import("astro:content-layer-deferred-module?astro%3Acontent-layer-deferred-module=&fileName=src%2Fcontent%2Fposts%2Fslow-connection-speeds-everybody-problem.mdx&astroContentModuleFlag=true")],
 ["src/content/posts/some-brief-thoughts-on web-dev-and-web-performance.mdx", () => import("astro:content-layer-deferred-module?astro%3Acontent-layer-deferred-module=&fileName=src%2Fcontent%2Fposts%2Fsome-brief-thoughts-on+web-dev-and-web-performance.mdx&astroContentModuleFlag=true")],
 ["src/content/posts/some-brief-thoughts-on-search.mdx", () => import("astro:content-layer-deferred-module?astro%3Acontent-layer-deferred-module=&fileName=src%2Fcontent%2Fposts%2Fsome-brief-thoughts-on-search.mdx&astroContentModuleFlag=true")],
-["src/content/posts/vicuna-made-me-laugh.mdx", () => import("astro:content-layer-deferred-module?astro%3Acontent-layer-deferred-module=&fileName=src%2Fcontent%2Fposts%2Fvicuna-made-me-laugh.mdx&astroContentModuleFlag=true")]]);
+["src/content/posts/vicuna-made-me-laugh.mdx", () => import("astro:content-layer-deferred-module?astro%3Acontent-layer-deferred-module=&fileName=src%2Fcontent%2Fposts%2Fvicuna-made-me-laugh.mdx&astroContentModuleFlag=true")],
+["src/content/posts/seventh-year-professional-seo.mdx", () => import("astro:content-layer-deferred-module?astro%3Acontent-layer-deferred-module=&fileName=src%2Fcontent%2Fposts%2Fseventh-year-professional-seo.mdx&astroContentModuleFlag=true")]]);
 		

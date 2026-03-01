@@ -12,4 +12,4 @@ I ask God for the wildest things like “give me more money” because I’m too
 
 It’s not too bad for momentary spirals, but still quite amusing. I’m building [marimo apps](/morsels/morsel-16/), but it’s not really coping—I just see stuff, say stuff, run stuff, and pray for stuff, and it mostly does nothing.
 
-<small>(This is a very silly parody of [Andrej Karpathy's tweet about vibe coding](https://twitter.com/karpathy/status/1886192184808149383) which I have adapted for this sh!tpost. It's not a dig at him or what he said, more a dig at me and my current mental health.)</small>
+<small>(This is a parody of [Andrej Karpathy's tweet about vibe coding](https://twitter.com/karpathy/status/1886192184808149383) which I wish he had never written.)</small>
