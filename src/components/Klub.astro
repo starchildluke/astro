@@ -50,8 +50,6 @@ import lastFmData from '../data/lastfm.json';
 		).join(', ')}</em></p>
 </section>
 
-<hr />
-
 <p><strong>800 Klub</strong>: <em>{lastFmData.topartists.artist.filter((item: any) => (
 	item.playcount > 799 && item.playcount < 899
 	)).map(

@@ -19,7 +19,7 @@ let description = 'This page lists my top 1000 artists on Last.fm, ordered by pl
         <details>
           <summary>Bonus content!</summary>
           <br>
-          <p>I liked the idea of grouping artists by 100s of playcounts so here are the "Klubs", from 100–1,000:</p>
+          <p>I liked the idea of grouping artists by 100s of scrobbles so here are the "Klubs", from 100–1,000:</p>
           <Klub />
         </details>
 
@@ -29,13 +29,13 @@ let description = 'This page lists my top 1000 artists on Last.fm, ordered by pl
                 <tr>
                   <th>Pos.</th>
                   <th>Artist</th>
-                  <th>Playcount</th>
+                  <th>Scrobbles</th>
                 </tr>
               </thead>
               {lastFmData.topartists.artist.map((item: any) => (
               <tr>
                   <td>{item['@attr'].rank}</td>
-                  <td><a href={item.url}>{item.name}</a></td>
+                  <td><strong>{item.name}</strong></td>
                   <td>{item.playcount.toLocaleString()}</td>
                 </tr>
               ))}
