@@ -3,12 +3,6 @@ import Layout from '../../layouts/Layout.astro';
 import FormattedDate from '../../components/FormattedDate.astro';
 import { getCollection } from 'astro:content';
 
-export interface Props {
-  canonicalURL: any;
-}
-
-const { canonicalURL = Astro.url } = Astro.props;
-
 let title = 'Morsels';
 let description = "A list of code snippets and scripts I've written. Not too big, not too small. They're like tasty morsels.";
 
@@ -31,7 +25,7 @@ const { page } = Astro.props;
   <ul class="post-list">
     {page.data.map(morsel => (
     <li class="post-listing">
-      <a href={`/morsels/${morsel.slug}/`}>{morsel.data.title}</a>
+      <a href={`/morsels/${morsel.id}/`}>{morsel.data.title}</a>
       <span class="publish-date"><FormattedDate date={morsel.data.pubDate}/></span>
     </li>
     ))}

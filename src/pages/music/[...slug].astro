@@ -1,9 +1,7 @@
 ---
 import BlogPost from '../../layouts/BlogPost.astro';
 import Layout from '../../layouts/Layout.astro';
-import Footer from '../../components/Footer.astro';
-import { getCollection } from 'astro:content';
-import type { CollectionEntry } from 'astro:content';
+import { CollectionEntry, getCollection, render } from 'astro:content';
 import FormattedDate from '../../components/FormattedDate.astro';
 import PrevNextLinking from '../../components/PrevNextLinking.astro';
 import AlbumCard from '../../components/AlbumCard.astro';
@@ -17,7 +15,7 @@ export async function getStaticPaths() {
   const posts = await getCollection('music');
   const numberOfPosts = posts.length;
   return posts.sort(sortByDate).map((album, i) => ({
-    params: { slug: album.slug },
+    params: { slug: album.id },
     props: {
       album,
       prevPost: // Previous post
@@ -35,7 +33,7 @@ export async function getStaticPaths() {
 type Props = CollectionEntry<'music'>;
 
 const { album, prevPost, nextPost, prevSlug, prevTitle, nextSlug, nextTitle, contentType, title, linerNotes, pubDate, image, url } = Astro.props;
-const { Content } = await album.render();
+const { Content } = await render(album);
 
 ---
 <Layout title={album.data.title} description={album.data.linerNotes} pubDate={album.data.pubDate}>
@@ -46,5 +44,5 @@ const { Content } = await album.render();
             <Content />
           </AlbumCard>
 
-            <PrevNextLinking contentType="music" prevPost={prevPost.data} nextPost={nextPost.data} prevSlug={prevPost?.slug} prevTitle={prevPost.data?.title} nextSlug={nextPost?.slug} nextTitle={nextPost.data?.title} />
+            <PrevNextLinking contentType="music" prevPost={prevPost.data} nextPost={nextPost.data} prevSlug={prevPost?.id} prevTitle={prevPost.data?.title} nextSlug={nextPost?.id} nextTitle={nextPost.data?.title} />
 </BlogPost>

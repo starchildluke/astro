@@ -1,8 +1,7 @@
 ---
 import Recortes from '../../layouts/Recortes.astro';
 import Layout from '../../layouts/Layout.astro';
-import { getCollection } from 'astro:content';
-import type { CollectionEntry } from 'astro:content';
+import { getCollection, CollectionEntry, render } from 'astro:content';
 import PrevNextLinking from '../../components/PrevNextLinking.astro';
 
 export const sortByDate = (a, b) => {
@@ -13,7 +12,7 @@ export async function getStaticPaths() {
   const posts = await getCollection('recortes');
   const numberOfPosts = posts.length;
   return posts.sort(sortByDate).map((post, i) => ({
-    params: { slug: post.slug },
+    params: { slug: post.id },
     props: {
       post,
       prevPost: // Previous post
@@ -31,7 +30,7 @@ export async function getStaticPaths() {
 type Props = CollectionEntry<'recortes'>;
 
 const { post, prevPost, nextPost, prevSlug, prevTitle, nextSlug, nextTitle, contentType } = Astro.props;
-const { Content } = await post.render();
+const { Content } = await render(post);
 
 ---
 <Layout title={post.data.title} description={post.data.description}>
@@ -41,6 +40,6 @@ const { Content } = await post.render();
         <h1>{post.data.title}</h1>
       </div>
           <Content />
-            <PrevNextLinking contentType="recortes" prevPost={prevPost.data} nextPost={nextPost.data} prevSlug={prevPost?.slug} prevTitle={prevPost.data?.title} nextSlug={nextPost?.slug} nextTitle={nextPost.data?.title} />
+            <PrevNextLinking contentType="recortes" prevPost={prevPost.data} nextPost={nextPost.data} prevSlug={prevPost?.id} prevTitle={prevPost.data?.title} nextSlug={nextPost?.id} nextTitle={nextPost.data?.title} />
 </Recortes>
 </Layout>

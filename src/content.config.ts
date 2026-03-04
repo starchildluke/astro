@@ -1,7 +1,9 @@
-import { defineCollection, z } from 'astro:content';
+import { defineCollection } from 'astro:content';
+import { z } from 'astro/zod';
+import { glob } from 'astro/loaders';
 
 const posts = defineCollection({
-	type: 'content',
+	loader: glob({ pattern: '**/[^_]*.{md,mdx}', base: "./src/content/posts" }),
 	schema: z.object({
 		title: z.string(),
 		description: z.string().optional(),
@@ -16,7 +18,7 @@ const posts = defineCollection({
 });
 
 const music = defineCollection({
-	type: 'content',
+	loader: glob({ pattern: '**/[^_]*.{md,mdx}', base: "./src/content/music" }),
 	schema: z.object({
 		title: z.string(),
 		linerNotes: z.string(),
@@ -30,7 +32,7 @@ const music = defineCollection({
 });
 
 const mlog = defineCollection({
-	type: 'content',
+	loader: glob({ pattern: '**/[^_]*.{md,mdx}', base: "./src/content/mlog" }),
 	schema: z.object({
 		title: z.string(),
 		description: z.string().optional(),
@@ -44,7 +46,7 @@ const mlog = defineCollection({
 });
 
 const recortes = defineCollection({
-	type: 'content',
+	loader: glob({ pattern: '**/[^_]*.{md,mdx}', base: "./src/content/recortes" }),
 	schema: z.object({
 		title: z.string(),
 		description: z.string().optional(),
@@ -63,7 +65,7 @@ const recortes = defineCollection({
 });
 
 const releaseNotes = defineCollection({
-	type: 'content',
+	loader: glob({ pattern: '**/[^_]*.{md,mdx}', base: "./src/content/release-notes" }),
 	schema: z.object({
 		title: z.string(),
 		description: z.string().optional(),
@@ -77,7 +79,7 @@ const releaseNotes = defineCollection({
 });
 
 const morsels = defineCollection({
-	type: 'content',
+	loader: glob({ pattern: '**/[^_]*.{md,mdx}', base: "./src/content/morsels" }),
 	schema: z.object({
 		title: z.string(),
 		description: z.string().optional(),
@@ -91,7 +93,7 @@ const morsels = defineCollection({
 });
 
 const lists = defineCollection({
-	type: 'content',
+	loader: glob({ pattern: '**/[^_]*.{md,mdx}', base: "./src/content/lists" }),
 	schema: z.object({
 		title: z.string(),
 		description: z.string().optional(),
@@ -105,7 +107,7 @@ const lists = defineCollection({
 });
 
 const games = defineCollection({
-	type: 'content',
+	loader: glob({ pattern: '**/[^_]*.{md,mdx}', base: "./src/content/games" }),
 	schema: z.object({
 		name: z.string().optional(),
 		developer: z.string().optional(),

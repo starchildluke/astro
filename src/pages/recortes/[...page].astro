@@ -8,8 +8,6 @@ export interface Props {
   post: any;
 }
 
-const { canonicalURL = Astro.url } = Astro.props;
-
 export async function getStaticPaths({paginate}) {
   const allPosts = await getCollection('recortes');
   const sortedPosts = allPosts.sort((a, b) => new Date(b.data.pubDate) - new Date(a.data.pubDate));
@@ -38,7 +36,7 @@ let description = "Cuttings, notes and things.";
        <ul class="post-list">
       {page.data.map(post => (
             <li class="post-listing">
-              <a href={`/recortes/${post.slug}/`}>{post.data.title}</a>
+              <a href={`/recortes/${post.id}/`}>{post.data.title}</a>
               <span class="publish-date">{post.data.pubDate}</span>
             </li>
           ))}

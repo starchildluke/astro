@@ -33,7 +33,7 @@ let description = "A mlog (media log) of all the media I consume."
       <ul class="post-list">
         {page.data.map(mlog => (
         <li class="post-listing">
-          <a href={`/mlog/${mlog.slug}/`}>{mlog.data.title}</a>
+          <a href={`/mlog/${mlog.id}/`}>{mlog.data.title}</a>
           <span class="publish-date"><FormattedDate date={mlog.data.pubDate}/></span>
         </li>
         ))}

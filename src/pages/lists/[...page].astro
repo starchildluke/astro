@@ -101,7 +101,7 @@ const { page } = Astro.props;
    <ul class="post-list">
   {page.data.map(list => (
         <li>
-          <a href={`/lists/${list.slug}/`}>{list.data.title}</a>
+          <a href={`/lists/${list.id}/`}>{list.data.title}</a>
           <p class="date-smaller"><FormattedDate date={list.data.pubDate} /></p>
         </li>
       ))}

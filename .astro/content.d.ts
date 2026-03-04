@@ -175,9 +175,7 @@ declare module 'astro:content' {
 	type DataEntryMap = {
 		"games": Record<string, {
   id: string;
-  render(): Render[".md"];
-  slug: string;
-  body: string;
+  body?: string;
   collection: "games";
   data: InferEntrySchema<"games">;
   rendered?: RenderedContent;
@@ -185,9 +183,7 @@ declare module 'astro:content' {
 }>;
 "lists": Record<string, {
   id: string;
-  render(): Render[".md"];
-  slug: string;
-  body: string;
+  body?: string;
   collection: "lists";
   data: InferEntrySchema<"lists">;
   rendered?: RenderedContent;
@@ -195,9 +191,7 @@ declare module 'astro:content' {
 }>;
 "mlog": Record<string, {
   id: string;
-  render(): Render[".md"];
-  slug: string;
-  body: string;
+  body?: string;
   collection: "mlog";
   data: InferEntrySchema<"mlog">;
   rendered?: RenderedContent;
@@ -205,9 +199,7 @@ declare module 'astro:content' {
 }>;
 "morsels": Record<string, {
   id: string;
-  render(): Render[".md"];
-  slug: string;
-  body: string;
+  body?: string;
   collection: "morsels";
   data: InferEntrySchema<"morsels">;
   rendered?: RenderedContent;
@@ -215,9 +207,7 @@ declare module 'astro:content' {
 }>;
 "music": Record<string, {
   id: string;
-  render(): Render[".md"];
-  slug: string;
-  body: string;
+  body?: string;
   collection: "music";
   data: InferEntrySchema<"music">;
   rendered?: RenderedContent;
@@ -225,9 +215,7 @@ declare module 'astro:content' {
 }>;
 "posts": Record<string, {
   id: string;
-  render(): Render[".md"];
-  slug: string;
-  body: string;
+  body?: string;
   collection: "posts";
   data: InferEntrySchema<"posts">;
   rendered?: RenderedContent;
@@ -235,9 +223,7 @@ declare module 'astro:content' {
 }>;
 "recortes": Record<string, {
   id: string;
-  render(): Render[".md"];
-  slug: string;
-  body: string;
+  body?: string;
   collection: "recortes";
   data: InferEntrySchema<"recortes">;
   rendered?: RenderedContent;
@@ -245,9 +231,7 @@ declare module 'astro:content' {
 }>;
 "release-notes": Record<string, {
   id: string;
-  render(): Render[".md"];
-  slug: string;
-  body: string;
+  body?: string;
   collection: "release-notes";
   data: InferEntrySchema<"release-notes">;
   rendered?: RenderedContent;
@@ -285,6 +269,6 @@ declare module 'astro:content' {
 		LiveContentConfig['collections'][C]['loader']
 	>;
 
-	export type ContentConfig = typeof import("../src/content/config.js");
+	export type ContentConfig = typeof import("../src/content.config.js");
 	export type LiveContentConfig = never;
 }
