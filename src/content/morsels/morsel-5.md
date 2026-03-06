@@ -11,7 +11,7 @@ tags:
 My fifth morsel is called Black Fabric and it's a Python script that generates five randomised names that incorporate:
 
 * A fabric type as the first name
-* A common surname of African diasporan descent (ie. Black folks from the Americas (North and Central), the Caribbean, and the UK, whose ancestors were enslaved people)
+* A common surname of African diasporan descent (ie. Black folks from the UK, the US, Canada, the Caribbean, and other Central American countries whose ancestors were enslaved people)
 
 ## Requirements
 

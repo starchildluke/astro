@@ -14,7 +14,7 @@ And this is what I came up with. It's barebones and may or may not break but it'
 
 I've used a handful of words so if you have anymore suggestions, let me know!
 
-**Click the R button to generate a new name below:** <button id="r-button" aria-label="R button">R</button>
+<button id="generate" aria-label="Generate button">Generate</button>
 
 <div class="rom-name"></div>
 
@@ -37,7 +37,7 @@ function generateName() {
     romClass.textContent = romName;
 }
 
-let button = document.querySelector('#r-button');
+let button = document.querySelector('#generate');
 button.addEventListener("click", function() {
     generateName();
 })

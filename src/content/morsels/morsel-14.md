@@ -11,7 +11,7 @@ tags:
 
 I have to change text lists into Python lists a lot and I always do it in Sublime Text with some regex. But I'd rather have a quicker way to do it by pasting and clicking a button.
 
-So I made this, using the structure of the thumbnail grabber I made a few weeks ago. It takes a text list of strings and converts it into an array and then displays the array in a <code>pre</code> tag.
+So I made this! It takes a text list of strings and converts it into an array and then displays the array in a <code>pre</code> tag.
 
 _**Update - 7th Feb 2026**: so I realised today that this was susceptible to an XSS attack so I added a HTML sanitiser called [JS Html Sanitizer](https://github.com/jitbit/HtmlSanitizer)._
 
