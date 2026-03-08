@@ -148,7 +148,7 @@
 		"publisher": "Nintendo",
 		"genre": ["Platformer"],
 		"imageURL": "/images/gameslist/kirbys-dream-land-3.webp",
-		"status": "Playing",
+		"status": "Shelved",
 		"format": "Emulation",
 		"console": "SNES",
 		"dateBeaten": ""
@@ -236,7 +236,7 @@
 		"publisher": "Square Enix (then Square)",
 		"genre": ["RPG"],
 		"imageURL": "/images/gameslist/final-fantasy-x.webp",
-		"status": "Playing",
+		"status": "Shelved",
 		"format": "Emulation",
 		"console": "PS2",
 		"dateBeaten": ""
@@ -335,7 +335,7 @@
 		"publisher": "SNK",
 		"genre": ["Sports"],
 		"imageURL": "/images/gameslist/neo-turf-masters-250x250.webp",
-		"status": "Playing",
+		"status": "Shelved",
 		"format": "Emulation",
 		"console": "Neo Geo",
 		"dateBeaten": ""
@@ -426,6 +426,39 @@
 		"status": "Playing",
 		"format": "Emulation (dumped ROM)",
 		"console": "Nintendo DS",
+		"dateBeaten": ""
+	},
+	{
+		"name": "Dragon Quest Builders 2",
+		"developer": "Omega Force and Square Enix",
+		"publisher": "Square Enix",
+		"genre": ["Sandbox"],
+		"imageURL": "/images/gameslist/dragon-quest-builders-2-250x250.webp",
+		"status": "Playing",
+		"format": "Physical",
+		"console": "Nintendo Switch",
+		"dateBeaten": ""
+	},
+	{
+		"name": "Pokémon FireRed",
+		"developer": "Game Freak",
+		"publisher": "Nintendo",
+		"genre": ["RPG"],
+		"imageURL": "/images/gameslist/pokemon-firered-250x250.webp",
+		"status": "Playing",
+		"format": "Emulation",
+		"console": "Game Boy Advance",
+		"dateBeaten": ""
+	},
+	{
+		"name": "Rayman Legends",
+		"developer": "Ubisoft Montpellier",
+		"publisher": "Ubisoft",
+		"genre": ["Platformer"],
+		"imageURL": "/images/gameslist/rayman-legends-250x250.webp",
+		"status": "Playing",
+		"format": "Emulation",
+		"console": "PS Vita",
 		"dateBeaten": ""
 	}
 ]

@@ -1,0 +1,60 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import wall from '../data/lastfm-wall.json';
+import FormattedDate from '../components/FormattedDate.astro';
+
+// METADATA VARIABLES
+
+let title = 'My Last.fm Wall';
+let description = 'A "wall" of my top artists from the last week on Last.fm';
+
+const today = new Date(Date.now());
+const weekStart = new Date(new Date(today).setDate(today.getDate() - 7));
+---
+
+<style>
+
+	body {
+		background: #1a1a1a;
+		color: #b73460;
+		align-items: baseline;
+	}
+
+	a {
+		color: white;
+		font-weight: 700;
+	}
+
+	p {
+		text-align: left;
+	}
+	
+	.wall {
+		margin: 2rem;
+		font-size: 2.5rem;
+		font-weight: 900;
+		line-height: 1.4;
+	}
+
+	#brick:hover {
+		color: white;
+	}
+
+	span:not(#brick):after {
+		content: " · ";
+	}
+
+	.last-brick {
+		font-weight: 700;
+		list-height: 1.2;
+	}
+
+</style>
+
+<BaseHead title={title} description={description} />
+<p class="wall">{wall.map((data, i) => (
+	i < (wall.length - 1) ? <span><span id="brick">{data.name}</span></span> : <span id="brick">{data.name}</span>
+))}</p>
+<p class="last-brick">My Top 50 Artists this week<br>
+<FormattedDate date={weekStart}/> – <FormattedDate date={today} /><br>
+<a href="/">Go back home</a></p>
