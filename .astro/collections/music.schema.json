@@ -1,56 +1,29 @@
 {
-  "$ref": "#/definitions/music",
-  "definitions": {
-    "music": {
-      "type": "object",
-      "properties": {
-        "title": {
-          "type": "string"
-        },
-        "linerNotes": {
-          "type": "string"
-        },
-        "image": {
-          "type": "string"
-        },
-        "pubDate": {
-          "anyOf": [
-            {
-              "type": "string"
-            },
-            {
-              "anyOf": [
-                {
-                  "type": "string",
-                  "format": "date-time"
-                },
-                {
-                  "type": "string",
-                  "format": "date"
-                },
-                {
-                  "type": "integer",
-                  "format": "unix-time"
-                }
-              ]
-            }
-          ]
-        },
-        "url": {
-          "type": "string",
-          "format": "uri"
-        },
-        "$schema": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "title",
-        "linerNotes",
-        "pubDate"
-      ],
-      "additionalProperties": false
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "linerNotes": {
+      "type": "string"
+    },
+    "image": {
+      "type": "string"
+    },
+    "pubDate": {},
+    "url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "$schema": {
+      "type": "string"
     }
   },
-  "$schema": "http://json-schema.org/draft-07/schema#"
+  "required": [
+    "title",
+    "linerNotes",
+    "pubDate"
+  ],
+  "additionalProperties": false
 }
