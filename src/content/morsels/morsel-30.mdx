@@ -11,13 +11,13 @@ import Lede from '../../components/Lede.astro';
 
 <Lede>I did a bad thing but it came good in the end.</Lede> Let me explain.
 
-I updated the <code>transformers</code> Python package and noticed that one of my Streamlit apps, [RALTS](/posts/introducing-ralts/), returned an error:
+I updated the [transformers](https://pypi.org/project/transformers/) Python package and noticed that one of my Streamlit apps, [RALTS](/posts/introducing-ralts/), returned an error:
 
-```cli
+```console
 NameError: name 'nn' is not defined
 ```
 
-To cut a very long story short, my version of [PyTorch](https://pytorch.org/) was outdated for the latest version of [transformers](https://pypi.org/project/transformers/) but I was stuck on 2.2.2 and couldn't get access to a later version. Then I found out the wild intricacies of [x86_64 and AArch64](https://itsfoss.com/arm-aarch64-x86_64/) and spend many hours messing around with package installations.
+To cut a very long story short, my version of [PyTorch](https://pytorch.org/) was outdated for the latest version of transformers but I was stuck on 2.2.2 and couldn't get access to a later version. Then I found out the wild intricacies of [x86_64 and AArch64](https://itsfoss.com/arm-aarch64-x86_64/) and spend many hours messing around with package installations.
 
 Needless to say, I did some very unadvisable things and now I can't use transformers anymore. Boo. That meant RALTS couldn't work in its current form since it relied on a package called [PolyFuzz](https://maartengr.github.io/PolyFuzz/) and specifically its use of [SentenceTransformers](https://sbert.net/). So I had two options:
 
