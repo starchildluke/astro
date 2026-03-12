@@ -1,0 +1,64 @@
+---
+title: 'Morsel #30: When life gives you lemons, make embeddings!'
+description: 'Only try some of this at home'
+published: true
+pubDate: '11 Mar 2026'
+tags: ["Python", "tech", "AI"]
+---
+
+import Separator from '../../components/Separator.astro';
+import Lede from '../../components/Lede.astro';
+
+<Lede>I did a bad thing but it came good in the end.</Lede> Let me explain.
+
+I updated the <code>transformers</code> Python package and noticed that one of my Streamlit apps, [RALTS](/posts/introducing-ralts/), returned an error:
+
+```cli
+NameError: name 'nn' is not defined
+```
+
+To cut a very long story short, my version of [PyTorch](https://pytorch.org/) was outdated for the latest version of [transformers](https://pypi.org/project/transformers/) but I was stuck on 2.2.2 and couldn't get access to a later version. Then I found out the wild intricacies of [x86_64 and AArch64](https://itsfoss.com/arm-aarch64-x86_64/) and spend many hours messing around with package installations.
+
+Needless to say, I did some very unadvisable things and now I can't use transformers anymore. Boo. That meant RALTS couldn't work in its current form since it relied on a package called [PolyFuzz](https://maartengr.github.io/PolyFuzz/) and specifically its use of [SentenceTransformers](https://sbert.net/). So I had two options:
+
+1. Try again to get transformers working so everything could go back to normal
+2. Remove PolyFuzz altogether and just not have the functionality to compare found topics and my existing blog tags.
+
+Or there was a mystery third option!
+
+<figure>
+    <img src="/images/polyfuzz-logo.jpg" width="720" height="167" loading="lazy"/>
+</figure>
+
+You see, PolyFuzz also lets you use [a custom model for fuzzy matching](https://maartengr.github.io/PolyFuzz/tutorial/basematcher/basematcher/) and like anyone obsessed with embeddings, I had [Ollama](https://ollama.com/) installed and access to embeddings models. I already had a quantized version of [nomic-embed-text](https://ollama.com/library/nomic-embed-text) installed but had a look for any other models and found [all-minilm](https://ollama.com/library/all-minilm) which was by... SBERT aka SentenceTransformers! What's more, it was half the size of the [all-MiniLM-L6-v2](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2) model which I'd been using until now.
+
+Unfortunately, I was stuck on how to get it all to work as I'd relied on PolyFuzz's existing code and now I had to work out how to _generate_ the matches before I could make the dataframe to show them. This would be something an LLM could likely do in a matter of seconds with minimal-to-no prompt engineering (or whatever people call it these days.) But I didn't succumb and took my time—and breaks—until I finally got it. And here's what I came up with:
+
+```python
+class OllamaModel(BaseMatcher):
+    def match(self, from_list, to_list, **kwargs): 
+
+        embeddings_from = [np.array(embed) for embed in ollama.embed(model='all-minilm:latest', input=from_list)['embeddings']]
+        embeddings_to = [np.array(embed) for embed in ollama.embed(model='all-minilm:latest', input=to_list)['embeddings']]
+        
+        # Calculate distances
+        matches = [[cosine_similarity(from_vector, to_vector) for to_vector in embeddings_to] for from_vector in embeddings_from]
+
+        # Get best matches
+        mappings = [to_list[index] for index in np.argmax(matches, axis=1)]
+        scores = np.max(matches, axis=1)
+
+        # Prepare dataframe
+        matches = pd.DataFrame({'From': from_list,
+                                'To': mappings, 
+                                'Similarity': scores})
+        return matches
+```
+
+The gist is that I used all-minilm via ollama to generate the embeddings on two list of strings (one to map from and one to map against). From there, I used a simple cosine similarity function ([not scikit-learn's btw](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.pairwise.cosine_similarity.html)!) for each one to calculate all the distances and then copied PolyFuzz's code from the docs to find the best matches and put it into a Pandas dataframe.
+
+After testing, the scores came out great and were noticeably quicker (although I can't test it since I obviously don't have transformer to compare 😢). It also meant I didn't have to rely on HuggingFace as I could just use local Ollama models.
+
+While none of this was intended when I updated one (1) package, it made me realise that I could figure out a coding problem without needing the help of a chatbot and, sometimes, when life gives you lemons, you can make leaner embeddings out of them.
+
+<Separator sep="🍋 🍋 🍋" />

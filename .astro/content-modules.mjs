@@ -4,6 +4,7 @@ export default new Map([
 ["src/content/morsels/morsel-20.mdx", () => import("astro:content-layer-deferred-module?astro%3Acontent-layer-deferred-module=&fileName=src%2Fcontent%2Fmorsels%2Fmorsel-20.mdx&astroContentModuleFlag=true")],
 ["src/content/morsels/morsel-23.mdx", () => import("astro:content-layer-deferred-module?astro%3Acontent-layer-deferred-module=&fileName=src%2Fcontent%2Fmorsels%2Fmorsel-23.mdx&astroContentModuleFlag=true")],
 ["src/content/morsels/morsel-28.mdx", () => import("astro:content-layer-deferred-module?astro%3Acontent-layer-deferred-module=&fileName=src%2Fcontent%2Fmorsels%2Fmorsel-28.mdx&astroContentModuleFlag=true")],
+["src/content/morsels/morsel-30.mdx", () => import("astro:content-layer-deferred-module?astro%3Acontent-layer-deferred-module=&fileName=src%2Fcontent%2Fmorsels%2Fmorsel-30.mdx&astroContentModuleFlag=true")],
 ["src/content/posts/apis-vs-chatbots.mdx", () => import("astro:content-layer-deferred-module?astro%3Acontent-layer-deferred-module=&fileName=src%2Fcontent%2Fposts%2Fapis-vs-chatbots.mdx&astroContentModuleFlag=true")],
 ["src/content/posts/generative-ai-bored-privilege.mdx", () => import("astro:content-layer-deferred-module?astro%3Acontent-layer-deferred-module=&fileName=src%2Fcontent%2Fposts%2Fgenerative-ai-bored-privilege.mdx&astroContentModuleFlag=true")],
 ["src/content/posts/github-as-a-cms.mdx", () => import("astro:content-layer-deferred-module?astro%3Acontent-layer-deferred-module=&fileName=src%2Fcontent%2Fposts%2Fgithub-as-a-cms.mdx&astroContentModuleFlag=true")],
