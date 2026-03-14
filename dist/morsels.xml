@@ -1,4 +1,45 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>The coding morsels of Luke Alex Davis</title><description>My RSS feed of coding snippets.</description><link>https://lukealexdavis.co.uk/</link><item><title>Morsel #29: ROM website name generator</title><link>https://lukealexdavis.co.uk/posts/undefined/</link><guid isPermaLink="true">https://lukealexdavis.co.uk/posts/undefined/</guid><description>Click R to pay respects</description><pubDate>Wed, 07 Jan 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&amp;lt;style&amp;gt;.rom-name {font-weight: 700; text-align: center; font-size: 2rem;}&amp;lt;/style&amp;gt;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>The coding morsels of Luke Alex Davis</title><description>My RSS feed of coding snippets.</description><link>https://lukealexdavis.co.uk/</link><item><title>Morsel #30: When life gives you lemons, make embeddings!</title><link>https://lukealexdavis.co.uk/posts/undefined/</link><guid isPermaLink="true">https://lukealexdavis.co.uk/posts/undefined/</guid><description>Only try some of this at home</description><pubDate>Wed, 11 Mar 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import Separator from &apos;../../components/Separator.astro&apos;;
+import Lede from &apos;../../components/Lede.astro&apos;;&lt;/p&gt;
+&lt;p&gt;&amp;lt;Lede&amp;gt;I did a bad thing but it came good in the end.&amp;lt;/Lede&amp;gt; Let me explain.&lt;/p&gt;
+&lt;p&gt;I updated the &lt;a href=&quot;https://pypi.org/project/transformers/&quot;&gt;transformers&lt;/a&gt; Python package and noticed that one of my Streamlit apps, &lt;a href=&quot;/posts/introducing-ralts/&quot;&gt;RALTS&lt;/a&gt;, returned an error:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;NameError: name &apos;nn&apos; is not defined
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To cut a very long story short, my version of &lt;a href=&quot;https://pytorch.org/&quot;&gt;PyTorch&lt;/a&gt; was outdated for the latest version of transformers but I was stuck on 2.2.2 and couldn&apos;t get access to a later version. Then I found out the wild intricacies of &lt;a href=&quot;https://itsfoss.com/arm-aarch64-x86_64/&quot;&gt;x86_64 and AArch64&lt;/a&gt; and spend many hours messing around with package installations.&lt;/p&gt;
+&lt;p&gt;Needless to say, I did some very unadvisable things and now I can&apos;t use transformers anymore. Boo. That meant RALTS couldn&apos;t work in its current form since it relied on a package called &lt;a href=&quot;https://maartengr.github.io/PolyFuzz/&quot;&gt;PolyFuzz&lt;/a&gt; and specifically its use of &lt;a href=&quot;https://sbert.net/&quot;&gt;SentenceTransformers&lt;/a&gt;. So I had two options:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Try again to get transformers working so everything could go back to normal&lt;/li&gt;
+&lt;li&gt;Remove PolyFuzz altogether and just not have the functionality to compare found topics and my existing blog tags.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Or there was a mystery third option!&lt;/p&gt;
+&lt;p&gt;&amp;lt;figure&amp;gt;
+&amp;lt;img src=&quot;/images/polyfuzz-logo.jpg&quot; width=&quot;720&quot; height=&quot;167&quot; loading=&quot;lazy&quot;/&amp;gt;
+&amp;lt;/figure&amp;gt;&lt;/p&gt;
+&lt;p&gt;You see, PolyFuzz also lets you use &lt;a href=&quot;https://maartengr.github.io/PolyFuzz/tutorial/basematcher/basematcher/&quot;&gt;a custom model for fuzzy matching&lt;/a&gt; and like anyone obsessed with embeddings, I had &lt;a href=&quot;https://ollama.com/&quot;&gt;Ollama&lt;/a&gt; installed and access to embeddings models. I already had a quantized version of &lt;a href=&quot;https://ollama.com/library/nomic-embed-text&quot;&gt;nomic-embed-text&lt;/a&gt; installed but had a look for any other models and found &lt;a href=&quot;https://ollama.com/library/all-minilm&quot;&gt;all-minilm&lt;/a&gt; which was by... SBERT aka SentenceTransformers! What&apos;s more, it was half the size of the &lt;a href=&quot;https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2&quot;&gt;all-MiniLM-L6-v2&lt;/a&gt; model which I&apos;d been using until now.&lt;/p&gt;
+&lt;p&gt;Unfortunately, I was stuck on how to get it all to work as I&apos;d relied on PolyFuzz&apos;s existing code and now I had to work out how to &lt;em&gt;generate&lt;/em&gt; the matches before I could make the dataframe to show them. This would be something an LLM could likely do in a matter of seconds with minimal-to-no prompt engineering (or whatever people call it these days.) But I didn&apos;t succumb and took my time—and breaks—until I finally got it. And here&apos;s what I came up with:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;class OllamaModel(BaseMatcher):
+    def match(self, from_list, to_list, **kwargs): 
+
+        embeddings_from = [np.array(embed) for embed in ollama.embed(model=&apos;all-minilm:latest&apos;, input=from_list)[&apos;embeddings&apos;]]
+        embeddings_to = [np.array(embed) for embed in ollama.embed(model=&apos;all-minilm:latest&apos;, input=to_list)[&apos;embeddings&apos;]]
+        
+        # Calculate distances
+        matches = [[cosine_similarity(from_vector, to_vector) for to_vector in embeddings_to] for from_vector in embeddings_from]
+
+        # Get best matches
+        mappings = [to_list[index] for index in np.argmax(matches, axis=1)]
+        scores = np.max(matches, axis=1)
+
+        # Prepare dataframe
+        matches = pd.DataFrame({&apos;From&apos;: from_list,
+                                &apos;To&apos;: mappings, 
+                                &apos;Similarity&apos;: scores})
+        return matches
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The gist is that I used all-minilm via ollama to generate the embeddings on two list of strings (one to map from and one to map against). From there, I used a simple cosine similarity function (&lt;a href=&quot;https://scikit-learn.org/stable/modules/generated/sklearn.metrics.pairwise.cosine_similarity.html&quot;&gt;not scikit-learn&apos;s btw&lt;/a&gt;!) for each one to calculate all the distances and then copied PolyFuzz&apos;s code from the docs to find the best matches and put it into a Pandas dataframe.&lt;/p&gt;
+&lt;p&gt;After testing, the scores came out great and were noticeably quicker (although I can&apos;t test it since I obviously don&apos;t have transformer to compare 😢). It also meant I didn&apos;t have to rely on HuggingFace as I could just use local Ollama models.&lt;/p&gt;
+&lt;p&gt;While none of this was intended when I updated one (1) package, it made me realise that I could figure out a coding problem without needing the help of a chatbot and, sometimes, when life gives you lemons, you can make leaner embeddings out of them.&lt;/p&gt;
+&lt;p&gt;&amp;lt;Separator sep=&quot;🍋 🍋 🍋&quot; /&amp;gt;&lt;/p&gt;
+</content:encoded></item><item><title>Morsel #29: ROM website name generator</title><link>https://lukealexdavis.co.uk/posts/undefined/</link><guid isPermaLink="true">https://lukealexdavis.co.uk/posts/undefined/</guid><description>Click R to pay respects</description><pubDate>Wed, 07 Jan 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&amp;lt;style&amp;gt;.rom-name {font-weight: 700; text-align: center; font-size: 2rem;}&amp;lt;/style&amp;gt;&lt;/p&gt;
 &lt;p&gt;If you&apos;ve ever played video games using emulators, you may be familiar with ROM sites. Two of my favourite site names are Emuparadise and CDRomance. They give a very 2000s tropical/Aero Frutiger vibe and I thought “why not try to randomise some of those names myself?”&lt;/p&gt;
 &lt;p&gt;And this is what I came up with. It&apos;s barebones and may or may not break but it&apos;s safe (as far as I can tell) and you can try it out. For now, it&apos;s just bold text in randomised web safe fonts but I&apos;m hoping to add different colours in at some point.&lt;/p&gt;
 &lt;p&gt;I&apos;ve used a handful of words so if you have anymore suggestions, let me know!&lt;/p&gt;
