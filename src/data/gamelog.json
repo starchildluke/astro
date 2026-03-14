@@ -445,10 +445,10 @@
 		"publisher": "Nintendo",
 		"genre": ["RPG"],
 		"imageURL": "/images/gameslist/pokemon-firered-250x250.webp",
-		"status": "Playing",
+		"status": "Completed",
 		"format": "Emulation",
 		"console": "Game Boy Advance",
-		"dateBeaten": ""
+		"dateBeaten": "03/14/2026"
 	},
 	{
 		"name": "Rayman Legends",
@@ -460,5 +460,16 @@
 		"format": "Emulation",
 		"console": "PS Vita",
 		"dateBeaten": ""
+	},
+	{
+		"name": "Pokémon Heart & Soul",
+		"developer": "Lil Dill",
+		"publisher": "Nintendo",
+		"genre": ["RPG"],
+		"imageURL": "/images/gameslist/pokemon-heart-soul-250x250.webp",
+		"status": "Completed",
+		"format": "Emulation (ROM hack)",
+		"console": "GBA",
+		"dateBeaten": "03/13/2026"
 	}
 ]
