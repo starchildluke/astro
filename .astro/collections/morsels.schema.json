@@ -17,7 +17,9 @@
         "type": "string"
       }
     },
-    "pubDate": {},
+    "pubDate": {
+      "type": "string"
+    },
     "$schema": {
       "type": "string"
     }

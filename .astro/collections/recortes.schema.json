@@ -11,7 +11,9 @@
     "published": {
       "type": "boolean"
     },
-    "pubDate": {},
+    "pubDate": {
+      "type": "string"
+    },
     "latex": {
       "type": "boolean"
     },

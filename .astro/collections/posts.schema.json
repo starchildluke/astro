@@ -1,5 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$ref": "#/definitions/posts",
+  "definitions": {
+    "posts": {
   "type": "object",
   "properties": {
     "title": {
@@ -20,7 +23,9 @@
         "type": "string"
       }
     },
-    "pubDate": {},
+    "pubDate": {
+      "type": "string"
+    },
     "$schema": {
       "type": "string"
     }
@@ -31,4 +36,5 @@
     "pubDate"
   ],
   "additionalProperties": false
+}
 }

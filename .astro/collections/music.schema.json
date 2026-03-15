@@ -11,7 +11,9 @@
     "image": {
       "type": "string"
     },
-    "pubDate": {},
+    "pubDate": {
+      "type": "string"
+    },
     "url": {
       "type": "string",
       "format": "uri"
