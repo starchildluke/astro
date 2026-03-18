@@ -471,5 +471,27 @@
 		"format": "Emulation (ROM hack)",
 		"console": "GBA",
 		"dateBeaten": "03/13/2026"
+	},
+	{
+		"name": "Thomas the Tank Engine & Friends",
+		"developer": "Software Creations",
+		"publisher": "THQ",
+		"genre": "Kids",
+		"imageURL": "/images/gameslist/thomas-the-tank-engine-and-friends-250x250.webp",
+		"status": "Completed",
+		"format": "Emulation",
+		"console": "SNES",
+		"dateBeaten": "03/18/2026"
+	},
+	{
+		"name": "Blue's Clues: Blue's Alphabet Book",
+		"developer": "Vicarious Visions",
+		"publisher": "Mattel",
+		"genre": "Kids",
+		"imageURL": "/images/gameslist/blues-clues-blues-alphabet-book-250x250.webp",
+		"status": "Completed",
+		"format": "Emulation",
+		"console": "GBC",
+		"dateBeaten": "03/18/2026"
 	}
 ]
