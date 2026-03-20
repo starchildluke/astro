@@ -27,6 +27,5 @@
   "required": [
     "title",
     "pubDate"
-  ],
-  "additionalProperties": false
+  ]
 }

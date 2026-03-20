@@ -26,10 +26,19 @@
     "console": {
       "type": "string"
     },
-    "dateBeaten": {},
+    "dateBeaten": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "string",
+          "format": "date-time"
+        }
+      ]
+    },
     "$schema": {
       "type": "string"
     }
-  },
-  "additionalProperties": false
+  }
 }
