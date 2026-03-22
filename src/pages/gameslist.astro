@@ -49,7 +49,7 @@ const posts = await getCollection('games');
 		<h2>2026</h2>
 		<div class="games-grid">
           {gamelog.filter(
-          	game => game.status !== "Completed" || game.dateBeaten.includes(currentYear)
+          	game => (game.status === "Completed" && game.dateBeaten.includes(currentYear)) || game.status === "Playing"
           	).sort((a, b) => a.name.localeCompare(b.name)).map((game) => (
           <div class="data" id={game.status.replace(' ', '-').toLowerCase()}>
           	<div class="games-img__section">
@@ -71,7 +71,7 @@ const posts = await getCollection('games');
 		<GameSD />
 		<script>
 			const buttons = document.querySelectorAll('.games-filter');
-			const games = document.querySelectorAll('#playing, #actually-playing, #shelved, #completed');
+			const games = document.querySelectorAll('#playing, #actually-playing, #completed');
 
 			buttons.forEach(button => {
 			  button.addEventListener('click', () => {
