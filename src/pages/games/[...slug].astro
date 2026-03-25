@@ -74,7 +74,6 @@ const { Content } = await render(post);
         <dt>Publisher:</dt> <dd>{game.publisher}</dd>
         <dt>Genre:</dt> <dd>{game.genre}</dd>
         <dt>Status:</dt> <dd>{game.status}</dd>
-        <dt>Format:</dt> <dd>{game.format}</dd>
         <dt>Console:</dt> <dd>{game.console}</dd>
         {game.dateBeaten ? <dt>Date Beaten:</dt> <dd><FormattedDate date={game.dateBeaten}/></dd> : null}
       </dl>
