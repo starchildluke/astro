@@ -1,3 +1,0 @@
----
-name: "Metal Slug Advance"
----

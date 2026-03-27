@@ -1,3 +1,0 @@
----
-name: "Pokémon Heart & Soul"
----

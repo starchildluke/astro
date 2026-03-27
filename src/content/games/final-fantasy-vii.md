@@ -1,3 +1,0 @@
----
-name: Final Fantasy VII
----

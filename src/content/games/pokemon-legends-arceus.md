@@ -1,3 +1,0 @@
----
-name: "Pokémon Legends: Arceus"
----

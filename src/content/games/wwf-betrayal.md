@@ -1,3 +1,0 @@
----
-name: WWF Betrayal
----

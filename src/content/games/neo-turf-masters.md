@@ -1,3 +1,0 @@
----
-name: Neo Turf Masters
----

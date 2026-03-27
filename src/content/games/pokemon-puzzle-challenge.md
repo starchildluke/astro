@@ -1,3 +1,0 @@
----
-name: "Pokémon Puzzle Challenge"
----

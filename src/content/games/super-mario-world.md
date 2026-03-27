@@ -1,3 +1,0 @@
----
-name: Super Mario World
----

@@ -282,7 +282,6 @@ button:active #eject-symbol {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(300px, auto));
 	grid-row-gap: clamp(1rem, 3rem, 4rem);
-	grid-column-gap: clamp(0.5rem, 1rem, 2rem);
 	justify-content: center;
 	justify-items: center;
 	margin-bottom: 4rem;
@@ -295,7 +294,7 @@ button:active #eject-symbol {
 }
 
 .games-img {
-	height: 250px;
+	height: 200px;
 	margin-bottom: 1rem;
 	box-shadow: 0.5px 0.5px 0.8px hsl(var(--shadow-color) / 0.36), 1.4px 1.4px 2.2px -0.6px hsl(var(--shadow-color) / 0.36), 2.7px 2.9px 4.5px -1.2px hsl(var(--shadow-color) / 0.36), 5.6px 5.8px 9.1px -1.9px hsl(var(--shadow-color) / 0.36), 10.8px 11.3px 17.6px -2.5px hsl(var(--shadow-color) / 0.36);
 	border-radius: 10px;
@@ -311,8 +310,7 @@ img {
 	flex-wrap: wrap;
 	align-content: flex-start;
 	justify-content: center;
-	max-width: 250px;
-	height: 300px;
+	max-width: 200px;
 }
 
 .data p {

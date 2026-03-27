@@ -12,8 +12,6 @@ let title = 'Gameslist';
 let description = "A log of all the games I've been playing.";
 let currentYear = new Date().getFullYear().toString();
 
-const posts = await getCollection('games');
-
 ---
 
 <Games title={title} description={description} stylesheetURL="games.css">
@@ -54,11 +52,7 @@ const posts = await getCollection('games');
           <div class="data" id={game.status.replace(' ', '-').toLowerCase()}>
           	<div class="games-img__section">
           	<div class="games-img">
-          		{posts.filter(
-          			(post) => post.data.name == game.name).map(
-          			(post) => <a href=`/games/${post.id}/`><img src={game.imageURL ? game.imageURL : '/images/coming-soon.webp'} width="250" height="250" alt=`cover art for ${game.name} for the ${game.console}`></a>
-          			)
-          		}
+          		<img src={game.imageURL ? game.imageURL : '/images/coming-soon.webp'} width="200" height="200" alt=`cover art for ${game.name} for the ${game.console}`>
           	</div>
           </div>
           	<div class="games-text">
