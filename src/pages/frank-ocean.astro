@@ -12,7 +12,7 @@ let canonicalURL = Astro.url;
 
 ---
 
-<Layout title={title} description={description} canonicalURL={canonicalURL}>
+<Layout title={title} description={description} canonicalURL={canonicalURL} robotsTag='noindex, nofollow'>
 <style>.frank {text-align: center; font-family: Courier, fixed-width; color: var(--grey-nice); font-size: var(--font-size-sm); margin-block: var(--space-lg);}</style>
         <h1>{title}</h1>
         <p>This is my homage to Frank Ocean's movie list in <a href="https://www.reddit.com/r/criterion/comments/4z7mgy/frank_oceans_favorite_movies_from_boys_dont_cry/">his 2016 magazine, Boys Don't Cry</a>. But instead, I'm using the most used tags from my blogs as topics.</p>

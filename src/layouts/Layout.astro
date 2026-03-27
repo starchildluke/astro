@@ -19,7 +19,6 @@ const { title, metaTitle, description, pubDate, robotsTag, canonicalURL = Astro.
 ---
 <html lang="en-GB">
   <BaseHead {title} {metaTitle} {description} {canonicalURL} {robotsTag}/>
-  <StructuredData {title} {pubDate} />
   {canonicalURL.href.includes("jardim") ? <BreadcrumbsSD url={canonicalURL} /> : null}
   <body>
     <Header title={title} />
@@ -27,5 +26,6 @@ const { title, metaTitle, description, pubDate, robotsTag, canonicalURL = Astro.
       <slot />
   </main>
   <Footer/>
+  <StructuredData {title} {pubDate} />
   </body>
 </html>
