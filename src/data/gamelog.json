@@ -95,9 +95,9 @@
 		"publisher": "Sega",
 		"genre": ["Platformer"],
 		"imageURL": "/images/gameslist/sonic-3.webp",
-		"status": "Shelved",
+		"status": "Completed",
 		"console": "Sega Mega Drive/Genesis",
-		"dateBeaten": ""
+		"dateBeaten": "03/28/2026"
 	},
 	{
 		"name": "Final Fantasy",
@@ -390,7 +390,7 @@
 		"dateBeaten": ""
 	},
 	{
-		"name": "Pokémon FireRed",
+		"name": "Pok\u00e9mon FireRed",
 		"developer": "Game Freak",
 		"publisher": "Nintendo",
 		"genre": ["RPG"],
@@ -410,7 +410,7 @@
 		"dateBeaten": ""
 	},
 	{
-		"name": "Pokémon Heart & Soul",
+		"name": "Pok\u00e9mon Heart & Soul",
 		"developer": "Lil Dill",
 		"publisher": "Nintendo",
 		"genre": ["RPG"],
@@ -470,7 +470,7 @@
 		"dateBeaten": "03/23/2026"
 	},
 	{
-		"name": "Pokémon Puzzle Challenge",
+		"name": "Pok\u00e9mon Puzzle Challenge",
 		"developer": "Intelligent Systems",
 		"publisher": "Nintendo",
 		"genre": "Puzzle",
@@ -518,5 +518,45 @@
 		"status": "Completed",
 		"console": "SNES",
 		"dateBeaten": "03/26/2026"
+	},
+	{
+		"name": "Super Mario Advance 4: Super Mario Bros. 3",
+		"developer": "Nintendo",
+		"publisher": "Nintendo",
+		"genre": ["Platformer"],
+		"imageURL": "/images/gameslist/super-mario-advance-4-super-mario-bros-3.webp",
+		"status": "Completed",
+		"console": "GBA",
+		"dateBeaten": "03/27/2026"
+	},
+	{
+		"name": "Bonkers",
+		"developer": "Sun-L",
+		"publisher": "Capcom",
+		"genre": "Platformer",
+		"imageURL": "/images/gameslist/bonkers-250x250.webp",
+		"status": "Completed",
+		"console": "SNES",
+		"dateBeaten": "03/28/2026"
+	},
+	{
+		"name": "Hamtaro: Ham-Hams Unite!",
+		"developer": "Pax Softnica",
+		"publisher": "Nintendo",
+		"genre": "Adventure",
+		"imageURL": "/images/gameslist/hamtaro-ham-hams-unite-250x250.webp",
+		"status": "Completed",
+		"console": "GBC",
+		"dateBeaten": "03/29/2026"
+	},
+	{
+		"name": "Men In Black: The Series",
+		"developer": "Tiertex Design Studios",
+		"publisher": "Crave Entertainment",
+		"genre": "Platformer",
+		"imageURL": "/images/gameslist/men-in-black-250x250.webp",
+		"status": "Completed",
+		"console": "GBC",
+		"dateBeaten": "03/29/2026"
 	}
 ]
