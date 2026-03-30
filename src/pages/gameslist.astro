@@ -18,7 +18,7 @@ const gamelogFilter = gamelog.filter(
 ---
 
 <Games title={title} description={description} stylesheetURL="games.css">
-	<div class="container">
+	<main class="container">
 		<nav role="navigation" class="games__nav">
 				<ul class="games__nav-links">
 					<li><a href="/">← Back</a></li>
@@ -65,7 +65,7 @@ const gamelogFilter = gamelog.filter(
           </div>
           ))}
           </div>
-      </div>
+      </main>
 		<GameSD />
 		<script>
 			const buttons = document.querySelectorAll('.games-filter');
