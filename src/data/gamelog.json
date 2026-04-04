@@ -135,9 +135,9 @@
 		"publisher": "Nintendo",
 		"genre": ["Platformer"],
 		"imageURL": "/images/gameslist/kirbys-dream-land-3.webp",
-		"status": "Shelved",
+		"status": "Completed",
 		"console": "SNES",
-		"dateBeaten": ""
+		"dateBeaten": "04/04/2026"
 	},
 	{
 		"name": "Final Fantasy IV",
@@ -638,5 +638,15 @@
 		"status": "Completed",
 		"console": "GB",
 		"dateBeaten": "04/2/2026"
+	},
+	{
+		"name": "Spider-Man and Venom: Maximum Carnage",
+		"developer": "Software Creations",
+		"publisher": "Acclaim Entertainment",
+		"genre": "Beat-em-up",
+		"imageURL": "/images/gameslist/spider-man-venom-maximum-carnage-250x250.webp",
+		"status": "Completed",
+		"console": "SNES",
+		"dateBeaten": "04/04/2026"
 	}
 ]
