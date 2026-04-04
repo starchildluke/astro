@@ -588,5 +588,55 @@
 		"status": "Completed",
 		"console": "Sega Mega Drive",
 		"dateBeaten": "03/31/2026"
+	},
+	{
+		"name": "Adventures of Yogi Bear",
+		"developer": "Blue Turtle",
+		"publisher": "Cybersoft/Empire Interactive",
+		"genre": "Platformer",
+		"imageURL": "/images/gameslist/adventures-of-yogi-bear-250x250.webp",
+		"status": "Completed",
+		"console": "SNES",
+		"dateBeaten": "04/1/2026"
+	},
+	{
+		"name": "Color a Ninja",
+		"developer": "Slush.Filter",
+		"publisher": "",
+		"genre": ["Colouring", "Kids"],
+		"imageURL": "/images/gameslist/color-a-ninja-250x250.gif",
+		"status": "Completed",
+		"console": "NES",
+		"dateBeaten": "04/1/2026"
+	},
+	{
+		"name": "Taikong Zhanshi DX3 - Zuizhong Huanxiang",
+		"developer": "TD Software",
+		"publisher": "Guangzhou Licheng, Waixing",
+		"genre": "Beat-em-up",
+		"imageURL": "/images/gameslist/taikong-zhanshi-dx3-zuizhong-huanxiang-250x250.gif",
+		"status": "Completed",
+		"console": "GBC",
+		"dateBeaten": "04/1/2026"
+	},
+	{
+		"name": "The Death and Return of Superman",
+		"developer": "Blizzard Entertainment",
+		"publisher": "Sunsoft",
+		"genre": ["Beat-em-up", "Shoot-em-up"],
+		"imageURL": "/images/gameslist/the-death-and-return-of-superman-250x250.webp",
+		"status": "Completed",
+		"console": "SNES",
+		"dateBeaten": "04/1/2026"
+	},
+	{
+		"name": "An Autumn With You",
+		"developer": "leafthief",
+		"publisher": "leafthief",
+		"genre": "Adventure",
+		"imageURL": "/images/gameslist/an-autumn-with-you-250x250.gif",
+		"status": "Completed",
+		"console": "GB",
+		"dateBeaten": "04/2/2026"
 	}
 ]
