@@ -637,7 +637,7 @@
 		"imageURL": "/images/gameslist/an-autumn-with-you-250x250.gif",
 		"status": "Completed",
 		"console": "GB",
-		"dateBeaten": "04/2/2026"
+		"dateBeaten": "04/02/2026"
 	},
 	{
 		"name": "Spider-Man and Venom: Maximum Carnage",
@@ -648,5 +648,45 @@
 		"status": "Completed",
 		"console": "SNES",
 		"dateBeaten": "04/04/2026"
+	},
+	{
+		"name": "Sonic Blast Man II",
+		"developer": "ITL",
+		"publisher": "Taito",
+		"genre": "Beat-em-up",
+		"imageURL": "/images/gameslist/sonic-blast-man-ii-250x250.webp",
+		"status": "Completed",
+		"console": "SNES",
+		"dateBeaten": "04/05/2026"
+	},
+	{
+		"name": "Batman Returns",
+		"developer": "Malibu Interactive",
+		"publisher": "Sega",
+		"genre": "Platformer",
+		"imageURL": "/images/gameslist/batman-returns-250x250.webp",
+		"status": "Completed",
+		"console": "Sega Mega Drive/Genesis",
+		"dateBeaten": "04/06/2026"
+	},
+	{
+		"name": "Pokémon Puzzle League",
+		"developer": "Nintendo",
+		"publisher": "Nintendo",
+		"genre": "Puzzle",
+		"imageURL": "/images/gameslist/pokemon-puzzle-league-250x250.webp",
+		"status": "Completed",
+		"console": "N64",
+		"dateBeaten": "04/06/2026"
+	},
+	{
+		"name": "Daredevil",
+		"developer": "Griptonite Games",
+		"publisher": "Encore Software",
+		"genre": ["Beat-em-up", "Platformer"],
+		"imageURL": "/images/gameslist/daredevil-250x250.webp",
+		"status": "Completed",
+		"console": "GBA",
+		"dateBeaten": "04/07/2026"
 	}
 ]
