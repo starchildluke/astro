@@ -688,5 +688,45 @@
 		"status": "Completed",
 		"console": "GBA",
 		"dateBeaten": "04/07/2026"
+	},
+	{
+		"name": "Power Blade",
+		"developer": "Natsume",
+		"publisher": "Taito",
+		"genre": "Platformer",
+		"imageURL": "/images/gameslist/power-blade-250x250.gif",
+		"status": "Completed",
+		"console": "NES",
+		"dateBeaten": "04/07/2026"
+	},
+	{
+		"name": "Pokémon Kalos Crystal",
+		"developer": "Azure Keys",
+		"publisher": "Azure Keys",
+		"genre": "RPG",
+		"imageURL": "/images/gameslist/pokemon-kalos-crystal-250x250.png",
+		"status": "Completed",
+		"console": "GBC",
+		"dateBeaten": "04/07/2026"
+	},
+	{
+		"name": "Sonic & Knuckles",
+		"developer": "Sega",
+		"publisher": "Sega",
+		"genre": "Platformer",
+		"imageURL": "/images/gameslist/sonic-knuckles-250x250.webp",
+		"status": "Completed",
+		"console": "Sega Mega Drive/Genesis",
+		"dateBeaten": "04/09/2026"
+	},
+	{
+		"name": "Power Blade 2",
+		"developer": "Natsume",
+		"publisher": "Taito",
+		"genre": "Platformer",
+		"imageURL": "/images/gameslist/power-blade-2-250x250.gif",
+		"status": "Completed",
+		"console": "NES",
+		"dateBeaten": "04/09/2026"
 	}
 ]
