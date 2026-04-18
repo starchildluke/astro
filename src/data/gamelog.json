@@ -758,5 +758,35 @@
 		"status": "Completed",
 		"console": "SNES",
 		"dateBeaten": "04/12/2026"
+	},
+	{
+		"name": "Ristar",
+		"developer": "Sega",
+		"publisher": "Sega",
+		"genre": "Platformer",
+		"imageURL": "/images/gameslist/ristar-250x250.webp",
+		"status": "Completed",
+		"console": "Sega Mega Drive/Genesis",
+		"dateBeaten": "04/12/2026"
+	},
+	{
+		"name": "Michael Jackson's Moonwalker",
+		"developer": "Sega",
+		"publisher": "Sega",
+		"genre": ["Beat-em-up", "Platformer"],
+		"imageURL": "/images/gameslist/michael-jackson-moonwalker-250x250.webp",
+		"status": "Completed",
+		"console": "Sega Mega Drive/Genesis",
+		"dateBeaten": "04/15/2026"
+	},
+	{
+		"name": "Venom/Spider-Man: Separation Anxiety",
+		"developer": "Software Creations",
+		"publisher": "Acclaim Entertainment",
+		"genre": ["Beat-em-up", "Platformer"],
+		"imageURL": "/images/gameslist/venom-spider-man-separation-anxiety-250x250.webp",
+		"status": "Completed",
+		"console": "SNES",
+		"dateBeaten": "04/16/2026"
 	}
 ]

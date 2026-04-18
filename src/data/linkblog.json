@@ -1,5 +1,38 @@
 [
         {
+                "url": "https://verbasizer.com/",
+                "title": "Verbasizer",
+                "description": "The Verbasizer software, written by Ty Roberts and used by David Bowie to write his amazing songs.",
+                "quote": "yes",
+                "date": "2026-04-15",
+                "tags": [
+                        "language",
+                        "creativity"
+                ]
+        },
+        {
+                "url": "https://editor.p5js.org/isohedral/full/vJa5RiZWs",
+                "title": "XKCD Dependency",
+                "description": "Using p5.js, this makes the XKCD Dependency comic interactive",
+                "quote": "yes",
+                "date": "2026-04-15",
+                "tags": [
+                        "javascript",
+                        "the Web"
+                ]
+        },
+        {
+                "url": "https://www.highperformancewebfonts.com/",
+                "title": "High-Performance Web Fonts",
+                "description": "Tools and resources on how to use web fonts without sacrificing page loading speeds",
+                "quote": "yes",
+                "date": "2026-04-15",
+                "tags": [
+                        "typography",
+                        "the Web"
+                ]
+        },
+        {
                 "url": "https://aworkinglibrary.com/writing/loss-of-an-ideal",
                 "title": "Loss of an ideal",
                 "description": "The word \u2018burnout\u2019 has taken on so many meanings, become a kind of casual and generic refrain that seems to apply to everyone all the time, a condition of malaise and overwork that afflicts whole generations. But when first conceived the term had a more specific connotation.",
