@@ -58,8 +58,8 @@ const gamelogFilter = gamelog.filter(
           	<div class="games-img__section">
           	<div class="games-img">
           		{i < 4 ?
-          			<img src={game.imageURL ? game.imageURL : '/images/coming-soon.webp'} width="200" height="200" alt=`cover art for ${game.name} for the ${game.console}` fetchpriority="high"> :
-          			<img src={game.imageURL ? game.imageURL : '/images/coming-soon.webp'} width="200" height="200" alt=`cover art for ${game.name} for the ${game.console}` loading="lazy">
+          			<img src={game.imageURL ? game.imageURL : '/images/gameslist/coming-soon.webp'} width="200" height="200" alt=`cover art for ${game.name} for the ${game.console}` fetchpriority="high"> :
+          			<img src={game.imageURL ? game.imageURL : '/images/gameslist/coming-soon.webp'} width="200" height="200" alt=`cover art for ${game.name} for the ${game.console}` loading="lazy">
           		}
           	</div>
           </div>

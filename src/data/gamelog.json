@@ -788,5 +788,25 @@
 		"status": "Completed",
 		"console": "SNES",
 		"dateBeaten": "04/16/2026"
+	},
+	{
+		"name": "Darkman",
+		"developer": "Ocean Software",
+		"publisher": "Ocean Software",
+		"genre": ["Action", "Platformer"],
+		"imageURL": "/images/gameslist/darkman-250x250.webp",
+		"status": "Completed",
+		"console": "NES",
+		"dateBeaten": "04/18/2026"
+	},
+	{
+		"name": "Darkwing Duck",
+		"developer": "Capcom",
+		"publisher": "Capcom",
+		"genre": "Platformer",
+		"imageURL": "",
+		"status": "Completed",
+		"console": "NES",
+		"dateBeaten": "04/19/2026"
 	}
 ]
