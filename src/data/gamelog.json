@@ -804,9 +804,49 @@
 		"developer": "Capcom",
 		"publisher": "Capcom",
 		"genre": "Platformer",
-		"imageURL": "",
+		"imageURL": "/images/gameslist/darkwing-duck-250x250.webp",
 		"status": "Completed",
 		"console": "NES",
 		"dateBeaten": "04/19/2026"
+	},
+	{
+		"name": "Aaahh!!! Real Monsters",
+		"developer": "Realtime Associates",
+		"publisher": "Viacom New Media",
+		"genre": "Platformer",
+		"imageURL": "/images/gameslist/aaahh-real-monsters-250x250.webp",
+		"status": "Completed",
+		"console": "Mega Drive/Genesis",
+		"dateBeaten": "04/21/2026"
+	},
+	{
+		"name": "Wario Land II",
+		"developer": "Nintendo",
+		"publisher": "Nintendo",
+		"genre": "Platformer",
+		"imageURL": "/images/gameslist/wario-land-ii-250x250.webp",
+		"status": "Completed",
+		"console": "GBC",
+		"dateBeaten": "04/22/2026"
+	},
+	{
+		"name": "X-Men: Mutant Apocalypse",
+		"developer": "Capcom",
+		"publisher": "Capcom",
+		"genre": ["Beat-em-up", "Platformer"],
+		"imageURL": "/images/gameslist/x-men-mutant-apocalypse-250x250.webp",
+		"status": "Completed",
+		"console": "SNES",
+		"dateBeaten": "04/23/2026"
+	},
+	{
+		"name": "Dragon Warrior 1 & 2",
+		"developer": "Tose",
+		"publisher": "Enix",
+		"genre": "RPG",
+		"imageURL": "/images/gameslist/dragon-warrior-i-ii-250x250.webp",
+		"status": "Completed",
+		"console": "GBC",
+		"dateBeaten": "04/30/2026"
 	}
 ]
