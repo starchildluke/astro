@@ -405,7 +405,7 @@
 		"publisher": "Ubisoft",
 		"genre": ["Platformer"],
 		"imageURL": "/images/gameslist/rayman-legends-250x250.webp",
-		"status": "Playing",
+		"status": "Shelved",
 		"console": "PS Vita",
 		"dateBeaten": ""
 	},
@@ -848,5 +848,25 @@
 		"status": "Completed",
 		"console": "GBC",
 		"dateBeaten": "04/30/2026"
+	},
+	{
+		"name": "Turok: Rage Wars",
+		"developer": "Bit Managers",
+		"publisher": "Acclaim",
+		"genre": ["Run and gun", "Shoot 'em up"],
+		"imageURL": "/images/gameslist/turok-rage-wars-250x250.webp",
+		"status": "Completed",
+		"console": "GBC",
+		"dateBeaten": "05/04/2026"
+	},
+	{
+		"name": "The Amazing Spider-Man: Lethal Foes",
+		"developer": "Argent",
+		"publisher": "Epoch",
+		"genre": "Platformer",
+		"imageURL": "/images/gameslist/the-amazing-spider-man-lethal-foes-250x250.webp",
+		"status": "Completed",
+		"console": "SNES",
+		"dateBeaten": "05/04/2026"
 	}
 ]
