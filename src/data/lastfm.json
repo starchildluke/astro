@@ -59,7 +59,7 @@
                 ],
                 "mbid": "f4857fb9-e255-4dc6-bd01-e4ca7cc68544",
                 "url": "https://www.last.fm/music/Jamiroquai",
-                "playcount": 7192,
+                "playcount": 7196,
                 "@attr": {
                     "rank": "2"
                 },
@@ -123,7 +123,7 @@
                 ],
                 "mbid": "",
                 "url": "https://www.last.fm/music/Ahwlee",
-                "playcount": 4433,
+                "playcount": 4461,
                 "@attr": {
                     "rank": "4"
                 },
@@ -251,7 +251,7 @@
                 ],
                 "mbid": "f053ae01-dae6-4aae-9883-e8c279fdbef4",
                 "url": "https://www.last.fm/music/Seal",
-                "playcount": 3619,
+                "playcount": 3623,
                 "@attr": {
                     "rank": "8"
                 },
@@ -283,7 +283,7 @@
                 ],
                 "mbid": "f27ec8db-af05-4f36-916e-3d57f91ecf5e",
                 "url": "https://www.last.fm/music/Michael+Jackson",
-                "playcount": 2861,
+                "playcount": 2877,
                 "@attr": {
                     "rank": "9"
                 },
@@ -315,7 +315,7 @@
                 ],
                 "mbid": "e56aee57-d90e-40cf-a70d-beb70f6f3c69",
                 "url": "https://www.last.fm/music/KAYTRANADA",
-                "playcount": 2801,
+                "playcount": 2813,
                 "@attr": {
                     "rank": "10"
                 },
@@ -731,7 +731,7 @@
                 ],
                 "mbid": "776dbbce-25aa-411e-b344-ac9067d39f17",
                 "url": "https://www.last.fm/music/SiR",
-                "playcount": 1234,
+                "playcount": 1242,
                 "@attr": {
                     "rank": "23"
                 },
@@ -1371,7 +1371,7 @@
                 ],
                 "mbid": "",
                 "url": "https://www.last.fm/music/starchildluke",
-                "playcount": 559,
+                "playcount": 561,
                 "@attr": {
                     "rank": "43"
                 },
@@ -1529,11 +1529,43 @@
                         "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"
                     }
                 ],
+                "mbid": "503db56b-30dc-4fe5-a2c8-9579ea643c81",
+                "url": "https://www.last.fm/music/Jamie+Isaac",
+                "playcount": 521,
+                "@attr": {
+                    "rank": "48"
+                },
+                "name": "Jamie Isaac"
+            },
+            {
+                "streamable": "0",
+                "image": [
+                    {
+                        "size": "small",
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
+                    },
+                    {
+                        "size": "medium",
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
+                    },
+                    {
+                        "size": "large",
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
+                    },
+                    {
+                        "size": "extralarge",
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"
+                    },
+                    {
+                        "size": "mega",
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"
+                    }
+                ],
                 "mbid": "27613b78-1b9d-4ec3-9db5-fa0743465fdd",
                 "url": "https://www.last.fm/music/Herbie+Hancock",
                 "playcount": 517,
                 "@attr": {
-                    "rank": "48"
+                    "rank": "49"
                 },
                 "name": "Herbie Hancock"
             },
@@ -1565,41 +1597,9 @@
                 "url": "https://www.last.fm/music/Claude+Debussy",
                 "playcount": 515,
                 "@attr": {
-                    "rank": "49"
-                },
-                "name": "Claude Debussy"
-            },
-            {
-                "streamable": "0",
-                "image": [
-                    {
-                        "size": "small",
-                        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
-                    },
-                    {
-                        "size": "medium",
-                        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
-                    },
-                    {
-                        "size": "large",
-                        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
-                    },
-                    {
-                        "size": "extralarge",
-                        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"
-                    },
-                    {
-                        "size": "mega",
-                        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"
-                    }
-                ],
-                "mbid": "503db56b-30dc-4fe5-a2c8-9579ea643c81",
-                "url": "https://www.last.fm/music/Jamie+Isaac",
-                "playcount": 513,
-                "@attr": {
                     "rank": "50"
                 },
-                "name": "Jamie Isaac"
+                "name": "Claude Debussy"
             },
             {
                 "streamable": "0",
@@ -1755,7 +1755,7 @@
                 ],
                 "mbid": "fc9e3124-328f-44cf-9309-4b949a558361",
                 "url": "https://www.last.fm/music/B.+Cool-Aid",
-                "playcount": 466,
+                "playcount": 472,
                 "@attr": {
                     "rank": "55"
                 },
@@ -4025,13 +4025,13 @@
                         "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"
                     }
                 ],
-                "mbid": "efa2c11a-1a35-4b60-bc1b-66d37de88511",
-                "url": "https://www.last.fm/music/DJ+Shadow",
-                "playcount": 151,
+                "mbid": "ddabb56f-d457-4fc9-b4d0-19e5842f483e",
+                "url": "https://www.last.fm/music/Exile",
+                "playcount": 152,
                 "@attr": {
                     "rank": "126"
                 },
-                "name": "DJ Shadow"
+                "name": "Exile"
             },
             {
                 "streamable": "0",
@@ -4057,13 +4057,13 @@
                         "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"
                     }
                 ],
-                "mbid": "ddabb56f-d457-4fc9-b4d0-19e5842f483e",
-                "url": "https://www.last.fm/music/Exile",
+                "mbid": "efa2c11a-1a35-4b60-bc1b-66d37de88511",
+                "url": "https://www.last.fm/music/DJ+Shadow",
                 "playcount": 151,
                 "@attr": {
                     "rank": "127"
                 },
-                "name": "Exile"
+                "name": "DJ Shadow"
             },
             {
                 "streamable": "0",
@@ -12665,7 +12665,7 @@
                         "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"
                     }
                 ],
-                "mbid": "",
+                "mbid": "588dea29-eea3-456b-a815-3ee04f75c8e7",
                 "url": "https://www.last.fm/music/The+Doobie+Brothers",
                 "playcount": 51,
                 "@attr": {
@@ -32006,9 +32006,9 @@
             "user": "alex_ferguson",
             "totalPages": "11",
             "page": "1",
-            "total": "10247",
+            "total": "10255",
             "perPage": "1000"
         }
     },
-    "last updated": "14 May 2026"
+    "last updated": "19 May 2026"
 }
