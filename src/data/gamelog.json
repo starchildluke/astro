@@ -852,7 +852,7 @@
 	{
 		"name": "Turok: Rage Wars",
 		"developer": "Bit Managers",
-		"publisher": "Acclaim",
+		"publisher": "Acclaim Entertainment",
 		"genre": ["Run and gun", "Shoot 'em up"],
 		"imageURL": "/images/gameslist/turok-rage-wars-250x250.webp",
 		"status": "Completed",
@@ -892,7 +892,7 @@
 	{
 		"name": "Porky Pig's Haunted Holiday",
 		"developer": "Phoenix Interactive Entertainment",
-		"publisher": "Acclaim",
+		"publisher": "Acclaim Entertainment",
 		"genre": "Platformer",
 		"imageURL": "",
 		"status": "Completed",
@@ -968,5 +968,45 @@
 		"status": "Completed",
 		"console": "NES",
 		"dateBeaten": "05/18/2026"
+	},
+	{
+		"name": "Dragon Fighter",
+		"developer": "Natsume",
+		"publisher": "Towa Chiki",
+		"genre": "Platformer",
+		"imageURL": "",
+		"status": "Completed",
+		"console": "NES",
+		"dateBeaten": "05/18/2026"
+	},
+	{
+		"name": "Demolition Man",
+		"developer": "Alexandria Inc",
+		"publisher": "Acclaim Entertainment",
+		"genre": ["Shoot-em-up", "Platformer"],
+		"imageURL": "",
+		"status": "Completed",
+		"console": "Sega Mega Drive/Genesis",
+		"dateBeaten": "05/19/2026"
+	},
+	{
+		"name": "EightMan",
+		"developer": "Pallas",
+		"publisher": "SNK",
+		"genre": "Beat-em-up",
+		"imageURL": "",
+		"status": "Completed",
+		"console": "Arcade",
+		"dateBeaten": "05/20/2026"
+	},
+	{
+		"name": "SegaSonic Cosmo Fighter Galaxy Patrol",
+		"developer": "Sega",
+		"publisher": "Sega",
+		"genre": "Shoot-em-up",
+		"imageURL": "",
+		"status": "Completed",
+		"console": "Arcade",
+		"dateBeaten": "05/21/2026"
 	}
 ]
