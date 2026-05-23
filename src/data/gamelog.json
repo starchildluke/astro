@@ -874,7 +874,7 @@
 		"developer": "Jaleco Entertainment",
 		"publisher": "Jaleco",
 		"genre": "Platformer",
-		"imageURL": "",
+		"imageURL": "/images/gameslist/banishing-racer-250x250.webp",
 		"status": "Completed",
 		"console": "Game Boy",
 		"dateBeaten": "05/06/2026"
@@ -884,7 +884,7 @@
 		"developer": "Capcom",
 		"publisher": "Capcom",
 		"genre": "Beat-em-up",
-		"imageURL": "",
+		"imageURL": "/images/gameslist/the-punisher-250x250.webp",
 		"status": "Completed",
 		"console": "Arcade",
 		"dateBeaten": "05/06/2026"
@@ -894,7 +894,7 @@
 		"developer": "Phoenix Interactive Entertainment",
 		"publisher": "Acclaim Entertainment",
 		"genre": "Platformer",
-		"imageURL": "",
+		"imageURL": "/images/gameslist/porky-pigs-haunted-holiday-250x250.webp",
 		"status": "Completed",
 		"console": "SNES",
 		"dateBeaten": "05/07/2026"
@@ -904,7 +904,7 @@
 		"developer": "Natsume",
 		"publisher": "Taito",
 		"genre": "Platformer",
-		"imageURL": "",
+		"imageURL": "/images/gameslist/the-jetsons-cogswells-caper-250x250.webp",
 		"status": "Completed",
 		"console": "NES",
 		"dateBeaten": "05/08/2026"
@@ -914,9 +914,9 @@
 		"developer": "Act Japan",
 		"publisher": "Natsume Inc.",
 		"genre": "Platformer",
-		"imageURL": "",
+		"imageURL": "/images/gameslist/return-of-the-ninja-250x250.webp",
 		"status": "Completed",
-		"console": "NES",
+		"console": "GBC",
 		"dateBeaten": "05/10/2026"
 	},
 	{
@@ -924,7 +924,7 @@
 		"developer": "Kaneko",
 		"publisher": "Sammy",
 		"genre": "Beat-em-up",
-		"imageURL": "",
+		"imageURL": "/images/gameslist/dj-boy-250x250.webp",
 		"status": "Completed",
 		"console": "Sega Mega Drive/Genesis",
 		"dateBeaten": "05/10/2026"
@@ -934,7 +934,7 @@
 		"developer": "Telenet Japan",
 		"publisher": "Sega",
 		"genre": "Platformer",
-		"imageURL": "",
+		"imageURL": "/images/gameslist/valis-250x250.webp",
 		"status": "Completed",
 		"console": "Sega Mega Drive/Genesis",
 		"dateBeaten": "05/10/2026"
@@ -944,7 +944,7 @@
 		"developer": "Hect",
 		"publisher": "Hect",
 		"genre": "Sports",
-		"imageURL": "",
+		"imageURL": "/images/gameslist/3-pun-yosou-umaban-club-250x250.webp",
 		"status": "Completed",
 		"console": "Game Boy",
 		"dateBeaten": "05/17/2026"
@@ -954,7 +954,7 @@
 		"developer": "Capcom",
 		"publisher": "Capcom",
 		"genre": "Fighting",
-		"imageURL": "",
+		"imageURL": "/images/gameslist/pocket-fighter-250x250.webp",
 		"status": "Completed",
 		"console": "PS1",
 		"dateBeaten": "05/18/2026"
@@ -964,7 +964,7 @@
 		"developer": "Telenet Japan",
 		"publisher": "Sega",
 		"genre": "Shoot-em-up",
-		"imageURL": "",
+		"imageURL": "/images/gameslist/alien-syndrome-250x250.webp",
 		"status": "Completed",
 		"console": "NES",
 		"dateBeaten": "05/18/2026"
@@ -974,7 +974,7 @@
 		"developer": "Natsume",
 		"publisher": "Towa Chiki",
 		"genre": "Platformer",
-		"imageURL": "",
+		"imageURL": "/images/gameslist/dragon-fighter-250x250.webp",
 		"status": "Completed",
 		"console": "NES",
 		"dateBeaten": "05/18/2026"
@@ -984,7 +984,7 @@
 		"developer": "Alexandria Inc",
 		"publisher": "Acclaim Entertainment",
 		"genre": ["Shoot-em-up", "Platformer"],
-		"imageURL": "",
+		"imageURL": "/images/gameslist/demolition-man-250x250.webp",
 		"status": "Completed",
 		"console": "Sega Mega Drive/Genesis",
 		"dateBeaten": "05/19/2026"
@@ -994,7 +994,7 @@
 		"developer": "Pallas",
 		"publisher": "SNK",
 		"genre": "Beat-em-up",
-		"imageURL": "",
+		"imageURL": "/images/gameslist/eightman-250x250.gif",
 		"status": "Completed",
 		"console": "Arcade",
 		"dateBeaten": "05/20/2026"
@@ -1004,9 +1004,59 @@
 		"developer": "Sega",
 		"publisher": "Sega",
 		"genre": "Shoot-em-up",
-		"imageURL": "",
+		"imageURL": "/images/gameslist/segasonic-cosmo-fighter-galaxy-patrol-250x250.webp",
 		"status": "Completed",
 		"console": "Arcade",
 		"dateBeaten": "05/21/2026"
+	},
+	{
+		"name": "Midnight Resistance",
+		"developer": "Opera House",
+		"publisher": "Sega",
+		"genre": "Shoot-em-up",
+		"imageURL": "/images/gameslist/midnight-resistance-250x250.webp",
+		"status": "Completed",
+		"console": "Sega Mega Drive/Genesis",
+		"dateBeaten": "05/21/2026"
+	},
+	{
+		"name": "SegaSonic The Hedgehog",
+		"developer": "Sega",
+		"publisher": "Sega",
+		"genre": "Platformer",
+		"imageURL": "/images/gameslist/segasonic-the-hedgehog-250x250.webp",
+		"status": "Completed",
+		"console": "Arcade",
+		"dateBeaten": "05/21/2026"
+	},
+	{
+		"name": "WaiWai Drive",
+		"developer": "MOSS",
+		"publisher": "Sammy",
+		"genre": "Arcade",
+		"imageURL": "/images/gameslist/waiwai-drive-250x250.webp",
+		"status": "Completed",
+		"console": "Arcade",
+		"dateBeaten": "05/22/2026"
+	},
+	{
+		"name": "Avenging Spirit",
+		"developer": "Jaleco",
+		"publisher": "Jaleco",
+		"genre": "Platformer",
+		"imageURL": "/images/gameslist/avenging-spirit-250x250.webp",
+		"status": "Completed",
+		"console": "Game Boy",
+		"dateBeaten": "05/23/2026"
+	},
+	{
+		"name": "Jurassic Park",
+		"developer": "Sega",
+		"publisher": "Sega",
+		"genre": "Shoot-em-up",
+		"imageURL": "/images/gameslist/jurassic-park-250x250.webp",
+		"status": "Completed",
+		"console": "Arcade",
+		"dateBeaten": "05/23/2026"
 	}
 ]
