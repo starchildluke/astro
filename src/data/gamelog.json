@@ -375,7 +375,7 @@
 		"publisher": "Nintendo",
 		"genre": ["RPG"],
 		"imageURL": "/images/gameslist/golden-sun-dark-dawn-250x250.webp",
-		"status": "Playing",
+		"status": "Shelved",
 		"console": "Nintendo DS",
 		"dateBeaten": ""
 	},
@@ -385,7 +385,7 @@
 		"publisher": "Square Enix",
 		"genre": ["Sandbox"],
 		"imageURL": "/images/gameslist/dragon-quest-builders-2-250x250.webp",
-		"status": "Playing",
+		"status": "Shelved",
 		"console": "Nintendo Switch",
 		"dateBeaten": ""
 	},
@@ -1058,5 +1058,25 @@
 		"status": "Completed",
 		"console": "Arcade",
 		"dateBeaten": "05/23/2026"
+	},
+	{
+		"name": "Mario Power Tennis",
+		"developer": "Camelot Software Planning",
+		"publisher": "Nintendo",
+		"genre": "Sports",
+		"imageURL": "/images/gameslist/mario-power-tennis-250x250.webp",
+		"status": "Playing",
+		"console": "GameCube",
+		"dateBeaten": ""
+	},
+	{
+		"name": "Donald in Maui Mallard",
+		"developer": "Disney Software",
+		"publisher": "Sega",
+		"genre": "Platformer",
+		"imageURL": "/images/gameslist/donald-in-maui-mallard-250x250.webp",
+		"status": "Completed",
+		"console": "Sega Mega Drive/Genesis",
+		"dateBeaten": "05/25/2026"
 	}
 ]
