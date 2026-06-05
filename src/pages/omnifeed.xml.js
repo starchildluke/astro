@@ -7,88 +7,88 @@ import { getCollection } from 'astro:content';
 const parser = new MarkdownIt();
 
 const blogPosts = await getCollection('posts');
-  const lists = await getCollection("lists");
-  const mlogs = await getCollection("mlog");
-  const morsels = await getCollection("morsels");
-  const albums = await getCollection("music");
-  const recortes = await getCollection("recortes");
-  const releaseNotes = await getCollection("release-notes");
+const lists = await getCollection("lists");
+const mlogs = await getCollection("mlog");
+const morsels = await getCollection("morsels");
+const albums = await getCollection("music");
+const recortes = await getCollection("recortes");
+const releaseNotes = await getCollection("release-notes");
   
-  const posts = blogPosts.map((data) => {
-      const { slug, data: { title, pubDate, description } } = data;
+const posts = blogPosts.map((data) => {
+    const { id, data: { title, pubDate, description } } = data;
+    return {
+      title: title,
+      date: pubDate,
+      description: description,
+      url: `https://lukealexdavis.co.uk/posts/${id}/`
+    };
+  });
+
+const allLists = lists.map((data) => {
+    const { id, data: { title, pubDate, description } } = data;
+    return {
+      title: title,
+      date: pubDate,
+      description: description,
+      url: `https://lukealexdavis.co.uk/lists/${id}/`
+    };
+  });
+
+const allMlogs = mlogs.map((data) => {
+      const { id, data: { title, pubDate, description } } = data;
       return {
         title: title,
         date: pubDate,
         description: description,
-        url: `https://lukealexdavis.co.uk/posts/${slug}/`
+        url: `https://lukealexdavis.co.uk/mlog/${id}/`
       };
     });
 
-  const allLists = lists.map((data) => {
-      const { slug, data: { title, pubDate, description } } = data;
+const allMorsels = morsels.map((data) => {
+      const { id, data: { title, pubDate, description } } = data;
       return {
         title: title,
         date: pubDate,
         description: description,
-        url: `https://lukealexdavis.co.uk/lists/${slug}/`
+        url: `https://lukealexdavis.co.uk/morsels/${id}/`
       };
     });
 
-  const allMlogs = mlogs.map((data) => {
-        const { slug, data: { title, pubDate, description } } = data;
+const allRecortes = recortes.map((data) => {
+        const { id, data: { title, pubDate, description } } = data;
         return {
           title: title,
           date: pubDate,
           description: description,
-          url: `https://lukealexdavis.co.uk/mlog/${slug}/`
+          url: `https://lukealexdavis.co.uk/recortes/${id}/`
         };
       });
 
-  const allMorsels = morsels.map((data) => {
-        const { slug, data: { title, pubDate, description } } = data;
-        return {
-          title: title,
-          date: pubDate,
-          description: description,
-          url: `https://lukealexdavis.co.uk/morsels/${slug}/`
-        };
-      });
-  
-  const allRecortes = recortes.map((data) => {
-          const { slug, data: { title, pubDate, description } } = data;
-          return {
-            title: title,
-            date: pubDate,
-            description: description,
-            url: `https://lukealexdavis.co.uk/recortes/${slug}/`
-          };
-        });
+const allReleaseNotes = releaseNotes.map((data) => {
+      const { id, data: { title, pubDate, description } } = data;
+      return {
+        title: title,
+        date: pubDate,
+        description: description,
+        url: `https://lukealexdavis.co.uk/release-notes/${id}/`
+      };
+    });
 
-  const allReleaseNotes = releaseNotes.map((data) => {
-        const { slug, data: { title, pubDate, description } } = data;
-        return {
-          title: title,
-          date: pubDate,
-          description: description,
-          url: `https://lukealexdavis.co.uk/release-notes/${slug}/`
-        };
-      });
-
-  const allColls = [].concat(
-    posts, allLists, allMlogs, allMorsels, allRecortes, allReleaseNotes
-    ).sort((a, b) => b.date - a.date);
+console.log(posts);
 
 export async function GET(context) {
-    return rss({
-    title: site.title,
-    description: site.description,
-    site: context.site,
-    stylesheet: './style/linkblog-pretty-feed-v3.xsl',
-    items: allColls.map((post) => ({
-      title: post.title,
-      description: post.description,
-      link: post.url,
-      pubDate: post.date
-    }))
-    });
-  }
+  const allColls = [].concat(
+    posts, allLists, allMlogs, allMorsels, allRecortes, allReleaseNotes
+  );
+  return rss({
+  title: site.title,
+  description: site.description,
+  site: context.site,
+  items: allColls.map((post) => ({
+    title: post.title,
+    description: post.description,
+    link: post.url,
+    pubDate: post.date
+  })).sort((a, b) => b.pubDate - a.pubDate)
+  });
+}

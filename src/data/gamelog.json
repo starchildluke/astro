@@ -1078,5 +1078,65 @@
 		"status": "Completed",
 		"console": "Sega Mega Drive/Genesis",
 		"dateBeaten": "05/25/2026"
+	},
+	{
+		"name": "Superman",
+		"developer": "Taito",
+		"publisher": "Taito",
+		"genre": "Beat-em-up",
+		"imageURL": "/images/gameslist/superman-250x250.webp",
+		"status": "Completed",
+		"console": "Arcade",
+		"dateBeaten": "05/25/2026"
+	},
+	{
+		"name": "Valis III",
+		"developer": "Telenet Japan",
+		"publisher": "Sega",
+		"genre": "Platformer",
+		"imageURL": "/images/gameslist/valis-iii-250x250.webp",
+		"status": "Completed",
+		"console": "Sega Mega Drive/Genesis",
+		"dateBeaten": "05/26/2026"
+	},
+	{
+		"name": "Rushing Beat",
+		"developer": "Jaleco",
+		"publisher": "Jaleco",
+		"genre": "Beat-em-up",
+		"imageURL": "/images/gameslist/rushing-beat-250x250.webp",
+		"status": "Completed",
+		"console": "Arcade",
+		"dateBeaten": "05/27/2026"
+	},
+	{
+		"name": "Tale Spin",
+		"developer": "Capcom",
+		"publisher": "Capcom",
+		"genre": "Shoot-em-up",
+		"imageURL": "/images/gameslist/tale-spin-250x250.webp",
+		"status": "Completed",
+		"console": "Game Boy",
+		"dateBeaten": "06/02/2026"
+	},
+	{
+		"name": "Dyna Gear",
+		"developer": "Scarab",
+		"publisher": "Sammy",
+		"genre": "Run and gun",
+		"imageURL": "/images/gameslist/dyna-gear-250x250.webp",
+		"status": "Completed",
+		"console": "Arcade",
+		"dateBeaten": "06/03/2026"
+	},
+	{
+		"name": "X-Men 2: Clone Wars",
+		"developer": "Headgames",
+		"publisher": "Sega",
+		"genre": "Platformer",
+		"imageURL": "/images/gameslist/x-men-2-clone-wars-250x250.webp",
+		"status": "Completed",
+		"console": "Sega Mega Drive/Genesis",
+		"dateBeaten": "06/03/2026"
 	}
 ]
