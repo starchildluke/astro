@@ -26,5 +26,6 @@ export default new Map([
 ["src/content/recortes/the-near-infinity-of-pixels.mdx", () => import("astro:content-layer-deferred-module?astro%3Acontent-layer-deferred-module=&fileName=src%2Fcontent%2Frecortes%2Fthe-near-infinity-of-pixels.mdx&astroContentModuleFlag=true")],
 ["src/content/recortes/wander-in-porto.mdx", () => import("astro:content-layer-deferred-module?astro%3Acontent-layer-deferred-module=&fileName=src%2Fcontent%2Frecortes%2Fwander-in-porto.mdx&astroContentModuleFlag=true")],
 ["src/content/recortes/websites-like-service-stations.mdx", () => import("astro:content-layer-deferred-module?astro%3Acontent-layer-deferred-module=&fileName=src%2Fcontent%2Frecortes%2Fwebsites-like-service-stations.mdx&astroContentModuleFlag=true")],
-["src/content/recortes/where-theres-gold.mdx", () => import("astro:content-layer-deferred-module?astro%3Acontent-layer-deferred-module=&fileName=src%2Fcontent%2Frecortes%2Fwhere-theres-gold.mdx&astroContentModuleFlag=true")]]);
+["src/content/recortes/where-theres-gold.mdx", () => import("astro:content-layer-deferred-module?astro%3Acontent-layer-deferred-module=&fileName=src%2Fcontent%2Frecortes%2Fwhere-theres-gold.mdx&astroContentModuleFlag=true")],
+["src/content/release-notes/release-notes-25.mdx", () => import("astro:content-layer-deferred-module?astro%3Acontent-layer-deferred-module=&fileName=src%2Fcontent%2Frelease-notes%2Frelease-notes-25.mdx&astroContentModuleFlag=true")]]);
 		
