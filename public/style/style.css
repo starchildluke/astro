@@ -417,6 +417,7 @@ pre > code:not([class*="language"]) {
 }
 
 pre {
+	background: var(--grey-code);
 	position: relative;
 	color: #f3f4f6;
 	padding: var(--space-md);
