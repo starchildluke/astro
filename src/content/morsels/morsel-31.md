@@ -10,6 +10,7 @@ tags: ['JavaScript', 'sport', 'gaming']
 	.picker {border: 2px solid green; border-radius: 10px; background: rgba(0,255,0,0.1); margin-bottom: 2rem; padding: 1rem; text-align: center; font-size: 1.5rem;}
 	.flags, .team {font-size: 2rem;}
 	.flags span {cursor: pointer;}
+	.flag-img {display: inline; vertical-align: center;}
 	.team {font-weight: 700;}
 </style>
 
@@ -39,7 +40,8 @@ No generative AI or chatbot suggestions was used in the making of this (but I Go
     .then((data) => {
     	const flags = data.filter(
     			(item) => item.cm && item.teams.length).flatMap(
-    		(item) => `<span id=${item.name}>${item.flag}</span>`).join(' ');
+    				(item) => 
+    					item.flag ? `<span id=${item.name}>${item.flag}</span>` : `<span id=${item.name}><img id=${item.name} src=${item.svg} alt="flag of ${item.name}" width="32" class="flag-img" /></span>`).join(' ');
     	const flagsEl = document.querySelector('.flags')
     	flagsEl.innerHTML = flags;
     	flagsEl.addEventListener("click", function (e) {

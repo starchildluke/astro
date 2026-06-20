@@ -91,6 +91,7 @@
 }, {
     "name": "england",
     "flag": "",
+    "svg": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzIiIGhlaWdodD0iNzIiIHZpZXdCb3g9IjAgMCA3MiA3MiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBmaWxsPSIjZmZmIiBkPSJNNSAxN2g2MnYzOEg1eiIvPjxwYXRoIGZpbGw9IiNkMjJmMjciIHN0cm9rZT0iI2QyMmYyNyIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2Utd2lkdGg9IjIiIGQ9Ik02NyAzM0gzOVYxN2gtNnYxNkg1djZoMjh2MTZoNlYzOWgyOHoiLz48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiMwMDAiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIyIiBkPSJNNSAxN2g2MnYzOEg1eiIvPjwvc3ZnPg==",
     "teams": ["AFC Wimbledon", "Nottingham Forest", "Leeds United", "Newcastle United", "Blackburn Rovers", "Aston Villa", "Everton", "Preston North End", "Huddersfield Town", "Wolverhampton Wanderers", "Sunderland", "Burnley", "Ipswich Town"],
     "cm": true,
     "fm": true
@@ -198,8 +199,8 @@
     "fm": true
 }, {
     "name": "n.ireland",
-    "flag": "",
-    "teams": ["Dundela", "Larne", "Ballyclare Comrades", "Linfield Swifts", "Glenavon", "Lisburn Distillery", "Barry Town", "Cwmbran Town", "Airbus UK Broughton", "Cardiff Met"],
+    "flag": "🇬🇧",
+    "teams": ["Glentoran", "Cliftonville", "Lisburn Distillery F.C.", "Glenavon F.C.", "Derry City F.C."],
     "cm": true,
     "fm": true
 }, {
@@ -247,6 +248,7 @@
 }, {
     "name": "scotland",
     "flag": "",
+    "svg": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzIiIGhlaWdodD0iNzIiIHZpZXdCb3g9IjAgMCA3MiA3MiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBmaWxsPSIjMWU1MGEwIiBkPSJNNSAxN2g2MnYzOEg1eiIvPjxwYXRoIGZpbGw9IiNmZmYiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBkPSJNMTAuNiA1NC43MmMtNS41OTkuMy01LjU5OS4zLTUuNjQ1LTMuNzc0bDU2LjE1LTMzLjY5YzQuNDY4LjEzMiA2LjIwOC0uODA5IDUuODQzIDMuNjc0eiIvPjxwYXRoIGZpbGw9IiNmZmYiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBkPSJNMTAuMyAxNy4wM2MtNS4zMDEtLjAzMy01LjMwMS0uMDMzLTUuNDMyIDMuOTA0bDU2LjkgMzQuMTNjNS4yMzUtLjA2NSA1LjIzNS0uMDY1IDUuMjAyLTQuMDE4eiIvPjxwYXRoIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzAwMCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjIiIGQ9Ik01IDE3aDYydjM4SDV6Ii8+PC9zdmc+",
     "teams": ["Queen's Park", "Aberdeen", "Third Lanark", "Kilmarnock", "Dumbarton", "Hibernian"],
     "cm": true,
     "fm": true
@@ -337,7 +339,8 @@
 }, {
     "name": "wales",
     "flag": "",
-    "teams": [],
+    "svg": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzIiIGhlaWdodD0iNzIiIHZpZXdCb3g9IjAgMCA3MiA3MiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBmaWxsPSIjNWM5ZTMxIiBkPSJNNSAxN2g2MnYzOEg1eiIvPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik01IDE3aDYydjE5SDV6Ii8+PHBhdGggZmlsbD0iI2QyMmYyNyIgc3Ryb2tlPSIjZDIyZjI3IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMiIgZD0iTTU5IDI3LjVWMjNsLTIuNzY5IDMuNDYyeiIvPjxlbGxpcHNlIGN4PSI1MyIgY3k9IjMxIiBmaWxsPSJub25lIiBzdHJva2U9IiNkMjJmMjciIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIyIiByeD0iMS41IiByeT0iMSIvPjxwYXRoIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2QyMmYyNyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjIiIGQ9Ik01OCAyNmMtMS4yODMgMy43MjQtMi43NDQgNi01IDZtMCAxOGwtMi0xaC0zbC0zIDEuNW0zLTEuNWwtMi0xbTUgMWwtMy05TTM4IDUwbC0yLTFoLTNsLTMgMS41bTMtMS41bC0yLTFtLTggMmwtMi0xaC0zbC0zIDEuNW0zLTEuNWwtMi0xbTUgMWw2LTZtLTYgNmwzLTZtLTEwLTVsMS0ydi0zbC0xLjUtM20xLjUgM2wxLTJtLTEgNWw2IDVtLTktMThhNCA0IDAgMCAwIDQgNG0wIDBoMiIvPjxwYXRoIGZpbGw9IiNkMjJmMjciIHN0cm9rZT0iI2QyMmYyNyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjIiIGQ9Im00MiAyMWwtNi41ODYgNi41ODZBNS41NyA1LjU3IDAgMCAwIDM0IDMxdjFhMyAzIDAgMCAxLTMgM2gtNFYyM2gtNWwtNCA0aDZjMCA0LjQwMy0zIDQuNTQzLTMgMTB2NmgxM2wzLjM4NSAyLjUzOUwzNiA0OWw1LTVjLTIuNS0xLjYxOS0xLjExOC00LjUgMS01YzIuMzM4IDIuNDQ3IDYgMyA5IDN2LTEuNUw0NiAzOGg3di0yYy0zLjg1NyAwLTUuMTQzLTEtOS0xYTQgNCAwIDAgMSA0LTRjLTIuNzk2LTIuMzI3LS4yNjYtNi44NzIgMy05Yy0zIDItNC41IDMtNi41IDNjLTEuNzQ1IDAtMi41LTEuMjk3LTIuNS00Ii8+PHBhdGggZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZDIyZjI3IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMiIgZD0ibTQxIDQ0bDIgMW04IDR2LTguNW0wIDBsMyAxLjVtLTEtNmMyLjU5MSAwIDQuMzI3LTIuNTUzIDMuMzY2LTQuMTYyIi8+PHBhdGggZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZDIyZjI3IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMiIgZD0iTTUzIDMwYTQgNCAwIDAgMSAwIDhNMjcgMjNsMS0xbTYgMjFIMjFhMi4yIDIuMiAwIDAgMS0xLjU4MS0uODE0TDE1IDM2Ii8+PHBhdGggZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMDAwIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMiIgZD0iTTUgMTdoNjJ2MzhINXoiLz48L3N2Zz4=",
+    "teams": ["Cwmbran Town", "Llanelli", "Rhyl", "Bangor City", "Barry Town United"],
     "cm": true,
     "fm": true
 }]
