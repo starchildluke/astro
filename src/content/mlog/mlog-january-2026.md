@@ -3,7 +3,7 @@ title: 'Mlog #008: January 2026'
 description: "My media log for January 2026."
 published: true
 pubDate: '17 Jan 2026'
-tags: ["music", "gaming", "film"]
+tags: ["music", "gaming", "film", "books"]
 ---
 
 Here is my mlog for January 2026.

@@ -4,8 +4,8 @@ description: "Things I'd want if I was rich."
 pubDate: '22 Aug 2020'
 tags: ['art']
 ---
-<figure style="aspect-ratio: 1.15:1;">
-	<img src="/images/keith-haring.jpeg" alt="" loading="eager"/>
+<figure class="img-center">
+	<img src="/images/keith-haring.jpeg" fetchpriority="high" alt="keith haring print showing characters in the see not evil, hear no evil, speak no evil stances" />
 	<figcaption>Keith Haring - POP SHOP III (3), 1989 SCREENPRINT</figcaption>
 </figure>
 

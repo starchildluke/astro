@@ -10,7 +10,7 @@ tags:
 
 I was trying to create a data report and needed to tick checkboxes to include certain information. Unfortunately, there were over 500 boxes and no option for selecting all of them so I Googled how to do it using JavaScript + the browser console.
 
-[Stack Overflow came through for me](https://stackoverflow.com/questions/386281/how-to-implement-select-all-check-box-in-html) and I thought I'd share the answer here (thanks to [ashleedawg](https://stackoverflow.com/users/8112776/ashleedawg)):
+[Stack Overflow came through for me](https://stackoverflow.com/questions/386281/how-to-implement-a-select-all-checkbox-in-html) and I thought I'd share the answer here (thanks to [ashleedawg](https://stackoverflow.com/users/8112776/ashleedawg)):
 
 **How to tick all checkboxes in your browser**:
 

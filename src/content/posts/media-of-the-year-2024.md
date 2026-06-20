@@ -7,8 +7,9 @@ tags:
   - music
   - film
   - gaming
+  - books
 ---
-FOMO is real and that's why I'm here: to bring you an end of year list of my favourite media from 2024. It won't be as comprehensive as [some of the lists I've read](http://www.toomanywires.co.uk/2024/12/the-best-worst-games-of-2024.html) but I wanted to log my favourites anyway.
+FOMO is real and that's why I'm here: to bring you an end of year list of my favourite media from 2024. It won't be as comprehensive as [some of the lists I've read](https://www.toomanywires.co.uk/2024/12/the-best-worst-games-of-2024.html) but I wanted to log my favourites anyway.
 
 ## Film of the year: Sonic 3
 

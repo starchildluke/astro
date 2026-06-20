@@ -8,7 +8,7 @@ tags: ['music', 'questions']
 
 Going through my blog feed, I noticed an article from DIY Photography entitled ["If nobody cared, would you still take pictures?"](https://www.diyphotography.net/nobody-cared-still-take-pictures/). That's a pertinent question and something I've often asked myself from a musical perspective.     
 
-I started seriously making music in 2010 after undertaking a Music Tech course. I released 9 albums between 2011-2013. I was in the zone and enjoyed making the music, promoting it and the feedback I gained. My highlight was ranking [#11 in Potholes In My Blog's Top 50 Instrumental Albums list](http://potholesinmyblog.com/top-25-instrumental-albums-of-2012/4/) which I didn't see coming at all.          
+I started seriously making music in 2010 after undertaking a Music Tech course. I released 9 albums between 2011-2013. I was in the zone and enjoyed making the music, promoting it and the feedback I gained. My highlight was ranking [#11 in Potholes In My Blog's Top 50 Instrumental Albums list](https://web.archive.org/web/20130115041357/http://potholesinmyblog.com/top-25-instrumental-albums-of-2012/4/) which I didn't see coming at all.          
 
 But from late 2013, I hit a slump. I had less time to make music, a long distance relationship to maintain and found myself in a motivational rut. I tried forcing through it and that made it worse. Music production became repulsive to me; my body started rejecting the keys and the pads. In 2014, I released 2 albums. In 2015, just the one. Music was holding less of a place in my life and while I continued listening, even that was reduced.           
 

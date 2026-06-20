@@ -19,7 +19,7 @@ If you're looking for a quick RPG to get you through a weekend, look no further 
 * I Am Setsuna ([Switch](https://www.nintendo.com/en-gb/Games/Nintendo-Switch-download-software/I-am-Setsuna-1176688.html) | [Steam](https://store.steampowered.com/app/441830/I_am_Setsuna/))
 * Mass Effect ([Amazon Affiliate link](https://www.amazon.co.uk/Mass-Effect-Value-Games-DVD/dp/B0035LBM44?crid=2MLOFPW1GLQ7G&qid=1693877157&sprefix=mass+effect+1%2Caps%2C84&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1&linkCode=ll1&tag=liofast-21&linkId=0c86043e5c1911aa0f7aef45de307e4b&language=en_GB&ref_=as_li_ss_tl) | [Steam](https://store.steampowered.com/app/17460/Mass_Effect_2007/))
 * [Pokémon Red/Blue/Yellow](https://www.pokemon.com/us/pokemon-video-games/pokemon-red-version-and-pokemon-blue-version)
-* [Secret of Mana](https://store.steampowered.com/app/637670/Secret_of_Mana/)
+* Secret of Mana
 * [Shadowrun: Dragonfall](https://store.steampowered.com/app/300550/Shadowrun_Dragonfall__Directors_Cut/)
 * [Suikoden](https://store.steampowered.com/app/1932640/Suikoden_III_HD_Remaster_Gate_Rune_and_Dunan_Unification_Wars/)
 * [Super Mario RPG](https://www.nintendo.com/en-gb/Games/Nintendo-Switch-games/Super-Mario-RPG-2403952.html)

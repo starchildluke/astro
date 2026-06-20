@@ -13,7 +13,7 @@ The journey has become a pilgrimage of sorts. But the experience is more spiritu
 ## Saturday - Sábado
 
 <figure>
-	<img src="/images/pizza-wizard.jpg" loading="eager" alt="two slices of pizza on a white plate">
+	<img src="/images/pizza-wizard.jpg" fetchpriority="high" alt="two slices of pizza on a white plate">
 	<figcaption>They really are pizza wizards!</figcaption>
 </figure>
 

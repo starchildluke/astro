@@ -660,6 +660,10 @@ p.publish-date {
 	align-items: center;
 }
 
+.img-center {
+	margin-inline: auto;
+}
+
 .sprites img {
 	max-width: 64px;
 }

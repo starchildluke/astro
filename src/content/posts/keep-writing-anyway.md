@@ -3,7 +3,7 @@ title: 'Keep writing anyway'
 description: "Writing is a marathon, not a sprint, or a less tired analogy."
 published: true
 pubDate: '3 Feb 2022'
-tags: ['blogging', 'writing']
+tags: ['blogging', 'writing', 'hippos']
 ---
 
 I've been poking fun at SEOs that post contextless Google Search Console graphs on LinkedIn to demonstrate their authority and achievement. Congrats, you have pages that are indexable and they've been crawled and indexed!

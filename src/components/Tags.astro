@@ -23,6 +23,10 @@ const morsels = await getCollection('morsels', ({ data }) => {
   return data.tags?.includes(tagName);
 });
 
+const mlogs = await getCollection('mlog', ({ data }) => {
+  return data.tags?.includes(tagName);
+});
+
 const collator = Intl.Collator([], {numeric: true});
 
 const allPosts = [
@@ -31,6 +35,7 @@ const allPosts = [
   ...lists.map(item => ({ ...item, type: 'lists' })),
   ...notes.map(item => ({ ...item, type: 'release-notes' })),
   ...morsels.map(item => ({ ...item, type: 'morsels' })),
+  ...mlogs.map(item => ({ ...item, type: 'mlog' })),
 ];
 
 const allSortedPosts = allPosts.sort((a, b) => collator.compare(a.data.title, b.data.title));

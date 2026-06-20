@@ -3,7 +3,7 @@ title: 'Mlog #004: March 2024'
 description: "My mlog for March 2024."
 published: true
 pubDate: '04 Apr 2024'
-tags: ["music", "gaming", "film"]
+tags: ["music", "gaming", "film", "books"]
 ---
 
 Here is my media log (mlog) for March.
@@ -12,7 +12,7 @@ Here is my media log (mlog) for March.
 
 I watched 9 movies last month as a distraction from my generally crap mood for March.
 
-You can check [my Letterboxd diary on their main site](https://letterboxd.com/lukealexdavis/films/diary/for/2024/03/) or [my historical diaries on my site](/letterboxd-diaries/) but here's a quick list:
+You can check [my Letterboxd diary on their main site](https://letterboxd.com/lukealexdavis/diary/for/2024/03/) or [my historical diaries on my site](/letterboxd-diaries/) but here's a quick list:
 
 * Charlotte's Web
 * Happy Death Day

@@ -3,9 +3,6 @@ import Layout from '../../layouts/Layout.astro';
 import FormattedDate from '../../components/FormattedDate.astro';
 import { getCollection } from 'astro:content';
 
-let title = 'Morsels';
-let description = "A list of code snippets and scripts I've written. Not too big, not too small. They're like tasty morsels.";
-
 export async function getStaticPaths({paginate}) {
   const allPosts = await getCollection('morsels');
   const sortedPosts = allPosts.sort((a, b) => new Date(b.data.pubDate) - new Date(a.data.pubDate));
@@ -13,6 +10,9 @@ export async function getStaticPaths({paginate}) {
 }
 
 const { page } = Astro.props;
+
+let title = page.url.prev ? `Morsels (Page ${page.currentPage}/${page.lastPage})` : 'Morsels';
+let description = "A list of code snippets and scripts I've written. Not too big, not too small. They're like tasty morsels.";
 ---
 <Layout title={title} description={description}>
 <div class="title-meta">

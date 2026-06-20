@@ -3,7 +3,7 @@ title: 'Mlog #005: August 2024'
 description: "My mlog for August 2024."
 published: true
 pubDate: '01 Sep 2024'
-tags: ["music", "gaming", "film"]
+tags: ["music", "gaming", "film", "books"]
 ---
 
 Here is my media log (mlog) for August.
@@ -12,7 +12,7 @@ Here is my media log (mlog) for August.
 
 I watched 4 movies last month and all but one was with my son.
 
-You can check [my Letterboxd diary on their main site](https://letterboxd.com/lukealexdavis/films/diary/for/2024/08/) or [my historical diaries on my site](/letterboxd-diaries/) but here's a quick list:
+You can check [my Letterboxd diary on their main site](https://letterboxd.com/lukealexdavis/diary/for/2024/08/) or [my historical diaries on my site](/letterboxd-diaries/) but here's a quick list:
 
 * Despicable Me 4 
 * Alien: Romulus

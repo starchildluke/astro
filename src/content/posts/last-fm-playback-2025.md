@@ -38,7 +38,7 @@ Apparently, that's enough to fill 490 cassette tapes and fly to the moon 9 times
 ## My top artist was...
 
 <figure style="text-align:center;">
-	<a href="https://bumps.bandcamp.com/">
+	<a href="https://bumps.bandcamp.com/music">
 		<img src="/images/ahwlee.webp" loading="eager" alt="a Black man peeking behind some tall grass" width="500" height="335">
 	</a>
 </figure>

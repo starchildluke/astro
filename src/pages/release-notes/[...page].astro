@@ -9,10 +9,11 @@ export async function getStaticPaths({paginate}) {
   return paginate(sortedPosts, { pageSize: 25 });
 }
 
-const title = 'Release Notes';
+const { page } = Astro.props;
+
+const title = page.url.prev ? `Release Notes (Page ${page.currentPage}/${page.lastPage})` : 'Release Notes';
 const description = "Inspired by Alice Bartlett's and Monica Dinculescu's 'weaknotes', I decided to do my own spin on the concept. My release notes are a place where I just rant and let things out.";
 
-const { page } = Astro.props;
 ---
 <Layout title={title} description={description}>
           <div class="title-meta">

@@ -3,7 +3,7 @@ title: 'Mlog #007: September 2025'
 description: "My mlog for September 2025."
 published: true
 pubDate: '20 Sep 2025'
-tags: ["music", "gaming", "film"]
+tags: ["music", "gaming", "film", "books"]
 ---
 
 It's been a while.
@@ -14,7 +14,7 @@ Here is my mlog for September 2025 (so far).
 
 I've watched a lot of Hallmark movies. It's all I can handle at the moment and they're easy to find and watch on YouTube. None of them have been particularly good but you don't watch them for the stellar acting.
 
-You can check [my Letterboxd diary on their main site](https://letterboxd.com/lukealexdavis/films/diary/for/2025/09/) or [my historical diaries on my site](/letterboxd-diaries/) but here's a quick list (in reverse order):
+You can check [my Letterboxd diary on their main site](https://letterboxd.com/lukealexdavis/diary/for/2025/09/) or [my historical diaries on my site](/letterboxd-diaries/) but here's a quick list (in reverse order):
 
 * Falling for You
 * One Summer

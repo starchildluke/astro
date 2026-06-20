@@ -14,7 +14,7 @@
 &lt;p&gt;Feel free to fork the repository and make your own version (subject to the AGPL-3.0 License)&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;UPDATE&lt;/strong&gt;: So this script doesn&apos;t update the JSON files containing all the blog tags as I had hoped. Still looking into how to do that but if anyone reading this knows how to update a JSON file via a Streamlit app hosted on GitHub, I&apos;d love to know.&lt;/p&gt;
 </content:encoded></item><item><title>Morsel #10: Ticking all the boxes</title><link>https://lukealexdavis.co.uk/posts/undefined/</link><guid isPermaLink="true">https://lukealexdavis.co.uk/posts/undefined/</guid><pubDate>Tue, 23 Jan 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;I was trying to create a data report and needed to tick checkboxes to include certain information. Unfortunately, there were over 500 boxes and no option for selecting all of them so I Googled how to do it using JavaScript + the browser console.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/questions/386281/how-to-implement-select-all-check-box-in-html&quot;&gt;Stack Overflow came through for me&lt;/a&gt; and I thought I&apos;d share the answer here (thanks to &lt;a href=&quot;https://stackoverflow.com/users/8112776/ashleedawg&quot;&gt;ashleedawg&lt;/a&gt;):&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/questions/386281/how-to-implement-a-select-all-checkbox-in-html&quot;&gt;Stack Overflow came through for me&lt;/a&gt; and I thought I&apos;d share the answer here (thanks to &lt;a href=&quot;https://stackoverflow.com/users/8112776/ashleedawg&quot;&gt;ashleedawg&lt;/a&gt;):&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;How to tick all checkboxes in your browser&lt;/strong&gt;:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Open your browser&apos;s console (the shortcut is usually Cmd/Ctrl+Shift+I (Chrome) or Cmd/Ctrl+Shift+I (Brave))&lt;/li&gt;
@@ -338,7 +338,7 @@ import Swapped from &apos;../../components/Swapped.astro&apos;;&lt;/p&gt;
 &lt;p&gt;I saw a friend&apos;s Bluesky name was a variation of &quot;bell hooks&quot; which led me to think of something for Tony Hawk. I ended up with &quot;Phony Hawk&quot; and realised it&apos;d make a funny nickname for a Pokémon called Gholdengo which uses a golden surfboard to travel around. Then I wondered, what if you could generate a list of names with the first part replaced for meme purposes.&lt;/p&gt;
 &lt;p&gt;Ideological rabbit holes are fun!&lt;/p&gt;
 &lt;h2&gt;How the code works&lt;/h2&gt;
-&lt;p&gt;I used the base of the &lt;a href=&quot;/morsels/morsel-13/&quot;&gt;Thumbnail Grabber&lt;/a&gt; so when you submit a string, the script checks if anything is there and replaces the first letter the string with each letter of the alphabet. It also matches the casing, whether that&apos;s upper or lower case. Finally, it outputs it in a neat HTML list.&lt;/p&gt;
+&lt;p&gt;When you submit a string, the script checks if anything is there and replaces the first letter the string with each letter of the alphabet. It also matches the casing, whether that&apos;s upper or lower case. Finally, it outputs it in a neat HTML list.&lt;/p&gt;
 &lt;p&gt;In terms of JavaScript, there are &lt;code&gt;querySelector&lt;/code&gt;&apos;s to grab the value of the input and add it to the output element and two functions for swapping the first letters (including a nested &lt;code&gt;flatMap&lt;/code&gt; with a regular &lt;code&gt;map&lt;/code&gt; inside).&lt;/p&gt;
 &lt;p&gt;I did use AI for the nested &lt;code&gt;flatMap&lt;/code&gt; as I couldn&apos;t figure out how to replace the first letter which suggested I need to learn that pattern better but everything else was a mix of reworking what I made before and using StackOverflow lol&amp;lt;sup&amp;gt;[&amp;lt;a href=&quot;#in-1&quot;&amp;gt;1&amp;lt;/a&amp;gt;]&amp;lt;/sup&amp;gt;&lt;/p&gt;
 &lt;h2&gt;How this could be improved&lt;/h2&gt;
@@ -492,7 +492,7 @@ import Lede from &apos;../../components/Lede.astro&apos;;&lt;/p&gt;
 &lt;/ol&gt;
 &lt;p&gt;Or there was a mystery third option!&lt;/p&gt;
 &lt;p&gt;&amp;lt;figure&amp;gt;
-&amp;lt;img src=&quot;/images/polyfuzz-logo.jpg&quot; width=&quot;720&quot; height=&quot;167&quot; loading=&quot;lazy&quot;/&amp;gt;
+&amp;lt;img src=&quot;/images/polyfuzz-logo.jpg&quot; alt=&quot;polyfuzz logo&quot; width=&quot;720&quot; height=&quot;167&quot; loading=&quot;lazy&quot;/&amp;gt;
 &amp;lt;/figure&amp;gt;&lt;/p&gt;
 &lt;p&gt;You see, PolyFuzz also lets you use &lt;a href=&quot;https://maartengr.github.io/PolyFuzz/tutorial/basematcher/basematcher/&quot;&gt;a custom model for fuzzy matching&lt;/a&gt; and like anyone obsessed with embeddings, I had &lt;a href=&quot;https://ollama.com/&quot;&gt;Ollama&lt;/a&gt; installed and access to embeddings models. I already had a quantized version of &lt;a href=&quot;https://ollama.com/library/nomic-embed-text&quot;&gt;nomic-embed-text&lt;/a&gt; installed but had a look for any other models and found &lt;a href=&quot;https://ollama.com/library/all-minilm&quot;&gt;all-minilm&lt;/a&gt; which was by... SBERT aka SentenceTransformers! What&apos;s more, it was half the size of the &lt;a href=&quot;https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2&quot;&gt;all-MiniLM-L6-v2&lt;/a&gt; model which I&apos;d been using until now.&lt;/p&gt;
 &lt;p&gt;Unfortunately, I was stuck on how to get it all to work as I&apos;d relied on PolyFuzz&apos;s existing code and now I had to work out how to &lt;em&gt;generate&lt;/em&gt; the matches before I could make the dataframe to show them. This would be something an LLM could likely do in a matter of seconds with minimal-to-no prompt engineering (or whatever people call it these days.) But I didn&apos;t succumb and took my time—and breaks—until I finally got it. And here&apos;s what I came up with:&lt;/p&gt;
@@ -519,6 +519,44 @@ import Lede from &apos;../../components/Lede.astro&apos;;&lt;/p&gt;
 &lt;p&gt;After testing, the scores came out great and were noticeably quicker (although I can&apos;t test it since I obviously don&apos;t have transformer to compare 😢). It also meant I didn&apos;t have to rely on HuggingFace as I could just use local Ollama models.&lt;/p&gt;
 &lt;p&gt;While none of this was intended when I updated one (1) package, it made me realise that I could figure out a coding problem without needing the help of a chatbot and, sometimes, when life gives you lemons, you can make leaner embeddings out of them.&lt;/p&gt;
 &lt;p&gt;&amp;lt;Separator sep=&quot;🍋 🍋 🍋&quot; /&amp;gt;&lt;/p&gt;
+</content:encoded></item><item><title>Morsel #31: Championship Manager 01/02 Fallen Greats Picker</title><link>https://lukealexdavis.co.uk/posts/undefined/</link><guid isPermaLink="true">https://lukealexdavis.co.uk/posts/undefined/</guid><description>The third version of a JS thing I found years ago</description><pubDate>Wed, 17 Jun 2026 23:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&amp;lt;style&amp;gt;
+.picker {border: 2px solid green; border-radius: 10px; background: rgba(0,255,0,0.1); margin-bottom: 2rem; padding: 1rem; text-align: center; font-size: 1.5rem;}
+.flags, .team {font-size: 2rem;}
+.flags span {cursor: pointer;}
+.team {font-weight: 700;}
+&amp;lt;/style&amp;gt;&lt;/p&gt;
+&lt;p&gt;&amp;lt;div class=&quot;picker&quot;&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;Click a flag and find a team to manage in Championship Manager 01/02&amp;lt;/strong&amp;gt;&amp;lt;/p&amp;gt;
+&amp;lt;p class=&quot;flags&quot;&amp;gt;&amp;lt;/p&amp;gt;
+&amp;lt;p class=&quot;team&quot;&amp;gt;&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;&lt;/p&gt;
+&lt;p&gt;&amp;lt;details&amp;gt;
+&amp;lt;summary&amp;gt;&amp;lt;strong&amp;gt;What is this?&amp;lt;/strong&amp;gt;&amp;lt;/summary&amp;gt;
+&amp;lt;br&amp;gt;
+Ever since I found &amp;lt;a href=&quot;https://web.archive.org/web/20090122154730/http://dudllm.mywebcommunity.org/&quot;&amp;gt;a random team picker for Football Manager&amp;lt;/a&amp;gt; many years ago, I&apos;ve tried to make my own since the original is no longer online. I&apos;ve managed to cobble one together which you can see below. The team choices aren&apos;t consistent but it seems to work.&lt;/p&gt;
+&lt;p&gt;To use it, you click on a flag and it gives you a random team from that country that I&apos;ve considered a &quot;fallen great&quot;. The criteria is loose but these teams have previously won titles in the past but not for a while and may have been relegated or otherwise fallen from grace in recent years.&lt;/p&gt;
+&lt;p&gt;I&apos;ve also narrowed the list down to playable nations in Championship Manager 01/02 as I play that the most (if a flag is missing, that&apos;s because I haven&apos;t filled out the teams list yet). The JSON data file has playable nations for FM25 so if I wanted to expand it, I would simply change the filter variable from &lt;code&gt;item.cm&lt;/code&gt; to &lt;code&gt;item.fm&lt;/code&gt; which are either &lt;code&gt;true&lt;/code&gt; or &lt;code&gt;false&lt;/code&gt; for each game.&lt;/p&gt;
+&lt;h3&gt;Note:&lt;/h3&gt;
+&lt;p&gt;No generative AI or chatbot suggestions was used in the making of this (but I Googled stuff when I got stuck and only used Stack Overflow).
+&amp;lt;/details&amp;gt;&lt;/p&gt;
+&lt;p&gt;&amp;lt;script&amp;gt;
+fetch(&apos;/flags.json&apos;)
+.then((response) =&amp;gt; response.json())
+.then((data) =&amp;gt; {
+const flags = data.filter(
+(item) =&amp;gt; item.cm &amp;amp;&amp;amp; item.teams.length).flatMap(
+(item) =&amp;gt; &lt;code&gt;&amp;lt;span id=${item.name}&amp;gt;${item.flag}&amp;lt;/span&amp;gt;&lt;/code&gt;).join(&apos; &apos;);
+const flagsEl = document.querySelector(&apos;.flags&apos;)
+flagsEl.innerHTML = flags;
+flagsEl.addEventListener(&quot;click&quot;, function (e) {
+const teamEl = document.querySelector(&apos;.team&apos;);
+const teams = data.filter(
+(item) =&amp;gt; item.name == e.target.id).flatMap(
+(item) =&amp;gt; item.teams[Math.floor(Math.random()*item.teams.length)]);
+teamEl.innerHTML = teams;
+});
+})
+&amp;lt;/script&amp;gt;&lt;/p&gt;
 </content:encoded></item><item><title>Morsel #4: bulk upload to Internet Archive with waybackpy</title><link>https://lukealexdavis.co.uk/posts/undefined/</link><guid isPermaLink="true">https://lukealexdavis.co.uk/posts/undefined/</guid><pubDate>Wed, 25 May 2022 23:00:00 GMT</pubDate><content:encoded>&lt;p&gt;My fourth morsel is a way to backup your site to the Internet Archive.&lt;/p&gt;
 &lt;h2&gt;Requirements&lt;/h2&gt;
 &lt;ul&gt;
