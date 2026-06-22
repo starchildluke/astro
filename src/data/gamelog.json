@@ -1161,7 +1161,7 @@
 	},
 	{
 		"name": "Metal Slug 2",
-		"developer": "Nazca Corporation",
+		"developer": "SNK",
 		"publisher": "SNK",
 		"genre": "Run and gun",
 		"imageURL": "",
@@ -1181,7 +1181,7 @@
 	},
 	{
 		"name": "Metal Slug 3",
-		"developer": "Nazca Corporation",
+		"developer": "SNK",
 		"publisher": "SNK",
 		"genre": "Run and gun",
 		"imageURL": "",
@@ -1191,7 +1191,7 @@
 	},
 	{
 		"name": "Metal Slug 4",
-		"developer": "Nazca Corporation",
+		"developer": "SNK",
 		"publisher": "SNK",
 		"genre": "Run and gun",
 		"imageURL": "",
@@ -1201,12 +1201,62 @@
 	},
 	{
 		"name": "Metal Slug 5",
-		"developer": "Nazca Corporation",
+		"developer": "SNK",
+		"publisher": "SNK",
+		"genre": "Run and gun",
+		"imageURL": "",
+		"status": "Completed",
+		"console": "Arcade",
+		"dateBeaten": "06/11/2026"
+	},
+	{
+		"name": "Metal Slug X",
+		"developer": "SNK",
 		"publisher": "SNK",
 		"genre": "Run and gun",
 		"imageURL": "",
 		"status": "Completed",
 		"console": "Arcade",
 		"dateBeaten": "06/13/2026"
-	}
+	},
+	{
+		"name": "Air Buster",
+		"developer": "Kaneko",
+		"publisher": "Sharp Image Electronics",
+		"genre": "Shoot-em-up",
+		"imageURL": "",
+		"status": "Completed",
+		"console": "Sega Mega Drive/Genesis",
+		"dateBeaten": "06/13/2026"
+	},
+	{
+		"name": "Mega Man",
+		"developer": "Capcom",
+		"publisher": "Capcom",
+		"genre": "Platformer",
+		"imageURL": "",
+		"status": "Completed",
+		"console": "NES",
+		"dateBeaten": "06/20/2026"
+	},
+	{
+		"name": "Mega Man X",
+		"developer": "Capcom",
+		"publisher": "Capcom",
+		"genre": "Platformer",
+		"imageURL": "",
+		"status": "Completed",
+		"console": "SNES",
+		"dateBeaten": "06/21/2026"
+	},
+	{
+		"name": "Tobal No. 1",
+		"developer": "DreamFactory",
+		"publisher": "Square Enix (then Square)",
+		"genre": "Fighting",
+		"imageURL": "",
+		"status": "Completed",
+		"console": "PS1",
+		"dateBeaten": "06/22/2026"
+	},
 ]
