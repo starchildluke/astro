@@ -40,4 +40,5 @@ const { Content } = await render(post);
               <h1>{post.data.title}</h1></div>
           <Content />
             <PrevNextLinking contentType="release-notes" prevPost={prevPost.data} nextPost={nextPost.data} prevSlug={prevPost?.id} prevTitle={prevPost.data?.title} nextSlug={nextPost?.id} nextTitle={nextPost.data?.title} />
+          </ReleaseNotes>
 </Layout>

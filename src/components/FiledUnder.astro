@@ -29,10 +29,10 @@ const collator = new Intl.Collator('en');
 </style>
 
 <div class="filed-under">
-  <span class="filed-under__intro">Filed under:</span class=""> {tags.sort(collator.compare).map(
+  <span class="filed-under__intro">Filed under:</span> {tags.sort(collator.compare).map(
 	(tag, i) =>
   getJardimLink(tag) !== undefined ? <span><a href={"/jardim" + getJardimLink(tag)}>{tag}</a>{i < tags.length-1 ? " | " : ""}</span> :
-  <span>{tag}</a>{i < tags.length-1 ? " | " : ""}</span>
+  <span>{tag}{i < tags.length-1 ? " | " : ""}</span>
   )
 }
 </div>

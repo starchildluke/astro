@@ -523,6 +523,7 @@ import Lede from &apos;../../components/Lede.astro&apos;;&lt;/p&gt;
 .picker {border: 2px solid green; border-radius: 10px; background: rgba(0,255,0,0.1); margin-bottom: 2rem; padding: 1rem; text-align: center; font-size: 1.5rem;}
 .flags, .team {font-size: 2rem;}
 .flags span {cursor: pointer;}
+.flag-img {display: inline; vertical-align: center;}
 .team {font-weight: 700;}
 &amp;lt;/style&amp;gt;&lt;/p&gt;
 &lt;p&gt;&amp;lt;div class=&quot;picker&quot;&amp;gt;
@@ -545,7 +546,8 @@ fetch(&apos;/flags.json&apos;)
 .then((data) =&amp;gt; {
 const flags = data.filter(
 (item) =&amp;gt; item.cm &amp;amp;&amp;amp; item.teams.length).flatMap(
-(item) =&amp;gt; &lt;code&gt;&amp;lt;span id=${item.name}&amp;gt;${item.flag}&amp;lt;/span&amp;gt;&lt;/code&gt;).join(&apos; &apos;);
+(item) =&amp;gt;
+item.flag ? &lt;code&gt;&amp;lt;span id=${item.name}&amp;gt;${item.flag}&amp;lt;/span&amp;gt;&lt;/code&gt; : &lt;code&gt;&amp;lt;span id=${item.name}&amp;gt;&amp;lt;img id=${item.name} src=${item.svg} alt=&quot;flag of ${item.name}&quot; width=&quot;32&quot; class=&quot;flag-img&quot; /&amp;gt;&amp;lt;/span&amp;gt;&lt;/code&gt;).join(&apos; &apos;);
 const flagsEl = document.querySelector(&apos;.flags&apos;)
 flagsEl.innerHTML = flags;
 flagsEl.addEventListener(&quot;click&quot;, function (e) {

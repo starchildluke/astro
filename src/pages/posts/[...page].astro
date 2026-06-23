@@ -44,15 +44,16 @@ let description = "The blog listings page. I write about all kinds of topics inc
             <h1>{fullTitle}</h1>
             <section class="space-xl">
           <p>I write about everything including SEO, AI, music, life, and the Web.</p>
-        </div>
+        
         </section>
+        </div>
     {postGroups.map(({ year, items }) => (
   <section class="space-xl">
     <h2>{year}</h2>
     <ul class="post-list">
     {items.map((post) => (
       <li class="post-listing">
-        <a href={`/posts/${post.id}/`}><Fragment set:html={post.data.title}></a>
+        <a href={`/posts/${post.id}/`}><Fragment set:html={post.data.title} /></a>
           <span class="publish-date"><FormattedDateSansYear date={post.data.pubDate} /></span>
       </li>
     ))}
