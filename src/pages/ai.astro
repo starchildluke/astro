@@ -2,6 +2,7 @@
 // COMPONENTS
 
 import Layout from '../layouts/Layout.astro';
+import IcebergNotes from '../components/IcebergNotes.astro';
 
 // METADATA VARIABLES
 
@@ -20,19 +21,18 @@ let description = 'How I use AI on my site (or not)';
           <li>I don't know if any "good" AI uses truly exist but I believe that better uses come from smaller scoped projects in areas such as language preservation and revival within NLP. In fact, my favourite AI uses cases are all NLP-related (as you'll see below). <a href="https://www.masakhane.io/">Maskhane</a> is an example of this.</li>
           <li>As part of my day job, I have built and used tools to defer things like metadata creation and large scale intro copy to LLMs but I now advocate for other options to be exhausted before reaching this stage. We should question the purpose and utility of these trivial tasks before defaulting to AI tech to complete them (ie. “how important is a meta description anyway?”.</li>
           <li>You can't conduct meaningful or accurate SEO keyword research using only LLMs and without significant training of a model and real world data to back up any outputs. By then, you might as well use the existing tools on hand.</li>
-        </ul>
             <ul>
               <li>However, NLP can be really helpful and is underused in this area.</li>
             </ul>
-            <ul>
           <li>If you must use AI, try using an open source model and try using a local version. And never use untouched outputs in production. <strong><em><span style="color:#fc1420;text-decoration:underline;">EVER</span></em></strong>.</li>
           <li>The biggest and most prevalent generative AI use cases bore me to death. I hate that prompt engineering is a thing and treating LLMs like pets works to get what you need (unless it doesn't work and that happens often).</li>
           <li>I hate that AI has invaded every conceivable user interface as a default action when I didn't ask for this and I don't know any regular user who did. This is an anti-pattern as far as I'm concerned.</li>
           <li>I hate AI Overviews and AI Mode and what it's doing to basic information retrieval and discovery. You can use all the flowery language you want to justify its existence and make people excited—or make people feel like shit for not wanting to "embrace" it but I don't care (on a personal level; sadly, I have to care on a professional level.)</li>
+          <li>I know people have hard lines for AI use of any kind. As you'll read in the next section, I have used AI in the past and do so in the present. That makes me a hypocrite and saying that isn't an attempt at absolution or any praise for transparency. And within that context, it doesn't matter <em>how</em> I've used the technology if I've used it at all but there you go.</li>
         </ul>
         <h2>Personal use cases</h2>
-        <p>None of the pieces published on this site were written by an generative AI tool.</p>
-        <p>I have a custom NLP tool called <a href="/posts/introducing-ralts/">RALTS</a> which uses an LLM called <a href="https://huggingface.co/valhalla/distilbart-mnli-12-9">distilbart-mnli-12-9</a>. It is stored locally on my laptop and is only used for <a href="https://huggingface.co/tasks/text-classification">text classification</a>.</p>
-        <p>There is a post on the site called <a href="/posts/future-coca-cola-slogans-ai/">Future Coca-Cola slogans with GPT-3.5</a> where I used GPT-3.5 to generate Coca-Cola slogans. While this isn't the same as using AI to generate post text, it is still a use of the technology for the subject of the post so I'm noting it down here.</p>
-        <p>I have other local LLMs which I have used for idea generation, provided with <a href="https://ollama.com/">Ollama</a>. (See <a href="/posts/ai-lower-inertia-getting-started/">“AI as a tool to lower the inertia of getting started”</a> for more on this kind of use)</p>
+        <p>I have a custom NLP tool called <a href="/posts/introducing-ralts/">RALTS</a> which uses an LLM called <a href="https://ollama.com/library/nomic-embed-text">nomic-embed-text</a>. It is stored locally on my laptop and is only used for <a href="https://huggingface.co/tasks/text-classification">text classification</a>.</p>
+        <p>None of the pieces published on this site were solely written by an generative AI tool. However, there is a post on the site called <a href="/posts/future-coca-cola-slogans-ai/">Future Coca-Cola slogans with GPT-3.5</a> where I used GPT-3.5 to generate Coca-Cola slogans. It's an example of using AI technology for a post vs. using it to write every word of the post but as above, that might be a meaningless distinction to some (many?). Regardless, I'm noting it down here.</p>
+        <p>I have other local LLMs which I have used for idea generation, provided with <a href="https://ollama.com/">Ollama</a>. (See <a href="/posts/ai-lower-inertia-getting-started/">“AI as a tool to lower the inertia of getting started”</a> for more on this kind of use).</p>
+        <IcebergNotes><p><b>Updated on 24th June:</b> I've added some more context for transparency and edited some parts such as the LLM I use for RALTS. Please see the previous version here: <a href="https://web.archive.org/web/20260624172211/https://lukealexdavis.co.uk/ai/">https://web.archive.org/web/20260624172211/https://lukealexdavis.co.uk/ai/</a></p></IcebergNotes>
   </Layout>
