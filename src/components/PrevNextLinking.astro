@@ -2,7 +2,32 @@
 const { prevPost, nextPost, prevSlug, prevTitle, nextSlug, nextTitle, contentType } = Astro.props;
 ---
 
+<style>
+  .support-text {
+    font-family: -apple-system, Helvetica, Arial, sans-serif;
+    font-size: var(--font-size-h3);
+    font-weight: 900;
+    letter-spacing: -0.5px;
+    color: var(--red-rust);
+    line-height: 1.1;
+  }
+
+  .support-buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .support-buttons *:hover {
+    opacity: 0.8;
+  }
+</style>
+
 <div class="post-pagination">
   {prevPost && <a href={`/${contentType}/${prevSlug}/`} class="post-pagination-item post-pagination-prev">{prevTitle}</a>}
   {nextPost && <a href={`/${contentType}/${nextSlug}/`} class="post-pagination-item post-pagination-next">{nextTitle}</a>}
+</div>
+
+<h3>Buy me with a coffee or a pledge!</h3>
+<div class="support-buttons">
+  <a href="https://ko-fi.com/lklxdvs"><img src="/images/support_me_on_kofi_red.png" width="154" height="31" /></a><a href="https://www.patreon.com/c/lukealexdavis"><img src="/images/buttons/join-my-patreon.png" style="image-rendering:pixelated;" width="88" height="31" /></a>
 </div>
