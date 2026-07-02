@@ -8,7 +8,7 @@ tags:
   - blogging
 ---
 
-I took part in Robert Birming's Junited event where bloggers shared other bloggers' blogs. And now I'm taking part in JulyReply, where bloggers reply to other bloggers' blogs.
+I took part in Robert Birming's [Junited event](https://robertbirming.com/junited-2026-blog-sharing/) where bloggers shared other bloggers' blogs. And now I'm taking part in [JulyReply](https://robertbirming.com/julyreply-2026-blog-connecting/), where bloggers reply to other bloggers' blogs.
 
 I will likely do this more throughout the month but for this one, I wanted to get a bit meta and talk about reply posts in general. I used to feel a bit “cheap” doing them as it didn't come from an original place of thought. You were responding to what someone else wrote rather than coming up with your own ideas but honestly, that's nonsense. There isn't really a truly original thought and I don't mean that in a generic hand-wavy “nothing is original; everything is a copy” kind of way. If you respond and if you do it properly, it can help you formulate your own thinking and answer questions you've had for a long time. I know it's worked for me.
 
