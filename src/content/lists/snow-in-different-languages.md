@@ -9,7 +9,6 @@ tags:
 
 Starting small but will grow the list over time.
 
-* snow (English)
 * <span lang="fr">neige</span> (French)
 * <span lang="es">nieve</span> (Spanish)
 * <span lang="eu">elurra</span> (Basque)
