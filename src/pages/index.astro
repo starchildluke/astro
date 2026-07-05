@@ -76,16 +76,16 @@ const sayHello = greetings[randLangs][Math.floor(Math.random()*greetings[randLan
 </style>
 
 <Layout title={title} metaTitle={metaTitle} description={description}>
-  <section class="home-middle">
+  <div class="home-middle">
     <div id="welcome">
       {greetings[randLangs] !== "en" ?
-        <span id="hello" lang=randLangs>
+        <span id="hello" lang={randLangs}>
           {sayHello}
         </span>
         : <span id="hello">sayHello</span>}
     </div>
     <p class="tagline">I'm a senior technical SEO specialist, music producer, and blogger based in Nottingham, UK.</p>
-  </section>
+  </div>
   <Pokeballs />
   <Latest />
   <Pokeballs />

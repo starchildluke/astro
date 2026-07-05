@@ -44,7 +44,7 @@
 	--green-neon: #c4e53c;
 
 	--mint-white: #fafff0;
-	--off-white: #f7f7f7;
+	--off-white: #efefd0;
 
 	--pink: #f7d7ff;
 	--pink-cashmere: #ebb7c8;
@@ -128,8 +128,8 @@ header {
 
 body {
 	text-align: center;
-	background: #004e89;
-	color: #efefd0;
+	background: var(--blue);
+	color: var(--off-white);
 	line-height: 1.2;
 	min-height: 100vh;
 	font-size: var(--font-body-size);
@@ -207,7 +207,7 @@ a:focus {
 
 h2, h3 {
 	margin-bottom: 2rem;
-	color: #efefd0;
+	color: var(--off-white);
 }
 
 h1 {
@@ -275,7 +275,7 @@ button:active #eject-symbol {
 }
 
 .games-meta {
-	margin-bottom: 3rem;
+	margin-block: 0 3rem;
 }
 
 .games-grid {
@@ -286,6 +286,23 @@ button:active #eject-symbol {
 	justify-items: center;
 	margin-bottom: 4rem;
 }
+
+table {
+	width: 85%;
+	margin-inline: auto;
+	border-collapse: collapse;
+	text-align: left;
+}
+
+thead {
+	background: var(--off-white);
+	color: var(--blue);
+}
+
+thead th, tbody td {
+	padding: var(--space-sm);
+}
+
 
 .container {
 	display: grid;
@@ -339,6 +356,10 @@ img {
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
+}
+
+label {
+	padding: var(--space-sm);
 }
 
 @media (max-width: 480px) {
