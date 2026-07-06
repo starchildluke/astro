@@ -799,3 +799,11 @@ figure + p {
 .pxl {
 	image-rendering: pixelated;
 }
+
+.update {
+	background: var(--grey-light);
+	padding: 0.25rem 0.5rem;
+	border-left: 4px solid var(--green);
+	text-transform: uppercase;
+	font-weight: 700;
+}
