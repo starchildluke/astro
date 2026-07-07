@@ -14,3 +14,4 @@ tags:
 5. Below the Heavens by Blu & Exile
 
 Some more here: [Important albums](/important-albums/)
+Idea from [Martin Schuhmann](https://martinschuhmann.com/5-albums)
