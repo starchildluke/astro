@@ -15,3 +15,7 @@ I will likely do this more throughout the month but for this one, I wanted to ge
 I will admit I have written some reply posts in the past that haven't directly responded to what someone has said and done and perhaps I've done it in a snarky way but I don't regret it. Sometimes you have a thought and want to get it out and you also need to let people know what you stand for and that's another aspect of what a reply post can do.
 
 With that said, you're welcome to reply to this with your thoughts too!
+
+## My own entries
+
+* [RE: AI as a tool to lower the inertia of getting started](/posts/re-ai-lower-inertia-getting-started/)
