@@ -5,7 +5,7 @@ pubDate: '16 Apr 2024'
 tags: ['writing']
 ---
 
-(Most definitions taken from Google)
+(Most definitions taken from Google and Wiktionary)
 
 ## abtruse
 /əbˈstruːs/
@@ -175,16 +175,26 @@ _adj_. beyond what is normal or natural.
 _n_.
 
 <ol>
-<li>the patterns of rhythm and sound used in poetry.</li>
-
-
-<li>the patterns of stress and intonation in a language.</li>
+	<li>the patterns of rhythm and sound used in poetry.</li>
+	<li>the patterns of stress and intonation in a language.</li>
 </ol>
 
 ## pugnacious
 /pʌɡˈneɪʃəs/
 
 _adj_. eager or quick to argue, quarrel, or fight.
+
+## scion
+/ˈsaɪən/
+
+_n_.
+
+<ol>
+	<li>A descendant, especially a first-generation descendant of a distinguished family.</li>
+	<li>The heir to a throne.</li>
+	<li>A guardian.</li>
+	<li>(botany) A detached shoot or twig containing buds from a woody plant, used in grafting; a shoot or twig in a general sense. </li>
+</ol>
 
 ## teleological
 _adj_. reason or explanation for something as a function of its end, purpose, or goal
