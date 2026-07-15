@@ -9,17 +9,13 @@ tags: ['the Internet', 'writing']
 
 This style guide seeks to serve as a resource for anyone writing or editing web copy, and to document some of the conventions that distinguish good writing, as published on the web, from writing published in other media. It is also intended as a complement to this site's description of the principles of <a href="http://web.archive.org/web/20220709170602/http://www.provenanceunknown.com/edit/basics.html">copywriting for the web</a>.
 
-This document does not offer a comprehensive guide to usage, nor is it intended as a replacement for such guides as the <a href="https://www.amazon.co.uk/Chicago-Manual-Style-Univ/dp/022628705X?&linkCode=ll1&tag=liofast-21&inkId=ae0a61b81e6f4877f5afc51eeda3b05f&language=en_GB&ref_=as_li_ss_tl">Chicago Manual of Style</a> or the <a href="https://www.amazon.co.uk/Associated-Press-Stylebook-2022-2024-ebook/dp/B0B72HTS37?&linkCode=ll1&tag=liofast-21&linkId=fae8770c1306762a8e4be7cd6f59b5b7&language=en_GB&ref_=as_li_ss_tl">Associated Press Stylebook</a>. But it is a living document, and with luck it will grow into a useful guide to written communication over the web.
+This document does not offer a comprehensive guide to usage, nor is it intended as a replacement for such guides as the Chicago Manual of Style or the Associated Press Stylebook. But it is a living document, and with luck it will grow into a useful guide to written communication over the web.
 
 The standards set herein are my own, though they owe a debt to other style guides I have seen, and to my experiences using them. Certain conventions ("web" and "website," for example) reflect predominant usage online more than any personal preference on my own part, however.
 
 You are free to use this style guide for any personal purpose; however, if you wish to excerpt any part of it elsewhere, please include an attribution and link to this site. Thoughts, suggestions and reactions of any nature <a href="http://web.archive.org/web/20220127234244/http://www.provenanceunknown.com/about/contact.html">are welcome</a>.
 
-<b>Note:</b> This is only a guide. Hopefully, most of its conventions will
-serve you well, but you may find some that you don't like, or that don't
-fit your writing style. Different writing styles demand their own particular
-rules, both online and in print. If any of the conventions described here
-don't suit your purposes, do not hesitate to adopt your own.
+<b>Note:</b> This is only a guide. Hopefully, most of its conventions will serve you well, but you may find some that you don't like, or that don't fit your writing style. Different writing styles demand their own particular rules, both online and in print. If any of the conventions described here don't suit your purposes, do not hesitate to adopt your own.
 
 <h2>First principles </h2>
 
