@@ -2,6 +2,9 @@
 title: Some brief thoughts on generative AI
 published: true
 pubDate: 30 Mar 2025
+tags:
+  - AI
+  - tech
 ---
 (I wrote this as a thread on Bluesky and I'm copying and pasting it here, verbatim.)
 
