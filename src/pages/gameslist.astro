@@ -15,6 +15,8 @@ const gamelogFilter = gamelog.filter(
           	game => (game.status === "Completed" && game.dateBeaten.includes(currentYear)) || game.status === "Playing"
           	).sort((a, b) => a.name.localeCompare(b.name));
 
+// TODO: Add hidden table 
+
 ---
 
 <style>
@@ -35,26 +37,37 @@ const gamelogFilter = gamelog.filter(
 			<p>Some screenshot(s) via <a href="https://www.mobygames.com">MobyGames</a>.</p>
 			<p>Here's my gameslist from <a href="/posts/16-games-completed-2025/">2025</a></p>
 		</div>
-		<div class="games-meta">
-			<p id="filter-text">Filter by</p>
-			<div class="filter-list">
-				<button class="games-filter" data-filter="playing">
-					<span id="play-symbol">▶︎ </span>
-					<span>Playing</span>
-				</button>
-				<button class="games-filter" data-filter="completed">
-					<span id="eject-symbol">⏏︎ </span>
-					<span>Completed</span>
-				</button>
-				<button class="games-filter" data-filter="clear">
-					<span id="clear">Clear filter</span>
-				</button>
+		<div class="games-meta-container">
+			<div class="games-meta">
+				<p id="filter-text">Filter by</p>
+				<div class="filter-list">
+					<button class="games-filter" data-filter="playing">
+						<span id="play-symbol">▶︎ </span>
+						<span>Playing</span>
+					</button>
+					<button class="games-filter" data-filter="completed">
+						<span id="eject-symbol">⏏︎ </span>
+						<span>Completed</span>
+					</button>
+					<button class="games-filter" data-filter="clear">
+						<span id="clear">Clear filter</span>
+					</button>
+				</div>
+			</div>
+			<div class="games-meta">
+				<p id="filter-text">View by</p>
+			  <label>
+			    <input type="radio" name="view-mode" value="grid" autocomplete="off" checked /> Grid
+			  </label>
+			  <label>
+			    <input type="radio" name="view-mode" value="table" autocomplete="off" /> Table
+			  </label>
 			</div>
 		</div>
 		<h2>2026</h2>
-		<div class="games-grid">
+		<div class="games-grid" data-layout="grid">
           {gamelogFilter.map((game, i) => (
-          <div class="data" id={game.status.replace(' ', '-').toLowerCase()}>
+          <div class="data" id={game.status.replace(' ', '-').toLowerCase()} data-type="grid">
           	<div class="games-img__section">
           	<div class="games-img">
           		{i < 4 ?
@@ -69,11 +82,52 @@ const gamelogFilter = gamelog.filter(
           </div>
           ))}
           </div>
+	  		<div data-layout="table" style="display:none;">
+	  				<table class="games-table">
+	  					<thead>
+	  						<tr>
+	  							<th>Title</th>
+	  							<th>Console</th>
+	  							<th>Developer</th>
+	  							<th>Publisher</th>
+	  							<th>Genre</th>
+	  							<th>Status</th>
+	  						</tr>
+	  					</thead>
+	  					<tbody>
+	  						{gamelogFilter.map((game) => (
+	  							<tr id={game.status.replace(' ', '-').toLowerCase()} data-type="table">
+		  							<td>{game.name}</td>
+		  							<td>{game.console}</td>
+		  							<td>{game.developer}</td>
+		  							<td>{game.publisher}</td>
+		  							<td>{game.genre}</td>
+		  							<td>{game.status}</td>
+		  						</tr>
+	  						))}
+	  						</tbody>
+	  					</table>
+	  		</div>
       </main>
 		<GameSD />
 		<script>
+			const gridSection = document.querySelector('[data-layout="grid"]');
+			const tableSection = document.querySelector('[data-layout="table"]');
+			const radioButtons = document.querySelectorAll('input[name="view-mode"]');
 			const buttons = document.querySelectorAll('.games-filter');
 			const games = document.querySelectorAll('#playing, #actually-playing, #completed');
+
+			radioButtons.forEach(radio => {
+			    radio.addEventListener('change', (e) => {
+			      if (e.target.value === 'grid') {
+			        gridSection.style.display = 'grid';
+			        tableSection.style.display = 'none';
+			      } else if (e.target.value === 'table') {
+			        gridSection.style.display = 'none';
+			        tableSection.style.display = 'table';
+			      }
+			    });
+			  });
 
 			buttons.forEach(button => {
 			  button.addEventListener('click', () => {
@@ -81,10 +135,15 @@ const gamelogFilter = gamelog.filter(
 
 			    games.forEach(game => {
 			      const category = game.getAttribute('id');
+			      const tableAttr = game.getAttribute('class');
 
-			      if (filter === "clear" || filter === category) {
+			      if (filter === "clear" || game.dataset.type === 'grid' && filter === category ) {
 			        game.style.display = 'block';
-			      } else {
+			      }
+			      else if (filter === "clear" || game.dataset.type === 'table' && filter === category) {
+			        game.style.display = 'table-row';
+			      }
+			      else {
 			        game.style.display = 'none';
 			      }
 			    });
