@@ -2,6 +2,8 @@
 title: 'Pithy'
 published: true
 pubDate: '1 Apr 2022'
+tags:
+  - life
 ---
 
 I see so many pithy quotes and slogans on social media, giving us directives to better life and while I agree with some and I've promoted them as such, I wonder: where is the space for variability, fluctuation, and, in essence, humanity?
