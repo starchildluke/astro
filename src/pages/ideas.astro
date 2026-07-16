@@ -2,6 +2,7 @@
 // COMPONENTS
 
 import Layout from '../layouts/Layout.astro';
+import {Content as IdeasList} from '../data/ideas.mdx';
 
 // METADATA VARIABLES
 
@@ -14,9 +15,5 @@ let description = 'Some ideas I had lying around in my head.';
         	<h1>{title}</h1>
         	<p>{description}</p>
         </hgroup>
-        <ul>
-        	<li>a canon page (<a href="https://www.brendanschlagel.com/canon/">via</a>)</li>
-        	<li>a <em>cannon</em> page - <q>which I assume would just be a list of people you want to shoot out of a cannon</q></li>
-        	<li>add more to my jardim pages, inspired by <a href="https://avanier.dev/commonplace">josh avanier's commonplace page</a></li>
-        </ul>
+        <IdeasList />
     </Layout>

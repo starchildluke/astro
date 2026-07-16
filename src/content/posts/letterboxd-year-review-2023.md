@@ -17,7 +17,7 @@ As I'm still not a Letterboxd Pro user, I only get the basic year review stats b
 <h2 style="font-size: 200%;">ACTORS AND DIRECTORS</h2>
 
 * MOST WATCHED ACTOR: Michael Gough (Batman movies and The Serpent and the Rainbow)
-* MOST WATCHED DIRECTOR: Ron Oliver (because of 3 Christmas movies)
+* MOST WATCHED DIRECTOR: Ron Oliver (because of 3 [Christmas movies](/lists/my-top-christmas-movies/))
 
 <h2 style="font-size: 200%;">HIGHLY RATED 2023 FILMS</h2>
 

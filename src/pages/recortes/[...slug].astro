@@ -3,6 +3,7 @@ import Recortes from '../../layouts/Recortes.astro';
 import Layout from '../../layouts/Layout.astro';
 import { getCollection, CollectionEntry, render } from 'astro:content';
 import PrevNextLinking from '../../components/PrevNextLinking.astro';
+import FiledUnder from '../../components/FiledUnder.astro';
 
 export const sortByDate = (a, b) => {
   return new Date(b.data.pubDate) - new Date(a.data.pubDate);
@@ -40,6 +41,7 @@ const { Content } = await render(post);
         <h1>{post.data.title}</h1>
       </div>
           <Content />
+          <FiledUnder tags={post.data.tags}/>
             <PrevNextLinking contentType="recortes" prevPost={prevPost.data} nextPost={nextPost.data} prevSlug={prevPost?.id} prevTitle={prevPost.data?.title} nextSlug={nextPost?.id} nextTitle={nextPost.data?.title} />
 </Recortes>
 </Layout>

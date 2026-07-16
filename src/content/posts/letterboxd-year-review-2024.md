@@ -18,7 +18,7 @@ As I'm still not a Letterboxd Pro user, I only get the basic year review stats b
 <h2 style="font-size: 200%;">ACTORS AND DIRECTORS</h2>
 
 * MOST WATCHED ACTOR: Lucy Liu (this was a shock to me and then I realised I watched the first 3 Kung Fu Panda movies as well as Red One)
-* MOST WATCHED DIRECTOR: Jerry Ciccoritti (this was not a shock to me as I assumed they were Christmas movies, and I was right)
+* MOST WATCHED DIRECTOR: Jerry Ciccoritti (this was not a shock to me as I assumed they were [Christmas movies](/lists/my-top-christmas-movies/), and I was right)
 
 <h2 style="font-size: 200%;">HIGHLY RATED 2024 FILMS</h2>
 
