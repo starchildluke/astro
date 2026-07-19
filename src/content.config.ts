@@ -21,7 +21,8 @@ const music = defineCollection({
 		linerNotes: z.string(),
 		image: z.string().optional(),
 		pubDate: z.string(),
-		url: z.string().url().optional()
+		url: z.string().url().optional(),
+		related: z.string().optional()
 	})
 });
 

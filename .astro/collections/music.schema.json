@@ -18,6 +18,9 @@
       "type": "string",
       "format": "uri"
     },
+    "related": {
+      "type": "string"
+    },
     "$schema": {
       "type": "string"
     }

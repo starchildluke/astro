@@ -93,8 +93,10 @@ const { title, linerNotes, pubDate, image, url } = Astro.props;
 		<div class="album-release-date">
 			<h2>Released on:</h2>
 			<FormattedDate date={pubDate} />
-			<div class=album-download><h2>Download link</h2>
-						<p><a href={url}>Download {title} on Bandcamp</a>.</p></div>
+			<div class="album-download">
+				<h2>Download link</h2>
+					<p><a href={url}>Download {title} on Bandcamp</a>.</p>
+			</div>
 		</div>
 	</div>
 </div>

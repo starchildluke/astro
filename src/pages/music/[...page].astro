@@ -36,12 +36,6 @@ const albumGroups = albumsByYear(page.data)
 let fullTitle = page.url.prev ? `My Music (Page ${page.currentPage}/${page.lastPage})` : 'My Music';
 let description = "A collection of my music, with liner notes and behind-the-scenes info on how I made everything.";
 
-const rgb = {
-  r: Math.floor(Math.random() * 255),
-  g: Math.floor(Math.random() * 255),
-  b: Math.floor(Math.random() * 255)
-}
-
 ---
 
 <Layout title={fullTitle} description={description}>

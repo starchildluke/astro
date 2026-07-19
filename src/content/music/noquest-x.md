@@ -4,4 +4,4 @@ linerNotes: "NOQUEST X: Rise of the Wayfarers is the tenth album in the NOQUEST 
 pubDate: '8 Aug 2025'
 image: 'noquest-x.jpg'
 url: 'https://strrchildluke.bandcamp.com/album/noquest-x'
---- 
+---
