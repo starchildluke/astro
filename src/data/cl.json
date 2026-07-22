@@ -1,8 +1,8 @@
 [
     {
         "artist": {
-            "mbid": "",
-            "#text": "starchildluke"
+            "mbid": "776dbbce-25aa-411e-b344-ac9067d39f17",
+            "#text": "SiR"
         },
         "image": [
             {
@@ -18,18 +18,45 @@
                 "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
             }
         ],
-        "mbid": "",
-        "url": "https://www.last.fm/music/starchildluke/_/sluuush",
-        "name": "sluuush",
+        "mbid": "40dd177f-7d78-48a9-91c2-b2f0d897271d",
+        "url": "https://www.last.fm/music/SiR/_/Teach+Me",
+        "name": "Teach Me",
         "@attr": {
             "rank": "1"
+        },
+        "playcount": "3"
+    },
+    {
+        "artist": {
+            "mbid": "",
+            "#text": "Ahwlee"
+        },
+        "image": [
+            {
+                "size": "small",
+                "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
+            },
+            {
+                "size": "medium",
+                "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
+            },
+            {
+                "size": "large",
+                "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
+            }
+        ],
+        "mbid": "02ba1c80-5d4a-4e76-82d8-b8bd5c1c6083",
+        "url": "https://www.last.fm/music/Ahwlee/_/thisforU",
+        "name": "thisforU",
+        "@attr": {
+            "rank": "2"
         },
         "playcount": "2"
     },
     {
         "artist": {
-            "mbid": "",
-            "#text": "Ahwlee"
+            "mbid": "dd884b36-c727-4c74-bb06-ee7827611098",
+            "#text": "Knxwledge"
         },
         "image": [
             {
@@ -45,45 +72,18 @@
                 "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
             }
         ],
-        "mbid": "3adba999-233f-409a-93aa-bcbc1364edfc",
-        "url": "https://www.last.fm/music/Ahwlee/_/2.cody&zak",
-        "name": "2.cody&zak",
-        "@attr": {
-            "rank": "2"
-        },
-        "playcount": "1"
-    },
-    {
-        "artist": {
-            "mbid": "",
-            "#text": "Ahwlee"
-        },
-        "image": [
-            {
-                "size": "small",
-                "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
-            },
-            {
-                "size": "medium",
-                "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
-            },
-            {
-                "size": "large",
-                "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
-            }
-        ],
-        "mbid": "",
-        "url": "https://www.last.fm/music/Ahwlee/_/26",
-        "name": "26",
+        "mbid": "63278d59-c92c-4682-a4b6-5108bbedff99",
+        "url": "https://www.last.fm/music/Knxwledge/_/1.+abths",
+        "name": "1. abths",
         "@attr": {
             "rank": "3"
         },
-        "playcount": "1"
+        "playcount": "2"
     },
     {
         "artist": {
-            "mbid": "",
-            "#text": "Ahwlee"
+            "mbid": "dd884b36-c727-4c74-bb06-ee7827611098",
+            "#text": "Knxwledge"
         },
         "image": [
             {
@@ -99,18 +99,18 @@
                 "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
             }
         ],
-        "mbid": "4d66ab5c-72af-4beb-95ca-23251b0b9f8f",
-        "url": "https://www.last.fm/music/Ahwlee/_/7.bare",
-        "name": "7.bare",
+        "mbid": "baca5ef9-f71c-4fff-87d7-921ea96c7f3a",
+        "url": "https://www.last.fm/music/Knxwledge/_/1.+hazy",
+        "name": "1. hazy",
         "@attr": {
             "rank": "4"
         },
-        "playcount": "1"
+        "playcount": "2"
     },
     {
         "artist": {
-            "mbid": "",
-            "#text": "Ahwlee"
+            "mbid": "dd884b36-c727-4c74-bb06-ee7827611098",
+            "#text": "Knxwledge"
         },
         "image": [
             {
@@ -127,11 +127,11 @@
             }
         ],
         "mbid": "",
-        "url": "https://www.last.fm/music/Ahwlee/_/ask+me",
-        "name": "ask me",
+        "url": "https://www.last.fm/music/Knxwledge/_/2.+switch",
+        "name": "2. switch",
         "@attr": {
             "rank": "5"
         },
-        "playcount": "1"
+        "playcount": "2"
     }
 ]
