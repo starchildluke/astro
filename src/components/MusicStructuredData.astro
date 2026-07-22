@@ -1,0 +1,27 @@
+---
+
+const album = Astro.props;
+
+let sd = JSON.stringify({
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@context": "https://schema.org",
+      "@type": "MusicAlbum",
+      "byArtist": {
+        "@type": "Person",
+        "name": "Starchildluke",
+        "url": "https://strrchildluke.bandcamp.com/"
+      },
+      "genre": "Hip Hop/Electronica",
+      "image": album.image,
+      "name": album.title,
+      "url": album.url,
+      "description": album.linerNotes,
+      "datePublished": album.pubDate
+    }
+  ]
+})
+
+---
+<script type="application/ld+json" set:html={sd}></script>

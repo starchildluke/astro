@@ -1,12 +1,16 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
+import ArticleStructuredData from '../components/ArticleStructuredData.astro';
 import StructuredData from '../components/StructuredData.astro';
+import MusicStructuredData from '../components/MusicStructuredData.astro';
 import BreadcrumbsSD from '../components/BreadcrumbsSD.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 
 interface Props {
   title: string;
+  image: string;
+  url: string;
   metaTitle: string;
   description: string;
   pubDate: string;
@@ -14,7 +18,9 @@ interface Props {
   robotsTag: string;
 }
 
-const { title, metaTitle, description, pubDate, robotsTag, canonicalURL = Astro.url } = Astro.props;
+const articleSlugs = ["posts", "release-notes", "lists", "mlog", "morsels", "recortes"]
+
+const { title, image, url, metaTitle, description, pubDate, robotsTag, canonicalURL = Astro.url } = Astro.props;
 
 ---
 <html lang="en-GB">
@@ -26,6 +32,7 @@ const { title, metaTitle, description, pubDate, robotsTag, canonicalURL = Astro.
       <slot />
   </main>
   <Footer/>
-  <StructuredData {title} {pubDate} />
+  {articleSlugs.some(slug => canonicalURL.href.includes(slug)) ? <ArticleStructuredData {title} {pubDate} /> : <StructuredData {title} {pubDate} {description} />}
+  {canonicalURL.href.includes("/music/") ? <MusicStructuredData {title} {image} {url} {pubDate} linerNotes={description} /> : null}
   </body>
 </html>
