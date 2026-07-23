@@ -20,3 +20,7 @@ tags: ['writing']
 ## next level!
 * **Context**: when something is above or beyond your expectations
 * **Origin**: I feel like this has come from Black British culture as me and my sister say it and my Black friends at school did too
+
+## cancel the cobbler!
+* **Context**: another way of saying "never mind" (e.g. if you miss a bus but you then realise that it wasn't in service); I also say it as "well, cancel that cobbler then!"
+* **Origin**: a scene from Scrubs where the Janitor believes that J.D. keeps watching him while he eats and in one instance, he's in a restaurant and shouts to the kitchen, "cancel the cobbler!"
