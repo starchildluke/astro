@@ -20,3 +20,4 @@ With that said, you're welcome to reply to this with your thoughts too!
 
 * [RE: AI as a tool to lower the inertia of getting started](/posts/re-ai-lower-inertia-getting-started/)
 * [RE: Website superpowers](/posts/re-website-superpowers/)
+* [RE: RE: read-it-never](/posts/re-read-it-never/)
