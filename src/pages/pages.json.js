@@ -13,9 +13,9 @@ export async function GET({params, request}) {
   const releaseNotes = await getCollection("release-notes");
   
   const posts = blogPosts.map((data) => {
-      const { slug, body, data: { title, pubDate, description } } = data;
+      const { id, body, data: { title, pubDate, description } } = data;
       return {
-        url: `https://lukealexdavis.co.uk/posts/${slug}/`,
+        url: `https://lukealexdavis.co.uk/posts/${id}/`,
         title: title,
         date: pubDate,
         description: description,
@@ -24,9 +24,9 @@ export async function GET({params, request}) {
     });
 
   const allLists = lists.map((data) => {
-      const { slug, body, data: { title, pubDate, description } } = data;
+      const { id, body, data: { title, pubDate, description } } = data;
       return {
-        url: `https://lukealexdavis.co.uk/lists/${slug}/`,
+        url: `https://lukealexdavis.co.uk/lists/${id}/`,
         title: title,
         date: pubDate,
         description: description,
@@ -35,9 +35,9 @@ export async function GET({params, request}) {
     });
 
   const allMlogs = mlogs.map((data) => {
-        const { slug, body, data: { title, pubDate, description } } = data;
+        const { id, body, data: { title, pubDate, description } } = data;
         return {
-          url: `https://lukealexdavis.co.uk/mlog/${slug}/`,
+          url: `https://lukealexdavis.co.uk/mlog/${id}/`,
           title: title,
           date: pubDate,
           description: description,
@@ -46,9 +46,9 @@ export async function GET({params, request}) {
       });
 
   const allMorsels = morsels.map((data) => {
-        const { slug, body, data: { title, pubDate, description } } = data;
+        const { id, body, data: { title, pubDate, description } } = data;
         return {
-          url: `https://lukealexdavis.co.uk/morsels/${slug}/`,
+          url: `https://lukealexdavis.co.uk/morsels/${id}/`,
           title: title,
           date: pubDate,
           description: description,
@@ -57,19 +57,19 @@ export async function GET({params, request}) {
       });
 
   const allAlbums = albums.map((data) => {
-        const { slug, body, data: { title, pubDate, description } } = data;
+        const { id, body, data: { title, pubDate, description } } = data;
         return {
           title: title,
           date: pubDate,
           description: description,
-          url: `https://lukealexdavis.co.uk/music/${slug}/`
+          url: `https://lukealexdavis.co.uk/music/${id}/`
         };
       });
   
   const allRecortes = recortes.map((data) => {
-          const { slug, body, data: { title, pubDate, description } } = data;
+          const { id, body, data: { title, pubDate, description } } = data;
           return {
-            url: `https://lukealexdavis.co.uk/recortes/${slug}/`,
+            url: `https://lukealexdavis.co.uk/recortes/${id}/`,
             title: title,
             date: pubDate,
             description: description,
@@ -78,9 +78,9 @@ export async function GET({params, request}) {
         });
 
   const allReleaseNotes = releaseNotes.map((data) => {
-        const { slug, body, data: { title, pubDate, description } } = data;
+        const { id, body, data: { title, pubDate, description } } = data;
         return {
-          url: `https://lukealexdavis.co.uk/release-notes/${slug}/`,
+          url: `https://lukealexdavis.co.uk/release-notes/${id}/`,
           title: title,
           date: pubDate,
           description: description,

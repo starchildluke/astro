@@ -11,7 +11,7 @@ const { title, description, canonicalURL = Astro.url } = Astro.props;
 
 ---
 <html lang="en-GB">
-  <BaseHead {title} {description} {canonicalURL} />
+  <BaseHead {title} {description} {canonicalURL} robotsTag="noindex, follow" />
   <body>
       <slot />
   </body>
