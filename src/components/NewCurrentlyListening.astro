@@ -1,0 +1,106 @@
+---
+import cl from '../data/cl.json'
+---
+
+<style>
+	h2 {
+		font-family: 'Nokia Cellphone FC';
+		margin-block: 0.25rem;
+		font-size: 1rem;
+		color: #3c3e40;
+	}
+
+	ol {
+		padding-inline: 0;
+		list-style-position: inside;
+		padding-bottom: 1rem;
+		border-bottom: 2px solid #3c3e40;
+	}
+
+	ol li:first-child {
+		font-size: 1.25rem;
+		font-weight: 700;
+	}
+
+	ol li {
+	  text-align: left;
+	  line-height: 1.4;
+	  font-size: 1.1rem;
+	}
+
+	li:hover {
+		background: #3c3e40;
+		color: #dbdfe9;
+	}
+
+	.cl__container {
+		font-size: 1rem;
+		margin-inline: auto;
+		margin-bottom: calc(var(--space-xl) * 2);
+		color: #3c3e40;
+		background: #dbdfe9;
+		font-family: 'Nokia Cellphone FC';
+		padding: 2rem;
+		max-width: 35rem;
+		border-radius: 8px;
+		clip-path: ellipse(300% 100% at 50% 100%);
+	}
+
+	.cl__heading {
+		border-block: 2px solid #3c3e40;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.cl__heading span {
+		color: #3c3e40;
+		padding-inline: 0.25rem;
+	}
+
+	.cl__songs {
+		padding-top: 1rem;
+	}
+
+	.shadow {
+	  box-shadow: inset 0 5px 8px #000;
+	}
+
+	p {
+		padding: 0;
+	}
+
+	@media only screen and (max-width: 440px) {
+
+		h2 {
+			margin: 0;
+		}
+
+		.cl__songs {
+			flex-direction: column;
+			gap: 0;
+		}
+
+		ol.cl, .cl__container p {
+			text-align: center;
+			font-size: 0.85rem;
+			margin-bottom: 1rem;
+		}
+	}
+</style>
+
+<section class="cl__container shadow">
+	<div class="cl__heading">
+		<h2>My top songs</h2>
+		<span>100%</span>
+	</div>
+	<div class="cl__songs">
+		<ol class="cl">
+			{cl.map((track) => (
+			<li><strong>{track.artist['#text']}</strong> - {track.name}</li>
+			))
+			}
+		</ol>
+	</div>
+	<p><a href="https://www.last.fm/user/alex_ferguson">More from my Last.fm</a> and <a href="/lastfm-top-1000/">my Last.fm top 1000</a></p>
+</section>

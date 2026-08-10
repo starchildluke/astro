@@ -1,6 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import CurrentlyListening from '../components/CurrentlyListening.astro';
+import NewCurrentlyListening from '../components/NewCurrentlyListening.astro';
 import Pokeballs from '../components/Pokeballs.astro';
 import Latest from '../components/Latest.astro';
 import sd from '../data/sd.json';
@@ -89,6 +89,6 @@ const sayHello = greetings[randLangs][Math.floor(Math.random()*greetings[randLan
   <Pokeballs />
   <Latest />
   <Pokeballs />
-  <CurrentlyListening />
+  <NewCurrentlyListening />
 <script type="application/ld+json" set:html={JSON.stringify(sd)}></script>
 </Layout>
