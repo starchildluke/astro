@@ -13,6 +13,8 @@ const {
 const canonicalURL = Astro.url;
 const blogRssFeed = `${site.url}omnifeed.xml`;
 
+const nokia = `<link href="/fonts/nokiafc22.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">`
+
 ---
 <head>
 <meta charset="utf-8" />
@@ -21,6 +23,7 @@ const blogRssFeed = `${site.url}omnifeed.xml`;
 <link rel="stylesheet" type="text/css" href={stylesheetURL ? `/style/${stylesheetURL}` : "/style/style.css"}>
 <link rel="preload" as="font" href="/fonts/DMSerifDisplay-Regular-subset.woff2" type="font/woff2" crossorigin>
 <link rel="preload" as="font" href="/fonts/NyghtSerif-Light-subset.woff2" type="font/woff2" crossorigin>
+{canonicalURL === site.url ? nokia : ""}
 <script async src="https://plausible.io/js/pa-juzxS8GCoNHZxPt1EMkES.js"></script>
 <script>window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};plausible.init()</script>
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
