@@ -5,12 +5,28 @@ pubDate: '10 Aug 2023'
 tags: ['AI', 'tech']
 ---
 
+(A Work-in-progress)
+
 * Embeddings
-	* Image Analysis
-	* Social Network Analysis
+	* Image analysis
+	* Social network analysis
 	* Recommender systems
 	* Computer vision
-	* [Shipment Tracking](https://www.toptal.com/machine-learning/embeddings-in-machine-learning#use-case-shipment-tracking)
 	* Vector search
-		* Image search and discovery (e.g. Pinterest)
-		* Personalised search
+* Natural Language Processing (NLP)
+    * Text classification
+    * Text summarization
+    * Named entity recognition (NER)
+    * Sentiment analysis
+    * Machine translation
+* Generative AI
+    * Content creation
+* Predictive analytics
+    * Financial modeling
+    * Demand forecasting
+    * Inventory optimization
+* Healthcare
+    * Medical imaging
+    * Drug discovery
+    * Patient care
+* Robotics

@@ -30,7 +30,7 @@ Anh is a web designer, artist, and blogger and her website designs are honestly 
 
 I had the pleasure of meeting Josh at a Black History Month event many years ago and although that was the only meeting to date, it stuck with me because it was one of the first times that I felt heard when I spoke. Since then, I have watched Josh grow both from a professional perspective as well as a personal and spiritual point of view. Nobody I know consumes, formulates, and relays information like Josh and his award-winning podcast Busy Being Black is essential listening for anyone wishing to broaden their horizons and see the world around from queer Black perspectives.
 
-[Busy Being Black](https://www.busybeingblack.com/) | [Instagram](https://www.instagram.com/_joshrivers/)
+[Busy Being Black](https://busybeingblack.com/) | [Instagram](https://www.instagram.com/_joshrivers/)
 
 ## 5. Jacky Alciné
 
