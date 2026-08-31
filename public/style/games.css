@@ -9,8 +9,8 @@
 }
 
 ::selection {
-	color: var(--green-lighter);
-	background: #ffdea0;
+	color: var(--peach);
+	background: var(--blue-h1);
 }
 
 /* =============================================
@@ -51,20 +51,17 @@
 
 	--peach: #f7c59f;
 
-	--blue: #004e89;
-	--blue-highlight: #253ca0;
-	--blue-sapphire: #0028c7;
-	--aquamarine: #7fffd4;
+	--blue-bg: #dee6f5;
+	--blue-bg-alt: #cfdaef;
+	--blue-accent: #93a3c2;
+	--blue-text: #110b44;
+	--blue-h1: #3f3881;
 
 	--orange: #ff5704;
 
 	/* Layout colour variables */
-	--bg-gameslist: var(--blue);
+	--bg-gameslist: var(--blue-bg);
 	--shadow-color: 206deg 100% 11%;
-
-	/* Text colour variables */
-	--text-secondary: var(--off-white);
-	--text-filter: var(--aquamarine);
 }
 
 /* =============================================
@@ -128,14 +125,15 @@ header {
 
 body {
 	text-align: center;
-	background: var(--blue);
-	color: var(--off-white);
+	background: var(--blue-bg);
+	color: var(--blue-text);
 	line-height: 1.2;
 	min-height: 100vh;
 	font-size: var(--font-body-size);
 	font-weight: 360;
 	line-height: 1.625;
 	font-family: var(--font-body);
+	border: 2rem ridge var(--blue-h1);
 }
 
 h2, h3, ol, ul {
@@ -170,9 +168,9 @@ h2 {
 h3 {
 	font-family: -apple-system;
 	font-size: var(--font-size-h3);
-  font-weight: 900;
-  letter-spacing: -0.5px;
-  color: var(--red-rust);
+	font-weight: 900;
+	letter-spacing: -0.5px;
+	color: var(--red-rust);
 }
 
 img {
@@ -186,7 +184,7 @@ img {
 /* Brushed metal button courtesy of simurai: https://codepen.io/simurai/pen/kvyEeg */
 
 a {
-	color: #F7C59F;
+	color: var(--blue-text);
 	font-weight: 700;
 	text-underline-offset: .1em;
 	text-decoration-thickness: 1px;
@@ -207,12 +205,12 @@ a:focus {
 
 h2, h3 {
 	margin-bottom: 2rem;
-	color: var(--off-white);
 }
 
 h1 {
 	font-size: calc(var(--font-size-h1) * 2);
 	margin-bottom: var(--space-md);
+	color: var(--blue-h1);
 }
 
 
@@ -221,7 +219,6 @@ h1 {
 	font-weight: 700;
 	letter-spacing: 2px;
 	text-transform: uppercase;
-	color: aquamarine;
 	margin-bottom: var(--space-md);
 }
 
@@ -247,7 +244,6 @@ button {
 }
 
 button[data-filter="clear"] {
-	color: #efefef;
 	padding: calc(0.5rem + 2px);
 	background: none;
 	border: none;
@@ -295,19 +291,25 @@ table {
 }
 
 thead {
-	background: var(--off-white);
-	color: var(--blue);
+	background: var(--blue-text);
+	color: var(--blue-bg);
+	text-transform: uppercase;
+	font-family: var(--font-h2);
+	letter-spacing: 0.125rem;
 }
 
 thead th, tbody td {
 	padding: var(--space-sm);
 }
 
+tbody tr:nth-child(odd) {
+	background: var(--blue-bg-alt);
+}
+
 
 .container {
 	display: grid;
 	grid-template-columns: 1fr;
-	margin-inline: clamp(0.5rem, 1rem, 2rem);
 }
 
 .games-img {
@@ -370,4 +372,8 @@ label {
 	.games__nav-links {
 		justify-content: center;
 	}
+}
+
+.games-table tr {
+	border-bottom: 2px solid var(--blue-accent);
 }

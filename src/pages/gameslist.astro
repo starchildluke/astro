@@ -15,7 +15,9 @@ const gamelogFilter = gamelog.filter(
           	game => (game.status === "Completed" && game.dateBeaten.includes(currentYear)) || game.status === "Playing"
           	).sort((a, b) => a.name.localeCompare(b.name));
 
-// TODO: Add hidden table 
+function checkArray(jsonVal) {
+	return Array.isArray(jsonVal) ? jsonVal.join(', ') : jsonVal
+};
 
 ---
 
@@ -97,12 +99,12 @@ const gamelogFilter = gamelog.filter(
 	  					<tbody>
 	  						{gamelogFilter.map((game) => (
 	  							<tr id={game.status.replace(' ', '-').toLowerCase()} data-type="table">
-		  							<td>{game.name}</td>
+		  							<td><strong>{game.name}</strong></td>
 		  							<td>{game.console}</td>
-		  							<td>{game.developer}</td>
+		  							<td>{checkArray(game.developer)}</td>
 		  							<td>{game.publisher}</td>
-		  							<td>{game.genre}</td>
-		  							<td>{game.status}</td>
+		  							<td>{checkArray(game.genre)}</td>
+		  							<td><strong>{game.status}</strong></td>
 		  						</tr>
 	  						))}
 	  						</tbody>
