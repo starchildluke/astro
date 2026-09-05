@@ -6,6 +6,8 @@ pubDate: '24 Mar 2024'
 tags: ['gaming']
 ---
 
+<small>(Last update: <time datetime="2026-09-03">3rd Sep 2026</time>)</small>
+
 I thought I'd compile a list of all the consoles I've owned over the years. Making this has shown me just how many I've owned over the years. It's kinda wild that I've bought a console every year since 2017 (excluding 2020) and most of them were retro.
 
 
@@ -42,3 +44,4 @@ I thought I'd compile a list of all the consoles I've owned over the years. Maki
 Anbernic RG 476H       | 2025 | 2025					   | Horizontal; handheld | Retro Gray 							      | Yes			  |
 PS Vita       | 2026 | 2012					   | Horizontal; handheld | Aqua Blue 							      | Yes			  |
 Anbernic RG DS       | 2026 | 2025					   | Clamshell; handheld | White 							      | Yes			  |
+AYN Thor Lite*       | 2026 | 2025					   | Clamshell; handheld | Black 							      | *Pending; not arrived yet		  |
