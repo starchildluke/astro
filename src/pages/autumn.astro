@@ -1,7 +1,7 @@
 ---
 // COMPONENTS
 
-import Layout from '../layouts/Layout.astro';
+import AutumnLayout from '../layouts/AutumnLayout.astro';
 
 // METADATA VARIABLES
 
@@ -18,6 +18,7 @@ let description = 'This is my digital autumnal altar for autumn 2025.';
     --hunyadi-yellow: #F0B757;
     --licorice: #100207;
     --deeper-hunyadi-yellow: #F1AC3B;
+    --roastery: #641906;
   }
 
   body, a {
@@ -25,22 +26,32 @@ let description = 'This is my digital autumnal altar for autumn 2025.';
   }
   
   body {
+    margin: 4rem;
     background: var(--deeper-hunyadi-yellow);
-    display: grid;
-    text-align: center;
+    display: flex;
+    align-items: normal;
   }
 
   img[src*="gif"] {
-    margin-inline: auto;
     image-rendering: pixelated;
+  }
+
+  #equinox {
+    transition: font-weight 1s;
+  }
+
+  #equinox:hover {
+    color: var(--roastery);
+    font-weight: 900;
   }
 
 </style>
 
-<Layout title={title} description={description} robotsTag='noindex, nofollow'>
-    <h1>{description}</h1>
+<AutumnLayout title={title} description={description} robotsTag='noindex, nofollow'>
+    <h1>Autumn</h1>
       <p>🍁 🍂 🥮 🍂 🍁</p>
-      <section class="space-xl"><p>The autumn equinox occurred on <time>Monday, 22 September 2025, 7:19pm</time>, marking the start of autumn.</p>
-            <p>This year's autumn will last 89 days, 14 hours, 44 minutes.</p>
-            <img src="/images/pumpkins.gif" alt="a bunch of low res pumpkins" width="500" height="333" fetchpriority="high" /></section>
-</Layout>
+      <section class="space-xl"><p>The <span id="equinox">autumn equinox</span> will occur on <time>Wed, 23 Sept 2026, 1:06am</time> in the UK, marking the start of autumn.</p>
+        <p>This year's autumn will last 89 days, 19 hours, 43 minutes.</p>
+        <img src="/images/pumpkins.gif" alt="a bunch of low res pumpkins" width="500" height="333" fetchpriority="high" />
+      </section>
+</AutumnLayout>
