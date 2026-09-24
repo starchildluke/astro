@@ -3,6 +3,8 @@
 // EXAMPLE: <Separator sep="❦ ❦ ❦" color="--green" />
 
 const { sep, color } = Astro.props;
+
+const colorType = color.startsWith('--') ? `color: var(${color})` : `color: ${color}`;
 ---
 
 <style>
@@ -14,6 +16,4 @@ const { sep, color } = Astro.props;
 
 </style>
 
-<p class="separator" style=`color: var(${color})`>
-	{sep}
-</p>
+<p class="separator" style=`${colorType}`>{sep}</p>

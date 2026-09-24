@@ -2,6 +2,13 @@
 let year = new Date().getFullYear()
 import NonProfitBlogger from './NonProfitBlogger.astro';
 
+const emoji = ["🤝", "🏖","🎻","✊","🍋","🌈","🍰","❤","💿","🍽","🥰","😩","😡","😶","🤖","👁","👄","👁","🫀","🧠","🫁","🧶","🦛","🦛","🐍","🐍","🐢","🐊"]
+
+function randomEmoji(emoji: any) {
+    const r = Math.floor(Math.random() * emoji.length)
+    return emoji[r]
+}
+
 ---
 <style>
 
@@ -91,6 +98,7 @@ import NonProfitBlogger from './NonProfitBlogger.astro';
         
     </ul>
     <ul>
+        <li>Made with {randomEmoji(emoji)} by Luke.</li>
         <li><a href="https://astro.build/">Built with Astro</a>, HTML, CSS, and a <span lang="fr">soupçon</span> of JS.</li>
         </ul>       
         <ul>
@@ -99,7 +107,7 @@ import NonProfitBlogger from './NonProfitBlogger.astro';
             <li>🇵🇸 <a href="/jardim/palestine/">Free Palestine!</a></li>
 
         </ul>
-        <ul><li style="font-family:Georgia,serif;font-style:italic;">And I'm not only a member of the Hair Club for Men<br>&mdash;I'm also the president.</li>
+        <ul><li style="font-family:Georgia,serif;font-style:italic;">“I'm not only the president of the Hair Club for Men<br/>—I'm also a member.”</li>
         </ul>
         <a href="https://github.com/uxai/non-profit-bloggers/">
             <NonProfitBlogger />

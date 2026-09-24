@@ -2,6 +2,7 @@
 // COMPONENTS
 
 import AutumnLayout from '../layouts/AutumnLayout.astro';
+import {Content as AutumnLeaves} from '../data/autumn-posts.mdx';
 
 // METADATA VARIABLES
 
@@ -21,8 +22,12 @@ let description = 'This is my digital autumnal altar for autumn 2025.';
     --roastery: #641906;
   }
 
-  body, a {
+  body {
     color: var(--licorice);
+  }
+
+  :global(a) {
+    text-decoration: none;
   }
   
   body {
@@ -45,13 +50,20 @@ let description = 'This is my digital autumnal altar for autumn 2025.';
     font-weight: 900;
   }
 
+  .autumn-leaves {
+    font-size: var(--space-lg);
+  }
+
 </style>
 
 <AutumnLayout title={title} description={description} robotsTag='noindex, nofollow'>
     <h1>Autumn</h1>
-      <p>🍁 🍂 🥮 🍂 🍁</p>
-      <section class="space-xl"><p>The <span id="equinox">autumn equinox</span> will occur on <time>Wed, 23 Sept 2026, 1:06am</time> in the UK, marking the start of autumn.</p>
+      <section class="space-lg"><p>The <span id="equinox">autumn equinox</span> occurred on <time>Wed, 23 Sept 2026, 1:06am</time> in the UK, marking the start of autumn.</p>
         <p>This year's autumn will last 89 days, 19 hours, 43 minutes.</p>
         <img src="/images/pumpkins.gif" alt="a bunch of low res pumpkins" width="500" height="333" fetchpriority="high" />
       </section>
+      <h3>Click the leaves to find new pages about autumn</h3>
+      <div class="autumn-leaves">
+        <AutumnLeaves />
+      </div>
 </AutumnLayout>
