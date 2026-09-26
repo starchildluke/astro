@@ -4,7 +4,7 @@
 
 const { sep, color } = Astro.props;
 
-const colorType = color.startsWith('--') ? `color: var(${color})` : `color: ${color}`;
+const colorType = color?.startsWith('--') ? `color: var(${color})` : `color: ${color}`;
 ---
 
 <style>
