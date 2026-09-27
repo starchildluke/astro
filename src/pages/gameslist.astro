@@ -8,7 +8,7 @@ import GameSD from '../components/GameSD.astro';
 // METADATA VARIABLES
 
 let title = 'Gameslist';
-let description = "A log of all the games I've been playing.";
+let description = "A log of games I've been playing recently.";
 let currentYear = new Date().getFullYear().toString();
 
 const gamelogFilter = gamelog.filter(
@@ -36,6 +36,8 @@ function checkArray(jsonVal) {
 		<div class="games-meta">
 			<h1>{title}</h1>
 			<p>{description}</p>
+			<p>This only shows games I've rated 3.5 stars or more on Backloggd.</p>
+			<p>A comprehensive list can be found on <a href="https://backloggd.com/u/starchildluke/">my Backloggd profile.</a></p>
 			<p>Some screenshot(s) via <a href="https://www.mobygames.com">MobyGames</a>.</p>
 			<p>Here's my gameslist from <a href="/posts/16-games-completed-2025/">2025</a></p>
 		</div>
@@ -139,7 +141,7 @@ function checkArray(jsonVal) {
 			      const category = game.getAttribute('id');
 			      const tableAttr = game.getAttribute('class');
 
-			      if (filter === "clear" || game.dataset.type === 'grid' && filter === category ) {
+			      if (filter === "clear" && game.dataset.type === 'grid' || game.dataset.type === 'grid' && filter === category ) {
 			        game.style.display = 'block';
 			      }
 			      else if (filter === "clear" || game.dataset.type === 'table' && filter === category) {

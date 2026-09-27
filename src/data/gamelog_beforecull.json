@@ -40,6 +40,56 @@
 		"dateBeaten": ""
 	},
 	{
+		"name": "Breath of Fire IV",
+		"developer": "Capcom",
+		"publisher": "Capcom",
+		"genre": ["RPG"],
+		"imageURL": "/images/gameslist/breath-of-fire-iv-ps1-250px.jpg",
+		"status": "Completed",
+		"console": "PS1",
+		"dateBeaten": "10/16/2025"
+	},
+	{
+		"name": "X-Men - Mutant Academy",
+		"developer": "Crawfish Interactive",
+		"publisher": "Activision",
+		"genre": ["Fighting"],
+		"imageURL": "/images/gameslist/x-men-mutant-academy-gb.jpg",
+		"status": "Completed",
+		"console": "Game Boy Color",
+		"dateBeaten": "01/05/2025"
+	},
+	{
+		"name": "Mickey's Ultimate Challenge",
+		"developer": "Designer Software",
+		"publisher": "Hi Tech Expressions",
+		"genre": ["Puzzle"],
+		"imageURL": "/images/gameslist/mickeys-ultimate-challenge-gb.webp",
+		"status": "Completed",
+		"console": "Game Boy",
+		"dateBeaten": "01/07/2025"
+	},
+	{
+		"name": "Kirby's Dream Land",
+		"developer": "HAL Laboratory",
+		"publisher": "Nintendo",
+		"genre": ["Platformer"],
+		"imageURL": "/images/gameslist/kirbys-dream-land.webp",
+		"status": "Completed",
+		"console": "Game Boy",
+		"dateBeaten": "01/08/2025"
+	},
+	{
+		"name": "Sonic 1",
+		"developer": "Sega Technical Institute",
+		"publisher": "Sega",
+		"genre": ["Platformer"],
+		"imageURL": "/images/gameslist/sonic-1.webp",
+		"status": "Completed",
+		"console": "Sega Mega Drive/Genesis",
+		"dateBeaten": "01/05/2025"
+	},
+	{
 		"name": "Sonic 3",
 		"developer": "Sega Technical Institute",
 		"publisher": "Sega",
@@ -48,6 +98,36 @@
 		"status": "Completed",
 		"console": "Sega Mega Drive/Genesis",
 		"dateBeaten": "03/28/2026"
+	},
+	{
+		"name": "Final Fantasy",
+		"developer": "Square Enix (then Square)",
+		"publisher": "Square Enix (then Square)",
+		"genre": ["RPG"],
+		"imageURL": "/images/gameslist/final-fantasy.webp",
+		"status": "Completed",
+		"console": "WonderSwan Color",
+		"dateBeaten": "01/15/2025"
+	},
+	{
+		"name": "Final Fantasy III",
+		"developer": "Square Enix (then Square)",
+		"publisher": "Square Enix (then Square)",
+		"genre": ["RPG"],
+		"imageURL": "/images/gameslist/final-fantasy-iii.webp",
+		"status": "Completed",
+		"console": "NES",
+		"dateBeaten": "02/02/2025"
+	},
+	{
+		"name": "Kirby's Dream Land 2",
+		"developer": "HAL Laboratory",
+		"publisher": "Nintendo",
+		"genre": ["Platformer"],
+		"imageURL": "/images/gameslist/kirbys-dream-land-2.webp",
+		"status": "Completed",
+		"console": "Game Boy",
+		"dateBeaten": "01/26/2025"
 	},
 	{
 		"name": "Kirby's Dream Land 3",
@@ -60,6 +140,46 @@
 		"dateBeaten": "04/04/2026"
 	},
 	{
+		"name": "Final Fantasy IV",
+		"developer": "Square Enix (then Square)",
+		"publisher": "Square Enix (then Square)",
+		"genre": ["RPG"],
+		"imageURL": "/images/gameslist/final-fantasy-iv.webp",
+		"status": "Completed",
+		"console": "SNES",
+		"dateBeaten": "03/31/2025"
+	},
+	{
+		"name": "Pok\u00e9mon Legends: Arceus",
+		"developer": "Game Freak",
+		"publisher": "Nintendo/The Pok\u00e9mon Company",
+		"genre": ["RPG"],
+		"imageURL": "/images/gameslist/pokemon-legends-arceus.webp",
+		"status": "Completed",
+		"console": "Nintendo Switch",
+		"dateBeaten": "02/18/2025"
+	},
+	{
+		"name": "Final Fantasy V",
+		"developer": "Square Enix (then Square)",
+		"publisher": "Square Enix (then Square)",
+		"genre": ["RPG"],
+		"imageURL": "/images/gameslist/final-fantasy-v.webp",
+		"status": "Completed",
+		"console": "GBA",
+		"dateBeaten": "04/14/2025"
+	},
+	{
+		"name": "Final Fantasy VI",
+		"developer": "Square Enix (then Square)",
+		"publisher": "Square Enix (then Square)",
+		"genre": ["RPG"],
+		"imageURL": "/images/gameslist/final-fantasy-vi.webp",
+		"status": "Completed",
+		"console": "SNES",
+		"dateBeaten": "04/26/2025"
+	},
+	{
 		"name": "Clair Obscur: Expedition 33",
 		"developer": "Sandfall Interactive",
 		"publisher": "Kepler Interactive",
@@ -68,6 +188,26 @@
 		"status": "Shelved",
 		"console": "Steam",
 		"dateBeaten": ""
+	},
+	{
+		"name": "Final Fantasy VII",
+		"developer": "Square Enix (then Square)",
+		"publisher": "Square Enix (then Square)",
+		"genre": ["RPG"],
+		"imageURL": "/images/gameslist/final-fantasy-vii.webp",
+		"status": "Completed",
+		"console": "PS1",
+		"dateBeaten": "08/03/2025"
+	},
+	{
+		"name": "Final Fantasy IX",
+		"developer": "Square Enix (then Square)",
+		"publisher": "Square Enix (then Square)",
+		"genre": ["RPG"],
+		"imageURL": "/images/gameslist/final-fantasy-ix.webp",
+		"status": "Completed",
+		"console": "PS1",
+		"dateBeaten": "09/30/2025"
 	},
 	{
 		"name": "Final Fantasy X",
@@ -80,6 +220,46 @@
 		"dateBeaten": ""
 	},
 	{
+		"name": "Pok\u00e9mon Legends: Z-A",
+		"developer": "Game Freak",
+		"publisher": "Nintendo/The Pok\u00e9mon Company",
+		"genre": ["RPG"],
+		"imageURL": "/images/gameslist/pokemon-legends-z-a.webp",
+		"status": "Completed",
+		"console": "Nintendo Switch",
+		"dateBeaten": "10/27/2025"
+	},
+	{
+		"name": "WWF Betrayal",
+		"developer": "WayForward Technologies",
+		"publisher": "THQ",
+		"genre": ["Beat 'em up"],
+		"imageURL": "/images/gameslist/wwf-betrayal-250x250.webp",
+		"status": "Completed",
+		"console": "Game Boy Color",
+		"dateBeaten": "12/30/2025"
+	},
+	{
+		"name": "Attack of the Killer Tomatoes",
+		"developer": "Equilibrium",
+		"publisher": "THQ (then Toy Headquarters)",
+		"genre": ["Platformer"],
+		"imageURL": "/images/gameslist/attack-of-the-killer-tomatoes-250x250.webp",
+		"status": "Completed",
+		"console": "Game Boy",
+		"dateBeaten": "1/2/2026"
+	},
+	{
+		"name": "X-Men: Wolverine's Rage",
+		"developer": "Digital Eclipse",
+		"publisher": "Activision",
+		"genre": ["Platformer"],
+		"imageURL": "/images/gameslist/x-men-wolverines-rage-250x250.webp",
+		"status": "Completed",
+		"console": "Game Boy Color",
+		"dateBeaten": "1/3/2026"
+	},
+	{
 		"name": "Blazblue: Continuum Shift II",
 		"developer": "Arc System Works",
 		"publisher": "Aksys Games",
@@ -90,6 +270,26 @@
 		"dateBeaten": "1/4/2026"
 	},
 	{
+		"name": "Super R.C. Pro-Am",
+		"developer": "Rare",
+		"publisher": "Nintendo",
+		"genre": ["Racing"],
+		"imageURL": "/images/gameslist/super-rc-pro-am-250x250.webp",
+		"status": "Completed",
+		"console": "GB",
+		"dateBeaten": "05/18/2026"
+	},
+	{
+		"name": "Yoshi",
+		"developer": "Game Freak",
+		"publisher": "Nintendo",
+		"genre": ["Puzzle"],
+		"imageURL": "/images/gameslist/yoshi.webp",
+		"status": "Completed",
+		"console": "GB",
+		"dateBeaten": "1/7/2026"
+	},
+	{
 		"name": "Neo Turf Masters",
 		"developer": "Nazca Corporation",
 		"publisher": "SNK",
@@ -98,6 +298,26 @@
 		"status": "Shelved",
 		"console": "Neo Geo",
 		"dateBeaten": ""
+	},
+	{
+		"name": "Bravely Default",
+		"developer": "Silicon Studio",
+		"publisher": "Nintendo",
+		"genre": ["RPG"],
+		"imageURL": "/images/gameslist/bravely-default-250x250.webp",
+		"status": "Completed",
+		"console": "Nintendo 3DS",
+		"dateBeaten": "02/09/2026"
+	},
+	{
+		"name": "Color a Dinosaur",
+		"developer": "FarSight Studios",
+		"publisher": "Virgin Games",
+		"genre": ["Colouring", "Kids"],
+		"imageURL": "/images/gameslist/color-a-dinosaur-250x250.webp",
+		"status": "Completed",
+		"console": "NES",
+		"dateBeaten": "01/07/2026"
 	},
 	{
 		"name": "Marvel Super Heroes vs Street Fighter",
@@ -118,6 +338,16 @@
 		"status": "Completed",
 		"console": "GBC",
 		"dateBeaten": "01/10/2026"
+	},
+	{
+		"name": "Soccer",
+		"developer": "Denton Designs/Rage Software",
+		"publisher": "GameTek/Coconuts Japan/Elite Systems",
+		"genre": ["Sports"],
+		"imageURL": "/images/gameslist/soccer-250x250.webp",
+		"status": "Shelved",
+		"console": "GB",
+		"dateBeaten": ""
 	},
 	{
 		"name": "James Bond 007",
@@ -190,6 +420,26 @@
 		"dateBeaten": "03/13/2026"
 	},
 	{
+		"name": "Thomas the Tank Engine & Friends",
+		"developer": "Software Creations",
+		"publisher": "THQ",
+		"genre": "Kids",
+		"imageURL": "/images/gameslist/thomas-the-tank-engine-and-friends-250x250.webp",
+		"status": "Completed",
+		"console": "SNES",
+		"dateBeaten": "03/18/2026"
+	},
+	{
+		"name": "Blue's Clues: Blue's Alphabet Book",
+		"developer": "Vicarious Visions",
+		"publisher": "Mattel",
+		"genre": "Kids",
+		"imageURL": "/images/gameslist/blues-clues-blues-alphabet-book-250x250.webp",
+		"status": "Completed",
+		"console": "GBC",
+		"dateBeaten": "03/18/2026"
+	},
+	{
 		"name": "The Flintstones: King Rock Treasure Island",
 		"developer": "Taito",
 		"publisher": "Taito",
@@ -250,6 +500,26 @@
 		"dateBeaten": "03/25/2026"
 	},
 	{
+		"name": "Microsoft Windows 98",
+		"developer": "Bei Tongfang",
+		"publisher": "Bei Tongfang",
+		"genre": "Simulation",
+		"imageURL": "/images/gameslist/windows-98-250x250.webp",
+		"status": "Completed",
+		"console": "NES",
+		"dateBeaten": "03/25/2026"
+	},
+	{
+		"name": "Pieces",
+		"developer": "Nippon Ichi Software (then Prism Kikaku)",
+		"publisher": "Atlus",
+		"genre": "Puzzle",
+		"imageURL": "/images/gameslist/pieces-250x250.webp",
+		"status": "Completed",
+		"console": "SNES",
+		"dateBeaten": "03/26/2026"
+	},
+	{
 		"name": "Super Mario Advance 4: Super Mario Bros. 3",
 		"developer": "Nintendo",
 		"publisher": "Nintendo",
@@ -260,11 +530,31 @@
 		"dateBeaten": "03/27/2026"
 	},
 	{
+		"name": "Bonkers",
+		"developer": "Sun-L",
+		"publisher": "Capcom",
+		"genre": "Platformer",
+		"imageURL": "/images/gameslist/bonkers-250x250.webp",
+		"status": "Completed",
+		"console": "SNES",
+		"dateBeaten": "03/28/2026"
+	},
+	{
 		"name": "Hamtaro: Ham-Hams Unite!",
 		"developer": "Pax Softnica",
 		"publisher": "Nintendo",
 		"genre": "Adventure",
 		"imageURL": "/images/gameslist/hamtaro-ham-hams-unite-250x250.webp",
+		"status": "Completed",
+		"console": "GBC",
+		"dateBeaten": "03/29/2026"
+	},
+	{
+		"name": "Men In Black: The Series",
+		"developer": "Tiertex Design Studios",
+		"publisher": "Crave Entertainment",
+		"genre": "Platformer",
+		"imageURL": "/images/gameslist/men-in-black-250x250.webp",
 		"status": "Completed",
 		"console": "GBC",
 		"dateBeaten": "03/29/2026"
@@ -290,6 +580,16 @@
 		"dateBeaten": "03/30/2026"
 	},
 	{
+		"name": "Mighty Morphin Power Rangers",
+		"developer": "Banpresto",
+		"publisher": "Sega",
+		"genre": "Fighting",
+		"imageURL": "/images/gameslist/mighty-morphin-power-rangers-250x250.webp",
+		"status": "Completed",
+		"console": "Sega Mega Drive",
+		"dateBeaten": "03/31/2026"
+	},
+	{
 		"name": "Adventures of Yogi Bear",
 		"developer": "Blue Turtle",
 		"publisher": "Cybersoft/Empire Interactive",
@@ -297,6 +597,26 @@
 		"imageURL": "/images/gameslist/adventures-of-yogi-bear-250x250.webp",
 		"status": "Completed",
 		"console": "SNES",
+		"dateBeaten": "04/1/2026"
+	},
+	{
+		"name": "Color a Ninja",
+		"developer": "Slush.Filter",
+		"publisher": "",
+		"genre": ["Colouring", "Kids"],
+		"imageURL": "/images/gameslist/color-a-ninja-250x250.gif",
+		"status": "Completed",
+		"console": "NES",
+		"dateBeaten": "04/1/2026"
+	},
+	{
+		"name": "Taikong Zhanshi DX3 - Zuizhong Huanxiang",
+		"developer": "TD Software",
+		"publisher": "Guangzhou Licheng, Waixing",
+		"genre": "Beat-em-up",
+		"imageURL": "/images/gameslist/taikong-zhanshi-dx3-zuizhong-huanxiang-250x250.gif",
+		"status": "Completed",
+		"console": "GBC",
 		"dateBeaten": "04/1/2026"
 	},
 	{
@@ -340,6 +660,16 @@
 		"dateBeaten": "04/05/2026"
 	},
 	{
+		"name": "Batman Returns",
+		"developer": "Malibu Interactive",
+		"publisher": "Sega",
+		"genre": "Platformer",
+		"imageURL": "/images/gameslist/batman-returns-250x250.webp",
+		"status": "Completed",
+		"console": "Sega Mega Drive/Genesis",
+		"dateBeaten": "04/06/2026"
+	},
+	{
 		"name": "Pokémon Puzzle League",
 		"developer": "Nintendo",
 		"publisher": "Nintendo",
@@ -348,6 +678,16 @@
 		"status": "Completed",
 		"console": "N64",
 		"dateBeaten": "04/06/2026"
+	},
+	{
+		"name": "Daredevil",
+		"developer": "Griptonite Games",
+		"publisher": "Encore Software",
+		"genre": ["Beat-em-up", "Platformer"],
+		"imageURL": "/images/gameslist/daredevil-250x250.webp",
+		"status": "Completed",
+		"console": "GBA",
+		"dateBeaten": "04/07/2026"
 	},
 	{
 		"name": "Power Blade",
@@ -450,6 +790,26 @@
 		"dateBeaten": "04/16/2026"
 	},
 	{
+		"name": "Darkman",
+		"developer": "Ocean Software",
+		"publisher": "Ocean Software",
+		"genre": ["Action", "Platformer"],
+		"imageURL": "/images/gameslist/darkman-250x250.webp",
+		"status": "Completed",
+		"console": "NES",
+		"dateBeaten": "04/18/2026"
+	},
+	{
+		"name": "Darkwing Duck",
+		"developer": "Capcom",
+		"publisher": "Capcom",
+		"genre": "Platformer",
+		"imageURL": "/images/gameslist/darkwing-duck-250x250.webp",
+		"status": "Completed",
+		"console": "NES",
+		"dateBeaten": "04/19/2026"
+	},
+	{
 		"name": "Aaahh!!! Real Monsters",
 		"developer": "Realtime Associates",
 		"publisher": "Viacom New Media",
@@ -458,6 +818,16 @@
 		"status": "Completed",
 		"console": "Mega Drive/Genesis",
 		"dateBeaten": "04/21/2026"
+	},
+	{
+		"name": "Wario Land II",
+		"developer": "Nintendo",
+		"publisher": "Nintendo",
+		"genre": "Platformer",
+		"imageURL": "/images/gameslist/wario-land-ii-250x250.webp",
+		"status": "Completed",
+		"console": "GBC",
+		"dateBeaten": "04/22/2026"
 	},
 	{
 		"name": "X-Men: Mutant Apocalypse",
@@ -480,6 +850,16 @@
 		"dateBeaten": "04/30/2026"
 	},
 	{
+		"name": "Turok: Rage Wars",
+		"developer": "Bit Managers",
+		"publisher": "Acclaim Entertainment",
+		"genre": ["Run and gun", "Shoot 'em up"],
+		"imageURL": "/images/gameslist/turok-rage-wars-250x250.webp",
+		"status": "Completed",
+		"console": "GBC",
+		"dateBeaten": "05/04/2026"
+	},
+	{
 		"name": "The Amazing Spider-Man: Lethal Foes",
 		"developer": "Argent",
 		"publisher": "Epoch",
@@ -488,6 +868,16 @@
 		"status": "Completed",
 		"console": "SNES",
 		"dateBeaten": "05/04/2026"
+	},
+	{
+		"name": "Banishing Racer",
+		"developer": "Jaleco Entertainment",
+		"publisher": "Jaleco",
+		"genre": "Platformer",
+		"imageURL": "/images/gameslist/banishing-racer-250x250.webp",
+		"status": "Completed",
+		"console": "Game Boy",
+		"dateBeaten": "05/06/2026"
 	},
 	{
 		"name": "The Punisher",
@@ -500,6 +890,16 @@
 		"dateBeaten": "05/06/2026"
 	},
 	{
+		"name": "Porky Pig's Haunted Holiday",
+		"developer": "Phoenix Interactive Entertainment",
+		"publisher": "Acclaim Entertainment",
+		"genre": "Platformer",
+		"imageURL": "/images/gameslist/porky-pigs-haunted-holiday-250x250.webp",
+		"status": "Completed",
+		"console": "SNES",
+		"dateBeaten": "05/07/2026"
+	},
+	{
 		"name": "The Jetsons: Cogswell's Caper",
 		"developer": "Natsume",
 		"publisher": "Taito",
@@ -508,6 +908,26 @@
 		"status": "Completed",
 		"console": "NES",
 		"dateBeaten": "05/08/2026"
+	},
+	{
+		"name": "Return of the Ninja",
+		"developer": "Act Japan",
+		"publisher": "Natsume Inc.",
+		"genre": "Platformer",
+		"imageURL": "/images/gameslist/return-of-the-ninja-250x250.webp",
+		"status": "Completed",
+		"console": "GBC",
+		"dateBeaten": "05/10/2026"
+	},
+	{
+		"name": "DJ Boy",
+		"developer": "Kaneko",
+		"publisher": "Sammy",
+		"genre": "Beat-em-up",
+		"imageURL": "/images/gameslist/dj-boy-250x250.webp",
+		"status": "Completed",
+		"console": "Sega Mega Drive/Genesis",
+		"dateBeaten": "05/10/2026"
 	},
 	{
 		"name": "Valis",
@@ -520,6 +940,16 @@
 		"dateBeaten": "05/10/2026"
 	},
 	{
+		"name": "3-pun Yosou: Umaban Club",
+		"developer": "Hect",
+		"publisher": "Hect",
+		"genre": "Sports",
+		"imageURL": "/images/gameslist/3-pun-yosou-umaban-club-250x250.webp",
+		"status": "Completed",
+		"console": "Game Boy",
+		"dateBeaten": "05/17/2026"
+	},
+	{
 		"name": "Pocket Fighter",
 		"developer": "Capcom",
 		"publisher": "Capcom",
@@ -527,6 +957,16 @@
 		"imageURL": "/images/gameslist/pocket-fighter-250x250.webp",
 		"status": "Completed",
 		"console": "PS1",
+		"dateBeaten": "05/18/2026"
+	},
+	{
+		"name": "Alien Syndrome",
+		"developer": "Telenet Japan",
+		"publisher": "Sega",
+		"genre": "Shoot-em-up",
+		"imageURL": "/images/gameslist/alien-syndrome-250x250.webp",
+		"status": "Completed",
+		"console": "NES",
 		"dateBeaten": "05/18/2026"
 	},
 	{
@@ -548,6 +988,56 @@
 		"status": "Completed",
 		"console": "Sega Mega Drive/Genesis",
 		"dateBeaten": "05/19/2026"
+	},
+	{
+		"name": "EightMan",
+		"developer": "Pallas",
+		"publisher": "SNK",
+		"genre": "Beat-em-up",
+		"imageURL": "/images/gameslist/eightman-250x250.gif",
+		"status": "Completed",
+		"console": "Arcade",
+		"dateBeaten": "05/20/2026"
+	},
+	{
+		"name": "SegaSonic Cosmo Fighter Galaxy Patrol",
+		"developer": "Sega",
+		"publisher": "Sega",
+		"genre": "Shoot-em-up",
+		"imageURL": "/images/gameslist/segasonic-cosmo-fighter-galaxy-patrol-250x250.webp",
+		"status": "Completed",
+		"console": "Arcade",
+		"dateBeaten": "05/21/2026"
+	},
+	{
+		"name": "Midnight Resistance",
+		"developer": "Opera House",
+		"publisher": "Sega",
+		"genre": "Shoot-em-up",
+		"imageURL": "/images/gameslist/midnight-resistance-250x250.webp",
+		"status": "Completed",
+		"console": "Sega Mega Drive/Genesis",
+		"dateBeaten": "05/21/2026"
+	},
+	{
+		"name": "SegaSonic The Hedgehog",
+		"developer": "Sega",
+		"publisher": "Sega",
+		"genre": "Platformer",
+		"imageURL": "/images/gameslist/segasonic-the-hedgehog-250x250.webp",
+		"status": "Completed",
+		"console": "Arcade",
+		"dateBeaten": "05/21/2026"
+	},
+	{
+		"name": "WaiWai Drive",
+		"developer": "MOSS",
+		"publisher": "Sammy",
+		"genre": "Arcade",
+		"imageURL": "/images/gameslist/waiwai-drive-250x250.webp",
+		"status": "Completed",
+		"console": "Arcade",
+		"dateBeaten": "05/22/2026"
 	},
 	{
 		"name": "Avenging Spirit",
@@ -587,6 +1077,16 @@
 		"imageURL": "/images/gameslist/donald-in-maui-mallard-250x250.webp",
 		"status": "Completed",
 		"console": "Sega Mega Drive/Genesis",
+		"dateBeaten": "05/25/2026"
+	},
+	{
+		"name": "Superman",
+		"developer": "Taito",
+		"publisher": "Taito",
+		"genre": "Beat-em-up",
+		"imageURL": "/images/gameslist/superman-250x250.webp",
+		"status": "Completed",
+		"console": "Arcade",
 		"dateBeaten": "05/25/2026"
 	},
 	{
@@ -720,6 +1220,26 @@
 		"dateBeaten": "06/13/2026"
 	},
 	{
+		"name": "Air Buster",
+		"developer": "Kaneko",
+		"publisher": "Sharp Image Electronics",
+		"genre": "Shoot-em-up",
+		"imageURL": "/images/gameslist/airbuster-250x250.webp",
+		"status": "Completed",
+		"console": "Sega Mega Drive/Genesis",
+		"dateBeaten": "06/13/2026"
+	},
+	{
+		"name": "Mega Man",
+		"developer": "Capcom",
+		"publisher": "Capcom",
+		"genre": "Platformer",
+		"imageURL": "/images/gameslist/mega-man-250x250.webp",
+		"status": "Completed",
+		"console": "NES",
+		"dateBeaten": "06/20/2026"
+	},
+	{
 		"name": "Mega Man X",
 		"developer": "Capcom",
 		"publisher": "Capcom",
@@ -760,6 +1280,16 @@
 		"dateBeaten": ""
 	},
 	{
+		"name": "Disney's DuckTales 2",
+		"developer": "Capcom",
+		"publisher": "Capcom",
+		"genre": "Platformer",
+		"imageURL": "/images/gameslist/ducktales-2-250x250.webp",
+		"status": "Completed",
+		"console": "NES",
+		"dateBeaten": "06/30/2026"
+	},
+	{
 		"name": "Star Fox",
 		"developer": "Nintendo",
 		"publisher": "Nintendo",
@@ -788,5 +1318,45 @@
 		"status": "Completed",
 		"console": "Game Boy",
 		"dateBeaten": "08/26/2026"
+	},
+	{
+		"name": "X-Kaliber 2097",
+		"developer": "Fupac",
+		"publisher": "Activision",
+		"genre": "Platformer",
+		"imageURL": "",
+		"status": "Completed",
+		"console": "SNES",
+		"dateBeaten": "08/27/2026"
+	},
+	{
+		"name": "B.O.B.",
+		"developer": "Foley Hi-Tech Systems",
+		"publisher": "Electronic Arts",
+		"genre": "Run and gun",
+		"imageURL": "/images/gameslist/bob-250x250.jpg",
+		"status": "Completed",
+		"console": "Sega Mega Drive/Genesis",
+		"dateBeaten": "08/30/2026"
+	},
+	{
+		"name": "Pu·Li·Ru·La",
+		"developer": "Taito",
+		"publisher": "Taito",
+		"genre": "Beat-em-up",
+		"imageURL": "",
+		"status": "Completed",
+		"console": "Arcade",
+		"dateBeaten": "08/30/2026"
+	},
+	{
+		"name": "TumblePop",
+		"developer": "Data East",
+		"publisher": "Data East",
+		"genre": "Platformer",
+		"imageURL": "",
+		"status": "Completed",
+		"console": "Arcade",
+		"dateBeaten": "08/30/2026"
 	}
 ]
