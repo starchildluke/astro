@@ -1,6 +1,8 @@
   ---
 import site from '../data/site.json';
 
+
+
 const {
   title,
   metaTitle,
@@ -21,7 +23,7 @@ const isHome = Astro.url.pathname === '/';
 <title>{metaTitle ? metaTitle : title}</title>
 <link rel="stylesheet" type="text/css" href={stylesheetURL ? `/style/${stylesheetURL}` : "/style/style.css"}>
 <link rel="preload" as="font" href="/fonts/DMSerifDisplay-Regular-subset.woff2" type="font/woff2" crossorigin>
-<link rel="preload" as="font" href="/fonts/NyghtSerif-Light-subset.woff2" type="font/woff2" crossorigin>
+{!isHome && (<link rel="preload" as="font" href="/fonts/NyghtSerif-Light-subset.woff2" type="font/woff2" crossorigin>)}
 {isHome && (<link rel="preload" as="font" href="/fonts/nokiafc22.woff2" type="font/woff2" crossorigin="">)}
 <script async src="https://plausible.io/js/pa-juzxS8GCoNHZxPt1EMkES.js"></script>
 <script>window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};plausible.init()</script>
