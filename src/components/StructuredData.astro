@@ -9,30 +9,82 @@ let sd = JSON.stringify({
       "headline": post.title,
       "datePublished": post.pubDate,
       "description": post.description,
+      "reviewedBy": {
+        "@type": "Person",
+        "name": "Luke Davis"
+      },
       "author": {
         "@type": "Person",
-              "image": [
-                "https://lukealexdavis.co.uk/images/k5t2wVcf-Luke-Davis-640x600.png",
-                "https://lukealexdavis.co.uk/images/lukedavis_jpg.jpg"
-              ],
-              "url": "https://lukealexdavis.co.uk/",
-              "sameAs": [
-                "https://uk.linkedin.com/in/lukealexdavis",
-                "https://bsky.app/profile/lukealexdavis.co.uk",
-                "https://www.searchenginejournal.com/author/luke-davis/",
-                "https://www.semrush.com/user/147747585/",
-                "https://www.imdb.com/name/nm14089488/"
-              ],
-              "alternateName": [
-                "Luke Davis",
-                "Luke Alex Davis",
-                "lukealexdavis",
-                "starchildluke"
-              ],
-              "name": "Luke Davis",
-              "jobTitle": "Technical SEO",
-              "gender": "Male"
-      },
+          "image": [
+            "https://lukealexdavis.co.uk/images/k5t2wVcf-Luke-Davis-640x600.png",
+            "https://lukealexdavis.co.uk/images/lukedavis_jpg.jpg"
+          ],
+          "url": "https://lukealexdavis.co.uk/",
+          "sameAs": [
+            "https://uk.linkedin.com/in/lukealexdavis",
+            "https://bsky.app/profile/lukealexdavis.co.uk",
+            "https://www.searchenginejournal.com/author/luke-davis/",
+            "https://www.semrush.com/user/147747585/",
+            "https://www.imdb.com/name/nm14089488/"
+          ],
+          "alternateName": [
+            "Luke Davis",
+            "Luke Alex Davis",
+            "lukealexdavis",
+            "starchildluke",
+            "centiskor.ch",
+          ],
+          "name": "Luke Davis",
+          "hasOccupation" : {
+            "@type": "Occupation",
+            "name": "Senior Technical SEO Specialist",
+            "sameAs": "https://www.wikidata.org/wiki/Q4048723",
+            "description": "Optimising a website's technical health, particularly its crawlability and indexability, to help it rank as high as possible for topics and keywords that matter.",
+            "occupationLocation": "United Kingdom",
+            "skills": [
+                {
+                  "@type": "DefinedTerm",
+                  "name": "log analysis",
+                  "alternateName": "log file analysis",
+                  "termCode": "Q6666826",
+                  "inDefinedTermSet": "https://www.wikidata.org/wiki/Q6666826"
+                },
+                {
+                  "@type": "DefinedTerm",
+                  "name": "web performance optimization",
+                  "alternateName": "page speed optimisation",
+                  "termCode": "Q7978612",
+                  "inDefinedTermSet": "https://www.wikidata.org/wiki/Q7978612"
+                },
+                {
+                  "@type": "DefinedTerm",
+                  "name": "search engine marketing",
+                  "termCode": "Q846132",
+                  "inDefinedTermSet": "https://www.wikidata.org/wiki/Q846132"
+                },
+                {
+                  "@type": "DefinedTerm",
+                  "name": "search engine optimization",
+                  "alternateName": "SEO",
+                  "termCode": "Q180711",
+                  "inDefinedTermSet": "https://www.wikidata.org/wiki/Q180711"
+                },
+                {
+                  "@type": "DefinedTerm",
+                  "name": "computer programming",
+                  "alternateName": "coding",
+                  "termCode": "Q80006",
+                  "inDefinedTermSet": "https://www.wikidata.org/wiki/Q80006"
+                },
+              "JavaScript SEO",
+              "International SEO & hreflang implementation",
+              "Structured Data implementation and optimisation",
+              "Site migrations and redirect mapping"
+              ]
+          },
+          "gender": "Male",
+          "email": "luke@lukealexdavis.co.uk"
+        },
       "@id": Astro.url + "#richSnippet",
       "inLanguage": "en-GB",
       "mainEntityOfPage": {
