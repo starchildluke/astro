@@ -19,7 +19,7 @@ const music = defineCollection({
 	schema: z.object({
 		title: z.string(),
 		linerNotes: z.string(),
-		image: z.string().optional(),
+		albumCover: z.string().optional(),
 		pubDate: z.string(),
 		url: z.string().url().optional(),
 		related: z.string().optional()

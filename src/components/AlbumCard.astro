@@ -2,7 +2,7 @@
 
 import FormattedDate from "./FormattedDate.astro";
 
-const { title, linerNotes, pubDate, image, url } = Astro.props;
+const { title, linerNotes, pubDate, albumCover, url } = Astro.props;
 
 ---
 
@@ -65,7 +65,7 @@ const { title, linerNotes, pubDate, image, url } = Astro.props;
 		<h1>{title}</h1>
 	</div>
 	<div class="album-cover">
-			<img src={`/images/albums/full/${image}`} alt={`cover art for ${title}`} width="500" height="500" loading="eager" fetchpriority="high" />
+			<img src={`/images/albums/full/${albumCover}`} alt={`cover art for ${title}`} width="500" height="500" loading="eager" fetchpriority="high" />
 	</div>
 	<div class="album-meta">
 		<div class="album-liner-notes">

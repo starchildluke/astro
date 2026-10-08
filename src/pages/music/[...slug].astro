@@ -31,17 +31,17 @@ export async function getStaticPaths() {
 
 type Props = CollectionEntry<'music'>;
 
-const { album, prevPost, nextPost, prevSlug, prevTitle, nextSlug, nextTitle, contentType, title, linerNotes, pubDate, image, url } = Astro.props;
+const { album, prevPost, nextPost, prevSlug, prevTitle, nextSlug, nextTitle, contentType, title, linerNotes, pubDate, albumCover, url } = Astro.props;
 const { Content } = await render(album);
 
 ---
 
-<Music title={album.data.title} description={album.data.linerNotes} pubDate={album.data.pubDate} stylesheetURL="music.css">
+<Music title={album.data.title} description={album.data.linerNotes} pubDate={album.data.pubDate} stylesheetURL="music.css" albumCover={album.data.albumCover}>
       <div>
         <a href="/music/">← Back</a>
       </div>
       <p class="publish-date"><FormattedDate date={album.data.pubDate} /></p>
-          <AlbumCard title={album.data.title}, linerNotes={album.data.linerNotes}, pubDate={album.data.pubDate}, image={album.data.image} url={album.data.url ? album.data.url : album.body}>
+          <AlbumCard title={album.data.title}, linerNotes={album.data.linerNotes}, pubDate={album.data.pubDate}, albumCover={album.data.albumCover} url={album.data.url ? album.data.url : album.body}>
             <Content />
           </AlbumCard>
 

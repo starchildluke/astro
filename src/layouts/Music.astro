@@ -8,13 +8,14 @@ interface Props {
   pubDate: string;
   canonicalURL: string | URL;
   stylesheetURL: string | URL;
+  albumCover: string | URL;
 }
 
-const { title, description, pubDate, canonicalURL, stylesheetURL } = Astro.props;
+const { title, description, pubDate, canonicalURL, stylesheetURL, albumCover } = Astro.props;
 
 ---
 <html lang="en-GB">
-  <BaseHead {title} {description} {canonicalURL} {stylesheetURL} />
+  <BaseHead {title} {description} {canonicalURL} {stylesheetURL} {albumCover} />
   <body>
       <slot />
   </body>
