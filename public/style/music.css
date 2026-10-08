@@ -18,6 +18,9 @@
   --space-lg: 2rem;
   --space-lgr: 2.5rem;
   --space-xl: 4rem;
+
+  --brown: #1f1305;
+  --golden-brown: #5c3609;
 }
 
 body {
@@ -33,6 +36,22 @@ a {
   text-underline-offset: .1em;
   text-decoration-thickness: 1px;
   font-weight: 450;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.back-home {
+  padding: 0.5rem 0.75rem;
+  background: var(--brown);
+  border: 1px solid var(--golden-brown);
+  display: inline-block;
+  border-radius: 1.5rem;
+}
+
+.back-home::before {
+  content: '← ';
 }
 
 hgroup {
@@ -55,7 +74,7 @@ h2 {
   line-height: 1;
 }
 
-h1, h2, a {
+h1, h2, a, .back-home::before {
   color: #e09e3e;
 }
 
@@ -72,7 +91,8 @@ h1, h2, a {
   margin-bottom: 1rem;
   border-radius: 0.5rem;
   padding: 1rem;
-  background: #1f1305;
+  background: var(--brown);
+  border: 1px solid var(--golden-brown);
 }
 
 .album-metadata {
