@@ -1,8 +1,7 @@
 ---
 title: "100th Blog Post"
 published: true
-description: "This is technically the 100th blog post on this iteration of my blog.
-"
+description: "This is technically the 100th blog post on this iteration of my blog."
 pubDate: "9 May 2021"
 tags: ['life']
 ---
