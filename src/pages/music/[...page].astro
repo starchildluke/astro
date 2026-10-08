@@ -54,7 +54,7 @@ let description = "A collection of my music, with liner notes and behind-the-sce
     {items.map((album) => (
       <li class="album-listing">
       <div class="album-img">
-        <img src={`/images/albums/smaller/${album?.data.image.replace('.jpg', '_100x100.webp').replace('.png', '_100x100.webp')}`} alt={`cover art for ${album.data.title}`} width="64" height="64" />
+        <img src={`/images/albums/smaller/${album?.data.albumCover.replace('.jpg', '_100x100.webp').replace('.png', '_100x100.webp')}`} alt={`cover art for ${album.data.title}`} width="64" height="64" />
       </div>
         <div class="album-metadata">
           <a href={`/music/${album.id}/`}><Fragment set:html={album.data.title} /></a>
