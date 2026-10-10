@@ -3,24 +3,56 @@ title: 'Morsel #5: Black fabric'
 published: true
 pubDate: '8 Jul 2022'
 tags:
-  - Python
+  - JavaScript
   - Black
+  - the Internet
   - tech
 ---
 
-My fifth morsel is called Black Fabric and it's a Python script that generates five randomised names that incorporate:
+<style>.fabric-name {font-weight: 700; text-align: center; font-size: 2rem;}</style>
 
-* A fabric type as the first name
-* A common surname of African diasporan descent (ie. Black folks from the UK, the US, Canada, the Caribbean, and other Central American countries whose ancestors were enslaved people)
+<blockquote>
+  <p>white writers be like what if this black man was named after a fabric</p>
+  <cite>—<a href="https://twitter.com/yedoye_/status/1422264318079422466">@yedoye</a></cite>
+</blockquote>
 
-## Requirements
+Black Fabric was initially a Python script that randomly generated Black peoples' names using a “Fabric + Surname” format. I chose common surnames from a list of [Most common last names for Blacks in the U.S.](https://probablyhelpful.com/data/black.html).
 
-* [Python 3](https://www.python.org/downloads/)
-* [streamlit](https://streamlit.io/)
+Click **Generate** to get 5 random names or you can get the [full list of names in a text file](/blackfabric.txt) (there are over 6,300 of them).
 
-## Links
+<button id="generate" aria-label="Generate button">Generate</button> <button id="clear" aria-label="Clear button">Clear</button>
 
-* [GitHub link](https://github.com/starchildluke/black_fabric)
-* [Streamlit app](https://share.streamlit.io/starchildluke/black_fabric/main/black_fabric.py)
+<div class="fabric-name"></div>
+
+<script>
+
+const fabric = ["Angora", "Baize", "Bunting", "Burlap", "Canvas", "Cashmere", "Cheesecloth", "Chiffon", "Chino", "Chintz", "Corduroy", "Cotton", "Denim", "Felt", "Flannel", "Fleece", "Gingham", "Gore-Tex", "Hemp", "Herringbone", "Houndstooth", "Jersey", "Jute", "Kente", "Kevlar", "Lace", "Leather", "Linen", "Longcloth", "Madras", "Mohair", "Moleskin", "Muslin", "Nylon", "Paisley", "Pashmina", "Polyester", "Sateen", "Satin", "Silk", "Spandex", "Tweed", "Twill", "Velour", "Velveteen", "Windstopper", "Wool"];
+const surname = ["Williams", "Johnson", "Smith", "Jones", "Brown", "Jackson", "Davis", "Thomas", "Harris", "Robinson", "Taylor", "Wilson", "Moore", "White", "Lewis", "Walker", "Green", "Washington", "Thompson", "Anderson", "Scott", "Carter", "Wright", "Miller", "Hill", "Allen", "Mitchell", "Young", "Lee", "Martin", "Clark", "Turner", "Hall", "King", "Edwards", "Coleman", "James", "Evans", "Bell", "Richardson", "Adams", "Brooks", "Parker", "Jenkins", "Stewart", "Howard", "Campbell", "Simmons", "Sanders", "Henderson", "Collins", "Cooper", "Watson", "Butler", "Alexander", "Bryant", "Nelson", "Morris", "Barnes", "Jordan", "Reed", "Woods", "Dixon", "Roberts", "Gray", "Phillips", "Griffin", "Baker", "Powell", "Bailey", "Ford", "Holmes", "Banks", "Daniels", "Ross", "Rogers", "Perry", "Foster", "Patterson", "Hunter", "Owens", "Grant", "Marshall", "Henry", "Morgan", "Price", "Wallace", "Ward", "Hayes", "Boyd", "Freeman", "Graham", "Hamilton", "Franklin", "Hawkins", "Gordon", "Sims", "Harrison", "Ellis", "Kelly", "Hicks", "Bennett", "Joseph", "Gibson", "Crawford", "Jefferson", "Watkins", "Tucker", "Porter", "Willis", "Mason", "Matthews", "Fields", "Cook", "Hughes", "Simpson", "Hudson", "Cole", "Black", "Butcher", "Carson", "Dunlap", "Dunn", "Ewing", "Fisher", "Fox", "Gibbs", "Griffiths", "McDonald", "Peters", "Rashford", "Spencer", "Stevens", "West", "Yancey"];
+
+const blackFabricNameClass = document.querySelector('.fabric-name');
+
+function generateName() {
+    blackFabricNameClass.innerHTML = ""
+    for (let i = 0; i < 5 ; i++) {
+        const fabricRandNum = Math.floor(Math.random() * fabric.length);
+        const surnameRandNum = Math.floor(Math.random() * surname.length);
+        const blackFabricName = `${fabric[fabricRandNum]} ${surname[surnameRandNum]}`;
+        const pEl = document.createElement('p');
+        pEl.textContent = blackFabricName;
+        blackFabricNameClass.appendChild(pEl);
+    }
+}
+
+const generateButton = document.querySelector('#generate');
+generateButton.addEventListener("click", function() {
+    generateName();
+})
+
+const clearButton = document.querySelector('#clear');
+clearButton.addEventListener("click", function() {
+    blackFabricNameClass.innerHTML = "";
+})
+
+</script>
 
 Credit to [@yedoye](https://twitter.com/yedoye_/status/1422264318079422466) for the idea and everyone in the replies.
