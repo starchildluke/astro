@@ -36,7 +36,7 @@ I had the pleasure of meeting Josh at a Black History Month event many years ago
 
 Jacky is a software engineer and a vital person in the tech sphere because of his focus on civic and government technologies. He wants the world to be better and I fully stand by that. He's also funny and knows his shit. In the darkest hours, we need more perspectives and views like Jacky's to make sense of things and maybe find a better way out.
 
-[Website](https://www.jacky.wtf/) | [Bluesky](https://bsky.app/profile/jacky.wtf)
+[Website](https://jalcine.github.io/) | [Bluesky](https://bsky.app/profile/jacky.wtf)
 
 ## 6. jamie aka seafare
 
