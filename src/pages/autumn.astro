@@ -19,7 +19,9 @@ let description = 'This is my digital autumnal altar for autumn 2025.';
     --hunyadi-yellow: #F0B757;
     --licorice: #100207;
     --deeper-hunyadi-yellow: #F1AC3B;
+    --clovers-yarn: #d17519;
     --roastery: #641906;
+    --buried-lust: #812700;
   }
 
   body {
@@ -32,9 +34,17 @@ let description = 'This is my digital autumnal altar for autumn 2025.';
   
   body {
     margin: 4rem;
-    background: var(--deeper-hunyadi-yellow);
+    background: var(--clovers-yarn);
     display: flex;
     align-items: normal;
+  }
+
+  h1, h3 {
+    color: var(--licorice);
+  }
+
+  img {
+    border: 1rem ridge var(--deeper-hunyadi-yellow);
   }
 
   img[src*="gif"] {
@@ -63,7 +73,7 @@ let description = 'This is my digital autumnal altar for autumn 2025.';
         <img src="/images/pumpkins.gif" alt="a bunch of low res pumpkins" width="500" height="333" fetchpriority="high" />
       </section>
       <h3>Click the leaves to find new pages about autumn</h3>
-      <div class="autumn-leaves">
+      <div class="autumn-leaves" >
         <AutumnLeaves />
       </div>
 </AutumnLayout>
