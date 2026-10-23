@@ -46,3 +46,5 @@ Sadly with vibe coding, it might have started out as a tongue-in-cheek thing, an
 > The key difference between vibe coding and normal coding is that the engineer doesn’t interact with the codebase directly, and instead converses with the agent and inspects the final outcome.
 
 That ties in with my FrontPage Express anecdote. I didn't interact with the codebase at all, just the editor (albeit with manual inputs so not _exactly_ the same)
+
+**Related**: [i actually like to press the keys on my keyboard](/recortes/i-actually-like-to-press-the-keys-on-my-keyboard/)
