@@ -1,0 +1,16 @@
+---
+const { ref, signifier, link } = Astro.props
+---
+
+<style>
+
+	#sup-link-style a {
+		text-decoration: none;
+	}
+	
+</style>
+
+{link ?
+	<sup id="sup-link-style">[<a href=`#${ref}`>{signifier}</a>]</sup>
+	: <sup id=`${ref}`>{signifier}</sup>
+}
