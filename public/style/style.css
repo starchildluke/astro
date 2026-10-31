@@ -342,6 +342,10 @@ h3 {
 	letter-spacing: .2px;
 }
 
+summary {
+	padding-bottom: 1.4rem;
+}
+
 blockquote {
 	margin: var(--space-lgr) 0;
 	padding: 0 var(--space-lg);

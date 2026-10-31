@@ -44,4 +44,4 @@ I thought I'd compile a list of all the consoles I've owned over the years. Maki
 Anbernic RG 476H       | 2025 | 2025					   | Horizontal; handheld | Retro Gray 							      | Yes			  |
 PS Vita       | 2026 | 2012					   | Horizontal; handheld | Aqua Blue 							      | Yes			  |
 Anbernic RG DS       | 2026 | 2025					   | Clamshell; handheld | White 							      | Yes			  |
-AYN Thor Lite*       | 2026 | 2025					   | Clamshell; handheld | Black 							      | *Pending; not arrived yet		  |
+AYN Thor Lite       | 2026 | 2025					   | Clamshell; handheld | Black 							      | Yes		  |

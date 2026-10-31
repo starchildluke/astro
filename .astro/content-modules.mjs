@@ -38,5 +38,6 @@ export default new Map([
 ["src/content/release-notes/release-notes-25.mdx", () => import("astro:content-layer-deferred-module?astro%3Acontent-layer-deferred-module=&fileName=src%2Fcontent%2Frelease-notes%2Frelease-notes-25.mdx&astroContentModuleFlag=true")],
 ["src/content/release-notes/release-notes-26.mdx", () => import("astro:content-layer-deferred-module?astro%3Acontent-layer-deferred-module=&fileName=src%2Fcontent%2Frelease-notes%2Frelease-notes-26.mdx&astroContentModuleFlag=true")],
 ["src/content/release-notes/release-notes-27.mdx", () => import("astro:content-layer-deferred-module?astro%3Acontent-layer-deferred-module=&fileName=src%2Fcontent%2Frelease-notes%2Frelease-notes-27.mdx&astroContentModuleFlag=true")],
-["src/content/release-notes/release-notes-28.mdx", () => import("astro:content-layer-deferred-module?astro%3Acontent-layer-deferred-module=&fileName=src%2Fcontent%2Frelease-notes%2Frelease-notes-28.mdx&astroContentModuleFlag=true")]]);
+["src/content/release-notes/release-notes-28.mdx", () => import("astro:content-layer-deferred-module?astro%3Acontent-layer-deferred-module=&fileName=src%2Fcontent%2Frelease-notes%2Frelease-notes-28.mdx&astroContentModuleFlag=true")],
+["src/content/release-notes/release-notes-29.mdx", () => import("astro:content-layer-deferred-module?astro%3Acontent-layer-deferred-module=&fileName=src%2Fcontent%2Frelease-notes%2Frelease-notes-29.mdx&astroContentModuleFlag=true")]]);
 		
