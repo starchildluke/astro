@@ -115,13 +115,18 @@ _n._, _v._
 <li>overwhelm with a flood.</li>
 </ol>
 
+## diaphanous
+/dʌɪˈafənəs/
+
+_adj._ describing something that is so thin, light, and delicate that it is almost transparent or translucent.
+
 ## embryonic
 /ˌɛmbrɪˈɒnɪk/
 
 _adj_.
 
 <ol>
-<li>relating to an embryo."slight differences in embryonic</li>
+<li>relating to an embryo. <q>slight differences in embryonic</q></li>
 
 
 <li>(of a system, idea, or organization) in a rudimentary stage with potential for development.</li>
