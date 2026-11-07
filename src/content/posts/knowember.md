@@ -13,7 +13,7 @@ I thought I'd take part in Robert Birming's [Knowember challenge](https://robert
 ## A photo
 
 <figure>
-  <img src="/images/lukedavis_jpg.jpg" alt="Me in a purple sweater, smiling" width="500" height="497" />
+  <img src="/images/lukedavis_jpg.jpg" alt="Me in a purple sweater, smiling" width="500" height="497" fetchpriority="high" />
 </figure>
 
 I try not to post _too_ many photos of myself online but this one is what I use for a lot of profile photos. I took it at an old flat I'd just moved into at the time. I don't have those headphones anymore either. I think I still have the jumper somewhere though.
