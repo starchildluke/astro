@@ -28,7 +28,7 @@ I try not to post _too_ many photos of myself online but this one is what I use 
 
 ## Where in the world I blog from
 
-I live in the UK.
+I live in Nottingham in the UK where I mainly blog from. If I'm not here, I'm either in Nice or [Lisbon](/jardim/lisbon/).
 
 ## What my blog is mostly about
 
