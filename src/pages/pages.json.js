@@ -57,12 +57,13 @@ export async function GET({params, request}) {
       });
 
   const allAlbums = albums.map((data) => {
-        const { id, body, data: { title, pubDate, description } } = data;
+        const { id, body, data: { title, pubDate, description, linerNotes } } = data;
         return {
+          url: `https://lukealexdavis.co.uk/music/${id}/`,
           title: title,
           date: pubDate,
           description: description,
-          url: `https://lukealexdavis.co.uk/music/${id}/`
+          body: linerNotes
         };
       });
   
