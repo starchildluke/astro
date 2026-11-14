@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import NewCurrentlyListening from '../components/NewCurrentlyListening.astro';
 import Pokeballs from '../components/Pokeballs.astro';
 import Latest from '../components/Latest.astro';
+// import LatestAlbums from '../components/LatestAlbums.astro';
 import sd from '../data/sd.json';
 
 // METADATA VARIABLES
@@ -50,6 +51,16 @@ const sayHello = greetings[randLangs][Math.floor(Math.random()*greetings[randLan
     line-height: 1.4;
   }
 
+  .tagline a {
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .tagline a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: calc(var(--space-xs) / 4);
+  }
+
   #hello:lang(pt, es, fr) {
     font-style: normal;
   }
@@ -84,7 +95,7 @@ const sayHello = greetings[randLangs][Math.floor(Math.random()*greetings[randLan
         </span>
         : <span id="hello">sayHello</span>}
     </div>
-    <p class="tagline">I'm a senior technical SEO specialist, music producer, and blogger based in Nottingham, UK.</p>
+    <p class="tagline">I'm a <a href="/jardim/tech/seo/" style="color:var(--red)">senior technical SEO specialist</a>, <a href="/music/">music producer</a>, and <a href="/posts/" style="color:var(--blue)">blogger</a> based in Nottingham, UK.</p>
   </div>
   <Pokeballs />
   <Latest />
