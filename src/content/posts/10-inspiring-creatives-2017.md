@@ -20,11 +20,11 @@ RKZ is a very good friend of mine and a staple follow on every social media plat
 
 I'm simply in awe every time I see a new project from Arkotype, the "passion project" of graphic designer Dan Clarke. His brand of video games-related work breathes new life into a lot of material with iconic status of its own, from Pokémon to Legend of Zelda. As someone who pursued a career in graphic design, this would have been my go-to place for inspiration and in some ways it is now.
 
-[Website](https://arkotype.co/) | [Twitter](https://twitter.com/arkotypeco)
+[Instagram](https://www.instagram.com/arkotype/) | [Twitter](https://twitter.com/arkotypeco)
 
 ## 3. Alex Stewart
 
-I went through a rough period in the middle of 2015 and during that time, I took to writing to take my mind off things. I remember reading Alex Stewart's Moneyball series on The Set Pieces where he took Bristol City on Football Manager and rode them to glory in Europe with a sustainable financial strategy based on the books [Moneyball](https://uk.bookshop.org/a/3710/9780393324815), Soccernomics and The Numbers Game. I nicked his idea for Championship Manager and he retweeted the articles and that's how I started using my current Twitter account. Aside form that, Alex is a brilliant writer and television broadcaster, following in the footsteps of his father Alastair Stewart.
+I went through a rough period in the middle of 2015 and during that time, I took to writing to take my mind off things. I remember reading Alex Stewart's Moneyball series on The Set Pieces where he took Bristol City on Football Manager and rode them to glory in Europe with a sustainable financial strategy based on the books [Moneyball](https://uk.bookshop.org/p/books/moneyball-the-art-of-winning-an-unfair-game-michael-lewis/d6fdee3742454d33?ean=9780393324815&affiliate=3710)<sup>[affiliate link]</sup>, Soccernomics and The Numbers Game. I nicked his idea for Championship Manager and he retweeted the articles and that's how I started using my current Twitter account. Aside form that, Alex is a brilliant writer and television broadcaster, following in the footsteps of his father Alastair Stewart.
 
 [Twitter](https://twitter.com/AFHStewart)
 

@@ -14,7 +14,7 @@ In the section titled “How much does web performance matter when it comes to S
 
 >Since Web Vitals were announced, they've shot to the top of many people's list of things to care about. But Google's prioritization of page speed in search ranking isn't new, even for mobile. As far back as 2013, Google announced that pages that load slowly on mobile devices would be penalized in mobile search.
 <br><br>
->Performance has had an impact on SEO long before Web Vitals came along. Back in 2011, Smartfurniture.com [shared](https://www.retailtouchpoints.com/features/executive-viewpoints/the-growing-need-for-speed-how-site-performance-increasingly-influences-search-rankings):
+>Performance has had an impact on SEO long before Web Vitals came along. Back in 2011, Smartfurniture.com [shared](https://www.retailtouchpoints.com/executive-viewpoints/the-growing-need-for-speed-how-site-performance-increasingly-influences-search-rankings/885/):
 <br><br>
 >"We discovered we could make a quantum leap in search engine rankings simply by increasing site performance. Across the board, we’ve seen sales increases because of our improved ranking, with 20% more organic traffic being driven to our site and 14% more page views."
 <br><br>

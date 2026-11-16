@@ -21,12 +21,13 @@
 
   --brown: #1f1305;
   --golden-brown: #5c3609;
+  --black: #0a0900;
 }
 
 body {
   font-family: var(--font-body);
   align-items: flex-start;
-  background: #0a0900;
+  background: var(--black);
   color: #f3e6d9;
   margin: 4rem;
   line-height: 1.625;
@@ -40,6 +41,40 @@ a {
 
 a:hover {
   text-decoration: none;
+}
+
+table {
+  margin-bottom: 1.4rem;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+thead {
+  background: var(--golden-brown);
+  color: #fff;
+}
+
+tr {
+  border-bottom: 1px solid var(--golden-brown);
+}
+
+tr:first-child {
+  border-top: none;
+}
+
+.post-pagination-prev,
+th {
+  text-align: left;
+}
+
+td,
+th,
+tr {
+  padding: var(--space-sm);
+}
+
+td {
+  font-size: var(--font-size-sm);
 }
 
 .back-home {

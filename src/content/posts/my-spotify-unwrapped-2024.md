@@ -22,7 +22,7 @@ tags:
 
 Today is Spotify Wrapped day so, rather than just posting the images in a social media thread, I'd write a blog and not deal with the character limit.
 
-(_Addendum: I'm also aware that I've called this Spotify Unwrapped across the whole post, forgetting that it's **Wrapped**. There is an actual thing called [Spotify Unwrapped](https://www.spotify-unwrapped.com/) that highlights how little artists get paid for Spotify streams and while I'm a hypocrite for saying this, I fully support the idea and Spotify should cough up._)
+(_Addendum: I'm aware that I've called this Spotify Unwrapped across the whole post, forgetting that it's **Wrapped**. There ~~is~~ was(?) an actual thing called [Spotify Unwrapped](https://web.archive.org/web/20251207145730/https://www.spotify-unwrapped.com/) that highlights how little artists get paid for Spotify streams and while I'm a hypocrite for saying this, I fully support the idea and Spotify should cough up._)
 
 ## Minutes listened
 

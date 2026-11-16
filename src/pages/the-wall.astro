@@ -20,6 +20,16 @@ const weekStart = new Date(new Date(today).setDate(today.getDate() - 7));
 		align-items: baseline;
 	}
 
+	h1 {
+		color: #b73460;
+		font-family: inherit;
+		font-size: inherit;
+		letter-spacing: inherit;
+		letter-spacing: .2px;
+		line-height: 0;
+		margin-bottom: 1.4rem;
+	}
+
 	a {
 		color: white;
 		font-weight: 700;
@@ -27,7 +37,10 @@ const weekStart = new Date(new Date(today).setDate(today.getDate() - 7));
 
 	p {
 		text-align: left;
+		line-height: 1;
 	}
+
+
 	
 	.wall {
 		margin: 2rem;
@@ -49,12 +62,20 @@ const weekStart = new Date(new Date(today).setDate(today.getDate() - 7));
 		list-height: 1.2;
 	}
 
+	#back-home::before {
+		content: '← ';
+		color: white;
+		font-weight: 700;
+	}
+
 </style>
 
 <BaseHead title={title} description={description} />
 <p class="wall">{wall.map((data, i) => (
 	i < (wall.length - 1) ? <span><span id="brick">{data.name}</span></span> : <span id="brick">{data.name}</span>
 ))}</p>
-<p class="last-brick">My Top 50 Artists this week<br>
-<FormattedDate date={weekStart}/> – <FormattedDate date={today} /><br>
-<a href="/">Go back home</a></p>
+<div class="last-brick">
+	<h1 class="last-brick">My Top 50 Artists this week</h1>
+	<p><FormattedDate date={weekStart}/> – <FormattedDate date={today} /></p>
+	<p id="back-home"><a href="/">Go back home</a></p>
+</div>

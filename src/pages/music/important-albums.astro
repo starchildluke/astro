@@ -1,0 +1,37 @@
+---
+// COMPONENTS
+
+import Music from '../../layouts/Music.astro';
+import AlbumsStructuredData from '../../components/AlbumsStructuredData.astro';
+import albums from '../../data/albums.json'
+
+// EXPORT
+
+export interface Props {
+  title: string;
+  description: string;
+}
+
+// METADATA VARIABLES
+
+let title = 'Important albums';
+let description = 'A list of my important albums in my life.';
+---
+
+<style>
+  .description { max-width: 700px }
+</style>
+
+<Music title={title} description={description} stylesheetURL="music.css">
+        <h1>{title}</h1>
+        <p>This is a list of all the important albums I've listened to in my life. They've saved me, inspired me, given me life, made me think, laugh, smile, cry, and everything in between.</p>
+          <article class="album-item">
+            {albums.albums.map((item) => (
+            <div class="album-details">
+              <h2>{item.artist} – {item.album}</h2>
+              <p class="description">{item.importance}</p>
+            </div>
+            ))}
+          </article>
+    <AlbumsStructuredData />
+    </Music>

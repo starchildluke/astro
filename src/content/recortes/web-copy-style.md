@@ -464,7 +464,7 @@ address, including the http://.</blockquote>
 <b>web links</b>
 > Use hyperlinks selectively, and keep them short.
 When linking text, link from a noun or noun phrase if possible, but link to a verb phrase if necessary
-to avoid confusion. For example: Dean Allen's <a href="https://web.archive.org/web/20020212000526/http://www.textism.com/">Textism</a> is often very good. He once wrote <a href="https://web.archive.org/web/20020212000526/http://www.textism.com/article/402/">a story</a> about a cat. And he even <a href="https://web.archive.org/web/20020212000526/http://www.textism.com/resources/index.html?id=5">uses
+to avoid confusion. For example: Dean Allen's <a href="https://web.archive.org/web/20020125050525/http://www.textism.com/">Textism</a> is often very good. He once wrote <a href="https://web.archive.org/web/20020212000526/http://www.textism.com/article/402/">a story</a> about a cat. And he even <a href="https://web.archive.org/web/20020202041129/http://www.textism.com/resources/index.html?id=5">uses
 the word "dude"</a> sometimes. Not to mention these <a href="https://web.archive.org/web/20020207203153/http://textism.com/resources/index.html?id=9">handy
 scripts</a> he wrote for coding web pages. And Digital Web magazine <a href="https://web.archive.org/web/20020210074652/http://www.digital-web.com/profiles/dean_allen.shtml">says</a>
 he was born in Vancouver! <br><br>

@@ -30,7 +30,7 @@ Anh was in my 2025 list and she still inspires me through her approach to web de
 
 Jacky is a software engineer (whom you should hire btw!) and as I said last year, he's an important part of the space due to his thoughtfulness around people rather than just things.
 
-[Website](https://jalcine.github.io/) | [Blacksky](https://blacksky.community/profile/jacky.blacksky.app)
+[Website](https://jacky.wtf/) | [Blacksky](https://blacksky.community/profile/jacky.blacksky.app)
 
 ## 5. jamie aka seafare
 
@@ -48,7 +48,7 @@ Dom has been a friend for a while now and he has such a phenomenal way with word
 
 Ky is another bright spark in the tech scene (and another person you should definitely hire, [not now but right now](https://www.youtube.com/watch?v=246DWkIFib0)). I always look forward to their posts on Bluesky and on their website which is also super inspiring and awesome. Ky deserves the best and more so definitely check them out.
 
-[Website](https://ky.fyi/) | [Bluesky](https://bsky.app/profile/ky.fyi) | [Are.na](https://www.are.na/ky-decker/)
+[Website](https://ky.fyi/) | [Bluesky](https://bsky.app/profile/ky.fyi) | [Are.na](https://www.are.na/ky-decker)
 
 ## 8. Taurean Bryant
 

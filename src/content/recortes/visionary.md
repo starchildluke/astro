@@ -6,4 +6,4 @@ pubDate: '25 Aug 2021'
 tags: ['writing']
 ---
 
-[Data > Experience > Opinion > Vision](https://brunobergher.com/writing/how-to-develop-a-vision.html)
+[Data > Experience > Opinion > Vision](https://brunobergher.com/writing/how-to-develop-a-vision)

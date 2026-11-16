@@ -57,7 +57,7 @@ I used to mention the fact I was analytical on my CV. Then I stopped because nob
 
 I know HTML isn't a programming language but it got me into coding and that lead me to my first language: [C++](https://www.w3schools.com/cpp/cpp_intro.asp). I studied Computer Science at Nottingham Trent for 6 months until I realised it wasn't for me. And now I hate C++.
 
-Later on, I tried JavaScript and nearly made headway but then I lost motivation. Finally, I found Python and it clicked. It was easy enough to learn and understand but robust enough to create incredible scripts capable of small-to-large scale tasks. I started learning in October and I've already created a Google scraper for content ideas and last week, I wrote an article for PPC Hero about [Python's potential in paid search](https://www.ppchero.com/how-learning-python-can-improve-your-ppc-campaigns/).
+Later on, I tried JavaScript and nearly made headway but then I lost motivation. Finally, I found Python and it clicked. It was easy enough to learn and understand but robust enough to create incredible scripts capable of small-to-large scale tasks. I started learning in October and I've already created a Google scraper for content ideas and last week, I wrote an article for PPC Hero about [Python's potential in paid search](https://ppchero.com/how-learning-python-can-improve-your-ppc-campaigns/).
 
 I've still got a long way to go but this is the best part of my career so far.
 
@@ -86,7 +86,7 @@ Headings split up blocks of texts and describe what each section is about. They 
 
 ### There's a lot of the same content out there
 
-Today, I found an article called [Copycat Content: SEO Tools Got Us Here, Humans Will Get Us Out](https://www.animalz.co/blog/copycat-content/) and the first paragraph echoes my sentiments for a lot of web content:
+Today, I found an article called [Copycat Content: SEO Tools Got Us Here, Humans Will Get Us Out](https://www.animalz.co/blog/copycat-content) and the first paragraph echoes my sentiments for a lot of web content:
 
 > There’s a copycat crisis in content marketing. Explore the search results for virtually any lucrative keyword, and you’ll find a bunch of articles with lookalike titles, headers and examples. Increasingly, “SEO content” has become a synonym for meandering “ultimate guides” and formulaic “7 ways” listicles.
 
@@ -98,7 +98,7 @@ I never took this into consideration back in the day (I didn't know any better).
 
 ### So is a good architecture
 
-Something else I didn't pay enough attention to in the past. I have a blog that has over 1400 posts. [Crawl depth](https://www.oncrawl.com/oncrawl-seo-thoughts/page-depth-how-it-affects-your-seo-performance/) is an issue (I'm working on it, okay?!) but has helped me think about my site architecture. A better site structure means pages get crawled quicker and more often.
+Something else I didn't pay enough attention to in the past. I have a blog that has over 1400 posts. Crawl depth is an issue (I'm working on it, okay?!) but has helped me think about my site architecture. A better site structure means pages get crawled quicker and more often.
 
 ## Google
 ### Google is not a meritocracy
