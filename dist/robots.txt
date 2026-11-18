@@ -55,6 +55,12 @@ Disallow: /
 User-agent: Nutch
 Disallow: /
 
+User-agent: LinkupBot
+Disallow: /
+
+User-agent: ExaSearchBot
+Disallow: /
+
 Sitemap: https://lukealexdavis.co.uk/sitemap-index.xml
 
 #                              ,AAAAAAAAAAAAAAAAA                               

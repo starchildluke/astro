@@ -4,7 +4,7 @@ description: 'There are times when binaries are good'
 published: true
 pubDate: '13 Oct 2026'
 tags:
-  - life
+  - language
 ---
 
 I saw an abstract for a paper called [Fuck Nuance](https://kieranhealy.org/files/papers/fuck-nuance.pdf) by Irish sociologist Kieran Healy:

@@ -4,7 +4,6 @@ description: 'Get to know me this month'
 published: true
 pubDate: '07 Nov 2026'
 tags:
-  - life
   - blogging
 ---
 

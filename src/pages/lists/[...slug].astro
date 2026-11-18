@@ -33,7 +33,7 @@ const { post, prevPost, nextPost, prevSlug, prevTitle, nextSlug, nextTitle } = A
 const { Content } = await render(post);
 
 ---
-<Layout title={post.data.title} description={post.data.description}>
+<Layout title={post.data.title} description={post.data.description} robotsTag={post.data?.robots}>
 <Lists {...post.data}>
       <div class="post-meta"><p class="publish-date"><FormattedDate date={post.data.pubDate} /></p>
               <h1>{post.data.title}</h1></div>

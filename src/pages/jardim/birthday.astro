@@ -1,0 +1,30 @@
+---
+// COMPONENTS
+
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import Tags from '../../components/Tags.astro';
+
+// HOW FETCHING!
+
+// const remoteData = await fetch('https://cultrface.co.uk/wp-json/wp/v2/posts?categories=290&per_page=5').then(response => response.json());
+
+// METADATA VARIABLES
+
+let title = 'Birthday';
+let description = 'A wiki page all about birthdays (mainly mine).';
+
+---
+<style>h1::after{content:" 🎂🎉";}</style>
+
+<Layout {title} {description}>
+    <Breadcrumbs title={title}/>
+    <hgroup class="intro">
+      <h1>{title}</h1>
+      <p class="desc">{description}</p>
+    </hgroup>
+    <section>
+      <h2 class="wiki-h2">Inner voice</h2>
+      <Tags tagName="birthday" />
+    </section>
+</Layout>

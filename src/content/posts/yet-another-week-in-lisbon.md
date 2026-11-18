@@ -3,7 +3,7 @@ title: 'Yet another week in Lisbon'
 description: "I spent 5 days in Lisbon from 21st–26th November. Here's how it went."
 published: true
 pubDate: '26 Nov 2025'
-tags: ['life', 'Lisbon', 'architecture']
+tags: ['birthday', 'Lisbon', 'architecture']
 ---
 
 I spent 5 days in Lisbon from 21st–26th November 2025. This is my fifth trip to the Portuguese capital (and I've written about two of those trips in [2017](/posts/my-week-in-lisbon/) and [2023](/posts/another-week-in-lisbon-2023/)).

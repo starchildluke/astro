@@ -3,7 +3,7 @@ title: 'Proust Questionnaire - 2020'
 description: "In 2012, I answered the Proust Questionnaire and brought it over from my old blog. I'm taking it again."
 published: true
 pubDate: '6 Sep 2020'
-tags: ['life', 'happiness']
+tags: ['happiness']
 ---
 
 In 2012, I answered the Proust Questionnaire and brought it over from my old blog. I'm taking it again.

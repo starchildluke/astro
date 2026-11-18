@@ -3,7 +3,7 @@ title: "Deleting Twitter"
 description: "I'm seriously considering doing it because I've had enough of the place."
 published: true
 pubDate: '3 Nov 2023'
-tags: ["life", 'social media']
+tags: ["life updates", 'social media']
 ---
 
 You read the title, let's get to it.

@@ -3,7 +3,7 @@ title: 'Somebody* on life learning'
 description: "But what is Maya Angelou?"
 published: true
 pubDate: '14 Jul 2020'
-tags: ['life']
+tags: ['quotes']
 ---
 
 <p>Allegedly, Maya Angelou said this but it's disputed and given her history with misattributed quotes, I'm inclined to think she <em>didn't</em> say this. But that doesn't stop it from being interesting:</p>

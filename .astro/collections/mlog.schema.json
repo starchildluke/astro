@@ -20,6 +20,9 @@
     "pubDate": {
       "type": "string"
     },
+    "robots": {
+      "type": "string"
+    },
     "$schema": {
       "type": "string"
     }

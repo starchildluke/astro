@@ -3,7 +3,7 @@ title: 'The biggest change(s) to my website since I started it'
 description: "Everything must change. Nothing stays the same."
 published: true
 pubDate: '14 May 2026'
-tags: ["blogging", "writing", "the Internet", "life"]
+tags: ["blogging", "writing", "the Internet", "life updates"]
 ---
 
 James (of James' Coffee Blog) wrote about [growing with his website](https://jamesg.blog/2026/05/13/growing-with-my-website) and asked the following question:

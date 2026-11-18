@@ -3,7 +3,7 @@ title: 'New normal'
 description: "'The phrase ‘new normal’ is one that grinds my gears in a very particular way, because look around… nothing has fundamentally changed.'"
 published: true
 pubDate: '6 Sep 2021'
-tags: ['life', 'COVID-19']
+tags: ['COVID-19']
 ---
 
 [@clvtno on Twitter wrote a good impromptu thread about the 'new normal' and the fallacy of the term](https://twitter.com/clvtno/status/1434670846241644545):

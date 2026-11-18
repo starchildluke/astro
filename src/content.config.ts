@@ -10,7 +10,8 @@ const posts = defineCollection({
 		image: z.string().optional(),
 		published: z.boolean().optional(),
 		tags: z.array(z.string()),
-		pubDate: z.string()
+		pubDate: z.string(),
+		robots: z.string().optional()
 	})
 });
 
@@ -22,7 +23,8 @@ const music = defineCollection({
 		albumCover: z.string().optional(),
 		pubDate: z.string(),
 		url: z.string().url().optional(),
-		related: z.string().optional()
+		related: z.string().optional(),
+		robots: z.string().optional()
 	})
 });
 
@@ -33,7 +35,8 @@ const mlog = defineCollection({
 		description: z.string().optional(),
 		image: z.string().optional(),
 		tags: z.array(z.string()).optional(),
-		pubDate: z.string()
+		pubDate: z.string(),
+		robots: z.string().optional()
 	})
 });
 
@@ -45,8 +48,9 @@ const recortes = defineCollection({
 		published: z.boolean().optional(),
 		pubDate: z.string(),
 		latex: z.boolean().optional(),
-		tags: z.array(z.string()).optional()
-	}),
+		tags: z.array(z.string()).optional(),
+		robots: z.string().optional()
+	})
 });
 
 const releaseNotes = defineCollection({
@@ -56,8 +60,9 @@ const releaseNotes = defineCollection({
 		description: z.string().optional(),
 		published: z.boolean().optional(),
 		pubDate: z.string(),
-		tags: z.array(z.string()).optional()
-	}),
+		tags: z.array(z.string()).optional(),
+		robots: z.string().optional()
+	})
 });
 
 const morsels = defineCollection({
@@ -67,8 +72,9 @@ const morsels = defineCollection({
 		description: z.string().optional(),
 		published: z.boolean().optional(),
 		tags: z.array(z.string()).optional(),
-		pubDate: z.string()
-	}),
+		pubDate: z.string(),
+		robots: z.string().optional()
+	})
 });
 
 const lists = defineCollection({
@@ -78,24 +84,26 @@ const lists = defineCollection({
 		description: z.string().optional(),
 		published: z.boolean().optional(),
 		pubDate: z.string(),
-		tags: z.array(z.string()).optional()
-	}),
+		tags: z.array(z.string()).optional(),
+		robots: z.string().optional()
+	})
 });
 
-const games = defineCollection({
-	loader: glob({ pattern: '**/[^_]*.{md,mdx}', base: "./src/content/games" }),
-	schema: z.object({
-		name: z.string().optional(),
-		developer: z.string().optional(),
-		publisher: z.string().optional(),
-		genre: z.string().optional(),
-		imageURL: z.string().optional(),
-		status: z.string().optional(),
-		format: z.string().optional(),
-		console: z.string().optional(),
-		dateBeaten: z.string().or(z.date())
-			.transform((val) => new Date(val)).optional()
-	}),
-});
+// const games = defineCollection({
+// 	loader: glob({ pattern: '**/[^_]*.{md,mdx}', base: "./src/content/games" }),
+// 	schema: z.object({
+// 		name: z.string().optional(),
+// 		developer: z.string().optional(),
+// 		publisher: z.string().optional(),
+// 		genre: z.string().optional(),
+// 		imageURL: z.string().optional(),
+// 		status: z.string().optional(),
+// 		format: z.string().optional(),
+// 		console: z.string().optional(),
+// 		dateBeaten: z.string().or(z.date())
+// 			.transform((val) => new Date(val)).optional(),
+// 		robots: z.string().optional()
+// 	})
+// });
 
-export const collections = { 'posts': posts, 'recortes': recortes, 'release-notes': releaseNotes, 'morsels': morsels, 'lists': lists, 'mlog': mlog, 'music': music, 'games': games };
+export const collections = { 'posts': posts, 'recortes': recortes, 'release-notes': releaseNotes, 'morsels': morsels, 'lists': lists, 'mlog': mlog, 'music': music};

@@ -37,6 +37,9 @@
         }
       ]
     },
+    "robots": {
+      "type": "string"
+    },
     "$schema": {
       "type": "string"
     }

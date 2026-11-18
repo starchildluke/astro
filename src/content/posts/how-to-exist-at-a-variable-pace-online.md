@@ -5,7 +5,6 @@ published: true
 pubDate: '03 Oct 2026'
 tags:
   - the Internet
-  - life
   - tech
 ---
 

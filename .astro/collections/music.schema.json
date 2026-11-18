@@ -21,6 +21,9 @@
     "related": {
       "type": "string"
     },
+    "robots": {
+      "type": "string"
+    },
     "$schema": {
       "type": "string"
     }

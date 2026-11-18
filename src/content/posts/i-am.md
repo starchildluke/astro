@@ -3,7 +3,7 @@ title: 'I am...'
 description: "All the things that I am."
 published: true
 pubDate: '28 Jul 2017'
-tags: ['life']
+tags: ['life updates']
 ---
 
 I am inwardly excitable

@@ -3,7 +3,7 @@ title: 'Today is a special day'
 description: "29th January is special for two reasons."
 published: true
 pubDate: '29 Jan 2022'
-tags: ['life', 'sport']
+tags: ['life updates', 'sport']
 ---
 
 29th January is special for two reasons.

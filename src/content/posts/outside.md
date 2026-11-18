@@ -4,7 +4,7 @@ description: 'The joys of being offline'
 published: true
 pubDate: '25 Oct 2026'
 tags:
-  - life
+  - life updates
 ---
 
 Over the last few weeks, I've been going out more. At weekends when I have my son, I've gone somewhere at least once (usually the Sunday) whether it was a nature walk, a slide park, or a random bus ride to somewhere new. It's been great and getting out of the house and away from the laptop or phone (for the most part) has helped calm my mind down.

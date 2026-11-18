@@ -3,7 +3,7 @@ title: 'Probably Autistic'
 description: "My name is Luke and I'm Probably Autistic."
 published: true
 pubDate: '10 May 2023'
-tags: ['life']
+tags: ['life updates']
 ---
 
 My name is Luke and I'm Probably Autistic.

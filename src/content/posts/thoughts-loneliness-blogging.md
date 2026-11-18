@@ -6,7 +6,7 @@ pubDate: '08 Dec 2025'
 tags:
   - blogging
   - writing
-  - life
+  - life updates
   - the Internet
 ---
 

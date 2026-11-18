@@ -3,7 +3,7 @@ title: '69 simple pleasures'
 description: "I'm a simple man with a NICE! number of pleasure."
 published: true
 pubDate: '27 Sep 2022'
-tags: ['life', 'sport', 'architecture', 'Roger Federer', 'tech', 'Pokémon', 'Lisbon', 'Python']
+tags: ['sport', 'architecture', 'Roger Federer', 'tech', 'Pokémon', 'Lisbon', 'Python']
 ---
 
 * 001 – Watching WWE Attitude Era matches

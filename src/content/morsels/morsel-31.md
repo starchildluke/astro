@@ -1,7 +1,7 @@
 ---
 title: 'Morsel #31: Championship Manager 01/02 Fallen Greats Picker'
 description: 'The third version of a JS thing I found years ago'
-published: false
+published: true
 pubDate: '18 Jun 2026'
 tags: ['JavaScript', 'sport', 'gaming']
 ---

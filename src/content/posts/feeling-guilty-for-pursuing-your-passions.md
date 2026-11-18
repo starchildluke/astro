@@ -3,7 +3,7 @@ title: 'Feeling Guilty For Pursuing Your Passions'
 description: "I used to feel really empowered and inspired when I worked on my music or blogged until one day I was questioned about it."
 published: true
 pubDate: '6 Dec 2017'
-tags: ['blogging', 'life']
+tags: ['blogging', 'life updates']
 ---
 
 This is gonna be a short one. I used to feel really empowered and inspired when I worked on [my music](https://strrchildluke.bandcamp.com/) or wrote for [Sampleface](https://sampleface.co.uk/) until one day I was questioned about it.

@@ -3,7 +3,7 @@ title: 'Boats, storms, and rockets'
 description: "Are we really 'in this together'?"
 published: true
 pubDate: '21 Jul 2021'
-tags: ['COVID-19', 'life']
+tags: ['COVID-19']
 ---
 
 There were a lot of people making similar declarations last year:

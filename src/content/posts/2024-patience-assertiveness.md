@@ -3,7 +3,7 @@ title: "2024 needs patience and assertiveness (for me)"
 published: true
 description: "This post has been on my mind for a while and seeing as the new year is approaching, I thought I'd write my thoughts down."
 pubDate: "30 Dec 2023"
-tags: ['life']
+tags: ['life updates']
 ---
 
 I almost didn't write this, but my friend [Dom Griffin](https://www.youtube.com/@TheArmchairAuteur) made a video where he explained that sometimes, you just gotta do the work even when you don't want to. So here I am.

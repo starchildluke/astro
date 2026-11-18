@@ -9,7 +9,9 @@ let allLists = await getCollection('lists');
 let allRecortes = await getCollection('recortes');
 
 let allWritings = [].concat(allPosts, allNotes, allMorsels, allLists, allRecortes)
-let sortedWritings = allWritings.sort((a, b) => new Date(b.data.pubDate) - new Date(a.data.pubDate));
+let sortedWritings = allWritings.filter(
+	post => (!post.data.robots?.includes("noindex") && post.data.published !== false)
+).sort((a, b) => new Date(b.data.pubDate) - new Date(a.data.pubDate));
 ---
 
 <style>

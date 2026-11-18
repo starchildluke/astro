@@ -3,7 +3,7 @@ title: 'Black Panther and therapy'
 description: "I went to therapy last year and talked about Black Panther."
 published: true
 pubDate: '29 Aug 2020'
-tags: ['Black', 'film', 'life']
+tags: ['Black', 'film', 'life updates']
 ---
 
 I went to therapy last year.

@@ -5,7 +5,6 @@ published: true
 pubDate: '24 Aug 2026'
 tags:
   - SEO
-  - life
   - tech
   - the Internet
 ---
