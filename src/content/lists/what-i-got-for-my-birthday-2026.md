@@ -12,8 +12,15 @@ tags:
 
 - Trackball mouse
 - 128 GB USB-C flash drive
+- Probably Overthinking It by Allen B. Downey
+- A milk frother
+- A £15 voucher (converted to a £15 Nintendo eShop voucher)
 
 ## What I got for myself
 
 - Wii U
 - Google TV Streamer (4K)
+
+## What I might get for myself
+
+- Sea of Stars (Switch 2)
